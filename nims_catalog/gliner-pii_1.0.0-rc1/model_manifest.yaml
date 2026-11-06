@@ -1,0 +1,37 @@
+# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+# property and proprietary rights in and to this material, related
+# documentation and any modifications thereto. Any use, reproduction,
+# disclosure or distribution of this material and related documentation
+# without an express license agreement from NVIDIA CORPORATION or
+# its affiliates is strictly prohibited.
+
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+model: 'nvidia/gliner-pii'
+release: '0.1.0'
+profiles:
+  - id: 'gliner-pii-default'
+    tags:
+      backend: 'pytorch'
+      precision: 'fp32'
+      gpu: 'any'
+    workspace:
+      files:
+        'model/pytorch_model.bin':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=pytorch_model.bin'
+        'model/gliner_config.json':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=gliner_config.json'
+        'model/tokenizer.json':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=tokenizer.json'
+        'model/tokenizer_config.json':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=tokenizer_config.json'
+        'model/added_tokens.json':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=added_tokens.json'
+        'model/special_tokens_map.json':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=special_tokens_map.json'
+        'model/spm.model':
+          uri: 'ngc://nim/nvidia/gliner-pii:0.1.0?file=spm.model'

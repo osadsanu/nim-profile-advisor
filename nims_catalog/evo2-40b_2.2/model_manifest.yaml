@@ -1,0 +1,61 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: arc/evo2-40b
+release: 2.2.0
+profiles:
+- id: c0efd4ff4b5cb005a1ef69834a5df3ae37484d637fccda5d1d041693399f8554
+  tags:
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    variant: 40b
+  workspace:
+    files:
+      context/io.json:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=context%2Fio.json
+        checksum: blake3:afcf6eb37d6f308ce8da4ef21f76cd25fe24be2dc1b6abc15cc84d7571ce1da2
+      context/model.yaml:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=context%2Fmodel.yaml
+        checksum: blake3:3a7ec58027b91d02bebd5fd50e704bca0a9a2a6086f17e25afb786a2704687fa
+      weights/.metadata:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F.metadata
+        checksum: blake3:51ee5d153f5c3c9fa88fd235db362aeb36e9ed2f6200ba9e14d51bb26e1a9742
+      weights/__0_0.distcp:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F__0_0.distcp
+        checksum: blake3:475cec71ad16d8b12fb75f985777b5a4c795c2e15a7092d983ea75000c13b764
+      weights/__0_1.distcp:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F__0_1.distcp
+        checksum: blake3:7221fef02a2c90529c6019973e50ae93758aafb2c8cd4c94d2a9ffdb778915af
+      weights/common.pt:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2Fcommon.pt
+        checksum: blake3:32790249e10c04f5af73ee5bcad0bc931a01a9c0e488901fe89830716182d019
+      weights/metadata.json:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2Fmetadata.json
+        checksum: blake3:5a950fa25d31be7997223da76a76c482964a46daa1a49317fef39d18c298154c
+  workspace_hash: 1b8018b189322f4baf8bd4029609822aae18b757a65d14088e29c8a24a50e080
+- id: e8db23ea1d703477220f26f7c7e9d6bb4cc12b398ba9770752595330852f6d22
+  tags:
+    variant: 40b
+  workspace:
+    files:
+      context/io.json:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=context%2Fio.json
+        checksum: blake3:afcf6eb37d6f308ce8da4ef21f76cd25fe24be2dc1b6abc15cc84d7571ce1da2
+      context/model.yaml:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=context%2Fmodel.yaml
+        checksum: blake3:3a7ec58027b91d02bebd5fd50e704bca0a9a2a6086f17e25afb786a2704687fa
+      weights/.metadata:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F.metadata
+        checksum: blake3:51ee5d153f5c3c9fa88fd235db362aeb36e9ed2f6200ba9e14d51bb26e1a9742
+      weights/__0_0.distcp:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F__0_0.distcp
+        checksum: blake3:475cec71ad16d8b12fb75f985777b5a4c795c2e15a7092d983ea75000c13b764
+      weights/__0_1.distcp:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2F__0_1.distcp
+        checksum: blake3:7221fef02a2c90529c6019973e50ae93758aafb2c8cd4c94d2a9ffdb778915af
+      weights/common.pt:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2Fcommon.pt
+        checksum: blake3:32790249e10c04f5af73ee5bcad0bc931a01a9c0e488901fe89830716182d019
+      weights/metadata.json:
+        uri: ngc://nim/arc/evo2-40b:2.0.0?file=weights%2Fmetadata.json
+        checksum: blake3:5a950fa25d31be7997223da76a76c482964a46daa1a49317fef39d18c298154c
+  workspace_hash: 1b8018b189322f4baf8bd4029609822aae18b757a65d14088e29c8a24a50e080

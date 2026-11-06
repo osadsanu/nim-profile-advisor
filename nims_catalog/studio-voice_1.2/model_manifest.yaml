@@ -1,0 +1,257 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/maxine-studio-voice
+release: 1.2.1
+profiles:
+- id: 086a81bc6a86d999bd1178a98f6f52d54854d07a6bf56b17ca9951f161816821
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_80/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:03e776f8a365026b1deba846c769e33e70b8f8004cabfbb1e46dfb8eb3e27841
+  workspace_hash: 1909523379eafbc6a7d77ee423915e37cbd18be761d18778dd0db9445a4c4e39
+- id: 0e88773e67c60b7b372d8a6b12035246e26b5ed56c099b456edf41f98d2445e1
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_120/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:14119d24747c59cc1621ac8aee4500fcdc004b6e3e45ecd1dff1335a373db019
+  workspace_hash: fa7fd38eec28f7e902903707ada507ded4bce3468764d20cb42fc869fba321f7
+- id: 2abc25ab9e3f9af93fdcdb841a70df3304bbdaeeb8ffcb093f695c1d8bf7786c
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_75/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:87c19e17f298f63b4e5bc7a3fefc5738e03068878df6d62dadcfea5644947ff5
+  workspace_hash: f0afca64db5c484fe9b1e27d8353a3cf7154efd8c988a4e057ca4ba4a31892ca
+- id: 3183e192b882d331fe777df91d4c4608456fa316880c01a46b93c8c801450186
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_90/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:e58c6e37beca032a637c71efcc4d18757610d407ad61c9a07bf8a2be47324d22
+  workspace_hash: 8472879118d8c96e0f97feab59fc2d9a4c73449e3058e0a8a3a8ef564f8e49b1
+- id: 3c18815498e29ccc7354147304f9fe357528b604a3f0f1408ca5c7a31169375a
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_80/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:30230082fd4824f22d74b8c424c283bba9e6cb80f69f5ce5fde076e22aca92ef
+  workspace_hash: 6e11d5cd5dcc4f83260a51974b5cc8fca7e5306ee8d6a3d067ae93fb09e533b4
+- id: 5e8adc3a96952760d614e72885ae84b9ccc7a8a2f3b280a180e7e82e08b87bc6
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_89/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:a1c09785ea57024d3eb2e2cb4683e07ce5651ed84411925ecc63054e5614ad56
+  workspace_hash: 020a48f5c7dd7aaf45d4006d4f9d8b58b5f008fa9824672bf47ce4639dc61246
+- id: 5fe5fb20134e51d4c99fc4f445e55528f968d12a6703334ed021dda41589861a
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_100/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:ab414c722b048e0bc9f85032016ab233371a55d21bc25064d573250b2af2debb
+  workspace_hash: 336ecfd55971f32b802e728cf6a0847f2c404d1d6e4c3f9774694bb3d9f37b5d
+- id: 679219b680fc9592f8b0e0a00ee422fc4ea1f42c668a95d83aeeaed964212a97
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_120/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:c3c75a65a07e9a39b33ff17f7c7841824e96cfc125920ff5e91a4c4510e01ea5
+  workspace_hash: 4b494e3b667b8e1626372829699c4d8d27de8705302538b0dd52f8391c4d9798
+- id: 73425c7f49c1bbc8b88c7cc4817e9cb8a56fcd0da1b7c31d4c5c7713f2995433
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_100/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:ae2db19b2183aca4ba76b0f0c40df06407d4c72ebdf153b3ab6b110e51ba350c
+  workspace_hash: e124ff3089215099d36243389e8dede2017ba6235929ccc6a08ef5c4921ea3a8
+- id: 73770c9a8cfcb7137e112be314446a408bd0bc6ecbbf46f04e4ac5ac2236f720
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_86/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:59d8c3fe3ddbd9fffc51e3fa27de6307e3ababe7a7dae2418eae245392b30298
+  workspace_hash: d4d64c9e5efb6dead33cdd56cae146582cfb2be230cf45c27dc18f9274aa5f0c
+- id: 8333225ad9afe3c756a8e885304c3643b9c7eb6ad5cb5b394f60d9a68dd8fdf2
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_86/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:e099be37cb6e80d879df3a241e51eac6f8891660faf8aeb90dd60b47a5fa49b7
+  workspace_hash: d29ac01b0fce771ea4e5f62fee95b06f86b85e9af3d47acac21e9f3757eb9513
+- id: 85ad4b65868a94b4f2eb209f318c9223e627857b9bcc60fa79c762c597132457
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    model_profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_75/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:229f6f32b1980f23aa1a6f3f4ec0daee64c9259d43c229303973075b3cb72b74
+  workspace_hash: aaf78f4a3a384f6b2aa4deafcf9eff534b08d158b36306f0f581bfd9d321f9ce
+- id: 89972993b8e80e5cdde60fd4f9c29c52770820b37524adfa4eb5e13442ca95ed
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_90/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:57a244ecf754d40c269996b0b9ffa1cc0f11cf15bd051b44ab48b2662944ee0d
+  workspace_hash: a2e9a92325d74e42be9f08513426981bdb6306a97671f32c3e844282cd471a0a
+- id: a43c8e61ba45a9fc9d045ebade971480fbc204e791e7499394ab052dc668ffb1
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_89/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:69214308da632a7d22addc317717c67eb00dbfa9ff4c1d5276c525f34faaca88
+  workspace_hash: 32818b78436f9c8213c18455abdfdcb86ac3f7599a7f5a55bfc771d407d955df
+- id: a6cfbbfa20970a5c0cc014c826c4c557272d54f396d8557f6e0bb54621d097b8
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_75/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:6fc71bf11388dca2c4fd9e69ff545663890d1326dcc6b01dee2eebed9fd75000
+  workspace_hash: 1592e0d280622c43d57947e9372d56f8b42970444775d947d111ec8e1cd33f98
+- id: aabe653128cea6de02a3872e055a81dc10c3aef125d1f7034dc1fe57fbc9b35f
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_100/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:fae3d8c6f2b99c802ab12b7e096a33c378d6b5e96115a9e17acd6cf0380eefab
+  workspace_hash: 26adc5a6c871f1ace8166849d17d4881b981a8ff19f52b574857787900d8bf88
+- id: bc9ad330fae98975d8b9dab17f1ce997731b24a909d6a8aabee227aa92bd9662
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_80/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:d2f85afca4eb4aefa69e9e3fdc8704213d78704c3b657fd150c1cad9f4a19e50
+  workspace_hash: ba7fde390b62399a0b1628f5deb7aada60839435b91fd3e7091d924ccb0d038f
+- id: d691328d467beae5107d9295792661f8915b9d4f20c6dc58912b0ccadbbdff26
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_120/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:63f3bf5562199d62e27afbb8340d6c2c7a0eda1dcb3b683b6ce41f8f9ae653f7
+  workspace_hash: 88f18bc5068daf325294b1c4d2fed1e0bd93593e0fd313df79716b7b245303aa
+- id: d88656445941d1d89c89553f8a64701cb9322a208650d828ac5a3b3c864525e4
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_90/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:05ced6083208bfe02975faf6a897de37d4f303e5d4c8b45b581d2bee1c0fef8d
+  workspace_hash: 5e7a1225112d6fbf51bf8385a7cad07fe339e61aef8acd226344649c54c9346f
+- id: db4dd58beca3c1aa896f370c0be12c31847adee32ec3753a42b65ef92ef1406c
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_89/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:26876455b2ce3ec33cf899c4b2cfc1abeccc0a36722b4e714df3f5c193038d22
+  workspace_hash: 97cb4a9f644e3563d179639f9edee6c4d696514367c72aef93f466914647c71e
+- id: ea79e39e048174a8a1a3594587478f349b9883314e8fc1364a001dc61c19e0c8
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    model_profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_86/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:3e2517c6f3fee58ba928aead8f29ddaa5d1943fef4bed722cb6a4a8cf802dcd7
+  workspace_hash: cb9db9aeebc28ee7400f8d7ecf6534b7e66c0567f3d35df61a0e14bfa7360820

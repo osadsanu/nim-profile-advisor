@@ -1,0 +1,809 @@
+model: deepseek-ai/deepseek-r1-distill-qwen-32b
+profile_selection_criteria: auto
+profiles:
+- id: b11f8e26633879a1e98b326636e7478317de074e7e8dca1e5e6e5bec6896067a
+  tags:
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 2329:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:b1cbf965f2f2f4b6e66ad0d1299d2f4b19a88df40f6f7916c79add443d7fd22f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-bf16-pw6d99vozq?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:541e6b8a70f190600c8b6654a22bbc4b5531fac5f879d2f68f25962d088c16fd
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-bf16-pw6d99vozq?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:cf30a5b68ac06ced67a568cc6bb16e74d21ba929982baa5da27e9f397c2b51fb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-bf16-pw6d99vozq?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:b4e5609de843b0a3da5ac9a9e78d72f7c03e4fbdd255b4eef558d6a58cab5ecf
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-bf16-pw6d99vozq?file=rank0.engine
+- id: 5f85ea78ab219828212eb5a10f4accc1e84603afef7b979bdbd946c5a0bd7a12
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:7472ead49e4f93a7b7d70da1f694861aa90f77f594e68b0c8295d2a7a31f8818
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-bf16-026ywcdqxa?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:6da006d41ec01407ff1646c8c40e7643d1720b57281d49d4fb72acb72af2879f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-bf16-026ywcdqxa?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:15b435a4429ec9b41d5d7083717b559dcc16f5ff9608e160ea4fcac1db09a8fc
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-bf16-026ywcdqxa?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:288d876662bc1a153b06def2d1a26f851cfb714fafb07a7d3a42d5b0e70f9b3f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-bf16-026ywcdqxa?file=rank0.engine
+- id: e983ba944938030f708913b87e6ccb7e8642818cfa17849b014d22986389e1f0
+  tags:
+    feat_lora: 'false'
+    gpu: L40S
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:3c4292ba6b0dcb17d9f72849f76d20bd768b1c317ac4d92b0d6b9d1415523e01
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l40sx2-throughput-fp8-v1w4o9pofg?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:2ee0fd995fae7fa40a1dc087b321f4ef3b4b3f013be3a168715730e787f15b04
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l40sx2-throughput-fp8-v1w4o9pofg?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:c798baae5cfa4af5ca235651b6dcb2f6794a6f4415997518a04f40d02b5b883f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l40sx2-throughput-fp8-v1w4o9pofg?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:fcd6a72ee27718492248b649c4483f9e012ac44003838a1799157f131c2f029e
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l40sx2-throughput-fp8-v1w4o9pofg?file=rank0.engine
+      trtllm_engine/rank1.engine:
+        checksum: blake3:28959c7a827c2a892c97be8114193d8bd02548a00077a4f4244aea49c8ed46f9
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l40sx2-throughput-fp8-v1w4o9pofg?file=rank1.engine
+- id: 0bdec027404c16d6ca96e159079082f9630a24a277ff519d0c8fea71007222ec
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:65785bf518be57df755cb02a0b8db26e24e25a0bd1af56ceb08dbcf46efa02fb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h100x1-throughput-fp8-eubkgaizwa?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:993634ab85c5a4b607293b96ba0b2e2c151decbc6a413ea26379a0ae64b616c3
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h100x1-throughput-fp8-eubkgaizwa?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:cd3fcaaf2155b1cbe72934d411f4d0a82b608040c2ae3b036910fad4f6239876
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h100x1-throughput-fp8-eubkgaizwa?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:e7562f33de89906a58d353dc220908df0d27c0ddf0f06b86b520b53643e6795a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h100x1-throughput-fp8-eubkgaizwa?file=rank0.engine
+- id: 0ed709d1cae20b4a72a4e53361ec86afce8e66f04e5f3a458d831bf2de2aed13
+  tags:
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 2329:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:cfa08b0ab5f7cff3e70036b3a6d11a1d00c843307bca5aabec6eef8743abd964
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-fp8-xknvzefnta?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:4b1a97865f807ca1d9d644b7b1ed31b6058fa52dc9470539e094036b45d0d773
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-fp8-xknvzefnta?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:b19f308dafaf1d9515ecebdacfdae7ae84fbf219f1c641adfc61f0bbedb68d99
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-fp8-xknvzefnta?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:81201eaa5a589a3dffc1f79c8b53aa709aeb6e67a7209be38c512774a2c18810
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h20x1-throughput-fp8-xknvzefnta?file=rank0.engine
+- id: a66e18a5bf3259e2d750b489154c000d99a0d94edc412c38c7c817e8b00a5734
+  tags:
+    feat_lora: 'false'
+    gpu: L20
+    gpu_device: 26ba:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:87b6310c7d2af38f4e7c68fd22ab6436493b51951842c21d4d090a69a1079e5d
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x2-throughput-bf16-cg-r8i77yq?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:042c27fe8054fc52949bd8a73c7e241bdcba4a87d01cb8d0df17c3b2559d5b7d
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x2-throughput-bf16-cg-r8i77yq?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:cd5b64896c9bb9aea1271729ae8382f7c5612c20833416ad522b785d180d6b8c
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x2-throughput-bf16-cg-r8i77yq?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:8567dc51e7479843d11aff65c2774a340a6fa5765b150238650e2c1df3cf27d6
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x2-throughput-bf16-cg-r8i77yq?file=rank0.engine
+      trtllm_engine/rank1.engine:
+        checksum: blake3:895eda6aaef9112679296045a0754c306ee80fe9c345c3675e06890d226ce5dc
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x2-throughput-bf16-cg-r8i77yq?file=rank1.engine
+- id: f8ba5f6b0079b435d606c5abffc39dc95f59e544412072d922bea577180ed25d
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:362c248182e27f95603aeda11f8723407d6094ad485cba4b3e83b4f56826f1f2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-fp8-hdtywsinpw?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:ab932a5d5ed3dff2d3cc8498db0b7aeaa2209047f86d8ffd432ff33e24d8507c
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-fp8-hdtywsinpw?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:ffc1954dd06e10247eef2cdd0299d8587e8f625aa29b1bd289a2ef17db71f00f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-fp8-hdtywsinpw?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:a88c1b70f893540263d515703f60becbb4785c8cdbac62930d9143e93c142c31
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x1-throughput-fp8-hdtywsinpw?file=rank0.engine
+- id: 03f4ae2c78347939ff05bdbde91f5f0fd2982503af2ea6ebbafe9f7388acb6b2
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:8c4842f3fd7224c3c2f8ad06aac5bb3e5d89d404119677eb4aa99154902f5b25
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-bf16--kxzy05cpq?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:759bcd6e6296cbf39c072942907ff1c8ce394f7ecad151ac6bb5b6d87b54e04f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-bf16--kxzy05cpq?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:5bd92c6c1d23bc5a946058995c8b3797212794c226ed9de037ac39f6ad562d32
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-bf16--kxzy05cpq?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:06309ca7c56095fafdea7bb60dc11b9721988b7ad95c5691dbd5d5c47b3f66ae
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-bf16--kxzy05cpq?file=rank0.engine
+      trtllm_engine/rank1.engine:
+        checksum: blake3:afedf40c9cd7d0a086d7be6bb345ffcd50599d92598b59ff62aeb6c033948ddc
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-bf16--kxzy05cpq?file=rank1.engine
+- id: c654f0451b5ec54113a9b754f69ffc3bf2c972f651d56cf213a3058c51bd0ac4
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:183e86d6be30ba63a81fd1d3db960c008194efb917bace4f73ab130bf7310403
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-fp8-uwbbvnu5ka?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:828b45966e466614cc1a44ad7fc5405897b42c02f2228110e135b38603398d8b
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-fp8-uwbbvnu5ka?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:0a6bd1ec4bdbbf9a22e2dcd6d913d6f888351d6d4bddd461f5476a923ad93cda
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-fp8-uwbbvnu5ka?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:2a9dce82356031462b708b145b17d85b370b36ac962572e65b093d0eaecf05d8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-fp8-uwbbvnu5ka?file=rank0.engine
+      trtllm_engine/rank1.engine:
+        checksum: blake3:be6ee6661fd842e14f2e951d4bf7d0232a5928e341b0825e12b355951806bfd9
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:h200x2-throughput-fp8-uwbbvnu5ka?file=rank1.engine
+- id: 0c8f44d2e2b80ef93270ea1708830d51c8223826341d1c655da61dba3b4b3b8c
+  tags:
+    feat_lora: 'false'
+    gpu: L20
+    gpu_device: 26ba:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+      README.md:
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+      checksums.blake3:
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+      config.json:
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+      figures/benchmark.jpg:
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+      generation_config.json:
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+      tokenizer.json:
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+      tokenizer_config.json:
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        checksum: blake3:5a137be579cc24fcce7304eb0be2b60660f4bd3fe3a219460ff7752487179ff1
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x1-throughput-fp8-4cielmybmw?file=checksums.blake3
+      trtllm_engine/config.json:
+        checksum: blake3:d2594e63fcab32427321fd14a8a6b133d10f7bcde1f2ca0ad7bf0133bd76845e
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x1-throughput-fp8-4cielmybmw?file=config.json
+      trtllm_engine/metadata.json:
+        checksum: blake3:55063ef986e8d330ca9b11a5499e10dbf773941686bee6767ec3adc74e1253be
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x1-throughput-fp8-4cielmybmw?file=metadata.json
+      trtllm_engine/rank0.engine:
+        checksum: blake3:421dccf19a4d6513cd5201a23eb242f1fd2c7b8953aa9275abba508d1fbf7015
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:l20x1-throughput-fp8-4cielmybmw?file=rank0.engine
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+      README.md:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+      checksums.blake3:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+      config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+      figures/benchmark.jpg:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+      generation_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+      model-00001-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00001-of-000008.safetensors
+        checksum: blake3:b44fd301e9737204510580b7c685b5b82e70645f978f7102e0192125a4846ce2
+      model-00002-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00002-of-000008.safetensors
+        checksum: blake3:a6b856a3ed8323c67f67e42ccf39ab1f9ec33212d5828caf007b8e28bec85d51
+      model-00003-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00003-of-000008.safetensors
+        checksum: blake3:b06d169ba67f08f00f8229aa033941354ddaf20e45071256a79d006bc3a68232
+      model-00004-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00004-of-000008.safetensors
+        checksum: blake3:a64634c200bced0e664ad533c45bbde0a78693e3cb2cf84dccb8b2ba04bbf242
+      model-00005-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00005-of-000008.safetensors
+        checksum: blake3:1967ad4a5325957608aeaed05dbb0b9d85d439d19b4dbc40d272265d06058a62
+      model-00006-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00006-of-000008.safetensors
+        checksum: blake3:a82f457b898f4aac0f031673c7dc21b1e2e667ca442a8110d1f59c2ec55cbfdc
+      model-00007-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00007-of-000008.safetensors
+        checksum: blake3:c4d1d95c35f7f6cb81f302a132741c309ea05e3028bd6e343e118f1c48e5a9e6
+      model-00008-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00008-of-000008.safetensors
+        checksum: blake3:5d88ee295a7dfb53cda828e0f1a850bd18a8990ac29caaf12c8ed84a3b598e4e
+      model.safetensors.index.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:63b9c18c64eabed5a567ad0c0a144e795f5aad2dbde67b3a1782be270487bffe
+      tokenizer.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+      tokenizer_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+- id: 3c788be0a2a4a3022493fb02df26fbdf6de8a77c27f0d407108971356582c123
+  tags:
+    feat_lora: 'False'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+      README.md:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+      checksums.blake3:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+      config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+      figures/benchmark.jpg:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+      generation_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+      model-00001-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00001-of-000008.safetensors
+        checksum: blake3:b44fd301e9737204510580b7c685b5b82e70645f978f7102e0192125a4846ce2
+      model-00002-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00002-of-000008.safetensors
+        checksum: blake3:a6b856a3ed8323c67f67e42ccf39ab1f9ec33212d5828caf007b8e28bec85d51
+      model-00003-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00003-of-000008.safetensors
+        checksum: blake3:b06d169ba67f08f00f8229aa033941354ddaf20e45071256a79d006bc3a68232
+      model-00004-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00004-of-000008.safetensors
+        checksum: blake3:a64634c200bced0e664ad533c45bbde0a78693e3cb2cf84dccb8b2ba04bbf242
+      model-00005-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00005-of-000008.safetensors
+        checksum: blake3:1967ad4a5325957608aeaed05dbb0b9d85d439d19b4dbc40d272265d06058a62
+      model-00006-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00006-of-000008.safetensors
+        checksum: blake3:a82f457b898f4aac0f031673c7dc21b1e2e667ca442a8110d1f59c2ec55cbfdc
+      model-00007-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00007-of-000008.safetensors
+        checksum: blake3:c4d1d95c35f7f6cb81f302a132741c309ea05e3028bd6e343e118f1c48e5a9e6
+      model-00008-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00008-of-000008.safetensors
+        checksum: blake3:5d88ee295a7dfb53cda828e0f1a850bd18a8990ac29caaf12c8ed84a3b598e4e
+      model.safetensors.index.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:63b9c18c64eabed5a567ad0c0a144e795f5aad2dbde67b3a1782be270487bffe
+      tokenizer.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+      tokenizer_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+      README.md:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+      checksums.blake3:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+      config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+      figures/benchmark.jpg:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+      generation_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+      model-00001-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00001-of-000008.safetensors
+        checksum: blake3:b44fd301e9737204510580b7c685b5b82e70645f978f7102e0192125a4846ce2
+      model-00002-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00002-of-000008.safetensors
+        checksum: blake3:a6b856a3ed8323c67f67e42ccf39ab1f9ec33212d5828caf007b8e28bec85d51
+      model-00003-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00003-of-000008.safetensors
+        checksum: blake3:b06d169ba67f08f00f8229aa033941354ddaf20e45071256a79d006bc3a68232
+      model-00004-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00004-of-000008.safetensors
+        checksum: blake3:a64634c200bced0e664ad533c45bbde0a78693e3cb2cf84dccb8b2ba04bbf242
+      model-00005-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00005-of-000008.safetensors
+        checksum: blake3:1967ad4a5325957608aeaed05dbb0b9d85d439d19b4dbc40d272265d06058a62
+      model-00006-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00006-of-000008.safetensors
+        checksum: blake3:a82f457b898f4aac0f031673c7dc21b1e2e667ca442a8110d1f59c2ec55cbfdc
+      model-00007-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00007-of-000008.safetensors
+        checksum: blake3:c4d1d95c35f7f6cb81f302a132741c309ea05e3028bd6e343e118f1c48e5a9e6
+      model-00008-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00008-of-000008.safetensors
+        checksum: blake3:5d88ee295a7dfb53cda828e0f1a850bd18a8990ac29caaf12c8ed84a3b598e4e
+      model.safetensors.index.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:63b9c18c64eabed5a567ad0c0a144e795f5aad2dbde67b3a1782be270487bffe
+      tokenizer.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+      tokenizer_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+- id: 61e3be8a204b3fb2f61dd9566b3c90b7e637e14fc90f9a893d20a0a3612ec444
+  tags:
+    feat_lora: 'False'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+      README.md:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+      checksums.blake3:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+      config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+      figures/benchmark.jpg:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+      generation_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+      model-00001-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00001-of-000008.safetensors
+        checksum: blake3:b44fd301e9737204510580b7c685b5b82e70645f978f7102e0192125a4846ce2
+      model-00002-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00002-of-000008.safetensors
+        checksum: blake3:a6b856a3ed8323c67f67e42ccf39ab1f9ec33212d5828caf007b8e28bec85d51
+      model-00003-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00003-of-000008.safetensors
+        checksum: blake3:b06d169ba67f08f00f8229aa033941354ddaf20e45071256a79d006bc3a68232
+      model-00004-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00004-of-000008.safetensors
+        checksum: blake3:a64634c200bced0e664ad533c45bbde0a78693e3cb2cf84dccb8b2ba04bbf242
+      model-00005-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00005-of-000008.safetensors
+        checksum: blake3:1967ad4a5325957608aeaed05dbb0b9d85d439d19b4dbc40d272265d06058a62
+      model-00006-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00006-of-000008.safetensors
+        checksum: blake3:a82f457b898f4aac0f031673c7dc21b1e2e667ca442a8110d1f59c2ec55cbfdc
+      model-00007-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00007-of-000008.safetensors
+        checksum: blake3:c4d1d95c35f7f6cb81f302a132741c309ea05e3028bd6e343e118f1c48e5a9e6
+      model-00008-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00008-of-000008.safetensors
+        checksum: blake3:5d88ee295a7dfb53cda828e0f1a850bd18a8990ac29caaf12c8ed84a3b598e4e
+      model.safetensors.index.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:63b9c18c64eabed5a567ad0c0a144e795f5aad2dbde67b3a1782be270487bffe
+      tokenizer.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+      tokenizer_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+- id: f373d85025da419c0f583a6f2ef46cb6f8f383e8451fa484139439b1b8d2705e
+  tags:
+    feat_lora: 'False'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=LICENSE
+        checksum: blake3:1748357bcd6727f532729db01939f376b0449f0aeed286f856d355bac923e43a
+      README.md:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=README.md
+        checksum: blake3:036aa83b24c69b7dda050221159bb66c022c34294efa84197950ec15cc780197
+      checksums.blake3:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=checksums.blake3
+        checksum: blake3:7f78cffe0521ce39bf8df0194ff66769a70b2b3da687113eda2cd69c9d2c349f
+      config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=config.json
+        checksum: blake3:e68318a0989c71b45ff83edc9004245092752a9ef03428706dac34ac39ac00c2
+      figures/benchmark.jpg:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=figures%2Fbenchmark.jpg
+        checksum: blake3:1bfcb13afbf3b73db5d8011c6f39f3febb9c5e4bacf940d7b28971a66690067f
+      generation_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=generation_config.json
+        checksum: blake3:d9403917326744242f8485bc94f0ae59861e2f58e5d69b973d88bb27009d6d80
+      model-00001-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00001-of-000008.safetensors
+        checksum: blake3:b44fd301e9737204510580b7c685b5b82e70645f978f7102e0192125a4846ce2
+      model-00002-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00002-of-000008.safetensors
+        checksum: blake3:a6b856a3ed8323c67f67e42ccf39ab1f9ec33212d5828caf007b8e28bec85d51
+      model-00003-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00003-of-000008.safetensors
+        checksum: blake3:b06d169ba67f08f00f8229aa033941354ddaf20e45071256a79d006bc3a68232
+      model-00004-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00004-of-000008.safetensors
+        checksum: blake3:a64634c200bced0e664ad533c45bbde0a78693e3cb2cf84dccb8b2ba04bbf242
+      model-00005-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00005-of-000008.safetensors
+        checksum: blake3:1967ad4a5325957608aeaed05dbb0b9d85d439d19b4dbc40d272265d06058a62
+      model-00006-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00006-of-000008.safetensors
+        checksum: blake3:a82f457b898f4aac0f031673c7dc21b1e2e667ca442a8110d1f59c2ec55cbfdc
+      model-00007-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00007-of-000008.safetensors
+        checksum: blake3:c4d1d95c35f7f6cb81f302a132741c309ea05e3028bd6e343e118f1c48e5a9e6
+      model-00008-of-000008.safetensors:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model-00008-of-000008.safetensors
+        checksum: blake3:5d88ee295a7dfb53cda828e0f1a850bd18a8990ac29caaf12c8ed84a3b598e4e
+      model.safetensors.index.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:63b9c18c64eabed5a567ad0c0a144e795f5aad2dbde67b3a1782be270487bffe
+      tokenizer.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer.json
+        checksum: blake3:723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb
+      tokenizer_config.json:
+        uri: ngc://nim/deepseek-ai/deepseek-r1-distill-qwen-32b:hf-b950d47-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7dd41d462bbf0f879733a90494c4938209eea16e94925b8a2c18bfa59d2cc1c8
+release: 0.0.1-dev
+schema_version: '2.0'

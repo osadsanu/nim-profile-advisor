@@ -1,0 +1,33 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: kumo-relational
+release: 1.1.0
+profiles:
+- id: 0bdfcdc54ce98a3233238f3a8c93cbca3ada7f2e0123587236e17d76ee9c00dc
+  tags:
+    backend: sdm
+    model: kumo_relational
+    precision: bfloat16
+  workspace:
+    files:
+      classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/models--nvidia--Kumo-Relational/snapshots/613d8f930f3a9f4d306fadfe80794da8c9a28570?file=classifier.pt
+        checksum: blake3:743e1fc516ef90b6f11131e8a2015d93a34aea943a779f7f83163c2574d0cb21
+      regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/models--nvidia--Kumo-Relational/snapshots/613d8f930f3a9f4d306fadfe80794da8c9a28570?file=regressor.pt
+        checksum: blake3:c5f8d200f2c5b79c4b56d0ec7f8f5b3149d6cc4685f89528055b872e0119d828
+  workspace_hash: c5f35e2b30f60d5441b2d9c9a420faf11a113a0d59200f700243461d961dcdd9
+- id: aba647a2eae7434d143ed5b02a77f6330b5d4858020483a7faf84d70ed4cf48e
+  tags:
+    backend: sdm
+    model: kumo_relational
+    precision: float16
+  workspace:
+    files:
+      classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/models--nvidia--Kumo-Relational/snapshots/613d8f930f3a9f4d306fadfe80794da8c9a28570?file=classifier.pt
+        checksum: blake3:743e1fc516ef90b6f11131e8a2015d93a34aea943a779f7f83163c2574d0cb21
+      regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/models--nvidia--Kumo-Relational/snapshots/613d8f930f3a9f4d306fadfe80794da8c9a28570?file=regressor.pt
+        checksum: blake3:c5f8d200f2c5b79c4b56d0ec7f8f5b3149d6cc4685f89528055b872e0119d828
+  workspace_hash: c5f35e2b30f60d5441b2d9c9a420faf11a113a0d59200f700243461d961dcdd9

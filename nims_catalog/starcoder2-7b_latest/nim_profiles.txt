@@ -1,0 +1,31 @@
+- id: 2eb33b370de02161660c0c3af87440bf566a0e07a75483ee511ce17918cb08b8
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '9.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+
+- id: 79f4eb4baf9d3dc554d11af4926229675d190f60ccee1261715529bd1c5112cc
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '15.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+
+- id: 7be3b5f2958163bd55fcd9da813e83f5a297980c4f06741e69c3231ca321b9a3
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '15.0'
+    nim_description: throughput, chat, mean ITL<=20ms
+    nim_json_args: '{"attention_backend":"FLASHINFER","max_model_len":16384,"max_num_batched_tokens":2048}'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'

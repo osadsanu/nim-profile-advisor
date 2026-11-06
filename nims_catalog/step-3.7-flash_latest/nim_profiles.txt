@@ -1,0 +1,109 @@
+- id: 0ccf043b639267631a7926f2c6b44799cc958864c0bd98c4ab34d2c140eeb6b4
+  tags:
+    feat_lora: 'false'
+    gpu: H20-3e
+    gpu_device: 232c:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+
+- id: 5aec6c1daa4889516633a9c6f756b1851d164004dec04c6bcd770ca2698aaed5
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '4'
+
+- id: 5c9bd57a3bb15d5369e3643fd6d5571bdf256b429f967f051a85a0b6a5e7d69c
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    profile: fallback
+    tp: '4'
+    vram: 400GiB
+
+- id: 803041d68dc42697f5ae73d8134e82e36d58f79fdce7645cde11f8fe7a09b7dc
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: fallback
+    tp: '4'
+    vram: 240GiB
+
+- id: 8829c938081b94dd025f1c0de83a8eb9864f84f1e195b02d5a462d6aa1bd62cf
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: a3ef56895ddd6d1459ed4116105a86462019492c09d608fd9234342cba3c8f74
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: fallback
+    tp: '2'
+    vram: 240GiB
+
+- id: ba8dbdb5da4ac8140039205cd74e81905ceb4dab357a075dc6a5e75c09e3c576
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+
+- id: d28edc387ca82fdef3a738df46c863fc644549ef0b41daf23e9cd1854baa535c
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 2329:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 1acc73e2139d9336d2ca85b2970b389c86a559ea8f2799004837d8a8fb61da22
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    profile: fallback
+    tp: '2'
+    vram: 140GiB
+
+- id: 4c6c98d942ac770f39d1b828893ce1c484f24c1ecc88fbd66f3999796a813726
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    profile: fallback
+    tp: '1'
+    vram: 140GiB

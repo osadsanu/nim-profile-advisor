@@ -1,0 +1,2053 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: llama3.1-typhoon2-8b-instruct
+release: 1.8.5
+profiles:
+- id: 00172c81416075181f203532da34b88e371b8081d2ad801d9d30110ea88cbf95
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 018942e9a37a69b58ed514d7006ed851f57a1b2501ec4d39e3d862d8718893e5
+  tags:
+    feat_lora: 'true'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-fp8-duldvmi3uq?file=checksums.blake3
+        checksum: blake3:ba5940531084ca09a906b5f8f8cd82de13ff2043335b427c7ec59dcffa67bda0
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-fp8-duldvmi3uq?file=config.json
+        checksum: blake3:6841d0db51e8cd5e96f649794b11a8f7b02564a5d7bcb94303ddd746f86ad1ea
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-fp8-duldvmi3uq?file=metadata.json
+        checksum: blake3:9d8d0fff4c8a64ab1c31c21467fd7e847894abcbcbf3782a614881da2d7c22d1
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-fp8-duldvmi3uq?file=rank0.engine
+        checksum: blake3:ee5a5e2f7cbcaac838a2c5f814dcfa21ac3128afa6d9774da04123641e3c2982
+- id: 0782f55dcd12ec36d6126d9768fd364182986eecd25526eb206553df388057b7
+  tags:
+    feat_lora: 'true'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-fp8--riahmtawa?file=checksums.blake3
+        checksum: blake3:9616c3138f5c8a51cffb7fb4b579978132bca1703d6b1452b6865a461e2f0ae6
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-fp8--riahmtawa?file=config.json
+        checksum: blake3:644684959303c0d4be0ed720e3dc63292062e268dafea33ea111685787df3880
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-fp8--riahmtawa?file=metadata.json
+        checksum: blake3:07f374c830e0ab46dc38cfa6a2813cd41e93ae0945734f8c044e0ad54e874136
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-fp8--riahmtawa?file=rank0.engine
+        checksum: blake3:35a575acb66c703c7dc963919cdfc15492887825bf37253e30f09755cde9634f
+- id: 083e56197c3078f2932fc8d3d0e6d0d5b88d29ab8dbe154097deb322f227be07
+  tags:
+    feat_lora: 'true'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-fp8-b2k-ntbc4g?file=checksums.blake3
+        checksum: blake3:d634fc4c1851e31bbbafbb99cda67b79b9381e78b6365f90527cc944cc396c8d
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-fp8-b2k-ntbc4g?file=config.json
+        checksum: blake3:e6ae9650bcf0031a17a80b875c4692c9f606394412fd4121ec2bf7b78ea4aee2
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-fp8-b2k-ntbc4g?file=metadata.json
+        checksum: blake3:d8b183c00c1d76a5fc7c8d9af08bc9659a370521178f398b88a808a0cc64e6ff
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-fp8-b2k-ntbc4g?file=rank0.engine
+        checksum: blake3:1bba89776a75a88a9ff945244f21bc43caacbd0181fac3c6bc20b830aafbf0a5
+- id: 08662fae791cb76c40899ed539a7cbfdac61cad60d042220a3c321abd34a8a87
+  tags:
+    feat_lora: 'true'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-bf16-sfnr2jvszg?file=checksums.blake3
+        checksum: blake3:289229ba8fa4a5e17967382e8e9a5bd05e60c8186d905b39208247d0088244ab
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-bf16-sfnr2jvszg?file=config.json
+        checksum: blake3:b7cfe26cf0b806bde34c4646f983414ce0644db552b189384204b8d328689244
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-bf16-sfnr2jvszg?file=metadata.json
+        checksum: blake3:1818cffbe5968adf4b093db577fcafc4aa539c33101c1c2cbc4222673c396db2
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-lora-bf16-sfnr2jvszg?file=rank0.engine
+        checksum: blake3:a541afe95a65738b77e9d5b0f4aaddb538a0182be56c59f5ac443f3f8e767b2a
+- id: 2146fcf18ea0412d564c6ed21d2f727281b95361fd78ccfa3d0570ec1716e8db
+  tags:
+    feat_lora: 'false'
+    gpu: a100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x2-latency-bf16-3cfltetauq?file=checksums.blake3
+        checksum: blake3:47a0aa1b6e6113000256140fc16ddad49d9e76c530e0f2a765c1744d66c85032
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x2-latency-bf16-3cfltetauq?file=config.json
+        checksum: blake3:1ebc32e0688be4fdba7a75b9efcd34c079c293c3eaba56d022ed7b23b123df4d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x2-latency-bf16-3cfltetauq?file=metadata.json
+        checksum: blake3:f98048e57d15881693029bc4da38f37c1e568ed334b2c09879a33456fc655ada
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x2-latency-bf16-3cfltetauq?file=rank0.engine
+        checksum: blake3:7fbe5075c1a50a6154289bae1a159d42dd0b51507710e95f13c35973d213c576
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x2-latency-bf16-3cfltetauq?file=rank1.engine
+        checksum: blake3:a76ec043cc5f23ed316164227a4249d05d664b349341b00d49d861b0f76b283a
+- id: 222d1729a785201e8a021b226d74d227d01418c41b556283ee1bdbf0a818bd94
+  tags:
+    feat_lora: 'false'
+    gpu: a100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-bf16-i0fta-4meq?file=checksums.blake3
+        checksum: blake3:e83d9f4d82969e43952dfc50580efddd94b8da7734096ceb8cd7c81043790733
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-bf16-i0fta-4meq?file=config.json
+        checksum: blake3:bb46c96f57de9eee58bfc21951c9ca63fadbd51264587f21d522f1356a39491f
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-bf16-i0fta-4meq?file=metadata.json
+        checksum: blake3:4f4c7eaabc314e9c801729d665facce6e7ede55207000f27f1f84c157e9daf2d
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-bf16-i0fta-4meq?file=rank0.engine
+        checksum: blake3:3bc9fb92615130eb6985e25061a88485698feb87064bb214c4494ce5260d07ef
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 434e8d336fa23cbe151748d32b71e196d69f20d319ee8b59852a1ca31a48d311
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-bf16-e49cozvpgq?file=checksums.blake3
+        checksum: blake3:0c9db1c5d4fc21a98a3410a96eaaab5d4111048f2286789504bd0dbaba51c96f
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-bf16-e49cozvpgq?file=config.json
+        checksum: blake3:433fd7e69fdd271bf464f338fe0600b5576439d32c84df8671ab6ac73da41b59
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-bf16-e49cozvpgq?file=metadata.json
+        checksum: blake3:d1c78415e1a71c99d25b68f860c70ab5b124919e47b1c7624ef9547b0129ac13
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-bf16-e49cozvpgq?file=rank0.engine
+        checksum: blake3:7bf99924dda8db2bf5885b6e3a7e280465dc77ad9720b902cd69eaba7cd01778
+- id: 4950d30811e1e426e97cda69e6c03a8a4819db8aa4abf34722ced4542a1f6b52
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-fp8-dacgdpsaqw?file=checksums.blake3
+        checksum: blake3:b5fab09b1640d324afb7c1e8f0a1fd53763ec0f1767adeed1bf5a36e0b17f84c
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-fp8-dacgdpsaqw?file=config.json
+        checksum: blake3:501d33b92c2f7e8095ce0e5baf8d582145bc2ffb55fbc01f63fd26aa66bd7004
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-fp8-dacgdpsaqw?file=metadata.json
+        checksum: blake3:fabe32acb019473083b83b4cce2fd6a7beb7222fba754c2fb45ed91691925675
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-fp8-dacgdpsaqw?file=rank0.engine
+        checksum: blake3:066f295818d796cfbae5ce92d4a2157dd7c6ca92190f4e1d57503e2cb2575302
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-fp8-dacgdpsaqw?file=rank1.engine
+        checksum: blake3:0bc2b20f385df42a37ae1b7ab0865b57d644a6871606deeca7b93ff66141eed8
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 6832a9395f54086162fd7b1c6cfaae17c7d1e535a60e2b7675504c9fc7b57689
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-bf16-kuxndle3cq?file=checksums.blake3
+        checksum: blake3:36f25834fab7b0fad0c761abecbb4065d53ccf630866571f14dd2ebaa784b248
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-bf16-kuxndle3cq?file=config.json
+        checksum: blake3:2469d30dabec715f22540022faf355a4d2ab9e595a539730d4ad6ae64b9a6f8b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-bf16-kuxndle3cq?file=metadata.json
+        checksum: blake3:cfeb31df449eb5f6efa5dd5bf3856fea4279976dfcb05adf11b47c0459986eb8
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-bf16-kuxndle3cq?file=rank0.engine
+        checksum: blake3:636b19b9915b23c138cd93311f299eefcda9ff3ea086b5e50caf563520ba4f64
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-bf16-kuxndle3cq?file=rank1.engine
+        checksum: blake3:541c0af5bde5eede3632092f7fdb45c291efe5b740ae48a76f2398b7aa30a6d3
+- id: 6c3f01dd2b2a56e3e83f70522e4195d3f2add70b28680082204bbb9d6150eb04
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-fp8-8gnc6tbfeg?file=checksums.blake3
+        checksum: blake3:cbd71f55e53737feae5a094d99aca65436d1e7c53c4ff99aaa64516f7d8bf45e
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-fp8-8gnc6tbfeg?file=config.json
+        checksum: blake3:7be0786c2143a0995f1bebbcc4bbd08055d3f8e9eb4171f3bb3f219eab7a0dbf
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-fp8-8gnc6tbfeg?file=metadata.json
+        checksum: blake3:2023aa770ac47cf1dfac0d5cbf4b7b957442344575592c2d50e90ee3637ef4cf
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-fp8-8gnc6tbfeg?file=rank0.engine
+        checksum: blake3:84b3a0d2f2002689e7389f4bff1c0e601104a8b3c24b3052c6d1ad49f4e9aacb
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-fp8-8gnc6tbfeg?file=rank1.engine
+        checksum: blake3:1a9b50144c2408581c6acbcbc39c8d34741102fb55adabbda9387817a4063227
+- id: 6e29cf433044b5a90f50d4cd1ca2e48d1ecb62eb5fa6fa9fb6f8317da61eebb3
+  tags:
+    feat_lora: 'true'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-bf16-keck-zekdg?file=checksums.blake3
+        checksum: blake3:f93b948d884bb2fe547a103ced4e0c1383857dbe44d739b7bdc8b4accdf83ff3
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-bf16-keck-zekdg?file=config.json
+        checksum: blake3:ce50af9add3759d347e446a4570eb677b6134f45a68a76c75ba48d9bab0e6d60
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-bf16-keck-zekdg?file=metadata.json
+        checksum: blake3:1b4fe41f01e44bbe1cf196b7136077736ca6c8f21b81857084f1b38bd91ecb6d
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-lora-bf16-keck-zekdg?file=rank0.engine
+        checksum: blake3:921a0e76d8938b46ce0fef27f4b66c08c2d8288b6d95b664d3e41acd598f3408
+- id: 74eedaea9082525093f8346646709dc91efa7fd7ef2bc72d595feefaab94cf6f
+  tags:
+    feat_lora: 'true'
+    gpu: a100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-lora-bf16-vyryl-bzea?file=checksums.blake3
+        checksum: blake3:32ba75dae40ade0ba48fe92e6c3d2c59437c5e19f12165c70e1878656e220806
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-lora-bf16-vyryl-bzea?file=config.json
+        checksum: blake3:6901fb98fd79dc79403610c4f27b1180e3d2a9d86b3479992cc0d1b1b3833ce6
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-lora-bf16-vyryl-bzea?file=metadata.json
+        checksum: blake3:4998ac5a32c35cda4364e77d025fb9107c77361c09e853763ee4f1d9e4e73b8a
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:a100x1-throughput-lora-bf16-vyryl-bzea?file=rank0.engine
+        checksum: blake3:088cf483979a1dee3c5ad37c9e857ce0778996923820b215e6360334f0547561
+- id: 7b508014e846234db3cabe5c9f38568b4ee96694b60600a0b71c621dc70cacf3
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-fp8-gxyfetnz6w?file=checksums.blake3
+        checksum: blake3:706e40f10330defc4cd7beba28a422fc0a04462498f605d48d85ca78ead381ca
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-fp8-gxyfetnz6w?file=config.json
+        checksum: blake3:486c9e56b7e340243663d01142234dbb04ad94062668df3049babe3c84fa88ea
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-fp8-gxyfetnz6w?file=metadata.json
+        checksum: blake3:6853f3a91b6812009689880a619d2d1d99aa1a8b13e6883fab0e05941a69d5cb
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-fp8-gxyfetnz6w?file=rank0.engine
+        checksum: blake3:cb49177ea072229ec97dc14f719931d2e434fc958c1e9c284ba249d040ea7ac8
+- id: 7b8458eb682edb0d2a48b4019b098ba0bfbc4377aadeeaa11b346c63c7adf724
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 844ebe2b42df8de8ce66cbb6ecf43f90858ea7efc14ddf020cf1ae7450ae0c33
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '4'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=checksums.blake3
+        checksum: blake3:b8b74e87d112b1a257656406a40568d8753d2904a5b62979f1a01ce433a1218d
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=config.json
+        checksum: blake3:fa635b350b38b8d108b545928cbc35559c7ecb180bae4ac263083e3aa052462d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=metadata.json
+        checksum: blake3:b2c71a760930988cea5606982b555174b7c2ffcc10fa7da917aed6ef63d095fb
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=rank0.engine
+        checksum: blake3:665f76cce87b51ea131646ff41d3a3b3248682f644447ee1a3dbd41f2a703dd1
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=rank1.engine
+        checksum: blake3:b7064a466087d848e6804614ae5e1326de3f0b1efaf307d55248a1d1481c5ab0
+      trtllm_engine/rank2.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=rank2.engine
+        checksum: blake3:20efbbded92ae3f05c99eae5d13994b13856a9d53614ecbf6534e2ebf51f42bb
+      trtllm_engine/rank3.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx4-latency-bf16-nwzzy1yxsa?file=rank3.engine
+        checksum: blake3:8a6b9acca182c62cd61c570002a7169b6f364f04898d42e574b010aeb6a5fd22
+- id: 8b87146e39b0305ae1d73bc053564d1b4b4c565f81aa5abe3e84385544ca9b60
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-fp8-ryhfqvnmag?file=checksums.blake3
+        checksum: blake3:e6e2c8c1f99cc6ae3532fab2f96a72cccdc3f1923abefba6a8eca780c31bf088
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-fp8-ryhfqvnmag?file=config.json
+        checksum: blake3:38cfef15b947cfbd398e05a2d85b7b57189160892ffc7d463bb143be86d0339d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-fp8-ryhfqvnmag?file=metadata.json
+        checksum: blake3:28d1a6ac3897df107301f1d73ab38e86383f4f6688ad12b392ccc2e49ee59c81
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-fp8-ryhfqvnmag?file=rank0.engine
+        checksum: blake3:e3dc72e7d1742b44b09b1ea1061f791e5a6bc8558dbafd77e4c4e5791867bab7
+- id: 973a6bfbfc5d13fc5eb18f5011fab777a5bd257d5807e97f842a3364e82160dc
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-throughput-bf16-dwdvxxudra?file=checksums.blake3
+        checksum: blake3:b07f724e19be3bd3b50a24b819778c9340b6e1e671bb24607071e2e9f66f8416
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-throughput-bf16-dwdvxxudra?file=config.json
+        checksum: blake3:feb9e8b05133b7717e09fe633fc144f45b5eaf64a659c4c4358cc1fa0f19ca8a
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-throughput-bf16-dwdvxxudra?file=metadata.json
+        checksum: blake3:69c6c5c6faaf66d1d6331b56254f663a69e6bec9a62e1071771472997198c860
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-throughput-bf16-dwdvxxudra?file=rank0.engine
+        checksum: blake3:13db9e09d1f383ca10f31530a5bcbf7043c6a3d4312471dbad2fc7e45e8bc343
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-throughput-bf16-dwdvxxudra?file=rank1.engine
+        checksum: blake3:a24fd505774b2154bee1d42861a6d4396c9818fdf78a84bd3136989518353487
+- id: a4c63a91bccf635b570ddb6d14eeb6e7d0acb2389712892b08d21fad2ceaee38
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-bf16-t-mo-kcffw?file=checksums.blake3
+        checksum: blake3:c294bec553d93e9151dfdccf1fb56efe4e6b97c79445929c387d2fe826ce2d56
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-bf16-t-mo-kcffw?file=config.json
+        checksum: blake3:c89873873555e641268de4f8f3aab74dfa9e5c572bf1a1701be3da094babace1
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-bf16-t-mo-kcffw?file=metadata.json
+        checksum: blake3:ec443e519b1c9fffaac19a5534db510907e272c00d68b515014b88b3fa163569
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-bf16-t-mo-kcffw?file=rank0.engine
+        checksum: blake3:42a3509e195919a837804038f62b28214b38586f9bf6c4aea9b956638dde7637
+- id: a7baab3661c8376231396bf5529a78365892a33cc3416a11986fc2d96afcbcd8
+  tags:
+    feat_lora: 'true'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-bf16-bpth8t5eiq?file=checksums.blake3
+        checksum: blake3:a0e32460a07aa2406064bb7b5ab5b44abfdb5049391eed0be7e4944fd8ad7e04
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-bf16-bpth8t5eiq?file=config.json
+        checksum: blake3:b87cc4585ce4776f2eb4cc45d69e08b565be4c0ec1baf28a88c70190c2547f0c
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-bf16-bpth8t5eiq?file=metadata.json
+        checksum: blake3:9f755e48f9f535c18f6efbf15981b611bd65e27fefbb0ed4f5f53ab9627c68ba
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-bf16-bpth8t5eiq?file=rank0.engine
+        checksum: blake3:73a7b95d760b0639628478c3118b5dfe4eed2d4108bb3bc435de14153a634340
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: ac5071bbd91efcc71dc486fcd5210779570868b3b8328b4abf7a408a58b5e57c
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-bf16---dyivwz-q?file=checksums.blake3
+        checksum: blake3:b69ded72fceb5851d130dd2248c07a5f178dfd03b6c3d06cf181ed14f61863e5
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-bf16---dyivwz-q?file=config.json
+        checksum: blake3:140182dd1905812f10da8773619654960d7d98cf5eabf388372f4af2b9ad6b1d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-bf16---dyivwz-q?file=metadata.json
+        checksum: blake3:cbfc7dc0aa244339e7ac3fb287165aa44ed90b145eb7777e62c5daf561b64716
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-bf16---dyivwz-q?file=rank0.engine
+        checksum: blake3:3017e0c9be38681a4440ba461a5da41a270847e4c54a6c6a58f2b5c589977c21
+- id: ad17776f4619854fccd50354f31132a558a1ca619930698fd184d6ccf5fe3c99
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-fp8-tmxj-guvnq?file=checksums.blake3
+        checksum: blake3:6022e781f48cb9965339fee1497f9e6ae5d156bb508306c4388f0a49e9e7dbd7
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-fp8-tmxj-guvnq?file=config.json
+        checksum: blake3:717376772b9b692c8388858b78d4bc944a0d4b8d29de5b02499c8a099e738c34
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-fp8-tmxj-guvnq?file=metadata.json
+        checksum: blake3:2435092e1b6583458733573c58dca667941cdfeedfd74af93881be3f9fdbfb41
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx1-throughput-fp8-tmxj-guvnq?file=rank0.engine
+        checksum: blake3:d05df0f114590cadc4fb9975723485ea29fa6a89693c38471ea826181ee411dc
+- id: af876a179190d1832143f8b4f4a71f640f3df07b0503259cedee3e3a8363aa96
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-fp8-fypjwxvteg?file=checksums.blake3
+        checksum: blake3:af4c0c94f5eb549ab35b69664fbb154a941e3c6f034a0612175b0acb856edcd7
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-fp8-fypjwxvteg?file=config.json
+        checksum: blake3:a8db52d2bc65b748fcbcf9caca645e8428ba827152684c497261e487c0fdae58
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-fp8-fypjwxvteg?file=metadata.json
+        checksum: blake3:30d36cee359f197a5d92da21f60759e8ad7839038e9d2359217da92c53d6acec
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-fp8-fypjwxvteg?file=rank0.engine
+        checksum: blake3:3962c07e873ce9063c58378bd6afc241380b403f3fa1f07d247d396637145905
+- id: b3d535c0a7eaaea089b087ae645417c0b32fd01e7e9d638217cc032e51e74fd0
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-bf16-v7ragx4clg?file=checksums.blake3
+        checksum: blake3:e5321c257c0c286080d640ad819264615a884872fa2cc54c151b33a067f9ba6f
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-bf16-v7ragx4clg?file=config.json
+        checksum: blake3:8890c5566ed3d4fd4b5bb5efc27df9bfd618ec1c42138ca3a5d206fe2c0ce351
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-bf16-v7ragx4clg?file=metadata.json
+        checksum: blake3:bb511c79eb3406384b16faae20bfcd39c8bbca124cdae80bfcce77b819e7bde3
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-bf16-v7ragx4clg?file=rank0.engine
+        checksum: blake3:18907198b0820e6ab599bf10eded4980d874e910af29c7026e5e6a6b4ac289e5
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x2-latency-bf16-v7ragx4clg?file=rank1.engine
+        checksum: blake3:0eec83fab254cb2e55b7e38c12c10202d053637381414a36e45de098b7440f80
+- id: bae7cf0b51c21f0e6f697593ee58dc8a555559b4b81903502a9e0ffbdc1b67a9
+  tags:
+    feat_lora: 'true'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-fp8-yf0lfnd-iw?file=checksums.blake3
+        checksum: blake3:d020ee6e22caaee8ef242a2910bb4048b89447cef9c500049f852318d04eb742
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-fp8-yf0lfnd-iw?file=config.json
+        checksum: blake3:fee7f7e51f5095dccd66ca0534c93003f01d139c47de84140e0cb084757d6d1c
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-fp8-yf0lfnd-iw?file=metadata.json
+        checksum: blake3:a27d603891dba71e543f6b895766d230afdb25100e8a0efa7e3acf8e4a1d0b33
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x1-throughput-lora-fp8-yf0lfnd-iw?file=rank0.engine
+        checksum: blake3:13688683bff790a37dea2fa6a941556243f0bd8a563e0c45a81b6533aaca38a3
+- id: bc1cb24a237381e4c88a60a4d9cc253bb9b1bdeccb8a40e18602477e45ba814b
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: c4ff823a8202af4b523274fb8c6cdd73fa8ee5af16391a6d36b17f714a3c71a0
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-fp8-suylps8d3w?file=checksums.blake3
+        checksum: blake3:ac5d362d8211edb12ad653e508c51d939f5908883d2ec574478f05c1d7ef4732
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-fp8-suylps8d3w?file=config.json
+        checksum: blake3:fa9cb7e1c5a7d2adc019a4f841ee6701c09421209f63221fab23308f66d28aa5
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-fp8-suylps8d3w?file=metadata.json
+        checksum: blake3:17f40f23b334cd2e586d8d5391840c1a7705423a266e4109708236de0496b937
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-fp8-suylps8d3w?file=rank0.engine
+        checksum: blake3:b6394d09b4e0cc63d4aab11724b01751e86c565ac11382ef8b485b2ea7b82891
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-fp8-suylps8d3w?file=rank1.engine
+        checksum: blake3:8e5abbaa9f40885bd8c669b1fdd210f3ba6aad809436cdb99c35ef826446d405
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: cfe3c1b951b411cb952f7cafd7cef6543594dce1420f717612b00c6cecb5b7b4
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: d34cfb82d8fce4da83833dfd5391e27204bc0c98ebee938fcfe84df3fcdb002e
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: e4f217a5fb016b570e34b8a8eb06051ccfef9534ba43da973bb7f678242eaa5f
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-fp8-yjwupip7fg?file=checksums.blake3
+        checksum: blake3:ce5b5b37fd10eed2ebe0b42a84b486c69673033f4c272f956fb334fd3c70c3f9
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-fp8-yjwupip7fg?file=config.json
+        checksum: blake3:e1902eee189da20f6fc151841cc5db4ad92c42024241f581a12b77342b094a63
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-fp8-yjwupip7fg?file=metadata.json
+        checksum: blake3:c5aae49a4c34373a491f46341291c5a5194efe3d69a5b388c07054f9a82002dc
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-fp8-yjwupip7fg?file=rank0.engine
+        checksum: blake3:ea7a087b2b9eb7e4043ceb152d5a8c5e5778144e11f618eb03f4fe4945433cdd
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x2-latency-fp8-yjwupip7fg?file=rank1.engine
+        checksum: blake3:71dfc7a3fd9728d398ddc0ed804363e24d4129ffae6003e04fbbedf06dece82c
+- id: e7dbd9a8ce6270d2ec649a0fecbcae9b5336566113525f20aee3809ba5e63856
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-bf16-eexh16lpqa?file=checksums.blake3
+        checksum: blake3:85dfc9a96c98d2a0eaae1b6eb06df125ea714b956ac7e4ab12e3bd710893f0ac
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-bf16-eexh16lpqa?file=config.json
+        checksum: blake3:392df0a1cccd8f3ed08b0f749ff5ac6f046cb5dd9f13c71b0aee9af1e4f7e9dc
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-bf16-eexh16lpqa?file=metadata.json
+        checksum: blake3:42cb24c0534e27633e81abce107bdeec530fa76f5cc23cb4fd57a09098933942
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h100x1-throughput-bf16-eexh16lpqa?file=rank0.engine
+        checksum: blake3:e4b2e0f92372d2397a61227b038d4dbc6aa849ce8a5b3b4f2ef8046615009034
+- id: f44768c625db71a327cf17e750d5e1a8e60171a8d8ef6b4c1c4b57fe74c9bf46
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-bf16-zp-ue8jyww?file=checksums.blake3
+        checksum: blake3:8d3bf7de2d6f3d40196b6df685b414fe8275930f8e0f99ed43988406ed727bf6
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-bf16-zp-ue8jyww?file=config.json
+        checksum: blake3:6d5079a14db94cd6625f5731e1a6b969d76e1c44021abf935ea57045469bfd92
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-bf16-zp-ue8jyww?file=metadata.json
+        checksum: blake3:bd84e3db3c484f7f866f3a311ec73d8dc3ea5e9c57d0d01525141cc79fe22e11
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-bf16-zp-ue8jyww?file=rank0.engine
+        checksum: blake3:ca88e71c6ed7c77a0944374e11161e153d1cfe4beae90fe2a0229a5d62ba1d69
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:b200x2-latency-bf16-zp-ue8jyww?file=rank1.engine
+        checksum: blake3:f426b19285bd04716783144fbb7daddcb51c67d9e17f15e6eef173802525455e
+- id: f603fd56445cfe4f9448dfef2d9d1507465af46f1a0e60e9fb9796850bdbd7e6
+  tags:
+    feat_lora: 'true'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput-lora
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-bf16-mip-hpidkw?file=checksums.blake3
+        checksum: blake3:86d9f7850affd0241d144075799d47e6b5855569948791bb64d8613fcde65461
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-bf16-mip-hpidkw?file=config.json
+        checksum: blake3:cc99dcbb38d02f4a1b924139ef456769d1f20738b6b7b6db6228d130561c6058
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-bf16-mip-hpidkw?file=metadata.json
+        checksum: blake3:e4b5c1a39d51f867fb67bd14abcb07abc0b028c1b7f35c75489271bc9ef459c8
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:h200x1-throughput-lora-bf16-mip-hpidkw?file=rank0.engine
+        checksum: blake3:3280c69072cce2724207dd35155cdaf36e6dd7a3e182e3513fb0b2f02376e47f
+- id: f749ba07aade1d9e1c36ca1b4d0b67949122bd825e8aa6a52909115888a34b95
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:86827eaba75bd22196b3551cbcb138a556eff9fad9773a507518f570972d49e7
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:649102c07daeb30270d37d692c4db3ad949e84848a850bd28ec4a38ae0f06352
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:32ea67bd9bd5c1ad3e86bf7903a6f09e09706e97227f3bfcf3d67cf9bf4cbbbb
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:5d9e474d2c4f80e47cd629b9592d81a75f72e33aab54966095bbb3bfa9b4714a
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: fa36c3502e92c50f78a1906242f929864955e702b7dbfbdb19758fb7ee9aa811
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=README.md
+        checksum: blake3:f6321b263bd0212e46b87937f6ece520d0091a046f5d4e622de7db46718ac29f
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=checksums.blake3
+        checksum: blake3:ee4c97a0e2e63eae6abc2d512d1d4ec7ed265f593edc32f00d4134e6577f055f
+      config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=config.json
+        checksum: blake3:00eb3c3616739fe170cb6330023b4ca110b6862e7673bfc16182972087d50272
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=generation_config.json
+        checksum: blake3:ca2a80af1a62c585dd36a47f4e803db104f0f426e9dc3dac6c404916082b37e5
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tokenizer_config.json
+        checksum: blake3:2b5e2bf18f05321bdb7ede36187aabe121a0da7d7604436b2a1c93d7b8bf57a8
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:hf-30e8c65-nim-tool-calling-bf16?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-bf16-b8cnxgnvqa?file=checksums.blake3
+        checksum: blake3:00f116c0acd49e6619ac1f4b59715e44972ba1c1a7c4c3df53bbeed13d571f1b
+      trtllm_engine/config.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-bf16-b8cnxgnvqa?file=config.json
+        checksum: blake3:ef20688dae819feac91e124f786fd2b3cbedfab2263f89da71a0474c11ccab7b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-bf16-b8cnxgnvqa?file=metadata.json
+        checksum: blake3:53628f3bce6a1c51326a6584489c9d8f6d2f95122ba53663b91bd778e6428e65
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-bf16-b8cnxgnvqa?file=rank0.engine
+        checksum: blake3:bd2dbce167f29d779183e5528491646cd1eeb7747c83069745de7ba5e3501cd5
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/scb10x/llama3.1-typhoon2-8b-instruct:l40sx2-latency-bf16-b8cnxgnvqa?file=rank1.engine
+        checksum: blake3:22bf35be41344456694f7400f43adc33f8714f93615f1a4cbde77ddc8d341ea5

@@ -1,0 +1,65 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/nemotron-3.5-bolt-e4b-4gb
+release: 2.1.4
+profiles:
+- id: 49d044ed7854842deeafe1f515463c6fe798d98461c9cd2ab5643fd5eb072b26
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '32.0'
+    nim_json_args: '{"speculative_config": {"method": "dflash", "model": "dflash", "num_speculative_tokens": 7, "attention_backend": "flash_attn"}, "max_num_seqs": 256, "max_num_batched_tokens": 2048}'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=README.md
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=chat_template.jinja
+        checksum: blake3:ed4793678a2c0c6286120a43a74dc49cddda3043b02f1ebbaff8aee1eea7c864
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=checksums.blake3
+        checksum: blake3:d64ed614cb44bec62de724ef01b4c28bad36e405130a6f2f1a55d02aac829bd5
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=config.json
+        checksum: blake3:e2350103a31e2fd04daffda0acf776c902eea162b0ea8542a6681936a44772a6
+      dflash/README.md:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:dflash-hf-72dbe48?file=README.md
+        checksum: blake3:fa2d4d57bbb728dcfb97cb91b55da236b4ccd747fc880f9da5f810cc9bfdf0ff
+      dflash/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:dflash-hf-72dbe48?file=checksums.blake3
+        checksum: blake3:f2efd61d15ed29f7bb81a279bd84f17eec5134aef88790dcf16983f3566f38da
+      dflash/config.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:dflash-hf-72dbe48?file=config.json
+        checksum: blake3:32703367d33178db8001f54ffeae8f0edb6b21e4e8b78247a496fe5ed6c6c04d
+      dflash/model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:dflash-hf-72dbe48?file=model.safetensors
+        checksum: blake3:99aa996f5094cf45ad4597805ac10dacd8cd2297a356915ec7d0b748e8c9fdb1
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      handler.py:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=handler.py
+        checksum: blake3:17885bab581a510d6a71baf5b1b4fb0a4fee83b67638eccd94c7097beb5006cd
+      model-00001-of-00001.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=model-00001-of-00001.safetensors
+        checksum: blake3:c2906f1dfd0b6f00a33845d48909c9b5955d17bae301d522d46760512cad4fbc
+      model-frozen-shared-kv.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=model-frozen-shared-kv.safetensors
+        checksum: blake3:25e7650186fc9f0c255147863b0b6e05f923ebceb12e0d83d4774d720d99d17a
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=model.safetensors.index.json
+        checksum: blake3:41178c25e771e1307d1facccdbc1afafba0c33271c2cfe5ebf8c40f0eebad1cb
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-3.5-bolt-e4b-4gb:hf-be155ac?file=tokenizer_config.json
+        checksum: blake3:45f50a013eeef929a3570774bd17960e34235abd96f1f44c3afc913da98f0122
+  workspace_hash: cd41c00096cbaccacdbcd34f88447af6a4974c6337458280e5725a5ba1edb8ee

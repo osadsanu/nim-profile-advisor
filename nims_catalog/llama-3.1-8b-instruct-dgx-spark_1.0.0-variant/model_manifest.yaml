@@ -1,0 +1,73 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: llama-3.1-8b-instruct-dgx-spark
+release: 1.0.0
+profiles:
+- id: d83be36b36bc5dbc9b6f3121946caf72ccffcad895d94790b0d34a71e62664a6
+  tags:
+    feat_lora: 'false'
+    gpu_device: 2e12:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: dfc1cde41a9b4afed441c29a6dfd2386877ad2fcada07760e613bdf0865da361
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE.pdf:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=LICENSE.pdf
+      README.md:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=README.md
+      chat_template.jinja:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=chat_template.jinja
+      config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=config.json
+      generation_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=generation_config.json
+      hf_quant_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=hf_quant_config.json
+      model-00001-of-00002.safetensors:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=model-00001-of-00002.safetensors
+      model-00002-of-00002.safetensors:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=model-00002-of-00002.safetensors
+      model.safetensors.index.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=model.safetensors.index.json
+      special_tokens_map.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=special_tokens_map.json
+      tokenizer.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp4-bdb54e2?file=tokenizer_config.json
+- id: e7dd431bd6db4d4cc81c5aca9775251623dfafc9dc8e39093722fa9723cd976c
+  tags:
+    feat_lora: 'false'
+    gpu_device: 2e12:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: dfc1cde41a9b4afed441c29a6dfd2386877ad2fcada07760e613bdf0865da361
+    pp: '1'
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      LICENSE.pdf:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=LICENSE.pdf
+      README.md:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=README.md
+      config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=config.json
+      generation_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=generation_config.json
+      hf_quant_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=hf_quant_config.json
+      model-00001-of-00002.safetensors:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=model-00001-of-00002.safetensors
+      model-00002-of-00002.safetensors:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=model-00002-of-00002.safetensors
+      model.safetensors.index.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=model.safetensors.index.json
+      special_tokens_map.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=special_tokens_map.json
+      tokenizer.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nvstaging/nim/llama-3.1-8b-instruct-dgx-spark:hf-fp8-42d9515?file=tokenizer_config.json

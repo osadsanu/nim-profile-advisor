@@ -1,0 +1,329 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: qwen-2-5-7b-instruct
+release: 1.0.0-rc1
+profiles:
+- id: 5b6ca943a38e1df0c2341caad30c9a76a41aa1fdaa1611dd2dbcc975f5b8f707
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-latency-precision.fp16-q-cmqhmdha?file=checksums.blake3
+        checksum: blake3:d3d5c1592019cf17f8b06d98c35d4d676e9dfd4cab3c4097be88719d2ec8e936
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-latency-precision.fp16-q-cmqhmdha?file=config.json
+        checksum: blake3:2c1e9cd9e0b8a3b1b01274a0cf03928c6a299160353ded0ada913c3a495cf7a7
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-latency-precision.fp16-q-cmqhmdha?file=metadata.json
+        checksum: blake3:cf3204b0e6c3f1d1ce00924582d1a76e04bb9f87a14cbf7a746bf02c926fecd8
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-latency-precision.fp16-q-cmqhmdha?file=rank0.engine
+        checksum: blake3:e0ce373fc8ed0cb4b6b29c0255f89f89e618770435a15a6a5c8b2cb91115b266
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: a07eb1e9e154c3a218f575eeb5d868575455090322ab05c322d0ab93d7a770d5
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-throughput-precision.bf16-hykwhip6ma?file=checksums.blake3
+        checksum: blake3:ba263e56832413116b2d49184bc800399b4e52f7b73a804fe86f826aa0be4bb4
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-throughput-precision.bf16-hykwhip6ma?file=config.json
+        checksum: blake3:1d8a29088f9a43bb2ceeca75a64b52e8a41a5132fe416ce487ed87474aeff6d1
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-throughput-precision.bf16-hykwhip6ma?file=metadata.json
+        checksum: blake3:28cbd912c7ad7f3c71af15ab9160b0d37333e7adc5148db850aecb95682ec6f7
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-throughput-precision.bf16-hykwhip6ma?file=rank0.engine
+        checksum: blake3:fd048dca4d3e022b074c47e08476d1a18d552fdd2876e63c3ca3b11744dd712f
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00001-of-00004.safetensors
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00002-of-00004.safetensors
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00003-of-00004.safetensors
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00004-of-00004.safetensors
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00001-of-00004.safetensors
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00002-of-00004.safetensors
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00003-of-00004.safetensors
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model-00004-of-00004.safetensors
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: c3f4a2bbdbdf4304d01b73e0ab7bcad197e68e1c9f77389da1f3666fc6b2e420
+  tags:
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: balanced
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-balanced-precision.bf16-na7s5ejl9q?file=checksums.blake3
+        checksum: blake3:7cfeb3e641d035671453f933bcaea6c7d4e5883339ccec89d191444609193241
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-balanced-precision.bf16-na7s5ejl9q?file=config.json
+        checksum: blake3:5b6491c9e86db8d3d9da5b90bbc57628b23908193d82bed7aa6a7e032c75423a
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-balanced-precision.bf16-na7s5ejl9q?file=metadata.json
+        checksum: blake3:57fe6cf2eecc445813216033e95d4b11a653f9f1f9d3e8731d0900b58dec1a78
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-balanced-precision.bf16-na7s5ejl9q?file=rank0.engine
+        checksum: blake3:9385a6e9c1cb54e465a2fc6a98657db95870dd07f3891d8432603406920923d8
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: 67b7ebc82480c4f74c81f3da74db7fef37c6f7d3d65827d8c16926ffcb45679d
+  tags:
+    gpu: L20
+    gpu_device: 26ba:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:l20x1-throughput-precision.fp16-8ii--gyg6w?file=checksums.blake3
+        checksum: blake3:61fa646d54451b67a758ae1807c9933bc7f8173d87db46de1067b120a74b9b2d
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:l20x1-throughput-precision.fp16-8ii--gyg6w?file=config.json
+        checksum: blake3:393277e15032fd4cf154c54810901bb94c0ba9af338f61210edae2dc1df7c811
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:l20x1-throughput-precision.fp16-8ii--gyg6w?file=metadata.json
+        checksum: blake3:bdba3374821bfa63cf21780ccb5a1d6f76cdc85b16e08c3e930321fd736a3fa3
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:l20x1-throughput-precision.fp16-8ii--gyg6w?file=rank0.engine
+        checksum: blake3:72bbc1048e6c25a1555230188667b3041fdcc134d8b47ac19004915277afff60
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: 582445b82e81d3e9db3ad1cd9f891ce2923052768319cdefb67e45e0866432f3
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: balanced
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-balanced-precision.fp16-xsrodacxuq?file=checksums.blake3
+        checksum: blake3:29c7347d4bd789058181d9eb64122382b41fa7220fcb735b2d34658e0dd5fbbb
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-balanced-precision.fp16-xsrodacxuq?file=config.json
+        checksum: blake3:ec0d53af317f77eb47941801c468fa1606400423295997b3ec8c10512593d83d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-balanced-precision.fp16-xsrodacxuq?file=metadata.json
+        checksum: blake3:f266cfd461527af2ffeb4641b96336f3682bf3c95781da111204c5a54cec4877
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100-pcie-40gbx1-balanced-precision.fp16-xsrodacxuq?file=rank0.engine
+        checksum: blake3:985232f5c27ef10c2595186410f02daf618674d0f2bbc7308e73f485aef47e1c
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+- id: ee0d01038c07770250f2c006c60ad737a6a4d1d4466c104e76212e6098179069
+  tags:
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=LICENSE
+      README.md:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=README.md
+      config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=config.json
+      generation_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=generation_config.json
+      merges.txt:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=merges.txt
+      model.safetensors.index.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=model.safetensors.index.json
+      tokenizer.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer.json
+      tokenizer_config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=tokenizer_config.json
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-throughput-precision.bf16-udrspesh5q?file=checksums.blake3
+        checksum: blake3:6a973575f036092bd07770a4a30bfda5a56b9b49e98a46abb64241c5359de77f
+      trtllm_engine/config.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-throughput-precision.bf16-udrspesh5q?file=config.json
+        checksum: blake3:67a42e16a309f697951a9c61f60017c8fac41cf0e1cc93c1f6fa09fac02c72c1
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-throughput-precision.bf16-udrspesh5q?file=metadata.json
+        checksum: blake3:b5b5e4d81488b81bd24d41e4d9815e60af700138fb8c403b89094f1851dcebf2
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:a100x1-throughput-precision.bf16-udrspesh5q?file=rank0.engine
+        checksum: blake3:db97f63dc7d4d531b1b056a0ea1c3a1441e613598c4b617f811f368199cfc01c
+      vocab.json:
+        uri: ngc://nim/qwen/qwen-2.5-7b-instruct:hf-bb46c15-jet?file=vocab.json
+        

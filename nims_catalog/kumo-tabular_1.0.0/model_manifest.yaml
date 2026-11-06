@@ -1,0 +1,95 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: kumo-tabular
+release: 1.0.0
+profiles:
+- id: 06e55678feb1eb9fea0797cb069ff10f674c79215eca623e6d654dceb6437cbf
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: float16
+    size: medium
+  workspace:
+    files:
+      medium-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=medium/classifier.pt
+        checksum: blake3:ee57cc8a246efae8ef421d8f19d95fa5f284c1af2589c66654ffe1f260f45ba1
+      medium-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=medium/regressor.pt
+        checksum: blake3:59c9a21844a933e00ac6698510cc38853d071339f4bb6b4bec397d8544a7c574
+  workspace_hash: 352e0e0a047d358b713aea19da119d0ca0263343757cd3f0e0bac9d7efa47f74
+- id: 08c3dfecc935c8536d7d162194e9c169e9f86bbfb5d656531b17d1c70444d6ac
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: float16
+    size: small
+  workspace:
+    files:
+      small-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=small/classifier.pt
+        checksum: blake3:201ac0cbb7a222b88643eb88c742a599d928b1b8948b29dbe7b46ab0860022d3
+      small-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=small/regressor.pt
+        checksum: blake3:6d2c4df1d3c7cd29a6cb129f944bb2471ea44b6d59809f786bdd2f4386f3690a
+  workspace_hash: 963a33c983045c7f7ade014e161916c926108e96de7e61991cc496f7e6233524
+- id: 25b454576f2f77bd4d6427f937cf76ac964e052adbcf956fb0af8d9cf737df0d
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: bfloat16
+    size: small
+  workspace:
+    files:
+      small-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=small/classifier.pt
+        checksum: blake3:201ac0cbb7a222b88643eb88c742a599d928b1b8948b29dbe7b46ab0860022d3
+      small-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=small/regressor.pt
+        checksum: blake3:6d2c4df1d3c7cd29a6cb129f944bb2471ea44b6d59809f786bdd2f4386f3690a
+  workspace_hash: 963a33c983045c7f7ade014e161916c926108e96de7e61991cc496f7e6233524
+- id: 3fe5219c71e30c14665a376bd2dc6de9a66eaf671ec445394608941ee4be2dc3
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: bfloat16
+    size: large
+  workspace:
+    files:
+      large-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=large/classifier.pt
+        checksum: blake3:c0766c89bd4cf72b8c2b96ae47c5e365e9105aab40187f09f0fff99836a24d2b
+      large-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=large/regressor.pt
+        checksum: blake3:40ff527317249a0680954a269e92ea625ec37a9bf6ef6fef2d7bfccc431bd23a
+  workspace_hash: a2ad4d11f2b816544dfe65ee3031358dc0e2af051ec96b7b9c89b252e19d49cc
+- id: 685344dbf1698ad3d822658b76054823d526484c2aaeaa9f114c1e80ad5cbae2
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: float16
+    size: large
+  workspace:
+    files:
+      large-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=large/classifier.pt
+        checksum: blake3:c0766c89bd4cf72b8c2b96ae47c5e365e9105aab40187f09f0fff99836a24d2b
+      large-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=large/regressor.pt
+        checksum: blake3:40ff527317249a0680954a269e92ea625ec37a9bf6ef6fef2d7bfccc431bd23a
+  workspace_hash: a2ad4d11f2b816544dfe65ee3031358dc0e2af051ec96b7b9c89b252e19d49cc
+- id: b25e9530eee92c2c3e028da50ffe3f0510a7978c0a3127b1fe22d4d74085aba2
+  tags:
+    backend: sdm
+    model: kumo-tabular
+    precision: bfloat16
+    size: medium
+  workspace:
+    files:
+      medium-classifier.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=medium/classifier.pt
+        checksum: blake3:ee57cc8a246efae8ef421d8f19d95fa5f284c1af2589c66654ffe1f260f45ba1
+      medium-regressor.pt:
+        uri: symlink:///opt/sdm/artifacts/huggingface/models--nvidia--Kumo-Tabular/snapshots/4f0dca60610d68f933b978e17ff8f66be3ec3b5b?file=medium/regressor.pt
+        checksum: blake3:59c9a21844a933e00ac6698510cc38853d071339f4bb6b4bec397d8544a7c574
+  workspace_hash: 352e0e0a047d358b713aea19da119d0ca0263343757cd3f0e0bac9d7efa47f74

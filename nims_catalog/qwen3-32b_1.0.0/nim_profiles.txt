@@ -1,0 +1,47 @@
+- id: a2df598d4a8db85fe35d6dcc06a9d29a182916004b1bb362d67cae1027287701
+  tags:
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 232c:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+    free_gpu_memory_fraction: '0.9'
+    max_batch_size: '256'
+    max_num_tokens: '5255'
+    extra_llm_api_options: /opt/nim/extra-llm-api-config.yml
+
+- id: 1babcf07a50d04fb59c027a21006d6da5bc395305b77b3f1e90ca100bca3d674
+  tags:
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 232c:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+    free_gpu_memory_fraction: '0.9'
+    max_batch_size: '256'
+    max_num_tokens: '5255'
+    extra_llm_api_options: /opt/nim/extra-llm-api-config-fp8.yml
+
+- id: 40ebabe3e5ae0940af07de2559bca9615360dc2c388570748d9cfc77292ac2c4
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+    free_gpu_memory_fraction: '0.9'
+    max_batch_size: '256'
+    max_num_tokens: '5255'
+    extra_llm_api_options: /opt/nim/extra-llm-api-config.yml

@@ -1,0 +1,14 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/domino-drivsim
+release: 2.1.4
+profiles:
+- id: 6c493b5fb271f93464babbcfe316a77a0a565df06921990e1488e01aeb79e008
+  tags:
+    backend: pytorch
+  workspace:
+    files:
+      domino-drivsim.pt:
+        uri: ngc://nim/nvidia/domino-drivsim:1.4.0?file=domino-drivesim.pt
+        checksum: blake3:25d21178d332776e4985c5818a7f9e5d97aafdb47b29cf6a72f317717102f285
+  workspace_hash: b337ecffa602911a681192633ce8a36ea71e11e209b0df53284389da3f89b449

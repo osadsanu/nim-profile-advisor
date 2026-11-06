@@ -1,0 +1,92 @@
+release: 1.0.0
+schema_version: '2.0'
+model: wan-ai/wan2.2-animate-2-14b
+profile_selection_criteria: auto
+profiles:
+- id: 211239a1899c3d2121cff7b99afec8809db45905742ab641bbec3b7a3379047d
+  tags:
+    gpu: generic
+    precision: bf16
+    version: wan2.2-animate-2-14b
+  workspace:
+    files:
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/configuration.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-diffusers-a84c891-1?file=configuration.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/models_t5_umt5-xxl-enc-bf16.pth:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/models_t5_umt5-xxl-enc-bf16.pth
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/vae.pth:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/vae.pth
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/umt5-xxl/special_tokens_map.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/umt5-xxl/special_tokens_map.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/umt5-xxl/spiece.model:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/umt5-xxl/spiece.model
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/umt5-xxl/tokenizer.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/umt5-xxl/tokenizer.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/umt5-xxl/tokenizer_config.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/umt5-xxl/tokenizer_config.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/xlm-roberta-large/sentencepiece.bpe.model:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/xlm-roberta-large/sentencepiece.bpe.model
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/xlm-roberta-large/special_tokens_map.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/xlm-roberta-large/special_tokens_map.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/xlm-roberta-large/tokenizer.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/xlm-roberta-large/tokenizer.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/videomodel/Wan-AI/xlm-roberta-large/tokenizer_config.json:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=videomodel/Wan-AI/xlm-roberta-large/tokenizer_config.json
+
+      framework_model_dir/Wan2.2-Animate-2-14B/VID2VID/wan_animate_2/wan_animate_2_bf16.safetensors:
+        checksum: <<nochecksum>>
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-hf-3c1a1cc?file=wan_animate_2/wan_animate_2_bf16.safetensors
+
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-animate-2-14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+

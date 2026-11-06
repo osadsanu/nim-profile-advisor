@@ -1,0 +1,401 @@
+release: 1.0.0
+schema_version: '2.0'
+model: microsoft/trellis
+profile_selection_criteria: auto
+profiles:
+- id: 7ce6d27f47b2ae9e076714b14b14f0cac86a3ecf53cbf258d47970aac76b2c74
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: fp16
+    variant: 'large:text+large:image'
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:bf5d65723bdaec8af19eadebeed35fd5d4d3efb009e8064357b1b1160e156e25
+        uri: ngc://nim/microsoft/trellis:1.0.0-metadata?file=large-generic.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/image_encoder/dinov2_vitl14_reg4_pretrain.pth:
+        checksum: blake3:5313c472c7a2d4f2385bf8460b7c33ea3228c520f0d72d26e7b747c1d48c1ef7
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=image_encoder/dinov2_vitl14_reg4_pretrain.pth
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_gs/config.json:
+        checksum: blake3:11b80ca5719ef7dc2eec2f2aec7d82c66fa6b88942e0ad7cfc3524fc57b10217
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_gs/model.safetensors:
+        checksum: blake3:536c3dc6e05626ae14cdab89e43d51bf4aad85a361b4495d9feb21eab47d9ce1
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_mesh/config.json:
+        checksum: blake3:1420ee8dd0b6d25a8e5b0ad0c44b7ea10e025c4a75fc39a2c40f68292b60e42e
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_mesh/model.safetensors:
+        checksum: blake3:b377bb9607408d9ff08f2e7af402fc861f02271395978e0fa1ed26c8e3d7d3a8
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_rf/config.json:
+        checksum: blake3:11ce48bae477a171adcf82e90ed06263d62f77e92dccccfe8f69fd64bc3b3b3c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_decoder_rf/model.safetensors:
+        checksum: blake3:e5621e287cde1419e5967c69e5629e0e3426dc678c64dfb79750689d9dd41824
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_flow_model_text/config.json:
+        checksum: blake3:acfbc628832c35a00534326b7844fde6b55b4be29ac076d5a5b0aef4bc905eee
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_text/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_flow_model_text/model.safetensors:
+        checksum: blake3:f7a94e272f54728891ca52dab67795bed5fde9160648d70d845ffda888806909
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_text/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_decoder/config.json:
+        checksum: blake3:b4d23ed3982a119464c3c6ec954fbba452bbb83ad52b66fa16ae8be063f2c656
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_decoder/model.safetensors:
+        checksum: blake3:a33f7a7e3edddf302e4cbbb48b7a909e588afac6393a6a610ded62c6c8dc04b3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_flow_model_image/config.json:
+        checksum: blake3:2efc4d16c19602385e33054e4ff32867849366ac1ba860e38e5fdcf3f40a09d6
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_image/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_flow_model_image/model.safetensors:
+        checksum: blake3:61382831ea58d391df0574b93f0b00a5d1621e345345dfb1c4c73136757fe62a
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_image/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/config.json:
+        checksum: blake3:256ddac342ff5c42435ab6a25dc7fd1973cd44a892ee1e6e2a757e0eace90fa4
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/merges.txt
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/preprocessor_config.json:
+        checksum: blake3:2a7717a5dfbac23cd17e2610844c3d87631599a842609c2fbc9ba5d01573c2e2
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/preprocessor_config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/special_tokens_map.json:
+        checksum: blake3:619ae5e5cb385bdf16bf29f0151a78ec684ecf714ef3c152f7d178bc1f07634c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/special_tokens_map.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/tokenizer.json:
+        checksum: blake3:8da70f386debb2f514a23df2838c10f983d8fecb86459cc0afce594c8f6efd33
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/tokenizer.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/tokenizer_config.json:
+        checksum: blake3:524be81c6c0c821214c5e06aec9acf6a4723bc8ce1c812b4f89624ea04964b3d
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/tokenizer_config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/vocab.json:
+        checksum: blake3:1933eae25daadf9ce6ecbf884826181549a76817d3b5fcbd5cf6cb5baf8935c5
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/vocab.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/text_encoder/model.safetensors:
+        checksum: blake3:b049ed28769e3cea956ea8eb7bb4de14a103e888b1bf1bf78253e0ea4ee01646
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_flow_model_image/config.json:
+        checksum: blake3:de6423172685e603cab0a9638587b077cda70127d83f8b6534408356ee69326b
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_image/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/sparse_structure_flow_model_image/model.safetensors:
+        checksum: blake3:37ae218dc3110c230d6df22d26222ebd21cb45fd1b60b7d035d5072af36dc89a
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_image/model.safetensors
+      framework_model_dir/trellis-large/MULTIMODAL23D/u2net/u2net.onnx:
+        checksum: blake3:04be16bb01712f04397fd382522571a9ff88d45b1509f37b636dbfff227403ad
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=u2net/u2net.onnx
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_flow_model_text/config.json:
+        checksum: blake3:f7baff559426ab89648b5a43b0bbbfece09e683d017d9dec77e8f77f72a846f3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_text/config.json
+      framework_model_dir/trellis-large/MULTIMODAL23D/slat_flow_model_text/model.safetensors:
+        checksum: blake3:e6ba9852078b88e45dc6286fb47aefd93f3536895a386463eeb5b5f64a65bb49
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_text/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+- id: 8a7b5ca344c61411656710304a9b32eb80521b25d9b571a6f6571a9c4e4f4091
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: fp16
+    variant: 'large:text'
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:772f041fe251fbf6b9864aafea1c9dc1613072c9955ec98045e94f264af9f8cd
+        uri: ngc://nim/microsoft/trellis:1.0.0-metadata?file=large-text.json
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_gs/config.json:
+        checksum: blake3:11b80ca5719ef7dc2eec2f2aec7d82c66fa6b88942e0ad7cfc3524fc57b10217
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/config.json
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_gs/model.safetensors:
+        checksum: blake3:536c3dc6e05626ae14cdab89e43d51bf4aad85a361b4495d9feb21eab47d9ce1
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_mesh/config.json:
+        checksum: blake3:1420ee8dd0b6d25a8e5b0ad0c44b7ea10e025c4a75fc39a2c40f68292b60e42e
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/config.json
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_mesh/model.safetensors:
+        checksum: blake3:b377bb9607408d9ff08f2e7af402fc861f02271395978e0fa1ed26c8e3d7d3a8
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_rf/config.json:
+        checksum: blake3:11ce48bae477a171adcf82e90ed06263d62f77e92dccccfe8f69fd64bc3b3b3c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/config.json
+      framework_model_dir/trellis-large/TXT23D/slat_decoder_rf/model.safetensors:
+        checksum: blake3:e5621e287cde1419e5967c69e5629e0e3426dc678c64dfb79750689d9dd41824
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/sparse_structure_flow_model_text/config.json:
+        checksum: blake3:acfbc628832c35a00534326b7844fde6b55b4be29ac076d5a5b0aef4bc905eee
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_text/config.json
+      framework_model_dir/trellis-large/TXT23D/sparse_structure_flow_model_text/model.safetensors:
+        checksum: blake3:f7a94e272f54728891ca52dab67795bed5fde9160648d70d845ffda888806909
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_text/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/sparse_structure_decoder/config.json:
+        checksum: blake3:b4d23ed3982a119464c3c6ec954fbba452bbb83ad52b66fa16ae8be063f2c656
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/config.json
+      framework_model_dir/trellis-large/TXT23D/sparse_structure_decoder/model.safetensors:
+        checksum: blake3:a33f7a7e3edddf302e4cbbb48b7a909e588afac6393a6a610ded62c6c8dc04b3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/text_encoder/config.json:
+        checksum: blake3:256ddac342ff5c42435ab6a25dc7fd1973cd44a892ee1e6e2a757e0eace90fa4
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/config.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/merges.txt
+      framework_model_dir/trellis-large/TXT23D/text_encoder/preprocessor_config.json:
+        checksum: blake3:2a7717a5dfbac23cd17e2610844c3d87631599a842609c2fbc9ba5d01573c2e2
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/preprocessor_config.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/special_tokens_map.json:
+        checksum: blake3:619ae5e5cb385bdf16bf29f0151a78ec684ecf714ef3c152f7d178bc1f07634c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/special_tokens_map.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/tokenizer.json:
+        checksum: blake3:8da70f386debb2f514a23df2838c10f983d8fecb86459cc0afce594c8f6efd33
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/tokenizer.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/tokenizer_config.json:
+        checksum: blake3:524be81c6c0c821214c5e06aec9acf6a4723bc8ce1c812b4f89624ea04964b3d
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/tokenizer_config.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/vocab.json:
+        checksum: blake3:1933eae25daadf9ce6ecbf884826181549a76817d3b5fcbd5cf6cb5baf8935c5
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/vocab.json
+      framework_model_dir/trellis-large/TXT23D/text_encoder/model.safetensors:
+        checksum: blake3:b049ed28769e3cea956ea8eb7bb4de14a103e888b1bf1bf78253e0ea4ee01646
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=text_encoder/model.safetensors
+      framework_model_dir/trellis-large/TXT23D/slat_flow_model_text/config.json:
+        checksum: blake3:f7baff559426ab89648b5a43b0bbbfece09e683d017d9dec77e8f77f72a846f3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_text/config.json
+      framework_model_dir/trellis-large/TXT23D/slat_flow_model_text/model.safetensors:
+        checksum: blake3:e6ba9852078b88e45dc6286fb47aefd93f3536895a386463eeb5b5f64a65bb49
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_text/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+- id: c4ac2b36251be5c1cc3e6792ede219646c2c6dd83b18682d7521c318db8630a8
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: fp16
+    variant: 'large:image'
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:500ba0c64e8f21cb2fb007c52bb246a0377248fd6e1f3258fa00c8870692345f
+        uri: ngc://nim/microsoft/trellis:1.0.0-metadata?file=large-image.json
+      framework_model_dir/trellis-large/IMG23D/image_encoder/dinov2_vitl14_reg4_pretrain.pth:
+        checksum: blake3:5313c472c7a2d4f2385bf8460b7c33ea3228c520f0d72d26e7b747c1d48c1ef7
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=image_encoder/dinov2_vitl14_reg4_pretrain.pth
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_gs/config.json:
+        checksum: blake3:11b80ca5719ef7dc2eec2f2aec7d82c66fa6b88942e0ad7cfc3524fc57b10217
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/config.json
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_gs/model.safetensors:
+        checksum: blake3:536c3dc6e05626ae14cdab89e43d51bf4aad85a361b4495d9feb21eab47d9ce1
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_gs/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_mesh/config.json:
+        checksum: blake3:1420ee8dd0b6d25a8e5b0ad0c44b7ea10e025c4a75fc39a2c40f68292b60e42e
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/config.json
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_mesh/model.safetensors:
+        checksum: blake3:b377bb9607408d9ff08f2e7af402fc861f02271395978e0fa1ed26c8e3d7d3a8
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_mesh/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_rf/config.json:
+        checksum: blake3:11ce48bae477a171adcf82e90ed06263d62f77e92dccccfe8f69fd64bc3b3b3c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/config.json
+      framework_model_dir/trellis-large/IMG23D/slat_decoder_rf/model.safetensors:
+        checksum: blake3:e5621e287cde1419e5967c69e5629e0e3426dc678c64dfb79750689d9dd41824
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_decoder_rf/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/sparse_structure_decoder/config.json:
+        checksum: blake3:b4d23ed3982a119464c3c6ec954fbba452bbb83ad52b66fa16ae8be063f2c656
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/config.json
+      framework_model_dir/trellis-large/IMG23D/sparse_structure_decoder/model.safetensors:
+        checksum: blake3:a33f7a7e3edddf302e4cbbb48b7a909e588afac6393a6a610ded62c6c8dc04b3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_decoder/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/slat_flow_model_image/config.json:
+        checksum: blake3:2efc4d16c19602385e33054e4ff32867849366ac1ba860e38e5fdcf3f40a09d6
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_image/config.json
+      framework_model_dir/trellis-large/IMG23D/slat_flow_model_image/model.safetensors:
+        checksum: blake3:61382831ea58d391df0574b93f0b00a5d1621e345345dfb1c4c73136757fe62a
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=slat_flow_model_image/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/sparse_structure_flow_model_image/config.json:
+        checksum: blake3:de6423172685e603cab0a9638587b077cda70127d83f8b6534408356ee69326b
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_image/config.json
+      framework_model_dir/trellis-large/IMG23D/sparse_structure_flow_model_image/model.safetensors:
+        checksum: blake3:37ae218dc3110c230d6df22d26222ebd21cb45fd1b60b7d035d5072af36dc89a
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=sparse_structure_flow_model_image/model.safetensors
+      framework_model_dir/trellis-large/IMG23D/u2net/u2net.onnx:
+        checksum: blake3:04be16bb01712f04397fd382522571a9ff88d45b1509f37b636dbfff227403ad
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-large?file=u2net/u2net.onnx
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+- id: b1ee4caec2d53864d7038621b6c27eea29106fd727787b5f72fad8f6b763dbf7
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: fp16
+    variant: 'base:text'
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:57ed332ccd1f767e5a29322617ce810f0adfb9244fce80068cc5937e58c0989f
+        uri: ngc://nim/microsoft/trellis:1.0.0-metadata?file=base-text.json
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_gs/config.json:
+        checksum: blake3:11b80ca5719ef7dc2eec2f2aec7d82c66fa6b88942e0ad7cfc3524fc57b10217
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_gs/config.json
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_gs/model.safetensors:
+        checksum: blake3:536c3dc6e05626ae14cdab89e43d51bf4aad85a361b4495d9feb21eab47d9ce1
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_gs/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_mesh/config.json:
+        checksum: blake3:1420ee8dd0b6d25a8e5b0ad0c44b7ea10e025c4a75fc39a2c40f68292b60e42e
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_mesh/config.json
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_mesh/model.safetensors:
+        checksum: blake3:b377bb9607408d9ff08f2e7af402fc861f02271395978e0fa1ed26c8e3d7d3a8
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_mesh/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_rf/config.json:
+        checksum: blake3:11ce48bae477a171adcf82e90ed06263d62f77e92dccccfe8f69fd64bc3b3b3c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_rf/config.json
+      framework_model_dir/trellis-base/TXT23D/slat_decoder_rf/model.safetensors:
+        checksum: blake3:e5621e287cde1419e5967c69e5629e0e3426dc678c64dfb79750689d9dd41824
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_decoder_rf/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/slat_flow_model_text/config.json:
+        checksum: blake3:29c16bf68a7bda295410fe1911035348e29f578616e607d4e77b2be14a87c81f
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_flow_model_text/config.json
+      framework_model_dir/trellis-base/TXT23D/slat_flow_model_text/model.safetensors:
+        checksum: blake3:64306d66a977460a8bbf95d88ef3068940d7c8b141a3fe93a367b006a88b8919
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=slat_flow_model_text/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/sparse_structure_decoder/config.json:
+        checksum: blake3:b4d23ed3982a119464c3c6ec954fbba452bbb83ad52b66fa16ae8be063f2c656
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=sparse_structure_decoder/config.json
+      framework_model_dir/trellis-base/TXT23D/sparse_structure_decoder/model.safetensors:
+        checksum: blake3:a33f7a7e3edddf302e4cbbb48b7a909e588afac6393a6a610ded62c6c8dc04b3
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=sparse_structure_decoder/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/sparse_structure_flow_model_text/config.json:
+        checksum: blake3:ebdedcf158fb5a438cd6b10b94dd30a7a3545d10f1771ee386d4fde1fbd05885
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=sparse_structure_flow_model_text/config.json
+      framework_model_dir/trellis-base/TXT23D/sparse_structure_flow_model_text/model.safetensors:
+        checksum: blake3:4b331b56868573a13836c2289683b810c7e7726021784bc96220607d2ba9360c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=sparse_structure_flow_model_text/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/text_encoder/config.json:
+        checksum: blake3:256ddac342ff5c42435ab6a25dc7fd1973cd44a892ee1e6e2a757e0eace90fa4
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/config.json
+      framework_model_dir/trellis-base/TXT23D/text_encoder/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/merges.txt
+      framework_model_dir/trellis-base/TXT23D/text_encoder/model.safetensors:
+        checksum: blake3:b049ed28769e3cea956ea8eb7bb4de14a103e888b1bf1bf78253e0ea4ee01646
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/model.safetensors
+      framework_model_dir/trellis-base/TXT23D/text_encoder/preprocessor_config.json:
+        checksum: blake3:2a7717a5dfbac23cd17e2610844c3d87631599a842609c2fbc9ba5d01573c2e2
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/preprocessor_config.json
+      framework_model_dir/trellis-base/TXT23D/text_encoder/special_tokens_map.json:
+        checksum: blake3:619ae5e5cb385bdf16bf29f0151a78ec684ecf714ef3c152f7d178bc1f07634c
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/special_tokens_map.json
+      framework_model_dir/trellis-base/TXT23D/text_encoder/tokenizer.json:
+        checksum: blake3:8da70f386debb2f514a23df2838c10f983d8fecb86459cc0afce594c8f6efd33
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/tokenizer.json
+      framework_model_dir/trellis-base/TXT23D/text_encoder/tokenizer_config.json:
+        checksum: blake3:524be81c6c0c821214c5e06aec9acf6a4723bc8ce1c812b4f89624ea04964b3d
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/tokenizer_config.json
+      framework_model_dir/trellis-base/TXT23D/text_encoder/vocab.json:
+        checksum: blake3:1933eae25daadf9ce6ecbf884826181549a76817d3b5fcbd5cf6cb5baf8935c5
+        uri: ngc://nim/microsoft/trellis:1.0.0-pytorch-generic-base-text?file=text_encoder/vocab.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/microsoft/trellis:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json

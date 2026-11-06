@@ -1,0 +1,1164 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: google/gemma-4-26b-a4b-it
+release: 2.1.5
+profiles:
+- id: 32d10592dcf525b4d2c9a4633439d7994e2490620c1c3c6304028bbfdc7dae82
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: 3a040b9ece7b7982be46ec45e664afdc8d67a4eb64fa731f6e26216084526a13
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: 4c4664e33cac48e9cd21bb13736d9ee2e2ddf315de834f372021cb513d77cdb0
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition
+    gpu_device: 2c3a:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 4da944a52c25b70ab3320e3f0ef970b05969de64f7f8dbbda73f90a9c827e9cf
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 553587d6c365b37351c0fe541c6ae8e3996095b3b05844442b71dc1aaffc4a32
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 5d61e5a08eaa6012cb3a8a88ab9ce903f5abebf9d0e58add814923655898aa27
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '40.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 6174140d2cd2f0ac8290fbadda42bf7a63889c49a7e9fe97acfdc03d30f5889f
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 6ab503f01e5df97e59c7a8515aa0814e64a4af658d661c2b2eb4259b3b76555c
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: 6eeb3822b46ab3066a8c8c4352f2f2019a7fbc5fae0e3856269b5c1b39c24b16
+  tags:
+    compute_capability: '8.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '40.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 800f3c24e5bdaca88aebd04242be7765c65ac7abbfc9013c404d0ea0ddc9f6fc
+  tags:
+    compute_capability: '8.6'
+    feat_lora: 'false'
+    gpu: NVIDIA-A10G
+    gpu_device: 2237:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    nim_description: 'A10G-only context cap. The model''s native max_model_len 262144 needs 2.79 GiB of KV for a single request and this SKU has 1.81 GiB, so the profile cannot start unconfigured; vLLM''s own ceiling here is 159456. Measured on 4x A10G: 65536 yields a 130841-token KV pool (2.00x worst case, ~52 concurrent at 2.5k-token requests) at 410 tok/s and 55.6 tok/s/user at concurrency 8. Throughput is flat from 16384 upward, so the larger context costs nothing.'
+    nim_json_args: '{"max_model_len":65536}'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 8d6ff1969c18d7faaf1dc76ecea6589dcd8cd0e62208e040904f8e2c7cb01bc3
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    nim_description: throughput, agentic, ITL<20ms
+    nim_json_args: '{"attention_backend":"TRITON_ATTN","max_num_batched_tokens":4096}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 92059b9a00e7be1d98a6224eae4f69bb1c93ab7347fc9188c194b89b6e844977
+  tags:
+    compute_capability: '8.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-40GB
+    gpu_device: 20b0:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 935eb76859c7e607a33f300b2b001e019c39e9dc02c4d2549faf143ae594d904
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    nim_description: throughput-chunk4096
+    nim_json_args: '{"max_num_batched_tokens":4096}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: 95182fa8c0f5a4ee186c470c9b72eff836d552f01e968ff93562a1ecf3235618
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition
+    gpu_device: 2bb5:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: 95426de0160386fe6f61a4912d2008d50500669ec95cc622f2f67145045be380
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GH200-144G-HBM3e
+    gpu_device: 2348:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: a4d7ea1548f5e95c2eb3a52f4c55318f7adf5c8e11e871e5ff13aa66e4781f50
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: a6e7b0d4586a62db7ae97a65eddfe0f6b95a67290bfa80977b601174dd6dd462
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: ab41f585d33893fe7f2802bf9a75e19c80866236a0190b8d4f374a17452b217d
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GH200-480GB
+    gpu_device: 2342:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: c63ddaff4cd7307150315f24e11a9487bc223359d172cc4ee94862f7845c51c1
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition
+    gpu_device: 2c3a:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: cfc6ac772025c43b462569c6ef6c325f8670b673942830bf2cc971ef38b610b9
+  tags:
+    compute_capability: '8.9'
+    feat_lora: 'false'
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: cfd39267d953049be023d5dd79b6ed2f5424fe6e56db5834f223bbe821a120a3
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: dd0713b633ff6cbf8b1ba90334e8f345b6d18e918e95e77ff5ce3eb82e9e1d13
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417
+- id: e6b9d79d7736192b798c7795a16c414284cac81f62dba18700c3b1d758b2ed6c
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '80.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=README.md
+        checksum: blake3:baa3ddd81190b3284bc2f33cfd8f7ced069451d7005abd89d80023a84a449ce2
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=checksums.blake3
+        checksum: blake3:f88d9e9a0a6d3ce08b3b5abfa4b18e876d237807693df0cff0ac40adecb0dbe9
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=config.json
+        checksum: blake3:ec76c1f55466e0bf1e2b8d6d36103d500544524c976f39dbb8c52542011c785b
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:43fd0a3dca62b264b512cb0f9600ad736abffffbcc16f48384964480901e3007
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:cdf6f0106187f40b7f0f50dd30aface74789ba4e8b6c0bdb8c64e5156cd25368
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:8e50a3bcff8a37092a7b21e0f0456147d162ad8b4efe7d04d1d5727faebc1a7e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:ff2ff38fe2633ef756e8df89b96f5110db5f01677f1202fbb62792f769d567fc
+  workspace_hash: cfafa91c10865f62995d7e93758d96e048b92634d98b7ce579f043c694326666
+- id: ed1ade6ecabee39a9fe9c2ea370be96b1d3a2e546c24f503052d019137b578c3
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition
+    gpu_device: 2bb5:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '29.1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=README.md
+        checksum: blake3:3c018b843801da6a921971e316a82743ccafd1b4366f2ac2d7823f7bb9c28f35
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=checksums.blake3
+        checksum: blake3:1dc1b20af84ff1dc1193ac39f1335bdc9849c3dbc1f48f674020c6ae42059a22
+      config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=config.json
+        checksum: blake3:f39b366256f7c94005b0b348f3905ce8afcb942a1c043657b67f474af02ccd00
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=hf_quant_config.json
+        checksum: blake3:a4b0437fe88358b0ca9897b7cee4aff3afc81231a1ae6020162f939effadf631
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:b5e8222cce66ed011dbf954dd1d38827985025c5396071aa8aefbc5bc70cf99f
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:405dab73a83884839f462c369af37b84cdc9d4960b27a251a9b9b99ac6523196
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=model.safetensors.index.json
+        checksum: blake3:0877fdc5bb007b2f328cdf4d0ba5497d06c369784e0785cc50971b240910da64
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-26b-a4b-it:NVFP4-1.0?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: 02a3c05ad9288b20b0f80d74aa655a40dde7982d327c06de54d09993a9d8c417

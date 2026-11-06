@@ -1,0 +1,45 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/riva-translate-4b-instruct-v2
+release: 2.0.8
+profiles:
+- id: 04e131f0148183f3cab08f6db83f95fb15c9a40824c01cf0c721ed875de7c65b
+  tags:
+    llm_engine: vllm
+    min_vram_per_device_gb: '17.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=.gitattributes
+        checksum: blake3:31f6f58a80e0bd3c74f070c66897db328f87a209ced487b130fd59c05904c193
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=chat_template.jinja
+        checksum: blake3:33f6595edbfe742cd42c46c592c951fce7a0cdc0c95c1edf3a4260c41bc78abf
+      checksums.blake3:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=checksums.blake3
+        checksum: blake3:35149226a40a70a16f2b7ac2f3fd6d35339850d1f8355628a209fc1d01c5a55d
+      config.json:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=config.json
+        checksum: blake3:1eb1743e68eb2de67338583fa0fa16abae536333272debd611b0b97e30bf6c9b
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=model-00001-of-00002.safetensors
+        checksum: blake3:2021cdf55d5692e8b96e57178b25e4524dc17de52281e3e113301695e3e7a529
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=model-00002-of-00002.safetensors
+        checksum: blake3:3137b1f501eb3be2a4910665133ce09fdf40b9ba178d4ede7614b519741ddd90
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=model.safetensors.index.json
+        checksum: blake3:799458e835a59ec2be4e46fed0868077ef66a797b3d58ffce9fb82bcde39126b
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      tokenizer.json:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=tokenizer.json
+        checksum: blake3:2b1a3602df596f2247aa289d62fe37526ac59aac8f00f763880f62a8a880fd74
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/riva-translate-4b-instruct-v2:8d28b3a-v0?file=tokenizer_config.json
+        checksum: blake3:d9b8c27918719519780499733d969b6e1d7719535133b4dd2a55b5e8cb22c5af
+  workspace_hash: 6cea70eb2dc0d31b8fedc0bf4380430d719d285dd2dfe881779fd9e48ed0932b

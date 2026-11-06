@@ -1,0 +1,1065 @@
+# SPDX-FileCopyrightText: Copyright (c) 2024-2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+# property and proprietary rights in and to this material, related
+# documentation and any modifications thereto. Any use, reproduction,
+# disclosure or distribution of this material and related documentation
+# without an express license agreement from NVIDIA CORPORATION or
+# its affiliates is strictly prohibited.
+
+schema_version: '2.0'
+profile_selection_criteria: 05dfcd65c81b0f7250d8fdeb64d6bb9c3c7db5845fbbb5055cac21ba3a2b7b41
+model: nim/nvidia/nvclip-vit-h-14
+release: 1.0.5
+profiles:
+- id: 05dfcd65c81b0f7250d8fdeb64d6bb9c3c7db5845fbbb5055cac21ba3a2b7b41
+  tags:
+    default: generic
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.onnx:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.onnx
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.onnx:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.onnx
+      nvclip-vit-h-14/1/onnx__Add_6365:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__Add_6365
+      nvclip-vit-h-14/1/onnx__Expand_6362:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__Expand_6362
+      nvclip-vit-h-14/1/onnx__MatMul_6366:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6366
+      nvclip-vit-h-14/1/onnx__MatMul_6374:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6374
+      nvclip-vit-h-14/1/onnx__MatMul_6375:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6375
+      nvclip-vit-h-14/1/onnx__MatMul_6376:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6376
+      nvclip-vit-h-14/1/onnx__MatMul_6384:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6384
+      nvclip-vit-h-14/1/onnx__MatMul_6385:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6385
+      nvclip-vit-h-14/1/onnx__MatMul_6386:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6386
+      nvclip-vit-h-14/1/onnx__MatMul_6394:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6394
+      nvclip-vit-h-14/1/onnx__MatMul_6395:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6395
+      nvclip-vit-h-14/1/onnx__MatMul_6396:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6396
+      nvclip-vit-h-14/1/onnx__MatMul_6404:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6404
+      nvclip-vit-h-14/1/onnx__MatMul_6405:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6405
+      nvclip-vit-h-14/1/onnx__MatMul_6406:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6406
+      nvclip-vit-h-14/1/onnx__MatMul_6414:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6414
+      nvclip-vit-h-14/1/onnx__MatMul_6415:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6415
+      nvclip-vit-h-14/1/onnx__MatMul_6416:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6416
+      nvclip-vit-h-14/1/onnx__MatMul_6424:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6424
+      nvclip-vit-h-14/1/onnx__MatMul_6425:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6425
+      nvclip-vit-h-14/1/onnx__MatMul_6426:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6426
+      nvclip-vit-h-14/1/onnx__MatMul_6434:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6434
+      nvclip-vit-h-14/1/onnx__MatMul_6435:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6435
+      nvclip-vit-h-14/1/onnx__MatMul_6436:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6436
+      nvclip-vit-h-14/1/onnx__MatMul_6444:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6444
+      nvclip-vit-h-14/1/onnx__MatMul_6445:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6445
+      nvclip-vit-h-14/1/onnx__MatMul_6446:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6446
+      nvclip-vit-h-14/1/onnx__MatMul_6454:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6454
+      nvclip-vit-h-14/1/onnx__MatMul_6455:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6455
+      nvclip-vit-h-14/1/onnx__MatMul_6456:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6456
+      nvclip-vit-h-14/1/onnx__MatMul_6464:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6464
+      nvclip-vit-h-14/1/onnx__MatMul_6465:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6465
+      nvclip-vit-h-14/1/onnx__MatMul_6466:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6466
+      nvclip-vit-h-14/1/onnx__MatMul_6474:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6474
+      nvclip-vit-h-14/1/onnx__MatMul_6475:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6475
+      nvclip-vit-h-14/1/onnx__MatMul_6476:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6476
+      nvclip-vit-h-14/1/onnx__MatMul_6484:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6484
+      nvclip-vit-h-14/1/onnx__MatMul_6485:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6485
+      nvclip-vit-h-14/1/onnx__MatMul_6486:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6486
+      nvclip-vit-h-14/1/onnx__MatMul_6494:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6494
+      nvclip-vit-h-14/1/onnx__MatMul_6495:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6495
+      nvclip-vit-h-14/1/onnx__MatMul_6496:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6496
+      nvclip-vit-h-14/1/onnx__MatMul_6504:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6504
+      nvclip-vit-h-14/1/onnx__MatMul_6505:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6505
+      nvclip-vit-h-14/1/onnx__MatMul_6506:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6506
+      nvclip-vit-h-14/1/onnx__MatMul_6514:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6514
+      nvclip-vit-h-14/1/onnx__MatMul_6515:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6515
+      nvclip-vit-h-14/1/onnx__MatMul_6516:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6516
+      nvclip-vit-h-14/1/onnx__MatMul_6524:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6524
+      nvclip-vit-h-14/1/onnx__MatMul_6525:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6525
+      nvclip-vit-h-14/1/onnx__MatMul_6526:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6526
+      nvclip-vit-h-14/1/onnx__MatMul_6534:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6534
+      nvclip-vit-h-14/1/onnx__MatMul_6535:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6535
+      nvclip-vit-h-14/1/onnx__MatMul_6536:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6536
+      nvclip-vit-h-14/1/onnx__MatMul_6544:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6544
+      nvclip-vit-h-14/1/onnx__MatMul_6545:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6545
+      nvclip-vit-h-14/1/onnx__MatMul_6546:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6546
+      nvclip-vit-h-14/1/onnx__MatMul_6554:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6554
+      nvclip-vit-h-14/1/onnx__MatMul_6555:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6555
+      nvclip-vit-h-14/1/onnx__MatMul_6556:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6556
+      nvclip-vit-h-14/1/onnx__MatMul_6564:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6564
+      nvclip-vit-h-14/1/onnx__MatMul_6565:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6565
+      nvclip-vit-h-14/1/onnx__MatMul_6566:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6566
+      nvclip-vit-h-14/1/onnx__MatMul_6574:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6574
+      nvclip-vit-h-14/1/onnx__MatMul_6575:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6575
+      nvclip-vit-h-14/1/onnx__MatMul_6576:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6576
+      nvclip-vit-h-14/1/onnx__MatMul_6584:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6584
+      nvclip-vit-h-14/1/onnx__MatMul_6585:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6585
+      nvclip-vit-h-14/1/onnx__MatMul_6586:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6586
+      nvclip-vit-h-14/1/onnx__MatMul_6594:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6594
+      nvclip-vit-h-14/1/onnx__MatMul_6595:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6595
+      nvclip-vit-h-14/1/onnx__MatMul_6596:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6596
+      nvclip-vit-h-14/1/onnx__MatMul_6604:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6604
+      nvclip-vit-h-14/1/onnx__MatMul_6605:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6605
+      nvclip-vit-h-14/1/onnx__MatMul_6606:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6606
+      nvclip-vit-h-14/1/onnx__MatMul_6614:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6614
+      nvclip-vit-h-14/1/onnx__MatMul_6615:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6615
+      nvclip-vit-h-14/1/onnx__MatMul_6616:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6616
+      nvclip-vit-h-14/1/onnx__MatMul_6624:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6624
+      nvclip-vit-h-14/1/onnx__MatMul_6625:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6625
+      nvclip-vit-h-14/1/onnx__MatMul_6626:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6626
+      nvclip-vit-h-14/1/onnx__MatMul_6634:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6634
+      nvclip-vit-h-14/1/onnx__MatMul_6635:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6635
+      nvclip-vit-h-14/1/onnx__MatMul_6636:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6636
+      nvclip-vit-h-14/1/onnx__MatMul_6644:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6644
+      nvclip-vit-h-14/1/onnx__MatMul_6645:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6645
+      nvclip-vit-h-14/1/onnx__MatMul_6646:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6646
+      nvclip-vit-h-14/1/onnx__MatMul_6654:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6654
+      nvclip-vit-h-14/1/onnx__MatMul_6655:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6655
+      nvclip-vit-h-14/1/onnx__MatMul_6656:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6656
+      nvclip-vit-h-14/1/onnx__MatMul_6664:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6664
+      nvclip-vit-h-14/1/onnx__MatMul_6665:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6665
+      nvclip-vit-h-14/1/onnx__MatMul_6666:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6666
+      nvclip-vit-h-14/1/onnx__MatMul_6674:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6674
+      nvclip-vit-h-14/1/onnx__MatMul_6675:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6675
+      nvclip-vit-h-14/1/onnx__MatMul_6676:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6676
+      nvclip-vit-h-14/1/onnx__MatMul_6684:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6684
+      nvclip-vit-h-14/1/onnx__MatMul_6685:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fonnx__MatMul_6685
+      nvclip-vit-h-14/1/visual.conv1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.conv1.weight
+      nvclip-vit-h-14/1/visual.ln_post.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.ln_post.bias
+      nvclip-vit-h-14/1/visual.ln_post.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.ln_post.weight
+      nvclip-vit-h-14/1/visual.proj:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.proj
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.0.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.0.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.1.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.1.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.10.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.10.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.11.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.11.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.12.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.12.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.13.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.13.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.14.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.14.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.15.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.15.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.16.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.16.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.17.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.17.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.18.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.18.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.19.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.19.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.2.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.2.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.20.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.20.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.21.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.21.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.22.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.22.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.23.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.23.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.24.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.24.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.25.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.25.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.26.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.26.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.27.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.27.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.28.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.28.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.29.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.29.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.3.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.3.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.30.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.30.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.31.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.31.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.4.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.4.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.5.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.5.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.6.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.6.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.7.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.7.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.8.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.8.mlp.c_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.attn.in_proj_bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.attn.in_proj_bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.attn.out_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.attn.out_proj.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.attn.out_proj.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.attn.out_proj.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.ln_1.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.ln_1.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.ln_1.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.ln_1.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.ln_2.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.ln_2.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.ln_2.weight:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.ln_2.weight
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.mlp.c_fc.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.mlp.c_fc.bias
+      nvclip-vit-h-14/1/visual.transformer.resblocks.9.mlp.c_proj.bias:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2F1%2Fvisual.transformer.resblocks.9.mlp.c_proj.bias
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugeneric_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 140ed439c490059878dc8879b74ea90033350bcddd2b00b2b3ad76519cfb3535
+  tags:
+    backend: triton
+    gpu: l40s
+    gpu_device: 26b9:10de
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul40s_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul40s_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul40s_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: fd503a9c18276856474f6018aa5889950005132ff087739f7a1a43adc927172f
+  tags:
+    backend: triton
+    gpu: l4
+    gpu_device: 27b8
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul4_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul4_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpul4_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 81b154f8a559772a3e1192354538166ad68e7e9a81ddebddf4afb2ee940f7c2c
+  tags:
+    backend: triton
+    gpu: h100
+    gpu_device: "2330"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: c172dbfd4e51dee6ecf2938960763539c27f9ba59ea559bd685bebe2689faf49
+  tags:
+    backend: triton
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx6000-ada_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx6000-ada_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx6000-ada_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 9367a7048d21c405768203724f863e116d9aeb71d4847fca004930b9b9584bb6
+  tags:
+    backend: triton
+    gpu: a100
+    gpu_device: 20b2:10de
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua100_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua100_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua100_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 227d6ddb4fdb21c7d8968982c4deb168d7ef8729cf097aaf3178eda06446335e
+  tags:
+    backend: triton
+    gpu: h100-nvl
+    gpu_device: "2321"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-nvl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-nvl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-nvl_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 7c4119292272959bbb1f7f759c54b13457f583d92e8857ed0acd5e93b27d6a06
+  tags:
+    backend: triton
+    gpu: 5080-wsl
+    gpu_device: "2C02"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5080-wsl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5080-wsl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5080-wsl_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: e0ca2ec2230a21b45f986c4883c11658088ab0fd8db27aae390ef57dbe0359fe
+  tags:
+    backend: triton
+    gpu: rtx4090
+    gpu_device: "2684"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx4090_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx4090_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpurtx4090_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 6b831f71a16f631b02a04bf75dc59d44c194c015af2cc16502f01346060c0dac
+  tags:
+    backend: triton
+    gpu: h100-pcie
+    gpu_device: "2331"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-pcie_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-pcie_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpuh100-pcie_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: a8842f1dbfa9209b4e53be67e8aff0b3d89a7807d40345f69adf0cbca98ba958
+  tags:
+    backend: triton
+    gpu: 5090-wsl
+    gpu_device: "2B85"
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5090-wsl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5090-wsl_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpu5090-wsl_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: ef64b17e07abb04c17e80f72ab20ccc028c8874459998bb305b5b2cec2fdca24
+  tags:
+    backend: triton
+    gpu: a10g
+    gpu_device: 2237:10de
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua10g_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua10g_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpua10g_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt
+- id: 0f3f65dca8fc252950ec51891048f2d7c559a30a7bc8c5a1876a92f6d9704086
+  tags:
+    backend: triton
+    gpu: gh200-480gb
+    gpu_device: 2342:10de
+    precision: fp16
+    x: '1'
+  workspace:
+    files:
+      nvclip-vit-h-14/1/NVCLIP_224_700M_ViTH14.json:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2FNVCLIP_224_700M_ViTH14.json
+      nvclip-vit-h-14/1/model.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Fmodel.py
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_text.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugh200-480gb_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_text.plan
+      nvclip-vit-h-14/1/nvclip_clipa_vit_h14_700M_vision.plan:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugh200-480gb_x1?file=nvclip-vit-h-14%2F1%2Fnvclip_clipa_vit_h14_700M_vision.plan
+      nvclip-vit-h-14/1/utils.py:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5?file=nvclip-vit-h-14%2F1%2Futils.py
+      nvclip-vit-h-14/config.pbtxt:
+        uri: ngc://nim/nvidia/nvclip-vit-h-14:1.0.5-gpugh200-480gb_x1?file=nvclip-vit-h-14%2Fconfig.pbtxt

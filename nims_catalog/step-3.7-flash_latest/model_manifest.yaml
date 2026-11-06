@@ -1,0 +1,1199 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: stepfun-ai/Step-3.7-Flash
+release: 1.7.0
+profiles:
+- id: 0ccf043b639267631a7926f2c6b44799cc958864c0bd98c4ab34d2c140eeb6b4
+  tags:
+    feat_lora: 'false'
+    gpu: H20-3e
+    gpu_device: 232c:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 5aec6c1daa4889516633a9c6f756b1851d164004dec04c6bcd770ca2698aaed5
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=README.md
+        checksum: blake3:52bd43225400ae423787dbe8e7071e9f73c6d250603f48529a2cd92a3b3b18be
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=checksums.blake3
+        checksum: blake3:5463fd5bf2450419a711e14f253e7d4fc35fe5ad8186b614cf93995b364ed70b
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=config.json
+        checksum: blake3:052cee3103eaa7a6e0321c126cd9d1fcb425a30bc172c0a2fb6c0f2ab29661a7
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=configuration_step3p7.py
+        checksum: blake3:a49e2c0d6ee5cd4fc165faaeb5272462a0dab486b35513ee83ba6e4cd014e0ef
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00001.safetensors
+        checksum: blake3:612f7ce294ed5680c2ad3052d338ceeb4d02e1ba7e61eb86d493dca7e3e833e4
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00002.safetensors
+        checksum: blake3:ce56a0e9934a296d8ab4b89dd74e7849bfa0376da2d69c98e3caf774de125ff5
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00003.safetensors
+        checksum: blake3:3282c124d4ea082be9bc94f9ac67b23af7c6e542299238354791c66f748a2bba
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00004.safetensors
+        checksum: blake3:0e270922d72c74f84687a6d22480697021cd57c833b2b4488f7cc863699730c5
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00005.safetensors
+        checksum: blake3:1b45513db5adeea63aee67a6631e70cb17c84a92969322cb96a77fbab0455812
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00006.safetensors
+        checksum: blake3:50e63743af827790fdfbb1ac5a407ac64150b34caaaa6b16b3cbdbc08c82b6be
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00007.safetensors
+        checksum: blake3:290d20acd55840e626f44c8e1988f251791e200b880603a8cc7a313cea654ad9
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00008.safetensors
+        checksum: blake3:601637a8c759fffe573c2e17358b7a87b043f6b6a17be4a27b494e9f060e7fb0
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00009.safetensors
+        checksum: blake3:34841627c13d1f4e9b69fd93c74d12042b2d54fcf886b1ba6e59b7c633e3f1b0
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00010.safetensors
+        checksum: blake3:bda0f7c2c6541422a6b9724da2976fb79cf57fec35d133f4381c47d6ccfbe7b4
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00011.safetensors
+        checksum: blake3:ca03561f34be56f700cf754cee14a9cc644e33a19430e3277501d13e7af161f2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00012.safetensors
+        checksum: blake3:f6ec9574c261a73a39e21e078fe535aa65479e04b4d83fc970de13ff4fc3f158
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00013.safetensors
+        checksum: blake3:782366f8745f9d3dcfa3678409e8e6ca59c351dd5c2e9bcf9b50c89ccedc498a
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00014.safetensors
+        checksum: blake3:078a47e89f4a570323f0c0593253b573b768538974d582952933b448e65f713c
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00015.safetensors
+        checksum: blake3:0e03c1c237609c074c8b07d737158245a5a067bf11a895309676678815be9d08
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00016.safetensors
+        checksum: blake3:392ad92e09200ac3d3cca59defb9c5c9b085c75489389c8eb98540f2b7906cb7
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00017.safetensors
+        checksum: blake3:1bf7d58125f2df7f218c0d8a91e5f4ed33d7445ded64a8408e782f85ee9490f8
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00018.safetensors
+        checksum: blake3:f523da459482fc0a09e631324d9a68c4da990af1da2eb9fcd857fed9b02055fc
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00019.safetensors
+        checksum: blake3:fce3e6adc644108dc17576b2dbdaef6120ac88001950830fa56608c86c2e2b9a
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00020.safetensors
+        checksum: blake3:7771dc2962c55663514814e23f06ab38cc23d45118d42b9097954921ba16699d
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00021.safetensors
+        checksum: blake3:683afa7e46169d97781b5667a998dbb4aef168c8f26f4c70023c8b4604032e54
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00022.safetensors
+        checksum: blake3:891c737f6a622e9e789d47eadabefea9f5462f09f87538b559dc31a15581999c
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00023.safetensors
+        checksum: blake3:895e23fdf9fe51e475b8d6bbd5d072b34da8a9985b2345f6bef4652680aab7b9
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00024.safetensors
+        checksum: blake3:75734ef49b5070616a84850dd0643202f8f92a99926b8db9939995b990c25aac
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-vit-00001.safetensors
+        checksum: blake3:5d973611fa42a0ab4a8da2464a93f9ddab1dd8f7bc11cd5fc3ce22f2b203258b
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-vit-00002.safetensors
+        checksum: blake3:15f07bf51bd70fba35a424f4de7821a208ee1169181c2199681dffc986cd8c88
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 5c9bd57a3bb15d5369e3643fd6d5571bdf256b429f967f051a85a0b6a5e7d69c
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    profile: fallback
+    tp: '4'
+    vram: 400GiB
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=README.md
+        checksum: blake3:52bd43225400ae423787dbe8e7071e9f73c6d250603f48529a2cd92a3b3b18be
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=checksums.blake3
+        checksum: blake3:5463fd5bf2450419a711e14f253e7d4fc35fe5ad8186b614cf93995b364ed70b
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=config.json
+        checksum: blake3:052cee3103eaa7a6e0321c126cd9d1fcb425a30bc172c0a2fb6c0f2ab29661a7
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=configuration_step3p7.py
+        checksum: blake3:a49e2c0d6ee5cd4fc165faaeb5272462a0dab486b35513ee83ba6e4cd014e0ef
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00001.safetensors
+        checksum: blake3:612f7ce294ed5680c2ad3052d338ceeb4d02e1ba7e61eb86d493dca7e3e833e4
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00002.safetensors
+        checksum: blake3:ce56a0e9934a296d8ab4b89dd74e7849bfa0376da2d69c98e3caf774de125ff5
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00003.safetensors
+        checksum: blake3:3282c124d4ea082be9bc94f9ac67b23af7c6e542299238354791c66f748a2bba
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00004.safetensors
+        checksum: blake3:0e270922d72c74f84687a6d22480697021cd57c833b2b4488f7cc863699730c5
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00005.safetensors
+        checksum: blake3:1b45513db5adeea63aee67a6631e70cb17c84a92969322cb96a77fbab0455812
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00006.safetensors
+        checksum: blake3:50e63743af827790fdfbb1ac5a407ac64150b34caaaa6b16b3cbdbc08c82b6be
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00007.safetensors
+        checksum: blake3:290d20acd55840e626f44c8e1988f251791e200b880603a8cc7a313cea654ad9
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00008.safetensors
+        checksum: blake3:601637a8c759fffe573c2e17358b7a87b043f6b6a17be4a27b494e9f060e7fb0
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00009.safetensors
+        checksum: blake3:34841627c13d1f4e9b69fd93c74d12042b2d54fcf886b1ba6e59b7c633e3f1b0
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00010.safetensors
+        checksum: blake3:bda0f7c2c6541422a6b9724da2976fb79cf57fec35d133f4381c47d6ccfbe7b4
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00011.safetensors
+        checksum: blake3:ca03561f34be56f700cf754cee14a9cc644e33a19430e3277501d13e7af161f2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00012.safetensors
+        checksum: blake3:f6ec9574c261a73a39e21e078fe535aa65479e04b4d83fc970de13ff4fc3f158
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00013.safetensors
+        checksum: blake3:782366f8745f9d3dcfa3678409e8e6ca59c351dd5c2e9bcf9b50c89ccedc498a
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00014.safetensors
+        checksum: blake3:078a47e89f4a570323f0c0593253b573b768538974d582952933b448e65f713c
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00015.safetensors
+        checksum: blake3:0e03c1c237609c074c8b07d737158245a5a067bf11a895309676678815be9d08
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00016.safetensors
+        checksum: blake3:392ad92e09200ac3d3cca59defb9c5c9b085c75489389c8eb98540f2b7906cb7
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00017.safetensors
+        checksum: blake3:1bf7d58125f2df7f218c0d8a91e5f4ed33d7445ded64a8408e782f85ee9490f8
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00018.safetensors
+        checksum: blake3:f523da459482fc0a09e631324d9a68c4da990af1da2eb9fcd857fed9b02055fc
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00019.safetensors
+        checksum: blake3:fce3e6adc644108dc17576b2dbdaef6120ac88001950830fa56608c86c2e2b9a
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00020.safetensors
+        checksum: blake3:7771dc2962c55663514814e23f06ab38cc23d45118d42b9097954921ba16699d
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00021.safetensors
+        checksum: blake3:683afa7e46169d97781b5667a998dbb4aef168c8f26f4c70023c8b4604032e54
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00022.safetensors
+        checksum: blake3:891c737f6a622e9e789d47eadabefea9f5462f09f87538b559dc31a15581999c
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00023.safetensors
+        checksum: blake3:895e23fdf9fe51e475b8d6bbd5d072b34da8a9985b2345f6bef4652680aab7b9
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-00024.safetensors
+        checksum: blake3:75734ef49b5070616a84850dd0643202f8f92a99926b8db9939995b990c25aac
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-vit-00001.safetensors
+        checksum: blake3:5d973611fa42a0ab4a8da2464a93f9ddab1dd8f7bc11cd5fc3ce22f2b203258b
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model-vit-00002.safetensors
+        checksum: blake3:15f07bf51bd70fba35a424f4de7821a208ee1169181c2199681dffc986cd8c88
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-bf16-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 803041d68dc42697f5ae73d8134e82e36d58f79fdce7645cde11f8fe7a09b7dc
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: fallback
+    tp: '4'
+    vram: 240GiB
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 8829c938081b94dd025f1c0de83a8eb9864f84f1e195b02d5a462d6aa1bd62cf
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: a3ef56895ddd6d1459ed4116105a86462019492c09d608fd9234342cba3c8f74
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: fallback
+    tp: '2'
+    vram: 240GiB
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: ba8dbdb5da4ac8140039205cd74e81905ceb4dab357a075dc6a5e75c09e3c576
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: d28edc387ca82fdef3a738df46c863fc644549ef0b41daf23e9cd1854baa535c
+  tags:
+    ep: '4'
+    feat_lora: 'false'
+    gpu: H20
+    gpu_device: 2329:10de
+    llm_engine: vllm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=README.md
+        checksum: blake3:5a712ed992cb97c6b06642a366cb64eef2553ea0a7728fa43fed76bfa701d248
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=checksums.blake3
+        checksum: blake3:61f744efb34e67ea3fe316f198edbfcfcc9930af801b5a7b1d3f299ebdccc3f3
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=config.json
+        checksum: blake3:22404dd3341692b5193afa9a790d4c0805028128f447ee8fd6382b638159563b
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=configuration_step3p7.py
+        checksum: blake3:00db1294a87ce09a0b7b04b3b9c72597749ebe28ae2ad23025a501a6eef05a1e
+      model-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00001.safetensors
+        checksum: blake3:9d5c8752e59ac267358d94ab92cf7341b0c3b75a27c992900798f8a2f19fff43
+      model-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00002.safetensors
+        checksum: blake3:fb980eedeb724840d2b9316723edf0ac4cb90d8b165a4c44aa0d4e1ef5490d2c
+      model-00003.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00003.safetensors
+        checksum: blake3:47095b95f4d212353f5d9d068c5aeb60477efb72264aece3cc670375de40bb75
+      model-00004.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00004.safetensors
+        checksum: blake3:dca646db013931c5e78521d9a2a15e42ef1e9de17683a387cfdcfa657c9a5f59
+      model-00005.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00005.safetensors
+        checksum: blake3:efd3f0487a7533b3ee18057afbda8b108b514bd43c402a03fd557811bd14405c
+      model-00006.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00006.safetensors
+        checksum: blake3:70540459cb864e5c87691946a8605f63ed2d5b39a9c8b55d9a226f2a6f341d67
+      model-00007.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00007.safetensors
+        checksum: blake3:87926ca7d884bcee680db958541f833cbe2178464ff8d5ffdbbf33c4f88fdef1
+      model-00008.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00008.safetensors
+        checksum: blake3:3bf2401567971ab1a5eed59014272d5b6e8fdc0acf2f93f6fadf6370cca307d1
+      model-00009.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00009.safetensors
+        checksum: blake3:3d9a6e43660bd5278db0156150aa68ab1e205570d3cc0182797adde9df6497fc
+      model-00010.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00010.safetensors
+        checksum: blake3:10289d4a0fd790e3f660ef16ad4e3419ecdb039be802b99e8fbd9223007cdeb9
+      model-00011.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00011.safetensors
+        checksum: blake3:a844836f7d1a0c478b19469dddbcde0b76fb124cd444037f5b946cc503a823b2
+      model-00012.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00012.safetensors
+        checksum: blake3:240773a5862aa8058ee2c6fe958d412b6625e48228fbb1d1b2ee50e0a080376f
+      model-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00013.safetensors
+        checksum: blake3:9305eed1af3f860491228dd8df9f15d89404e6a869d086d47b2bbda795e2f9f4
+      model-00014.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00014.safetensors
+        checksum: blake3:5c61d2a1f2472382edebe20ae3f7a0d93ba3c581a4dceb0a767d9c8d96358a45
+      model-00015.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00015.safetensors
+        checksum: blake3:84196441318e651f830ec243d43299ab61d6c297a69493fb23b5256c2ac01314
+      model-00016.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00016.safetensors
+        checksum: blake3:4e80d39446a061dab24c664f9bf446e3216d0e2d26afda37c8ae4f499ee7f72b
+      model-00017.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00017.safetensors
+        checksum: blake3:d0b5948308fd2aec32a8a8834093bc2962a1b0219100d2fea4ea775a04f1c794
+      model-00018.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00018.safetensors
+        checksum: blake3:c7aebca92b695b7973976e64b0372ee9e26f875b92dc1a7640e5f418ef814c17
+      model-00019.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00019.safetensors
+        checksum: blake3:275f92e4d554625e41558f866e927e860bf631dac282428272a69f849a641b04
+      model-00020.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00020.safetensors
+        checksum: blake3:d4115c26e6cd840d433ebbfd689a9ea7c6c19c4a7b0765700301fb3bfbb91d96
+      model-00021.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00021.safetensors
+        checksum: blake3:1eab6429cacc9c8328eba26d1f3fa7e1595f8721fe19ad2b59fa3e3ae24f549a
+      model-00022.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00022.safetensors
+        checksum: blake3:1c5b2853f3032eb62457e8ab2a82a5ca612c6758a3fc9736f112728371a85004
+      model-00023.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00023.safetensors
+        checksum: blake3:50deaecb3dff4da9c1a59f659cb20bda761d834d20d5d66011ecb5bae96ea50d
+      model-00024.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-00024.safetensors
+        checksum: blake3:02c44f8093be91ad40efec95bde39db958d7dd2b6e80b7761f0b0812229e0bfa
+      model-vit-00001.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00001.safetensors
+        checksum: blake3:f5772f97eaf70a0ba517239ad34c931d854ede97882d67a330fdbbe7c7e686a4
+      model-vit-00002.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model-vit-00002.safetensors
+        checksum: blake3:56a553996bd7e46bbaa58e158d53c2d36798cf5eeae07d912ccd0daf61714704
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=model.safetensors.index.json
+        checksum: blake3:3f6aa7e63424622d3c9399758f1c417597299c7a6394f4a1f136b6f86497c4af
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer.json
+        checksum: blake3:3a2f2c4980e1335014dd0e4499d60aac0a5bc20d49ffa13c1d0aa7ddfe6c523b
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-fp8-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 1acc73e2139d9336d2ca85b2970b389c86a559ea8f2799004837d8a8fb61da22
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    profile: fallback
+    tp: '2'
+    vram: 140GiB
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=README.md
+        checksum: blake3:acb63f8cf3560098f92e8d1f6e4d30e669f2c68a9deeb6a577a60fb39eae4da3
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=checksums.blake3
+        checksum: blake3:35c501636e8d401d439d0e43546b24d85d359b323bf5f19037dd4aec11480a98
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=config.json
+        checksum: blake3:234fd6032a65ee4d061bdc7c37e0701394723e315e97a7b3654fdff2a881577f
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=configuration_step3p7.py
+        checksum: blake3:a49e2c0d6ee5cd4fc165faaeb5272462a0dab486b35513ee83ba6e4cd014e0ef
+      generation_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=generation_config.json
+        checksum: blake3:66272b32f49ac7403763065bdfeae2b2a9e6ec037f817203ec03b40df7f399d5
+      hf_quant_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=hf_quant_config.json
+        checksum: blake3:0b43a9fd6e49d27abf0c16d977c2aa729a5fa614bc2df77d22801362ea54add3
+      model-00001-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00001-of-00013.safetensors
+        checksum: blake3:868269fbed630ab3a13945e4cd92de4050743cddf8eb03b7bdd0e9626ccc975e
+      model-00002-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00002-of-00013.safetensors
+        checksum: blake3:7337fb31976a95aaf7dfc7715a3070273097f49b3679923c3f9b7edf4d55b322
+      model-00003-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00003-of-00013.safetensors
+        checksum: blake3:c676cc0b66755aae9aa2e55b336ebb95e6213412be9d153425670feeb67444f6
+      model-00004-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00004-of-00013.safetensors
+        checksum: blake3:2ac0c54cdd0fbbd771131c3843eb09c94be19e4a1a8bf93fe226526dce90113e
+      model-00005-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00005-of-00013.safetensors
+        checksum: blake3:b50914e3c597aa405e37aaf33895b9e5d7812f806fe0e78e81f58c63f533c2e9
+      model-00006-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00006-of-00013.safetensors
+        checksum: blake3:b81e97f9df150ca09456c419ac5de86774aea5d02f9e409e2ec9e9c08eb1d426
+      model-00007-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00007-of-00013.safetensors
+        checksum: blake3:dd71687222d5b50783151db28e4891e8b71d61cc8c7eab49fa24a0caf47167c4
+      model-00008-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00008-of-00013.safetensors
+        checksum: blake3:c8a1062957fe0d722e99a769279630ba1e52a09928b733ae7f595ae9eb3ac67b
+      model-00009-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00009-of-00013.safetensors
+        checksum: blake3:212d768c96599ccff7237439dbe37f2b435bf93e14a2a00469ab761de3f0790b
+      model-00010-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00010-of-00013.safetensors
+        checksum: blake3:70582c1bbe51889233da01eb5a9f0394b1952cb34a4d804e58e77a050b28eef9
+      model-00011-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00011-of-00013.safetensors
+        checksum: blake3:54727af63df2eea81a7f404d39f20b969ca5cd746a95af2463d9b67c72193535
+      model-00012-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00012-of-00013.safetensors
+        checksum: blake3:736dfc87957458f7a952fff160f67c6df0a19d6e34dacb14395260047d1f132f
+      model-00013-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00013-of-00013.safetensors
+        checksum: blake3:de88c767e35c09bdc4013017d0f18450abef60bd56d785750b18ac5025dad346
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model.safetensors.index.json
+        checksum: blake3:c2f92424c7360cd551f8444228ec81e835b2982f5bd0a929d51b2313e7e819d4
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=tokenizer.json
+        checksum: blake3:29f318bee1738c90de50a65276414029a0058e79b8a2c4177d16b11bf7911fb3
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314
+- id: 4c6c98d942ac770f39d1b828893ce1c484f24c1ecc88fbd66f3999796a813726
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    profile: fallback
+    tp: '1'
+    vram: 140GiB
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=README.md
+        checksum: blake3:acb63f8cf3560098f92e8d1f6e4d30e669f2c68a9deeb6a577a60fb39eae4da3
+      chat_template.jinja:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=chat_template.jinja
+        checksum: blake3:9d26bfb62e9ce11ed3cdf2350aea3450823057a8f6dbaabc9491a88a04d6492c
+      checksums.blake3:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=checksums.blake3
+        checksum: blake3:35c501636e8d401d439d0e43546b24d85d359b323bf5f19037dd4aec11480a98
+      config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=config.json
+        checksum: blake3:234fd6032a65ee4d061bdc7c37e0701394723e315e97a7b3654fdff2a881577f
+      configuration_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=configuration_step3p7.py
+        checksum: blake3:a49e2c0d6ee5cd4fc165faaeb5272462a0dab486b35513ee83ba6e4cd014e0ef
+      generation_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=generation_config.json
+        checksum: blake3:66272b32f49ac7403763065bdfeae2b2a9e6ec037f817203ec03b40df7f399d5
+      hf_quant_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=hf_quant_config.json
+        checksum: blake3:0b43a9fd6e49d27abf0c16d977c2aa729a5fa614bc2df77d22801362ea54add3
+      model-00001-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00001-of-00013.safetensors
+        checksum: blake3:868269fbed630ab3a13945e4cd92de4050743cddf8eb03b7bdd0e9626ccc975e
+      model-00002-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00002-of-00013.safetensors
+        checksum: blake3:7337fb31976a95aaf7dfc7715a3070273097f49b3679923c3f9b7edf4d55b322
+      model-00003-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00003-of-00013.safetensors
+        checksum: blake3:c676cc0b66755aae9aa2e55b336ebb95e6213412be9d153425670feeb67444f6
+      model-00004-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00004-of-00013.safetensors
+        checksum: blake3:2ac0c54cdd0fbbd771131c3843eb09c94be19e4a1a8bf93fe226526dce90113e
+      model-00005-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00005-of-00013.safetensors
+        checksum: blake3:b50914e3c597aa405e37aaf33895b9e5d7812f806fe0e78e81f58c63f533c2e9
+      model-00006-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00006-of-00013.safetensors
+        checksum: blake3:b81e97f9df150ca09456c419ac5de86774aea5d02f9e409e2ec9e9c08eb1d426
+      model-00007-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00007-of-00013.safetensors
+        checksum: blake3:dd71687222d5b50783151db28e4891e8b71d61cc8c7eab49fa24a0caf47167c4
+      model-00008-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00008-of-00013.safetensors
+        checksum: blake3:c8a1062957fe0d722e99a769279630ba1e52a09928b733ae7f595ae9eb3ac67b
+      model-00009-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00009-of-00013.safetensors
+        checksum: blake3:212d768c96599ccff7237439dbe37f2b435bf93e14a2a00469ab761de3f0790b
+      model-00010-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00010-of-00013.safetensors
+        checksum: blake3:70582c1bbe51889233da01eb5a9f0394b1952cb34a4d804e58e77a050b28eef9
+      model-00011-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00011-of-00013.safetensors
+        checksum: blake3:54727af63df2eea81a7f404d39f20b969ca5cd746a95af2463d9b67c72193535
+      model-00012-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00012-of-00013.safetensors
+        checksum: blake3:736dfc87957458f7a952fff160f67c6df0a19d6e34dacb14395260047d1f132f
+      model-00013-of-00013.safetensors:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model-00013-of-00013.safetensors
+        checksum: blake3:de88c767e35c09bdc4013017d0f18450abef60bd56d785750b18ac5025dad346
+      model.safetensors.index.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=model.safetensors.index.json
+        checksum: blake3:c2f92424c7360cd551f8444228ec81e835b2982f5bd0a929d51b2313e7e819d4
+      modeling_step3p7.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=modeling_step3p7.py
+        checksum: blake3:1009d2eecdc8e7be44c9db2848de33c41c716a02a853f6fa9544d90830d5f81a
+      processing_step3.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=processing_step3.py
+        checksum: blake3:a16d02f864a2dd6a89cbb7bacd3813626c725a2033af03862f6c717d754d0223
+      special_tokens_map.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=special_tokens_map.json
+        checksum: blake3:05da1a64cdfc64c8dc68fa9f0908a8b465d09b0d350e288622eef805e5ebcf1b
+      tokenizer.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=tokenizer.json
+        checksum: blake3:29f318bee1738c90de50a65276414029a0058e79b8a2c4177d16b11bf7911fb3
+      tokenizer_config.json:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=tokenizer_config.json
+        checksum: blake3:69bd2b0062605eb7ce478a5e026a1bdb826063023974b768892926c86030b603
+      vision_encoder.py:
+        uri: ngc://nim/stepfun-ai/step-3.7-flash:nim-nvfp4-260528?file=vision_encoder.py
+        checksum: blake3:d532acf78fdbb019a6ae1ca2f2d19376526725d615fd7f77a74ca8426fe7e314

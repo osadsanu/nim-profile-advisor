@@ -1,0 +1,709 @@
+02cee7cbfc5220c3f3985efd8ebc50f6f9213e54423473ff9b4b47488b9a979c:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+
+1a2fb3ee0e0884af718b0a873a97943807e6c8e65752e0152f660cf8bb050ca5:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-h100x4-fp8-throughput.1.1.2.17651464
+
+23bdedf06cff4ac4c7b2c2c8e9270078c8335e108bda5053584c66056cd20ac2:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+
+2beef5c6bf0a090976bef6b37106caf86e2ff5449230ad6b7827a8f682ccf639:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-h100x8-fp8-latency.1.1.2.17651464
+
+342929e7be7a48dd84912c28daba67840a857c053abdd10a9c2ca5ebd21fcfc2:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-l40sx4-fp8-throughput.1.1.2.17651464
+
+3b91bbe66d41c657991f47f6f07a9dda07f1921093af5351c660546d082f2310:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-a10gx8-fp16-throughput.1.1.2.17661925
+
+498d62ce1b31899bb8f361ebc63bde09e1d2b9ed6ab5cd703c034d0c217dbf5b:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-a100x4-fp16-throughput.1.1.2.17651464
+
+631a13725f7b6514b66b27229e200d351dbe9f4124b852761b97fdacb9d9013c:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+
+789aeaf307abaeeef62c00efa304707e3eb7921b340a38af76e51860895959e2:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-h100x4-fp16-throughput-lora.1.1.2.17651464
+
+9b98c8ad2c5087c0bdce4c4a1d53acc1d2a52e94f202ed779d3e21e6b9bab46e:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+
+c823365b7243110097ad65e6ed776a360bc9f68c3329531ac855fd78b0490e65:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-a100x4-fp16-throughput-lora.1.1.2.17651464
+
+dc1e49a144cc34af070b908ce53ba130c1eee7815ad1c3ec67a29a1b2b33258f:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+
+e2491c63690aafd4805663f010beb105266f2d8bca79a54cf5c8f2b9cd832111:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-h100x4-fp16-throughput.1.1.2.17651464
+
+e94ebd84fa993f4b6bd079d08f198dd6d87507fe2e9b12a8b80a1ebe65e96bab:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-h100x8-fp16-latency.1.1.2.17651464
+
+f225de06366a3a3799886a759573a2a8ec398facca92f5c43df39c2f4e5a64c6:
+  container_url: nvcr.io/nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0.1:1.1.2
+  model: tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'logo.png'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:hf-6e5d6c5
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/tokyotech-llm/llama-3-swallow-70b-instruct-v0_1:0.11.1+14957bf8-a100x8-fp16-latency.1.1.2.17651464

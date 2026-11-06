@@ -1,0 +1,465 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: bielik-11b-v2.3-instruct
+release: 1.8.4
+profiles:
+- id: 257676d4adc1231dc4fced1c4cb2caf129787edb6084fb135b7013510bb91ff5
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: 2a916b3e7ecd40f6df56c8dd61d64ab899aee75bfd9847b36b15764643cdc48f
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: 377feca1f377e4d8db0fc1559bbb490c208509fb74caac504a178274c33aa347
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp16
+    tp: '8'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: 3e6dd068d1ea06c5f8d03ace6daac547107736f11de0849402067cc8b06b5e36
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: 57c974c8ae09b36f4a8de2e1a7fe906ced92a20937d9dfd6de65007c42b4611a
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: 61c6a4402bd4c6824eb276610e3687422ae3413b296a6a751d642332fa80cc8c
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    tp: '8'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: a013722e099e03215c6dca5275d7fb8d6dafa3fc7bb56a5d5fd85d3214bac26e
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: fp16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6
+- id: ad710ff2dfbf80835798f51ccd0b840de8c89eeece2668498cf9dd6734d11634
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=README.md
+        checksum: blake3:98701d8b325b79c6ac8bd14c6da38c2e78c39330638cea68a7a94db34cb423e3
+      added_tokens.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=added_tokens.json
+        checksum: blake3:0ad77737da412566a72c133cbcf0217ef1937fe12bee641cef8d5023ec7eb53b
+      checksums.blake3:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=checksums.blake3
+        checksum: blake3:fc8d489e8cd72f6a49fba2d10fd4a6210b98e6483549a14207390cff70dbb0c7
+      config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=config.json
+        checksum: blake3:264eb9630c9862c37e21d8b8f2b8be8e225c77810a1dcd0f99af2840e78c4358
+      generation_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=generation_config.json
+        checksum: blake3:61cbe1562c5bd6bd53d6c89ad6de214a8a125ea689d10d18570abacb623b8367
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00001-of-00005.safetensors
+        checksum: blake3:20c3028c90d8eaf0bfb94075657a3d885997b1319b2d6b729dddaacf0b7de4a2
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00002-of-00005.safetensors
+        checksum: blake3:94fd58f8e486017213d40149bcccf89fdfaeb6af367c9cbf3200925a567e3f2c
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00003-of-00005.safetensors
+        checksum: blake3:a7fcd405788288c9b026b6a3139040782ebc5a2508283b5b37d3238a9ed0d18d
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00004-of-00005.safetensors
+        checksum: blake3:fc0a6b4e8aaa1a81f9db282d3f59406d7963e7c1c4badfcae3de77ae5bfe0f65
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model-00005-of-00005.safetensors
+        checksum: blake3:b5b27d76962cca2d7605c48fb0feeeaf73d0fe169adb6ca9a2984981c15c7f87
+      model.safetensors.index.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=model.safetensors.index.json
+        checksum: blake3:b3bf8bf33252144cd6650bf1fcc47f2399668c9b8fde58db9afe50fec7b3dff2
+      params.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=params.json
+        checksum: blake3:65000175a9d3c3e32360f4bf112091f39887cfaa7fbf652046dfbeb499330b30
+      special_tokens_map.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=special_tokens_map.json
+        checksum: blake3:07eedfcec4fe60fac803c2a75021dd2e1cb7b55c6fe1fc4aaa12ef8f47af5787
+      tokenizer.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.json
+        checksum: blake3:4dc429acf9c0a79942109068431e840f873e0e56e173bb0b7bc7f1e3f87ad57b
+      tokenizer.model:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer.model
+        checksum: blake3:7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6
+      tokenizer_config.json:
+        uri: ngc://nim/speakleash/bielik-11b-v2.3-instruct:hf-aa52f44?file=tokenizer_config.json
+        checksum: blake3:20d80798a2b764c18c591c6cd47a804089064db8c1a2c4e87ef450303d0a64f6

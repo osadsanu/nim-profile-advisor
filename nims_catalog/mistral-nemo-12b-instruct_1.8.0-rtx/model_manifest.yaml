@@ -1,0 +1,418 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia-mistralai/mistral-nemo-12b-instruct
+release: 1.8.0-rtx
+profiles:
+- id: 27221813de156611e7bffcaf0a1ee5268f85ad319e76714be372b41ff1d48837
+  tags:
+    feat_lora: 'false'
+    gpu: RTX5080
+    gpu_device: 2c02:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: int4_awq
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      trtllm_engine/runtime_params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:runtime_scheduler_max_8192?file=runtime_params.json
+        checksum: blake3:aac2ea38ee172d6f539842065533a8e5fd6860ca86eb6d18d05239730f9a9cbf
+      README.md:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=README.md
+        checksum: blake3:913aaa77ca317f57b23731cbcef86c0837f2012459bbb4edfee5596c229feb7a
+      checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=checksums.blake3
+        checksum: blake3:279eb78b71d52d2265172e444fe33863281bd35aa7f6f6a9b3100a368a169dcd
+      config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=config.json
+        checksum: blake3:ef49c78983f5b7a944ce14ee63af0e14d0d243e809f60a310ba2b017b4477b0a
+      generation_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=generation_config.json
+        checksum: blake3:dfaa72e9d563fd2c833c3f6dc57be5d70860745b2fbb1d2c3c7fff909e0b501d
+      merges.txt:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=merges.txt
+        checksum: blake3:a28e067bf75b951e474a9592e18d5b227b6d7cf9c59f0fea36f17064dd40e68d
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00001-of-00005.safetensors
+        checksum: blake3:16d91b0340bf9fed78152857171e39bf0dcb80a7ccced4396f369b7df0a6b031
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00002-of-00005.safetensors
+        checksum: blake3:b88eb4c35a2467811c01594a4dba943cf81fa6caaf387af0adcaedb04f6b057d
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00003-of-00005.safetensors
+        checksum: blake3:0c0e76f45979ddb68b5b9808ea9a1d65da7ec058ff2f73c5ffede589abfdb30f
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00004-of-00005.safetensors
+        checksum: blake3:8cf33c9cc8dcfcd7849fb06cd52fca42b7820808ef130b63f9fc53541f69beda
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00005-of-00005.safetensors
+        checksum: blake3:0a94e2dbe8273eb889c8ddbbb1efa18aacebce6b8b6b5d8674c31c2e5e5d5c47
+      model.safetensors.index.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model.safetensors.index.json
+        checksum: blake3:ba2e305f2ec7858f167c24389ca847519375096638bf72f7d82bc88637837a36
+      params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=params.json
+        checksum: blake3:d8fef5d0439551f4885cd9ec2174c0cc2684795d1971af59adedcc99c362b446
+      special_tokens_map.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tekken.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tekken.json
+        checksum: blake3:ac5c47d99f7ecd8b8e8a429d4ac54719e13bb486d7ca18af4c6ae1f290c25c70
+      tokenizer.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer.json
+        checksum: blake3:5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98
+      tokenizer_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer_config.json
+        checksum: blake3:5016aae4d11250d150b9b9c8518ab2dc40845b5a82344765366ff037823ba76e
+      tool_use_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tool_use_config.json
+        checksum: blake3:c2ba2528cf6330a99a9339c12ef8c2a18dadd3a4fedd304f1005769ec0a6e4b8
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5080x1-throughput-int4-awq-qcontivg8g?file=checksums.blake3
+        checksum: blake3:4d0620bab92de3f0d7d0b59479ee5b7496638d83a6e6c5453ecbb40744db3beb
+      trtllm_engine/config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5080x1-throughput-int4-awq-qcontivg8g?file=config.json
+        checksum: blake3:92a65f955f1c0d5dd47fce35dce9f5ed081bc2e5dcc03d35b961496344c46b90
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5080x1-throughput-int4-awq-qcontivg8g?file=metadata.json
+        checksum: blake3:f1851ec976ba763d55878b05fe0130da3b1612d6e46c88606f8b78aef2a5f4e6
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5080x1-throughput-int4-awq-qcontivg8g?file=rank0.engine
+        checksum: blake3:81299aa507d53e92062e84adb61794249c1da3fa37b612a81495d4c45e368a5b
+      vocab.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=vocab.json
+        checksum: blake3:3b4e5653b254d182b96c60c53e985a908a91776e14da5460cdb3924f59377935
+
+- id: 1f75f410c8362f0792b4391ad125cd30124dba1deaef426bf2f009f3be7cb24b
+  tags:
+    feat_lora: 'false'
+    gpu: RTX4080
+    gpu_device: 2704:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: int4_awq
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      trtllm_engine/runtime_params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:runtime_scheduler_max_8192?file=runtime_params.json
+        checksum: blake3:aac2ea38ee172d6f539842065533a8e5fd6860ca86eb6d18d05239730f9a9cbf
+      README.md:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=README.md
+        checksum: blake3:913aaa77ca317f57b23731cbcef86c0837f2012459bbb4edfee5596c229feb7a
+      checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=checksums.blake3
+        checksum: blake3:279eb78b71d52d2265172e444fe33863281bd35aa7f6f6a9b3100a368a169dcd
+      config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=config.json
+        checksum: blake3:ef49c78983f5b7a944ce14ee63af0e14d0d243e809f60a310ba2b017b4477b0a
+      generation_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=generation_config.json
+        checksum: blake3:dfaa72e9d563fd2c833c3f6dc57be5d70860745b2fbb1d2c3c7fff909e0b501d
+      merges.txt:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=merges.txt
+        checksum: blake3:a28e067bf75b951e474a9592e18d5b227b6d7cf9c59f0fea36f17064dd40e68d
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00001-of-00005.safetensors
+        checksum: blake3:16d91b0340bf9fed78152857171e39bf0dcb80a7ccced4396f369b7df0a6b031
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00002-of-00005.safetensors
+        checksum: blake3:b88eb4c35a2467811c01594a4dba943cf81fa6caaf387af0adcaedb04f6b057d
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00003-of-00005.safetensors
+        checksum: blake3:0c0e76f45979ddb68b5b9808ea9a1d65da7ec058ff2f73c5ffede589abfdb30f
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00004-of-00005.safetensors
+        checksum: blake3:8cf33c9cc8dcfcd7849fb06cd52fca42b7820808ef130b63f9fc53541f69beda
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00005-of-00005.safetensors
+        checksum: blake3:0a94e2dbe8273eb889c8ddbbb1efa18aacebce6b8b6b5d8674c31c2e5e5d5c47
+      model.safetensors.index.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model.safetensors.index.json
+        checksum: blake3:ba2e305f2ec7858f167c24389ca847519375096638bf72f7d82bc88637837a36
+      params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=params.json
+        checksum: blake3:d8fef5d0439551f4885cd9ec2174c0cc2684795d1971af59adedcc99c362b446
+      special_tokens_map.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tekken.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tekken.json
+        checksum: blake3:ac5c47d99f7ecd8b8e8a429d4ac54719e13bb486d7ca18af4c6ae1f290c25c70
+      tokenizer.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer.json
+        checksum: blake3:5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98
+      tokenizer_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer_config.json
+        checksum: blake3:5016aae4d11250d150b9b9c8518ab2dc40845b5a82344765366ff037823ba76e
+      tool_use_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tool_use_config.json
+        checksum: blake3:c2ba2528cf6330a99a9339c12ef8c2a18dadd3a4fedd304f1005769ec0a6e4b8
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4080-local-int4-awq-0.17.1?file=checksums.blake3
+        checksum: blake3:178ae7ba1e202c71bd794e592551a5bdab6ab47b43d4993370fa42c2a9cb6967
+      trtllm_engine/config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4080-local-int4-awq-0.17.1?file=config.json
+        checksum: blake3:6a19ea8f6a970558d12f35bc498416b1409b235c7000c1b52ac68ba8830214c0
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4080-local-int4-awq-0.17.1?file=rank0.engine
+        checksum: blake3:9b07e22ef331086e09d442ffecc5ed8a474e9a7e7eb5adc89ee2078406548c3a
+      vocab.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=vocab.json
+        checksum: blake3:3b4e5653b254d182b96c60c53e985a908a91776e14da5460cdb3924f59377935
+
+
+
+- id: ac2f2508ccbb59c54eef13ec800e217894def441a772066683cf2d39cec27b40
+  tags:
+    feat_lora: 'false'
+    gpu: RTX4090
+    gpu_device: 2684:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: int4_awq
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      trtllm_engine/runtime_params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:runtime_scheduler_max_8192?file=runtime_params.json
+        checksum: blake3:aac2ea38ee172d6f539842065533a8e5fd6860ca86eb6d18d05239730f9a9cbf
+      README.md:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=README.md
+        checksum: blake3:913aaa77ca317f57b23731cbcef86c0837f2012459bbb4edfee5596c229feb7a
+      checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=checksums.blake3
+        checksum: blake3:279eb78b71d52d2265172e444fe33863281bd35aa7f6f6a9b3100a368a169dcd
+      config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=config.json
+        checksum: blake3:ef49c78983f5b7a944ce14ee63af0e14d0d243e809f60a310ba2b017b4477b0a
+      generation_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=generation_config.json
+        checksum: blake3:dfaa72e9d563fd2c833c3f6dc57be5d70860745b2fbb1d2c3c7fff909e0b501d
+      merges.txt:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=merges.txt
+        checksum: blake3:a28e067bf75b951e474a9592e18d5b227b6d7cf9c59f0fea36f17064dd40e68d
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00001-of-00005.safetensors
+        checksum: blake3:16d91b0340bf9fed78152857171e39bf0dcb80a7ccced4396f369b7df0a6b031
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00002-of-00005.safetensors
+        checksum: blake3:b88eb4c35a2467811c01594a4dba943cf81fa6caaf387af0adcaedb04f6b057d
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00003-of-00005.safetensors
+        checksum: blake3:0c0e76f45979ddb68b5b9808ea9a1d65da7ec058ff2f73c5ffede589abfdb30f
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00004-of-00005.safetensors
+        checksum: blake3:8cf33c9cc8dcfcd7849fb06cd52fca42b7820808ef130b63f9fc53541f69beda
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00005-of-00005.safetensors
+        checksum: blake3:0a94e2dbe8273eb889c8ddbbb1efa18aacebce6b8b6b5d8674c31c2e5e5d5c47
+      model.safetensors.index.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model.safetensors.index.json
+        checksum: blake3:ba2e305f2ec7858f167c24389ca847519375096638bf72f7d82bc88637837a36
+      params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=params.json
+        checksum: blake3:d8fef5d0439551f4885cd9ec2174c0cc2684795d1971af59adedcc99c362b446
+      special_tokens_map.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tekken.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tekken.json
+        checksum: blake3:ac5c47d99f7ecd8b8e8a429d4ac54719e13bb486d7ca18af4c6ae1f290c25c70
+      tokenizer.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer.json
+        checksum: blake3:5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98
+      tokenizer_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer_config.json
+        checksum: blake3:5016aae4d11250d150b9b9c8518ab2dc40845b5a82344765366ff037823ba76e
+      tool_use_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tool_use_config.json
+        checksum: blake3:c2ba2528cf6330a99a9339c12ef8c2a18dadd3a4fedd304f1005769ec0a6e4b8
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4090x1-throughput-int4-awq-vkrmn7ko9a?file=checksums.blake3
+        checksum: blake3:c6c3bd1a4b82a83c2a57ab5579c3bd3f7d233177b405a264c6d8ce403cef8bc7
+      trtllm_engine/config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4090x1-throughput-int4-awq-vkrmn7ko9a?file=config.json
+        checksum: blake3:a26909fcc15293ab4a4c9be4e1262c4c8da2965a4caa80e3027272e4780c5a7e
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4090x1-throughput-int4-awq-vkrmn7ko9a?file=metadata.json
+        checksum: blake3:650733eb8aa213477348509e2034eb4f224ef1c13fef82b093e3b7207a2db4cb
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx4090x1-throughput-int4-awq-vkrmn7ko9a?file=rank0.engine
+        checksum: blake3:94e4412eba4c65fc031c8aca09a03af0a0962c39d1832e93caa6be9a6e4bae0a
+      vocab.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=vocab.json
+        checksum: blake3:3b4e5653b254d182b96c60c53e985a908a91776e14da5460cdb3924f59377935
+- id: dbf7d5f241fbc8b19928912dce2a458f3096c62d6bdb4e51b7c7fbec34b21c5a
+  tags:
+    feat_lora: 'false'
+    gpu: RTX5090
+    gpu_device: 2b85:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: int4_awq
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      trtllm_engine/runtime_params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:runtime_scheduler_max_8192?file=runtime_params.json
+        checksum: blake3:aac2ea38ee172d6f539842065533a8e5fd6860ca86eb6d18d05239730f9a9cbf
+      README.md:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=README.md
+        checksum: blake3:913aaa77ca317f57b23731cbcef86c0837f2012459bbb4edfee5596c229feb7a
+      checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=checksums.blake3
+        checksum: blake3:279eb78b71d52d2265172e444fe33863281bd35aa7f6f6a9b3100a368a169dcd
+      config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=config.json
+        checksum: blake3:ef49c78983f5b7a944ce14ee63af0e14d0d243e809f60a310ba2b017b4477b0a
+      generation_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=generation_config.json
+        checksum: blake3:dfaa72e9d563fd2c833c3f6dc57be5d70860745b2fbb1d2c3c7fff909e0b501d
+      merges.txt:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=merges.txt
+        checksum: blake3:a28e067bf75b951e474a9592e18d5b227b6d7cf9c59f0fea36f17064dd40e68d
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00001-of-00005.safetensors
+        checksum: blake3:16d91b0340bf9fed78152857171e39bf0dcb80a7ccced4396f369b7df0a6b031
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00002-of-00005.safetensors
+        checksum: blake3:b88eb4c35a2467811c01594a4dba943cf81fa6caaf387af0adcaedb04f6b057d
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00003-of-00005.safetensors
+        checksum: blake3:0c0e76f45979ddb68b5b9808ea9a1d65da7ec058ff2f73c5ffede589abfdb30f
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00004-of-00005.safetensors
+        checksum: blake3:8cf33c9cc8dcfcd7849fb06cd52fca42b7820808ef130b63f9fc53541f69beda
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00005-of-00005.safetensors
+        checksum: blake3:0a94e2dbe8273eb889c8ddbbb1efa18aacebce6b8b6b5d8674c31c2e5e5d5c47
+      model.safetensors.index.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model.safetensors.index.json
+        checksum: blake3:ba2e305f2ec7858f167c24389ca847519375096638bf72f7d82bc88637837a36
+      params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=params.json
+        checksum: blake3:d8fef5d0439551f4885cd9ec2174c0cc2684795d1971af59adedcc99c362b446
+      special_tokens_map.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tekken.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tekken.json
+        checksum: blake3:ac5c47d99f7ecd8b8e8a429d4ac54719e13bb486d7ca18af4c6ae1f290c25c70
+      tokenizer.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer.json
+        checksum: blake3:5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98
+      tokenizer_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer_config.json
+        checksum: blake3:5016aae4d11250d150b9b9c8518ab2dc40845b5a82344765366ff037823ba76e
+      tool_use_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tool_use_config.json
+        checksum: blake3:c2ba2528cf6330a99a9339c12ef8c2a18dadd3a4fedd304f1005769ec0a6e4b8
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5090x1-throughput-int4-awq-6epydoso2q?file=checksums.blake3
+        checksum: blake3:dce727b7601b44893463c3258f85fde01c231195b431a91169c204287d0404c6
+      trtllm_engine/config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5090x1-throughput-int4-awq-6epydoso2q?file=config.json
+        checksum: blake3:c8d199ac1c4016c4f5d0707f954cf14584a5aa0775c12e4f0976f0f9c913f785
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5090x1-throughput-int4-awq-6epydoso2q?file=metadata.json
+        checksum: blake3:87142fcecd24e6cb18649d20a0c56215edc9cd25f81b047b1d5bfaadff61aed8
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx5090x1-throughput-int4-awq-6epydoso2q?file=rank0.engine
+        checksum: blake3:ac75a5ad5e09208d26762ddcc99268a03a7d5878307740e09a9d67db7d507acc
+      vocab.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=vocab.json
+        checksum: blake3:3b4e5653b254d182b96c60c53e985a908a91776e14da5460cdb3924f59377935
+
+- id: b145f2584f0d8e10286ba02781174c07564c25573cbe9b5f3668b62b26afe44e
+  tags:
+    feat_lora: 'false'
+    gpu: RTX6000-ADA
+    gpu_device: 26b1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: int4_awq
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      trtllm_engine/runtime_params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:runtime_scheduler_max_8192?file=runtime_params.json
+        checksum: blake3:aac2ea38ee172d6f539842065533a8e5fd6860ca86eb6d18d05239730f9a9cbf
+      README.md:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=README.md
+        checksum: blake3:913aaa77ca317f57b23731cbcef86c0837f2012459bbb4edfee5596c229feb7a
+      checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=checksums.blake3
+        checksum: blake3:279eb78b71d52d2265172e444fe33863281bd35aa7f6f6a9b3100a368a169dcd
+      config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=config.json
+        checksum: blake3:ef49c78983f5b7a944ce14ee63af0e14d0d243e809f60a310ba2b017b4477b0a
+      generation_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=generation_config.json
+        checksum: blake3:dfaa72e9d563fd2c833c3f6dc57be5d70860745b2fbb1d2c3c7fff909e0b501d
+      merges.txt:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=merges.txt
+        checksum: blake3:a28e067bf75b951e474a9592e18d5b227b6d7cf9c59f0fea36f17064dd40e68d
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00001-of-00005.safetensors
+        checksum: blake3:16d91b0340bf9fed78152857171e39bf0dcb80a7ccced4396f369b7df0a6b031
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00002-of-00005.safetensors
+        checksum: blake3:b88eb4c35a2467811c01594a4dba943cf81fa6caaf387af0adcaedb04f6b057d
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00003-of-00005.safetensors
+        checksum: blake3:0c0e76f45979ddb68b5b9808ea9a1d65da7ec058ff2f73c5ffede589abfdb30f
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00004-of-00005.safetensors
+        checksum: blake3:8cf33c9cc8dcfcd7849fb06cd52fca42b7820808ef130b63f9fc53541f69beda
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model-00005-of-00005.safetensors
+        checksum: blake3:0a94e2dbe8273eb889c8ddbbb1efa18aacebce6b8b6b5d8674c31c2e5e5d5c47
+      model.safetensors.index.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=model.safetensors.index.json
+        checksum: blake3:ba2e305f2ec7858f167c24389ca847519375096638bf72f7d82bc88637837a36
+      params.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=params.json
+        checksum: blake3:d8fef5d0439551f4885cd9ec2174c0cc2684795d1971af59adedcc99c362b446
+      special_tokens_map.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tekken.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tekken.json
+        checksum: blake3:ac5c47d99f7ecd8b8e8a429d4ac54719e13bb486d7ca18af4c6ae1f290c25c70
+      tokenizer.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer.json
+        checksum: blake3:5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98
+      tokenizer_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tokenizer_config.json
+        checksum: blake3:5016aae4d11250d150b9b9c8518ab2dc40845b5a82344765366ff037823ba76e
+      tool_use_config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=tool_use_config.json
+        checksum: blake3:c2ba2528cf6330a99a9339c12ef8c2a18dadd3a4fedd304f1005769ec0a6e4b8
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx6000-adax1-throughput-int4-awq-twzjbxos7a?file=checksums.blake3
+        checksum: blake3:ae8945374c06d142dcbc862f3bdd3ad18398ec2b1be1187a61a78d4c8db63bdd
+      trtllm_engine/config.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx6000-adax1-throughput-int4-awq-twzjbxos7a?file=config.json
+        checksum: blake3:2fb6c51e309d194b3bb245bfce6bdbfeb195b2a4fc16cd973a00d80610e298de
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx6000-adax1-throughput-int4-awq-twzjbxos7a?file=metadata.json
+        checksum: blake3:d46c4b66acd130ba5f9ef43e356cbf45528e66545d1d9155ce98e8b67a532752
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:rtx6000-adax1-throughput-int4-awq-twzjbxos7a?file=rank0.engine
+        checksum: blake3:63177cad3bf20b60db30721f98522c58841aead80d384b49d2412cb2c2c888cd
+      vocab.json:
+        uri: ngc://nim/nv-mistralai/mistral-nemo-12b-instruct:hf-2036c14-nim1.3?file=vocab.json
+        checksum: blake3:3b4e5653b254d182b96c60c53e985a908a91776e14da5460cdb3924f59377935
+        

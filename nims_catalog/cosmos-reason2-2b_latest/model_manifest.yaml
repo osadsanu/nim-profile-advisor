@@ -1,0 +1,1827 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/cosmos-reason2-2b
+release: 1.6.0
+profiles:
+- id: 055758e78b134b57dfe741ad282dbc87adf60c113437f46ce6e56a71d5c0d07c
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 0b430b00b81e2ba607f1df61bb60da264b0050c5120c7ff4f06af60e3aedb14e
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: h100-nvl
+    gpu_device: 2321:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 20f2964fd996b210c559250c21f74a71bd5c6281f0366adb6a8062b6ccd3a3a8
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 224c719dec1cbffc53e659ea16b52f6beb329b17f31ebbc40905c2aa763a83d4
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 2a3f8ee404339f827fa0a2f5bac4a4c2ca401ec4f1aa85677398b785b68e11a8
+  tags:
+    feat_lora: 'false'
+    gpu: b300
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 2b9bc998162b2aa16e4b5e70bf13c892e911c6f5b56d70f9351425eebfb2beb4
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bwe-maxq
+    gpu_device: 2bb4:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 5d194736759819c86405d2f0e02716556e363967ae12cf4ddac627a2c78a068d
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=config.json
+        checksum: blake3:6c1fbcad6dd516f677a7207122eff719c7246f39e47394429448c00617f147d1
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=model.safetensors
+        checksum: blake3:c3e35fb388acc1978b4eb5f6a669601e346870cb64d30c690c59d1f08a32803e
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=recipe.yaml
+        checksum: blake3:20108b7976793148754aee651d0e2aeb037ad7e5fbd38b2aac1a0edafefd2295
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 2e92d698535b2a9079a0fbe5b655dd7bac51e03ba74dd1b7c649ade4885a0ecd
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: h200-nvl
+    gpu_device: 233b:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 32aa2e3ab007751d03b29bfdcc06a71bfc39686cd988a37b267f979b01646bee
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bse
+    gpu_device: 2bb5:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 4c5ab411877167b6893d5a4bfe5500db7796f5bfe1bf2407c16ac2856a8e69fb
+  tags:
+    feat_lora: 'false'
+    gpu: h20
+    gpu_device: 2329:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 54469726170704a36dd8ba807973441b28153c569f2ac1a112700a1fa97f3259
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: gh200
+    gpu_device: 2342:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 670e9f31cd8e3394ea1b634b1f2f2c877a051f3d0e3834f8312531e049b4855e
+  tags:
+    feat_lora: 'false'
+    gpu: gh200-144gb
+    gpu_device: 2348:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 67cbeadb9b288535368ff681f6dce77906b5eae8728574b9137f1c8228131a2e
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: b300
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 69147e9c63a74afd1249c641720a5058e5100e34833fb7ee1b29468e27b18991
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: gh200-144gb
+    gpu_device: 2348:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 6fdc397d4178e852c3c14cfd6759faba8c2b03aa27142c397af754f406404246
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bse
+    gpu_device: 2bb5:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 5d194736759819c86405d2f0e02716556e363967ae12cf4ddac627a2c78a068d
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=config.json
+        checksum: blake3:6c1fbcad6dd516f677a7207122eff719c7246f39e47394429448c00617f147d1
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=model.safetensors
+        checksum: blake3:c3e35fb388acc1978b4eb5f6a669601e346870cb64d30c690c59d1f08a32803e
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=recipe.yaml
+        checksum: blake3:20108b7976793148754aee651d0e2aeb037ad7e5fbd38b2aac1a0edafefd2295
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 80a3a3151fcf69601db9d830fdd09934b2b9c14c31d0ae699423bede05ef3d23
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 8698de822d3096412209d51a39ca9ff7f78f799ec6b46e7d5bd35b0deb79a3ae
+  tags:
+    feat_lora: 'false'
+    gpu: rtx4500
+    gpu_device: 27b1:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 8bc988564ceba0cfb4e0074ba80fbdfeebad95b784189e1c417e7b5d7828788e
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 8ded7d910642178ea842e87defc5e473390b53ffdd78c0040dd2f36af66f8d69
+  tags:
+    feat_lora: 'false'
+    gpu: gh200
+    gpu_device: 2342:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: 90f751d635f5e353b7ec450b600dc01a600da023eb8d9a36f7c56a746e63f59d
+  tags:
+    feat_lora: 'false'
+    gpu: h100-pcie
+    gpu_device: 2331:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: a351835416d0f2b1f92686ab313a26670461b60ce792823d479c5fd2b15eec25
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: b0f14071ee9120e493500244ff4fc45052fc2cd49a8a12d2bd93d4851f4ea3ea
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: b6a1b7038fa01a5d30ddd57eb8860cb5d936aa0976866ad84cc572ebc1da602d
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: rtx-pro-4500-blackwell
+    gpu_device: 2c31:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: b9802f860ba5a5a79ccb77881db851085e002eff88032267ae89261084db58b4
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bwe
+    gpu_device: 2bb1:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: bbe501b2e5e0dc5a8de64c396c588279c0783c0113fc2441f64a5f02da7d076c
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: h100-pcie
+    gpu_device: 2331:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: bd5f236d85b476c34c33b1cacb6d712990056dcb035f077b01af582961cf6382
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 46b0c54afbee6becfecf82d26a5072195f3e0e78291bb6d7493346d177c64ca0
+    precision: bf16
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=README.md
+        checksum: blake3:28848f872010bfd5d073e31764bfe457a1470e71bd6c7fda320fb398e9a7b919
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=config.json
+        checksum: blake3:33c8b0cae9286eb0994800198c4c260fb8f274c746be9170399f256da8a4d257
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      lock.lock:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=lock.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=model.safetensors
+        checksum: blake3:21a8f409c8ec4876b0e7bd617eee145eee0b40ac08426f2402eaf38ed5f41c71
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: c2cb17dc2df240b59c2ca0c82f6273b227711865a9c23d63db9d86483bd7ea3d
+  tags:
+    feat_lora: 'false'
+    gpu: b300
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: c358ef13ba88501bc0fd09756d27b3fb1a5b5a7f49aeb97645f7154bef338815
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: ccc01029a278aa178e7538e020867dd801dd7dc502c65a11e2e81d33faa673fa
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 344e005be327f64b0298c6458ddf94a8ac1ecf5cfaeb018125b28ad83775bd58
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=README.md
+        checksum: blake3:28848f872010bfd5d073e31764bfe457a1470e71bd6c7fda320fb398e9a7b919
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=config.json
+        checksum: blake3:33c8b0cae9286eb0994800198c4c260fb8f274c746be9170399f256da8a4d257
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      lock.lock:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=lock.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=model.safetensors
+        checksum: blake3:21a8f409c8ec4876b0e7bd617eee145eee0b40ac08426f2402eaf38ed5f41c71
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:hf-1208?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: d21070c68b53fc9c8bcad27f60b15118d5c8bf47d3793afba797ddab59bf6826
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: d983e436e0f68c4ddd539aac3f1b392bc941e64eae16b8c144e6d55cca57dbdc
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: rtx4500
+    gpu_device: 27b1:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: e17566ae4f5a7ec39b11ea2b6ec237e6851a170724a712c6ada8c1f0981e8e28
+  tags:
+    feat_lora: 'false'
+    gpu: h200-nvl
+    gpu_device: 233b:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: e59e78055fe8a72d44c5eb8081f9318d0b11f9e985ba0d25e9353633410e8c5e
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bwe-maxq
+    gpu_device: 2bb4:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: e7ebefc1433f96a57fe7020fd1a99a3e4ecd17186a6b7544e00432249407436b
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-6k-bwe
+    gpu_device: 2bb1:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 5d194736759819c86405d2f0e02716556e363967ae12cf4ddac627a2c78a068d
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=config.json
+        checksum: blake3:6c1fbcad6dd516f677a7207122eff719c7246f39e47394429448c00617f147d1
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=model.safetensors
+        checksum: blake3:c3e35fb388acc1978b4eb5f6a669601e346870cb64d30c690c59d1f08a32803e
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=recipe.yaml
+        checksum: blake3:20108b7976793148754aee651d0e2aeb037ad7e5fbd38b2aac1a0edafefd2295
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-dynamic-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: e8ed4da78709dc0bddfcdcf6398eacb0056c04cd6eb8ea576e5d6144277a3cef
+  tags:
+    draft_model_dir: eagle
+    draft_tensor_parallel_size: '1'
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 88ee342f250179d3342346d0b5038c8961605fbcef9f1be2225f659d8132d6bf
+    precision: fp8
+    speculative_algorithm: EAGLE
+    speculative_num_steps: '3'
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      eagle/config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=config.json
+        checksum: blake3:88fdfa028fecb8623b83b474078a9d00cd0e478ef5833adec8ce9138f3ca7d4a
+      eagle/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:eagle-refresher-v0?file=model.safetensors
+        checksum: blake3:ad7b95ced11c50d6f71c8a85bf3e59ead068ef4baab07b3af0fcb1ecf1a12654
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: eb0257e03c4630e453b0efae40d3379d48cc3aa2f8e1eb349dbde84b7db5e546
+  tags:
+    feat_lora: 'false'
+    gpu: rtx-pro-4500-blackwell
+    gpu_device: 2c31:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: ec90c648188be708d76cf3ad5b4ada0be9bda703d85aad2277584d53369ea954
+  tags:
+    feat_lora: 'false'
+    gpu: h100-nvl
+    gpu_device: 2321:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 6dc7b053f7f7a69470ea118a7a5947f5ec18bcf2c6b414ce43f9fbca8e479396
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=config.json
+        checksum: blake3:f3f72478ea269183878f38325c6d686424b73014c81745aae0bfec36ed82b203
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=model.safetensors
+        checksum: blake3:9215d815c60e7be254fb2cedde08e82cb1a99e8a4234c10f2710abfa5d0495fc
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=recipe.yaml
+        checksum: blake3:a71573d5dfa3bafe46ca88ece79f29796ed8ca7951f780e3f2af1204ce031a7e
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:1208-fp8-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+- id: ed4befe9e9428bd04b4895dadb2332fc2663635fb932e09d030d3c154961fdeb
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    kv_cache_precision: fp8
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4292d0aaed5ab26a641e63a38afef60d7ef18936e62167663d386eae8e15466e
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=README.md
+        checksum: blake3:1409b4785a9f1a2568a1d011afa16c4b013ffec4d7a6733e6f97a6cf8181b616
+      chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=chat_template.json
+        checksum: blake3:284ba0519207b1c23144835799201db2484abc6d4cc8fb6969d17356ffa23ce0
+      config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=config.json
+        checksum: blake3:80780ec334714355686d5e86f847c45e62e86d6b753185b7fc2a9b55cd4c34c4
+      cosmos_cr2_2b_paiBench.png:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=cosmos_cr2_2b_paiBench.png
+        checksum: blake3:a410a87ad743698fa1c181e1d4d7dcf34edd9fcbac94e63708dd771fc5436d7f
+      generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=generation_config.json
+        checksum: blake3:7af04cc1913947c5574b60c7581cde72594ff5adc1da26249704dc481e29a49a
+      merges.txt:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=merges.txt
+        checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+      model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=model.safetensors
+        checksum: blake3:ca74eb8aeff5773c63fea35f081d121f487a8eca8719031909aba0fb6dc0203f
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=preprocessor_config.json
+        checksum: blake3:45c300d2e115ccc23b4bac21099918486d65d0bbb7b3844cec470cea767f41ba
+      recipe.yaml:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=recipe.yaml
+        checksum: blake3:4f4c7df1ada7a240ce9bd088beb973806dcce91a9702d3b61afa66e2ba995cff
+      tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer.json
+        checksum: blake3:64880a889b3bf61329fe033b9aee517b80763e009f63026caea1300c8dc29e5e
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=tokenizer_config.json
+        checksum: blake3:728e1b1212a7451515594b5b7de3b2fe8fb7c0dca8064812e8e99767d988dd3f
+      video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=video_preprocessor_config.json
+        checksum: blake3:335d49e545e01d37d570b7c5eec92c3f2c57e7ba3cbb73f760b61c6e1cca68ae
+      vocab.json:
+        uri: ngc://nim/nvidia/cosmos-reason2-2b:refresher-fp4-static-kv8?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe

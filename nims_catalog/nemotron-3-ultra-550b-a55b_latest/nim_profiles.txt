@@ -1,0 +1,290 @@
+- id: 0e8fc1116e932325df99a599862d4e1fe81ca613b9af02ca6a4d8064e9590b47
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    pp: '1'
+    tp: '8'
+
+- id: 1b2b81db19e458759ce4ccb9e164867691902c17b05a2c7119ccf984ed17b992
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 204fe72ffc1216b1482dc6bb27664a878c6a05f7d2728c25838a190da49c6c85
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    llm_engine: vllm
+    min_vram_per_device_gb: '139.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 28e62091ab9668aaf8f2d4ab3b13c4a053532ccafeddc626543a0700798ccf6e
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    llm_engine: vllm
+    min_vram_per_device_gb: '200.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: 350c0b570f0360540eb9df67cd29cff6ec597a5d2e8f1760bb4e80e7cccf225d
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 39c0cc2ab5b34f5d33cb4fcfa793f37587765db7182a68282c6ccf918412ef23
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    nim_description: nvfp4 emulation
+    nim_json_args: '{"gpu_memory_utilization":0.85,"max_num_batched_tokens":4096,"max_num_seqs":256}'
+    pp: '1'
+    profile: throughput
+    tp: '8'
+
+- id: 534cc0ff164c455fe7db9eb0f19aad885afe238c73cd7a7513547f9ebf887074
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    nim_description: agentic, throughput, ITL<=20ms
+    nim_json_args: '{"async_scheduling":true,"block_size":64,"enable_prefix_caching":true,"gpu_memory_utilization":0.9,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"float32","max_num_batched_tokens":4608,"max_num_seqs":64,"moe_backend":"humming","nim_specdec":{"speculative_config":"{\"method\": \"mtp\", \"num_speculative_tokens\": 3}"},"prefix_match_unit":64}'
+    nim_optimized: 'true'
+    pp: '1'
+    profile: throughput
+    tp: '4'
+
+- id: 56027dc087daf0f66b6ddb55b5a6498474698ade5b966b8aa19f5155400ac6dd
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '200.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: 56a130cd7a843ff849a2e8bdbbf7fa10dd8b82715d8736a3a624f82a1a694457
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    pp: '1'
+    tp: '8'
+
+- id: 62e6d4889c29b394e7da16ce4f252974ea16f40c559f54d8a23e6e72ae3b7069
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '150.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 6d0f08a7625d70575ae9ea0a7ed34adf38ad8cc262f18f2af47c011f79518fb8
+  tags:
+    feat_lora: 'true'
+    gpu: NVIDIA-B200
+    llm_engine: vllm
+    min_vram_per_device_gb: '139.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 6e5d16c97ff70966a8dff25d37fa32523dfd59bd1586573fd1500f0446b98081
+  tags:
+    feat_lora: 'true'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '139.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 85965c83fa34e6e9cb0511a28f860dd47bc6d1a863ff5ca404d5fa3a97f47ab7
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    nim_description: nvfp4 emulation
+    nim_json_args: '{"gpu_memory_utilization":0.93,"max_num_batched_tokens":4096,"max_num_seqs":256}'
+    pp: '1'
+    profile: throughput
+    tp: '8'
+
+- id: 8a1467601615660b078a01ffb727a7e6ef7c61f651f55f995ffaea617b7fa0b9
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '150.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 9231daa4c32113df6c3b55de1ca937cae2181eb2532cfbe9c69e6978ab8eaaf6
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 9d06a0e06444481c655310f7521afda72b34916d99427c3264c99c081aa2be5c
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"block_size":64,"enable_expert_parallel":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.85,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"float32","max_num_batched_tokens":32768,"max_num_seqs":64,"nim_specdec":{"speculative_config":"{\"method\":\"mtp\",\"num_speculative_tokens\":5}"},"prefix_match_unit":64}'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: b0ec375f790e252f66961b4825b6a8918a93276e720c131d1ed1e786737523f3
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"block_size":64,"enable_expert_parallel":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.85,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"float32","max_num_batched_tokens":32768,"max_num_seqs":64,"prefix_match_unit":64}'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: b70bc7e189b3e838ddbac872056790c1776debeb55ad2914e79237116213721b
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    pp: '1'
+    tp: '8'
+
+- id: c1d2b9f75ac80b8f0b8563f41f943f5f36295d6b177c2e3fd31c872b63af5c7c
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '200.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: c99f9b66e77ea04239c6888bd82fc4442820d9879f1fa1ebb28cb6a923468410
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"block_size":64,"enable_expert_parallel":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.85,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"float32","max_num_batched_tokens":32768,"max_num_seqs":64,"prefix_match_unit":64}'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: cd574cc181091222d63004bdfeffca26f979042133512ffc195f6a3ea38113c1
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '84.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: daddfda9c5e4a5268141d900b7f575b66b384ab41c956b91414878a86fc1a641
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    pp: '1'
+    tp: '4'
+
+- id: e0713dfc09c2ad9280ce8616dd2f33f3e9369bbce7d0ae7186c4a0032b3a66a0
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '46.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: e2449540f5bd6d750184a2c7adff8e97087bfc97bfd71217dccbb712bb1745ea
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: ed859e3193b10dca4f8d105ff3f3f1c53261fef2721be32f3c4f031f58f8b166
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '139.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: f19529ce5819815b1811035b1a4b6eb1f55dd6794dea71530f4b6f092c43f2ae
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: f38acdc8e16c79784d4d21ae67ad8690d0b292415a72c11e4a822887e83dc237
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    llm_engine: vllm
+    min_vram_per_device_gb: '49.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: f683567848cba9f9bb5962c35a163dc0935e1477b7ad3e86cf78576e34e9f717
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    llm_engine: vllm
+    min_vram_per_device_gb: '90.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"block_size":64,"enable_expert_parallel":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.85,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"float32","max_num_batched_tokens":32768,"max_num_seqs":64,"prefix_match_unit":64}'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'

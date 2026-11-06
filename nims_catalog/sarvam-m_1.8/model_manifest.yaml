@@ -1,0 +1,404 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: sarvam-m
+release: 1.8.5
+profiles:
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      LICENSE.txt:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=LICENSE.txt
+        checksum: blake3:7b9e93af6dbb54ff1bac1f5da0ec95e64f6c0675784f124ba7b583c6b48317ac
+      README.md:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=README.md
+        checksum: blake3:3e533ef9f952f2cf68b3370cdeb21c87c761b62a474ecccb329ac0ba85a8c97a
+      checksums.blake3:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=checksums.blake3
+        checksum: blake3:da04d5cb12c1355187bf513e77b0999d24ef43c9339366eae84dc3353b63c7f9
+      config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=config.json
+        checksum: blake3:abc7d3cd6eac517cb41a390bc74d27b48b12628a4838e5edd242e9e24adb9f79
+      generation_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=generation_config.json
+        checksum: blake3:2e3ea928689f3e9782954da37aa12bd4b73acb15bbe9b20e7b0fce029d65aab3
+      model-00001-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00001-of-00010.safetensors
+        checksum: blake3:d09e30535134b0765338f971dc9aeb98e8ddfe740a4d0cc876d54aae48f724eb
+      model-00002-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00002-of-00010.safetensors
+        checksum: blake3:1f94082a22e97f055a89668e6c1229f8a28946e7057e661ed1ae66c99d140c8d
+      model-00003-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00003-of-00010.safetensors
+        checksum: blake3:84429acd6ac20c19bc1bb2125689030e181b39f2ff8c7ccd5c5d40900a8656e8
+      model-00004-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00004-of-00010.safetensors
+        checksum: blake3:da162788b2c9812f2a95c7bc16fa316f8da204585140bf055f00f67248b22ec9
+      model-00005-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00005-of-00010.safetensors
+        checksum: blake3:5befeb68cf1c214a40143f2a9bbcf8759af754a3673943cf335933ea72898807
+      model-00006-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00006-of-00010.safetensors
+        checksum: blake3:0ead6bb1020387e365fbef308e59546f43cee50e00850e9a106e63b833316ba7
+      model-00007-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00007-of-00010.safetensors
+        checksum: blake3:83aa692a207439d6da2997bd075e339887836aad5304e294b4566b24e784afc1
+      model-00008-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00008-of-00010.safetensors
+        checksum: blake3:ff84575cf2af8dd96e53cf195fc2bbf89d143405f733f9581be926d638fe8c68
+      model-00009-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00009-of-00010.safetensors
+        checksum: blake3:cf4691790f9d8c90ec4bb140885957e7495b499c0d596fa0854db1e49cb3f94b
+      model-00010-of-00010.safetensors:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model-00010-of-00010.safetensors
+        checksum: blake3:12d09279bc31cb0760ccbe05c456cd2b4fd4700c1e6d820379d8b3ac32abfa20
+      model.safetensors.index.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=model.safetensors.index.json
+        checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+      special_tokens_map.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=special_tokens_map.json
+        checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+      tokenizer.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer.json
+        checksum: blake3:f34cae78f93864856596d1657a1979777615c52dbf956bb2e4bf6e308fb69b73
+      tokenizer_config.json:
+        uri: ngc://nim/sarvamai/sarvam-m:hf-01534a5?file=tokenizer_config.json
+        checksum: blake3:0e01d11a89ecfc6cd7c04473e5acf2491abc5bfb0637a3efcd0487a2cef45b3d

@@ -1,0 +1,1529 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: llama-3.1-typhoon2-70b-instruct
+release: 1.10.1
+profiles:
+- id: 00172c81416075181f203532da34b88e371b8081d2ad801d9d30110ea88cbf95
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 1d7b604f835f74791e6bfd843047fc00a5aef0f72954ca48ce963811fb6f3f09
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 252c49b4d998028d6d4b15be229499199ea324ff753a5f7a412e752433bf4a15
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: bc1cb24a237381e4c88a60a4d9cc253bb9b1bdeccb8a40e18602477e45ba814b
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: cfe3c1b951b411cb952f7cafd7cef6543594dce1420f717612b00c6cecb5b7b4
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: d34cfb82d8fce4da83833dfd5391e27204bc0c98ebee938fcfe84df3fcdb002e
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: ea63a1ec997d8c4e33d5142086a0250000cd80190683a92aa85e5aa3ef4cf24f
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba
+- id: f95be114df33dd6613105f76fd567a071ed3bd08232888a5ba2f0545a99dbd92
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=README.md
+        checksum: blake3:3e9fcb2474ef5ad872ca13a3c48c18e79a255c7f5b5d9d356896bcd1aefdb2b9
+      checksums.blake3:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=checksums.blake3
+        checksum: blake3:82e967f6a75adc5e37fa8bf591000d90c74565b22f4e6b5f0e649099eaa33efa
+      config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=config.json
+        checksum: blake3:073878adb3b317f1469707b630ee6948f2c0660c7e090bfb36cbf0727f1f147a
+      generation_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=generation_config.json
+        checksum: blake3:5a9421a25ed8508302ee4dc81d70726c6fe7d05eb58ed378b9ed240f59883295
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00001-of-00030.safetensors
+        checksum: blake3:1b0ae4654bce5af87265093cdf37d2bd153a95ab9c76ada78507e8dd135acf2d
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00002-of-00030.safetensors
+        checksum: blake3:e676303314443eb622f9fff2f4fbbdad41a09eb3a87a234827f0fb1cebb95a83
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00003-of-00030.safetensors
+        checksum: blake3:dee42e1e40347a2eb02ef6f65893d987d86f860481b1bc165916dfbaddcf88fe
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00004-of-00030.safetensors
+        checksum: blake3:1a8725b87a24ebd9114ddcac9bd26219a8e5119d5c8ca5dc9b005475d52008e5
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00005-of-00030.safetensors
+        checksum: blake3:3efa715aaa84fe0ffc8b862cd7338e847d0a25b8706d2c8f3c8af700d6e94ad7
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00006-of-00030.safetensors
+        checksum: blake3:4cb6a030eee07c1843507e925003b50dcbcbad0a20e8153edb26f75cbfeffa3d
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00007-of-00030.safetensors
+        checksum: blake3:6557be0ad84c17871173f60d922c933bada6ad0aceb01f5952474d7678a4c83d
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00008-of-00030.safetensors
+        checksum: blake3:621db7ea52f43e5f5e3ad0d008b340b37331e245ae9f162adec446861c637404
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00009-of-00030.safetensors
+        checksum: blake3:6a34e0348c8df37589217d15829c5593acde517c30c0d0bcdf189b1b6956e4f1
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00010-of-00030.safetensors
+        checksum: blake3:16d9668d33e905b4d69122ec57ac6aa6958685d5af096a0a48a35a25e991ee06
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00011-of-00030.safetensors
+        checksum: blake3:41cf08dbc6f115d1a3ff818b09d06c495b0ca21164adf5fb3b2ab03e075efbe5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00012-of-00030.safetensors
+        checksum: blake3:d40a7c173807834e49697c0c1530b57a619b4c17537e580c99db106aba7c9d1b
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00013-of-00030.safetensors
+        checksum: blake3:ff15ba38a86a9a9e3eacafbe27e841706512d60569e0e12cd12261ba9e3c15d2
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00014-of-00030.safetensors
+        checksum: blake3:d805743c72818281b84ee64c5107be8e9ba80e6175f50e0c9d366a84090c9c50
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00015-of-00030.safetensors
+        checksum: blake3:37d508d7c956b0873feb80299408994384b7b82e59944e2af279a199b01ab13d
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00016-of-00030.safetensors
+        checksum: blake3:e0300eb100dbd9d5b589b1298878cb645344f18c0962d1019d426168875ddb96
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00017-of-00030.safetensors
+        checksum: blake3:45692776ad857e332ad514af1be634eb0fe3997e9781cce8d38af60ade27c04a
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00018-of-00030.safetensors
+        checksum: blake3:0a5e572dd850603f2ab3d20701618d9719852c2efe1c88a98c13e9e2a9e3312e
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00019-of-00030.safetensors
+        checksum: blake3:ad13d5cd320c7ba33144d655e5bdfc5a413fe53fb7992bf6af904443c31f480b
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00020-of-00030.safetensors
+        checksum: blake3:1c4eb2d6ccf9d9abb4965239a9cc2c277fd6648e2e54695369886e1a51972da2
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00021-of-00030.safetensors
+        checksum: blake3:645d4fdcbe14b6318f27bec56d6fbb4821f695eeb80549fc8d2402e2ef3283e8
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00022-of-00030.safetensors
+        checksum: blake3:a13d53932cc9e5dd9e8e21571c95a2e589900804d49e3921b7cf2b3b6ccaa433
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00023-of-00030.safetensors
+        checksum: blake3:2f5e9be374ade0cef30d214a15a01545f383d7e01402b7cb9bf24764c1e523d7
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00024-of-00030.safetensors
+        checksum: blake3:2289337bd3e97ba0fdd13e6af4487c4a283ff63cecbe3f4a950ef005d968474e
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00025-of-00030.safetensors
+        checksum: blake3:7661461e7e76e3c6e11ac87d646da66e2ab14a6996cba9b03b3766da19e6e25d
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00026-of-00030.safetensors
+        checksum: blake3:f748aaf4c04cff9e46225687aea8e564eab0f011e945bcf568668c7a9fca7702
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00027-of-00030.safetensors
+        checksum: blake3:57456128bc5490482b83ca7023f018f59a22824c7e96860bd647cc6d6f5cb2d9
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00028-of-00030.safetensors
+        checksum: blake3:9fc702e4f704de1fad0d6182fa308e1305dd553e226b4575cd32623c5acdd3b5
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00029-of-00030.safetensors
+        checksum: blake3:131e0f802ec85e639ddb86cc37ed7128f3ba72cec9c96d7ea3c58b46f1e80126
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model-00030-of-00030.safetensors
+        checksum: blake3:6d66550e832eef197760f38955fb2525bb28c2e5de40fadb0a15279443805018
+      model.safetensors.index.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tokenizer_config.json
+        checksum: blake3:473f1ad16967a075a625e2c829cab1c06f3a8e3b26eaee4a29b350a7623bc67e
+      tool_use_config_v2.json:
+        uri: ngc://nim/scb10x/llama-3.1-typhoon2-70b-instruct:hf-ea00cf4-nim-use-tool-v2?file=tool_use_config_v2.json
+        checksum: blake3:d70d7d52bc4206dad2e4c615f01ed917463362a28176e7a76521a7b8426d7eba

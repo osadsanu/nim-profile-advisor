@@ -1,0 +1,273 @@
+- id: 009410edcf89478e0a4eb68d5797fc231e9ce776d79fe30cbd53f1debdba9cb7
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '37.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: 0c03e7405d6743e0a66f5309808ece75386741c93ca3bd8c35f0494fc96d88dc
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '57.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '8'
+
+- id: 15fd4fa281d6b4f00be52efab124589fdfd75752bf39991e5ea3a36a32c864b0
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_description: throughput, image-text
+    nim_json_args: '{"all2all_backend":"flashinfer_nvlink_two_sided","enable_batch_sharded_sampling":true,"enable_expert_parallel":true,"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    nim_optimized: 'true'
+    nim_rank: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+    workload: image-text
+
+- id: 254d16de47e2733c518c2b68f3993aacaa63e76ef09bd28d4e661b04c3cec9a3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '197.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+
+- id: 2ff3d17fed8d94a6a14f5d6320a8677f23e8aa6b5a08c633fd694196f9ea3158
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 4299cfc6d5c59ecf6d76936ba3b4f15856fe7da85fea2d5a3636691624b0ec05
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '104.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '4'
+
+- id: 43800da7e68965560fd3c5b6f9d39283c7a9049e25ac70d50e9d33a6958c99f0
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '37.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: 43878f10352b37e05a65842eb93a0142d258447b6b9566add8325647c421a7ba
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '242.0'
+    nim_json_args: '{"max_num_seqs":64,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: 4fbbecf3030485d80536c875231a200696949b86f93ec0df88ec5542deda0f2f
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_description: throughput, image-text
+    nim_json_args: '{"block_size":64,"enable_expert_parallel":true,"max_num_batched_tokens":32768,"max_num_seqs":256,"nim_specdec":{"speculative_config":"{\"method\":\"qwen3_5_mtp\",\"num_speculative_tokens\":3}"},"trust_request_mm_kwargs":true}'
+    nim_optimized: 'true'
+    nim_rank: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+    workload: image-text
+
+- id: 556db31972592479324c9b3d3027ee6388290e3f156075dcfa72b81f361fd972
+  tags:
+    feat_lora: 'false'
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '104.0'
+    nim_description: agentic, throughput
+    nim_json_args: '{"block_size":64,"enable_prefix_caching":true,"gpu_memory_utilization":0.92,"kv_cache_dtype":"auto","mamba_ssm_cache_dtype":"float16","max_model_len":262144,"max_num_batched_tokens":49152,"max_num_seqs":128,"moe_backend":"triton","prefix_match_unit":64,"trust_remote_code":true,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 6723657621d1342430a6b32ce493a77ea6477ef0a202453adfbf134d2e97b7e9
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '104.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '4'
+
+- id: 71db30f5cef89fe84a3b00ac8a58adf902ec209a6768ec5b6ac9d9d659eb5ec0
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '103.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 7aee02b40925e609aec65522c99356f302239cda3ae00fc1ca77fcaf5feb93a9
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '124.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: 8b676b4a020be624b631823c9b67a3b112c00ccffe01d43913edfdb65e044b32
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 99c59c57276e9fe7ed03a80300b2e931fa4307cc81a5f7ef3e09877c5272194f
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '242.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: 9fff2d89d1afd4678a1a831fbe8face8621efd82db9a74c90c807a9cb20828da
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '124.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"compilation_config":{"max_cudagraph_capture_size":2304},"enable_chunked_prefill":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.97,"kv_cache_dtype":"fp8_e4m3","kv_offloading_backend":"native","kv_offloading_size":100,"mamba_cache_mode":"align","mamba_ssm_cache_dtype":"bfloat16","max_num_batched_tokens":8986,"max_num_seqs":18,"moe_backend":"humming","quantization":"modelopt_fp4","speculative_config":{"disable_eagle_block_drop":true,"method":"mtp","num_speculative_tokens":4},"trust_request_mm_kwargs":true}'
+    nim_optimized: 'true'
+    nim_rank: '0'
+    pp: '1'
+    profile: throughput
+    tp: '2'
+
+- id: b8d51add803ae1ade385ba363a0d527c4a43aa04a4dc7c81f5dc6c16e3cd8792
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '198.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '2'
+
+- id: d7a818e744f686ddb0b5a68909ef4627b9b987ecb86ba8164a0aa3cef814eb85
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '124.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: dbfb9f610e7f0aed1e6604e400b3580bcc2ee8a49c8423620e291bd335d56996
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '104.0'
+    nim_description: throughput, image-text
+    nim_json_args: '{"gpu_memory_utilization":0.98,"max_num_seqs":256,"mm_processor_kwargs":{"max_pixels":1048576},"nim_specdec":{"speculative_config":"{\"method\":\"qwen3_5_mtp\",\"num_speculative_tokens\":3}"},"trust_request_mm_kwargs":true}'
+    nim_optimized: 'true'
+    nim_rank: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+    workload: image-text
+
+- id: e4c87fe43e4315a07934780059d1ac87047943f70faa59ceedb8629ba0aa5ca9
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '197.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+
+- id: ece0a05f34f12bc819b1fd9f0c58697620677dafae6406fc01ffa350bf70d4ef
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '103.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: f24752064b688b329aec1f40546ee543ec172acce025a7096cb6f0561e63ff28
+  tags:
+    feat_lora: 'false'
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '124.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"async_scheduling":true,"block_size":64,"disable_hybrid_kv_cache_manager":false,"enable_expert_parallel":true,"enable_prefix_caching":true,"gpu_memory_utilization":0.9,"kv_cache_dtype":"fp8","kv_offloading_backend":"native","kv_offloading_size":160,"mamba_ssm_cache_dtype":"float16","max_model_len":262144,"max_num_batched_tokens":16384,"max_num_seqs":48,"moe_backend":"flashinfer_trtllm","nim_specdec":{"speculative_config":"{\"method\":\"mtp\",\"num_speculative_tokens\":3}"},"quantization":"modelopt_fp4","trust_remote_code":true,"trust_request_mm_kwargs":true}'
+    nim_optimized: 'true'
+    nim_rank: '0'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '2'
+
+- id: f60f55ac7bdb0882e4b36bd9318c99b7d199e28e9a4d53faeff59d6ccec750bf
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '57.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '8'
+
+- id: fdf1db009db1a1f171cb9003a1e515031ee0647b0bda613dc6da6efb424ea4d6
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '198.0'
+    nim_json_args: '{"max_num_seqs":256,"trust_request_mm_kwargs":true}'
+    pp: '1'
+    precision: fp8
+    tp: '2'

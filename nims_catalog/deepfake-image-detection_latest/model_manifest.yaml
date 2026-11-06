@@ -1,0 +1,99 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: deepfake-image-detection
+release: 1.0.0
+profiles:
+- id: 185fbd9b7db53b83e1ae39a4d79a422f18affc9ec6c87b6b688cf18f5c12bb51
+  tags:
+    model_type: tensorrt
+    gpu: l40
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "26b5:10de"
+  workspace:
+    files:
+      deepfake_detector_10.5.0.plan:
+        checksum: blake3:4a943ba010f8b355a16216d9c9e7956e59093c339907afc2ec3ef6f0633dd3b6
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-l40x1-fp32.1.0.0?file=deepfake_detector_10.5.0.plan
+      face_detector_10.5.0.plan:
+        checksum: blake3:d71f1aee846b145714bcf5a048d1bc7d8b83e750957766bb7e86050f19a31f28
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-l40x1-fp32.1.0.0?file=face_detector_10.5.0.plan
+      metadata.json:
+        checksum: blake3:f39783a0696c99b647bfd758ebd38b3be6574f874d698bd7681cc2ce7ea2d410
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-l40x1-fp32.1.0.0?file=metadata.json
+- id: 92dd744c0c7a13123e133a4db910572150d5c99e38d43af146840cd12c65e6fc
+  tags:
+    model_type: tensorrt
+    gpu: a10g
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "2237:10de"
+  workspace:
+    files:
+      deepfake_detector_10.5.0.plan:
+        checksum: blake3:605dcfa0d3012a256589f189570e3c40841a304a18ed41095b30b3c9274c3acb
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=deepfake_detector_10.5.0.plan
+      face_detector_10.5.0.plan:
+        checksum: blake3:87113bb3304f03668d426d1090d58e2a10a8ed1b020b975679847d741335c0a1
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=face_detector_10.5.0.plan
+      metadata.json:
+        checksum: blake3:fca3dd71e4f24058e7bbde1cef73317f9fbfa5889cbf66f68d410c12ffaafe59
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=metadata.json
+- id: 999d2a67b77bfc7d7350fb357dce68a93ff35859b8934b407b78fee4c4cbb8c4
+  tags:
+    model_type: tensorrt
+    gpu: h100
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "2330:10de"
+  workspace:
+    files:
+      deepfake_detector_10.5.0.plan:
+        checksum: blake3:484f4b52d68dbf44d29716add7dcb5198140b97f34f96d2a407c61668ca01c55
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-h100x1-fp32.1.0.0?file=deepfake_detector_10.5.0.plan
+      face_detector_10.5.0.plan:
+        checksum: blake3:436bfe89d8514ff15cf9033f06f910b4645839b25f84a1469b8005a516b91bc7
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-h100x1-fp32.1.0.0?file=face_detector_10.5.0.plan
+      metadata.json:
+        checksum: blake3:bc0504eff332449647458751fefeaabca848780ba6d5299682dcff51197d1a22
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-h100x1-fp32.1.0.0?file=metadata.json
+- id: c1ae702a62775c1a79bc7f4b3a3feb9efb333452c9cb09d6483e31c66559e3f5
+  tags:
+    model_type: tensorrt
+    gpu: a100
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "20b2:10de"
+  workspace:
+    files:
+      deepfake_detector_10.5.0.plan:
+        checksum: blake3:4f855d2f64a69d1914a86f344f0477932373eee5b8ae94119ca6dcf0644b171f
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a100x1-fp32.1.0.0?file=deepfake_detector_10.5.0.plan
+      face_detector_10.5.0.plan:
+        checksum: blake3:9ae855678006de485c2da6fa9bcaa433c44b224427283b5a52557e6b3994fd9c
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a100x1-fp32.1.0.0?file=face_detector_10.5.0.plan
+      metadata.json:
+        checksum: blake3:8e30429b50f792a61de4a772d80072b3c67abe71b36545d2b8e3cccd046bee34
+        uri: ngc://0621562251930352/deepfake-image-detection:10.5.0-a100x1-fp32.1.0.0?file=metadata.json
+
+- id: 523658e9ea1d0d50ea13b6c8d295bcaf0d88596f3fbab27a921c40c22a7985f7
+  tags:
+    model_type: onnx
+    gpu: generic
+    number_of_gpus: '1'
+    precision: fp32
+  workspace:
+    files:
+      deepfake_detector.onnx:
+        checksum: blake3:3e769d22c618b8c234892741f50a1f113381991fd857c7b43a33fe528ba168b0
+        uri: ngc://0621562251930352/deepfake-image-detection:onnx-generic-fp32.1.0.0?file=deepfake_detector.onnx
+      face_detector.onnx:
+        checksum: blake3:b7f3c8ba321ab83627dd92eb1fbd86fad1675559e5e9f6ae34e9c573e3eba1ab
+        uri: ngc://0621562251930352/deepfake-image-detection:onnx-generic-fp32.1.0.0?file=face_detector.onnx
+      metadata.json:
+        checksum: blake3:4b6249c7399b3bd5d86b9983301ab9a39ead4b8e61203ae9368dff796ed23692
+        uri: ngc://0621562251930352/deepfake-image-detection:onnx-generic-fp32.1.0.0?file=metadata.json

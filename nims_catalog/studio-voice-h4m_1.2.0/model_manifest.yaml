@@ -1,0 +1,124 @@
+## SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+## SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+## NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+## property and proprietary rights in and to this material, related
+## documentation and any modifications thereto. Any use, reproduction,
+## disclosure or distribution of this material and related documentation
+## without an express license agreement from NVIDIA CORPORATION or
+## its affiliates is strictly prohibited.
+
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+model: 'studio-voice'
+release: '1.0'
+
+## ST2110 uses only 48k Low Latency (48k-LL) models
+
+profiles:
+
+## Low Latency 48K Model for SM 7.5 (T4)
+- id: d4a05fd85322c89b2593de7bb90dff8f51c6e065476c127abdd3de7bc94a29cc
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    nim_workspace_hash_v1: f0afca64db5c484fe9b1e27d8353a3cf7154efd8c988a4e057ca4ba4a31892ca
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_75/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:87c19e17f298f63b4e5bc7a3fefc5738e03068878df6d62dadcfea5644947ff5
+        secret: Default
+
+## Low Latency 48k Model for SM 8.0 (A30, A100)
+- id: 49ed404d6a0ce29e83ed33cc3cfb9a4c0dbb3ca200c53743efc9f57a45c95b92
+  tags:
+    gpu: A30, A100
+    gpu_cc: '8.0'
+    nim_workspace_hash_v1: 6e11d5cd5dcc4f83260a51974b5cc8fca7e5306ee8d6a3d067ae93fb09e533b4
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_80/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:30230082fd4824f22d74b8c424c283bba9e6cb80f69f5ce5fde076e22aca92ef
+        secret: Default
+
+## Low Latency 48K Model for SM 8.6 (A2, A10, A16, A40)
+- id: 0cc07261902d91a87f12dff8c5b028b49b98afafc95130d61b069141ac021be6
+  tags:
+    gpu: A2, A10, A16, A40
+    gpu_cc: '8.6'
+    nim_workspace_hash_v1: d29ac01b0fce771ea4e5f62fee95b06f86b85e9af3d47acac21e9f3757eb9513
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_86/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:e099be37cb6e80d879df3a241e51eac6f8891660faf8aeb90dd60b47a5fa49b7
+        secret: Default
+
+## Low Latency 48k Model for SM 8.9 (L4, L40, RTX4090)
+- id: 32ad9bfbc222aa6f74c62898be9269c81523a7bc877fab7cb21268f47ef1fbfb
+  tags:
+    gpu: L4, L40, RTX4090
+    gpu_cc: '8.9'
+    nim_workspace_hash_v1: 32818b78436f9c8213c18455abdfdcb86ac3f7599a7f5a55bfc771d407d955df
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_89/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:69214308da632a7d22addc317717c67eb00dbfa9ff4c1d5276c525f34faaca88
+        secret: Default
+
+## Low Latency 48k Model for SM 9.0 (H100)
+- id: da9c18295abb1cf2b273a6fc48ed9633d45872fc1ba5a344d9aaf15c1c83a893
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    nim_workspace_hash_v1: 5e7a1225112d6fbf51bf8385a7cad07fe339e61aef8acd226344649c54c9346f
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_90/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:05ced6083208bfe02975faf6a897de37d4f303e5d4c8b45b581d2bee1c0fef8d
+        secret: Default
+
+## Low Latency 48k Model for SM 10.0 (B100, B200)
+- id: e9ae7b9757846cb5f76d23b345d5d2a4691876d32e13ce661e51735e4a4583e1
+  tags:
+    gpu: B100, B200
+    gpu_cc: '10.0'
+    nim_workspace_hash_v1: e124ff3089215099d36243389e8dede2017ba6235929ccc6a08ef5c4921ea3a8
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_100/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:ae2db19b2183aca4ba76b0f0c40df06407d4c72ebdf153b3ab6b110e51ba350c
+        secret: Default
+
+## Low Latency 48k Model for SM 12.0 (B40, RTX5090, RTX5080, RTX PRO 6000 Blackwell Server Edition)
+- id: 25321fe0e1b6fb55ba1413cef670bed81ec90e19817788de039fb30f26b0e054
+  tags:
+    gpu: B40, RTX5090, RTX5080, RTX PRO 6000 Blackwell Server Edition
+    gpu_cc: '12.0'
+    nim_workspace_hash_v1: 4b494e3b667b8e1626372829699c4d8d27de8705302538b0dd52f8391c4d9798
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:2.1.0?file=sm_120/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:c3c75a65a07e9a39b33ff17f7c7841824e96cfc125920ff5e91a4c4510e01ea5
+        secret: Default

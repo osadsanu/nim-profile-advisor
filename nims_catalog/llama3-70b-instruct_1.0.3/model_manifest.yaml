@@ -1,0 +1,712 @@
+03fdb4d11f01be10c31b00e7c0540e2835e89a0079b483ad2dd3c25c8cc29b61:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx8-fp16-lora
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+0f3de1afe11d355e01657424a267fbaad19bfea3143a9879307c49aed8299db0:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name generation_config.json
+        - !name model-00001-of-00030.safetensors
+        - !name model-00002-of-00030.safetensors
+        - !name model-00003-of-00030.safetensors
+        - !name model-00004-of-00030.safetensors
+        - !name model-00005-of-00030.safetensors
+        - !name model-00006-of-00030.safetensors
+        - !name model-00007-of-00030.safetensors
+        - !name model-00008-of-00030.safetensors
+        - !name model-00009-of-00030.safetensors
+        - !name model-00010-of-00030.safetensors
+        - !name model-00011-of-00030.safetensors
+        - !name model-00012-of-00030.safetensors
+        - !name model-00013-of-00030.safetensors
+        - !name model-00014-of-00030.safetensors
+        - !name model-00015-of-00030.safetensors
+        - !name model-00016-of-00030.safetensors
+        - !name model-00017-of-00030.safetensors
+        - !name model-00018-of-00030.safetensors
+        - !name model-00019-of-00030.safetensors
+        - !name model-00020-of-00030.safetensors
+        - !name model-00021-of-00030.safetensors
+        - !name model-00022-of-00030.safetensors
+        - !name model-00023-of-00030.safetensors
+        - !name model-00024-of-00030.safetensors
+        - !name model-00025-of-00030.safetensors
+        - !name model-00026-of-00030.safetensors
+        - !name model-00027-of-00030.safetensors
+        - !name model-00028-of-00030.safetensors
+        - !name model-00029-of-00030.safetensors
+        - !name model-00030-of-00030.safetensors
+        - !name model.safetensors.index.json
+        - !name special_tokens_map.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+2e8bb2652f0954452c0f56b4b9f5a7ae5c3131c6c63ccc669ec3e925dab47444:
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  model: meta/llama3-70b-instruct
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x2-fp8-throughput
+2e9b29c44b3d82821e7f4facd1a652ec5e0c4e7e473ee33451f6d046f616c3e5:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx8-fp8-latency
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+36fc1fa4fc35c1d54da115a39323080b08d7937dceb8ba47be44f4da0ec720ff:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x4-fp16-lora
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+7ba9fbd93c41a28358215f3e94e79a2545ab44e39df016eb4c7d7cadc384bde7:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-a100x4-fp16-lora
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+7e8f6cc0d0fde672073a20d5423977a0a02a9b0693f0f3d4ffc2ec8ac35474d4:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name generation_config.json
+        - !name model-00001-of-00030.safetensors
+        - !name model-00002-of-00030.safetensors
+        - !name model-00003-of-00030.safetensors
+        - !name model-00004-of-00030.safetensors
+        - !name model-00005-of-00030.safetensors
+        - !name model-00006-of-00030.safetensors
+        - !name model-00007-of-00030.safetensors
+        - !name model-00008-of-00030.safetensors
+        - !name model-00009-of-00030.safetensors
+        - !name model-00010-of-00030.safetensors
+        - !name model-00011-of-00030.safetensors
+        - !name model-00012-of-00030.safetensors
+        - !name model-00013-of-00030.safetensors
+        - !name model-00014-of-00030.safetensors
+        - !name model-00015-of-00030.safetensors
+        - !name model-00016-of-00030.safetensors
+        - !name model-00017-of-00030.safetensors
+        - !name model-00018-of-00030.safetensors
+        - !name model-00019-of-00030.safetensors
+        - !name model-00020-of-00030.safetensors
+        - !name model-00021-of-00030.safetensors
+        - !name model-00022-of-00030.safetensors
+        - !name model-00023-of-00030.safetensors
+        - !name model-00024-of-00030.safetensors
+        - !name model-00025-of-00030.safetensors
+        - !name model-00026-of-00030.safetensors
+        - !name model-00027-of-00030.safetensors
+        - !name model-00028-of-00030.safetensors
+        - !name model-00029-of-00030.safetensors
+        - !name model-00030-of-00030.safetensors
+        - !name model.safetensors.index.json
+        - !name special_tokens_map.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+7f8bb4a2b97cf07faf6fb930ba67f33671492b7653f2a06fe522c7de65b544ca:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-a100x8-bf16-latency
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+8b8e03de8630626b904b37910e3d82a26cebb99634a921a0e5c59cb84125efe8:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx4-fp8-throughput
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+8bb3b94e326789381bbf287e54057005a9250e3abbad0b1702a70222529fcd17:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x4-fp8-throughput
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+93782c337ddaf3f6b442ef7baebd0a732e433b7b93ec06bfd3db27945de560b6:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x8-fp8-latency
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+96b70da1414c7beb5cf671b3e7cf835078740764064c453cd86e84cf0491aac0:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx8-fp16-throughput
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+a30aae0ed459082efed26a7f3bc21aa97cccad35509498b58449a52c27698544:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name generation_config.json
+        - !name model-00001-of-00030.safetensors
+        - !name model-00002-of-00030.safetensors
+        - !name model-00003-of-00030.safetensors
+        - !name model-00004-of-00030.safetensors
+        - !name model-00005-of-00030.safetensors
+        - !name model-00006-of-00030.safetensors
+        - !name model-00007-of-00030.safetensors
+        - !name model-00008-of-00030.safetensors
+        - !name model-00009-of-00030.safetensors
+        - !name model-00010-of-00030.safetensors
+        - !name model-00011-of-00030.safetensors
+        - !name model-00012-of-00030.safetensors
+        - !name model-00013-of-00030.safetensors
+        - !name model-00014-of-00030.safetensors
+        - !name model-00015-of-00030.safetensors
+        - !name model-00016-of-00030.safetensors
+        - !name model-00017-of-00030.safetensors
+        - !name model-00018-of-00030.safetensors
+        - !name model-00019-of-00030.safetensors
+        - !name model-00020-of-00030.safetensors
+        - !name model-00021-of-00030.safetensors
+        - !name model-00022-of-00030.safetensors
+        - !name model-00023-of-00030.safetensors
+        - !name model-00024-of-00030.safetensors
+        - !name model-00025-of-00030.safetensors
+        - !name model-00026-of-00030.safetensors
+        - !name model-00027-of-00030.safetensors
+        - !name model-00028-of-00030.safetensors
+        - !name model-00029-of-00030.safetensors
+        - !name model-00030-of-00030.safetensors
+        - !name model.safetensors.index.json
+        - !name special_tokens_map.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+a90b2c0217492b1020bead4e7453199c9f965ea53e9506c007f4ff7b58ee01ff:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x8-fp16-latency
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name rank4.engine
+        - !name rank5.engine
+        - !name rank6.engine
+        - !name rank7.engine
+        - !name trt_llm_config.yaml
+abcff5042bfc3fa9f4d1e715b2e016c11c6735855edfe2093e9c24e83733788e:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x4-fp16-throughput
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+b811296367317f5097ed9f71b8f08d2688b2411c852978ae49e8a0d5c3a30739:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json
+        - !name generation_config.json
+        - !name special_tokens_map.json
+        - !name model.safetensors.index.json
+    - dst: trtllm_engine
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-a100x4-fp16-throughput
+        files:
+        - !name checksums.blake3
+        - !name config.json
+        - !name metadata.json
+        - !name rank0.engine
+        - !name rank1.engine
+        - !name rank2.engine
+        - !name rank3.engine
+        - !name trt_llm_config.yaml
+df45ca2c979e5c64798908815381c59159c1d08066407d402f00c6d4abd5b108:
+  model: meta/llama3-70b-instruct
+  release: '1.0.3'
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  container_url: nvcr.io/nim/meta/llama3-70b-instruct:1.0.3
+  workspace: !workspace
+    components:
+    - dst: ''
+      src:
+        repo_id: ngc://nim/meta/llama3-70b-instruct:hf
+        files:
+        - !name config.json
+        - !name generation_config.json
+        - !name model-00001-of-00030.safetensors
+        - !name model-00002-of-00030.safetensors
+        - !name model-00003-of-00030.safetensors
+        - !name model-00004-of-00030.safetensors
+        - !name model-00005-of-00030.safetensors
+        - !name model-00006-of-00030.safetensors
+        - !name model-00007-of-00030.safetensors
+        - !name model-00008-of-00030.safetensors
+        - !name model-00009-of-00030.safetensors
+        - !name model-00010-of-00030.safetensors
+        - !name model-00011-of-00030.safetensors
+        - !name model-00012-of-00030.safetensors
+        - !name model-00013-of-00030.safetensors
+        - !name model-00014-of-00030.safetensors
+        - !name model-00015-of-00030.safetensors
+        - !name model-00016-of-00030.safetensors
+        - !name model-00017-of-00030.safetensors
+        - !name model-00018-of-00030.safetensors
+        - !name model-00019-of-00030.safetensors
+        - !name model-00020-of-00030.safetensors
+        - !name model-00021-of-00030.safetensors
+        - !name model-00022-of-00030.safetensors
+        - !name model-00023-of-00030.safetensors
+        - !name model-00024-of-00030.safetensors
+        - !name model-00025-of-00030.safetensors
+        - !name model-00026-of-00030.safetensors
+        - !name model-00027-of-00030.safetensors
+        - !name model-00028-of-00030.safetensors
+        - !name model-00029-of-00030.safetensors
+        - !name model-00030-of-00030.safetensors
+        - !name model.safetensors.index.json
+        - !name special_tokens_map.json
+        - !name tokenizer.json
+        - !name tokenizer_config.json

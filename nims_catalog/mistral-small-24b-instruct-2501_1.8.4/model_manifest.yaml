@@ -1,0 +1,307 @@
+schema_version: "2.0"
+profile_selection_criteria: auto
+model: mistral/mistral-small-24b-instruct-2501
+release: 1.8,4
+profiles:
+  - id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+    tags:
+      feat_lora: "false"
+      llm_engine: tensorrt_llm
+      pp: "1"
+      precision: bf16
+      tp: "2"
+      trtllm_buildable: "true"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=README.md
+          checksum: blake3:476749e719dd8c89ff0c0cf33f102238b682f2ab3f8d57aa14fbc23d9f350c50
+        SYSTEM_PROMPT.txt:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=SYSTEM_PROMPT.txt
+          checksum: blake3:08a4e8d1f2211751ec68c11a5f46ebbff0591378d817e4624bcf1b68023c3f15
+        checksums.blake3:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=checksums.blake3
+          checksum: blake3:015436fefd78fc2c68b9269ca4eb820ee9072c5dc1a2368d5503dbec0eb2646b
+        config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=config.json
+          checksum: blake3:0f70356f36ea77a66231df95d554c319667227429520dc83a2e3ab1100059538
+        consolidated.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=consolidated.safetensors
+          checksum: blake3:ea62de1296640e741cad79ae54d0c572b91a73813e41871e88521196f282a66e
+        generation_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=generation_config.json
+          checksum: blake3:109d58f6f13dd2e99a420f406ada8b32550326dd7cbbe2c776a124e3739ecd1f
+        model-00001-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00001-of-00010.safetensors
+          checksum: blake3:2c55db2aceff232437f70336d83238180415a721d47526057112f8ba50df9165
+        model-00002-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00002-of-00010.safetensors
+          checksum: blake3:1662d680d887a423afdf491acc503798df0f26599c6ffa58b8d125e0dcc6c26f
+        model-00003-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00003-of-00010.safetensors
+          checksum: blake3:030f53a239f1745052e2d9233f130908ea1705b4799eb7b1129f94658c2ae998
+        model-00004-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00004-of-00010.safetensors
+          checksum: blake3:3112a12ed9b0a1acd0304a257025985936e34c79c7f65d600656841ea59c7f75
+        model-00005-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00005-of-00010.safetensors
+          checksum: blake3:376a6503c4cfc64758d9c04d54470143622a5a353bceb6d14d53387b5fbe7b83
+        model-00006-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00006-of-00010.safetensors
+          checksum: blake3:2ed8a8228ff98a8094058d91826dba006c7a3669d541f16f8a64b19769b4ca0c
+        model-00007-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00007-of-00010.safetensors
+          checksum: blake3:2014f12185703f852f0237cf252d7b19761718b47b50332ec8e5c57e4e42c1be
+        model-00008-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00008-of-00010.safetensors
+          checksum: blake3:e66845cc2f564d8c021b841b592ebb99515a187d2d74acc8d921a83b22386c65
+        model-00009-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00009-of-00010.safetensors
+          checksum: blake3:feeb06740ce75267ed7e15e635fc5b6242df3fb2baa7aa1a85b98d5b6b8eddac
+        model-00010-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00010-of-00010.safetensors
+          checksum: blake3:82ebca89b7ac7124ff84699bf0a5cd76fe2ecc9947c62c65561fd237ebba6abd
+        model.safetensors.index.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model.safetensors.index.json
+          checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+        params.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=params.json
+          checksum: blake3:bc75172c882ebd342d016067116fc6792c0150a9532b182e04bb4187670f7e3d
+        special_tokens_map.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=special_tokens_map.json
+          checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+        tekken.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tekken.json
+          checksum: blake3:ffe7a8d36efbe98edd73aecbc367456d73e0482a8f740db95edac2288cf2776a
+        tokenizer.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer.json
+          checksum: blake3:a43646ba93f3e4a1e2d345013db3042f553ab6486b349c5389b4445e1b06e793
+        tokenizer_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer_config.json
+          checksum: blake3:1c379366ac2d644be536ddc045cc28d3a364e3c820b4ba84b04431c43f1b69bf
+  - id: 3c788be0a2a4a3022493fb02df26fbdf6de8a77c27f0d407108971356582c123
+    tags:
+      feat_lora: "False"
+      llm_engine: vllm
+      pp: "1"
+      precision: bf16
+      tp: "1"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=README.md
+          checksum: blake3:476749e719dd8c89ff0c0cf33f102238b682f2ab3f8d57aa14fbc23d9f350c50
+        SYSTEM_PROMPT.txt:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=SYSTEM_PROMPT.txt
+          checksum: blake3:08a4e8d1f2211751ec68c11a5f46ebbff0591378d817e4624bcf1b68023c3f15
+        checksums.blake3:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=checksums.blake3
+          checksum: blake3:015436fefd78fc2c68b9269ca4eb820ee9072c5dc1a2368d5503dbec0eb2646b
+        config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=config.json
+          checksum: blake3:0f70356f36ea77a66231df95d554c319667227429520dc83a2e3ab1100059538
+        consolidated.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=consolidated.safetensors
+          checksum: blake3:ea62de1296640e741cad79ae54d0c572b91a73813e41871e88521196f282a66e
+        generation_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=generation_config.json
+          checksum: blake3:109d58f6f13dd2e99a420f406ada8b32550326dd7cbbe2c776a124e3739ecd1f
+        model-00001-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00001-of-00010.safetensors
+          checksum: blake3:2c55db2aceff232437f70336d83238180415a721d47526057112f8ba50df9165
+        model-00002-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00002-of-00010.safetensors
+          checksum: blake3:1662d680d887a423afdf491acc503798df0f26599c6ffa58b8d125e0dcc6c26f
+        model-00003-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00003-of-00010.safetensors
+          checksum: blake3:030f53a239f1745052e2d9233f130908ea1705b4799eb7b1129f94658c2ae998
+        model-00004-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00004-of-00010.safetensors
+          checksum: blake3:3112a12ed9b0a1acd0304a257025985936e34c79c7f65d600656841ea59c7f75
+        model-00005-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00005-of-00010.safetensors
+          checksum: blake3:376a6503c4cfc64758d9c04d54470143622a5a353bceb6d14d53387b5fbe7b83
+        model-00006-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00006-of-00010.safetensors
+          checksum: blake3:2ed8a8228ff98a8094058d91826dba006c7a3669d541f16f8a64b19769b4ca0c
+        model-00007-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00007-of-00010.safetensors
+          checksum: blake3:2014f12185703f852f0237cf252d7b19761718b47b50332ec8e5c57e4e42c1be
+        model-00008-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00008-of-00010.safetensors
+          checksum: blake3:e66845cc2f564d8c021b841b592ebb99515a187d2d74acc8d921a83b22386c65
+        model-00009-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00009-of-00010.safetensors
+          checksum: blake3:feeb06740ce75267ed7e15e635fc5b6242df3fb2baa7aa1a85b98d5b6b8eddac
+        model-00010-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00010-of-00010.safetensors
+          checksum: blake3:82ebca89b7ac7124ff84699bf0a5cd76fe2ecc9947c62c65561fd237ebba6abd
+        model.safetensors.index.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model.safetensors.index.json
+          checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+        params.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=params.json
+          checksum: blake3:bc75172c882ebd342d016067116fc6792c0150a9532b182e04bb4187670f7e3d
+        special_tokens_map.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=special_tokens_map.json
+          checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+        tekken.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tekken.json
+          checksum: blake3:ffe7a8d36efbe98edd73aecbc367456d73e0482a8f740db95edac2288cf2776a
+        tokenizer.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer.json
+          checksum: blake3:a43646ba93f3e4a1e2d345013db3042f553ab6486b349c5389b4445e1b06e793
+        tokenizer_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer_config.json
+          checksum: blake3:1c379366ac2d644be536ddc045cc28d3a364e3c820b4ba84b04431c43f1b69bf
+  - id: 61e3be8a204b3fb2f61dd9566b3c90b7e637e14fc90f9a893d20a0a3612ec444
+    tags:
+      feat_lora: "False"
+      llm_engine: vllm
+      pp: "1"
+      precision: bf16
+      tp: "2"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=README.md
+          checksum: blake3:476749e719dd8c89ff0c0cf33f102238b682f2ab3f8d57aa14fbc23d9f350c50
+        SYSTEM_PROMPT.txt:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=SYSTEM_PROMPT.txt
+          checksum: blake3:08a4e8d1f2211751ec68c11a5f46ebbff0591378d817e4624bcf1b68023c3f15
+        checksums.blake3:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=checksums.blake3
+          checksum: blake3:015436fefd78fc2c68b9269ca4eb820ee9072c5dc1a2368d5503dbec0eb2646b
+        config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=config.json
+          checksum: blake3:0f70356f36ea77a66231df95d554c319667227429520dc83a2e3ab1100059538
+        consolidated.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=consolidated.safetensors
+          checksum: blake3:ea62de1296640e741cad79ae54d0c572b91a73813e41871e88521196f282a66e
+        generation_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=generation_config.json
+          checksum: blake3:109d58f6f13dd2e99a420f406ada8b32550326dd7cbbe2c776a124e3739ecd1f
+        model-00001-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00001-of-00010.safetensors
+          checksum: blake3:2c55db2aceff232437f70336d83238180415a721d47526057112f8ba50df9165
+        model-00002-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00002-of-00010.safetensors
+          checksum: blake3:1662d680d887a423afdf491acc503798df0f26599c6ffa58b8d125e0dcc6c26f
+        model-00003-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00003-of-00010.safetensors
+          checksum: blake3:030f53a239f1745052e2d9233f130908ea1705b4799eb7b1129f94658c2ae998
+        model-00004-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00004-of-00010.safetensors
+          checksum: blake3:3112a12ed9b0a1acd0304a257025985936e34c79c7f65d600656841ea59c7f75
+        model-00005-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00005-of-00010.safetensors
+          checksum: blake3:376a6503c4cfc64758d9c04d54470143622a5a353bceb6d14d53387b5fbe7b83
+        model-00006-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00006-of-00010.safetensors
+          checksum: blake3:2ed8a8228ff98a8094058d91826dba006c7a3669d541f16f8a64b19769b4ca0c
+        model-00007-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00007-of-00010.safetensors
+          checksum: blake3:2014f12185703f852f0237cf252d7b19761718b47b50332ec8e5c57e4e42c1be
+        model-00008-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00008-of-00010.safetensors
+          checksum: blake3:e66845cc2f564d8c021b841b592ebb99515a187d2d74acc8d921a83b22386c65
+        model-00009-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00009-of-00010.safetensors
+          checksum: blake3:feeb06740ce75267ed7e15e635fc5b6242df3fb2baa7aa1a85b98d5b6b8eddac
+        model-00010-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00010-of-00010.safetensors
+          checksum: blake3:82ebca89b7ac7124ff84699bf0a5cd76fe2ecc9947c62c65561fd237ebba6abd
+        model.safetensors.index.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model.safetensors.index.json
+          checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+        params.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=params.json
+          checksum: blake3:bc75172c882ebd342d016067116fc6792c0150a9532b182e04bb4187670f7e3d
+        special_tokens_map.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=special_tokens_map.json
+          checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+        tekken.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tekken.json
+          checksum: blake3:ffe7a8d36efbe98edd73aecbc367456d73e0482a8f740db95edac2288cf2776a
+        tokenizer.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer.json
+          checksum: blake3:a43646ba93f3e4a1e2d345013db3042f553ab6486b349c5389b4445e1b06e793
+        tokenizer_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer_config.json
+          checksum: blake3:1c379366ac2d644be536ddc045cc28d3a364e3c820b4ba84b04431c43f1b69bf
+  - id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+    tags:
+      feat_lora: "false"
+      llm_engine: tensorrt_llm
+      pp: "1"
+      precision: bf16
+      tp: "1"
+      trtllm_buildable: "true"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=README.md
+          checksum: blake3:476749e719dd8c89ff0c0cf33f102238b682f2ab3f8d57aa14fbc23d9f350c50
+        SYSTEM_PROMPT.txt:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=SYSTEM_PROMPT.txt
+          checksum: blake3:08a4e8d1f2211751ec68c11a5f46ebbff0591378d817e4624bcf1b68023c3f15
+        checksums.blake3:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=checksums.blake3
+          checksum: blake3:015436fefd78fc2c68b9269ca4eb820ee9072c5dc1a2368d5503dbec0eb2646b
+        config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=config.json
+          checksum: blake3:0f70356f36ea77a66231df95d554c319667227429520dc83a2e3ab1100059538
+        consolidated.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=consolidated.safetensors
+          checksum: blake3:ea62de1296640e741cad79ae54d0c572b91a73813e41871e88521196f282a66e
+        generation_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=generation_config.json
+          checksum: blake3:109d58f6f13dd2e99a420f406ada8b32550326dd7cbbe2c776a124e3739ecd1f
+        model-00001-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00001-of-00010.safetensors
+          checksum: blake3:2c55db2aceff232437f70336d83238180415a721d47526057112f8ba50df9165
+        model-00002-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00002-of-00010.safetensors
+          checksum: blake3:1662d680d887a423afdf491acc503798df0f26599c6ffa58b8d125e0dcc6c26f
+        model-00003-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00003-of-00010.safetensors
+          checksum: blake3:030f53a239f1745052e2d9233f130908ea1705b4799eb7b1129f94658c2ae998
+        model-00004-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00004-of-00010.safetensors
+          checksum: blake3:3112a12ed9b0a1acd0304a257025985936e34c79c7f65d600656841ea59c7f75
+        model-00005-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00005-of-00010.safetensors
+          checksum: blake3:376a6503c4cfc64758d9c04d54470143622a5a353bceb6d14d53387b5fbe7b83
+        model-00006-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00006-of-00010.safetensors
+          checksum: blake3:2ed8a8228ff98a8094058d91826dba006c7a3669d541f16f8a64b19769b4ca0c
+        model-00007-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00007-of-00010.safetensors
+          checksum: blake3:2014f12185703f852f0237cf252d7b19761718b47b50332ec8e5c57e4e42c1be
+        model-00008-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00008-of-00010.safetensors
+          checksum: blake3:e66845cc2f564d8c021b841b592ebb99515a187d2d74acc8d921a83b22386c65
+        model-00009-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00009-of-00010.safetensors
+          checksum: blake3:feeb06740ce75267ed7e15e635fc5b6242df3fb2baa7aa1a85b98d5b6b8eddac
+        model-00010-of-00010.safetensors:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model-00010-of-00010.safetensors
+          checksum: blake3:82ebca89b7ac7124ff84699bf0a5cd76fe2ecc9947c62c65561fd237ebba6abd
+        model.safetensors.index.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=model.safetensors.index.json
+          checksum: blake3:71e643a3547715ef77f52a5334e4d18c52018855b09bce30d23ddce527bd02bb
+        params.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=params.json
+          checksum: blake3:bc75172c882ebd342d016067116fc6792c0150a9532b182e04bb4187670f7e3d
+        special_tokens_map.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=special_tokens_map.json
+          checksum: blake3:4f76c2460c0397023da15b12e51a6ce6bb767d75f139307d4a3a36ac56416df9
+        tekken.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tekken.json
+          checksum: blake3:ffe7a8d36efbe98edd73aecbc367456d73e0482a8f740db95edac2288cf2776a
+        tokenizer.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer.json
+          checksum: blake3:a43646ba93f3e4a1e2d345013db3042f553ab6486b349c5389b4445e1b06e793
+        tokenizer_config.json:
+          uri: ngc://nim/mistralai/mistral-small-24b-instruct-2501:hf-20b2ed1-nim?file=tokenizer_config.json
+          checksum: blake3:1c379366ac2d644be536ddc045cc28d3a364e3c820b4ba84b04431c43f1b69bf

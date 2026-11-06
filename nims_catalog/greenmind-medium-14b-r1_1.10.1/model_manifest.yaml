@@ -1,0 +1,305 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: greenmind-medium-14b-r1
+release: 1.10.1
+profiles:
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=LICENSE
+        checksum: blake3:65befc708120a6698a66e32ad9bf6c39cbc6c9ab590944c7a339413a045343c4
+      README.md:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=README.md
+        checksum: blake3:c0ddf18dbc3550d94ae655354968eee8ffdf33b02263d8541c32d6c87c7a60af
+      added_tokens.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=added_tokens.json
+        checksum: blake3:96ed1ea71e229005252045d11fe88c7c0c8abca160cbf24727e14cc056858e94
+      checksums.blake3:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=checksums.blake3
+        checksum: blake3:e52c0c1176b98bcf2387d8312963c002a1e0743defcab023ab35e31de7946b85
+      config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=config.json
+        checksum: blake3:18a5f369cbc854bf363286591dd8947daadd6c394e8b3721a0fdbc2c035ad14f
+      generation_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=generation_config.json
+        checksum: blake3:0dc57414568fa4f5069eda15a42338121ff9a1436672ea670b8233a4d50de5e1
+      latest:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=latest
+        checksum: blake3:52ac4f4a82b26c694b741316ddc364cf87156237e4f087e3765bbaf40c451265
+      merges.txt:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      model-00001-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00001-of-00006.safetensors
+        checksum: blake3:2dac2ebfff092b54f263a6d5d5a280884b413717ceb394b64f7a0f64a2ac240c
+      model-00002-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00002-of-00006.safetensors
+        checksum: blake3:7b80bce56385cd61dc343cad1f9be6fef154422e553a5b0203182bc7208ba613
+      model-00003-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00003-of-00006.safetensors
+        checksum: blake3:880b17075fe15cd478784d372d76ecab49e5a1aa54645306c5d1360eceb5a9e8
+      model-00004-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00004-of-00006.safetensors
+        checksum: blake3:14ff76a877cb74ef43f54bfa1ddea58aaace23742e45dcb24b5279cf45a104cb
+      model-00005-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00005-of-00006.safetensors
+        checksum: blake3:1ad3fa1b00427654dc47dc531d55058700455d91ed3188c05c171e6402b85054
+      model-00006-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00006-of-00006.safetensors
+        checksum: blake3:d6103f2393c95d9739d1e79c2006723caed8f7cf0699deb105df128df6dad9a3
+      model.safetensors.index.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model.safetensors.index.json
+        checksum: blake3:f5cb5b401de89505427d384e77011d3f8e7cde26c059098beb80f02b9533872b
+      special_tokens_map.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      tokenizer.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer.json
+        checksum: blake3:0a0d47c13868875b564c38024d567165234c312ff9dccf5cf405590ffe01f8b9
+      tokenizer_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer_config.json
+        checksum: blake3:6ce2e0123078539c585fe74f9c22d7d69f60811dde768adfbfbe902c4eb37721
+      trainer_state.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=trainer_state.json
+        checksum: blake3:3f798c9e177f4bff0c00d97b9846a31723579ab06a3c839ad19e9ae248290c16
+      training_args.bin:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=training_args.bin
+        checksum: blake3:23fde682c222ea8bf9bc6a314951451a069c4b50d24018da09819d37638b36f4
+      vocab.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      zero_to_fp32.py:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=zero_to_fp32.py
+        checksum: blake3:0592618fed48fb5cc0cbe602ab060bcdd26a4bcd1fc7b0e5f335050f274c038a
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=LICENSE
+        checksum: blake3:65befc708120a6698a66e32ad9bf6c39cbc6c9ab590944c7a339413a045343c4
+      README.md:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=README.md
+        checksum: blake3:c0ddf18dbc3550d94ae655354968eee8ffdf33b02263d8541c32d6c87c7a60af
+      added_tokens.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=added_tokens.json
+        checksum: blake3:96ed1ea71e229005252045d11fe88c7c0c8abca160cbf24727e14cc056858e94
+      checksums.blake3:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=checksums.blake3
+        checksum: blake3:e52c0c1176b98bcf2387d8312963c002a1e0743defcab023ab35e31de7946b85
+      config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=config.json
+        checksum: blake3:18a5f369cbc854bf363286591dd8947daadd6c394e8b3721a0fdbc2c035ad14f
+      generation_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=generation_config.json
+        checksum: blake3:0dc57414568fa4f5069eda15a42338121ff9a1436672ea670b8233a4d50de5e1
+      latest:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=latest
+        checksum: blake3:52ac4f4a82b26c694b741316ddc364cf87156237e4f087e3765bbaf40c451265
+      merges.txt:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      model-00001-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00001-of-00006.safetensors
+        checksum: blake3:2dac2ebfff092b54f263a6d5d5a280884b413717ceb394b64f7a0f64a2ac240c
+      model-00002-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00002-of-00006.safetensors
+        checksum: blake3:7b80bce56385cd61dc343cad1f9be6fef154422e553a5b0203182bc7208ba613
+      model-00003-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00003-of-00006.safetensors
+        checksum: blake3:880b17075fe15cd478784d372d76ecab49e5a1aa54645306c5d1360eceb5a9e8
+      model-00004-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00004-of-00006.safetensors
+        checksum: blake3:14ff76a877cb74ef43f54bfa1ddea58aaace23742e45dcb24b5279cf45a104cb
+      model-00005-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00005-of-00006.safetensors
+        checksum: blake3:1ad3fa1b00427654dc47dc531d55058700455d91ed3188c05c171e6402b85054
+      model-00006-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00006-of-00006.safetensors
+        checksum: blake3:d6103f2393c95d9739d1e79c2006723caed8f7cf0699deb105df128df6dad9a3
+      model.safetensors.index.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model.safetensors.index.json
+        checksum: blake3:f5cb5b401de89505427d384e77011d3f8e7cde26c059098beb80f02b9533872b
+      special_tokens_map.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      tokenizer.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer.json
+        checksum: blake3:0a0d47c13868875b564c38024d567165234c312ff9dccf5cf405590ffe01f8b9
+      tokenizer_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer_config.json
+        checksum: blake3:6ce2e0123078539c585fe74f9c22d7d69f60811dde768adfbfbe902c4eb37721
+      trainer_state.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=trainer_state.json
+        checksum: blake3:3f798c9e177f4bff0c00d97b9846a31723579ab06a3c839ad19e9ae248290c16
+      training_args.bin:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=training_args.bin
+        checksum: blake3:23fde682c222ea8bf9bc6a314951451a069c4b50d24018da09819d37638b36f4
+      vocab.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      zero_to_fp32.py:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=zero_to_fp32.py
+        checksum: blake3:0592618fed48fb5cc0cbe602ab060bcdd26a4bcd1fc7b0e5f335050f274c038a
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=LICENSE
+        checksum: blake3:65befc708120a6698a66e32ad9bf6c39cbc6c9ab590944c7a339413a045343c4
+      README.md:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=README.md
+        checksum: blake3:c0ddf18dbc3550d94ae655354968eee8ffdf33b02263d8541c32d6c87c7a60af
+      added_tokens.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=added_tokens.json
+        checksum: blake3:96ed1ea71e229005252045d11fe88c7c0c8abca160cbf24727e14cc056858e94
+      checksums.blake3:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=checksums.blake3
+        checksum: blake3:e52c0c1176b98bcf2387d8312963c002a1e0743defcab023ab35e31de7946b85
+      config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=config.json
+        checksum: blake3:18a5f369cbc854bf363286591dd8947daadd6c394e8b3721a0fdbc2c035ad14f
+      generation_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=generation_config.json
+        checksum: blake3:0dc57414568fa4f5069eda15a42338121ff9a1436672ea670b8233a4d50de5e1
+      latest:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=latest
+        checksum: blake3:52ac4f4a82b26c694b741316ddc364cf87156237e4f087e3765bbaf40c451265
+      merges.txt:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      model-00001-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00001-of-00006.safetensors
+        checksum: blake3:2dac2ebfff092b54f263a6d5d5a280884b413717ceb394b64f7a0f64a2ac240c
+      model-00002-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00002-of-00006.safetensors
+        checksum: blake3:7b80bce56385cd61dc343cad1f9be6fef154422e553a5b0203182bc7208ba613
+      model-00003-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00003-of-00006.safetensors
+        checksum: blake3:880b17075fe15cd478784d372d76ecab49e5a1aa54645306c5d1360eceb5a9e8
+      model-00004-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00004-of-00006.safetensors
+        checksum: blake3:14ff76a877cb74ef43f54bfa1ddea58aaace23742e45dcb24b5279cf45a104cb
+      model-00005-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00005-of-00006.safetensors
+        checksum: blake3:1ad3fa1b00427654dc47dc531d55058700455d91ed3188c05c171e6402b85054
+      model-00006-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00006-of-00006.safetensors
+        checksum: blake3:d6103f2393c95d9739d1e79c2006723caed8f7cf0699deb105df128df6dad9a3
+      model.safetensors.index.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model.safetensors.index.json
+        checksum: blake3:f5cb5b401de89505427d384e77011d3f8e7cde26c059098beb80f02b9533872b
+      special_tokens_map.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      tokenizer.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer.json
+        checksum: blake3:0a0d47c13868875b564c38024d567165234c312ff9dccf5cf405590ffe01f8b9
+      tokenizer_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer_config.json
+        checksum: blake3:6ce2e0123078539c585fe74f9c22d7d69f60811dde768adfbfbe902c4eb37721
+      trainer_state.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=trainer_state.json
+        checksum: blake3:3f798c9e177f4bff0c00d97b9846a31723579ab06a3c839ad19e9ae248290c16
+      training_args.bin:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=training_args.bin
+        checksum: blake3:23fde682c222ea8bf9bc6a314951451a069c4b50d24018da09819d37638b36f4
+      vocab.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      zero_to_fp32.py:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=zero_to_fp32.py
+        checksum: blake3:0592618fed48fb5cc0cbe602ab060bcdd26a4bcd1fc7b0e5f335050f274c038a
+- id: f95be114df33dd6613105f76fd567a071ed3bd08232888a5ba2f0545a99dbd92
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=LICENSE
+        checksum: blake3:65befc708120a6698a66e32ad9bf6c39cbc6c9ab590944c7a339413a045343c4
+      README.md:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=README.md
+        checksum: blake3:c0ddf18dbc3550d94ae655354968eee8ffdf33b02263d8541c32d6c87c7a60af
+      added_tokens.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=added_tokens.json
+        checksum: blake3:96ed1ea71e229005252045d11fe88c7c0c8abca160cbf24727e14cc056858e94
+      checksums.blake3:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=checksums.blake3
+        checksum: blake3:e52c0c1176b98bcf2387d8312963c002a1e0743defcab023ab35e31de7946b85
+      config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=config.json
+        checksum: blake3:18a5f369cbc854bf363286591dd8947daadd6c394e8b3721a0fdbc2c035ad14f
+      generation_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=generation_config.json
+        checksum: blake3:0dc57414568fa4f5069eda15a42338121ff9a1436672ea670b8233a4d50de5e1
+      latest:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=latest
+        checksum: blake3:52ac4f4a82b26c694b741316ddc364cf87156237e4f087e3765bbaf40c451265
+      merges.txt:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      model-00001-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00001-of-00006.safetensors
+        checksum: blake3:2dac2ebfff092b54f263a6d5d5a280884b413717ceb394b64f7a0f64a2ac240c
+      model-00002-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00002-of-00006.safetensors
+        checksum: blake3:7b80bce56385cd61dc343cad1f9be6fef154422e553a5b0203182bc7208ba613
+      model-00003-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00003-of-00006.safetensors
+        checksum: blake3:880b17075fe15cd478784d372d76ecab49e5a1aa54645306c5d1360eceb5a9e8
+      model-00004-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00004-of-00006.safetensors
+        checksum: blake3:14ff76a877cb74ef43f54bfa1ddea58aaace23742e45dcb24b5279cf45a104cb
+      model-00005-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00005-of-00006.safetensors
+        checksum: blake3:1ad3fa1b00427654dc47dc531d55058700455d91ed3188c05c171e6402b85054
+      model-00006-of-00006.safetensors:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model-00006-of-00006.safetensors
+        checksum: blake3:d6103f2393c95d9739d1e79c2006723caed8f7cf0699deb105df128df6dad9a3
+      model.safetensors.index.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=model.safetensors.index.json
+        checksum: blake3:f5cb5b401de89505427d384e77011d3f8e7cde26c059098beb80f02b9533872b
+      special_tokens_map.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      tokenizer.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer.json
+        checksum: blake3:0a0d47c13868875b564c38024d567165234c312ff9dccf5cf405590ffe01f8b9
+      tokenizer_config.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=tokenizer_config.json
+        checksum: blake3:6ce2e0123078539c585fe74f9c22d7d69f60811dde768adfbfbe902c4eb37721
+      trainer_state.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=trainer_state.json
+        checksum: blake3:3f798c9e177f4bff0c00d97b9846a31723579ab06a3c839ad19e9ae248290c16
+      training_args.bin:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=training_args.bin
+        checksum: blake3:23fde682c222ea8bf9bc6a314951451a069c4b50d24018da09819d37638b36f4
+      vocab.json:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      zero_to_fp32.py:
+        uri: ngc://nim/greennode/greenmind-medium-14b-r1:hf-7d92378-nim_bf16-checksum?file=zero_to_fp32.py
+        checksum: blake3:0592618fed48fb5cc0cbe602ab060bcdd26a4bcd1fc7b0e5f335050f274c038a

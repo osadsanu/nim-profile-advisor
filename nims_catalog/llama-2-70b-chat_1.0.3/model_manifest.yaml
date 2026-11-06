@@ -1,0 +1,608 @@
+1f8ec70d30b5f7adc8296487700f79c82311bb9913fbab91018c1597f76847d3:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-l40sx4-fp8-throughput.1.0.0.16238301-b
+268fc46ba15a2eb339d9a64aeac7d84bd1fc81ff891c580f48ee78d25e9aa362:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00015.safetensors'
+            - !name 'model-00002-of-00015.safetensors'
+            - !name 'model-00003-of-00015.safetensors'
+            - !name 'model-00004-of-00015.safetensors'
+            - !name 'model-00005-of-00015.safetensors'
+            - !name 'model-00006-of-00015.safetensors'
+            - !name 'model-00007-of-00015.safetensors'
+            - !name 'model-00008-of-00015.safetensors'
+            - !name 'model-00009-of-00015.safetensors'
+            - !name 'model-00010-of-00015.safetensors'
+            - !name 'model-00011-of-00015.safetensors'
+            - !name 'model-00012-of-00015.safetensors'
+            - !name 'model-00013-of-00015.safetensors'
+            - !name 'model-00014-of-00015.safetensors'
+            - !name 'model-00015-of-00015.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+41ab536714a4afd2ae438f256e8f615c0a0a51a419b65c77aff8f6ab445db9f1:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-h100x4-fp8-latency.1.0.0.16238301-b
+477bca7b2e419af6a8f10cad224ad9ce76d597440ad4e8bac8f4dc84043d7813:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00015.safetensors'
+            - !name 'model-00002-of-00015.safetensors'
+            - !name 'model-00003-of-00015.safetensors'
+            - !name 'model-00004-of-00015.safetensors'
+            - !name 'model-00005-of-00015.safetensors'
+            - !name 'model-00006-of-00015.safetensors'
+            - !name 'model-00007-of-00015.safetensors'
+            - !name 'model-00008-of-00015.safetensors'
+            - !name 'model-00009-of-00015.safetensors'
+            - !name 'model-00010-of-00015.safetensors'
+            - !name 'model-00011-of-00015.safetensors'
+            - !name 'model-00012-of-00015.safetensors'
+            - !name 'model-00013-of-00015.safetensors'
+            - !name 'model-00014-of-00015.safetensors'
+            - !name 'model-00015-of-00015.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+4d2cc57d8fd295a04332ed1fa835378d7c51631ab3129b687362987a320a21b3:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00015.safetensors'
+            - !name 'model-00002-of-00015.safetensors'
+            - !name 'model-00003-of-00015.safetensors'
+            - !name 'model-00004-of-00015.safetensors'
+            - !name 'model-00005-of-00015.safetensors'
+            - !name 'model-00006-of-00015.safetensors'
+            - !name 'model-00007-of-00015.safetensors'
+            - !name 'model-00008-of-00015.safetensors'
+            - !name 'model-00009-of-00015.safetensors'
+            - !name 'model-00010-of-00015.safetensors'
+            - !name 'model-00011-of-00015.safetensors'
+            - !name 'model-00012-of-00015.safetensors'
+            - !name 'model-00013-of-00015.safetensors'
+            - !name 'model-00014-of-00015.safetensors'
+            - !name 'model-00015-of-00015.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+625b4c7104bfbcc5cb6164186721a9187ebb23ce4f795cafea2dd9b88e79c3b5:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-a100x8-fp16-latency.1.0.0.16238301-b
+acc39cea9f72a9a7b90eefa892d9d53370b1eab647ea8cd3b1beecf6e88e6202:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-a100x4-fp16-throughput.1.0.0.16238301-b
+b5004c8be3aebd285cd45d1654d07363ef0bb966539a35a7d274d8e7cbf2f928:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-a100x4-fp16-throughput-lora.1.0.0.16238301-b
+bb7f1e9019bc4ae600ec6e326fb1b002f873850053e7b4c526c290a20ccb1864:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-h100x4-fp16-throughput-lora.1.0.0.16238301-b
+c03c11538762553680f38f541c43a378e0291fa40e06597012275d5a349f4849:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-h100x8-fp16-latency.1.0.0.16238301-b
+c76d8be2ae690425ab7429f28951f7d23739973910b28835ed5286dddf4d95e1:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-h100x4-fp16-throughput.1.0.0.16238301-b
+cd6742493c67cf9a9ac1bd135bce6fae709069cce3319015718fc8cf1f726e5e:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00015.safetensors'
+            - !name 'model-00002-of-00015.safetensors'
+            - !name 'model-00003-of-00015.safetensors'
+            - !name 'model-00004-of-00015.safetensors'
+            - !name 'model-00005-of-00015.safetensors'
+            - !name 'model-00006-of-00015.safetensors'
+            - !name 'model-00007-of-00015.safetensors'
+            - !name 'model-00008-of-00015.safetensors'
+            - !name 'model-00009-of-00015.safetensors'
+            - !name 'model-00010-of-00015.safetensors'
+            - !name 'model-00011-of-00015.safetensors'
+            - !name 'model-00012-of-00015.safetensors'
+            - !name 'model-00013-of-00015.safetensors'
+            - !name 'model-00014-of-00015.safetensors'
+            - !name 'model-00015-of-00015.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+e24a44931a2c07fda613d0b5c29d85e8ad431d2a589c70480b302f202f234ed0:
+  container_url: nvcr.io/nim/meta/llama-2-70b-chat:1.0.3
+  model: meta/llama-2-70b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'MODEL_CARD.md'
+            - !name 'README.md'
+            - !name 'Responsible-Use-Guide.pdf'
+            - !name 'USE_POLICY.md'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:hf-e9149a1
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-70b-chat:0.10.1+79a76176-h100x2-fp8-throughput.1.0.0.16238301-b

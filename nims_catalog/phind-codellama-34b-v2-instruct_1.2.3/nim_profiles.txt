@@ -1,0 +1,557 @@
+19e459efbffbd4642689d611c514f9b45f5078ab7ffe3b281892f30c25b6191e:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-h100x2-fp16-throughput.1.2.14326
+
+325c29ad892b2ad04a7f412511defc69790b2dc565fcc2c8b4520f45c0fdadbd:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-a10gx8-fp16-latency.1.2.38796
+
+4bb35c26c7c3a77a8cb501207c3e02d20e9ed5788ddc0d919ead2c83c1a75a48:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+
+57c011c0218fd160f48de30aa3d4bd87f9e1276462f7a3ca6aa4745617420b2c:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+
+595a713b69ec8457cd24e998d4891bc963789ce33dc6d5959750d06a7e83b33e:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-a100x4-fp16-latency.1.2.14326
+
+815beb0501a783fa673a96e80c3c444a2d4f72d115919c745fab4a21f54700cb:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+
+87730131ac43573a91abc7670defa3101926487e115f196c57701cd56107db37:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-l40sx4-fp16-throughput.1.2.14326
+
+b44efd1c7e87fa8fc086e32c8f765285fcab76890b251b70359f4fef2e8a4518:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-a10gx4-fp16-throughput.1.2.38796
+
+d059c097f97e5e8d19d02b97fe77ba633f8342cfe4ff78b4279fd9d8abab5c7b:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-a100x2-fp16-throughput.1.2.14326
+
+d42309654233dd1605f3de3bedfa5bebe5803836074dc4fdecb8a1ae7c64cef8:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-h100x4-fp8-latency.1.2.14326
+
+dada9c25ffc3b89b3c1685c3f76b473d62e9274b9a9c0cab774a7bf203af3ef1:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-l40sx4-fp8-throughput.1.2.14326
+
+e70ad79b14df7067dc1d2fc31966f4606e01d53e94abe958c54e34caa492c747:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-h100x2-fp8-throughput.1.2.14326
+
+f73ddec9910fdcf05000515d619e97188870eeee216bf65d6f3bcdf2672e4ccb:
+  container_url: nim/phind/phind-codellama-34b-v2-instruct:1.2.3
+  model: phind/phind-codellama-34b-v2-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'pytorch_model-00001-of-00007.bin'
+            - !name 'pytorch_model-00002-of-00007.bin'
+            - !name 'pytorch_model-00003-of-00007.bin'
+            - !name 'pytorch_model-00004-of-00007.bin'
+            - !name 'pytorch_model-00005-of-00007.bin'
+            - !name 'pytorch_model-00006-of-00007.bin'
+            - !name 'pytorch_model-00007-of-00007.bin'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:hf-949f61e
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/phind/phind-codellama-34b-v2-instruct:0.11+14957bf8-h100x4-fp16-latency.1.2.14326

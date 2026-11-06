@@ -1,0 +1,1218 @@
+- id: 8f23b2ce12d64905748147c73adbfe79fffabb0c2d9fa8dc95f4942dbb03d522
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    variant: base
+    weightless_engines: 'false'
+
+- id: 90b353eb2436047c674431dce2075e1b1f934b0e96d5bcc45db891e70f50c2d7
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    variant: canny
+    weightless_engines: 'false'
+
+- id: 83803d2005e31831fd4bf4be11e49c5336ca103d046c62fcd7f15cbf991f9e80
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    variant: depth
+    weightless_engines: 'false'
+
+- id: e6fd83b7f23171dade4ab3605d49a206b55394cd0ad8d8f474b2189b32c51521
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: ac23ec4dc4fb7e4a8a979d131d06ddedb8499afab2be0d6a8f5e08061969a368
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+
+- id: da238688d93aa61e1a3ecb89570335ad619f5a9ed5d4862086295dacfbe06dca
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    variant: canny+depth
+
+- id: d9571df38cdf56f348433abdda887e49b6436a8b8c653d156fb8cf9db07004a4
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+
+- id: cecbfc054ec0d010bf1cb2bd4ebeb86950d384836889623945e1cbb6284f3560
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+
+- id: a6ac960a5b9640dadcac1f0611c48d6ccd421d4c4b8d0539ec02aff941714995
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+    variant: base
+
+- id: 3db093fe7f7845c44271c592a99135e210350f520209109235e272c23c5ebebc
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+    variant: base
+
+- id: cd2dad626a9eab4d76938b64dcb05867ac0c3c4514f80d95d8b6f00c5d29a298
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+    variant: canny
+
+- id: 35b968c1a6524be63309010e95c9c843411826e10216ad792c55cf3dcd4f28e1
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+    variant: canny
+
+- id: ef3b473f6ff843ad8ff31de9f5d69091a3e02c7946961efdbfc2254f578312b4
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+    variant: depth
+
+- id: c159bebf2fb489c5b9e54ea5600bf5b61611bbdfa10d7a41bdd162695c07e1e4
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+    variant: depth
+
+- id: 91de75fa09cbf9d9a640635531cb3ed6fcd8da5627090792cf204eb2eefdab6e
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 9c2b1517807676c6fd35a86e098bdf7202723431d11ea64bdb29be831f7aa6fe
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 2d6a3d8a4a35464c4e877d096356f67f7d5c71182075b73c487e210b9527d75f
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 148c778cf1b504d73abf03b9579199fd3fc61ffac170748e01268e04b5611f61
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: d2515fb73058abaa01e23bb12f6de0ee7e46d1b32d9dad129314b7d650292073
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 4a480f197d3fc774a51ac180c13284ba1f415482da635f7770f949a720731fff
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 2c88f4bd290dc14be12b55fe60a693639490f055b1e8f62df52002dc4c92fba2
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: f93198fcd4aa6f3388cda238552bdf17eecc995cbbd1bc4257ba626c9f75052c
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 8b36c66e07139086903ec8fe68a9a90d30cf4fc47c4da488004bd1c2cb5ca4e1
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: f064866057e7db46e37724975f9cb9d55b3ea8271a1b6804d73e211556ac4a88
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: cf0f2a7be63cddbc0eb6f0979fd0dc0974e5bdc4ed32c59a8a03de73c335924a
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 58b9c0a56d3b4cee93ee0cb071a6f12b08236a567d437c0a0b5e1c006a6f9f83
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: c0423868d4f4c377ec7defdf87f07a56b700549f268c14f606965e53359408c8
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 0a36b415c1522af11c189db1215dc030844d6efcda4868c17e32d131fa0da051
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: eec7a6c6835beeadfd4b1ca552c6e7ad2eb3799d98a868a7339d7c56535b8314
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 72121ecfb662c4207838a585475ba46cea70b6f823df65deb70bba5be837af63
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: c23a9a06457f1c3381b19f4fede161473f17e10d8fab37febb0baae8c9942dc7
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: ef24227192bc4565b768f3586a9a3054b0983dbda093eed9f3c0127e001f63ad
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 7728a0a7cfb2775f59d9658c6fddc5455f92fd00cc2e0179f8dec47cac6eb1c8
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 8e8778a65adaf96b80305d42c6a6c8188708646dcb6357b5fcdf016c9a186e48
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: b5443be5be4080d11358055ce0d7e0a912da9708eb3921501faf27198b385f33
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 1f325043ca6bddf2577650fdbab327e4c41c6c1bc51cc6b1bf2be8aa00a8a3d7
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 0ae05e94c0c026e07097e59cfd9329c997ce7e4858859772904e4fa2bb792be2
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: c48647d45ce9b51552824bc444b74d656716a034123a3f07846b8ac6c8b333d5
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    transformer_ws_percentage: '0'
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: c746fe8dd3075d094cffeb2b5f7d599665a6b87975867277990a5075d0a4c1e1
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: b19e95f7a5b68c57d40e0fcf0552d783f7d2f3757c290cee3c42b245a829bf88
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 871a135255848eee4506b28c194e9da3fc76afe206267df4c5a922b7784c2335
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 171a032d4fb29213bd35daf14f1b87f2fec4968badf1213f29c10e13fa99fdc1
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 074c9a3c1d474819b9cf8d6f83c5b34dbb3873d3facdd56686866a49ec8e85dc
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 3fc9b7788af2ebf54c48aacc4cd94c64945416514e67fefdb9b53c0b261170d0
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: a91e0b9789298050fab70fb289ae287966b4ac83e9ae5dad4fd73b8fac760f79
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: cb5e627b75483830c0139d46097a4573834110ba2a82093ab1d3b97a3f6b0216
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: c8ed0422b76b88cd0d81943b7eb5f2d2624a4fc2cac92ace3ce2899e4af26f6b
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: aa7312e85c626d1b372f729d3e7e71a43db0c67e8b8cdb6643b4ea5cf1a3816e
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 1dbfde102469109a3dea93fb2f4ca0ec1b3dbc52c3c9da952cb41ea82c582ed4
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: eb164f4521f8c8bc7989864624e721f6e695b4b71b579624951eb43105dd3c14
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: 24a48159626621c11a0e6a73aab2413f2c7acb6d0ef6fe8757c3186faa53120f
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 4cea3354cf4542d2e2f4c603de9d32c86451e20fa9df12cc43ad51864e5f21f1
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: c753bf191a1cd14e278913bcddbe592e5669c34c9f7e0ee2b299f936e7cea546
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 2c728030d0600960d2533d184630d56438726e13d62ec30315a3cc1216af30c8
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 5559e8f077ac11e096e74f7b684cbfc0495ecd54da62a3078c414d491dbf26a2
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: d65bb8b3ec4d4ed6d0c1cac5803014f678e3948a293627df31d09f915ed43f84
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 72b50bb2e933b5b09802668f8976287e168429488dcc87d8ffdcc1de7b8c39c0
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: cb9ba6020399da70ff311dc1a7e220a6c068dbf102a09642ef0282c9e60c1ffb
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 842cab144f96016a90eba9e44d2e013aedfdf54c152651016a135d167fd142f7
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 860e65a8e301baefc9b310ea1c48d36558e8ebf944f2cbbdd29193024e65b05d
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: 0caf592f6b30f9c25f174e959487ad96d3ed9e8bcc030eb6997de74bf0e7cae0
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 3caa2b69f8089389e6634d8150a753b8ac1656d8717b117071b5efd5bb84b4d2
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: a5bd2e1d205c571b83f8e2ecf7ac35e29527b4c6f239f3fb8ea60787ae8c7515
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 8e4f8ab493079c4ed168d7d7339eb0b91c90b4d54c850786070b6d1fa8eea560
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 45b4c6d2fe2be3e1fbf4d70ed6d378a4379e0c36cd9bdda53b9766cd163a16e6
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: f7001c0cdbab1786bc93c8dd0894ef9827b83af1204be91679b95c883a00fea9
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: 52abc4ce7424ac2edcaf1c6b4498bbd2657b444c8cc46514b2e4044a2c33657a
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 223f5e449b1ab6571cc10c4dc4d31dc6a27fbc5aaf47ce052a4debcba0a5e2b8
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 693c545b76b1d00523fc565442e113d767d8128e15674ffd970f24b13e1bfdb2
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 7133b18e29b8bf22665042bd73ee15f17b8fc475e3233322c9a8efc823e616b3
+  tags:
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 51db77b26e65b4e8482b32d89e2b712bcb9785d12d611e21dbaed2d85e01364d
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 7208138b68d9ede865cea3db09128d04ab29fea391f5bd795c33c853ed08c00f
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: c7056ed9a937a0cdbee1316297dc966ec60bee5ffad37f377d3f98a91a4e29f1
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 1507771910546f1ed35ca3d5c32d702e0e9b13d675f3734422a0b83804def730
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: 17d9f3084d5b5346c2acd38effe2b832910eab8a3b1892ca81eda1cfe1c2b7e5
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 22385865a3169186d8021d671887c4b965f74f58f15a648186f13935374df700
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 40ec881781b842c601d19c4fa4f54be5d215785afe92a8d4abb9273a6f8482b5
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 5204e81a5fde3d307a9ec523edd5ef2db6b956c3d98951523ae205dceb504800
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 9daecb565758b5238cc019685418f06b1e091c770d5735fa76325714665183d8
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 4e76c12dd6033a69d82f045b40083fb65f481130ec21007a9c5bac710d187308
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 743720b1d85bced704fd0f8846ba5c04d2d3eedfe21c00a7ec0f44a9fbc82d7d
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: 26ed7d4c3f5956b7f826889f7fc8b2f60292c3e23b79d35bc94536c1fcd7ec1c
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: b3b8e6fc9f2771a6d5c7c8dccb3ae24d4a4ebca8b88c2e66788d6bcc8358b2e7
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: 10cf93319f04d0c246c9093117c3b33d767e5bb492f9d436420e8f4ecf5453c1
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: e44dd8b1721db9e285c3638c81faa164de2ac02c630fb025430ec2f62b2dd73e
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 74c011bf90c209e9b942a52b0fdc03c367ef1ff74409cb3df08cc90bac02fc2a
+  tags:
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: 937486eb0578bc5c5f1ef4f096f89709d6caaf5d08a73bab8a9261e8f2916a48
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 01a6a825da7abe69bd70281ac466a34ef10221f5a2ce22d613687f78c2c253de
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: a1ea47ade07e4d2011384440acbbb51f7a25a16f7dbac392e75f7f5befe6e90a
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: e9a213f51a68d425c9e8c7a7f251d224e40577eabc17fd535c93ae66fd876901
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: 4d39df88e44a398c9d91a1dfb253c022b39a66975977c6467b99d6340506d02a
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: b0bd838ea451bd812139784397ca2f41b6aadfbb90d40eb6d8a8325cc06ad469
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: 43b871abe0c6b8e3a0a59ae7e336e85184dc55d6f232be2e4bfe67f21f6b2c36
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: b41d41cb928524e62043d6a4902076776e3d7abe394f9daa26fef2cbab830ca9
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+
+- id: da7c82185882535d9fb7d4a397884be15ee4cdbcb3d8ea3f8a8501b11c9d9c12
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'true'
+
+- id: 8341a0e88406db8cdd9429e61ecd3436ca32988e1ead34fb982f6103f7e77359
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny+depth
+    weightless_engines: 'false'
+
+- id: 9878ecb0a807ef8eced83d82dbf74dc2bea91a3654c61f972257889fc6a5f559
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'true'
+
+- id: a924992da9651f40ec479c5938292396f2216608803f1d8208e5389b45ae6489
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+canny
+    weightless_engines: 'false'
+
+- id: dc37ffb26a382c6912e09e0c035f0db8d9218cf076d6a40fcf628f5ddd660847
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'true'
+
+- id: fa85b4fbe5de087859ddc6d3986f6edc67ebe0f835fd27172c4dfd12d7cd971e
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base+depth
+    weightless_engines: 'false'
+
+- id: ec3678c36831994bb00938c52fb44ccd401f475021165e9458e3069312696aac
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'true'
+
+- id: 1a33101327ef844fd03809eafd446e31a1e1ddc46b911032c49e29d3835f90be
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'

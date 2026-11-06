@@ -1,0 +1,27 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: mit/boltz2
+release: 1.10.1
+profiles:
+- id: cb6b19a6d515f70d07097929ae1bf2bbeac7da5354bf549a1989dc42944d11b2
+  tags:
+    pp: '1'
+    tp: '1'
+  workspace:
+    files:
+      boltz1_conf.ckpt:
+        uri: ngc://nim/mit/boltz2:1.6.0?file=boltz1_conf.ckpt
+        checksum: blake3:4ee73719319c0bf67f360d08d1be235edc0daf35da339e5547bced5993c50391
+      boltz2_aff.ckpt:
+        uri: ngc://nim/mit/boltz2:1.6.0?file=boltz2_aff.ckpt
+        checksum: blake3:4de999c76f44ce71442f74cc441f01244db73f0c4a25ad222035b21a298c15fd
+      boltz2_conf.ckpt:
+        uri: ngc://nim/mit/boltz2:1.6.0?file=boltz2_conf.ckpt
+        checksum: blake3:c7f05ef616171ce2d8fbfbf154f6c4e400c033abd40babe294a0c3e57a1e3f7b
+      ccd.pkl:
+        uri: ngc://nim/mit/boltz2:1.6.0?file=ccd.pkl
+        checksum: blake3:ce9700224342daf9632f32a61e0d3f8f4eb849007717161be843db9ed1720797
+      mols.tar:
+        uri: ngc://nim/mit/boltz2:1.6.0?file=mols.tar
+        checksum: blake3:e581116d462cb50675a418612879635c7049fb53367ba0c6c6aab18a02f1bfbf
+  workspace_hash: c576cb2882419f4be3858b09e23160699385612cc33f588cbdecee94cbc00c6c

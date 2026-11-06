@@ -1,0 +1,789 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/llama-nemotron-embed-1b-v2
+release: 1.13.0
+profiles:
+- id: 2e1ac3d2b2e881b0c86959c09a6ecca58947ac174745f2113203e539ed1310d8
+  tags:
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_12_0-fp16-6d747e0e?file=memory_footprint.json
+        checksum: blake3:c14222439b0d46961aaf11c312c528778f03c0a6aea6a8486d739892dd270977
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_12_0-fp16-6d747e0e?file=model.plan
+        checksum: blake3:45e9e5241cfdca146d9ee2e270493ccefbaf4036f33ca8e8cd0cc61cc0d2920b
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 559383c085ac4149960e64c80cb9d094ede117c7e8ac753da2d1266b2231261c
+  tags:
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_10_0-fp16-453c7182?file=memory_footprint.json
+        checksum: blake3:fefaac29877418716e33ac3a1ad487975f3c641ad7dbc93cbe2496708993ff2d
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_10_0-fp16-453c7182?file=model.plan
+        checksum: blake3:376031465343cb161db98bcfff9b11ea0439180924622e03f87b97e99cc90ae7
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 5771e47a255ecced1575f31390662a85ec5d2fea250c64d1203c62daf96f4f57
+  tags:
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_9_0-fp16-6687ad46?file=memory_footprint.json
+        checksum: blake3:74e5ba4109e6dcf31b7affefcbd1b5a58263118248599149ca90d991de585215
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_9_0-fp16-6687ad46?file=model.plan
+        checksum: blake3:0d492fcf5aa54d52e25fedd688229a38fcc4873813495ad1774347e96508a87e
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 89c52cf8ba04f1d655bd8cac8d8ecd89efc986df9814198a332c11744532d276
+  tags:
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_10_0-fp8-c86d47de?file=memory_footprint.json
+        checksum: blake3:a0debd62c76084b0a8d3b95c3e3716a1f1624e13a262c3a869b99cfb203056d0
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_10_0-fp8-c86d47de?file=model.plan
+        checksum: blake3:1ada2ed4e319bf6a87f4822314716f5a7fd448e99abe6449396af81de9bb5cad
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 932a4fc51d25c06b69742d00261f0e9048482bf49a188074bca930fbbad60100
+  tags:
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_9-fp8-1b4c89c6?file=memory_footprint.json
+        checksum: blake3:cb387362fddfb43936a57d9a11beb1687f0e1f638ed2a35aae3fb0436509520a
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_9-fp8-1b4c89c6?file=model.plan
+        checksum: blake3:4c02f8a6726da35415316441fad83a969a27d2c2e660be91566e67307edd2390
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: a8c400714e2537b60f4863da222735e339acf567fdc2381ca2d943b5645572ac
+  tags:
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_9_0-fp8-bac2e601?file=memory_footprint.json
+        checksum: blake3:17c5d7258d366ca0f32cc882196ec4bb338a6e417b04660e507900f49b534aa2
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_9_0-fp8-bac2e601?file=model.plan
+        checksum: blake3:00dcb80857d2f73b478da60f44d4d7ed69e55612cc519e44469444d9c15a64bb
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: b313b88dbb2e4bf4fe60311a612e6216fe106be02375baa2e1d21cf8e24e5809
+  tags:
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_9-fp16-8b92b706?file=memory_footprint.json
+        checksum: blake3:7f86842058bb08f0d4af738626fd9a15dc52a78b4d0cdabea06cb25325425ec4
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_9-fp16-8b92b706?file=model.plan
+        checksum: blake3:123ef0ad369b524aab2eab9c497ebcbb95611d34dd6eb7ecb53cd904d7865994
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: decb2c6f0af861f40b4438444bc61d865f0fb053589b21f9bf48c01b52714fa1
+  tags:
+    compute_capability: '8.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_0-fp16-048564ba?file=memory_footprint.json
+        checksum: blake3:8c2330d955ae6bbcac4c1cdb05d70c17475fc6da2e6f0b2b041080ff101c8ac3
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_0-fp16-048564ba?file=model.plan
+        checksum: blake3:7fc9b3d058026ae69c9c67a8e053dfc71cba3cb3f5833187073499f759b04653
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: e28f17c9c13a99055d065f88d725bf93c23b3aab14acd68f16323de1353fc528
+  tags:
+    model_type: onnx
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/model.embed_tokens.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.embed_tokens.weight
+        checksum: blake3:086ab0635566921d38ce8d358eabc5e5c48cadb62252d99060039c998d578519
+      model/model.layers.0.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.0.input_layernorm.weight
+        checksum: blake3:f8d06c15026e6e499de9493756568a11df3935e4f568b86bd1ee1fd5ec2c70af
+      model/model.layers.0.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.0.post_attention_layernorm.weight
+        checksum: blake3:65a332f7fa02dffbd5bf20ef8ec6f4a7e6ccb49fbf23588d6f813325bc1f4f3b
+      model/model.layers.1.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.1.input_layernorm.weight
+        checksum: blake3:a038446d0a8e214b4cfa3533247609f7a898036df679cc3dc7aefcdd7ece6d4a
+      model/model.layers.1.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.1.post_attention_layernorm.weight
+        checksum: blake3:80e0763462991a6cc8a7035ee05799400460900c3c47d33ec449d2de388eff12
+      model/model.layers.10.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.10.input_layernorm.weight
+        checksum: blake3:955f6bf82a14ec148fc20ffdb8e63fbcd63e35d60a4d262bd9bc2e824d4d8722
+      model/model.layers.10.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.10.post_attention_layernorm.weight
+        checksum: blake3:a3e0c1ac2ad6fea4cd2230db6b12874278e88e85242980cd38f01aa9e326ec99
+      model/model.layers.11.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.11.input_layernorm.weight
+        checksum: blake3:ea27f23b4ccf9439af868700a6701cfd9b29067567b20dcfc0414b393d455eff
+      model/model.layers.11.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.11.post_attention_layernorm.weight
+        checksum: blake3:12a43e958cdf3713d954a16aff2322d3499f548b8789fe73d76b890a954402f8
+      model/model.layers.12.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.12.input_layernorm.weight
+        checksum: blake3:e1e3394053424355d2e3aab4f3647b4a14eb4f7d625c7d6ef2ee02b6d6ec05fd
+      model/model.layers.12.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.12.post_attention_layernorm.weight
+        checksum: blake3:8841bba4a4dd14069cb8c9e6fbc336e1a70a844ed814b262c14d8defbc487054
+      model/model.layers.13.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.13.input_layernorm.weight
+        checksum: blake3:9959fcb34d145b9b472c55819aacfc84344e31c09b658dd9d3384d6a04c411ba
+      model/model.layers.13.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.13.post_attention_layernorm.weight
+        checksum: blake3:dbf79f0c69ea6a5e0b0f449d999045e1d1b808afc884e410919216f8c7b838ec
+      model/model.layers.14.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.14.input_layernorm.weight
+        checksum: blake3:073eed2b302f14ac4bbb55407871be48e5b43737cff917e5b9f327cf7b5d791b
+      model/model.layers.14.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.14.post_attention_layernorm.weight
+        checksum: blake3:30c6a3dadbcbe221c36afec1575a1bd0665dae3ae85b27e944c09baf57f79601
+      model/model.layers.15.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.15.input_layernorm.weight
+        checksum: blake3:b597bfa2b16343de5b4f87953f70c85e10d26f5089b45181ec5729f75dfa882d
+      model/model.layers.15.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.15.post_attention_layernorm.weight
+        checksum: blake3:7be0066c156fd517a8b6b8dd90a15db129b0c8e85be799c318d4a0b359ad863a
+      model/model.layers.2.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.2.input_layernorm.weight
+        checksum: blake3:73585c5aa8718590526dd64daeb6426c5f79da9087224ec6cab121e99b01e626
+      model/model.layers.2.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.2.post_attention_layernorm.weight
+        checksum: blake3:f2a7007346f91e38c60d9472739495e4a0fb791bb430c3e952b7e394df072452
+      model/model.layers.3.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.3.input_layernorm.weight
+        checksum: blake3:2e0d7546f790e8c3a1d029e9baa32500540d44338b37ea0aa1768ffa9e50c16f
+      model/model.layers.3.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.3.post_attention_layernorm.weight
+        checksum: blake3:451b1e7a29c2b56d70dca96f88ce668c821d03ba786378b159fcf1b39e85838e
+      model/model.layers.4.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.4.input_layernorm.weight
+        checksum: blake3:74789245969c0af30c1b4df82698d6a9487d3b4d73f21df4b87a92eeee1c9ec9
+      model/model.layers.4.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.4.post_attention_layernorm.weight
+        checksum: blake3:0e408db01db6d108d4f998d4d1360a2e1a2a7f8ffdde04f0352c499adc752f21
+      model/model.layers.5.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.5.input_layernorm.weight
+        checksum: blake3:0554d7891b3c26e67f2a802a2d682317593d6ac10834bb7bd49bfa267c4a2a12
+      model/model.layers.5.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.5.post_attention_layernorm.weight
+        checksum: blake3:2f46241f6472bdf7b5595bc917c302e59cbadc364daab60b39e4c8619e1cfb35
+      model/model.layers.6.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.6.input_layernorm.weight
+        checksum: blake3:dd3cadfaf6187d19392c1f8c70a71db7c2c4eb1e898eb0eca729691ad51ef6be
+      model/model.layers.6.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.6.post_attention_layernorm.weight
+        checksum: blake3:c572a30f49aa7a49461e2b67b75be59eeccad5a6e34c49277e2760aff8e8b320
+      model/model.layers.7.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.7.input_layernorm.weight
+        checksum: blake3:b514f4339babb529037493939749e27f0fbc6c46473081c80e61385e08fccfcc
+      model/model.layers.7.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.7.post_attention_layernorm.weight
+        checksum: blake3:d92975ffec164043d8d2a57855d11b13825c45f2066e5b31e54a5df752ec8601
+      model/model.layers.8.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.8.input_layernorm.weight
+        checksum: blake3:ba3ac8542054c6052fd84c0c9699b45462a3055b404f203ef03f1582ac6760a5
+      model/model.layers.8.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.8.post_attention_layernorm.weight
+        checksum: blake3:f53c1106a77c41af08d1b523304d1fedb59d6f4488a2078d4a4b403cc5af2b44
+      model/model.layers.9.input_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.9.input_layernorm.weight
+        checksum: blake3:2b2b64b8bae0802832e7c795e718f27c30a3082d99cbe8ce5169d6b9b24afa33
+      model/model.layers.9.post_attention_layernorm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.layers.9.post_attention_layernorm.weight
+        checksum: blake3:84a8a12c3cef7e625a4b5a60be412081b39d7dd84d5f7704310e5db77cdf014d
+      model/model.norm.weight:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.norm.weight
+        checksum: blake3:889fd78eb1dd96533244bb1447a1350a264aa9ac25cdd9d46bba243f3f867548
+      model/model.onnx:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=model.onnx
+        checksum: blake3:35ba5c6c0a24a4da782c7f7fa5873b3f47d306e8262d50054205f18e259f6b9c
+      model/onnx__MatMul_4568:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4568
+        checksum: blake3:7f511a692673e7cdd8261e385557247b484ef00df3f404271e0c6687f383eda6
+      model/onnx__MatMul_4575:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4575
+        checksum: blake3:a621ef4a0ef5f8f16ab0ec6e3100bfa8c564f5235c77acf84bb58fd6da5c2168
+      model/onnx__MatMul_4576:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4576
+        checksum: blake3:2cce61c63db649a988ad0533897d1d553cf8c0647dc44abaf2028d3737c9b9ea
+      model/onnx__MatMul_4599:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4599
+        checksum: blake3:dae1c8732c78cda947f922df5ff25f937b5ef61ad6c07199577b63a4e7ec2205
+      model/onnx__MatMul_4600:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4600
+        checksum: blake3:bf9bad1592bb35f9cc555adbdd0072964caceb9273c93ecb910a1de5a5bc6d5a
+      model/onnx__MatMul_4601:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4601
+        checksum: blake3:c710ba3588f5ecbb391c283e40568352c84fb8b18dd9da83e9ecbb5c132443bd
+      model/onnx__MatMul_4602:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4602
+        checksum: blake3:c0bae19e11292f32182ba24ef9d59e289483e52e55e018e0532020bca8096e97
+      model/onnx__MatMul_4603:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4603
+        checksum: blake3:84924890ceb99265601047c757876db838338cf9a097517c9bff325323ac4330
+      model/onnx__MatMul_4610:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4610
+        checksum: blake3:59cc8542cb688b50d9fdf0372f3c146e518d361441f85722384357a1592e9845
+      model/onnx__MatMul_4611:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4611
+        checksum: blake3:b13bf21dedafbb9e6d2e78950de6ae71c1195e4458f19d59d2afeb4cc7847223
+      model/onnx__MatMul_4634:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4634
+        checksum: blake3:590b5293e527db9e242cac8bfef3f560a48c34c4a4217e19ad5ce3c38a3eb822
+      model/onnx__MatMul_4635:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4635
+        checksum: blake3:37580d6ed731b8872398d40cad140c844e8439956d428c557040a5836c62e258
+      model/onnx__MatMul_4636:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4636
+        checksum: blake3:174a270a4225c87d0099ddc0b185b4be1049a2d55decf6bdbbc99b33534acbc7
+      model/onnx__MatMul_4637:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4637
+        checksum: blake3:6a6edb196da1077dc0c22e5d78341d390579bc8929a3156a1b084ff5fff53b23
+      model/onnx__MatMul_4638:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4638
+        checksum: blake3:9debf6a6040c5157ee4b082adbc07fa52689ff024005349926a035abd1e7cfca
+      model/onnx__MatMul_4645:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4645
+        checksum: blake3:7e964c58f746422d1c8ee8a36df996d2d7f8fe9f130e54da90fb1ab315195bdd
+      model/onnx__MatMul_4646:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4646
+        checksum: blake3:b8e493b9f139c3f105685534e84e648ce385ccf950cb70febab224dfc050cae8
+      model/onnx__MatMul_4669:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4669
+        checksum: blake3:997fc97106d779aa6dd26251e96e581fcc61b6c87c34f944fe696c158960357e
+      model/onnx__MatMul_4670:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4670
+        checksum: blake3:ea5a2e95cc40776a1a0c7616c7298aae9ebf8b85bbb9a65d3dd6397c22d4bb35
+      model/onnx__MatMul_4671:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4671
+        checksum: blake3:5252d22ea5bcd68f79f21c8a104caa387f69912420834b2a7a1210d8ef6616e9
+      model/onnx__MatMul_4672:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4672
+        checksum: blake3:584df18b953ab4cd72e3b51e079d8a077600006770440a1a23f86ebe6349d276
+      model/onnx__MatMul_4673:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4673
+        checksum: blake3:aa23fed7b22ef32df9cb330fd9fa3404ad2daa1cb5b439cb3836c2e2be64f506
+      model/onnx__MatMul_4680:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4680
+        checksum: blake3:00d8d5803963c9282a68a74d169a53bf1618587a16c21e06d741780ed4e2e35f
+      model/onnx__MatMul_4681:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4681
+        checksum: blake3:53bdbd70e1d5e61ec0357980f4a5ba0ca1f373760711acf45c7ba37ca7511a2a
+      model/onnx__MatMul_4704:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4704
+        checksum: blake3:6e0548b617ec4a57b301801f296305babac4e525cd08dae092c7131e032c8c0c
+      model/onnx__MatMul_4705:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4705
+        checksum: blake3:21a960bd03045f2f54f4b221152148edfcc8005aab58966494a36f55904c4bce
+      model/onnx__MatMul_4706:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4706
+        checksum: blake3:6c9092115066fc55a5bf2e4b67e18cb227a3009410b4d1958323256c4063de99
+      model/onnx__MatMul_4707:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4707
+        checksum: blake3:1e9836f4fe7ca3d7f20277b762696c6fb601ebaa5504d0b6a5714dcbfeb75a7c
+      model/onnx__MatMul_4708:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4708
+        checksum: blake3:15affba6d82ba3fb55b6ad35f3b148a0028ef5546692b47e93548fa3c03cb815
+      model/onnx__MatMul_4715:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4715
+        checksum: blake3:8e379d2ad81504cd249971a195d4712c13f97a525f3efc9bbf2f143a688f171b
+      model/onnx__MatMul_4716:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4716
+        checksum: blake3:f6fea092c5d5fd4b2d86707eadbd8ed9b1af28314aef45057cfe2cd9263e94bb
+      model/onnx__MatMul_4739:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4739
+        checksum: blake3:88693d780f55b2b336f7994785b04264714a596196949efe91e9fe0c5d0d87a3
+      model/onnx__MatMul_4740:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4740
+        checksum: blake3:1ad65febcfcf8728b96ea2fea31c0a531d6f891e8b72e7123ea0531b95819a18
+      model/onnx__MatMul_4741:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4741
+        checksum: blake3:63a253508f3f785083103c473c61219469cc4e463abb34ea37bb66eb57ce1b5f
+      model/onnx__MatMul_4742:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4742
+        checksum: blake3:c92b352c9019f7f17bea6f443beec2a2e29abd36011ada134e81a3e10121ee49
+      model/onnx__MatMul_4743:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4743
+        checksum: blake3:40f990f44e892fb94847d2fb216600250ce6cc06f82efc0f2992ac6070c2c49f
+      model/onnx__MatMul_4750:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4750
+        checksum: blake3:31f52e76e7ded869764e759df085bf62c4517df2ef1f5ef8586d552fffba3177
+      model/onnx__MatMul_4751:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4751
+        checksum: blake3:f218d83bf0b1b3a72983d5fca19e5fe6b99af6486de252cc802be666b2e2fc04
+      model/onnx__MatMul_4774:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4774
+        checksum: blake3:e180758f498437445d3deaf79033bed181bd0c0ec67ccd648c3556fb220dcdbe
+      model/onnx__MatMul_4775:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4775
+        checksum: blake3:d0a839ece7a47c993354ddc2988f01eb6aa47e26f2bf5030edffd8f49d83df3a
+      model/onnx__MatMul_4776:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4776
+        checksum: blake3:7d2355b31ea30891828587021285eeea03e16442b5c42a199be2641371f7edca
+      model/onnx__MatMul_4777:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4777
+        checksum: blake3:074fa25810e8bd3f3b7a8e1848c5ec22a3d8991943584b76cdc54bc70f93ecd7
+      model/onnx__MatMul_4778:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4778
+        checksum: blake3:4571aff7407c3ada754f2cbd11b62a32c5a27af923b6e60651e17d0c558ca128
+      model/onnx__MatMul_4785:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4785
+        checksum: blake3:a322f4ef14f3d7d985a00f551786fa1759368eb12b848b975176d7dc9b970235
+      model/onnx__MatMul_4786:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4786
+        checksum: blake3:7f48e88b57695eb9e7c74d29d44b93817d5363200bdbb8258db1395b4d522811
+      model/onnx__MatMul_4809:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4809
+        checksum: blake3:add5058c3688b229a97909dfbfe4981153aa0d332509a115f26db8142588442a
+      model/onnx__MatMul_4810:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4810
+        checksum: blake3:95b3a25c7088118b80e70584a71bd18193d1e8374021130cf247fbd837189a72
+      model/onnx__MatMul_4811:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4811
+        checksum: blake3:e0d4499023a737048fc2e137bc9bed30b8b641dc28b73cbe9aeff2fcbccd48c6
+      model/onnx__MatMul_4812:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4812
+        checksum: blake3:d43689f2fd26f6c22339d2914d3ad1ee2d6239b9219988bba4f16cf3839f4d57
+      model/onnx__MatMul_4813:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4813
+        checksum: blake3:8d0f5f0b3421d708915675331d832fdf9e87a4927af29dd7e0fe9ceefd5e6587
+      model/onnx__MatMul_4820:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4820
+        checksum: blake3:bee959beca0d90a6dd809a5b012eedb124f098f22897576f0167f31a593ad5e9
+      model/onnx__MatMul_4821:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4821
+        checksum: blake3:8343d1384da2cb3ac9ce6e939be7fa401a06abf49fb84431e8d091c1acf6a730
+      model/onnx__MatMul_4844:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4844
+        checksum: blake3:5983327b60fc642e1142941803da34a16758f83aadf45fe62f5b6fac9d475afb
+      model/onnx__MatMul_4845:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4845
+        checksum: blake3:c55b8b802601347ebbba34193cfa9b6196e38f791d1a41bd3dcbbebaa0f4fe85
+      model/onnx__MatMul_4846:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4846
+        checksum: blake3:dc938af09a6b27cf98bd1d4bb221097896d87b38c6da1ae49dd8c0813830a1dc
+      model/onnx__MatMul_4847:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4847
+        checksum: blake3:e94231013405773fe3808a2eabab25208be34e29bec1d85ad84ed2d25e06c4b5
+      model/onnx__MatMul_4848:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4848
+        checksum: blake3:30cec58f3fa6f8f8f8429718ad9103bdecc5f30ed03c7062406a0390acbd7b48
+      model/onnx__MatMul_4855:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4855
+        checksum: blake3:306005ccd09c6dcf14c44972851dda1c536a49c80220db323d849dc0dcff99e5
+      model/onnx__MatMul_4856:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4856
+        checksum: blake3:e9e557394b8e945c5b8d69b4b45ba4f4ad0eddea3c679d64c62cbd8d747c77c6
+      model/onnx__MatMul_4879:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4879
+        checksum: blake3:8028f1d7a54a0a1221aa7dd41c527e3926535101f10ac651fda87feb468dc324
+      model/onnx__MatMul_4880:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4880
+        checksum: blake3:1136069d94190e7bb47513cbafb242c6242e130a4cb799b3f58c50a64885de55
+      model/onnx__MatMul_4881:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4881
+        checksum: blake3:96a00eb9664a17c4d1503a93817b84863604f08953b22297e2c4b38578357242
+      model/onnx__MatMul_4882:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4882
+        checksum: blake3:263ca3fa80dade7031c7ae755a09904c2046c736b5749d6ed991de42d8eb8056
+      model/onnx__MatMul_4883:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4883
+        checksum: blake3:bf633c3b0ca9c5cd5d2a2390dbdef92d2d762e070d7673e0aeab402aa7db8f3d
+      model/onnx__MatMul_4890:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4890
+        checksum: blake3:d50d304660f1ea05ef34788afb8bb13a6470cd481f902d0b006621a66e792139
+      model/onnx__MatMul_4891:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4891
+        checksum: blake3:8ac23d740743b1b405e6b432ed701f7b328158b7643b21e03272c6a0a359e5e8
+      model/onnx__MatMul_4914:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4914
+        checksum: blake3:2d2ef588e56f1f63e3c50b055341501fd9a5f8c943ad5b1b8f5c500ccbec5dc4
+      model/onnx__MatMul_4915:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4915
+        checksum: blake3:4845d446312b73952283106de959124f0e9729e375c754c8099ad6e45337db37
+      model/onnx__MatMul_4916:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4916
+        checksum: blake3:25075ffe0f188464fa480ea4706c93df48daeb6171b57b4cdca4873cc77dc9cd
+      model/onnx__MatMul_4917:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4917
+        checksum: blake3:62711993ae448824c0b01ae99ea75c8f3033a1b067a23a3ce9911a8c0397917b
+      model/onnx__MatMul_4918:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4918
+        checksum: blake3:9e0983fd936dc622e1144c99b9413ccd4d794f6960e99392dc5d2dbe2963d47c
+      model/onnx__MatMul_4925:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4925
+        checksum: blake3:56ba45d36260bd5dd47d12c50f7bcf587702b781201a758c41078dae64d226e5
+      model/onnx__MatMul_4926:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4926
+        checksum: blake3:6b32d257c939b88a52cccbd04dafe0b8e510a8b4877185139c0ffa50cfb47a53
+      model/onnx__MatMul_4949:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4949
+        checksum: blake3:3882539573783907d45e4f49d6f4f07247cf9233d5852a90fb775fd9606d01c4
+      model/onnx__MatMul_4950:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4950
+        checksum: blake3:285998468bf43b9762c7b4dde0c908b68b6aefb38c39ede3e0261238496c549b
+      model/onnx__MatMul_4951:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4951
+        checksum: blake3:8291553f8c23da8ddceaaf0cbd0544cc231424a39fdf4c01c5900c0fdb075f76
+      model/onnx__MatMul_4952:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4952
+        checksum: blake3:3ac428667fd5338d3199e08a1a3d8622a5b2c4487dd352ce458bcf43b029581f
+      model/onnx__MatMul_4953:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4953
+        checksum: blake3:6f6839b83668deabe36b4ffb54f89da07114f5e4f580eee8faf03ecd8973a329
+      model/onnx__MatMul_4960:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4960
+        checksum: blake3:8de5326cd19f5b69b04244b4f30dd174b1053063c216bfd2995bf4c8ef4c1a81
+      model/onnx__MatMul_4961:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4961
+        checksum: blake3:323ca3cd85e78168ea3de2a03e0265eb9176487d08c60564a1db3a315ab1b8d9
+      model/onnx__MatMul_4984:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4984
+        checksum: blake3:47e1c0fc757ce1ca4bd6bc1b76d4d21aa8f45d13b40f22d7e88b062dd06872a0
+      model/onnx__MatMul_4985:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4985
+        checksum: blake3:d45f4f0def2bbbbba6650df0a31f035058a1ef100e3e8531b8e8a81c65e92f5a
+      model/onnx__MatMul_4986:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4986
+        checksum: blake3:94abbefefc388af6a348d3b824be6c77aec36131636cc41dec7a7fbefe60b1f0
+      model/onnx__MatMul_4987:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4987
+        checksum: blake3:ed96198113996fb1fd074fb657cbc60623af041da7c94965ce9cba39dd9d6be3
+      model/onnx__MatMul_4988:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4988
+        checksum: blake3:6c3480d68a22e5afb467e98221a41505989bbc787f241adea61dd8463a518567
+      model/onnx__MatMul_4995:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4995
+        checksum: blake3:473c68ca9f94574636c1123042f5dbb22aad8be2884a95053e7327dca4a686bf
+      model/onnx__MatMul_4996:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_4996
+        checksum: blake3:dc6c10ea17aafe083185343459bff18d594c3d6b4a20f230cb46be23a9c5eb34
+      model/onnx__MatMul_5019:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5019
+        checksum: blake3:86615c6c955660902714d1b6c7b025541faac20d2d0d0bc01bbe2cce492e098e
+      model/onnx__MatMul_5020:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5020
+        checksum: blake3:6410a51bc16aab444794ac9d7ec34124b8ad7a5c9514464ec356aaf5e8f484c9
+      model/onnx__MatMul_5021:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5021
+        checksum: blake3:0c257638fdf4e370c23dea14b53be27e0aff4bd1a1924717fe4f4c9909533d96
+      model/onnx__MatMul_5022:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5022
+        checksum: blake3:491141a7cb70d1c71e6a05138dac36d31ed29a50d71131d008d01cc269c61410
+      model/onnx__MatMul_5023:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5023
+        checksum: blake3:d60cb32b10de381109fed51e9e6dfaff1f4d4a80a4460f9dbf5912713a3821c0
+      model/onnx__MatMul_5030:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5030
+        checksum: blake3:51006111a9cbbafbc54b0e7195eede6fd50ab9d246a81dab53a76d6e1229381d
+      model/onnx__MatMul_5031:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5031
+        checksum: blake3:72442e526ae1653c877748ded23caf3a4d09e86069715a91da14b153affb61ca
+      model/onnx__MatMul_5054:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5054
+        checksum: blake3:823155b1c26d8ec6d2dccb8ba9b60ab632591a83af8435ac3183118047358992
+      model/onnx__MatMul_5055:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5055
+        checksum: blake3:f58302b00cb245e58aacd90455db5f7d1ebd1a16603e73344a7f354435e77ae8
+      model/onnx__MatMul_5056:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5056
+        checksum: blake3:6d2c8264190a7cd6401bd6c864b844569e46d68330030e4ad7192d22f774de03
+      model/onnx__MatMul_5057:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5057
+        checksum: blake3:1416092c6afa159e76a1e897843657ef3224bbaabec5fd603ade439aeb2d6907
+      model/onnx__MatMul_5058:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5058
+        checksum: blake3:7adc7a46c1e96df78001508a40475e1de4b04773531581dc8e362133bd38822b
+      model/onnx__MatMul_5065:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5065
+        checksum: blake3:e02805908aa6a6963840d856f636f705ccac249c690284e36537250aa6a8f025
+      model/onnx__MatMul_5066:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5066
+        checksum: blake3:720e8ae5d14bd0f9214fe4e7edd503eefccdacea1c7b7d1300356dff4fed9fd8
+      model/onnx__MatMul_5089:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5089
+        checksum: blake3:7bbf4762d425dc9ed7bde3e1910ee79c6504b3dd7171394de224ca0ad62b17c0
+      model/onnx__MatMul_5090:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5090
+        checksum: blake3:08abc58fee33a47a660e5f2d148f7bb51b84b7056f7c5cf5781b2f06e9a54f36
+      model/onnx__MatMul_5091:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5091
+        checksum: blake3:801025f9e165bfcb94ba32e4454cc6b531121d70c436720e01ce69352ad8550f
+      model/onnx__MatMul_5092:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5092
+        checksum: blake3:b1bf9eab7001c5ef90b52fd1d15c809c6171d4b032840febf0a784b53a9355ea
+      model/onnx__MatMul_5093:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5093
+        checksum: blake3:0c67dcf6d72e63a82bf9721cf76b0a06c33e1984d4c4522f2470727b04798956
+      model/onnx__MatMul_5100:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5100
+        checksum: blake3:6ea5539fbb38591ea638b1bbfcebaad76a7f52d7991acaec2157f6bf28f805a3
+      model/onnx__MatMul_5101:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5101
+        checksum: blake3:8231dd392b4c9dc789f44f3028780e4231aef065b28bae6726ad134e4dfba81e
+      model/onnx__MatMul_5124:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5124
+        checksum: blake3:cd1cee36ee428f795c3255f82257c4bb1ae72f8ece4a1aa98110029195fc0547
+      model/onnx__MatMul_5125:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5125
+        checksum: blake3:6ad77379515e308b4251b4805652f21cf8f2529df37c8ea862508be2f23b2955
+      model/onnx__MatMul_5126:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5126
+        checksum: blake3:2d331be4d16a47ef8616292e4c599ee70f5309073fb8b46b3fed3d4c7d8921ee
+      model/onnx__MatMul_5127:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=onnx__MatMul_5127
+        checksum: blake3:bbb5ad7dafe8d67ea942411fd9ab10d2aae0a074ab790cd63c6b6ea2edf6f80a
+      model/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      model/tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      model/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:fp16-7af2b653?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:1a84c65c723a7257e4531e0e169563660e3ff3abfc718d66f4430ab047990fde
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-4096-f250c002?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-4096-f250c002?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-4096-f250c002?file=tokenizer_config.json
+        checksum: blake3:e6db3817fd6026853c8f697dffc42b63f5392c426184181a7475ff3b97bb7e65
+- id: ee543681ee61cf712478f5c79e5e693963dd36d6a2675dfe1f26c790491229c6
+  tags:
+    compute_capability: '8.6'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_6-fp16-a781559e?file=memory_footprint.json
+        checksum: blake3:753e6befd02b4bfdd9eaa2b85270acafc82c0b73e42427735432ba9242cad690
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_8_6-fp16-a781559e?file=model.plan
+        checksum: blake3:600bb5195a4a93f194256e81fc93d0f8bcb5152e232803817afa163e5486aba6
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: ee7364e4eba4df47443ed9df08f50d9551b529f7e12063cb9b7891fcec8b4e5c
+  tags:
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:312d697f9726fa14eab1d88a5c80b5171bc1fb54874cc7237d129b1d1f0e06b1
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_12_0-fp8-b04c9dd3?file=memory_footprint.json
+        checksum: blake3:a9f19428c945f984fecf8dd584ac3156db645118026789f8c4055772b7f4a779
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:cc_12_0-fp8-b04c9dd3?file=model.plan
+        checksum: blake3:15cb3d2b76df1ffc43c8aea6502c2c4056e7ce00af0fc814087f05bf1160057f
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815

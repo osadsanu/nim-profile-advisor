@@ -1,0 +1,20 @@
+# local secrets for docker compose
+.env
+
+# python caches / virtual environments
+__pycache__/
+*.pyc
+.venv/
+
+# local working files (not published)
+session_context.md
+nim-profile-output/
+nims_catalog/_logs/
+reference/research/
+
+# corporate CA certificates added for local image builds
+nim_advisor/certs/*
+!nim_advisor/certs/README.md
+
+# build output
+dist/

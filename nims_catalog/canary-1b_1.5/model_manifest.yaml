@@ -1,0 +1,84 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/canary-1b
+release: 1.5.1
+profiles:
+- id: 600a9d7df9cbf4b9cd337cd13f42316312a40fbdf884a738a419a8dceb95dbf6
+  tags:
+    diarizer: disabled
+    mode: ofl
+    model_type: rmir
+    name: canary-1b
+    nim_workspace_hash_v1: 79d0054a6b22e2bba764fcb1fa1329e2dab1652a80c05b2fe1cd525d299a7bc3
+    vad: default
+  workspace:
+    files:
+      canary-1b-ofl-rmir-26.01.1/asr-canary-1b-flash-multi-offline-trtllm.rmir:
+        uri: ngc://nim/nvidia/canary-1b:ofl-rmir-26.01.1?file=asr-canary-1b-flash-multi-offline-trtllm.rmir
+        checksum: blake3:a9c9c58dd7c07df1a9e5bbccfa2eb809fb7248e822b40b7929a91094093de87b
+- id: 6550cdb4b8e7ee94fd14d2bc7133b81569dfcd567c97fbabe152fab5c2cb61d3
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: a100
+    gpu_device: 20b2
+    mode: ofl
+    model_type: prebuilt
+    name: canary-1b
+    nim_workspace_hash_v1: 63d8bec572f6465d5b2dae6dff43e6064395063aa2bc3e173447aafaf9d7bc37
+    vad: default
+  workspace:
+    files:
+      canary-1b-a100x1-ofl-26.01.1-fp16-fizybhbrkg/asr-canary-1b-flash-multi-offline-trtllm.tar.gz:
+        uri: ngc://nim/nvidia/canary-1b:a100x1-ofl-26.01.1-fp16-fizybhbrkg?file=asr-canary-1b-flash-multi-offline-trtllm.tar.gz
+        checksum: blake3:63ae3cfa8aad77236e24a208e7bdfd403881f2229bf5205e786a622d29a6ad79
+      canary-1b-a100x1-ofl-26.01.1-fp16-fizybhbrkg/checksums.blake3:
+        uri: ngc://nim/nvidia/canary-1b:a100x1-ofl-26.01.1-fp16-fizybhbrkg?file=checksums.blake3
+        checksum: blake3:83e2ae87634ac81b73a4135d231ae5c91a7188d1204507a63424682ff3d2c5d2
+      canary-1b-a100x1-ofl-26.01.1-fp16-fizybhbrkg/metadata.json:
+        uri: ngc://nim/nvidia/canary-1b:a100x1-ofl-26.01.1-fp16-fizybhbrkg?file=metadata.json
+        checksum: blake3:80ff1bd02ba0fbf01dfdb054ce91302158cb35999500ce7a972e3396aa3ee74d
+- id: 6a586a2e268c38c7e12ae585afbdbf0f33038d2db3783dc3d513bb50af2ba663
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: h100
+    gpu_device: '2330'
+    mode: ofl
+    model_type: prebuilt
+    name: canary-1b
+    nim_workspace_hash_v1: 280715cef3b6aeb0aee60a112c616a631ee176882d79d61dd35b05f0149b1997
+    vad: default
+  workspace:
+    files:
+      canary-1b-h100x1-ofl-26.01.1-fp16-p-yv3krgcg/asr-canary-1b-flash-multi-offline-trtllm.tar.gz:
+        uri: ngc://nim/nvidia/canary-1b:h100x1-ofl-26.01.1-fp16-p-yv3krgcg?file=asr-canary-1b-flash-multi-offline-trtllm.tar.gz
+        checksum: blake3:7e8f4aae7a32ad21a0f797046f9a71f855b0cb18868204ecedf28dc23ba5987e
+      canary-1b-h100x1-ofl-26.01.1-fp16-p-yv3krgcg/checksums.blake3:
+        uri: ngc://nim/nvidia/canary-1b:h100x1-ofl-26.01.1-fp16-p-yv3krgcg?file=checksums.blake3
+        checksum: blake3:10861314e76b7b2a33eea31c60330b10d79a9cb4a07926577518509080241158
+      canary-1b-h100x1-ofl-26.01.1-fp16-p-yv3krgcg/metadata.json:
+        uri: ngc://nim/nvidia/canary-1b:h100x1-ofl-26.01.1-fp16-p-yv3krgcg?file=metadata.json
+        checksum: blake3:bdddbc309c8d306136f6e83a4d5ccefb92f7aeeb367986b5f72dc0a666e8ab57
+- id: d0302473ff6d7e7870a5404a0cf0074fd1c0efd13a5d6cd0141c4580e41f8707
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: l40s
+    gpu_device: 26b9
+    mode: ofl
+    model_type: prebuilt
+    name: canary-1b
+    nim_workspace_hash_v1: 5d5c561a69017070d70fb5a1259852735e0e31074a1b4d7e52624d362359776a
+    vad: default
+  workspace:
+    files:
+      canary-1b-l40sx1-ofl-26.01.1-fp16-krtmjq6ptq/asr-canary-1b-flash-multi-offline-trtllm.tar.gz:
+        uri: ngc://nim/nvidia/canary-1b:l40sx1-ofl-26.01.1-fp16-krtmjq6ptq?file=asr-canary-1b-flash-multi-offline-trtllm.tar.gz
+        checksum: blake3:0a8fbd50ebc83f0b49eb45b7c26e5dfa5f2ab8380b1fbf319b32330373d844e5
+      canary-1b-l40sx1-ofl-26.01.1-fp16-krtmjq6ptq/checksums.blake3:
+        uri: ngc://nim/nvidia/canary-1b:l40sx1-ofl-26.01.1-fp16-krtmjq6ptq?file=checksums.blake3
+        checksum: blake3:7039ce8724b9fe2d365e4d793ae3fc92a3b84041da0992c37ab57a413987101e
+      canary-1b-l40sx1-ofl-26.01.1-fp16-krtmjq6ptq/metadata.json:
+        uri: ngc://nim/nvidia/canary-1b:l40sx1-ofl-26.01.1-fp16-krtmjq6ptq?file=metadata.json
+        checksum: blake3:84c83b01f4c3ce61d43ac54911622644e60aa78bbff677be35d764d21554dabc

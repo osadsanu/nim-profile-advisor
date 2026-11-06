@@ -1,0 +1,76 @@
+release: 1.0.0
+schema_version: '2.0'
+model: baidu/ernie-image
+profile_selection_criteria: auto
+profiles:
+  - id: 845e72f27695db32aedc9046ffaf32a427004c6fe5776f9da070df4baa067e69
+    tags:
+      gpu: generic
+      precision: bf16
+      version: ernie-image
+      nim_workspace_hash_v1: 020a72ba16466a421d86661313d1897334f73cb61db189f307230ea95fca863b
+    workspace:
+      files:
+        framework_model_dir/ernie-image/TXT2IMG/model_index.json:
+          checksum: blake3:77ffe8384a3919d054ea7d9e779e6a4eea304c493f836c59083abd6e99673654
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=model_index.json
+        framework_model_dir/ernie-image/TXT2IMG/scheduler/scheduler_config.json:
+          checksum: blake3:5b8273e615dd046ca997c279d4de0672d684c7571c1b5a830ab13530f8fa0bc0
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=scheduler/scheduler_config.json
+        framework_model_dir/ernie-image/TXT2IMG/text_encoder/config.json:
+          checksum: blake3:3bc63e8d28a736bb0afd5440797129f64fa96d794b4ff44575b0620dc4e093fd
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=text_encoder/config.json
+        framework_model_dir/ernie-image/TXT2IMG/text_encoder/model.safetensors:
+          checksum: blake3:8ce8312f224197154a1be371464c84823ee48e10ce19c5c351f8fd90c53a4b2a
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=text_encoder/model.safetensors
+        framework_model_dir/ernie-image/TXT2IMG/tokenizer/tokenizer.json:
+          checksum: blake3:3d69466e68ef8a541dba19ef2761a1c2e9eb504fa9517607d48984daedbe5887
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=tokenizer/tokenizer.json
+        framework_model_dir/ernie-image/TXT2IMG/tokenizer/tokenizer_config.json:
+          checksum: blake3:577f7f9e65162c5ac49c6cbdb7c052c8d04f7edb6f7b4db3314e3ddc20da64fd
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=tokenizer/tokenizer_config.json
+        framework_model_dir/ernie-image/TXT2IMG/transformer/config.json:
+          checksum: blake3:10e8552134d94bf228ec8c92e464c908a8f2f1c2b3923fb8bd4e795c1c2db78f
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=transformer/config.json
+        framework_model_dir/ernie-image/TXT2IMG/transformer/diffusion_pytorch_model-00001-of-00002.safetensors:
+          checksum: blake3:8fd0d686ce0daffd4f2ba0105a21d3ced5e1cbedba310c1e6d797e1cc18b9a91
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=transformer/diffusion_pytorch_model-00001-of-00002.safetensors
+        framework_model_dir/ernie-image/TXT2IMG/transformer/diffusion_pytorch_model-00002-of-00002.safetensors:
+          checksum: blake3:c629874ed203775979324b4319fcb617cf43859b5a5b42da3e15512becf01258
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=transformer/diffusion_pytorch_model-00002-of-00002.safetensors
+        framework_model_dir/ernie-image/TXT2IMG/transformer/diffusion_pytorch_model.safetensors.index.json:
+          checksum: blake3:600f87606f34185c900b77ca1fecb7709e3e268928e050ce5ba062d8dd3430e6
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=transformer/diffusion_pytorch_model.safetensors.index.json
+        framework_model_dir/ernie-image/TXT2IMG/vae/config.json:
+          checksum: blake3:148cc7945bb350be0a7f54ff627bf0c4a797fc1a943cdb6b2b7327c052f5aafe
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=vae/config.json
+        framework_model_dir/ernie-image/TXT2IMG/vae/diffusion_pytorch_model.safetensors:
+          checksum: blake3:e9ce10212e48ff5cf6c9f23811fbcb75243c89ffe665f5c1e5e60f6f917b3f28
+          uri: ngc://nim/baidu/ernie-image:1.0.0-hf-ernie-image?file=vae/diffusion_pytorch_model.safetensors
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+          checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+          checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+          checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+          checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+          checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+          checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+          checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+          checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+        framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+          checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+          uri: ngc://nim/baidu/ernie-image:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json

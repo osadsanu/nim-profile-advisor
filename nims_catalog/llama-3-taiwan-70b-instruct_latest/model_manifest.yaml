@@ -1,0 +1,650 @@
+0441d424e2cacac1c574677887ee3d7cce1d0acc13af8d49a46badd95de9759f:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+062c3f5ade4cfa4f3ac6adfc4631160ccd8d5cd338f3f179b5aa8e8531635d9c:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-h100x4-fp16-throughput.1.1.2.17651446
+31e5797468b26f4b88373397c578baba66097d14c29b3e6567049af683b2f6bb:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+35cb6301f1ec300e0ddf8f3ce0db7e3f7c05f9b56c87f1219633e0303d7e7784:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-h100x4-fp8-throughput.1.1.2.17651446
+391c28bc4e425550137986c3d8ed03fbb549d4ed72c59be31261e0c97a2a3ec4:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-a100x4-fp16-throughput.1.1.2.17651446
+506efc6b739c4abc76014bbdd5ed01cd77bd8ff45db8a4afca591fa2766b717e:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-h100x4-fp16-throughput-lora.1.1.2.17651446
+5d2c44c0091bfdf53a31614e6cb2852a21d030e573c9929427a64a3e26c032dc:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-a10gx8-fp16-throughput.1.1.2.17683786
+6ecd7cb07c243145c98f8f81b89048f8015657825151cfafaa8aaa3c806ee9c8:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-h100x8-fp8-latency.1.1.2.17651446
+81f24dcda8a7b32cec3b620ceb7d3a42683ec542ed23b04d58bcc04cf895a40e:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-l40sx4-fp8-throughput.1.1.2.17651446
+8fd91ed9289194e87e227435bcdbc00232b80a63afba7e013caf7bae9622fd58:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-h100x8-fp16-latency.1.1.2.17651446
+a0764cf6603b824bcce426e1dd8ef19b9ce97176f89438e7a1bae744b8df3d1b:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+ac55be08b27ad100793d022c9e3f9e9e7c6ff2d8534012c9015db306767b4e9b:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+b621b4c7143374dddaf7c051430e92b4f95bebcfd951a4e8938f292085fa06a0:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-a100x8-fp16-latency.1.1.2.17651446
+e576118edf1895d00c630abd0bf464f4ab9ddc870f4dd1b7589da01e16a128ff:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:0.11.1+14957bf8-a100x4-fp16-throughput-lora.1.1.2.17651446
+f9734878d08220e193e9bb100bb390b651eca6d192d61bf7aaea4362ed74670f:
+  container_url: nvcr.io/nim/yentinglin/llama-3-taiwan-70b-instruct:1.1.2
+  model: yentinglin/llama-3-taiwan-70b-instruct
+  release: 1.1.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00030.safetensors'
+            - !name 'model-00002-of-00030.safetensors'
+            - !name 'model-00003-of-00030.safetensors'
+            - !name 'model-00004-of-00030.safetensors'
+            - !name 'model-00005-of-00030.safetensors'
+            - !name 'model-00006-of-00030.safetensors'
+            - !name 'model-00007-of-00030.safetensors'
+            - !name 'model-00008-of-00030.safetensors'
+            - !name 'model-00009-of-00030.safetensors'
+            - !name 'model-00010-of-00030.safetensors'
+            - !name 'model-00011-of-00030.safetensors'
+            - !name 'model-00012-of-00030.safetensors'
+            - !name 'model-00013-of-00030.safetensors'
+            - !name 'model-00014-of-00030.safetensors'
+            - !name 'model-00015-of-00030.safetensors'
+            - !name 'model-00016-of-00030.safetensors'
+            - !name 'model-00017-of-00030.safetensors'
+            - !name 'model-00018-of-00030.safetensors'
+            - !name 'model-00019-of-00030.safetensors'
+            - !name 'model-00020-of-00030.safetensors'
+            - !name 'model-00021-of-00030.safetensors'
+            - !name 'model-00022-of-00030.safetensors'
+            - !name 'model-00023-of-00030.safetensors'
+            - !name 'model-00024-of-00030.safetensors'
+            - !name 'model-00025-of-00030.safetensors'
+            - !name 'model-00026-of-00030.safetensors'
+            - !name 'model-00027-of-00030.safetensors'
+            - !name 'model-00028-of-00030.safetensors'
+            - !name 'model-00029-of-00030.safetensors'
+            - !name 'model-00030-of-00030.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/yentinglin/llama-3-taiwan-70b-instruct:hf-4ec0acb

@@ -1,0 +1,1625 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: meta/llama-4-maverick-17b-128e-instruct
+release: 1.4.0
+profiles:
+- id: 073d8ca99c4a9161d24a234c28cc2a90d6e8343327580fd38cde689d7d2a4048
+  tags:
+    feat_lora: 'false'
+    gpu: H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: vllm
+    max_model_len: '430000'
+    nim_workspace_hash_v1: e8d7ef40ffb741d02141fa61ba34ced7264fc6cff43e3b4286232fb0d3c9b314
+    pp: '1'
+    precision: fp8
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=LICENSE
+        checksum: blake3:5e0bf435fb275d2a768eaada780e5e16c38f4d4b2b568a95b2c0ca5d4523992c
+        secret: Default
+      README.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=README.md
+        checksum: blake3:66a518cb7cc4105d983a0dfb491d71fb6dda59809eb96d11e123fe8241898183
+        secret: Default
+      USE_POLICY.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=USE_POLICY.md
+        checksum: blake3:1b5e3a1f922dbe4e733d508105d971ec4b7e22449b4af70e7d00314e924c29b2
+        secret: Default
+      chat_template.jinja:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=chat_template.jinja
+        checksum: blake3:1d6d7992bd51dce32786e813886aff6c383ab6d04d4ff5cf57c11cd717d1924d
+        secret: Default
+      config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=config.json
+        checksum: blake3:a33a69d7f2d1a3402eac7a6a9d5dd44260c72c4f47690efed4fe3b0acbf290d2
+        secret: Default
+      generation_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=generation_config.json
+        checksum: blake3:cf19d2a61abfc79ceb634e784c2e109f41e15887062386a5e66a760117824b98
+        secret: Default
+      model-00001-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00001-of-00084.safetensors
+        checksum: blake3:0bb0bd81863359126b708f1303bf1fd373be0113f86142753dad517dde9cc82a
+        secret: Default
+      model-00002-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00002-of-00084.safetensors
+        checksum: blake3:0becdd681505fb02ae2f4c8009113fd7ed8ed0044186dddbf1b06113ad86c51e
+        secret: Default
+      model-00003-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00003-of-00084.safetensors
+        checksum: blake3:0485361b3e49cedd64bbba6565e35551c3b1a11cf66755dd986b08afc6a67e23
+        secret: Default
+      model-00004-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00004-of-00084.safetensors
+        checksum: blake3:e2232f2cb63d307806b339440684990d98b56b537b804389ac7466312513e51b
+        secret: Default
+      model-00005-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00005-of-00084.safetensors
+        checksum: blake3:df278c65e7ae4af084afee7bc9f16af2b8c15d47560abdf50829c3cefec2a59e
+        secret: Default
+      model-00006-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00006-of-00084.safetensors
+        checksum: blake3:f559fd62a4b41cba8823d2a4eac187ca68440270e84fb7afc96e8726f05f36ee
+        secret: Default
+      model-00007-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00007-of-00084.safetensors
+        checksum: blake3:5e5b2e1dd151b72e6512224908d0574a8c52b4ae5fbe83711bc5e319c73b1344
+        secret: Default
+      model-00008-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00008-of-00084.safetensors
+        checksum: blake3:7eea10512b560921e753a01d0ebf7eb4bc66f121f09e10674009b359e64396e2
+        secret: Default
+      model-00009-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00009-of-00084.safetensors
+        checksum: blake3:e4234143d1a90f7967e571fb6430f7856851c2aa7091862b63adb67acdee4526
+        secret: Default
+      model-00010-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00010-of-00084.safetensors
+        checksum: blake3:5e708130002d47a6790e7b8ba43874bc2b151fed088b7c192c480bec273971f1
+        secret: Default
+      model-00011-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00011-of-00084.safetensors
+        checksum: blake3:8cf08f35e40ba11049296c8ce6c2928459a2d5b12e90e0e8d3bc26053b4917e7
+        secret: Default
+      model-00012-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00012-of-00084.safetensors
+        checksum: blake3:71b1bc3ea0bf0f301c14f079381f2cfe02096b3065bb5e168a85030c2896558c
+        secret: Default
+      model-00013-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00013-of-00084.safetensors
+        checksum: blake3:bf520d60dffbba87f4bcffcc7c09a0b68de6317118311c450bcdf6d960476ff1
+        secret: Default
+      model-00014-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00014-of-00084.safetensors
+        checksum: blake3:60c02a8b07e217855f04f0460d04c7f5b1f0c53f9bf311b72e3e23a56c12ce66
+        secret: Default
+      model-00015-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00015-of-00084.safetensors
+        checksum: blake3:5910024cb21c7dad8a1d7e4311318782dbbb89012d29c7ae28f430d0df3f141a
+        secret: Default
+      model-00016-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00016-of-00084.safetensors
+        checksum: blake3:0311e80558fb728ee7ff14ad9866f4249d17206be7b7c18e95ae5050b7f66edb
+        secret: Default
+      model-00017-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00017-of-00084.safetensors
+        checksum: blake3:531d004700d2dd06b9adf397507bf4574f75dcfdb13ff4fce82b5151940a04d0
+        secret: Default
+      model-00018-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00018-of-00084.safetensors
+        checksum: blake3:88030471eec62815c92c474ba73ef7bae83a2ad96e2bf88ddbb206f9b7178d21
+        secret: Default
+      model-00019-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00019-of-00084.safetensors
+        checksum: blake3:d1ea97e8e7b94b4cefdbd7fb21a5d6cfb2c679911e19a6d608693583b6f1ff3b
+        secret: Default
+      model-00020-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00020-of-00084.safetensors
+        checksum: blake3:8f4bdfee32ae950855042fc37e48ff18658fdab35136cbb1986d7d73e158de96
+        secret: Default
+      model-00021-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00021-of-00084.safetensors
+        checksum: blake3:7e260bd705741f73bfc821bfaf396e75447a74cef0fc68fd08d4782b31cca179
+        secret: Default
+      model-00022-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00022-of-00084.safetensors
+        checksum: blake3:eb8e61e85d7bbbf8825f4698b121c09c08f5c7b72214fd51fc233ab7193a13a5
+        secret: Default
+      model-00023-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00023-of-00084.safetensors
+        checksum: blake3:4c922b0e2f5384188920610ecbdacfd91d68e576c758041af3bdd397f2e3daee
+        secret: Default
+      model-00024-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00024-of-00084.safetensors
+        checksum: blake3:7cdf242d9f2c81a85d6c28a999184a2514925fe3543a1c08d53d9723f9843f67
+        secret: Default
+      model-00025-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00025-of-00084.safetensors
+        checksum: blake3:acf530add490403b975c3148606c799377a91ad2bed1db8f2c6de6c69cf23f46
+        secret: Default
+      model-00026-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00026-of-00084.safetensors
+        checksum: blake3:d0b7877b2b2dc4de57597abc18ab037bd35d3b1ad4badeca466bb7c0efab86df
+        secret: Default
+      model-00027-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00027-of-00084.safetensors
+        checksum: blake3:d0ad964fad32dd95ec3765dd046e3acf69b8b356507eefefe9de50c798123c30
+        secret: Default
+      model-00028-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00028-of-00084.safetensors
+        checksum: blake3:cf6a2ba5106c3e6f12ce0f44a3d2746b4133ac67e7427a05325da5cec4576905
+        secret: Default
+      model-00029-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00029-of-00084.safetensors
+        checksum: blake3:ff13259f97b49ccf1dae6d4a4cf567afb77c34e218dd158ee58bc8613e042e8b
+        secret: Default
+      model-00030-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00030-of-00084.safetensors
+        checksum: blake3:2a9a1d4ccdf8d7c68e792b5a476fd73d63837e6cdabc8a8cc247af991eb5c064
+        secret: Default
+      model-00031-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00031-of-00084.safetensors
+        checksum: blake3:facbf55b256540b90ba9234a92857f0f8f4feece4594eb8dce12c252a624a353
+        secret: Default
+      model-00032-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00032-of-00084.safetensors
+        checksum: blake3:ffe33bed68983379b72155155ceeb0e1a34b010108733a86c2c138e95fe750dd
+        secret: Default
+      model-00033-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00033-of-00084.safetensors
+        checksum: blake3:6ed86f9d6feaf18aca063b509a084b5924dd2f78db2a3f7f86d296235a53bb60
+        secret: Default
+      model-00034-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00034-of-00084.safetensors
+        checksum: blake3:aa5f3a34946ee407970b8386d736a3b64e9f59adae732b903f3b74d7b71f32f8
+        secret: Default
+      model-00035-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00035-of-00084.safetensors
+        checksum: blake3:c257d75619164e66a5a00da56ac07672a0beb21a4b7e72106d716e0ca0af4648
+        secret: Default
+      model-00036-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00036-of-00084.safetensors
+        checksum: blake3:d132939aeed78bad0578c659340f72edb2e914107e5f53d0aebc3b13b900142a
+        secret: Default
+      model-00037-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00037-of-00084.safetensors
+        checksum: blake3:f35f717108878d9982b720f20d9fd392b0abdb1a8606158f1a1b8894371ed38a
+        secret: Default
+      model-00038-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00038-of-00084.safetensors
+        checksum: blake3:f449414fd601c6e7b693bf5acc541dbfb3b124a59ecd5d2370a3dbe81f8b304d
+        secret: Default
+      model-00039-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00039-of-00084.safetensors
+        checksum: blake3:5db9558a8a3a1f50dd48864e77469b27ec0c350b8af0b2dac0ab57920a2afc76
+        secret: Default
+      model-00040-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00040-of-00084.safetensors
+        checksum: blake3:d8db540241e41c10c2a16ef6fad4c95f0c73504b829549c36d2d57bfccd87344
+        secret: Default
+      model-00041-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00041-of-00084.safetensors
+        checksum: blake3:b3347a07c4500b1aab062028ac79f94c543a7d87ad4cd66cd4aa29ac86075132
+        secret: Default
+      model-00042-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00042-of-00084.safetensors
+        checksum: blake3:a806cbb43a38deda73fcf8c73dfe16999a3efc1a561eb85acd64ff2963a36b0d
+        secret: Default
+      model-00043-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00043-of-00084.safetensors
+        checksum: blake3:2d19e1f14e46e698650ac574df7e7a5c258f66412e317f516c9d1fb8806efd7d
+        secret: Default
+      model-00044-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00044-of-00084.safetensors
+        checksum: blake3:9d85ff75f65a543d43926f0eb39aff5875693f98e1e1c964a9bd6d88452dc93d
+        secret: Default
+      model-00045-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00045-of-00084.safetensors
+        checksum: blake3:c726b21d2bc579fef4c4ab6dc9776723bf2b2cd0c718ad5eed18a308f835dd72
+        secret: Default
+      model-00046-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00046-of-00084.safetensors
+        checksum: blake3:8daee700f38fd19ccb6c528a6d626731c0f1cdae6cddc5cf8413d58b3786b3b8
+        secret: Default
+      model-00047-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00047-of-00084.safetensors
+        checksum: blake3:c3eb49c38597c862e0ab8a4f953baff055e4708ec41fc2e8d6aaa52cc47a9470
+        secret: Default
+      model-00048-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00048-of-00084.safetensors
+        checksum: blake3:3e44c7c94bb6378eb42630e25646b972bb29c7d1293c295e328ca5b1dc3a2d8e
+        secret: Default
+      model-00049-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00049-of-00084.safetensors
+        checksum: blake3:5e64ca0aee2e7bdc53478a0093d9e1894807288b195976949fe74369aa412bcd
+        secret: Default
+      model-00050-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00050-of-00084.safetensors
+        checksum: blake3:6de08480cf5ada72fce000186f7a969ecada79d7f54fd35d209bd8eb3583a771
+        secret: Default
+      model-00051-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00051-of-00084.safetensors
+        checksum: blake3:5276042340c355747f59b05d675d8bb3cd2b55424c440cb73437ab00355c2beb
+        secret: Default
+      model-00052-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00052-of-00084.safetensors
+        checksum: blake3:ac224ac6ba672ddb1fb3fbb8b8ba76aa65ef9e5f8ced3b80b314c8f76f31d35f
+        secret: Default
+      model-00053-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00053-of-00084.safetensors
+        checksum: blake3:192205cc0a0e0fc01e25c664656718cb791aeca32dc5a3896d47870ccfe3bf2c
+        secret: Default
+      model-00054-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00054-of-00084.safetensors
+        checksum: blake3:ccafb927ed6428000f5b39b52dad8c76c46150c92dbdd2516564264ea95d39d8
+        secret: Default
+      model-00055-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00055-of-00084.safetensors
+        checksum: blake3:e0de9923e14a5cd9e345dc38abb66066ae05be2c6d6696b674ae7ce8637e8590
+        secret: Default
+      model-00056-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00056-of-00084.safetensors
+        checksum: blake3:37ad7b15832eade4f7002ab21c705e2d0890f6fb28c74e3a2db1269b603ab3d6
+        secret: Default
+      model-00057-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00057-of-00084.safetensors
+        checksum: blake3:62352e217cd8ce8e4c2ada9449d45394689974a509cd2d26085f9c9b543bb91f
+        secret: Default
+      model-00058-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00058-of-00084.safetensors
+        checksum: blake3:d2e87c9278de7c358cd4e462fa4b67c5ab8157d791cf08bfbe086eee39376639
+        secret: Default
+      model-00059-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00059-of-00084.safetensors
+        checksum: blake3:969683427dc8d8f6bad43ff6f71cd92ab0952909e7cfa06309f8858287975cd8
+        secret: Default
+      model-00060-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00060-of-00084.safetensors
+        checksum: blake3:4bb5ff25c2da2a0934c0045878ff08fab82459f30f6b17ca77e15295c5a7c9a4
+        secret: Default
+      model-00061-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00061-of-00084.safetensors
+        checksum: blake3:0fa03aaa39b4969726768e597bf79a50871b3433b0165b69cd7261c3ff8b9c71
+        secret: Default
+      model-00062-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00062-of-00084.safetensors
+        checksum: blake3:9367680054d03f3f979c8081d73c4068332c1647835ec21bd511c8e0996294ee
+        secret: Default
+      model-00063-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00063-of-00084.safetensors
+        checksum: blake3:c6c6dcf4af4856003b7ed17f22c43db274ba58398d62c758de930e02933f82c4
+        secret: Default
+      model-00064-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00064-of-00084.safetensors
+        checksum: blake3:bafe112662de39029a4c23167b166b1dca6d503d36da1db16caaf0479e45d678
+        secret: Default
+      model-00065-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00065-of-00084.safetensors
+        checksum: blake3:5f121368e942b316ae83c0e34d6011c2c9d45f64dda397ed5332b54ac701f251
+        secret: Default
+      model-00066-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00066-of-00084.safetensors
+        checksum: blake3:66587e09a73c623623f47038c8043e6824ed56dcc2d1b94335c645e058995420
+        secret: Default
+      model-00067-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00067-of-00084.safetensors
+        checksum: blake3:f0007efd99bfd6d2873f9695d98a6d5a456c9cfa48cce17f17eeb25067854a3c
+        secret: Default
+      model-00068-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00068-of-00084.safetensors
+        checksum: blake3:2f0ef571a77440e79f6771dbd69bd23245c58fa28bb34cf0b12b4ccdf3b91ef7
+        secret: Default
+      model-00069-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00069-of-00084.safetensors
+        checksum: blake3:b75b175c91015cb620ae473e18dd529f3a7bddf849215a01f1e6b0184155502e
+        secret: Default
+      model-00070-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00070-of-00084.safetensors
+        checksum: blake3:b5da98c364716391cd578c5df89587bb4207c59fa758a910a0a7788e5e06fcbf
+        secret: Default
+      model-00071-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00071-of-00084.safetensors
+        checksum: blake3:dc2633374f37248999a3f06d0c7e633a7a125250fba966b9b6b8a3afe71e1ba5
+        secret: Default
+      model-00072-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00072-of-00084.safetensors
+        checksum: blake3:ffb928405bc49289e17deaefed7cd8321d4ca2a0c8ab80020f26b5653d5a761d
+        secret: Default
+      model-00073-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00073-of-00084.safetensors
+        checksum: blake3:e66e99770974498d2d849a1cf015dc8f0c37cfd32401560f94a6b51df8733134
+        secret: Default
+      model-00074-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00074-of-00084.safetensors
+        checksum: blake3:af5abe9917de6ed20c1c6e10981e146c79b2415bcfa58a3c866e5edea991e1e3
+        secret: Default
+      model-00075-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00075-of-00084.safetensors
+        checksum: blake3:010134a216a26cf69796291a065b4ba7f152a9b0842584e305ee7ad2e61d5ef4
+        secret: Default
+      model-00076-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00076-of-00084.safetensors
+        checksum: blake3:0bb79cd6377e8a92d3659134c8f6bafcdfadfa892aa073b7fb70384665de1e74
+        secret: Default
+      model-00077-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00077-of-00084.safetensors
+        checksum: blake3:829882b9204e11f6599f516804e58a2237a53427eed6fbc0e3c3bdad45e22e0c
+        secret: Default
+      model-00078-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00078-of-00084.safetensors
+        checksum: blake3:73061992a170f9ad7e557e58f60d151785167bf771782c3ec3cd9e3ff863ce24
+        secret: Default
+      model-00079-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00079-of-00084.safetensors
+        checksum: blake3:ec7f0a0cce11b7c9dfab7486b083f3b5ff5ed33ca975f117cc4df769534cc704
+        secret: Default
+      model-00080-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00080-of-00084.safetensors
+        checksum: blake3:8ac3cf35073ebab5a134b9a33956a130094602bbc1ec03134d55ed5c61c4b7e3
+        secret: Default
+      model-00081-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00081-of-00084.safetensors
+        checksum: blake3:44df93c9513e8f716fc76cc18e2a77f3fba66cb486b7f0711e5bc14aaad2e431
+        secret: Default
+      model-00082-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00082-of-00084.safetensors
+        checksum: blake3:f63496f9a3d373e00f822d17d85e1956cd1a1c1bcef5d77ee5c214992dd1c299
+        secret: Default
+      model-00083-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00083-of-00084.safetensors
+        checksum: blake3:d78c060d22e025048848c49fa40fa85ef98c0e7100b1d845b5ff17721ad1d9c1
+        secret: Default
+      model-00084-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00084-of-00084.safetensors
+        checksum: blake3:3f8a9b8b05dd246a62fc6666f38951014531d0191111be6a9e4caf43c3d66d53
+        secret: Default
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:d1c940a49495b1555b8a49a06da63521d88a72633ecf9456ac06942083fb8036
+        secret: Default
+      preprocessor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=preprocessor_config.json
+        checksum: blake3:79fd86868f45aea5edbddae8d1c1cb3c2277a2e4cda22eded09584c915ae41fe
+        secret: Default
+      processor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=processor_config.json
+        checksum: blake3:6dbc46e6268ced9189cbbedae6502dd3b1ae357b99722b304603f74798965a8e
+        secret: Default
+      recipe.yaml:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=recipe.yaml
+        checksum: blake3:2c28e4dede08f017c8ad28b7f3b0b9b458da5c1aa7b3c4aafadc6160cdff2320
+        secret: Default
+      special_tokens_map.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=special_tokens_map.json
+        checksum: blake3:7cc73db2a29b469400876b2c9061a4253678741ca5111db4f81ea87d2f4d5531
+        secret: Default
+      tokenizer.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.json
+        checksum: blake3:1e0d53230829c5c8afa91cf76d7584b849a2ee2e3399ac1328010f08d2138a0e
+        secret: Default
+      tokenizer.model:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.model
+        checksum: blake3:b7723034cb7193b7d6d549a40a2d9026c81c11258be0c9a6de0666b192766273
+        secret: Default
+      tokenizer_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:0a98dba4fcc70c1a749d809c0efd5fa9b3876c2a2f0a37749f1bba2ad12696d2
+        secret: Default
+- id: 0923eda366d15b3a0320b67ea7aecee662e94343363a5aa4c9b81f578de4df97
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    max_model_len: '430000'
+    nim_workspace_hash_v1: e8d7ef40ffb741d02141fa61ba34ced7264fc6cff43e3b4286232fb0d3c9b314
+    pp: '1'
+    precision: fp8
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=LICENSE
+        checksum: blake3:5e0bf435fb275d2a768eaada780e5e16c38f4d4b2b568a95b2c0ca5d4523992c
+        secret: Default
+      README.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=README.md
+        checksum: blake3:66a518cb7cc4105d983a0dfb491d71fb6dda59809eb96d11e123fe8241898183
+        secret: Default
+      USE_POLICY.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=USE_POLICY.md
+        checksum: blake3:1b5e3a1f922dbe4e733d508105d971ec4b7e22449b4af70e7d00314e924c29b2
+        secret: Default
+      chat_template.jinja:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=chat_template.jinja
+        checksum: blake3:1d6d7992bd51dce32786e813886aff6c383ab6d04d4ff5cf57c11cd717d1924d
+        secret: Default
+      config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=config.json
+        checksum: blake3:a33a69d7f2d1a3402eac7a6a9d5dd44260c72c4f47690efed4fe3b0acbf290d2
+        secret: Default
+      generation_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=generation_config.json
+        checksum: blake3:cf19d2a61abfc79ceb634e784c2e109f41e15887062386a5e66a760117824b98
+        secret: Default
+      model-00001-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00001-of-00084.safetensors
+        checksum: blake3:0bb0bd81863359126b708f1303bf1fd373be0113f86142753dad517dde9cc82a
+        secret: Default
+      model-00002-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00002-of-00084.safetensors
+        checksum: blake3:0becdd681505fb02ae2f4c8009113fd7ed8ed0044186dddbf1b06113ad86c51e
+        secret: Default
+      model-00003-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00003-of-00084.safetensors
+        checksum: blake3:0485361b3e49cedd64bbba6565e35551c3b1a11cf66755dd986b08afc6a67e23
+        secret: Default
+      model-00004-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00004-of-00084.safetensors
+        checksum: blake3:e2232f2cb63d307806b339440684990d98b56b537b804389ac7466312513e51b
+        secret: Default
+      model-00005-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00005-of-00084.safetensors
+        checksum: blake3:df278c65e7ae4af084afee7bc9f16af2b8c15d47560abdf50829c3cefec2a59e
+        secret: Default
+      model-00006-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00006-of-00084.safetensors
+        checksum: blake3:f559fd62a4b41cba8823d2a4eac187ca68440270e84fb7afc96e8726f05f36ee
+        secret: Default
+      model-00007-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00007-of-00084.safetensors
+        checksum: blake3:5e5b2e1dd151b72e6512224908d0574a8c52b4ae5fbe83711bc5e319c73b1344
+        secret: Default
+      model-00008-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00008-of-00084.safetensors
+        checksum: blake3:7eea10512b560921e753a01d0ebf7eb4bc66f121f09e10674009b359e64396e2
+        secret: Default
+      model-00009-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00009-of-00084.safetensors
+        checksum: blake3:e4234143d1a90f7967e571fb6430f7856851c2aa7091862b63adb67acdee4526
+        secret: Default
+      model-00010-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00010-of-00084.safetensors
+        checksum: blake3:5e708130002d47a6790e7b8ba43874bc2b151fed088b7c192c480bec273971f1
+        secret: Default
+      model-00011-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00011-of-00084.safetensors
+        checksum: blake3:8cf08f35e40ba11049296c8ce6c2928459a2d5b12e90e0e8d3bc26053b4917e7
+        secret: Default
+      model-00012-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00012-of-00084.safetensors
+        checksum: blake3:71b1bc3ea0bf0f301c14f079381f2cfe02096b3065bb5e168a85030c2896558c
+        secret: Default
+      model-00013-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00013-of-00084.safetensors
+        checksum: blake3:bf520d60dffbba87f4bcffcc7c09a0b68de6317118311c450bcdf6d960476ff1
+        secret: Default
+      model-00014-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00014-of-00084.safetensors
+        checksum: blake3:60c02a8b07e217855f04f0460d04c7f5b1f0c53f9bf311b72e3e23a56c12ce66
+        secret: Default
+      model-00015-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00015-of-00084.safetensors
+        checksum: blake3:5910024cb21c7dad8a1d7e4311318782dbbb89012d29c7ae28f430d0df3f141a
+        secret: Default
+      model-00016-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00016-of-00084.safetensors
+        checksum: blake3:0311e80558fb728ee7ff14ad9866f4249d17206be7b7c18e95ae5050b7f66edb
+        secret: Default
+      model-00017-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00017-of-00084.safetensors
+        checksum: blake3:531d004700d2dd06b9adf397507bf4574f75dcfdb13ff4fce82b5151940a04d0
+        secret: Default
+      model-00018-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00018-of-00084.safetensors
+        checksum: blake3:88030471eec62815c92c474ba73ef7bae83a2ad96e2bf88ddbb206f9b7178d21
+        secret: Default
+      model-00019-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00019-of-00084.safetensors
+        checksum: blake3:d1ea97e8e7b94b4cefdbd7fb21a5d6cfb2c679911e19a6d608693583b6f1ff3b
+        secret: Default
+      model-00020-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00020-of-00084.safetensors
+        checksum: blake3:8f4bdfee32ae950855042fc37e48ff18658fdab35136cbb1986d7d73e158de96
+        secret: Default
+      model-00021-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00021-of-00084.safetensors
+        checksum: blake3:7e260bd705741f73bfc821bfaf396e75447a74cef0fc68fd08d4782b31cca179
+        secret: Default
+      model-00022-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00022-of-00084.safetensors
+        checksum: blake3:eb8e61e85d7bbbf8825f4698b121c09c08f5c7b72214fd51fc233ab7193a13a5
+        secret: Default
+      model-00023-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00023-of-00084.safetensors
+        checksum: blake3:4c922b0e2f5384188920610ecbdacfd91d68e576c758041af3bdd397f2e3daee
+        secret: Default
+      model-00024-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00024-of-00084.safetensors
+        checksum: blake3:7cdf242d9f2c81a85d6c28a999184a2514925fe3543a1c08d53d9723f9843f67
+        secret: Default
+      model-00025-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00025-of-00084.safetensors
+        checksum: blake3:acf530add490403b975c3148606c799377a91ad2bed1db8f2c6de6c69cf23f46
+        secret: Default
+      model-00026-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00026-of-00084.safetensors
+        checksum: blake3:d0b7877b2b2dc4de57597abc18ab037bd35d3b1ad4badeca466bb7c0efab86df
+        secret: Default
+      model-00027-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00027-of-00084.safetensors
+        checksum: blake3:d0ad964fad32dd95ec3765dd046e3acf69b8b356507eefefe9de50c798123c30
+        secret: Default
+      model-00028-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00028-of-00084.safetensors
+        checksum: blake3:cf6a2ba5106c3e6f12ce0f44a3d2746b4133ac67e7427a05325da5cec4576905
+        secret: Default
+      model-00029-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00029-of-00084.safetensors
+        checksum: blake3:ff13259f97b49ccf1dae6d4a4cf567afb77c34e218dd158ee58bc8613e042e8b
+        secret: Default
+      model-00030-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00030-of-00084.safetensors
+        checksum: blake3:2a9a1d4ccdf8d7c68e792b5a476fd73d63837e6cdabc8a8cc247af991eb5c064
+        secret: Default
+      model-00031-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00031-of-00084.safetensors
+        checksum: blake3:facbf55b256540b90ba9234a92857f0f8f4feece4594eb8dce12c252a624a353
+        secret: Default
+      model-00032-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00032-of-00084.safetensors
+        checksum: blake3:ffe33bed68983379b72155155ceeb0e1a34b010108733a86c2c138e95fe750dd
+        secret: Default
+      model-00033-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00033-of-00084.safetensors
+        checksum: blake3:6ed86f9d6feaf18aca063b509a084b5924dd2f78db2a3f7f86d296235a53bb60
+        secret: Default
+      model-00034-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00034-of-00084.safetensors
+        checksum: blake3:aa5f3a34946ee407970b8386d736a3b64e9f59adae732b903f3b74d7b71f32f8
+        secret: Default
+      model-00035-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00035-of-00084.safetensors
+        checksum: blake3:c257d75619164e66a5a00da56ac07672a0beb21a4b7e72106d716e0ca0af4648
+        secret: Default
+      model-00036-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00036-of-00084.safetensors
+        checksum: blake3:d132939aeed78bad0578c659340f72edb2e914107e5f53d0aebc3b13b900142a
+        secret: Default
+      model-00037-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00037-of-00084.safetensors
+        checksum: blake3:f35f717108878d9982b720f20d9fd392b0abdb1a8606158f1a1b8894371ed38a
+        secret: Default
+      model-00038-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00038-of-00084.safetensors
+        checksum: blake3:f449414fd601c6e7b693bf5acc541dbfb3b124a59ecd5d2370a3dbe81f8b304d
+        secret: Default
+      model-00039-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00039-of-00084.safetensors
+        checksum: blake3:5db9558a8a3a1f50dd48864e77469b27ec0c350b8af0b2dac0ab57920a2afc76
+        secret: Default
+      model-00040-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00040-of-00084.safetensors
+        checksum: blake3:d8db540241e41c10c2a16ef6fad4c95f0c73504b829549c36d2d57bfccd87344
+        secret: Default
+      model-00041-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00041-of-00084.safetensors
+        checksum: blake3:b3347a07c4500b1aab062028ac79f94c543a7d87ad4cd66cd4aa29ac86075132
+        secret: Default
+      model-00042-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00042-of-00084.safetensors
+        checksum: blake3:a806cbb43a38deda73fcf8c73dfe16999a3efc1a561eb85acd64ff2963a36b0d
+        secret: Default
+      model-00043-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00043-of-00084.safetensors
+        checksum: blake3:2d19e1f14e46e698650ac574df7e7a5c258f66412e317f516c9d1fb8806efd7d
+        secret: Default
+      model-00044-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00044-of-00084.safetensors
+        checksum: blake3:9d85ff75f65a543d43926f0eb39aff5875693f98e1e1c964a9bd6d88452dc93d
+        secret: Default
+      model-00045-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00045-of-00084.safetensors
+        checksum: blake3:c726b21d2bc579fef4c4ab6dc9776723bf2b2cd0c718ad5eed18a308f835dd72
+        secret: Default
+      model-00046-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00046-of-00084.safetensors
+        checksum: blake3:8daee700f38fd19ccb6c528a6d626731c0f1cdae6cddc5cf8413d58b3786b3b8
+        secret: Default
+      model-00047-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00047-of-00084.safetensors
+        checksum: blake3:c3eb49c38597c862e0ab8a4f953baff055e4708ec41fc2e8d6aaa52cc47a9470
+        secret: Default
+      model-00048-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00048-of-00084.safetensors
+        checksum: blake3:3e44c7c94bb6378eb42630e25646b972bb29c7d1293c295e328ca5b1dc3a2d8e
+        secret: Default
+      model-00049-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00049-of-00084.safetensors
+        checksum: blake3:5e64ca0aee2e7bdc53478a0093d9e1894807288b195976949fe74369aa412bcd
+        secret: Default
+      model-00050-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00050-of-00084.safetensors
+        checksum: blake3:6de08480cf5ada72fce000186f7a969ecada79d7f54fd35d209bd8eb3583a771
+        secret: Default
+      model-00051-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00051-of-00084.safetensors
+        checksum: blake3:5276042340c355747f59b05d675d8bb3cd2b55424c440cb73437ab00355c2beb
+        secret: Default
+      model-00052-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00052-of-00084.safetensors
+        checksum: blake3:ac224ac6ba672ddb1fb3fbb8b8ba76aa65ef9e5f8ced3b80b314c8f76f31d35f
+        secret: Default
+      model-00053-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00053-of-00084.safetensors
+        checksum: blake3:192205cc0a0e0fc01e25c664656718cb791aeca32dc5a3896d47870ccfe3bf2c
+        secret: Default
+      model-00054-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00054-of-00084.safetensors
+        checksum: blake3:ccafb927ed6428000f5b39b52dad8c76c46150c92dbdd2516564264ea95d39d8
+        secret: Default
+      model-00055-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00055-of-00084.safetensors
+        checksum: blake3:e0de9923e14a5cd9e345dc38abb66066ae05be2c6d6696b674ae7ce8637e8590
+        secret: Default
+      model-00056-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00056-of-00084.safetensors
+        checksum: blake3:37ad7b15832eade4f7002ab21c705e2d0890f6fb28c74e3a2db1269b603ab3d6
+        secret: Default
+      model-00057-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00057-of-00084.safetensors
+        checksum: blake3:62352e217cd8ce8e4c2ada9449d45394689974a509cd2d26085f9c9b543bb91f
+        secret: Default
+      model-00058-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00058-of-00084.safetensors
+        checksum: blake3:d2e87c9278de7c358cd4e462fa4b67c5ab8157d791cf08bfbe086eee39376639
+        secret: Default
+      model-00059-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00059-of-00084.safetensors
+        checksum: blake3:969683427dc8d8f6bad43ff6f71cd92ab0952909e7cfa06309f8858287975cd8
+        secret: Default
+      model-00060-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00060-of-00084.safetensors
+        checksum: blake3:4bb5ff25c2da2a0934c0045878ff08fab82459f30f6b17ca77e15295c5a7c9a4
+        secret: Default
+      model-00061-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00061-of-00084.safetensors
+        checksum: blake3:0fa03aaa39b4969726768e597bf79a50871b3433b0165b69cd7261c3ff8b9c71
+        secret: Default
+      model-00062-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00062-of-00084.safetensors
+        checksum: blake3:9367680054d03f3f979c8081d73c4068332c1647835ec21bd511c8e0996294ee
+        secret: Default
+      model-00063-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00063-of-00084.safetensors
+        checksum: blake3:c6c6dcf4af4856003b7ed17f22c43db274ba58398d62c758de930e02933f82c4
+        secret: Default
+      model-00064-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00064-of-00084.safetensors
+        checksum: blake3:bafe112662de39029a4c23167b166b1dca6d503d36da1db16caaf0479e45d678
+        secret: Default
+      model-00065-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00065-of-00084.safetensors
+        checksum: blake3:5f121368e942b316ae83c0e34d6011c2c9d45f64dda397ed5332b54ac701f251
+        secret: Default
+      model-00066-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00066-of-00084.safetensors
+        checksum: blake3:66587e09a73c623623f47038c8043e6824ed56dcc2d1b94335c645e058995420
+        secret: Default
+      model-00067-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00067-of-00084.safetensors
+        checksum: blake3:f0007efd99bfd6d2873f9695d98a6d5a456c9cfa48cce17f17eeb25067854a3c
+        secret: Default
+      model-00068-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00068-of-00084.safetensors
+        checksum: blake3:2f0ef571a77440e79f6771dbd69bd23245c58fa28bb34cf0b12b4ccdf3b91ef7
+        secret: Default
+      model-00069-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00069-of-00084.safetensors
+        checksum: blake3:b75b175c91015cb620ae473e18dd529f3a7bddf849215a01f1e6b0184155502e
+        secret: Default
+      model-00070-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00070-of-00084.safetensors
+        checksum: blake3:b5da98c364716391cd578c5df89587bb4207c59fa758a910a0a7788e5e06fcbf
+        secret: Default
+      model-00071-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00071-of-00084.safetensors
+        checksum: blake3:dc2633374f37248999a3f06d0c7e633a7a125250fba966b9b6b8a3afe71e1ba5
+        secret: Default
+      model-00072-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00072-of-00084.safetensors
+        checksum: blake3:ffb928405bc49289e17deaefed7cd8321d4ca2a0c8ab80020f26b5653d5a761d
+        secret: Default
+      model-00073-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00073-of-00084.safetensors
+        checksum: blake3:e66e99770974498d2d849a1cf015dc8f0c37cfd32401560f94a6b51df8733134
+        secret: Default
+      model-00074-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00074-of-00084.safetensors
+        checksum: blake3:af5abe9917de6ed20c1c6e10981e146c79b2415bcfa58a3c866e5edea991e1e3
+        secret: Default
+      model-00075-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00075-of-00084.safetensors
+        checksum: blake3:010134a216a26cf69796291a065b4ba7f152a9b0842584e305ee7ad2e61d5ef4
+        secret: Default
+      model-00076-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00076-of-00084.safetensors
+        checksum: blake3:0bb79cd6377e8a92d3659134c8f6bafcdfadfa892aa073b7fb70384665de1e74
+        secret: Default
+      model-00077-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00077-of-00084.safetensors
+        checksum: blake3:829882b9204e11f6599f516804e58a2237a53427eed6fbc0e3c3bdad45e22e0c
+        secret: Default
+      model-00078-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00078-of-00084.safetensors
+        checksum: blake3:73061992a170f9ad7e557e58f60d151785167bf771782c3ec3cd9e3ff863ce24
+        secret: Default
+      model-00079-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00079-of-00084.safetensors
+        checksum: blake3:ec7f0a0cce11b7c9dfab7486b083f3b5ff5ed33ca975f117cc4df769534cc704
+        secret: Default
+      model-00080-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00080-of-00084.safetensors
+        checksum: blake3:8ac3cf35073ebab5a134b9a33956a130094602bbc1ec03134d55ed5c61c4b7e3
+        secret: Default
+      model-00081-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00081-of-00084.safetensors
+        checksum: blake3:44df93c9513e8f716fc76cc18e2a77f3fba66cb486b7f0711e5bc14aaad2e431
+        secret: Default
+      model-00082-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00082-of-00084.safetensors
+        checksum: blake3:f63496f9a3d373e00f822d17d85e1956cd1a1c1bcef5d77ee5c214992dd1c299
+        secret: Default
+      model-00083-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00083-of-00084.safetensors
+        checksum: blake3:d78c060d22e025048848c49fa40fa85ef98c0e7100b1d845b5ff17721ad1d9c1
+        secret: Default
+      model-00084-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00084-of-00084.safetensors
+        checksum: blake3:3f8a9b8b05dd246a62fc6666f38951014531d0191111be6a9e4caf43c3d66d53
+        secret: Default
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:d1c940a49495b1555b8a49a06da63521d88a72633ecf9456ac06942083fb8036
+        secret: Default
+      preprocessor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=preprocessor_config.json
+        checksum: blake3:79fd86868f45aea5edbddae8d1c1cb3c2277a2e4cda22eded09584c915ae41fe
+        secret: Default
+      processor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=processor_config.json
+        checksum: blake3:6dbc46e6268ced9189cbbedae6502dd3b1ae357b99722b304603f74798965a8e
+        secret: Default
+      recipe.yaml:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=recipe.yaml
+        checksum: blake3:2c28e4dede08f017c8ad28b7f3b0b9b458da5c1aa7b3c4aafadc6160cdff2320
+        secret: Default
+      special_tokens_map.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=special_tokens_map.json
+        checksum: blake3:7cc73db2a29b469400876b2c9061a4253678741ca5111db4f81ea87d2f4d5531
+        secret: Default
+      tokenizer.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.json
+        checksum: blake3:1e0d53230829c5c8afa91cf76d7584b849a2ee2e3399ac1328010f08d2138a0e
+        secret: Default
+      tokenizer.model:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.model
+        checksum: blake3:b7723034cb7193b7d6d549a40a2d9026c81c11258be0c9a6de0666b192766273
+        secret: Default
+      tokenizer_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:0a98dba4fcc70c1a749d809c0efd5fa9b3876c2a2f0a37749f1bba2ad12696d2
+        secret: Default
+- id: 93f1b5792303b1267dfba144a95bdac9dbc73e011d26ae5bc919d30e00e3412f
+  tags:
+    feat_lora: 'false'
+    gpu: H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: vllm
+    max_model_len: '1000000'
+    nim_workspace_hash_v1: e8d7ef40ffb741d02141fa61ba34ced7264fc6cff43e3b4286232fb0d3c9b314
+    pp: '1'
+    precision: fp8
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=LICENSE
+        checksum: blake3:5e0bf435fb275d2a768eaada780e5e16c38f4d4b2b568a95b2c0ca5d4523992c
+        secret: Default
+      README.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=README.md
+        checksum: blake3:66a518cb7cc4105d983a0dfb491d71fb6dda59809eb96d11e123fe8241898183
+        secret: Default
+      USE_POLICY.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=USE_POLICY.md
+        checksum: blake3:1b5e3a1f922dbe4e733d508105d971ec4b7e22449b4af70e7d00314e924c29b2
+        secret: Default
+      chat_template.jinja:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=chat_template.jinja
+        checksum: blake3:1d6d7992bd51dce32786e813886aff6c383ab6d04d4ff5cf57c11cd717d1924d
+        secret: Default
+      config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=config.json
+        checksum: blake3:a33a69d7f2d1a3402eac7a6a9d5dd44260c72c4f47690efed4fe3b0acbf290d2
+        secret: Default
+      generation_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=generation_config.json
+        checksum: blake3:cf19d2a61abfc79ceb634e784c2e109f41e15887062386a5e66a760117824b98
+        secret: Default
+      model-00001-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00001-of-00084.safetensors
+        checksum: blake3:0bb0bd81863359126b708f1303bf1fd373be0113f86142753dad517dde9cc82a
+        secret: Default
+      model-00002-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00002-of-00084.safetensors
+        checksum: blake3:0becdd681505fb02ae2f4c8009113fd7ed8ed0044186dddbf1b06113ad86c51e
+        secret: Default
+      model-00003-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00003-of-00084.safetensors
+        checksum: blake3:0485361b3e49cedd64bbba6565e35551c3b1a11cf66755dd986b08afc6a67e23
+        secret: Default
+      model-00004-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00004-of-00084.safetensors
+        checksum: blake3:e2232f2cb63d307806b339440684990d98b56b537b804389ac7466312513e51b
+        secret: Default
+      model-00005-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00005-of-00084.safetensors
+        checksum: blake3:df278c65e7ae4af084afee7bc9f16af2b8c15d47560abdf50829c3cefec2a59e
+        secret: Default
+      model-00006-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00006-of-00084.safetensors
+        checksum: blake3:f559fd62a4b41cba8823d2a4eac187ca68440270e84fb7afc96e8726f05f36ee
+        secret: Default
+      model-00007-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00007-of-00084.safetensors
+        checksum: blake3:5e5b2e1dd151b72e6512224908d0574a8c52b4ae5fbe83711bc5e319c73b1344
+        secret: Default
+      model-00008-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00008-of-00084.safetensors
+        checksum: blake3:7eea10512b560921e753a01d0ebf7eb4bc66f121f09e10674009b359e64396e2
+        secret: Default
+      model-00009-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00009-of-00084.safetensors
+        checksum: blake3:e4234143d1a90f7967e571fb6430f7856851c2aa7091862b63adb67acdee4526
+        secret: Default
+      model-00010-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00010-of-00084.safetensors
+        checksum: blake3:5e708130002d47a6790e7b8ba43874bc2b151fed088b7c192c480bec273971f1
+        secret: Default
+      model-00011-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00011-of-00084.safetensors
+        checksum: blake3:8cf08f35e40ba11049296c8ce6c2928459a2d5b12e90e0e8d3bc26053b4917e7
+        secret: Default
+      model-00012-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00012-of-00084.safetensors
+        checksum: blake3:71b1bc3ea0bf0f301c14f079381f2cfe02096b3065bb5e168a85030c2896558c
+        secret: Default
+      model-00013-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00013-of-00084.safetensors
+        checksum: blake3:bf520d60dffbba87f4bcffcc7c09a0b68de6317118311c450bcdf6d960476ff1
+        secret: Default
+      model-00014-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00014-of-00084.safetensors
+        checksum: blake3:60c02a8b07e217855f04f0460d04c7f5b1f0c53f9bf311b72e3e23a56c12ce66
+        secret: Default
+      model-00015-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00015-of-00084.safetensors
+        checksum: blake3:5910024cb21c7dad8a1d7e4311318782dbbb89012d29c7ae28f430d0df3f141a
+        secret: Default
+      model-00016-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00016-of-00084.safetensors
+        checksum: blake3:0311e80558fb728ee7ff14ad9866f4249d17206be7b7c18e95ae5050b7f66edb
+        secret: Default
+      model-00017-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00017-of-00084.safetensors
+        checksum: blake3:531d004700d2dd06b9adf397507bf4574f75dcfdb13ff4fce82b5151940a04d0
+        secret: Default
+      model-00018-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00018-of-00084.safetensors
+        checksum: blake3:88030471eec62815c92c474ba73ef7bae83a2ad96e2bf88ddbb206f9b7178d21
+        secret: Default
+      model-00019-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00019-of-00084.safetensors
+        checksum: blake3:d1ea97e8e7b94b4cefdbd7fb21a5d6cfb2c679911e19a6d608693583b6f1ff3b
+        secret: Default
+      model-00020-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00020-of-00084.safetensors
+        checksum: blake3:8f4bdfee32ae950855042fc37e48ff18658fdab35136cbb1986d7d73e158de96
+        secret: Default
+      model-00021-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00021-of-00084.safetensors
+        checksum: blake3:7e260bd705741f73bfc821bfaf396e75447a74cef0fc68fd08d4782b31cca179
+        secret: Default
+      model-00022-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00022-of-00084.safetensors
+        checksum: blake3:eb8e61e85d7bbbf8825f4698b121c09c08f5c7b72214fd51fc233ab7193a13a5
+        secret: Default
+      model-00023-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00023-of-00084.safetensors
+        checksum: blake3:4c922b0e2f5384188920610ecbdacfd91d68e576c758041af3bdd397f2e3daee
+        secret: Default
+      model-00024-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00024-of-00084.safetensors
+        checksum: blake3:7cdf242d9f2c81a85d6c28a999184a2514925fe3543a1c08d53d9723f9843f67
+        secret: Default
+      model-00025-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00025-of-00084.safetensors
+        checksum: blake3:acf530add490403b975c3148606c799377a91ad2bed1db8f2c6de6c69cf23f46
+        secret: Default
+      model-00026-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00026-of-00084.safetensors
+        checksum: blake3:d0b7877b2b2dc4de57597abc18ab037bd35d3b1ad4badeca466bb7c0efab86df
+        secret: Default
+      model-00027-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00027-of-00084.safetensors
+        checksum: blake3:d0ad964fad32dd95ec3765dd046e3acf69b8b356507eefefe9de50c798123c30
+        secret: Default
+      model-00028-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00028-of-00084.safetensors
+        checksum: blake3:cf6a2ba5106c3e6f12ce0f44a3d2746b4133ac67e7427a05325da5cec4576905
+        secret: Default
+      model-00029-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00029-of-00084.safetensors
+        checksum: blake3:ff13259f97b49ccf1dae6d4a4cf567afb77c34e218dd158ee58bc8613e042e8b
+        secret: Default
+      model-00030-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00030-of-00084.safetensors
+        checksum: blake3:2a9a1d4ccdf8d7c68e792b5a476fd73d63837e6cdabc8a8cc247af991eb5c064
+        secret: Default
+      model-00031-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00031-of-00084.safetensors
+        checksum: blake3:facbf55b256540b90ba9234a92857f0f8f4feece4594eb8dce12c252a624a353
+        secret: Default
+      model-00032-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00032-of-00084.safetensors
+        checksum: blake3:ffe33bed68983379b72155155ceeb0e1a34b010108733a86c2c138e95fe750dd
+        secret: Default
+      model-00033-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00033-of-00084.safetensors
+        checksum: blake3:6ed86f9d6feaf18aca063b509a084b5924dd2f78db2a3f7f86d296235a53bb60
+        secret: Default
+      model-00034-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00034-of-00084.safetensors
+        checksum: blake3:aa5f3a34946ee407970b8386d736a3b64e9f59adae732b903f3b74d7b71f32f8
+        secret: Default
+      model-00035-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00035-of-00084.safetensors
+        checksum: blake3:c257d75619164e66a5a00da56ac07672a0beb21a4b7e72106d716e0ca0af4648
+        secret: Default
+      model-00036-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00036-of-00084.safetensors
+        checksum: blake3:d132939aeed78bad0578c659340f72edb2e914107e5f53d0aebc3b13b900142a
+        secret: Default
+      model-00037-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00037-of-00084.safetensors
+        checksum: blake3:f35f717108878d9982b720f20d9fd392b0abdb1a8606158f1a1b8894371ed38a
+        secret: Default
+      model-00038-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00038-of-00084.safetensors
+        checksum: blake3:f449414fd601c6e7b693bf5acc541dbfb3b124a59ecd5d2370a3dbe81f8b304d
+        secret: Default
+      model-00039-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00039-of-00084.safetensors
+        checksum: blake3:5db9558a8a3a1f50dd48864e77469b27ec0c350b8af0b2dac0ab57920a2afc76
+        secret: Default
+      model-00040-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00040-of-00084.safetensors
+        checksum: blake3:d8db540241e41c10c2a16ef6fad4c95f0c73504b829549c36d2d57bfccd87344
+        secret: Default
+      model-00041-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00041-of-00084.safetensors
+        checksum: blake3:b3347a07c4500b1aab062028ac79f94c543a7d87ad4cd66cd4aa29ac86075132
+        secret: Default
+      model-00042-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00042-of-00084.safetensors
+        checksum: blake3:a806cbb43a38deda73fcf8c73dfe16999a3efc1a561eb85acd64ff2963a36b0d
+        secret: Default
+      model-00043-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00043-of-00084.safetensors
+        checksum: blake3:2d19e1f14e46e698650ac574df7e7a5c258f66412e317f516c9d1fb8806efd7d
+        secret: Default
+      model-00044-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00044-of-00084.safetensors
+        checksum: blake3:9d85ff75f65a543d43926f0eb39aff5875693f98e1e1c964a9bd6d88452dc93d
+        secret: Default
+      model-00045-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00045-of-00084.safetensors
+        checksum: blake3:c726b21d2bc579fef4c4ab6dc9776723bf2b2cd0c718ad5eed18a308f835dd72
+        secret: Default
+      model-00046-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00046-of-00084.safetensors
+        checksum: blake3:8daee700f38fd19ccb6c528a6d626731c0f1cdae6cddc5cf8413d58b3786b3b8
+        secret: Default
+      model-00047-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00047-of-00084.safetensors
+        checksum: blake3:c3eb49c38597c862e0ab8a4f953baff055e4708ec41fc2e8d6aaa52cc47a9470
+        secret: Default
+      model-00048-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00048-of-00084.safetensors
+        checksum: blake3:3e44c7c94bb6378eb42630e25646b972bb29c7d1293c295e328ca5b1dc3a2d8e
+        secret: Default
+      model-00049-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00049-of-00084.safetensors
+        checksum: blake3:5e64ca0aee2e7bdc53478a0093d9e1894807288b195976949fe74369aa412bcd
+        secret: Default
+      model-00050-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00050-of-00084.safetensors
+        checksum: blake3:6de08480cf5ada72fce000186f7a969ecada79d7f54fd35d209bd8eb3583a771
+        secret: Default
+      model-00051-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00051-of-00084.safetensors
+        checksum: blake3:5276042340c355747f59b05d675d8bb3cd2b55424c440cb73437ab00355c2beb
+        secret: Default
+      model-00052-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00052-of-00084.safetensors
+        checksum: blake3:ac224ac6ba672ddb1fb3fbb8b8ba76aa65ef9e5f8ced3b80b314c8f76f31d35f
+        secret: Default
+      model-00053-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00053-of-00084.safetensors
+        checksum: blake3:192205cc0a0e0fc01e25c664656718cb791aeca32dc5a3896d47870ccfe3bf2c
+        secret: Default
+      model-00054-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00054-of-00084.safetensors
+        checksum: blake3:ccafb927ed6428000f5b39b52dad8c76c46150c92dbdd2516564264ea95d39d8
+        secret: Default
+      model-00055-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00055-of-00084.safetensors
+        checksum: blake3:e0de9923e14a5cd9e345dc38abb66066ae05be2c6d6696b674ae7ce8637e8590
+        secret: Default
+      model-00056-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00056-of-00084.safetensors
+        checksum: blake3:37ad7b15832eade4f7002ab21c705e2d0890f6fb28c74e3a2db1269b603ab3d6
+        secret: Default
+      model-00057-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00057-of-00084.safetensors
+        checksum: blake3:62352e217cd8ce8e4c2ada9449d45394689974a509cd2d26085f9c9b543bb91f
+        secret: Default
+      model-00058-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00058-of-00084.safetensors
+        checksum: blake3:d2e87c9278de7c358cd4e462fa4b67c5ab8157d791cf08bfbe086eee39376639
+        secret: Default
+      model-00059-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00059-of-00084.safetensors
+        checksum: blake3:969683427dc8d8f6bad43ff6f71cd92ab0952909e7cfa06309f8858287975cd8
+        secret: Default
+      model-00060-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00060-of-00084.safetensors
+        checksum: blake3:4bb5ff25c2da2a0934c0045878ff08fab82459f30f6b17ca77e15295c5a7c9a4
+        secret: Default
+      model-00061-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00061-of-00084.safetensors
+        checksum: blake3:0fa03aaa39b4969726768e597bf79a50871b3433b0165b69cd7261c3ff8b9c71
+        secret: Default
+      model-00062-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00062-of-00084.safetensors
+        checksum: blake3:9367680054d03f3f979c8081d73c4068332c1647835ec21bd511c8e0996294ee
+        secret: Default
+      model-00063-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00063-of-00084.safetensors
+        checksum: blake3:c6c6dcf4af4856003b7ed17f22c43db274ba58398d62c758de930e02933f82c4
+        secret: Default
+      model-00064-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00064-of-00084.safetensors
+        checksum: blake3:bafe112662de39029a4c23167b166b1dca6d503d36da1db16caaf0479e45d678
+        secret: Default
+      model-00065-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00065-of-00084.safetensors
+        checksum: blake3:5f121368e942b316ae83c0e34d6011c2c9d45f64dda397ed5332b54ac701f251
+        secret: Default
+      model-00066-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00066-of-00084.safetensors
+        checksum: blake3:66587e09a73c623623f47038c8043e6824ed56dcc2d1b94335c645e058995420
+        secret: Default
+      model-00067-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00067-of-00084.safetensors
+        checksum: blake3:f0007efd99bfd6d2873f9695d98a6d5a456c9cfa48cce17f17eeb25067854a3c
+        secret: Default
+      model-00068-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00068-of-00084.safetensors
+        checksum: blake3:2f0ef571a77440e79f6771dbd69bd23245c58fa28bb34cf0b12b4ccdf3b91ef7
+        secret: Default
+      model-00069-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00069-of-00084.safetensors
+        checksum: blake3:b75b175c91015cb620ae473e18dd529f3a7bddf849215a01f1e6b0184155502e
+        secret: Default
+      model-00070-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00070-of-00084.safetensors
+        checksum: blake3:b5da98c364716391cd578c5df89587bb4207c59fa758a910a0a7788e5e06fcbf
+        secret: Default
+      model-00071-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00071-of-00084.safetensors
+        checksum: blake3:dc2633374f37248999a3f06d0c7e633a7a125250fba966b9b6b8a3afe71e1ba5
+        secret: Default
+      model-00072-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00072-of-00084.safetensors
+        checksum: blake3:ffb928405bc49289e17deaefed7cd8321d4ca2a0c8ab80020f26b5653d5a761d
+        secret: Default
+      model-00073-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00073-of-00084.safetensors
+        checksum: blake3:e66e99770974498d2d849a1cf015dc8f0c37cfd32401560f94a6b51df8733134
+        secret: Default
+      model-00074-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00074-of-00084.safetensors
+        checksum: blake3:af5abe9917de6ed20c1c6e10981e146c79b2415bcfa58a3c866e5edea991e1e3
+        secret: Default
+      model-00075-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00075-of-00084.safetensors
+        checksum: blake3:010134a216a26cf69796291a065b4ba7f152a9b0842584e305ee7ad2e61d5ef4
+        secret: Default
+      model-00076-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00076-of-00084.safetensors
+        checksum: blake3:0bb79cd6377e8a92d3659134c8f6bafcdfadfa892aa073b7fb70384665de1e74
+        secret: Default
+      model-00077-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00077-of-00084.safetensors
+        checksum: blake3:829882b9204e11f6599f516804e58a2237a53427eed6fbc0e3c3bdad45e22e0c
+        secret: Default
+      model-00078-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00078-of-00084.safetensors
+        checksum: blake3:73061992a170f9ad7e557e58f60d151785167bf771782c3ec3cd9e3ff863ce24
+        secret: Default
+      model-00079-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00079-of-00084.safetensors
+        checksum: blake3:ec7f0a0cce11b7c9dfab7486b083f3b5ff5ed33ca975f117cc4df769534cc704
+        secret: Default
+      model-00080-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00080-of-00084.safetensors
+        checksum: blake3:8ac3cf35073ebab5a134b9a33956a130094602bbc1ec03134d55ed5c61c4b7e3
+        secret: Default
+      model-00081-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00081-of-00084.safetensors
+        checksum: blake3:44df93c9513e8f716fc76cc18e2a77f3fba66cb486b7f0711e5bc14aaad2e431
+        secret: Default
+      model-00082-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00082-of-00084.safetensors
+        checksum: blake3:f63496f9a3d373e00f822d17d85e1956cd1a1c1bcef5d77ee5c214992dd1c299
+        secret: Default
+      model-00083-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00083-of-00084.safetensors
+        checksum: blake3:d78c060d22e025048848c49fa40fa85ef98c0e7100b1d845b5ff17721ad1d9c1
+        secret: Default
+      model-00084-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00084-of-00084.safetensors
+        checksum: blake3:3f8a9b8b05dd246a62fc6666f38951014531d0191111be6a9e4caf43c3d66d53
+        secret: Default
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:d1c940a49495b1555b8a49a06da63521d88a72633ecf9456ac06942083fb8036
+        secret: Default
+      preprocessor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=preprocessor_config.json
+        checksum: blake3:79fd86868f45aea5edbddae8d1c1cb3c2277a2e4cda22eded09584c915ae41fe
+        secret: Default
+      processor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=processor_config.json
+        checksum: blake3:6dbc46e6268ced9189cbbedae6502dd3b1ae357b99722b304603f74798965a8e
+        secret: Default
+      recipe.yaml:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=recipe.yaml
+        checksum: blake3:2c28e4dede08f017c8ad28b7f3b0b9b458da5c1aa7b3c4aafadc6160cdff2320
+        secret: Default
+      special_tokens_map.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=special_tokens_map.json
+        checksum: blake3:7cc73db2a29b469400876b2c9061a4253678741ca5111db4f81ea87d2f4d5531
+        secret: Default
+      tokenizer.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.json
+        checksum: blake3:1e0d53230829c5c8afa91cf76d7584b849a2ee2e3399ac1328010f08d2138a0e
+        secret: Default
+      tokenizer.model:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.model
+        checksum: blake3:b7723034cb7193b7d6d549a40a2d9026c81c11258be0c9a6de0666b192766273
+        secret: Default
+      tokenizer_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:0a98dba4fcc70c1a749d809c0efd5fa9b3876c2a2f0a37749f1bba2ad12696d2
+        secret: Default
+- id: e4ea3e83724f5f29ec9bf727c87a0c0926e1abae3701cc40c1f4b4304c5a4eca
+  tags:
+    feat_lora: 'false'
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    max_model_len: '1000000'
+    nim_workspace_hash_v1: e8d7ef40ffb741d02141fa61ba34ced7264fc6cff43e3b4286232fb0d3c9b314
+    pp: '1'
+    precision: fp8
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=LICENSE
+        checksum: blake3:5e0bf435fb275d2a768eaada780e5e16c38f4d4b2b568a95b2c0ca5d4523992c
+        secret: Default
+      README.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=README.md
+        checksum: blake3:66a518cb7cc4105d983a0dfb491d71fb6dda59809eb96d11e123fe8241898183
+        secret: Default
+      USE_POLICY.md:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=USE_POLICY.md
+        checksum: blake3:1b5e3a1f922dbe4e733d508105d971ec4b7e22449b4af70e7d00314e924c29b2
+        secret: Default
+      chat_template.jinja:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=chat_template.jinja
+        checksum: blake3:1d6d7992bd51dce32786e813886aff6c383ab6d04d4ff5cf57c11cd717d1924d
+        secret: Default
+      config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=config.json
+        checksum: blake3:a33a69d7f2d1a3402eac7a6a9d5dd44260c72c4f47690efed4fe3b0acbf290d2
+        secret: Default
+      generation_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=generation_config.json
+        checksum: blake3:cf19d2a61abfc79ceb634e784c2e109f41e15887062386a5e66a760117824b98
+        secret: Default
+      model-00001-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00001-of-00084.safetensors
+        checksum: blake3:0bb0bd81863359126b708f1303bf1fd373be0113f86142753dad517dde9cc82a
+        secret: Default
+      model-00002-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00002-of-00084.safetensors
+        checksum: blake3:0becdd681505fb02ae2f4c8009113fd7ed8ed0044186dddbf1b06113ad86c51e
+        secret: Default
+      model-00003-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00003-of-00084.safetensors
+        checksum: blake3:0485361b3e49cedd64bbba6565e35551c3b1a11cf66755dd986b08afc6a67e23
+        secret: Default
+      model-00004-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00004-of-00084.safetensors
+        checksum: blake3:e2232f2cb63d307806b339440684990d98b56b537b804389ac7466312513e51b
+        secret: Default
+      model-00005-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00005-of-00084.safetensors
+        checksum: blake3:df278c65e7ae4af084afee7bc9f16af2b8c15d47560abdf50829c3cefec2a59e
+        secret: Default
+      model-00006-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00006-of-00084.safetensors
+        checksum: blake3:f559fd62a4b41cba8823d2a4eac187ca68440270e84fb7afc96e8726f05f36ee
+        secret: Default
+      model-00007-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00007-of-00084.safetensors
+        checksum: blake3:5e5b2e1dd151b72e6512224908d0574a8c52b4ae5fbe83711bc5e319c73b1344
+        secret: Default
+      model-00008-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00008-of-00084.safetensors
+        checksum: blake3:7eea10512b560921e753a01d0ebf7eb4bc66f121f09e10674009b359e64396e2
+        secret: Default
+      model-00009-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00009-of-00084.safetensors
+        checksum: blake3:e4234143d1a90f7967e571fb6430f7856851c2aa7091862b63adb67acdee4526
+        secret: Default
+      model-00010-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00010-of-00084.safetensors
+        checksum: blake3:5e708130002d47a6790e7b8ba43874bc2b151fed088b7c192c480bec273971f1
+        secret: Default
+      model-00011-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00011-of-00084.safetensors
+        checksum: blake3:8cf08f35e40ba11049296c8ce6c2928459a2d5b12e90e0e8d3bc26053b4917e7
+        secret: Default
+      model-00012-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00012-of-00084.safetensors
+        checksum: blake3:71b1bc3ea0bf0f301c14f079381f2cfe02096b3065bb5e168a85030c2896558c
+        secret: Default
+      model-00013-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00013-of-00084.safetensors
+        checksum: blake3:bf520d60dffbba87f4bcffcc7c09a0b68de6317118311c450bcdf6d960476ff1
+        secret: Default
+      model-00014-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00014-of-00084.safetensors
+        checksum: blake3:60c02a8b07e217855f04f0460d04c7f5b1f0c53f9bf311b72e3e23a56c12ce66
+        secret: Default
+      model-00015-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00015-of-00084.safetensors
+        checksum: blake3:5910024cb21c7dad8a1d7e4311318782dbbb89012d29c7ae28f430d0df3f141a
+        secret: Default
+      model-00016-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00016-of-00084.safetensors
+        checksum: blake3:0311e80558fb728ee7ff14ad9866f4249d17206be7b7c18e95ae5050b7f66edb
+        secret: Default
+      model-00017-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00017-of-00084.safetensors
+        checksum: blake3:531d004700d2dd06b9adf397507bf4574f75dcfdb13ff4fce82b5151940a04d0
+        secret: Default
+      model-00018-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00018-of-00084.safetensors
+        checksum: blake3:88030471eec62815c92c474ba73ef7bae83a2ad96e2bf88ddbb206f9b7178d21
+        secret: Default
+      model-00019-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00019-of-00084.safetensors
+        checksum: blake3:d1ea97e8e7b94b4cefdbd7fb21a5d6cfb2c679911e19a6d608693583b6f1ff3b
+        secret: Default
+      model-00020-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00020-of-00084.safetensors
+        checksum: blake3:8f4bdfee32ae950855042fc37e48ff18658fdab35136cbb1986d7d73e158de96
+        secret: Default
+      model-00021-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00021-of-00084.safetensors
+        checksum: blake3:7e260bd705741f73bfc821bfaf396e75447a74cef0fc68fd08d4782b31cca179
+        secret: Default
+      model-00022-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00022-of-00084.safetensors
+        checksum: blake3:eb8e61e85d7bbbf8825f4698b121c09c08f5c7b72214fd51fc233ab7193a13a5
+        secret: Default
+      model-00023-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00023-of-00084.safetensors
+        checksum: blake3:4c922b0e2f5384188920610ecbdacfd91d68e576c758041af3bdd397f2e3daee
+        secret: Default
+      model-00024-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00024-of-00084.safetensors
+        checksum: blake3:7cdf242d9f2c81a85d6c28a999184a2514925fe3543a1c08d53d9723f9843f67
+        secret: Default
+      model-00025-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00025-of-00084.safetensors
+        checksum: blake3:acf530add490403b975c3148606c799377a91ad2bed1db8f2c6de6c69cf23f46
+        secret: Default
+      model-00026-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00026-of-00084.safetensors
+        checksum: blake3:d0b7877b2b2dc4de57597abc18ab037bd35d3b1ad4badeca466bb7c0efab86df
+        secret: Default
+      model-00027-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00027-of-00084.safetensors
+        checksum: blake3:d0ad964fad32dd95ec3765dd046e3acf69b8b356507eefefe9de50c798123c30
+        secret: Default
+      model-00028-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00028-of-00084.safetensors
+        checksum: blake3:cf6a2ba5106c3e6f12ce0f44a3d2746b4133ac67e7427a05325da5cec4576905
+        secret: Default
+      model-00029-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00029-of-00084.safetensors
+        checksum: blake3:ff13259f97b49ccf1dae6d4a4cf567afb77c34e218dd158ee58bc8613e042e8b
+        secret: Default
+      model-00030-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00030-of-00084.safetensors
+        checksum: blake3:2a9a1d4ccdf8d7c68e792b5a476fd73d63837e6cdabc8a8cc247af991eb5c064
+        secret: Default
+      model-00031-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00031-of-00084.safetensors
+        checksum: blake3:facbf55b256540b90ba9234a92857f0f8f4feece4594eb8dce12c252a624a353
+        secret: Default
+      model-00032-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00032-of-00084.safetensors
+        checksum: blake3:ffe33bed68983379b72155155ceeb0e1a34b010108733a86c2c138e95fe750dd
+        secret: Default
+      model-00033-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00033-of-00084.safetensors
+        checksum: blake3:6ed86f9d6feaf18aca063b509a084b5924dd2f78db2a3f7f86d296235a53bb60
+        secret: Default
+      model-00034-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00034-of-00084.safetensors
+        checksum: blake3:aa5f3a34946ee407970b8386d736a3b64e9f59adae732b903f3b74d7b71f32f8
+        secret: Default
+      model-00035-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00035-of-00084.safetensors
+        checksum: blake3:c257d75619164e66a5a00da56ac07672a0beb21a4b7e72106d716e0ca0af4648
+        secret: Default
+      model-00036-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00036-of-00084.safetensors
+        checksum: blake3:d132939aeed78bad0578c659340f72edb2e914107e5f53d0aebc3b13b900142a
+        secret: Default
+      model-00037-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00037-of-00084.safetensors
+        checksum: blake3:f35f717108878d9982b720f20d9fd392b0abdb1a8606158f1a1b8894371ed38a
+        secret: Default
+      model-00038-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00038-of-00084.safetensors
+        checksum: blake3:f449414fd601c6e7b693bf5acc541dbfb3b124a59ecd5d2370a3dbe81f8b304d
+        secret: Default
+      model-00039-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00039-of-00084.safetensors
+        checksum: blake3:5db9558a8a3a1f50dd48864e77469b27ec0c350b8af0b2dac0ab57920a2afc76
+        secret: Default
+      model-00040-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00040-of-00084.safetensors
+        checksum: blake3:d8db540241e41c10c2a16ef6fad4c95f0c73504b829549c36d2d57bfccd87344
+        secret: Default
+      model-00041-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00041-of-00084.safetensors
+        checksum: blake3:b3347a07c4500b1aab062028ac79f94c543a7d87ad4cd66cd4aa29ac86075132
+        secret: Default
+      model-00042-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00042-of-00084.safetensors
+        checksum: blake3:a806cbb43a38deda73fcf8c73dfe16999a3efc1a561eb85acd64ff2963a36b0d
+        secret: Default
+      model-00043-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00043-of-00084.safetensors
+        checksum: blake3:2d19e1f14e46e698650ac574df7e7a5c258f66412e317f516c9d1fb8806efd7d
+        secret: Default
+      model-00044-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00044-of-00084.safetensors
+        checksum: blake3:9d85ff75f65a543d43926f0eb39aff5875693f98e1e1c964a9bd6d88452dc93d
+        secret: Default
+      model-00045-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00045-of-00084.safetensors
+        checksum: blake3:c726b21d2bc579fef4c4ab6dc9776723bf2b2cd0c718ad5eed18a308f835dd72
+        secret: Default
+      model-00046-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00046-of-00084.safetensors
+        checksum: blake3:8daee700f38fd19ccb6c528a6d626731c0f1cdae6cddc5cf8413d58b3786b3b8
+        secret: Default
+      model-00047-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00047-of-00084.safetensors
+        checksum: blake3:c3eb49c38597c862e0ab8a4f953baff055e4708ec41fc2e8d6aaa52cc47a9470
+        secret: Default
+      model-00048-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00048-of-00084.safetensors
+        checksum: blake3:3e44c7c94bb6378eb42630e25646b972bb29c7d1293c295e328ca5b1dc3a2d8e
+        secret: Default
+      model-00049-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00049-of-00084.safetensors
+        checksum: blake3:5e64ca0aee2e7bdc53478a0093d9e1894807288b195976949fe74369aa412bcd
+        secret: Default
+      model-00050-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00050-of-00084.safetensors
+        checksum: blake3:6de08480cf5ada72fce000186f7a969ecada79d7f54fd35d209bd8eb3583a771
+        secret: Default
+      model-00051-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00051-of-00084.safetensors
+        checksum: blake3:5276042340c355747f59b05d675d8bb3cd2b55424c440cb73437ab00355c2beb
+        secret: Default
+      model-00052-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00052-of-00084.safetensors
+        checksum: blake3:ac224ac6ba672ddb1fb3fbb8b8ba76aa65ef9e5f8ced3b80b314c8f76f31d35f
+        secret: Default
+      model-00053-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00053-of-00084.safetensors
+        checksum: blake3:192205cc0a0e0fc01e25c664656718cb791aeca32dc5a3896d47870ccfe3bf2c
+        secret: Default
+      model-00054-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00054-of-00084.safetensors
+        checksum: blake3:ccafb927ed6428000f5b39b52dad8c76c46150c92dbdd2516564264ea95d39d8
+        secret: Default
+      model-00055-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00055-of-00084.safetensors
+        checksum: blake3:e0de9923e14a5cd9e345dc38abb66066ae05be2c6d6696b674ae7ce8637e8590
+        secret: Default
+      model-00056-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00056-of-00084.safetensors
+        checksum: blake3:37ad7b15832eade4f7002ab21c705e2d0890f6fb28c74e3a2db1269b603ab3d6
+        secret: Default
+      model-00057-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00057-of-00084.safetensors
+        checksum: blake3:62352e217cd8ce8e4c2ada9449d45394689974a509cd2d26085f9c9b543bb91f
+        secret: Default
+      model-00058-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00058-of-00084.safetensors
+        checksum: blake3:d2e87c9278de7c358cd4e462fa4b67c5ab8157d791cf08bfbe086eee39376639
+        secret: Default
+      model-00059-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00059-of-00084.safetensors
+        checksum: blake3:969683427dc8d8f6bad43ff6f71cd92ab0952909e7cfa06309f8858287975cd8
+        secret: Default
+      model-00060-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00060-of-00084.safetensors
+        checksum: blake3:4bb5ff25c2da2a0934c0045878ff08fab82459f30f6b17ca77e15295c5a7c9a4
+        secret: Default
+      model-00061-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00061-of-00084.safetensors
+        checksum: blake3:0fa03aaa39b4969726768e597bf79a50871b3433b0165b69cd7261c3ff8b9c71
+        secret: Default
+      model-00062-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00062-of-00084.safetensors
+        checksum: blake3:9367680054d03f3f979c8081d73c4068332c1647835ec21bd511c8e0996294ee
+        secret: Default
+      model-00063-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00063-of-00084.safetensors
+        checksum: blake3:c6c6dcf4af4856003b7ed17f22c43db274ba58398d62c758de930e02933f82c4
+        secret: Default
+      model-00064-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00064-of-00084.safetensors
+        checksum: blake3:bafe112662de39029a4c23167b166b1dca6d503d36da1db16caaf0479e45d678
+        secret: Default
+      model-00065-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00065-of-00084.safetensors
+        checksum: blake3:5f121368e942b316ae83c0e34d6011c2c9d45f64dda397ed5332b54ac701f251
+        secret: Default
+      model-00066-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00066-of-00084.safetensors
+        checksum: blake3:66587e09a73c623623f47038c8043e6824ed56dcc2d1b94335c645e058995420
+        secret: Default
+      model-00067-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00067-of-00084.safetensors
+        checksum: blake3:f0007efd99bfd6d2873f9695d98a6d5a456c9cfa48cce17f17eeb25067854a3c
+        secret: Default
+      model-00068-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00068-of-00084.safetensors
+        checksum: blake3:2f0ef571a77440e79f6771dbd69bd23245c58fa28bb34cf0b12b4ccdf3b91ef7
+        secret: Default
+      model-00069-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00069-of-00084.safetensors
+        checksum: blake3:b75b175c91015cb620ae473e18dd529f3a7bddf849215a01f1e6b0184155502e
+        secret: Default
+      model-00070-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00070-of-00084.safetensors
+        checksum: blake3:b5da98c364716391cd578c5df89587bb4207c59fa758a910a0a7788e5e06fcbf
+        secret: Default
+      model-00071-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00071-of-00084.safetensors
+        checksum: blake3:dc2633374f37248999a3f06d0c7e633a7a125250fba966b9b6b8a3afe71e1ba5
+        secret: Default
+      model-00072-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00072-of-00084.safetensors
+        checksum: blake3:ffb928405bc49289e17deaefed7cd8321d4ca2a0c8ab80020f26b5653d5a761d
+        secret: Default
+      model-00073-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00073-of-00084.safetensors
+        checksum: blake3:e66e99770974498d2d849a1cf015dc8f0c37cfd32401560f94a6b51df8733134
+        secret: Default
+      model-00074-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00074-of-00084.safetensors
+        checksum: blake3:af5abe9917de6ed20c1c6e10981e146c79b2415bcfa58a3c866e5edea991e1e3
+        secret: Default
+      model-00075-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00075-of-00084.safetensors
+        checksum: blake3:010134a216a26cf69796291a065b4ba7f152a9b0842584e305ee7ad2e61d5ef4
+        secret: Default
+      model-00076-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00076-of-00084.safetensors
+        checksum: blake3:0bb79cd6377e8a92d3659134c8f6bafcdfadfa892aa073b7fb70384665de1e74
+        secret: Default
+      model-00077-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00077-of-00084.safetensors
+        checksum: blake3:829882b9204e11f6599f516804e58a2237a53427eed6fbc0e3c3bdad45e22e0c
+        secret: Default
+      model-00078-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00078-of-00084.safetensors
+        checksum: blake3:73061992a170f9ad7e557e58f60d151785167bf771782c3ec3cd9e3ff863ce24
+        secret: Default
+      model-00079-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00079-of-00084.safetensors
+        checksum: blake3:ec7f0a0cce11b7c9dfab7486b083f3b5ff5ed33ca975f117cc4df769534cc704
+        secret: Default
+      model-00080-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00080-of-00084.safetensors
+        checksum: blake3:8ac3cf35073ebab5a134b9a33956a130094602bbc1ec03134d55ed5c61c4b7e3
+        secret: Default
+      model-00081-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00081-of-00084.safetensors
+        checksum: blake3:44df93c9513e8f716fc76cc18e2a77f3fba66cb486b7f0711e5bc14aaad2e431
+        secret: Default
+      model-00082-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00082-of-00084.safetensors
+        checksum: blake3:f63496f9a3d373e00f822d17d85e1956cd1a1c1bcef5d77ee5c214992dd1c299
+        secret: Default
+      model-00083-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00083-of-00084.safetensors
+        checksum: blake3:d78c060d22e025048848c49fa40fa85ef98c0e7100b1d845b5ff17721ad1d9c1
+        secret: Default
+      model-00084-of-00084.safetensors:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model-00084-of-00084.safetensors
+        checksum: blake3:3f8a9b8b05dd246a62fc6666f38951014531d0191111be6a9e4caf43c3d66d53
+        secret: Default
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:d1c940a49495b1555b8a49a06da63521d88a72633ecf9456ac06942083fb8036
+        secret: Default
+      preprocessor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=preprocessor_config.json
+        checksum: blake3:79fd86868f45aea5edbddae8d1c1cb3c2277a2e4cda22eded09584c915ae41fe
+        secret: Default
+      processor_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=processor_config.json
+        checksum: blake3:6dbc46e6268ced9189cbbedae6502dd3b1ae357b99722b304603f74798965a8e
+        secret: Default
+      recipe.yaml:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=recipe.yaml
+        checksum: blake3:2c28e4dede08f017c8ad28b7f3b0b9b458da5c1aa7b3c4aafadc6160cdff2320
+        secret: Default
+      special_tokens_map.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=special_tokens_map.json
+        checksum: blake3:7cc73db2a29b469400876b2c9061a4253678741ca5111db4f81ea87d2f4d5531
+        secret: Default
+      tokenizer.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.json
+        checksum: blake3:1e0d53230829c5c8afa91cf76d7584b849a2ee2e3399ac1328010f08d2138a0e
+        secret: Default
+      tokenizer.model:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer.model
+        checksum: blake3:b7723034cb7193b7d6d549a40a2d9026c81c11258be0c9a6de0666b192766273
+        secret: Default
+      tokenizer_config.json:
+        uri: ngc://nim/meta/llama-4-maverick-17b-128e-instruct:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:0a98dba4fcc70c1a749d809c0efd5fa9b3876c2a2f0a37749f1bba2ad12696d2
+        secret: Default

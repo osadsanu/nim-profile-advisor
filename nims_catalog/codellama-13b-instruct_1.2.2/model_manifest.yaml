@@ -1,0 +1,524 @@
+0263976e9030220c4223fd08a8f8667dc92d861033c218fb0d7ee8b9f6ad7598:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-a100x2-fp16-throughput.1.1.2.17756908
+0582fbbfb32a51b299322f941bec8514f9329d69d3dc912f4396e97b59d92717:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00003.safetensors'
+            - !name 'model-00002-of-00003.safetensors'
+            - !name 'model-00003-of-00003.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+060d45ead8fc2b5ed47022a157d373442bcfe9d4471de11101c250b40ee11394:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-a10gx4-fp16-throughput.1.1.2.17756908
+31368a7ca0f858bef74d9f85813cf684e421613a6429d8dc40062cee49b94ecc:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-a100x4-fp16-latency.1.1.2.17756908
+3adb16a7fc8c60edef58aeb950e91766602a0ac1c6e70ca154ef95ae8ffc8e7e:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00003.safetensors'
+            - !name 'model-00002-of-00003.safetensors'
+            - !name 'model-00003-of-00003.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+464c7c31ebe468f77b05fb0fa9d9763d67f0fb7b5e5722376f8016cb8f26e88a:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00003.safetensors'
+            - !name 'model-00002-of-00003.safetensors'
+            - !name 'model-00003-of-00003.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+4a246429a59dd0554131d8fc416cf4be8884d924cac47fcead277a8db10df5a0:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-h100x4-fp16-latency.1.1.2.17756908
+63ad1776d170d3494e0ad82bb12077cc97c66b9a70905311b0c19661b64a67e4:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-h100x1-fp16-throughput.1.1.2.17756908
+7a53708210c0ff2f3548a253b01e9e4d8c0d6ef73baf7960fcd44eb94aa0b980:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-l40sx2-fp16-throughput.1.1.2.17756908
+822887973a225664f72912fd2fe0e47813870692636b00dbc84d37be87f87272:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-a10gx8-fp16-latency.1.1.2.17756908
+86eea51d91ab851a32d9398c91a7dc692963b368ac2b24377b5dd94dcc317868:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-l40sx4-fp16-latency.1.1.2.17756908
+8aa539266a8bddb3e94d53423cc8e7607b1548917946ef8c0472cc1adf7deac8:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00003.safetensors'
+            - !name 'model-00002-of-00003.safetensors'
+            - !name 'model-00003-of-00003.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+94389f26369e49cdd5b9207f77757eb08f6251eaecba8b67691d090f08cd0df1:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-h100x2-fp16-throughput.1.1.2.17756908
+fbb8c6aeef24a3648d821ce10fe32727974a2303150879a762b10652f972f92e:
+  container_url: nim/meta/codellama-13b-instruct:1.2.2
+  model: codellama/codellama-13b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:hf-7457954
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/meta/codellama-13b-instruct:0.11.1+14957bf8-a100x1-fp16-throughput.1.1.2.17756908

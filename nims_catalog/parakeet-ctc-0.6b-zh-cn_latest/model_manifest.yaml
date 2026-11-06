@@ -1,0 +1,381 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/parakeet-ctc-0.6b-zh-cn
+release: 1.1.1
+profiles:
+- id: 07fe25ccea4db84a206dfe4d33b41cfdd2b96e45cc86ed080f089c4785590fd6
+  tags:
+    diarizer: sortformer
+    mode: str-thr
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: bc1e45f24e96cec6ba482dc85a42199d8f546b91b970b506782300fdaf73e610
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-str-thr-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-thr-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:67b863c787bceb01884cbb681c08dc1f2cd65a08db1c6acc48403e9da9d9f414
+- id: 1d8f51fa8bd67a7c889b81a90b84f7659961aa6675ab6f51f32db766e92c144e
+  tags:
+    diarizer: disabled
+    mode: str
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: d0784f5623b46f7471672c0f32f408474d132f0ecedbc5ada448c46d8d00f6fb
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-str-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.rmir
+        checksum: blake3:84ca79c4914f1090bf27c2cd30d1592e4b3d1635afafb3236ee58dbdc07b180e
+- id: 24a5e8a1d55da01fb8d4818717b8f4d89213bf36ff19eeb8e4e28ae91f84771f
+  tags:
+    ampereplus: enabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 1257e1f6925b4a1a9e8a472b3c79bb3762c8ac9b77bf7f26173c8d47afb9dcbf
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-silero-sortformer-26.01.3
+    tp: '1'
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:dadc53612eb53832972e858aeaf9f7b6b8f715417d69d1286ebbe282713558af
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=checksums.blake3
+        checksum: blake3:2678190daf9560af87ebce461ee776cc78a65ffaf717f27ef1442947dc5d7ca4
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=metadata.json
+        checksum: blake3:9eec89456fba318d35473c2e0e4e9c477811f8f1a7dfc2fd73ddd1ce727a93a2
+- id: 3fae97a8c7825562b8a0ec69efd59df22680c4df5de1a9ca50d0e4a78dca543f
+  tags:
+    ampereplus: enabled
+    diarizer: disabled
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: ee22b04c02ad086c5da2e06bb4ba561dfe9514faac607ccf2e2e2453bbf5d25e
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-26.01.3
+    tp: '1'
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.tar.gz
+        checksum: blake3:4ccc2922aa116dfd20e5c142260a6b93f02ff9527b6a179f4d36a6cff193f185
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=checksums.blake3
+        checksum: blake3:660d80844050968760a339b28945810cacd0791b66546a552b6801ded77b732c
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=metadata.json
+        checksum: blake3:86b66616b35e48640a7f76488d615a2282c2d9060fe9b2bfe3bca6e3da6dae25
+- id: 4d49e103e483368c137b2c79510805b3dccc26bd2c233b1fdccf2beace25b5bd
+  tags:
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: bdf8ce4108b7aae1ab368b657af31959e9aa23fbe7e95c50950c03e46c1ad7d9
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-str-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:40474d465d150a99d7eda5f5093147b72950c698b78ad5388f4dc41f8d4090cf
+- id: 5e92fe154b99882e1b82831f9757ecd89ebc672391a582c3dbc2a65d33636513
+  tags:
+    diarizer: sortformer
+    mode: all
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 6e6f5b6c9f033011d447d5236366b5c9e9e494793797b83b06862f87460cc112
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-ofl-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:ofl-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:d95a7ecb0754c876b6c4e3d2a0417bf71bfb208ac39cce93e1cc17932b865e40
+      ? parakeet-ctc-0.6b-zh-cn-str-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:40474d465d150a99d7eda5f5093147b72950c698b78ad5388f4dc41f8d4090cf
+      ? parakeet-ctc-0.6b-zh-cn-str-thr-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-thr-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:67b863c787bceb01884cbb681c08dc1f2cd65a08db1c6acc48403e9da9d9f414
+- id: 70dcfe77db18a0a1f54f790ed4fc1cc1e647482eb5273cdc80b6721050566c11
+  tags:
+    ampereplus: enabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: bfdc4d155afa7fb2a96e1b20ddf1f8f5115716555babc61c5b9bcf9f66bca2fa
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-silero-sortformer-26.01.3
+    tp: '1'
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:51067b725731912e7413cddb4c5ad8b341ae29b212736b4a4e05ea2f28897cb7
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=checksums.blake3
+        checksum: blake3:33af71df5cd034be0898a21ee0ec755dbbb3b2d1bb6cd4eb3281a76486c82169
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=metadata.json
+        checksum: blake3:adc4e17dfd72396722e2b92bf9d23413523d350c57ab0fc236decbdd2fd301ba
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:dadc53612eb53832972e858aeaf9f7b6b8f715417d69d1286ebbe282713558af
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=checksums.blake3
+        checksum: blake3:2678190daf9560af87ebce461ee776cc78a65ffaf717f27ef1442947dc5d7ca4
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-silero-sortformer-26.01.3-fp16-pyqjnry0qg?file=metadata.json
+        checksum: blake3:9eec89456fba318d35473c2e0e4e9c477811f8f1a7dfc2fd73ddd1ce727a93a2
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:08f9f65fdf3309dc053c1fb989c8d230acf93646da8f2792b926693a428a5240
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=checksums.blake3
+        checksum: blake3:97403266fafdffe7b1ca04aa3c36386a949fa25e0f7c222391926137ced0aeb3
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=metadata.json
+        checksum: blake3:e83cfcd62e88860ca24f5a6e32d0d3c9c1fd108481c296c4d0eef054378d7084
+- id: 84636771bfd55b1ebce86a3e9b583f01126e5656ef9b3bb800354d71da9e4d76
+  tags:
+    ampereplus: enabled
+    diarizer: disabled
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 42fac97b3040c5d0c66eef7d407822225ca22aa796d95619ea8b81071a03969c
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-26.01.3
+    tp: '1'
+    vad: default
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.tar.gz
+        checksum: blake3:ab9d9a3cc281543a28c619940d190047a1f8139659b6b6da2c8288f9f412b5b2
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=checksums.blake3
+        checksum: blake3:4eaa7f33465f2b90a4a9619fb5c1841b58200a28ec898705c8e4941afe6d56be
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=metadata.json
+        checksum: blake3:36f078dc48372fe261dd8a093adc7bcfbd0c8f9a1d97d34eeb965f846a0406ed
+- id: a540b942fd2fa6e43ebd8997241d1f2be1ac03f9c33c0701c4fe78b77d026a6a
+  tags:
+    ampereplus: enabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 6df1f2debd2eec0d9f432c011915eb72bf5b1574af4f3d9531b84770a49d9699
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-silero-sortformer-26.01.3
+    tp: '1'
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:08f9f65fdf3309dc053c1fb989c8d230acf93646da8f2792b926693a428a5240
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=checksums.blake3
+        checksum: blake3:97403266fafdffe7b1ca04aa3c36386a949fa25e0f7c222391926137ced0aeb3
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-silero-sortformer-26.01.3-fp16-fjijthau-a?file=metadata.json
+        checksum: blake3:e83cfcd62e88860ca24f5a6e32d0d3c9c1fd108481c296c4d0eef054378d7084
+- id: cf9b05a06e215991daa76f8bf7770470a1e7229502b16c3d358c55ad283aa842
+  tags:
+    diarizer: disabled
+    mode: str-thr
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 9ab089aff265ef43664b5e749555601c5727de08e2658b2079b7d95dbd51182e
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-str-thr-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-thr-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.rmir
+        checksum: blake3:f5d1971c7cfc15b7a0b23f37253c804cb3b8af1c14f27b91d75ac43a23c22ab8
+- id: deba75ef15e9daf029d43b77e5b76d09192d790faba8670cd8ad8c6a1721510a
+  tags:
+    ampereplus: enabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: ae4f2e139f34567472391d9f2d544db6a07caa5e24bba3249ceb0fb657147c38
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-silero-sortformer-26.01.3
+    tp: '1'
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.tar.gz
+        checksum: blake3:51067b725731912e7413cddb4c5ad8b341ae29b212736b4a4e05ea2f28897cb7
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=checksums.blake3
+        checksum: blake3:33af71df5cd034be0898a21ee0ec755dbbb3b2d1bb6cd4eb3281a76486c82169
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-silero-sortformer-26.01.3-fp16-lc3ex5ah8w?file=metadata.json
+        checksum: blake3:adc4e17dfd72396722e2b92bf9d23413523d350c57ab0fc236decbdd2fd301ba
+- id: e4bfd694a6ccc50cf69d24fa63ffdab5e2b2597de61f71e17c068ec833344fdc
+  tags:
+    diarizer: sortformer
+    mode: ofl
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 0de9cfc302f81c3823ce553ccfff501ab5f4b3497bd8c466ad5af814c4dd1b7b
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-ctc-0.6b-zh-cn-ofl-silero-sortformer-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:ofl-silero-sortformer-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight-silero-vad-sortformer.rmir
+        checksum: blake3:d95a7ecb0754c876b6c4e3d2a0417bf71bfb208ac39cce93e1cc17932b865e40
+- id: eb82e5e3504ad387567f7dac1e5a9e9288c6f26a3520d5ed97a25a2cb14bc249
+  tags:
+    ampereplus: enabled
+    diarizer: disabled
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 047d141e17dbc28f11bc702c2350037f3f1a9c6a155b1399fc6d461081db1a37
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-26.01.3
+    tp: '1'
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.tar.gz
+        checksum: blake3:c7e31ada450d8db03124833ff0f4bff907c3ee55b57482271dee59dab2a6b6ea
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=checksums.blake3
+        checksum: blake3:7d280a3f778839dce6720d22b351941e63168a72708f2a064f4fc58f3b79a2f4
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=metadata.json
+        checksum: blake3:051cfa1d3b271bfbf570838e199302d310ec6fc4d51cd7b1ab9892a55c39a043
+- id: eb8c0e4f50a8cba11ed1f9fa39bdfbdd919500ba356f858194051cbf3d6c2578
+  tags:
+    diarizer: disabled
+    mode: all
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 217a2a698c487d57db644cb46602137a5f5fef400b12b34d2d6096aab985c1aa
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-ofl-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:ofl-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.rmir
+        checksum: blake3:b11c0b14d7e46c0773ca83b16ebf6fd0a5fa439e6a39ba8768bd6396cce2bcdf
+      parakeet-ctc-0.6b-zh-cn-str-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.rmir
+        checksum: blake3:84ca79c4914f1090bf27c2cd30d1592e4b3d1635afafb3236ee58dbdc07b180e
+      parakeet-ctc-0.6b-zh-cn-str-thr-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:str-thr-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.rmir
+        checksum: blake3:f5d1971c7cfc15b7a0b23f37253c804cb3b8af1c14f27b91d75ac43a23c22ab8
+- id: ec0cbe6a708d71f12d07397a7f453980b8ca4aeaa6384d65f66327fad9bee8a1
+  tags:
+    diarizer: disabled
+    mode: ofl
+    model_type: rmir
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 3686c60dbb711f645c8a97e11ca857fed54c2f65e26da8a7286c9dbba1eb1aed
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-ofl-rmir-26.01.1/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.rmir:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:ofl-rmir-26.01.1?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.rmir
+        checksum: blake3:b11c0b14d7e46c0773ca83b16ebf6fd0a5fa439e6a39ba8768bd6396cce2bcdf
+- id: fe1f9f6352bcdcec228a7e4ee664726ad9f42106f5beff58d44a8006750da0fb
+  tags:
+    ampereplus: enabled
+    diarizer: disabled
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-ctc-0.6b-zh-cn
+    nim_workspace_hash_v1: 18a8de10fe6d393f10539805cbeb935700e7e32b5468d4828580fd6786d9b11c
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-26.01.3
+    tp: '1'
+    vad: default
+  workspace:
+    files:
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=asr-parakeet-0.6b-unified-zh-CN-offline-flashlight.tar.gz
+        checksum: blake3:c7e31ada450d8db03124833ff0f4bff907c3ee55b57482271dee59dab2a6b6ea
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=checksums.blake3
+        checksum: blake3:7d280a3f778839dce6720d22b351941e63168a72708f2a064f4fc58f3b79a2f4
+      parakeet-ctc-0.6b-zh-cn-a100x1-ofl-26.01.3-fp16-txrflecafw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-ofl-26.01.3-fp16-txrflecafw?file=metadata.json
+        checksum: blake3:051cfa1d3b271bfbf570838e199302d310ec6fc4d51cd7b1ab9892a55c39a043
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=asr-parakeet-0.6b-unified-zh-CN-streaming-flashlight.tar.gz
+        checksum: blake3:4ccc2922aa116dfd20e5c142260a6b93f02ff9527b6a179f4d36a6cff193f185
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=checksums.blake3
+        checksum: blake3:660d80844050968760a339b28945810cacd0791b66546a552b6801ded77b732c
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-26.01.3-fp16-djexqy64dw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-26.01.3-fp16-djexqy64dw?file=metadata.json
+        checksum: blake3:86b66616b35e48640a7f76488d615a2282c2d9060fe9b2bfe3bca6e3da6dae25
+      ? parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=asr-parakeet-0.6b-unified-zh-CN-streaming-throughput-flashlight.tar.gz
+        checksum: blake3:ab9d9a3cc281543a28c619940d190047a1f8139659b6b6da2c8288f9f412b5b2
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=checksums.blake3
+        checksum: blake3:4eaa7f33465f2b90a4a9619fb5c1841b58200a28ec898705c8e4941afe6d56be
+      parakeet-ctc-0.6b-zh-cn-a100x1-str-thr-26.01.3-fp16-pjs33rlguw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-ctc-0.6b-zh-cn:a100x1-str-thr-26.01.3-fp16-pjs33rlguw?file=metadata.json
+        checksum: blake3:36f078dc48372fe261dd8a093adc7bcfbd0c8f9a1d97d34eeb965f846a0406ed

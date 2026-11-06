@@ -1,0 +1,274 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/nemotron-3-super-120b-a12b-turbo
+release: 1.0.0
+profiles:
+- id: 0dbeadf00cf556f499078c2e86f8ad612769ab2e2e362e2e3c13fc863afea2ce
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 08fe2646eb172ba81212f92a2cf03c25feed9babe0c5253cb7e3f58073e106f0
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=README.md
+        checksum: blake3:89d46d6009b4422787c960db08387a7c204c3e7fb248c8f3e310d2afa09c1218
+      __init__.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=__init__.py
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      accuracy_chart.png:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=accuracy_chart.png
+        checksum: blake3:5464663c548506400ca6551afc2268b603ed682a18062b133519d57936f59a09
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=bias.md
+        checksum: blake3:82ceafa9211318d8d324c14a9e555654a03d323b2473ebd625fed2807074d138
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=chat_template.jinja
+        checksum: blake3:a26049ffb4e6e7aab052f1dff283e28b5b9526380051326c9a540895c8c20df5
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=checksums.blake3
+        checksum: blake3:42237e20dd4f4608f21cc2c220189b62e402120eba8d288d4bc35e93078eeda5
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=config.json
+        checksum: blake3:5feb0796cf2ca51c50088c4e16d53bab004dfbcfb6be9ae0a57221e82d4521f9
+      configuration_nemotron_h.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=configuration_nemotron_h.py
+        checksum: blake3:de99108f6080f108d45e2f611464f15dac5e285c29554747d0cf67af6b71bee8
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=explainability.md
+        checksum: blake3:d5685b7450c6111b809875927af71e8fe250c92e176c227aeb875f5ddf64ce85
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=generation_config.json
+        checksum: blake3:2d202307fce906facd5c5898087c6584c1865e07aed51d3fda3e351bb01c56af
+      hf_quant_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=hf_quant_config.json
+        checksum: blake3:d7c532230d13568d4fd593eb0836677e7441c018f4a35fd0e37ce86aa5ef9c24
+      model-00001-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00001-of-00017.safetensors
+        checksum: blake3:4b14e3ab4402a5990ca026dfcf2efd2e4b41943657740f54fb5164f9d9d6ed84
+      model-00002-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00002-of-00017.safetensors
+        checksum: blake3:e77c4f6c06df4f9354eb04386ef72d9438382d83c07b2a03c901aa91ade7dd19
+      model-00003-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00003-of-00017.safetensors
+        checksum: blake3:aeee6b0fe8beabffa742f29290b7abc46839bcc5d175e27e5ef75a613ca9b957
+      model-00004-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00004-of-00017.safetensors
+        checksum: blake3:1c38d7e54e817210a253504d60f49294caf05f8c15cf0fc1f0f7fad95623cb8a
+      model-00005-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00005-of-00017.safetensors
+        checksum: blake3:141929f9029784a15d9273faf48a7b54c76879fa705704a451a2d7a1613af9cc
+      model-00006-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00006-of-00017.safetensors
+        checksum: blake3:21dc5c5e8adb6d57caab4d26c35a4b5d5e8ce9303dfb6ba70543be7ddb29c940
+      model-00007-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00007-of-00017.safetensors
+        checksum: blake3:a525374a91ea67d0b0c4c22a8380850b8d41ce2eb63bb5164a68cd47336d7992
+      model-00008-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00008-of-00017.safetensors
+        checksum: blake3:b2c3f8d72264309700b9f1686fe5c1299ce5c53ee8e549c7793a86d5cd733cb7
+      model-00009-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00009-of-00017.safetensors
+        checksum: blake3:1b4d20b9f3b5801060a613bd515898adcb195b353cfcd66e18c930ee26428da2
+      model-00010-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00010-of-00017.safetensors
+        checksum: blake3:bc802be62d1e634fcc4b410f034f55008254bb7cec6266bfb4ecfe0b0377aa96
+      model-00011-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00011-of-00017.safetensors
+        checksum: blake3:019d4af1153f1884894e1c0bbe5a996671b08b2cae04d2230d700720f11d19c0
+      model-00012-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00012-of-00017.safetensors
+        checksum: blake3:9507aa28c056e32a3b8ecde69cca8cbe3d70e9e7d4ef987a294e34261520d167
+      model-00013-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00013-of-00017.safetensors
+        checksum: blake3:295571d918d7c2452d6702bab8c69f0a03915bfc34fc52be286725470cb0046e
+      model-00014-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00014-of-00017.safetensors
+        checksum: blake3:81c8c187642cc50ae5f369821c21c29e7131059ca33ee0cd9ebd832439848e27
+      model-00015-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00015-of-00017.safetensors
+        checksum: blake3:4c4726d77c045a50ca89600f139583acf9f7ec42f788495f509b072211941f80
+      model-00016-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00016-of-00017.safetensors
+        checksum: blake3:9d0696278e6bda4cec7c47a2cbfd3a1a93f367b268cf7bf3a6bac52d8b3653f8
+      model-00017-of-00017.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model-00017-of-00017.safetensors
+        checksum: blake3:d90bd85068d7a90f1d01fa4b4ba8fbdbcac6cd1e21d3414d75414f7638bf6bca
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:4e7cfc707eab9c064933409ce9134e721c0b0f64c9e215aca70c132b611ee432
+      modeling_nemotron_h.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=modeling_nemotron_h.py
+        checksum: blake3:74d9ba34d3e669522d79987b8665f8882a0bb4818e66837f1eeeb98d777cd2e7
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=privacy.md
+        checksum: blake3:a41901ff86a0646cb5478a6f9c264fe30ffd4ff91bfca76c590e4660230c3412
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=safety.md
+        checksum: blake3:37eb5dd23146ed87d85fedf9bcfa6ae11b5a99fd6cb8d91f028fcf023f1618f0
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=special_tokens_map.json
+        checksum: blake3:a71d291a496cd2d4fa25defa6e0f6debf483db3d12f2d8a48e573e1dc1363070
+      super_v3_reasoning_parser.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=super_v3_reasoning_parser.py
+        checksum: blake3:e8379e5cfefc0578a00418fa55e64dcc983dd61bce9370b6d0b75e657c2d24c3
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=tokenizer.json
+        checksum: blake3:29a5eae59f68dc4d0dc2a7d67c95e24291a7ee8b88ac0afaaf2d2200abf69a23
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-nvfp4?file=tokenizer_config.json
+        checksum: blake3:0ff753519556b545e70bd7ced67356b5ec98efe58a25c3be57f4855386950501
+- id: 5a0120687b1bc2ae0ccb88e40637c86c9ccb056fa8c50c5ecf4eed6a81c7cacc
+  tags:
+    dp: '2'
+    ep: '2'
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 7bbaf90a44a2249ec958f46f27cd508819e065db582f4f3c54d62b39d1037649
+    pp: '1'
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=README.md
+        checksum: blake3:29a7f1fad97a50c40f54b87f8ede573478b6a0b770823db0156d5aec79707c01
+      __init__.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=__init__.py
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      accuracy_chart.png:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=accuracy_chart.png
+        checksum: blake3:5464663c548506400ca6551afc2268b603ed682a18062b133519d57936f59a09
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=bias.md
+        checksum: blake3:82ceafa9211318d8d324c14a9e555654a03d323b2473ebd625fed2807074d138
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=chat_template.jinja
+        checksum: blake3:a26049ffb4e6e7aab052f1dff283e28b5b9526380051326c9a540895c8c20df5
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=checksums.blake3
+        checksum: blake3:eb3264e6f7d6f571128f7dd778d99d18076117740cc08fd251491a92884cd033
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=config.json
+        checksum: blake3:5761beb0955f74b71b174c80884b61e13a7883261cca97fc918f9876876df5f0
+      configuration_nemotron_h.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=configuration_nemotron_h.py
+        checksum: blake3:de99108f6080f108d45e2f611464f15dac5e285c29554747d0cf67af6b71bee8
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=explainability.md
+        checksum: blake3:d5685b7450c6111b809875927af71e8fe250c92e176c227aeb875f5ddf64ce85
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=generation_config.json
+        checksum: blake3:2d202307fce906facd5c5898087c6584c1865e07aed51d3fda3e351bb01c56af
+      hf_quant_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=hf_quant_config.json
+        checksum: blake3:a5e321c5fb95af905a29be0b68627bfa42215311dfccd6abf785af91d943ad1e
+      model-00001-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00001-of-00026.safetensors
+        checksum: blake3:4ded4485f56246087e02a704303fe1c0428b20b09388f3da9e8bcca61a714972
+      model-00002-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00002-of-00026.safetensors
+        checksum: blake3:7b8889f62744089238760d4df7e0e0351772eda0215e9522cce0fc9e09de8035
+      model-00003-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00003-of-00026.safetensors
+        checksum: blake3:cc16ce9e36e8f6ca7a0db03be30cf3651b5701b823cef08c07c57b16bbd3272a
+      model-00004-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00004-of-00026.safetensors
+        checksum: blake3:bee6d10f31af63766e4df7cc99256315c3995064dd490939e08af0e7ba0172dc
+      model-00005-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00005-of-00026.safetensors
+        checksum: blake3:988cdb22941dbf3153df945301437f1681346c09b024623eb3214b9e15876400
+      model-00006-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00006-of-00026.safetensors
+        checksum: blake3:a1c98e8fcb4e47ff877b9ae2f9cd9add7005a17c191ace4f65411ff7f29e3616
+      model-00007-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00007-of-00026.safetensors
+        checksum: blake3:00af4ce40045dbc80915bce2c27b1710781c311d7cd03dc982fd13aebe667f11
+      model-00008-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00008-of-00026.safetensors
+        checksum: blake3:76e1677f2a8c05e7a306669650e19386d4dbcef6d2d9e222fcf9f141c751d8b2
+      model-00009-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00009-of-00026.safetensors
+        checksum: blake3:851d8e5c9df07503ee3dab7511d6f46c765c55bc9f54f2a7e9931c4ddf228878
+      model-00010-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00010-of-00026.safetensors
+        checksum: blake3:5905e75ecc261aea9b491d90914b0bd2e803688daf22b5c7da39f67f3a226c94
+      model-00011-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00011-of-00026.safetensors
+        checksum: blake3:13cab8094333cde69d4b9cd76ae03782e5460d0dceaefa45647489ca7cbe323b
+      model-00012-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00012-of-00026.safetensors
+        checksum: blake3:3dd0267e56cadf315d1ff148c591378b35223fddf042bb3f5c5623d068e1c555
+      model-00013-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00013-of-00026.safetensors
+        checksum: blake3:46707d486903a18f77b556732d1d1135985809d1aae1401519765cf7c3873daa
+      model-00014-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00014-of-00026.safetensors
+        checksum: blake3:ee71736d859233c0db2de115811d43c509d3c90095d8866982011db4283394e5
+      model-00015-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00015-of-00026.safetensors
+        checksum: blake3:72835c047eba76fb2924ae7ffd0140df89175151ad87660f856014a47cfb68c1
+      model-00016-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00016-of-00026.safetensors
+        checksum: blake3:d21e728df9a406e0cea3ffd0123e0b8d195e85e49c6dd96dfcbdeece0593b330
+      model-00017-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00017-of-00026.safetensors
+        checksum: blake3:75e8f437f708082ce71f63f300ca2f5cd1649c21fcefe520d4ac6faf6bd491ca
+      model-00018-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00018-of-00026.safetensors
+        checksum: blake3:3fa6f71623c93e219c42574f8ad3e65c93e3967fe619a28a909c413c25724431
+      model-00019-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00019-of-00026.safetensors
+        checksum: blake3:368a4da092bcbfbb3032f92c196d014e6863625115a60d2eeda56c703dc58a8e
+      model-00020-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00020-of-00026.safetensors
+        checksum: blake3:bc217cf9dd52007e421d3ed31d4d48ae87677485f4eb8cdc28c2b84afe726a41
+      model-00021-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00021-of-00026.safetensors
+        checksum: blake3:e08e4c9a9415a97cbe6ce0ceedc72d73a0874ec615ee22612948d1ccd2cc63a1
+      model-00022-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00022-of-00026.safetensors
+        checksum: blake3:0dde8b2c427ca49e1856f3305766f054f0b4fbad1c94ab385cf74c333e2942ed
+      model-00023-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00023-of-00026.safetensors
+        checksum: blake3:55bbf8bbb24b19599c2823781b1d6f1bf5c71ae96373346e6d2492f65ed18ba1
+      model-00024-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00024-of-00026.safetensors
+        checksum: blake3:ba8e77615385df7c6f5f83ac7db019c1a33b1636564f199d6d6ad8931b3c2727
+      model-00025-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00025-of-00026.safetensors
+        checksum: blake3:d32d639876c7716a02399abbacb886eafb4298e6117bc279540737d154bddbeb
+      model-00026-of-00026.safetensors:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model-00026-of-00026.safetensors
+        checksum: blake3:df134b2d93b04ddbdec6ff4296189ded1ed42ecaf329fd9120bd284696504002
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=model.safetensors.index.json
+        checksum: blake3:ec61cadc22a7efaa1dcb58f489f2367e8f1018193ae0f51e1c8bf45c6ccd695e
+      modeling_nemotron_h.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=modeling_nemotron_h.py
+        checksum: blake3:74d9ba34d3e669522d79987b8665f8882a0bb4818e66837f1eeeb98d777cd2e7
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=privacy.md
+        checksum: blake3:a41901ff86a0646cb5478a6f9c264fe30ffd4ff91bfca76c590e4660230c3412
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=safety.md
+        checksum: blake3:37eb5dd23146ed87d85fedf9bcfa6ae11b5a99fd6cb8d91f028fcf023f1618f0
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=special_tokens_map.json
+        checksum: blake3:a71d291a496cd2d4fa25defa6e0f6debf483db3d12f2d8a48e573e1dc1363070
+      super_v3_reasoning_parser.py:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=super_v3_reasoning_parser.py
+        checksum: blake3:e8379e5cfefc0578a00418fa55e64dcc983dd61bce9370b6d0b75e657c2d24c3
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=tokenizer.json
+        checksum: blake3:29a5eae59f68dc4d0dc2a7d67c95e24291a7ee8b88ac0afaaf2d2200abf69a23
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-3-super-120b-a12b-turbo:hf-fp8?file=tokenizer_config.json
+        checksum: blake3:0ff753519556b545e70bd7ced67356b5ec98efe58a25c3be57f4855386950501

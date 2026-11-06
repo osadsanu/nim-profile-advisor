@@ -1,0 +1,114 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: Northbloom
+release: 1.7.0-variant
+profiles:
+- id: 01e7cab956c9ff90cb961fe32d1310c10924f85c28fa07452826af6211ba8d59
+  tags:
+    ep: '1'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+    nim_workspace_hash_v1: 7fa0527a8fb1f153367ffebe4289a58f6727f9783cb1402b9d4d92722c5ca74b
+  workspace:
+    files:
+      chat_template.jinja:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=chat_template.jinja
+        checksum: blake3:88139c6faf6801183a53657f1dbecb8fc6695f1d46d4d461492806d3becc3b8d
+      config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=config.json
+        checksum: blake3:aed0130c64eaaddc659cc70e1d86689b49b4d7a421410ac6d80ab396b3d04f00
+      generation_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=generation_config.json
+        checksum: blake3:3dda2967336603274ff2f545cd0287a03a8b8630809b9e96bcf0bf4bc1d7e7b4
+      processor_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=tokenizer_config.json
+        checksum: blake3:190c3c332c7c97d43315bf6d5cfd0bc924dd19456841eb9b59c7ca1129cb3d9d
+      model.safetensors.index.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model.safetensors.index.json
+        checksum: blake3:f3ccfaa636ece4ab63eef0786c8cc5066553d132c0ac39f8d6a81d9c178d438d
+      model-00001-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00001-of-00011.safetensors
+        checksum: blake3:60e055b98a98dac3b1b75d043a63f4f6e0bce97eac7280c0b401489e1d820aa2
+      model-00002-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00002-of-00011.safetensors
+        checksum: blake3:e3cf74b65dff53826e0132a2825dec43d4bf1d4fb5dd8ca8a3931e2d1e882d29
+      model-00003-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00003-of-00011.safetensors
+        checksum: blake3:9e06b8a6aad2847544667c138935051bffb3a32f5e0d30e08c013bd7424cd124
+      model-00004-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00004-of-00011.safetensors
+        checksum: blake3:5d7174a04ab6caa52a1feefd9dcf91bfdb24024cea3503f8a43a905f8b1caad8
+      model-00005-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00005-of-00011.safetensors
+        checksum: blake3:5a3a45e613038feb46a3eaa0a0b53d210cbea0474189690321f70710e58fdbf7
+      model-00006-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00006-of-00011.safetensors
+        checksum: blake3:07d9d5a8b9b553b1b42d072a6f227351f2f698ba313ba69c5082f0e400056fe3
+      model-00007-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00007-of-00011.safetensors
+        checksum: blake3:9574af3dd4359936789ddd483b71ea67e610a3087c97783fa63112deaf286b89
+      model-00008-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00008-of-00011.safetensors
+        checksum: blake3:235ecbe6fbd48896fba00a3d07c58370b022c7aff10a51e91ab80711d4c6e948
+      model-00009-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00009-of-00011.safetensors
+        checksum: blake3:0a9b639420a0c01eb3d8c2bd31b647f39901c89de03a7334e8891ca2aaa7aee3
+      model-00010-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00010-of-00011.safetensors
+        checksum: blake3:af59c89cdc8df4dcf121746d22ae465bc7ba03002fed26b98f6361084b16f659
+      model-00011-of-00011.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-bf16-20260610?file=model-00011-of-00011.safetensors
+        checksum: blake3:3b91cb46427bcd35c9e83a96cfa699ebdc1a6caba14e26edd52d98f497bd51e6
+
+- id: 4cab2218b2271deefa5d686fca01059e54097c534dc212a3857ca080aedf8466
+  tags:
+    ep: '1'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '1'
+    nim_workspace_hash_v1: 76d11d7237dfba9c4df2fea20f7eb5ff926ad357b7186fad7c6046ff607189fe
+  workspace:
+    files:
+      chat_template.jinja:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=chat_template.jinja
+        checksum: blake3:88139c6faf6801183a53657f1dbecb8fc6695f1d46d4d461492806d3becc3b8d
+      config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=config.json
+        checksum: blake3:72b2d632a3542760216e43204978b311326d57f1d0e860708b405b7d463b82bb
+      generation_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=generation_config.json
+        checksum: blake3:3dda2967336603274ff2f545cd0287a03a8b8630809b9e96bcf0bf4bc1d7e7b4
+      hf_quant_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=hf_quant_config.json
+        checksum: blake3:e81b2e59e5a85193a3684d7d456f61254178b548bd9e203a0fc4134abcf7dc42
+      processor_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=tokenizer_config.json
+        checksum: blake3:190c3c332c7c97d43315bf6d5cfd0bc924dd19456841eb9b59c7ca1129cb3d9d
+      model.safetensors.index.json:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=model.safetensors.index.json
+        checksum: blake3:ce19eb09f59b249ce648e29cc865f57172586b036d405d05ca712469aea8370b
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bf109b947ca73d7046350cad9fc24946598f2207d917480f494deb1aec3640d
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/diffusiongemma-26b-a4b-it:nim-nvfp4-20260610?file=model-00002-of-00002.safetensors
+        checksum: blake3:7fb7fad3ddf27ed501af662025ef48bc9be34163e9fcf438c61af57d66e2ada7

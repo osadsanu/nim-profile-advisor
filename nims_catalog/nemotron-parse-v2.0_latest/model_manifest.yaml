@@ -1,0 +1,1406 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/nemotron-parse-v2.0
+release: 2.1.6
+profiles:
+- id: 02ae39e0a84ecb628e3ae2f24f3104e398ac3f02c3eb309ba77430e6aeb57353
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-40GB
+    gpu_device: 20b0:10de
+    gpu_sm_version: sm_80
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 101fd5742d4ce4e0de5ec992bf6cf04da69dda99598984a97e14b2b237e7f869
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    gpu_sm_version: sm_89
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 31077528988f89bca85093d60e8e87f03a118db235f33b3c40474e9d46b81c26
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    gpu_sm_version: sm_100
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 5a38a4e1fba6f8b7be13ee2839625d188b1eb0e2a83158dc76a96d786785102b
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-A10G
+    gpu_device: 2237:10de
+    gpu_sm_version: sm_86
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 64b7fb5aae787037fe382e5f4a0c8909872b9362e815b70821f70dafd6c8375e
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    gpu_sm_version: sm_90
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 7b8a6f2aa12b9c06640bdb7653aa4873cbb75096b86fe623e02c52fd8110bef5
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    gpu_sm_version: sm_80
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: 903be1ea8ffc844bde52490f25ac854752d3144328948367bec6df3f3e7a590a
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    gpu_sm_version: sm_90
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: bc69e89091fdf5e99412ab57b32f1b714839f3404746f50b43109821f5e49182
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition
+    gpu_device: 2bb5:10de
+    gpu_sm_version: sm_120
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: df9fbe0520a0f6b97dd45964cdbeae90679bfab547052a494247b9c95de38f98
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    gpu_sm_version: sm_100
+    llm_engine: vllm
+    nim_description: throughput-fp8kv
+    nim_json_args: '{"kv_cache_dtype":"fp8"}'
+    nim_optimized: 'false'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: e9d12ece6ea1cebd9a2aeb4c1506d6ca2d1e3fb8b3e23274ae84d2e1b91f1fef
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    gpu_sm_version: sm_100
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12
+- id: f633ff89387127be8b44b5d53183d4b5fc471115e87fc1f9e2fd724e66428675
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Workstation-Edition
+    gpu_device: 2bb1:10de
+    gpu_sm_version: sm_120
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      CONTRIBUTING.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=CONTRIBUTING.md
+        checksum: blake3:c46e22187d700df6ef80fe2fc91920abada9dbbbd05b5e50d01e49ce8540cd84
+      Dockerfile:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=Dockerfile
+        checksum: blake3:5e1a4b1e7f34f35ee35f0d8d338c73c9a100b0c973fac9ba8e97d18b5b11d364
+      LICENSE:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=LICENSE
+        checksum: blake3:652a93871d507f2122a06ca869740dfef590a0c4bd3cdd699dfad30fa4d9f81f
+      README.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=README.md
+        checksum: blake3:a8b4d02f95fa7dd513445506353eb2ed8c58140af1ab377aaa3b3926b154a307
+      VLLM_COMPATIBILITY.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=VLLM_COMPATIBILITY.md
+        checksum: blake3:66366de1b179bca06650e1f00fff87cba6dfdc23ece4b8472d59de544c32ca8d
+      auxiliary_prediction_heads.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.json
+        checksum: blake3:b26f1de70dd5d7e5b57acbc7ca9a374353050b850a1f4af808af4417fd78e10c
+      auxiliary_prediction_heads.safetensors.extra:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=auxiliary_prediction_heads.safetensors.extra
+        checksum: blake3:96078280a56a95c904f7e4cb6cf4fe5c6f1d8ef759f91774a9ba0046c3934170
+      bias.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=bias.md
+        checksum: blake3:b79c472c147f4e07386485543f7b6ea4972a81efda4ed11e99943ac1cfc672a7
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=chat_template.jinja
+        checksum: blake3:71c98968c7d16dba25a7aa8e0cbd06bff5bfb8f18f35bc8d688520e3979148ca
+      checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=checksums.blake3
+        checksum: blake3:b0547fc316a542eba489ef35ca730a436cfa002396284f348fc628e762261f4e
+      config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=config.json
+        checksum: blake3:8e9af3e23e71a660a3878a2c02d23865f05ee1c974cf4c31c835562587ada018
+      docker-compose.yaml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=docker-compose.yaml
+        checksum: blake3:9da26cd4a50f8ba273e62fa2b1857ab9ea4e01c72415153751df72443dfa6de2
+      example_with_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=example_with_processor.py
+        checksum: blake3:137be6e6982cb0710463724fd551c531622468e51c950477491331144f7c8185
+      explainability.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=explainability.md
+        checksum: blake3:5fd303baa55da8f047a292904031c0d76d619c455d78cacaa7bc584df7f82470
+      generation_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=generation_config.json
+        checksum: blake3:cbc0cb7546fa29b73b3a07f48634a210e0e5c0e0385143a03f70a397020bc33e
+      golden_outputs.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=golden_outputs.json
+        checksum: blake3:2400ab3339dc122a2544874ba83ad9b22ec721b41088632814b31661e0c04a43
+      hf_logits_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_logits_processor.py
+        checksum: blake3:0eec75616d67c2e975d19429d09b3202855305409a1182267feacb74a403bfb3
+      hf_nemotron_parse_config.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_config.py
+        checksum: blake3:b3b192e35bba9f738321d647eb86e8ad528e3ab9fd95a294f4815796066174fb
+      hf_nemotron_parse_modeling.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_modeling.py
+        checksum: blake3:bf9ce228e976b0d0a775f8d29d4c5019104c97eab95f1bf1c6fead8d58c12c0b
+      hf_nemotron_parse_processor.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=hf_nemotron_parse_processor.py
+        checksum: blake3:5f997394b16022670bbc7127a3c4d71592ab9909cc0d8f3ae4825f5f2793d180
+      latex2html.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=latex2html.py
+        checksum: blake3:b22c83815fa7a46afdc9edef7ba770614921af3d77e168b5dc21d4508449305b
+      logitsprocs/nemotron_parse_vllm_logitprocs.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=logitsprocs%2Fnemotron_parse_vllm_logitprocs.py
+        checksum: blake3:df2c7f02bc6d9841f851b422be12a0a990bbb43cfbd484f29456558edb788aaa
+      model.safetensors:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=model.safetensors
+        checksum: blake3:5767c5591dff824a44bf12ef2b24c82792839912f39c4ae28e2f4609dd611f28
+      postprocessing.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=postprocessing.py
+        checksum: blake3:d1fa000e07c17ff84dc23a83ed7e13f49b6661888b3d8bc47e84246abee4aa1b
+      preprocessor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=preprocessor_config.json
+        checksum: blake3:54df35ae6dce39d1a055fd49b84502cb2d0fda2fce840262ebb553bb7bda61d8
+      privacy.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=privacy.md
+        checksum: blake3:f110ff736cfa56d7ce568d994a9127569429413697c7995d4317fdb532b962d3
+      processor_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=processor_config.json
+        checksum: blake3:272ffa9671c3250181082d8ea5633918d67c7bfdc57836b2ca8cc485ab994372
+      pyproject.toml:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=pyproject.toml
+        checksum: blake3:a0af7515e374df8ce50937575a085963127792ff719d32f29a29d67abe4f3560
+      run_transformers_inference.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=run_transformers_inference.py
+        checksum: blake3:02ec3af5f07305f9678963f3a30cdc8dc5309ebe5bb19c95b26573340a957790
+      safety.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety.md
+        checksum: blake3:230d08f29591ec43f52f7d3c38eca03fa596211f52052d0e4d21280e7974dd6b
+      safety_security.md:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=safety_security.md
+        checksum: blake3:d5a7b5ad02df85fbf8b5312e2b9fa25f95b129cea98559c744c450ec285a19d5
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=special_tokens_map.json
+        checksum: blake3:63b85212f34c5476ec48a01f25f06b1546baa7a4bc68f23ffba6021489fd57be
+      test_golden.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=test_golden.py
+        checksum: blake3:15d9627e7703c8eaadc30b340025b5b9de22eaab9fb0a911c92d9d93e3831a16
+      tokenizer.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer.json
+        checksum: blake3:660e7714c08bd189a7726a22e6e660aee0881d96719972b9558016fd925e9069
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=tokenizer_config.json
+        checksum: blake3:0f0031eeb2471ab5942f916d7068b3a8dbeffdb8b743e7227bb63a86f3d7a90e
+      uv.lock:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=uv.lock
+        checksum: blake3:8796fbf13a7b58b2948ec199f0a31be35ca7a90d65d45dc68d7e8fe0272591ee
+      vllm_example.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_example.py
+        checksum: blake3:1db74bfe1cbc8ef6ca584ab7ab2ac6c570a0c99d072f7623b21073ba26992325
+      vllm_tied_patch/sitecustomize.py:
+        uri: ngc://nim/nvidia/nemotron-parse-v2.0:bf16-6.0?file=vllm_tied_patch%2Fsitecustomize.py
+        checksum: blake3:6d19138148f4ca3403f8ea5ce670c828ae26866db2ac26f3d399555815c050f8
+  workspace_hash: f4bc07e110731c05dc09a133fc910c197b7ed3d24bfd4b9ced4144579dd6ca12

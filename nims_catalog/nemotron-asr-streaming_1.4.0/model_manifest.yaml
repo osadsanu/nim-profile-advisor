@@ -1,0 +1,721 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/nemotron-asr-streaming
+release: 1.4.0-build.1-rc.20261002030013
+profiles:
+- id: 0fb449e1896e87151b0c0368bb4dd3a8bfe4b00eec9deb2d3d2f646e072b4c27
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-09cd65cf/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-09cd65cf?file=checksums.blake3
+        checksum: blake3:42a7967256f19c315a2b4e927dbc47e8fcd9399e7bbfa7a306211fae8488d506
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-09cd65cf/en-US-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-09cd65cf?file=en-US-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:12bd25aa829ed465ca0b8bf6ee07402c5905b540501304b077257af8445d13da
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-09cd65cf/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-09cd65cf?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+  workspace_hash: e7bd9520d4b5136aa0e8bd791f80c06fdfc831ec1e682b87e0f4e9f2fbcb5ef1
+- id: 160bec82ace0723de62cfa7a36180b4a87fa3d6f4c896fda0b684b66a0dfb03d
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-A100-SXM4-80GB
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9?file=checksums.blake3
+        checksum: blake3:779677c66df2f9de522d0ba28fb2139b7e4eb444d91247f5bcf784744efb1a9f
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9/en-US-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9?file=en-US-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:cfac040953764442f6a9d63653414399edd6efa7842bc3798391ce85fa467e7b
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-f487beb9?file=metadata.json
+        checksum: blake3:65a6161ee25f1730b3eeac2fcb59583e3b49f2772e3d7b297fd0a5e126f49b0f
+  workspace_hash: 07dd4319b7ff381e6fb05d036e301ef337b7cea5846338a2ab51476697105669
+- id: 20277280eb2953183078c7ea603b351d23626190695f7035b73b22d792e31880
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '512'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4?file=checksums.blake3
+        checksum: blake3:dcdf63eeab7a916641cbf107f3b59a2fd77f1d0efb547ea246d621d86b35a819
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4/en-US-greedy-throughput-80gb-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4?file=en-US-greedy-throughput-80gb-sortformer.tar.gz
+        checksum: blake3:cbed16ceb250aebf9e1eb17d4afe557db0337bffcffa54d21d075d92f452ea93
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-53412bc4?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+  workspace_hash: b6d4bf9b41afdec901fc2256efc6334ca730597f44df505cd4325ec600339091
+- id: 20b2df2590c57e3add0a67357734bad7743a010032e348a98c74f169ce9298eb
+  tags:
+    batch_size: '512'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-en-us-bs512-26.10.4/en-US-greedy-throughput-80gb-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-en-us-bs512-26.10.4?file=en-US-greedy-throughput-80gb-sortformer.rmir
+        checksum: blake3:98ae49db75354120ce0c02e989c2621ce1638e4c1f630f338c326d8e31eadfd6
+  workspace_hash: ea1ccd81ce7b94929e93991d3286b89c1fd280e4c4979921d180fe03cc36fb2c
+- id: 23957b5627a1296ac23dbb9dcf15e4600263da9fd7798c2d2d1c92aa706d55b3
+  tags:
+    batch_size: '128'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-en-us-bs128-26.10.4/en-US-greedy-bs128-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-en-us-bs128-26.10.4?file=en-US-greedy-bs128-sortformer.rmir
+        checksum: blake3:51dc490b65ff61b979b0fad8378c2f2b23831217ae82c5fa17f93b849ca0f608
+  workspace_hash: cb9328880169e56d33fbe6790e490260a129bdfc0e3c09f31feef85ff0199d05
+- id: 27fd7df5c6217d0469ddd2beeb729a225329dcadbb5d61a268d8255796098867
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5cddfaae/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5cddfaae?file=checksums.blake3
+        checksum: blake3:0255905c75f73b0d6980f41129bbbe1fb1ee9a4b1db93dd68952e5f82ee6f34e
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5cddfaae/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5cddfaae?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5cddfaae/multi-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5cddfaae?file=multi-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:296fa113c5c5dfd39eb43f8fabc518e5028734427a667c5b78e4fa75133d1f2d
+  workspace_hash: 0e4670d39341b6828f1c7fd5d6cc139af83a48628945bc7f887809e95feba0d8
+- id: 2fce88d63ee7f0f1afbf65864809edcf02502bfc1d037cd6e7a76a8d501e43a5
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-b2782bab/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-b2782bab?file=checksums.blake3
+        checksum: blake3:6f2c70374ce1f4de80242ee7c569087accb00ce152a8f8c21e58300b131ca974
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-b2782bab/en-US-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-b2782bab?file=en-US-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:77e05557c600e7699f24f2c7fa323cb1b5dd69c4c3977f2baef4ddc824c3a544
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-b2782bab/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-b2782bab?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+  workspace_hash: b09052ff49a113482aa795ad2a77f45d00472813a3bacbe499eafe9f2781f7ee
+- id: 80760edd96d5195b0fe1a2e4742ffea372fe0525af6e0fd1ddf9508403762213
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-L40S
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-747900a0/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-747900a0?file=checksums.blake3
+        checksum: blake3:50c82cf871932fe2f35547f80e13938c062d28d3662eb439c00018e8ef844f46
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-747900a0/en-US-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-747900a0?file=en-US-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:ded7c553fea19fd179ccddbe389a570c1ac45340027210c088d086c3afea6a2b
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-747900a0/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-747900a0?file=metadata.json
+        checksum: blake3:fc09e8ec1958143bbd35387650160fd29561056ccbb9943ba9547c7f1dec6d1a
+  workspace_hash: c898f1b2fa1677a3f3488d9640638a12efaf5d8c4867c0fe694a4962b9fee712
+- id: 8816aabe6dc7415c43b8b3425f2868f00d1f44f7b2436d3a985026ccbcdac064
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '512'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6?file=checksums.blake3
+        checksum: blake3:45d9c7ef96751cc3a39a82384a248886709a503132331b02cc290df471b674ee
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6/multi-greedy-throughput-80gb-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-6aaa5ff6?file=multi-greedy-throughput-80gb-sortformer.tar.gz
+        checksum: blake3:7184bcfee09e6651a0fe791c0a3595b9acd6b484ba2a67c8f888d0ab3a039526
+  workspace_hash: e394ad2efafecd7eb1da54c76ec4c73c84e098ad4bbb29cbee69f03dba95f50a
+- id: 945474b410ce8d06b1b733d52ece6f60eab200149271bb4eb1c1e810488ac633
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2?file=checksums.blake3
+        checksum: blake3:7a8b4f4d4ed1450964686a5c0bdfe3d1aa43721f7d6fb100f237f168d3626c3a
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2/multi-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-b7189ef2?file=multi-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:1a0bb97169dee3cb38e9d7d111fcc414b43e7e3ce598bc380496c3c1a2fc6ecf
+  workspace_hash: b70b313ab7f4f2a6af8023f28d867cbd218ed56ce3b07c123ebeeb94fd417632
+- id: 9b1bd50ffe1fbb4f1869d7b557e62301d511461a6070eca0fd0262361df162d5
+  tags:
+    batch_size: '512'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-multi-bs512-26.10.4/multi-greedy-throughput-80gb-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-multi-bs512-26.10.4?file=multi-greedy-throughput-80gb-sortformer.rmir
+        checksum: blake3:89f89f4b4076948d32ccb1dbfa9fec7cbc7d89088b59a96fdae30d16aabf4bbb
+  workspace_hash: ee2a938f3bb7d49357381523411a09b345499daa8eefc3a732c3077c82cb72b5
+- id: 9d2027b0cc6c7ae8d26b2bd6f8c26e4df97be46927aca83160b9fd289272e1b3
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526?file=checksums.blake3
+        checksum: blake3:871b2ca363ec5eb8fba497c476390cd4d65e8919f29a67d51037a424ade441fe
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526/en-US-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526?file=en-US-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:a5c4f884f4cb6b648107e094c3ec5957a4490fc0a652cc37c0ce412b008ba3d9
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-0a0d5526?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+  workspace_hash: 9779cdc3c0f5b58674dfec6e3a66bd53111fbd2cb80205d18965051f9ac4398e
+- id: a81a370d8c8056f028bcb36026aa6b6cae6ffc5d7a0e4292cb60c9c821861fdf
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-A100-SXM4-80GB
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba?file=checksums.blake3
+        checksum: blake3:3b029da089de0c5457c33d9cc17f5de6ce8012bb5f98ec1dce24047caef69087
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba/en-US-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba?file=en-US-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:ecc1151a0efeaee32c2c6aab37127f15d98a94f26717aa4b294a6cd4ba69751a
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-6d2bfeba?file=metadata.json
+        checksum: blake3:65a6161ee25f1730b3eeac2fcb59583e3b49f2772e3d7b297fd0a5e126f49b0f
+  workspace_hash: ea498a62d275ad9712b96f02e1430d56482e19ad98191feff8cbf01c4c54eb99
+- id: a8c93100be11bfe40f288656b9cfb982c3037514f5df34787bbe7c715ba433b9
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66?file=checksums.blake3
+        checksum: blake3:42fb5a1575f583122d80b4d3c7aef13709435db9cd82784bc2398de53c844c02
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66/en-US-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66?file=en-US-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:a45f4a17e9405fd5fa211de6c8198f17e42b1cf460738f80905045354127c3f8
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-1135fa66?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+  workspace_hash: 16c851569db0d2b6da3524b488b50e2d76e3b3029e812c164dcc08fd25a04a3c
+- id: aff3a02b378ee68b1cde6de2b1d4151b29ed89ab1f5304fb86c4a6c6301483a1
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '512'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-405c184b/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-405c184b?file=checksums.blake3
+        checksum: blake3:2bbf18a18389725b6a7c41416cf2d58b60c943f2c8bdd44528487692a2058874
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-405c184b/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-405c184b?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-405c184b/multi-greedy-throughput-80gb-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-405c184b?file=multi-greedy-throughput-80gb-sortformer.tar.gz
+        checksum: blake3:8e1c6a582b9c6bc558f07c365754d43e5d9da72579ea14266d1d7a33ef9170af
+  workspace_hash: e902a24d299469c55960b37e0bc0744bfacc2a6f71a46f0e31c67b4f5ee85bd6
+- id: c64e666e9c9ab385639b7022d5d076da21f8c4d1309427390cad144e10b1647a
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-L40S
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-36ddbe8b/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-36ddbe8b?file=checksums.blake3
+        checksum: blake3:d257d8843544b61a3df238bf076306356e0bc6bc33760d7edb87c9a7984ebd94
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-36ddbe8b/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-36ddbe8b?file=metadata.json
+        checksum: blake3:fc09e8ec1958143bbd35387650160fd29561056ccbb9943ba9547c7f1dec6d1a
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-36ddbe8b/multi-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-36ddbe8b?file=multi-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:ddc9f3a88915902789d2b5a772ab394aa5a5d0b5e9d6f522889aafc55cbea716
+  workspace_hash: ec326e04b312d52283a88561cf47b197ca8cc3281d80389a1e7860b3028b2135
+- id: c86bb2d2a1a055a669aab3258ca3305450379185dcf623ec97f88feb1429fb09
+  tags:
+    batch_size: '32'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-multi-bs32-26.10.4/multi-greedy-bs32-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-multi-bs32-26.10.4?file=multi-greedy-bs32-sortformer.rmir
+        checksum: blake3:5426e8aae579be2272c12c8caaa28dc20739caec91ea4c7d5df5bcb0da9c7914
+  workspace_hash: 6f806f47d2541ba26cbe70d1a49fc4658c30edcfbbe30322405ee1cc5f68b347
+- id: d869956e698fdc61e8112eeb8a8e65c37bec6aa9e04524582f7a0081767c30dc
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-L40S
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-c9dd492d/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-c9dd492d?file=checksums.blake3
+        checksum: blake3:6aa1917a302069f836b0bba81bc80fc0ee44baa8273ff31c76d5eb374d6aa31e
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-c9dd492d/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-c9dd492d?file=metadata.json
+        checksum: blake3:fc09e8ec1958143bbd35387650160fd29561056ccbb9943ba9547c7f1dec6d1a
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-c9dd492d/multi-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-c9dd492d?file=multi-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:bec578e5cf09ace591261ba1a768e7bebeb4b04e5f72208ef52105cbb8de42da
+  workspace_hash: c1956ee13fce91d1fa6c072bbf495f9e99b42f2bbc30caf05df17edcb8132fa3
+- id: df7596d796066f2b3c06f1aa54a8bc57e61295cba99b9633d49681a009c2e474
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-H100-80GB-HBM3
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6?file=checksums.blake3
+        checksum: blake3:8fbf9fa67d133a8e8e42f2fe7095d37a5481ad756c690d1c84c32a49ab7ebefd
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6?file=metadata.json
+        checksum: blake3:1e4692822976a604a9c04a1c5e34a331168eb3f3a5ff674e73788050fdad1b25
+      nemotron-asr-streaming-cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6/multi-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_9_0-trt-int8-h100_80gb_hbm3-50c7f4b6?file=multi-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:29a14b0698c76cc50d1e9927f0a3af66742ba843307b2f28df9aa96973c5bf89
+  workspace_hash: 15cc590b6924a2045765a662eafaeef045d4d7b561fecbf57c1bd483bb2de84a
+- id: e4b9ec0076b9121ad922a2283976a7f75ae47ab87c2da3f675f28d517aa9cf3e
+  tags:
+    batch_size: '128'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-multi-bs128-26.10.4/multi-greedy-bs128-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-multi-bs128-26.10.4?file=multi-greedy-bs128-sortformer.rmir
+        checksum: blake3:d99fdb02712ec5e7393177be1476de2fee00a13648aef5cf7ac4a18c1419d3aa
+  workspace_hash: cdd00b94bcec1b068034fba96291d5410f21e2459dfb62dfc5377552b434d5a5
+- id: e7ca408af83e3cb654cc70e03d015073d93c6108cffeb9cadcc2888d6ffcd7b6
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-A100-SXM4-80GB
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-b736937b/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-b736937b?file=checksums.blake3
+        checksum: blake3:1b5b8221c68158b622c094842d6dde9dedecbf3662492bf84e039bcfecbeae29
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-b736937b/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-b736937b?file=metadata.json
+        checksum: blake3:65a6161ee25f1730b3eeac2fcb59583e3b49f2772e3d7b297fd0a5e126f49b0f
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-b736937b/multi-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-b736937b?file=multi-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:40b49b7d871a74ba5438aba4d452d4fc3580cb212cf95bf5f28edc0e46ef6cb8
+  workspace_hash: 6bfcce4769d6eeb822bed62fd1581dae245f59943410ae0e3160d8e51d161f03
+- id: ef0f09e6293b39ff851196f02a58ce1469b6be466b5b089ad4ce74100f0eff90
+  tags:
+    batch_size: '32'
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: nemotron-asr-streaming
+    precision: int8
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-rmir-en-us-bs32-26.10.4/en-US-greedy-bs32-sortformer.rmir:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:rmir-en-us-bs32-26.10.4?file=en-US-greedy-bs32-sortformer.rmir
+        checksum: blake3:620cc885504b6a1a39e4e2b9ca0fe8bd3a8f65ddd8a1212e72e779e24ddd67dc
+  workspace_hash: a071ac54dd9eaae0ff218f0c663d5424ab81b019b5d1598a4ad5947a9efacc0e
+- id: ef49ef403d40af41a1047af1d3ae220cebf5195486faf179da2662cdb193153d
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-L40S
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-6c6eff98/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-6c6eff98?file=checksums.blake3
+        checksum: blake3:9037c3790c4eddda784cacff08514299f6c26876bd2f9a6d634246443511784a
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-6c6eff98/en-US-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-6c6eff98?file=en-US-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:0ecb8cbb5a01bd934f098c95be1fe04a57907bcb743f617bcaeca1f651c01d86
+      nemotron-asr-streaming-cc_8_9-trt-int8-l40s-6c6eff98/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_9-trt-int8-l40s-6c6eff98?file=metadata.json
+        checksum: blake3:fc09e8ec1958143bbd35387650160fd29561056ccbb9943ba9547c7f1dec6d1a
+  workspace_hash: 2d20a1087c6110167e02decd6a465615d3cbc223e58a56e35bb14971b7dd1ec4
+- id: f6a6bf9a498f0fbfe23f20c70eba8f18a9138b0e030bbd27269005b3fd5ed417
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '128'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5012d376/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5012d376?file=checksums.blake3
+        checksum: blake3:404574af2e15cf36b799cea26fca8d515b09495cbe0b059fac130b364eaa6e97
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5012d376/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5012d376?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-5012d376/multi-greedy-bs128-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-5012d376?file=multi-greedy-bs128-sortformer.tar.gz
+        checksum: blake3:277fd52dd874df9830f6cc356e698d6cea1ccd50403491041084fd725240ef8b
+  workspace_hash: ec7e78574becb7e80e979dd9cf339903d16bab269ed41b3a76aafb3bd62ede02
+- id: f6e6a30b51d8122946159b0a72de91d80f077cd0c051f1818f4effcf2b5fdb76
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '32'
+    diarizer: sortformer
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-A100-SXM4-80GB
+    tp: '1'
+    type: multi
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf?file=checksums.blake3
+        checksum: blake3:9f4d80b252d07a75728f9e87e1e26071034623acd464fec9c4bf56ec0b593a36
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf?file=metadata.json
+        checksum: blake3:65a6161ee25f1730b3eeac2fcb59583e3b49f2772e3d7b297fd0a5e126f49b0f
+      nemotron-asr-streaming-cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf/multi-greedy-bs32-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_8_0-trt-int8-a100_sxm4_80gb-c1527bcf?file=multi-greedy-bs32-sortformer.tar.gz
+        checksum: blake3:1ed32d2d43001eaa7089d33ed7b86221fe1772907c88bc706a48256c9547ce7c
+  workspace_hash: e0b71a091598e902d8ab9cd70245d4189b82191c38831aeace34899606ba1dee
+- id: ff2421d0c7cb640a7cb45035705f7a4cfb82dc3572f9757763630fb6f85b5fff
+  tags:
+    ampereplus: disabled
+    backend: trt
+    batch_size: '512'
+    diarizer: sortformer
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: nemotron-asr-streaming
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: int8
+    sku: NVIDIA-GB10
+    tp: '1'
+    type: en-US
+    vad: default
+  workspace:
+    files:
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-55270d49/checksums.blake3:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-55270d49?file=checksums.blake3
+        checksum: blake3:0de56a0f486c4b2149d013919255dca36944eda2f5279b71216e27d0d2d644e0
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-55270d49/en-US-greedy-throughput-80gb-sortformer.tar.gz:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-55270d49?file=en-US-greedy-throughput-80gb-sortformer.tar.gz
+        checksum: blake3:98b3f24ea197d936a8ce37d5d53d5455b76c29238b8a5e2d794edd5072583505
+      nemotron-asr-streaming-cc_12_1-trt-int8-gb10-55270d49/metadata.json:
+        uri: ngc://nim/nvidia/nemotron-asr-streaming:cc_12_1-trt-int8-gb10-55270d49?file=metadata.json
+        checksum: blake3:833eb818a985b222b994abfbe4bc5a0f5cda1b60581d8c4132ab4e26da3f0d8c
+  workspace_hash: 834f3277abecbbbb8da334f07d0f1690daa67171d5a173ccb3986de9ca6522d6

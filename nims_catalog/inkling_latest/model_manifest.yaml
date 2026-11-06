@@ -1,0 +1,1220 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: thinkingmachines/inkling
+release: 2.1.5
+profiles:
+- id: 4a30cb634a0f720cc28572ec4592876d255762f2bfe7bf0d2dceff6890f1f5f4
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    nim_json_args: '{"attention_backend":"fa4","enable_torch_symm_mem":true,"fp4_gemm_backend":"marlin","mamba_full_memory_ratio":0.1,"mamba_radix_cache_strategy":"extra_buffer","mem_fraction_static":0.78,"moe_runner_backend":"marlin","nim_specdec":{"enable_multi_layer_eagle":true,"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":9,"speculative_num_steps":8,"speculative_use_rejection_sampling":true},"page_size":128,"quantization":"modelopt_fp4","swa_full_tokens_ratio":0.1}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    profile: throughput
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: 57e65daec390d667c926a59d0d45d88ae3094da11eebad65f381fcdad3fda1ef
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '279.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: 8502d8a44bc24573a17d5e1b20381cc2c74669280ddb9cc3fde765cf15bbb27a
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","enable_torch_symm_mem":true,"fp4_gemm_backend":"flashinfer_trtllm","mamba_full_memory_ratio":0.1,"mamba_radix_cache_strategy":"extra_buffer","max_running_requests":24,"mem_fraction_static":0.8,"moe_runner_backend":"flashinfer_trtllm_routed","nim_specdec":{"enable_multi_layer_eagle":true,"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":9,"speculative_num_steps":8,"speculative_use_rejection_sampling":true},"page_size":128,"quantization":"modelopt_fp4","swa_full_tokens_ratio":0.1}'
+    nim_optimized: 'true'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: 97efe2ea847d9dbe4c7240fbfa766cd94b060fb7b3b9179bf952d9a8a3e765e6
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"quantization":"modelopt_fp4","page_size":128,"moe_runner_backend":"flashinfer_trtllm_routed"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: abe667223aac8d65d80dbb2ae304516d41a3d2d3bc3d89f463fa254e100876a9
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'true'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: b3c684611768268a07d295f30a010369b672750cdaa40d1735d7ddecc917e4ab
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"quantization":"modelopt_fp4","page_size":128,"moe_runner_backend":"flashinfer_trtllm_routed"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: b71876219f49544d9e42967621ef19a1858458b6bcd333f6c5d55b92f0f27fba
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    tp: '8'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631
+- id: ea382610a2d4e4fa80583bee8a6c5dadd00f880e2d41cc35a9acb349656b8d4f
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '279.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=.gitattributes
+        checksum: blake3:1366d6a66a0601407d6ce4a9d26f696f10ccfa0aa02d9f4cd0f188c86bfcb3a2
+      README.md:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=README.md
+        checksum: blake3:72778b5ff9e31d18fd4e275476fd3136b54d3cda6def848dcd194deb1f1ec733
+      chat_template.jinja:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=chat_template.jinja
+        checksum: blake3:54def8dad65b827478855ee10baa829d4fca0064d724d4bb22954dbe31f18321
+      checksums.blake3:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=checksums.blake3
+        checksum: blake3:b75badc04926838d4d70948cd1feefddece0ccdadd104706682cffe56f179b24
+      config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=config.json
+        checksum: blake3:bd6047d70e1cbd1735771ae478cdfa7647d2efc5b957726ea38026ddbadef767
+      hf_quant_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=hf_quant_config.json
+        checksum: blake3:142cc08e4c035bb84d5e905d5449f7e28955a4fac710558e4636ddf989fb1463
+      model-00001-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00001-of-00033.safetensors
+        checksum: blake3:ed49873f7b4ce6b1917c3247cfc49646a7cf7d9263718a935fa800b2f4ec4680
+      model-00002-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00002-of-00033.safetensors
+        checksum: blake3:90250524cc6cbabf3721e8c15af214b33f48cd546c8609439222afc9c81df2de
+      model-00003-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00003-of-00033.safetensors
+        checksum: blake3:7b7a840656a25a18738ca7998facd9c506ca73d61e0b36ca1b484feef1af5288
+      model-00004-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00004-of-00033.safetensors
+        checksum: blake3:ae192d6c91f9aa312c735cc8b5fd8f7610cbee6ef76cf23856a56dafb23e7e4d
+      model-00005-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00005-of-00033.safetensors
+        checksum: blake3:fe443da93be059033980d34762837fa18c645a13e48c575f4ad01d9e433fcb1d
+      model-00006-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00006-of-00033.safetensors
+        checksum: blake3:03756ecfef9c69bb50bfde93e91231d26dd61da7d2dd95fcb74d2f02f4a18b48
+      model-00007-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00007-of-00033.safetensors
+        checksum: blake3:30892896a4c5e423e41fe48822fb0cf5ff45d6767cf79df743975dc0b60a0254
+      model-00008-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00008-of-00033.safetensors
+        checksum: blake3:e58aacab48d3696bbdebb647b3a11703209693aa78617526d2dd71bf842f427b
+      model-00009-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00009-of-00033.safetensors
+        checksum: blake3:3bd8f3c28f300b6b31e0cd6a22831d638c4eafe5e73641906d7a6035f21a4a3e
+      model-00010-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00010-of-00033.safetensors
+        checksum: blake3:755c251641f83f77549a1648b4ce8453697cbf2907fc21dd6fb020fc39f3697f
+      model-00011-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00011-of-00033.safetensors
+        checksum: blake3:6e000214bbc4260f18a8991dfcfa2cc61a95de5a06e08df1b76c70d21b093109
+      model-00012-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00012-of-00033.safetensors
+        checksum: blake3:0dc34bf77203aac792a60da689a609b3d9af4f5db6031010a203d41161dabfbd
+      model-00013-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00013-of-00033.safetensors
+        checksum: blake3:9b4dc22109f5ecd40a6d3ad2b2825e3c2d9a26ea01981ad4b1cced0df6823720
+      model-00014-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00014-of-00033.safetensors
+        checksum: blake3:8921d42d4c72e6aaa57035bb1b62340745761e75355bacb703987200b85e2f10
+      model-00015-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00015-of-00033.safetensors
+        checksum: blake3:4933b4faa7d7a8b97056d33c020e29f9a2ac8ea1eae5ab8ba9295c3b0cba00d2
+      model-00016-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00016-of-00033.safetensors
+        checksum: blake3:13bc2949430d3db0d921f695a4abcd5570eb1d0e08fb18dca578173963bd1812
+      model-00017-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00017-of-00033.safetensors
+        checksum: blake3:8ebdc2a8a4c2680d98912dad40b56d872d3a7a2fb8788065bab4c36ec98d1abe
+      model-00018-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00018-of-00033.safetensors
+        checksum: blake3:a2f7e8b900b3c7297e81f6c499ca42f81238a42ef13a40f17a1b053c009beb92
+      model-00019-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00019-of-00033.safetensors
+        checksum: blake3:1b8dd69cd5acc83d21a1bc62180774c6821f71af1c549c5709e255fa36d2c254
+      model-00020-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00020-of-00033.safetensors
+        checksum: blake3:7d51a663ecfd748ccfe56b38734b80ab003f6ec23dfe2066d4d3470f542e6975
+      model-00021-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00021-of-00033.safetensors
+        checksum: blake3:b0b342a6f6ab224e47ba6c7520178dbdbabe90eac94ae977a4586ea02f253ab1
+      model-00022-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00022-of-00033.safetensors
+        checksum: blake3:3cd06d2bcb3c55777a9940982e34f25cf34c8f47db65410d32afef5989cc4de9
+      model-00023-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00023-of-00033.safetensors
+        checksum: blake3:edfa012a779b926db604e607ba2cb0c89d2b1fda2ffa1f71ef0c718255bdf8d5
+      model-00024-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00024-of-00033.safetensors
+        checksum: blake3:2e556b61a4e6511757469228f4b8a92a69cf60992352f4c9a4fac20981dc1f25
+      model-00025-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00025-of-00033.safetensors
+        checksum: blake3:f5c22e81eb4b319a535141b0769f1c367d598cfb6c810608576ca6b2dd56eeb1
+      model-00026-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00026-of-00033.safetensors
+        checksum: blake3:8237381a8f20fff502f5d396099b29867148281248458aaa326ea640a3556334
+      model-00027-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00027-of-00033.safetensors
+        checksum: blake3:68b4ea1b0a3c68d61d0a076a09313ec4250ccb8e8618042bdb237e92e688fffb
+      model-00028-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00028-of-00033.safetensors
+        checksum: blake3:39ac6d0c01b96e7fbe6c4d4779a4f3dc458723f20d569ef7377289e2f45b1d90
+      model-00029-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00029-of-00033.safetensors
+        checksum: blake3:2702d735d70b25bb93fd4d2e3af9bb6e6d88826c2ba1e71ada2ca89ebcc919d5
+      model-00030-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00030-of-00033.safetensors
+        checksum: blake3:ef886c4fe4e579e09ac9521ad656ef5d62f42fb411e15f9f4e737b682755ea67
+      model-00031-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00031-of-00033.safetensors
+        checksum: blake3:585d0f8215224b76f0a70f1c4eeba717a16e68cc5aaa8f98f45f1acfeeab6403
+      model-00032-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00032-of-00033.safetensors
+        checksum: blake3:6975fd2438de189c7a1987f8d76ab40a125c999a3837e18bae050f950b12f199
+      model-00033-of-00033.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model-00033-of-00033.safetensors
+        checksum: blake3:d3032d60dd9a036337ff2eb3faca118426985e298ef9e1e5fd64562587aaa92e
+      model.safetensors.index.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=model.safetensors.index.json
+        checksum: blake3:b80e541bfc8e29facf57d74185581f66e4ae1aeb4ff8e403a1f1b0737ab185e0
+      mtp.safetensors:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=mtp.safetensors
+        checksum: blake3:2948f2c432879c57d8306d0f40d09253a65d182525e7bde1f733a18fa8b9473f
+      processor_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=processor_config.json
+        checksum: blake3:6f2f05212b7d080db7e7334d40722cd175465955e608ea04e1a007dad65d5f05
+      special_tokens_map.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=special_tokens_map.json
+        checksum: blake3:bfc74f8c16e08da197c342edcf9be4bb294cc5604671d3be66acbb35362f9cbb
+      tiktoken/tokenizer.model:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tiktoken%2Ftokenizer.model
+        checksum: blake3:1504eeb1376b226cfb9c3a9deb4152d348a87cd388e01a9e962c7d62a35b0924
+      tokenizer.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer.json
+        checksum: blake3:d17830a3b8788794e30dbd4fd03b5f82c5f8e2a3eb7b27234b573f8154166411
+      tokenizer_config.json:
+        uri: ngc://nim/thinkingmachines/inkling:nvfp4-5.0?file=tokenizer_config.json
+        checksum: blake3:2da47fee1d889d3c81cd870c947562aeb6f68c929e0d74da54963c9f4bd39975
+  workspace_hash: 1fc3d01ee4f0a74ce03a37584700e678304345637592652446a8c1c250e8f631

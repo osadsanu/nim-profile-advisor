@@ -1,0 +1,226 @@
+## SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+## SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+## NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+## property and proprietary rights in and to this material, related
+## documentation and any modifications thereto. Any use, reproduction,
+## disclosure or distribution of this material and related documentation
+## without an express license agreement from NVIDIA CORPORATION or
+## its affiliates is strictly prohibited.
+
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+model: 'bnr'
+release: '1.0'
+
+profiles:
+## Profiles for SM 7.0 (Volta, e.g., Tesla V100)
+
+## Version 1 48k Model for SM 7.0
+- id: 6484ffd1fa7a09758afa951053514d7e71658e7279d9155941c3fc16a14c01b7
+  tags:
+    gpu: V100
+    gpu_cc: '7.0'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm70.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_70/denoiser_48k_2560.trtpkg
+        checksum: blake3:27c57bf96e389931eead9999f657eb5e48978dbded35c1b35bdcffd7a5b0c1cc
+        secret: Default
+
+## Version 1 16k Model for SM 7.0
+- id: b47e0efa9c95a5a2d720414809c6fc173921838b892914e8c5d4144f07713c1f
+  tags:
+    gpu: V100
+    gpu_cc: '7.0'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm70.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_70/denoiser_16k_2560.trtpkg
+        checksum: blake3:40248b83f3c04c139206779f2ce03e318ba3ae1b9a7378d3a3d7cef9098d5438
+        secret: Default
+
+## Profiles for SM 7.5 (Turing, e.g., T4)
+
+## Version 1 48k Model for SM 7.5
+- id: 4ee892d6f6c1e8e9026554bfb3f8fb11e804df243e88cfb115458002f9eaccfd
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_75/denoiser_48k_1280.trtpkg
+        checksum: blake3:69778dae62a882ceac79adbf622230ae9de2826c4f5f22f742f416cf2ab98220
+        secret: Default
+
+## Version 1 16k Model for SM 7.5
+- id: 5780b68512e5acde78c676a2e4a16d605e1a4bb8c14f754e69e5d6fe6cb64033
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_75/denoiser_16k_1024.trtpkg
+        checksum: blake3:a97996523539947a6115579f83b1a332a7963bc98bcd400dc6a76b62598b1fec
+        secret: Default
+
+## Profiles for SM 8.0 (Ampere, e.g., A30)
+
+## Version 1 48k Model for SM 8.0 (A30)
+- id: 889b67620f3f682402002b1cc1d7e3afcb7ca1920857799208555900e533b044
+  tags:
+    gpu: A30
+    gpu_cc: '8.0'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_80/denoiser_48k_5120.trtpkg
+        checksum: blake3:ab2d768508f45ab5b4cef098e4f7e641c83c226d5311d3914ecb92d68ca9c028
+        secret: Default
+
+## Version 1 16k Model for SM 8.0 (A30)
+- id: eefe720af15151d6058d8f269f40f298c065a663a35d2b2dc45f5345f9fd8eca
+  tags:
+    gpu: A30
+    gpu_cc: '8.0'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_80/denoiser_16k_5120.trtpkg
+        checksum: blake3:c463616f801645f12688f98abfd77dc9d22be9aee9c79e2b54e96a4b8c572ff3
+        secret: Default
+
+## Profiles for SM 8.6 (Ampere, e.g., A10)
+
+## Version 1 48k Model for SM 8.6 (A10)
+- id: 3e57278f7d8c8559bf1f09319dc04c167f581579fee3bc0d19edd392d7dab298
+  tags:
+    gpu: A10
+    gpu_cc: '8.6'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_86/denoiser_48k_3072.trtpkg
+        checksum: blake3:ead47488b27c169e5818da064945505b0f8018cf4f8cc46563470a6b3d7fc199
+        secret: Default
+
+## Version 1 16K Model for SM 8.6 (A10)
+- id: 8baca4b5f0a48f3609311ce9f9a9e64b969e74b0fcfe2eb965826c61cab375bc
+  tags:
+    gpu: A10
+    gpu_cc: '8.6'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_86/denoiser_16k_3072.trtpkg
+        checksum: blake3:8810766cd16b0bb6b93dd8f41992be356483bbbc51e4e9852d91c2c18a145bc9
+        secret: Default
+
+## Profiles for L40 (SM 8.9)
+
+## Version 1 48k Model for SM 8.9 (L40)
+- id: b7355f0ff6bb509076f90bf16f4f408e0afc29483f21a618ad604661ac5179df
+  tags:
+    gpu: L40
+    gpu_cc: '8.9'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_89/denoiser_48k_4608.trtpkg
+        checksum: blake3:119032e3a44d42101817f9176f5ebdad6b95a2c44ce7176a35eaeb5003145cc2
+        secret: Default
+
+## Version 1 16k Model for SM 8.9 (L40)
+- id: e3a37bcea010650a09ff299dccc699053c874f485d200cdfd7716df05004aa67
+  tags:
+    gpu: L40
+    gpu_cc: '8.9'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_89/denoiser_16k_4608.trtpkg
+        checksum: blake3:d8ebfcb89d89f120eda96068380b485e898e9a1b0d083f03f3ae50a08f85375e
+        secret: Default
+
+## Profiles for SM 9.0 (Hopper, e.g., H100)
+
+## Version 1 48k Model for SM 9.0 (H100)
+- id: df7229913c5c777d18c3de4799b8aecc6ff8cd5d0dd56c18fde0c9aa05b71daf
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_90/denoiser_48k_6144.trtpkg
+        checksum: blake3:8e266da239681732bcc672194401ff8450ee2fda464457afbf5f9e76cdc7adaf
+        secret: Default
+
+## Version 1 16k Model for SM 9.0 (H100)
+- id: 98c0898da5a89eb0a01c4d74982d7296187cc67b0ceacddc3cc1294250c7dd86
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_90/denoiser_16k_6144.trtpkg
+        checksum: blake3:b9e559b5d565377fbea8f5bf66aea803e104f5862cac6b46860b92eb1f20df37
+        secret: Default
+
+## Profiles for SM 10.0/12.0 (Blackwell, e.g., RTX5090)
+
+## Version 1 48k Model for SM 10.0/12.0 (RTX5090)
+- id: 93d7cd4b917d1efe8b52e5166bffdf9728490837a83373464e8df0598b060ba5
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    version: v1
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_100/denoiser_48k_6144.trtpkg
+        checksum: blake3:fbe0ad02d9d8e3431e2ce36b223d81db3c1d7c93dacbe9c55d4ced33d1ddb63d
+        secret: Default
+
+## Version 1 16k Model for SM 10.0/12.0 (RTX5090)
+- id: c9541822f019cae75d094a250d51763c6298e1279321a5d9e8740d9995d46dba
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    version: v1
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:1.6.1?file=sm_100/denoiser_16k_6144.trtpkg
+        checksum: blake3:d8a40bc0a80afdd83c5ba32da267e0036f10eb06eacf256ea6121ccf8c5aaab0
+        secret: Default

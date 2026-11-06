@@ -1,0 +1,67 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: qwen3-32b-instruct
+release: 1.0.0
+profiles:
+- id: 57fcce7205ef533722b0ff7eb977b8c8799eadc08b5ea430d26ce03dab90e7d9
+  tags:
+    gpu: DGX Spark
+    llm_engine: vllm
+    nim_workspace_hash_v1: a0b0d5be7fe117763b54ec7d6cf23e33b48b327a10e280598505207db32b1a17
+    precision: bf16
+  workspace:
+    files:
+      added_tokens.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=added_tokens.json
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+      checksums.blake3:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=checksums.blake3
+        checksum: blake3:3abdd21a539360e974da8e0e46fcf66df6980098b6c078788b68a1906f58af8f
+      config.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=config.json
+        checksum: blake3:4f85f0b5d9b5caee96a02b51a54c5d8e15762f7c6a4b6c0abd8850cc4453e0b5
+      generation_config.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=generation_config.json
+        checksum: blake3:5e6a55e578052e0df88201185e0056854dfb83cac15c4522612c3781ea788432
+      hf_quant_config.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=hf_quant_config.json
+        checksum: blake3:c787aca533f5b22e23d61f93fcdadec3821a9add3a979394db9174a45bb1f42d
+      merges.txt:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      model-00001-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00001-of-00007.safetensors
+        checksum: blake3:d9641cfa7a3d8b1b21ac65779c9e5a10f73762dbf605ded054f4778c90c04357
+      model-00002-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00002-of-00007.safetensors
+        checksum: blake3:8bda3582092454c6b668e4f99a752a63634f41b1f7c56ec00e9c7fdabe083d4e
+      model-00003-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00003-of-00007.safetensors
+        checksum: blake3:8e4bd3f36b0d0394a16dee564b26d3ef522b4bf7b08d2789faa65cc02db3f6e6
+      model-00004-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00004-of-00007.safetensors
+        checksum: blake3:3b91bf5ecabf400cb47eaad0a97dd5e569f32f5f7f23fb264e0c177f71121b60
+      model-00005-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00005-of-00007.safetensors
+        checksum: blake3:f6a6b2134f02b94542f71d52511a3c6b277b81816bf9657f1c839591958fc1b0
+      model-00006-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00006-of-00007.safetensors
+        checksum: blake3:553f9d67533b6a74af465fe2f22b59af41070a826e031d36821331a2785e3f7e
+      model-00007-of-00007.safetensors:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model-00007-of-00007.safetensors
+        checksum: blake3:521c02943bbe05e0605bb469a159d0809b4318b810d2979a64888f860fbc0c76
+      model.safetensors.index.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=model.safetensors.index.json
+        checksum: blake3:f2e005e3ca84639355d43f50899d26af76dd94483c91ec1120079a71779be5e3
+      special_tokens_map.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=special_tokens_map.json
+        checksum: blake3:8562e30a08b89d1f192ab2afcb7bbed9cde6a6b38c6180fff900f3a584157e50
+      tokenizer.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=tokenizer.json
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+      tokenizer_config.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=tokenizer_config.json
+        checksum: blake3:c86c173d0093678f090f5ee861ae85624924ac8405c495abb6793331c5fb5f06
+      vocab.json:
+        uri: ngc://nvstaging/nim/qwen3-32b-instruct:hf-d47b0d4-nim-fp8-pertensor?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe

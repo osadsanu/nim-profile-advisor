@@ -1,0 +1,1443 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: meta-models/muse-glimmer
+release: 2.1.4-variant
+profiles:
+- id: 04aebe8bc8dc0a22e9be40d473cbded2a71c7df1159d6f8f59f4af573338f28c
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 0f8727d93113a621df6bcead3d2c10b94d18fe23d887c8104e925feb71b99282
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 2635f2912be83f0a0fd07d0f5ebfcc83560c078c4f322b2a7efed9eb9fea9108
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    llm_engine: sglang
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 2656cbcfac445e0896c3a671117d2622ad0f67cc93997930cb3230431cde2f2c
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-H200 nvfp4 tp1 - NVFP4 emulation on Hopper (Marlin dequant)
+    nim_json_args: '{"max_model_len": 65536}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 2dd01604b02b5f78f15b0bfd460ea66b71f07c5fa4e5fbe7fa2db1a9055395c8
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition
+    gpu_device: 2bb5:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 3adbf2a00bf1001fb781a1cea658d148d53a5fa37a23cb26cb5a3d63b20c3ce0
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 3daf0683e12215abb1e3bf915c5537fcdfddbb338e52f346c28374c7c03d2229
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition
+    gpu_device: 2c3a:10de
+    llm_engine: sglang
+    nim_description: RTX-PRO-4500 32GB nvfp4 tp2 - context capped to fit 32GB/GPU
+    nim_json_args: '{"max_model_len": 65536, "gpu_memory_utilization": 0.8}'
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 49ca1ccfcf70411f03914216a07dc2cec13e97f2683a66a182dd897eb4940e3e
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 4ac8eabdd302c356d8a617bef98c0c620e923fd674b8f8c0cc68ad66e1fbe4ad
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GH200-480GB
+    gpu_device: 2342:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-GH200-480GB - flashinfer text + triton_attn vision (NVBug 6885689)
+    nim_json_args: '{"attention_backend": "flashinfer", "mm_attention_backend": "triton_attn"}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 540033164da050b336ddb2e9a4be6f8e8221fb8fb994c2288d10710f717b1fa6
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: sglang
+    nim_description: B200 aggregated NVFP4 tp1 agentic-coding recipe
+    nim_json_args: '{"max_model_len": 131072, "kv_cache_dtype": "fp8_e4m3", "max_running_requests": 160, "gpu_memory_utilization": 0.85, "swa_full_tokens_ratio": 0.8, "language_model_only": true}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 595333925b5665c61b017282a04e5f31fc5e15bdb3d2345131a145d2b46bf6a6
+  tags:
+    compute_capability: '12.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition
+    gpu_device: 2bb5:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 5a691bcf340f2491284a36097ecc628367a21846d1ee94c709d4fb65ca476918
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-H100-NVL nvfp4 tp1 - NVFP4 emulation on Hopper (Marlin dequant)
+    nim_json_args: '{"max_model_len": 65536}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 5c8a5d8601c437a22b273a3a53f2cc954688dbe9b8c923666a02e141fcdab527
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 5d24324c3afb4065b0168245ce8d02cda650966a2c09c1ab935db8d0d26fedb4
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 5d861d8c65c7168849e9f9f5e27828e05f3f65d3d8729453c2c6b661a9a4c799
+  tags:
+    compute_capability: '8.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-40GB
+    gpu_device: 20b0:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-A100-SXM4-40GB bf16 tp4 - context capped (CUDA OOM at full 131k)
+    nim_json_args: '{"max_model_len": 65536, "gpu_memory_utilization": 0.8}'
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 7283b9d1cd791d0719106f4621b36a8449510bec28ac530185b98f380f2dee1d
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 7cacd7ce0260d09a76086fde549c7cf0a21340fbe12700e84c56af95f2de7589
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-H100-80GB-HBM3 nvfp4 tp1 - NVFP4 emulation on Hopper (Marlin dequant)
+    nim_json_args: '{"max_model_len": 65536}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: 7e6304555a70badbeb82224bc9aee244ea241e143ec1b62b3b094f1fc614260a
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: 9e05432c84b544427303d2af7ef3aae83ede03c584f3ce8425611894991f74d3
+  tags:
+    compute_capability: '8.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    llm_engine: sglang
+    nim_json_args: '{"gpu_memory_utilization": 0.85}'
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: a26c2e04b495cce1cc72903c36135ab468d27883ed841ea7053a3b8d996cc4fe
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: b5ed95d1c2e8bce0277c2b609ff915c6fab5e9066df3d244fe3f6b31f30ea5a4
+  tags:
+    compute_capability: '8.9'
+    feat_lora: 'false'
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    llm_engine: sglang
+    nim_json_args: '{"gpu_memory_utilization": 0.85}'
+    number_of_gpus: '2'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: c2891001e6c2c2850d7fc7a2f1453363c4407d6474a1890e44138aedf27fa467
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GH200-144G-HBM3e
+    gpu_device: 2348:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-GH200-144G-HBM3e - flashinfer text + triton_attn vision (NVBug 6885689)
+    nim_json_args: '{"attention_backend": "flashinfer", "mm_attention_backend": "triton_attn"}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=README.md
+        checksum: blake3:7d19438831686cc58b30be15a3c3cd6a347bba393a12a40b67b410ba7bc852b7
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=chat_template.jinja
+        checksum: blake3:3ae1e53a346d9c79b61699feb8545d475b762c940a6d02347dea75d90f0c7056
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=checksums.blake3
+        checksum: blake3:8bec96592b83bde197cc241af2e24ed8a115a4560fea2a1203c7e403212e7a96
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=config.json
+        checksum: blake3:a34136720cde6d0b90978e046caa99735731185950b7dc487ea9d3c0ed574b16
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=generation_config.json
+        checksum: blake3:3ac3aea5b1278581e922220ad6c508cd97923fa352c5789c191b47f0b847091a
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00001-of-00002.safetensors
+        checksum: blake3:6bbecd2f3e7584d0aee8c214de4fc5a986e6bf317ce482d3270ce4bcdefe235a
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model-00002-of-00002.safetensors
+        checksum: blake3:5dba1f31956ab4075ff0f9c21973d2605ab21a8afd5f28943e3f88d3638e1431
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=model.safetensors.index.json
+        checksum: blake3:c151580938cfb45a985618d802c7536bcf9d3631432c799fdb9e7d44c675dcc8
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:BF16-1.0?file=tokenizer_config.json
+        checksum: blake3:98cf8ce6497eb200db0464cf80c6f4bdc030440ac9dbc2ea600eaa226e25fdd7
+  workspace_hash: 7da560f87130caa28263c679271f7ba3a6a0554ae49455dba9059470f328f3fd
+- id: c2e0b103e9d3a713dd46fac632d23cd22f02b5d478ba38d1904f968c3eab5630
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: sglang
+    nim_description: NVIDIA-H200-NVL nvfp4 tp1 - NVFP4 emulation on Hopper (Marlin dequant)
+    nim_json_args: '{"max_model_len": 65536}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: d9804dc71f556209b0e7965cb43ae08bebfe7dafada485686c3652a860cbff6c
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: sglang
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf
+- id: ed9679b7dea15193acfb07c83b16dfc786a1cf4327913d0fbc66191e42b6521d
+  tags:
+    compute_capability: '12.1'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB10
+    gpu_device: 2e12:10de
+    llm_engine: sglang
+    nim_json_args: '{"gpu_memory_utilization": 0.35}'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=LICENSE
+        checksum: blake3:83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6
+      README.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=README.md
+        checksum: blake3:7c8bc9f62087282a109e0bfe2765a78b9a609adb8ef2ce34aa9b7900738fb919
+      USAGE_POLICY.md:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=USAGE_POLICY.md
+        checksum: blake3:0bae111e739bcd47cc5344116f32d707fc911c84e81752731b0281adb9e282ac
+      chat_template.jinja:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=chat_template.jinja
+        checksum: blake3:3f0ba7d9b4f4fda24dc37cdda2c9ccb4ef8b653cf638be0f3908cf5efc86597c
+      checksums.blake3:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=checksums.blake3
+        checksum: blake3:4aaf4c7a383f0b2fd2f3fd3b9bec9c16d4b9604551ecdaffc77a7c41498f2f21
+      config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=config.json
+        checksum: blake3:6e2b467ad4fa51c2856027791819179efca76d2dbf9fe862333f3ea35340b18c
+      generation_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=generation_config.json
+        checksum: blake3:f9539707ca25eec3c34b2c2e849bdcc93e6db1b8d697be92d84594c76e413e1e
+      hf_quant_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=hf_quant_config.json
+        checksum: blake3:48669cb03a8a7b39025e830864666e4b1507fed60bec3da6104c6a268ff6d5b0
+      model-00001-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00001-of-00003.safetensors
+        checksum: blake3:de55d141f4803f99c34de7de95895745254e65564a4f4926b878c4d9454c519b
+      model-00002-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00002-of-00003.safetensors
+        checksum: blake3:1cd8b3165e29af848c82ce51f0fee78606afe0e1f6ac3135e61d39b82d977ec8
+      model-00003-of-00003.safetensors:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model-00003-of-00003.safetensors
+        checksum: blake3:bc2433321119ce0d1e52dbdc0a043fb72d9b37c8a8343d85b97900ceba065011
+      model.safetensors.index.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=model.safetensors.index.json
+        checksum: blake3:f65c5199e23ad0f51887413b3af69227e461d42b860e666b8739776bff835022
+      processor_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=processor_config.json
+        checksum: blake3:dc090d3d7db434c1be5003faab42311f1864ac3c41a174212f305a57db54c38e
+      tokenizer.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer.json
+        checksum: blake3:60738e7b91dca4ad0f7e5eabdd8faa46512f3b8b9e88a3d34a98075ba818fce9
+      tokenizer_config.json:
+        uri: ngc://nim/meta/muse-glimmer:NVFP4-1.2?file=tokenizer_config.json
+        checksum: blake3:4fb30d19abaec80aafa99da3ee450d9c39777ba9778e12903e862d87b8705013
+  workspace_hash: e11a9d9ba848c507bb81f47a2c564162c3603e14faed8b5d9704b448182e4dbf

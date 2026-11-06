@@ -1,0 +1,858 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: mistralai/mistral-large-3-675b-instruct-2512
+release: 1.6.0
+profiles:
+- id: 6f88c676fc2e7ddb34a7ec5080cc43a97167d4ef87723971ec8f4579e72c1308
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 4caafea527cac84134ff683112722dd27a4647702d32bc3af3699b7b0e486fe3
+    pp: '1'
+    precision: fp8
+    tp: '8'
+  workspace:
+    files:
+      SYSTEM_PROMPT.txt:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=SYSTEM_PROMPT.txt
+        checksum: blake3:05401bf13e2c8dd097b3b67a2761e124e1554da42d2aef32559195688b2196f2
+      chat_template.jinja:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=chat_template.jinja
+        checksum: blake3:1d70ecf1f5a215cfd33d704eff3d74421583d88db778b0cd55dca524733aa44d
+      consolidated-00001-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00001-of-00272.safetensors
+        checksum: blake3:790e9c07c508b8a3ab95ef4221945fc08eb4a46fdf4aab68eed0262d5c3f2025
+      consolidated-00002-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00002-of-00272.safetensors
+        checksum: blake3:6aa1942bd8192c6767084971ab35c4fc03fd46483cbaa519607ab2ea63f07d1c
+      consolidated-00003-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00003-of-00272.safetensors
+        checksum: blake3:ec8ca73b8d0163a90bd37d63003e4e5eb49b59e974aaff0319f0a53801ac1b14
+      consolidated-00004-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00004-of-00272.safetensors
+        checksum: blake3:d25bd8ecf9f4760fce71d1ee48d449ceef346d73d097b97540c2a9fd0ec92047
+      consolidated-00005-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00005-of-00272.safetensors
+        checksum: blake3:018516a5b85060ceb4d76061f6084f58d0af804cfc051ed32baef1efc7774383
+      consolidated-00006-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00006-of-00272.safetensors
+        checksum: blake3:c1d5dbc6b816aac545496698436ab8c8a34dc941448baa95b472acc833021aad
+      consolidated-00007-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00007-of-00272.safetensors
+        checksum: blake3:2d44055266b17b2e10d7023c2e611933ee57a3e43cc1e344ade0a616a63ce67a
+      consolidated-00008-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00008-of-00272.safetensors
+        checksum: blake3:c2673f450e919653d1da8ca699fb395b594d75743c771838171c4350345428b7
+      consolidated-00009-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00009-of-00272.safetensors
+        checksum: blake3:9cae5a28392fede0f05ebacfcb9b7c8aa3cf295a0625772941c6a41ad4e08438
+      consolidated-00010-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00010-of-00272.safetensors
+        checksum: blake3:baab5098ec31419bd377c8e0fac59ba31856f5b017b0498c1ffab2d75b6ecfae
+      consolidated-00011-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00011-of-00272.safetensors
+        checksum: blake3:714917e5868505f8ba657279f571b820f5cbe3db794c13f38b9a50ebe5ceb53f
+      consolidated-00012-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00012-of-00272.safetensors
+        checksum: blake3:f53254e157962e0ce429d07d13ccb499ca94f861022ca129542b105fea1145b0
+      consolidated-00013-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00013-of-00272.safetensors
+        checksum: blake3:313e44e0101623ab52f7aad1d5f40441e096869106031f42468763a4b0992c00
+      consolidated-00014-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00014-of-00272.safetensors
+        checksum: blake3:182b8d61d134971e904fde204f306273393d023ca79325f5fc5d314edbd42dc2
+      consolidated-00015-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00015-of-00272.safetensors
+        checksum: blake3:8c95c8cad96465a619f1dca774941dde8e51b6eacd4d9262646daf7e3ff68e49
+      consolidated-00016-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00016-of-00272.safetensors
+        checksum: blake3:05b7dabce4df110888ad01147a8cf41d1de1266b40f8d7948486f07aa9d73b62
+      consolidated-00017-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00017-of-00272.safetensors
+        checksum: blake3:4da16f4e6a913e40535c5e8b23ef6fff1b459c7500f9b961c166ef0bc2f405a6
+      consolidated-00018-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00018-of-00272.safetensors
+        checksum: blake3:3415bfc5c20c8d5202e501103a765d8efb3efef7458dc3c76cb7d75c8e3c4bc4
+      consolidated-00019-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00019-of-00272.safetensors
+        checksum: blake3:5bd91ad91a7907a25e1e5fb9154692360b6034a339c413f54c33c077e55d4700
+      consolidated-00020-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00020-of-00272.safetensors
+        checksum: blake3:5f21b911f64a884432ca60cb37341fed3f87b607e04f93b4df94c130265b9eca
+      consolidated-00021-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00021-of-00272.safetensors
+        checksum: blake3:d80fa23a02d300c9f0b021c712ffbeedcf037271ed3d79a783f5476633e12f4c
+      consolidated-00022-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00022-of-00272.safetensors
+        checksum: blake3:0b715bed0659d314224c91301a3ea8c3a53bd0d4a966e904d42c29ad86934fe6
+      consolidated-00023-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00023-of-00272.safetensors
+        checksum: blake3:fd2b43b8f79fe17ce064482b178d0ff270c25a90a9037d15a3712822eefd0e25
+      consolidated-00024-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00024-of-00272.safetensors
+        checksum: blake3:eecab78604fab2b6d4b2fe9c93ba3c1d41ce272e0beb5e622de5d2efe5d2afe3
+      consolidated-00025-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00025-of-00272.safetensors
+        checksum: blake3:0e6894c5caf358c90dd106a89f6e186ec58a056c908d9f5c1b15a3813afaae65
+      consolidated-00026-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00026-of-00272.safetensors
+        checksum: blake3:9210ef7fadc267d1d76efcc53f61419015e3f7998e3e9c6495d29d1fa73107bf
+      consolidated-00027-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00027-of-00272.safetensors
+        checksum: blake3:99b26612b75419d15a494254a41a13d405ad08edcee5388a8559d41651ce8131
+      consolidated-00028-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00028-of-00272.safetensors
+        checksum: blake3:847d108d216d70eb34814e74ce4e022615e5b1e9ca658bde6a7d08d4bdf9d602
+      consolidated-00029-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00029-of-00272.safetensors
+        checksum: blake3:961ff8e80e0c83b2742206a2fe5b112cd2c9613c69453661d96e4fbb5d3cb2f6
+      consolidated-00030-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00030-of-00272.safetensors
+        checksum: blake3:33f2db5597a720be4f88930288ddb291b6a338e0db13a1e9fe7f0aaafdbe4cc0
+      consolidated-00031-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00031-of-00272.safetensors
+        checksum: blake3:56a649cbeda2528f430097008ab171aa4e9c8379b7876409f560525d25919550
+      consolidated-00032-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00032-of-00272.safetensors
+        checksum: blake3:4446715aa7a4447b5561ab3ba019977e0460e38e78af0440d0d2be900e01bf41
+      consolidated-00033-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00033-of-00272.safetensors
+        checksum: blake3:affa1fd18c5dd509f4cc3b9e5999debbdddc0c27a37ee4ad97829ed81c595475
+      consolidated-00034-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00034-of-00272.safetensors
+        checksum: blake3:8025fa5b51d4af92fefc8289b0c2422ed546ecf72891939786891772845f0c4c
+      consolidated-00035-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00035-of-00272.safetensors
+        checksum: blake3:e918a8959990a8d5227b58b313e24e3e32ef6147992392a67049d88fc87077b6
+      consolidated-00036-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00036-of-00272.safetensors
+        checksum: blake3:fdbbf8fee870a99b79d61bf59c6644e1a9a0d68a7f86128d4e4d4aeda04f0f6d
+      consolidated-00037-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00037-of-00272.safetensors
+        checksum: blake3:cbb6679c8a521a1bf1e0fe87f1bd5039d70828946e01f39bf6740fb9385de84b
+      consolidated-00038-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00038-of-00272.safetensors
+        checksum: blake3:9bf198067021d46d85ef0da80346eba5d86f198e0d658875a5c46d560c155a65
+      consolidated-00039-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00039-of-00272.safetensors
+        checksum: blake3:b1e3ae30bf0022c94deda06236353ea08e14fd1636fd27c7c6588bf89524bd62
+      consolidated-00040-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00040-of-00272.safetensors
+        checksum: blake3:c28ca827cd4eafbe3c39408ca6a491c205dc60ce32dd7d9893907e3c758749d8
+      consolidated-00041-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00041-of-00272.safetensors
+        checksum: blake3:23f1bc2c4ee314044d466c2d46c0fd575d90887a664e7666fdbcbfb4e4f2c627
+      consolidated-00042-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00042-of-00272.safetensors
+        checksum: blake3:357d5318796fb118386a77e5b2c09fa4fa608b74701b1ea6a186d56a7713b65a
+      consolidated-00043-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00043-of-00272.safetensors
+        checksum: blake3:14aa0c014b50c4bf4b55767a8677b6c7928c5d578b29862bbbea06e81d59f270
+      consolidated-00044-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00044-of-00272.safetensors
+        checksum: blake3:598b2a159eeaaa3777f1325e499cbda53373f33594c37e93b349af0d473b603d
+      consolidated-00045-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00045-of-00272.safetensors
+        checksum: blake3:5a3150ca02f8637952d842748919cc54e70481b82625c69593e8eec225625a59
+      consolidated-00046-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00046-of-00272.safetensors
+        checksum: blake3:0f0def2879bfd4717e785f726e52f0fa7854571ab025ab1ae0469c1c1a9f4c9c
+      consolidated-00047-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00047-of-00272.safetensors
+        checksum: blake3:46b6a1049f31867044de8408fce7c538d7df17c722bd620b7d21a3367c15ab71
+      consolidated-00048-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00048-of-00272.safetensors
+        checksum: blake3:af9311f6a890702cce8291a7c166ecbaffcaefccfb5100ebfd9d4fa9a0c2073a
+      consolidated-00049-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00049-of-00272.safetensors
+        checksum: blake3:5e148b84230f9434315f875e1b31ff0856ccc8a1acaec7351541487f09fd5417
+      consolidated-00050-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00050-of-00272.safetensors
+        checksum: blake3:04366b68fbda3c404a62b8079a1bd966d29e7ac1769baafade4a490f3a9e7fe8
+      consolidated-00051-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00051-of-00272.safetensors
+        checksum: blake3:b7890f091168d04c3b1958a1dcb7dace3f1a5fd73065fd2103ab89e13ff0cacc
+      consolidated-00052-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00052-of-00272.safetensors
+        checksum: blake3:0c21ebc13a6812eb2c1c1700366ca8aa76f6ebeea000174d6e8143d96dd7cab6
+      consolidated-00053-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00053-of-00272.safetensors
+        checksum: blake3:a4ff2f7b0b55a57a6be2bb41524ea2aae79bfa38c84a9eb0eb40cd15d58c853e
+      consolidated-00054-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00054-of-00272.safetensors
+        checksum: blake3:1de3a8d6c76787983d3e19db3816b44d604f135e563206dc2e3a14e23b982f59
+      consolidated-00055-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00055-of-00272.safetensors
+        checksum: blake3:54be2933bc46c796d3a6e3e2f828052ed4a4013a7db49429b5e2a155c3b93d8e
+      consolidated-00056-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00056-of-00272.safetensors
+        checksum: blake3:1ec498fb34dfb66f7b1d4879b5cd4fb3466773c5c27e494ea492cd1aa4dacf1c
+      consolidated-00057-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00057-of-00272.safetensors
+        checksum: blake3:7a7afd7a24d5eb378fa024147fbc6c088845a2074b64a9a7809fe6a307da396a
+      consolidated-00058-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00058-of-00272.safetensors
+        checksum: blake3:656966cb991272d34ef1c48bf6837526e0e2683eda067ed686e821b97171c33b
+      consolidated-00059-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00059-of-00272.safetensors
+        checksum: blake3:e910c3acac1cd5bbb592e2d88f6b5295002ce2bd67ede25bf3524d81ec94ffb2
+      consolidated-00060-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00060-of-00272.safetensors
+        checksum: blake3:6f20c8aba517d52de3cb89edf3034c4b8bbe1d8af59b46d6aa06cf82c9f6f36e
+      consolidated-00061-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00061-of-00272.safetensors
+        checksum: blake3:46332ebd3b23486049b3a270ecafd891c0e9b5390c50b7e73259402b4f96605f
+      consolidated-00062-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00062-of-00272.safetensors
+        checksum: blake3:58a70b3c75ba68d222420298f290f9685c1c931aca1d2691dfc6b1f38b463288
+      consolidated-00063-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00063-of-00272.safetensors
+        checksum: blake3:60d06ba61beb5f6f39c75fb37258ffde99d906c5bd300825541adc0c5f176ef7
+      consolidated-00064-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00064-of-00272.safetensors
+        checksum: blake3:b94577f60fe26aa03ee4f06789a649cf5794f42106814b3e9f6d7b6ebda8aaa3
+      consolidated-00065-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00065-of-00272.safetensors
+        checksum: blake3:2a86f9aed392ea6fe75737b68799ab40e879bebf22b9bab5d959d5849251bd2e
+      consolidated-00066-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00066-of-00272.safetensors
+        checksum: blake3:e1cfbae989ecddf5f12f6c3da992c8e96efa66b3b5071a18c8622537b546cf70
+      consolidated-00067-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00067-of-00272.safetensors
+        checksum: blake3:2b52761af8e07722a494060fad65b33771501cef263cee8208df1370f1025182
+      consolidated-00068-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00068-of-00272.safetensors
+        checksum: blake3:e336002f0e805e4e419dfcd2cc2fe556f7e5dd35de8bec4c0cb0379d63f658d4
+      consolidated-00069-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00069-of-00272.safetensors
+        checksum: blake3:d752939f15815bfbd34782733588cfdcec0a664ccea475af520d1709e4d65769
+      consolidated-00070-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00070-of-00272.safetensors
+        checksum: blake3:7e5df7ad3df4d3720d7df115c96c4b09ec070d26a65154382e53c81b12c85054
+      consolidated-00071-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00071-of-00272.safetensors
+        checksum: blake3:a5265f7e7ab11ab97d3b206ee55d925b5cfacca40bd60080b3216af531bb37bc
+      consolidated-00072-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00072-of-00272.safetensors
+        checksum: blake3:0b5956c7c532847b426edb828176c03d0a92d9f4ca56b1a6385101d242b5f89e
+      consolidated-00073-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00073-of-00272.safetensors
+        checksum: blake3:d6d1dc297849f90a732f9fc6f23778a9493f89639de435b632308e49c10b8e0c
+      consolidated-00074-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00074-of-00272.safetensors
+        checksum: blake3:e38bee84a89cd34092862055906c2516a93ada6464482b3f1aa35a49b60ee21a
+      consolidated-00075-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00075-of-00272.safetensors
+        checksum: blake3:c0bb19523e962a7233b45d049e0edbe3565a16db134e405ba498a3a69969067e
+      consolidated-00076-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00076-of-00272.safetensors
+        checksum: blake3:2f9e8ab5fa47f991c1471f5061e4f6146f9d4145de8d34ebe75f7e7374ae9e98
+      consolidated-00077-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00077-of-00272.safetensors
+        checksum: blake3:5bb12763f6e712a33dc476edf734bf15c5e111cb34d326afd9d5c0a8bc8dbe36
+      consolidated-00078-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00078-of-00272.safetensors
+        checksum: blake3:8b051b8f3d48bc22ee5401ffb9d68de7ec138bf465f59841d965391f94c39c6f
+      consolidated-00079-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00079-of-00272.safetensors
+        checksum: blake3:4f638ada075b1b2be61c732509f9d78e4dbd3be2dfb290328b71edf2086d7503
+      consolidated-00080-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00080-of-00272.safetensors
+        checksum: blake3:e9f3ed32e2ea4236693034fd39746ec3d7d9fc901ae9b6d131aed9d097f52fe6
+      consolidated-00081-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00081-of-00272.safetensors
+        checksum: blake3:fb2b9618c7006484ce7a84a54d12cb8e2a3ea6984ab3d9da5d5ddc493e47f7f3
+      consolidated-00082-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00082-of-00272.safetensors
+        checksum: blake3:350ab762e5b38bc17fe40e5ca05987f97dc8a7e52c359a3d6319a6c7ffd1b61a
+      consolidated-00083-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00083-of-00272.safetensors
+        checksum: blake3:85b5270e2bb45dc30428b890b60d30d4febcecf358f0881573e6c5495f1286c5
+      consolidated-00084-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00084-of-00272.safetensors
+        checksum: blake3:e5b8a651ad9f10ecad8b44bb5354057aac4b384200eca1ff767f15cd36f42546
+      consolidated-00085-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00085-of-00272.safetensors
+        checksum: blake3:36e2f77219d8a54ac4cc6684a67a7aaa858fcb9f16c2f674cef184cc8b1ecbf2
+      consolidated-00086-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00086-of-00272.safetensors
+        checksum: blake3:3a50fe26b9436f0b80b579a65aea64e5681332171c85ccb0800bd26140165813
+      consolidated-00087-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00087-of-00272.safetensors
+        checksum: blake3:c7e175045615abd6a543ed0751d99d342ccc5bf8924e3d6c8740334ab79e6866
+      consolidated-00088-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00088-of-00272.safetensors
+        checksum: blake3:73f882f326a189fc3291c6fb519e3f65da5417ec2cda7c7ba768faa05f9270ab
+      consolidated-00089-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00089-of-00272.safetensors
+        checksum: blake3:643b6abe8bb533ef90a9fa15fec7becfe11005a37440673e8422de8968ba35db
+      consolidated-00090-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00090-of-00272.safetensors
+        checksum: blake3:73113364e9dee9d481c580863380cf1c82faf77e4a7e26e81d1565ff947c5d70
+      consolidated-00091-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00091-of-00272.safetensors
+        checksum: blake3:a687c029e58a6f3868edf6fb528085786785ad08142e7753db765b2d5c9724f6
+      consolidated-00092-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00092-of-00272.safetensors
+        checksum: blake3:19616cb09bd8cbde2814116c5efbc891c9addacabd4ffdfa499087004cf862c7
+      consolidated-00093-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00093-of-00272.safetensors
+        checksum: blake3:01ed22f7efbf66c626eb354b8f6f95d133a9e4c71dec0ee8ea855ce641a1a116
+      consolidated-00094-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00094-of-00272.safetensors
+        checksum: blake3:d32b0c6b0cd6adf852995482bc7c4eb3f713eff44bb2abee56b0cb7a03aa81fc
+      consolidated-00095-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00095-of-00272.safetensors
+        checksum: blake3:183f6a1ba8dcf5061bd1a64c644b1745ef228e189efef0e1d564d6d0b8622cd6
+      consolidated-00096-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00096-of-00272.safetensors
+        checksum: blake3:3ab66966ccb3a87ad26431c4050b2fd07ee349593ab1e8edceb50050d78c53d8
+      consolidated-00097-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00097-of-00272.safetensors
+        checksum: blake3:26cfa0b944fd828db0998674dd9e64af09f851082534a65b7176eb3c618b0f76
+      consolidated-00098-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00098-of-00272.safetensors
+        checksum: blake3:f7adc1825e50f21c27a97d37b131910c58f162fbaa347ec624d4dc504fdeaf5b
+      consolidated-00099-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00099-of-00272.safetensors
+        checksum: blake3:15c4c07db095801a0bc255fb64c361a9e71fb365c8bef4b3cc7ff86581a3163b
+      consolidated-00100-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00100-of-00272.safetensors
+        checksum: blake3:caac287de3efe5a400dc575b282a3013d2911d0f0e539bb954a8b9ce9ae30de1
+      consolidated-00101-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00101-of-00272.safetensors
+        checksum: blake3:95d6a6258cb2e2c807aba40eab86267512cef87123c96d571f6d685f985c7841
+      consolidated-00102-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00102-of-00272.safetensors
+        checksum: blake3:6c11f1ba832f2209eda5c760edba32f8787f9036f8ac9d0d81f5b7ab2bb72f5a
+      consolidated-00103-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00103-of-00272.safetensors
+        checksum: blake3:e8e0e24fceb41971453afb1f56fc911c436c5a9e154c57c635c9132f9e0a6026
+      consolidated-00104-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00104-of-00272.safetensors
+        checksum: blake3:4862b02755de0edb3d754ca7493e918310fc09500ac70d8dc62005f83c838ab2
+      consolidated-00105-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00105-of-00272.safetensors
+        checksum: blake3:70524c0431fc95a7ead36e1b8964c3821c7bc439926b10e0539f83145e423e20
+      consolidated-00106-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00106-of-00272.safetensors
+        checksum: blake3:76f6218a8b1266c16dc322d24c3c8fbd24a8c2e5f8145b0122ab0c51b10a75c5
+      consolidated-00107-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00107-of-00272.safetensors
+        checksum: blake3:15f60782d0355616093811a968d9bc65d47c35bbc893cc05b7f6335e9d8ba493
+      consolidated-00108-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00108-of-00272.safetensors
+        checksum: blake3:0df78fcbc2429372d76155c4fca8c5a13504042decca01161e291b96b5a757a1
+      consolidated-00109-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00109-of-00272.safetensors
+        checksum: blake3:6545995d07150ef6875da18a6c6a981b87e0af4e8bba932c9a8f06edd1928427
+      consolidated-00110-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00110-of-00272.safetensors
+        checksum: blake3:e7cc8d77c63a2201d60ef8e3f337ac3888651a9daddd8204a8923d0b44e7e942
+      consolidated-00111-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00111-of-00272.safetensors
+        checksum: blake3:a9ef977507cd1c84664ab20d35e0a5772ba179171b3b8c7db5b0885d1a77830b
+      consolidated-00112-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00112-of-00272.safetensors
+        checksum: blake3:ddf34a358985f35276ae946b1884e3b193408f564c2ffb6ffd89f4678cb5ad00
+      consolidated-00113-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00113-of-00272.safetensors
+        checksum: blake3:219d443148bf2f1a722de944ed7ce68c152f58d659eb0eac52b828a4788a10ca
+      consolidated-00114-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00114-of-00272.safetensors
+        checksum: blake3:957953c74dd7cd060d5bd6a27da576333399ef76f3e2419f2b4fbf5ccd14c86b
+      consolidated-00115-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00115-of-00272.safetensors
+        checksum: blake3:84415765d7038ea7bb303ab76321cfbb156c07149de89e44ad51619cdc0ee743
+      consolidated-00116-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00116-of-00272.safetensors
+        checksum: blake3:9c12e6180eea9c9028e76973bd436b1ef5c63ec9264b029e0c38e48790651bd7
+      consolidated-00117-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00117-of-00272.safetensors
+        checksum: blake3:2b7793fb827758889897565806688c234bd2687008c636bd639aa5da79e7f214
+      consolidated-00118-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00118-of-00272.safetensors
+        checksum: blake3:cccf55a87596e389b4fb250d83cb0af8f64771e43f9b2259445765d683d52cbd
+      consolidated-00119-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00119-of-00272.safetensors
+        checksum: blake3:0e7183fa44d8b79d1cac541b60cfda17f7e7160ba1ca1d13a304d5e9f6c03f26
+      consolidated-00120-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00120-of-00272.safetensors
+        checksum: blake3:98d392fcba864d23f5ab8095bd7e4d9a9456fe1633551071d0761d7c69aae405
+      consolidated-00121-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00121-of-00272.safetensors
+        checksum: blake3:e3eb382d4d580430cbcf2cc06471f044dbc3acf4d57b8370f8baa0850eb55814
+      consolidated-00122-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00122-of-00272.safetensors
+        checksum: blake3:10c96f84447f580fa3ab80995a5ce4c3ee63e25e7b03ab49cf7394da4461a20b
+      consolidated-00123-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00123-of-00272.safetensors
+        checksum: blake3:c95c214fe17b338d5d8a3d274bf0714ee25142f5f4101457c94a858f87eee6e7
+      consolidated-00124-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00124-of-00272.safetensors
+        checksum: blake3:40df04028cfee0bb98f5fd396709b4612ca06e45f66189b99f6131a8a0ab1693
+      consolidated-00125-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00125-of-00272.safetensors
+        checksum: blake3:66b34c03fcd533d85a2345eabe8c936f27e7c5141b83e6e65677f8e0af99b3ce
+      consolidated-00126-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00126-of-00272.safetensors
+        checksum: blake3:e17edcc18998a99023aeae2cb68e4fbbbf0ace77ebfd7548ea1c7f27133797ca
+      consolidated-00127-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00127-of-00272.safetensors
+        checksum: blake3:65b7b8b9e3bd01bf2fecf2eb3cc1de461fc7a087287cdbb3a1775f796c0bc1e0
+      consolidated-00128-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00128-of-00272.safetensors
+        checksum: blake3:65867998c78d39a07112d923be313c57f693bcf5efeb1dbf55196a2b33bc7fd3
+      consolidated-00129-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00129-of-00272.safetensors
+        checksum: blake3:d86fe3946e47a09561ee53c8adfcc9f92be59f48fefca1bf85cb7c4d2139f3bb
+      consolidated-00130-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00130-of-00272.safetensors
+        checksum: blake3:e25580f8903c392f782a616d07c35b371b9a38e5356eb2352b6ab7494814faac
+      consolidated-00131-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00131-of-00272.safetensors
+        checksum: blake3:f1de1960bcd07b06341527a35334ccd2d1c252ed0b48b38a8d2ff5fefeed8505
+      consolidated-00132-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00132-of-00272.safetensors
+        checksum: blake3:8f9d95ca3754c6856198d45ef2ec0e1690df650e0a6e4c004a17c0b94519e75c
+      consolidated-00133-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00133-of-00272.safetensors
+        checksum: blake3:d8dc97a9197391be8c75e6fdcb39512544296849340ab05e0a9bcd8a9acc52ae
+      consolidated-00134-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00134-of-00272.safetensors
+        checksum: blake3:5a3eae8db1d08a9afd6ce322ea5cbbb48f1f30d35f85be9db518928f15603453
+      consolidated-00135-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00135-of-00272.safetensors
+        checksum: blake3:bbb80fa6fcdb57c1886dc201d3608ed12d682541cac2e038294103a9231d77a2
+      consolidated-00136-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00136-of-00272.safetensors
+        checksum: blake3:c49ac3283d7cec70030b999f02e22d8fa357b679bd70bbb64ab7aff17f549546
+      consolidated-00137-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00137-of-00272.safetensors
+        checksum: blake3:8a32e22c5844651d372d9bd173ed6ffc524e1f412bf39b1d66c563a46eb28639
+      consolidated-00138-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00138-of-00272.safetensors
+        checksum: blake3:74d650ed93fd9df793330add0dc623de93522929783d5be859a8c346d8a70def
+      consolidated-00139-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00139-of-00272.safetensors
+        checksum: blake3:5ff2028d391c3517072435cc9b5bb8ebf4974e2a20834b84d14316b7ff9969e7
+      consolidated-00140-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00140-of-00272.safetensors
+        checksum: blake3:2cdcc1c8bf181f7b605e37197ecba84f9c790150434814fbc7ac87d638536b35
+      consolidated-00141-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00141-of-00272.safetensors
+        checksum: blake3:7da52dbc87412c79690a772e1e62b87fc5b48c961ee62a30076376e7dc2562de
+      consolidated-00142-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00142-of-00272.safetensors
+        checksum: blake3:e3a850779ccd94cd9c227754bafbbe3744dafb8733bfd915ae90c37df6efa1be
+      consolidated-00143-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00143-of-00272.safetensors
+        checksum: blake3:ccefb9066d03137dffffbf0e6bb68dc9e7b7c25d3fa08a272e36b75f133811a0
+      consolidated-00144-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00144-of-00272.safetensors
+        checksum: blake3:94fad76cf825c8e62f29edeb4f565ab0f799ed5b3fbe7fbc4f426f18590354a0
+      consolidated-00145-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00145-of-00272.safetensors
+        checksum: blake3:25ac760591fffbe248d8547a1eae46f3521cd0e0db8c441cc3e9632e9c625935
+      consolidated-00146-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00146-of-00272.safetensors
+        checksum: blake3:dcb8c053389438d47a58d007aafd44037f09332a7c531ccc5b83fe0a3fe83826
+      consolidated-00147-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00147-of-00272.safetensors
+        checksum: blake3:1cc0c85d98cffbc704d3156023a65ce1d76ca7b3e1ac8e9aaf511aafd1ce2daf
+      consolidated-00148-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00148-of-00272.safetensors
+        checksum: blake3:1c48987fd8de4255b38f45244d486265d358d81171289fa0cb69e9ab043d9b59
+      consolidated-00149-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00149-of-00272.safetensors
+        checksum: blake3:9d77edada61df29d6c49addffd986f9aa0c4d02f0504bc4371b3e00b765c0e8d
+      consolidated-00150-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00150-of-00272.safetensors
+        checksum: blake3:10e50818cbd52ded0805d4da815343b7d082029b903b7eb6c4682b2994443292
+      consolidated-00151-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00151-of-00272.safetensors
+        checksum: blake3:7719879501da2e87db7c4112184927a4b7ba68ae9f80c52868c7b39743f5134c
+      consolidated-00152-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00152-of-00272.safetensors
+        checksum: blake3:8398824c7d07caa5641b19888660c70e7ef0c60490c2630821d2bf45d2c9077e
+      consolidated-00153-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00153-of-00272.safetensors
+        checksum: blake3:71cb665bfa90385191540a3adf1577a427976cd01a667bb29d6a66897b98a179
+      consolidated-00154-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00154-of-00272.safetensors
+        checksum: blake3:7853a970dbb640d75cf31a6a31a2c949748b2a6987b48284b5cf0d534c98232e
+      consolidated-00155-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00155-of-00272.safetensors
+        checksum: blake3:2184fc17e7c2e3ab9d2b11226fb260c5de6e0ed0b3317dff776cd0e03b523b18
+      consolidated-00156-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00156-of-00272.safetensors
+        checksum: blake3:f5592374126f94414624341ccf6238b265f65d971ff31390c2e4c765453149fb
+      consolidated-00157-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00157-of-00272.safetensors
+        checksum: blake3:fb3e708f1748dec5aab8559963ca4c2a5fa833e441be37468005fc896935f7a5
+      consolidated-00158-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00158-of-00272.safetensors
+        checksum: blake3:5aebdba2f783d31ca48db377cbdec293c4d9ffc935e93fe7bbea9bcec656f9e7
+      consolidated-00159-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00159-of-00272.safetensors
+        checksum: blake3:ae0855da072629baba5c746a97d9440b12c87546e9c6c85254444eaf07853564
+      consolidated-00160-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00160-of-00272.safetensors
+        checksum: blake3:961ed17f4465eedda35eacfb75d09203608ac5652234e975f6b7807eaf70f51e
+      consolidated-00161-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00161-of-00272.safetensors
+        checksum: blake3:e4a052f8b6aa69402ce9126da6576f641583dce18c1305230c5fcfb6c37099b2
+      consolidated-00162-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00162-of-00272.safetensors
+        checksum: blake3:c8e4757e771959aa603623abd068bd6b2ffb4eaeb43400e126d39b8144746d8a
+      consolidated-00163-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00163-of-00272.safetensors
+        checksum: blake3:2b16ff984e409d05cd596423ee892259cb4d0dcef4d6d1739d83ed80d905641b
+      consolidated-00164-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00164-of-00272.safetensors
+        checksum: blake3:554630f507fd6cb5596998f2abcc24522d809a3c0cb6b34fed34435765a5ae61
+      consolidated-00165-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00165-of-00272.safetensors
+        checksum: blake3:5141a976dd5c46f2753111c093410634fcb8bc5b2637ffa8643d0f81620ed0d0
+      consolidated-00166-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00166-of-00272.safetensors
+        checksum: blake3:6ff558d430e983a944b7a40e46d88d2d2e6ccbeff22fd1f1b8ffea3eb03153c9
+      consolidated-00167-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00167-of-00272.safetensors
+        checksum: blake3:ad5eeb948ba3fe4a7a7f34c57a0e3d7a0cae87f88601eedc9c40df6851310835
+      consolidated-00168-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00168-of-00272.safetensors
+        checksum: blake3:93b69c0884268b31712f6002828da0096f3ab032de3ff8830a6667cc2d203af6
+      consolidated-00169-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00169-of-00272.safetensors
+        checksum: blake3:267f2f533f3af1f696363c24bf7de9ed5d1cf8d1a785ac438bc754301e3fb307
+      consolidated-00170-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00170-of-00272.safetensors
+        checksum: blake3:f3f5767290736eb53476b11fea0080d53f233630cd010e3f0ba777ddee418980
+      consolidated-00171-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00171-of-00272.safetensors
+        checksum: blake3:943b47dc00435fca34f9549811c84a9bd76d8dd159fc96b3458d9c2493676518
+      consolidated-00172-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00172-of-00272.safetensors
+        checksum: blake3:d95413ab049cb2340fd02e6271252b4f4c63dd7078e00a572227941048368f01
+      consolidated-00173-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00173-of-00272.safetensors
+        checksum: blake3:8c53d629e93856653b3787ae51081fc6eee58f622d1f82047dfa1eb61defdaff
+      consolidated-00174-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00174-of-00272.safetensors
+        checksum: blake3:4c8963247ab0eb8cb69398116e3051afff1b612482ded07a9506b1cf44e6786a
+      consolidated-00175-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00175-of-00272.safetensors
+        checksum: blake3:4c50132d493664928c3b9d6d43dec27c0efac181bc15274bf76127ee1c5fb119
+      consolidated-00176-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00176-of-00272.safetensors
+        checksum: blake3:3192750f9c846ecd167d06bb901afbdff131b035518d27d679e7061c03084146
+      consolidated-00177-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00177-of-00272.safetensors
+        checksum: blake3:358a2f0b42e94710370f62d7d8bbe73160fbc2e3fd38144d8dc6fb0622e7184f
+      consolidated-00178-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00178-of-00272.safetensors
+        checksum: blake3:8fd01e8c79ef57db0c79f02910dd59229333b229bf12004eaaaef84488a6d8fa
+      consolidated-00179-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00179-of-00272.safetensors
+        checksum: blake3:3c7e8aef2b9f19eff35390f53c20be705ae64d2754216eb341eb8b6380a2da05
+      consolidated-00180-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00180-of-00272.safetensors
+        checksum: blake3:b3b4195caa8dfea40f20e910ba4da2ddb26b439d70b10f4ae5ffa4b4556ae316
+      consolidated-00181-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00181-of-00272.safetensors
+        checksum: blake3:14761f3e0d9bc3de6da7c78fbd981d30c345a3c8bcbb34a512e36c2c913d5a5c
+      consolidated-00182-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00182-of-00272.safetensors
+        checksum: blake3:0d3fe7c0e15c19a231b838e23eee0e8a7eab5c757a2eabda06291650e40937d6
+      consolidated-00183-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00183-of-00272.safetensors
+        checksum: blake3:2d2080f4e282a44eedcb74aef5acabda1e91e8b65797fc0c665d5e47800a26c8
+      consolidated-00184-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00184-of-00272.safetensors
+        checksum: blake3:2b90c61257923ed8fd9950025b159cac7d504573a3a3a518ff34f05a616fced1
+      consolidated-00185-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00185-of-00272.safetensors
+        checksum: blake3:e73257af78706939173132c97db54d7a70c7af06a409812755aa680394295261
+      consolidated-00186-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00186-of-00272.safetensors
+        checksum: blake3:6ff7aa02c3150163bf89aa33e3cd1381aaa002bfea1fbff882057079ebb80e3d
+      consolidated-00187-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00187-of-00272.safetensors
+        checksum: blake3:f2111c09b00aa2bc554940fba63f6067783e41afc23b5c4308eda5402df6e2ef
+      consolidated-00188-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00188-of-00272.safetensors
+        checksum: blake3:96f021ba9424cede826b9eb4981bed73fee6574173c99634612c1269be6f717a
+      consolidated-00189-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00189-of-00272.safetensors
+        checksum: blake3:415ab2368a7839665e2e096fd31511effb3905f7d5c10af5ac900937493faaea
+      consolidated-00190-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00190-of-00272.safetensors
+        checksum: blake3:178c266ec6f37a33d246a7d9a2ed127d0b66cfa9dd5860efd20de5fd1f2902c2
+      consolidated-00191-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00191-of-00272.safetensors
+        checksum: blake3:c63c8b668114b415663532bfc5af89c8c41a872df879cb8c8908bc08093cefdd
+      consolidated-00192-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00192-of-00272.safetensors
+        checksum: blake3:defe2b8a73a420f1ccb027c4b841d979b255337e36447502682b46191c4ee874
+      consolidated-00193-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00193-of-00272.safetensors
+        checksum: blake3:02c4b00d1f7ada6d77493737e12f83eedea61f51b7ea4e4527d7f357cd5429c2
+      consolidated-00194-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00194-of-00272.safetensors
+        checksum: blake3:7b2ea18db9a3ade9d8c57c0f6440aad49b81b50b940a1352ae8bfa0a572fc35d
+      consolidated-00195-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00195-of-00272.safetensors
+        checksum: blake3:4818c8b4bdce3e1e170839a4c06d04c67a53d5a07e1e4b4a9cd6576d31c9f4f5
+      consolidated-00196-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00196-of-00272.safetensors
+        checksum: blake3:761809514354967c7571c9f328f23af946ad5ce5fb70b7554e2e4f412b62a9a9
+      consolidated-00197-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00197-of-00272.safetensors
+        checksum: blake3:8d72ded6b2fb43023d30ee0ac42d5dbc143b390c68e2eadb57141d1207950a0b
+      consolidated-00198-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00198-of-00272.safetensors
+        checksum: blake3:ae7bb488532a04c328392a04fcad003a364e8a6087202ac0c0afd6fba0599374
+      consolidated-00199-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00199-of-00272.safetensors
+        checksum: blake3:0a94e39661f8ef1d1ab847f9bbf626985f552f0fdddc1318580dc890daaff12a
+      consolidated-00200-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00200-of-00272.safetensors
+        checksum: blake3:c6245fdf962bc630492dc4d2825b62863fcb4d699b4e6e9aefd96db5f00d94a8
+      consolidated-00201-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00201-of-00272.safetensors
+        checksum: blake3:59fc6a89e404228833c6e1f6e94445ff27e813aae118660abe441b62190dad5d
+      consolidated-00202-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00202-of-00272.safetensors
+        checksum: blake3:f6a23e11ebfcaf624a6d0cb1b055fa3a341683e0f8c3b6293b689ab40d2378b7
+      consolidated-00203-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00203-of-00272.safetensors
+        checksum: blake3:ef9dbd141fd7a8c3e5b52069045f44986da6ce6e47db4b6d23c965c88ecace6f
+      consolidated-00204-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00204-of-00272.safetensors
+        checksum: blake3:8b7c09de107a5033180175d129f983f494fd4abbcffe6439a4cfa4576b53a2f7
+      consolidated-00205-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00205-of-00272.safetensors
+        checksum: blake3:261909f9bfdd47ba2e2b3e43284bb7babd9e6ac32296f444728ee0f0c8d2272c
+      consolidated-00206-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00206-of-00272.safetensors
+        checksum: blake3:431b904fe3084795f686834e469d2aa5c1f9eef7c67aa957c9411f6a7a576223
+      consolidated-00207-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00207-of-00272.safetensors
+        checksum: blake3:d062c804eb1032c4c18aaf507e886d9b7f89b783e7e3386e46088aff484c2ca7
+      consolidated-00208-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00208-of-00272.safetensors
+        checksum: blake3:29792a88e484f993f257cf97b26cee5114997ce643478baf87991403c6aec2a9
+      consolidated-00209-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00209-of-00272.safetensors
+        checksum: blake3:4dc5c1c1a5ba776d97cc8d99cfe4f3f46d50ed03a0d00b5d4a58a753105cb85b
+      consolidated-00210-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00210-of-00272.safetensors
+        checksum: blake3:a55cdb99306081b12eb88d3be48c9f7848397563c164361aa4a13d359ddff654
+      consolidated-00211-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00211-of-00272.safetensors
+        checksum: blake3:c6ca1026efea86ae6b0e8772ced7a84abe7b537ca7e10b11581aa20ec553d5af
+      consolidated-00212-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00212-of-00272.safetensors
+        checksum: blake3:bbd219f33a8962edcffe7df30cd867bbea7b8fac9cca3caa6696f8c9948d79b5
+      consolidated-00213-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00213-of-00272.safetensors
+        checksum: blake3:0f7cac7b7ac4ff46ace13c56f9eef6a64aa2cf99c230852cfa78aeba8db29700
+      consolidated-00214-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00214-of-00272.safetensors
+        checksum: blake3:733772006d9b762fdb946c2de87ceed0a2c9d28d7641bb45d52b79b0f19d98a7
+      consolidated-00215-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00215-of-00272.safetensors
+        checksum: blake3:6aba6d68011e1838d6d87bd0ffde5b3c6bc13bf5858cb6c0bfe2c560148802c1
+      consolidated-00216-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00216-of-00272.safetensors
+        checksum: blake3:c636a5215cc9b0f1a1e97d6ef5770d5572123ab6a0c871f0a55214dfa54f968a
+      consolidated-00217-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00217-of-00272.safetensors
+        checksum: blake3:62c4c2f105359185f19d90347d80bec9ee25a810a42aaa7b39b3f8d299e10471
+      consolidated-00218-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00218-of-00272.safetensors
+        checksum: blake3:fa88cce8b0e6a532f5f6f3a1fd2a8bbb58fd7e9db5cca676b264ce5d16ecd5b9
+      consolidated-00219-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00219-of-00272.safetensors
+        checksum: blake3:f6a573cdbefb0b5c735085c06a0122b319798caa5f2c72a649f1b8095e55842e
+      consolidated-00220-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00220-of-00272.safetensors
+        checksum: blake3:bc74cf6e5c6b6e9d235b4525e9cb9d16986c461cbe4631dab00e6c9545211cfd
+      consolidated-00221-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00221-of-00272.safetensors
+        checksum: blake3:27177b1688cd30a0eb3c26b427792bbb6a8066a631e8181f351e96c1fd689f44
+      consolidated-00222-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00222-of-00272.safetensors
+        checksum: blake3:fddba62ad372ded5879bcba56be972e3ccc168a548d15911ae1ae17b3e247029
+      consolidated-00223-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00223-of-00272.safetensors
+        checksum: blake3:66ec8d196cb786dd2dc53d85e3d917522945d94fdc8dfc0f81e2f4ffbed1f88b
+      consolidated-00224-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00224-of-00272.safetensors
+        checksum: blake3:45ed68ce5b066456e672ac58a1c361f5ebb43ce829072cf17731d252bbb2ec8e
+      consolidated-00225-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00225-of-00272.safetensors
+        checksum: blake3:ab451b40be6d9434760157751659b0f75696c08649e72b40b2e1e4fd1aa27668
+      consolidated-00226-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00226-of-00272.safetensors
+        checksum: blake3:3d1cf564fb37e03be494f4d1cb749302670c2c0f6bcd3ca70d13fa34866ff217
+      consolidated-00227-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00227-of-00272.safetensors
+        checksum: blake3:070f865ef409bd25d9883f465852ab85d80bb4fd80948b5b11a3c8d1e0c28dc7
+      consolidated-00228-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00228-of-00272.safetensors
+        checksum: blake3:657b8464475504f0ec9aba9c2103c32e63cfc4b8e515aab16ecfb2a3f86746d9
+      consolidated-00229-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00229-of-00272.safetensors
+        checksum: blake3:d89c3a625f4f02197cebc9ee07cda796ad7a966907449f0bfea0387969da65fb
+      consolidated-00230-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00230-of-00272.safetensors
+        checksum: blake3:03eea06a6c8ebd5ea5611df0a1eaed1ef2e89f80f72cb2df225ee3932b05cdee
+      consolidated-00231-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00231-of-00272.safetensors
+        checksum: blake3:d959974e939a60aa2bf5d14b902b11e18469e77585f6044ecbae4fa8032acda1
+      consolidated-00232-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00232-of-00272.safetensors
+        checksum: blake3:7269c563c95c00854c15afbc51898b439197f16c825541eb18cfd101be3233f0
+      consolidated-00233-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00233-of-00272.safetensors
+        checksum: blake3:28d73ab29a3af54ce991f446f63faef62f4d288a6c390ff42c0590bc14a97dc4
+      consolidated-00234-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00234-of-00272.safetensors
+        checksum: blake3:cdfc9545148671d0c7f5e9bae80bd20861ed353ccdd8fe591fb818028394166b
+      consolidated-00235-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00235-of-00272.safetensors
+        checksum: blake3:875ff57652704c66c27f287b5ebbe89ec08e82ea60b7bdedcdb7325679d8daba
+      consolidated-00236-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00236-of-00272.safetensors
+        checksum: blake3:115cf091caa245b93e87b304c48b1e42332ace80484af0b313e13d6bfbadcb0e
+      consolidated-00237-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00237-of-00272.safetensors
+        checksum: blake3:1e92f770f6cb54fd331018b3fb88f3fe7acda3bce46fcc36be91e9b69aa338c7
+      consolidated-00238-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00238-of-00272.safetensors
+        checksum: blake3:a12732c61b3f5912a8a886aa3de81f8c8a3e4310f39f586c2ce048bf9842cc71
+      consolidated-00239-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00239-of-00272.safetensors
+        checksum: blake3:8a480007954b711bdbb455cc6b4507cc3340bf3fa2d754d586341323c9f34dff
+      consolidated-00240-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00240-of-00272.safetensors
+        checksum: blake3:0b69c8f26bb5e505fe29e8acfc8adabf64bf2f1527e38941d4501aa2da4dbd5c
+      consolidated-00241-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00241-of-00272.safetensors
+        checksum: blake3:a2e1fcf659fb5a399b1729d5cbd41d421922055356e9dea23ad66964128893db
+      consolidated-00242-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00242-of-00272.safetensors
+        checksum: blake3:843f40c1ed5f8b405cd23bc85a9b2986a7238cb6229f1e94132368dd7361c40c
+      consolidated-00243-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00243-of-00272.safetensors
+        checksum: blake3:6ed8b5997ea415e150042af5d592a8c2f74efeb911b26829f3bfc36c305e5b61
+      consolidated-00244-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00244-of-00272.safetensors
+        checksum: blake3:93b6a80d0d7ebbd5d364e0833e4984ddf5ad7d735ad0bba8e52da563859030ce
+      consolidated-00245-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00245-of-00272.safetensors
+        checksum: blake3:d2eb2055d9c683eca6765d857cba93cb11283193d0430e95c9fe168824fd5fa0
+      consolidated-00246-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00246-of-00272.safetensors
+        checksum: blake3:9e513837ba913e8731d34e4ef1c35486b5d03c3ea4786eb301094b04574c5bf4
+      consolidated-00247-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00247-of-00272.safetensors
+        checksum: blake3:f2a1c7a0a1763cd4707d8fb246bc98d4fcf8f7affa2a757423e7bd7d82e72d69
+      consolidated-00248-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00248-of-00272.safetensors
+        checksum: blake3:43a3ee72755d5234fff25899216eea28c215c2da878d0347a10e55c55450701a
+      consolidated-00249-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00249-of-00272.safetensors
+        checksum: blake3:4a45587402d86a04b631631cc746cf6a4fa23a464941886461ee8756996beaf1
+      consolidated-00250-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00250-of-00272.safetensors
+        checksum: blake3:1b6b989728db4436870ded659f21aa0da35bf7cbb5f14534ffaae7ed12550e95
+      consolidated-00251-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00251-of-00272.safetensors
+        checksum: blake3:ba4dce0a30a9e8d750df826fc3aef2fcf1ded385a6de20fb59cd8663490964f3
+      consolidated-00252-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00252-of-00272.safetensors
+        checksum: blake3:9a5c81d936e137d664bf9e475bf37d02255025165c503346997e005bce1b6935
+      consolidated-00253-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00253-of-00272.safetensors
+        checksum: blake3:a2f626dba3bca423e48993d2bd6c0c7ce61958e43465e64108ed3850f591c24a
+      consolidated-00254-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00254-of-00272.safetensors
+        checksum: blake3:81e266004cc8a232efc7ee386f5dc35d5fe7d4b0c45ce1b97dbf51cc227f914e
+      consolidated-00255-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00255-of-00272.safetensors
+        checksum: blake3:8275275e8a231632ceba3ca9ac35a26c28f81d12eaabff120f68fe0b00726561
+      consolidated-00256-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00256-of-00272.safetensors
+        checksum: blake3:98cca944d5ada8071f23977acbb2d687c4efb3289c83c08de7c578c08d52d300
+      consolidated-00257-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00257-of-00272.safetensors
+        checksum: blake3:0eebac9ddd6c11ec27c088af6f680e54147e42e5d8b6f8df4d398ee041ddb104
+      consolidated-00258-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00258-of-00272.safetensors
+        checksum: blake3:4c9d7634cc81bd46f15e7160d908daac8a756f564dad2ec7dd0cc267d8b478fa
+      consolidated-00259-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00259-of-00272.safetensors
+        checksum: blake3:c919766d52a1856cc0dd7057b4644e063e9040ffd9a99643844ca499246e4008
+      consolidated-00260-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00260-of-00272.safetensors
+        checksum: blake3:1d73660bd44b084fe4de7761b0e717c8589ec17de7cb5d8348181d7da747beb1
+      consolidated-00261-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00261-of-00272.safetensors
+        checksum: blake3:cb8e73db537289342b865eee71afb4455709a5e240af336f4d3ffa930e227f6d
+      consolidated-00262-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00262-of-00272.safetensors
+        checksum: blake3:2bfb0a26d5fdc9af03c8eb686c21238b65364f2869279c205b9e2ac86255f48c
+      consolidated-00263-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00263-of-00272.safetensors
+        checksum: blake3:9f65444c40edbcc8dca08b9998cfb2870828d4e55a5a4778d5a4153e2a5f99db
+      consolidated-00264-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00264-of-00272.safetensors
+        checksum: blake3:c61b156edae81c781fc41c10dcf6948d0f582c6b83ffb93f016bf52ebabff891
+      consolidated-00265-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00265-of-00272.safetensors
+        checksum: blake3:dcd1ae1b187f15781d51a6500c1d69735c24a3ab484d4e570f4c332ac97cd53c
+      consolidated-00266-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00266-of-00272.safetensors
+        checksum: blake3:0d90436657a8e9b54ef560584498bcf2e749db96b2870c6e2239da25417147b8
+      consolidated-00267-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00267-of-00272.safetensors
+        checksum: blake3:a7c1d10606088b5755159949dd33d1a98c93fbed4ea5e8e875f30d30fe666f59
+      consolidated-00268-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00268-of-00272.safetensors
+        checksum: blake3:61cb8cd0d090ac6a739632a7bff5eee806d44f6997fa968dbd9b9d43513d7a22
+      consolidated-00269-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00269-of-00272.safetensors
+        checksum: blake3:6cc851d625059ed34944c054af18183df2aa345971cef2ec2ce31e3b09386879
+      consolidated-00270-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00270-of-00272.safetensors
+        checksum: blake3:52184509b63d6a1702cdec1c302cf3f6e57abf043c082bdd8f6d0fb9663ef76b
+      consolidated-00271-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00271-of-00272.safetensors
+        checksum: blake3:e5b29207215f39f134c5ca973cb3dfcf86ff50781586036c3c1d7c4360826a11
+      consolidated-00272-of-00272.safetensors:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated-00272-of-00272.safetensors
+        checksum: blake3:582320725d8ca100af691b670a5aa7393d622b68e3196c9c3a02163d9a23fbb5
+      consolidated.safetensors.index.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=consolidated.safetensors.index.json
+        checksum: blake3:a717fc5a3c883840ccbdb0b6c32869d0924c1fc7ba4f5cee0f91f330d8d1abe3
+      params.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=params.json
+        checksum: blake3:fbdafdb9696d3933b1be585fd1d9fad951e22905974d14b0c929cdab886132f3
+      processor_config.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=processor_config.json
+        checksum: blake3:5138ad348e918de40b89ce1ab5d18cf9b51580e4de8ba6325b89516c8b5a114b
+      special_tokens_map.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=special_tokens_map.json
+        checksum: blake3:8ee47b208a5e8ca5727c21e1f57329d045f46068b862ef9108379ca2e7331b68
+      tekken.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=tekken.json
+        checksum: blake3:41d907c49880e5557a75fe0499229a7606b2633454e4289d324855738381ff81
+      tokenizer.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=tokenizer.json
+        checksum: blake3:3d69466e68ef8a541dba19ef2761a1c2e9eb504fa9517607d48984daedbe5887
+      tokenizer_config.json:
+        uri: ngc://nim/mistralai/mistral-large-3-675b-instruct-2512:fp8-v4?file=tokenizer_config.json
+        checksum: blake3:d591a042515732cb29798138f7efceab7efe7dd747b0d1d87756ce3e2189e8e9

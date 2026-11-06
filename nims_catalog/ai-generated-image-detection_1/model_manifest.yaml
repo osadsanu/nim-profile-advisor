@@ -1,0 +1,98 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: deepfake-image-detection
+release: 1.0.0
+profiles:
+- id: 185fbd9b7db53b83e1ae39a4d79a422f18affc9ec6c87b6b688cf18f5c12bb51
+  tags:
+    model_type: tensorrt
+    gpu: l40
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "26b5:10de"
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:0eb76347e5f652da9bff9f9a929acd346bfb7723283b53d7a4ebef069cdf99ea
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-l40x1-fp32.1.0.0?file=metadata.json
+      model_10.5.0.plan:
+        checksum: blake3:f572ca2b92f07c027dac967949b5d7a7e7e791972993bc36486cb2a60d74f578
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-l40x1-fp32.1.0.0?file=model_10.5.0.plan
+      preprocessor/preprocessor_config.json:
+        checksum: blake3:bb7381009c6a33196cb8b88394186f91037bf696b431d4d2f6b8ed7895de5c96
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-l40x1-fp32.1.0.0?file=preprocessor/preprocessor_config.json
+- id: 92dd744c0c7a13123e133a4db910572150d5c99e38d43af146840cd12c65e6fc
+  tags:
+    model_type: tensorrt
+    gpu: a10g
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "2237:10de"
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:511f5d531bb0ad83ed4e13f11f4bd3fad61704eb07d0fb9b352d3f29bc5d5841
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=metadata.json
+      model_10.5.0.plan:
+        checksum: blake3:e39977659cea8e3e6e81006d19a531b5274030333b20089e5f9737c59daa7b71
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=model_10.5.0.plan
+      preprocessor/preprocessor_config.json:
+        checksum: blake3:bb7381009c6a33196cb8b88394186f91037bf696b431d4d2f6b8ed7895de5c96
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a10gx1-fp32.1.0.0?file=preprocessor/preprocessor_config.json
+- id: 999d2a67b77bfc7d7350fb357dce68a93ff35859b8934b407b78fee4c4cbb8c4
+  tags:
+    model_type: tensorrt
+    gpu: h100
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "2330:10de"
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:86f76b7f9b86b73ab18c596f90f17cc36948b32ac8264509f2c1da28e3aa62e2
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-h100x1-fp32.1.0.0?file=metadata.json
+      model_10.5.0.plan:
+        checksum: blake3:48cc69710620908d994866a9cd64fa45f0c03a4c780fe232c55ef8703860e77b
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-h100x1-fp32.1.0.0?file=model_10.5.0.plan
+      preprocessor/preprocessor_config.json:
+        checksum: blake3:bb7381009c6a33196cb8b88394186f91037bf696b431d4d2f6b8ed7895de5c96
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-h100x1-fp32.1.0.0?file=preprocessor/preprocessor_config.json
+- id: c1ae702a62775c1a79bc7f4b3a3feb9efb333452c9cb09d6483e31c66559e3f5
+  tags:
+    model_type: tensorrt
+    gpu: a100
+    number_of_gpus: '1'
+    precision: fp32
+    profile: latency
+    gpu_device: "20b2:10de"
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:c93d961efc84c0adce32c027d48dee8a54ace5502432c89ec308ae4db461bac0
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a100x1-fp32.1.0.0?file=metadata.json
+      model_10.5.0.plan:
+        checksum: blake3:707e676619e6ba48817ee75d694c8574602b4d14438777ade9d0b28ca424e507
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a100x1-fp32.1.0.0?file=model_10.5.0.plan
+      preprocessor/preprocessor_config.json:
+        checksum: blake3:bb7381009c6a33196cb8b88394186f91037bf696b431d4d2f6b8ed7895de5c96
+        uri: ngc://0621562251930352/ai-generated-image-detection:10.5.0-a100x1-fp32.1.0.0?file=preprocessor/preprocessor_config.json
+- id: 523658e9ea1d0d50ea13b6c8d295bcaf0d88596f3fbab27a921c40c22a7985f7
+  tags:
+    model_type: onnx
+    gpu: generic
+    number_of_gpus: '1'
+    precision: fp32
+  workspace:
+    files:
+      metadata.json:
+        checksum: blake3:4b6249c7399b3bd5d86b9983301ab9a39ead4b8e61203ae9368dff796ed23692
+        uri: ngc://0621562251930352/ai-generated-image-detection:onnx-generic-fp32.1.0.0?file=metadata.json
+      model.onnx:
+        checksum: blake3:444e87a9b8fdf0b46e0f60f49238d0ee45ca7d8ff8a5aed42599a90111c7a8c8
+        uri: ngc://0621562251930352/ai-generated-image-detection:onnx-generic-fp32.1.0.0?file=model.onnx
+      preprocessor/preprocessor_config.json:
+        checksum: blake3:bb7381009c6a33196cb8b88394186f91037bf696b431d4d2f6b8ed7895de5c96
+        uri: ngc://0621562251930352/ai-generated-image-detection:onnx-generic-fp32.1.0.0?file=preprocessor/preprocessor_config.json

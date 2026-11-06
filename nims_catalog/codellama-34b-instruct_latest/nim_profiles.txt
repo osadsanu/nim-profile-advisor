@@ -1,0 +1,531 @@
+0c8c0df9858920885a9f98a85e6c2c0a7a71680b8aab5f3a1270f1df452d5986:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-h100x2-fp8-throughput.1.1.2.17756893
+
+0e85ec2fb2f9ecf66f598e92f6720dc543f9075d2d706b1b16d66554f205ca9f:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-a100x4-fp16-latency.1.1.2.17756893
+
+17c8c98848514fdcbe150e18f73b8ec49705f5d9f428d203026826d473dca80a:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-a100x2-fp16-throughput.1.1.2.17756893
+
+2eb6f3a574c2a3ec1b11cc807b1b84fb93d308d10146987d2a12f1b01c73f92f:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-a10gx8-fp16-latency.1.1.2.17756893
+
+4807b4642e4f2522556b3f8b1592d57ef2e07c66c9c559fe4cb8fb6a6587b18d:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-l40sx4-fp16-throughput.1.1.2.17756893
+
+534a23d66ad6de6b77aaade175f77c9c015bbfd905a87c1b192c6935c6254f80:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00007.safetensors'
+            - !name 'model-00002-of-00007.safetensors'
+            - !name 'model-00003-of-00007.safetensors'
+            - !name 'model-00004-of-00007.safetensors'
+            - !name 'model-00005-of-00007.safetensors'
+            - !name 'model-00006-of-00007.safetensors'
+            - !name 'model-00007-of-00007.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+
+5afec56e02e721b206ae23dbcc0145df753ee038a601730fd4a03419a9e5850a:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-a10gx4-fp16-latency.1.1.2.17756893
+
+8553cb69660ffc9a247d6596a02f501bc4a5778ee06da9447a51e6d2e82b88c9:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00007.safetensors'
+            - !name 'model-00002-of-00007.safetensors'
+            - !name 'model-00003-of-00007.safetensors'
+            - !name 'model-00004-of-00007.safetensors'
+            - !name 'model-00005-of-00007.safetensors'
+            - !name 'model-00006-of-00007.safetensors'
+            - !name 'model-00007-of-00007.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+
+8a71dbdd68e12a62e6c4c6557e14947b9dfff87aaca2ccbafaf6711b1bc5ec89:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00007.safetensors'
+            - !name 'model-00002-of-00007.safetensors'
+            - !name 'model-00003-of-00007.safetensors'
+            - !name 'model-00004-of-00007.safetensors'
+            - !name 'model-00005-of-00007.safetensors'
+            - !name 'model-00006-of-00007.safetensors'
+            - !name 'model-00007-of-00007.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+
+908edc407478858655a07923f5332211e96033fc8bf37a4fe6deebba0d5d96e3:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00007.safetensors'
+            - !name 'model-00002-of-00007.safetensors'
+            - !name 'model-00003-of-00007.safetensors'
+            - !name 'model-00004-of-00007.safetensors'
+            - !name 'model-00005-of-00007.safetensors'
+            - !name 'model-00006-of-00007.safetensors'
+            - !name 'model-00007-of-00007.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+
+a3394455847981edd933605660ff53dc798d49a61d4c6cd96bbb9b363da2d20e:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-h100x4-fp8-latency.1.1.2.17756893
+
+a94d14d00ec4ef8b725018b77a2a6c355482dab3c29ac8dd22d885f6286e89a6:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-l40sx4-fp8-throughput.1.1.2.17756893
+
+e0e9b7f0d88e5d0d60d072144aae1a5c2819ad444b50641608b085bb0416572d:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-h100x2-fp16-throughput.1.1.2.17756893
+
+feaa7ec2ac190107a2153db98c2ee489fe4c798d3c12e021e7d41a680099f1fd:
+  container_url: nvcr.io/nim/meta/codellama-34b-instruct:1.2.2
+  model: codellama/codellama-34b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:hf-d4c1c47
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-34b-instruct:0.11.1+14957bf8-h100x4-fp16-latency.1.1.2.17756893

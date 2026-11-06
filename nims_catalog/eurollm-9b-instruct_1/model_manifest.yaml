@@ -1,0 +1,296 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: eurollm-9b-instruct
+release: 1.8.5
+profiles:
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=README.md
+        checksum: blake3:e0170c451685fcf81c84817e604f0b934af7fa9c95909d778c577fa73ebd5972
+      checksums.blake3:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:f1066129c43f2c945882348a2f08049d39737bdf48f7db3f508a26e239241eb7
+      config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=config.json
+        checksum: blake3:e641b4b7130f2ae933e0fa977230cb5b4fcda4452d84e080c99f9de51ba2db9b
+      generation_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=generation_config.json
+        checksum: blake3:4512bfb4eabffd9cc7f125b869ad0a91ee3237cc8e37956597757f7f2fe3c665
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:cfcf33c4a0dab603c7740de6e1ffbc8d7f1e03fb9a5d246c1b53e8cd9074ece9
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:8d20584be9ff6ed339cc5799ac2894eed86707e69a1d7c6165687cf11b1cec00
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:7ef51113baa29c9d7b269d819a4cca4f16c203e8bda94c776f2ad8fc1d159521
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:b94437ae637c308b132c0a95b2a24827f064308c2f58cc1f9f95a437304e8538
+      model.safetensors.index.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:bbc00d568dfb649732b562c56ee248d20324bba242cc6ae0cd03475e65199736
+      special_tokens_map.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:b9e3cf796b0c3e5986768eeebb4b695d7c55bd8d7c6ac67f2af3519fee29595e
+      tokenizer.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:70d47b64f2137f38a1aeae97d177694e0e6354ff73e9619ebffe8bb4df65084e
+      tokenizer.model:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer.model
+        checksum: blake3:643d90f9a70fdebc92a1676945c8849977f94208a83570e0816bd04267e1cea5
+      tokenizer_config.json:
+        uri: ngc://nim/utter-project/eurollm-9b-instruct:hf-f7ae2bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:8faf9ade8fdc54abe1fae795499a5d1828cbb55c8f10d2c533393110ae072cbb

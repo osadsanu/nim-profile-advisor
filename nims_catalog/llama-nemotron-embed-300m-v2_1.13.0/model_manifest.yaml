@@ -1,0 +1,441 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/llama-nemotron-embed-300m-v2
+release: 1.13.0
+profiles:
+- id: 2e1ac3d2b2e881b0c86959c09a6ecca58947ac174745f2113203e539ed1310d8
+  tags:
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp16-9obtwtbyqw?file=checksums.blake3
+        checksum: blake3:8ab8631fbd1a61a765f6032685e1eed5e07d2202926d43f017bdd67de94623ed
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp16-9obtwtbyqw?file=memory_footprint.json
+        checksum: blake3:0f172496640dbb8f3df915919cebd6ebe63685c4fec06d51c6750243c16f5296
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp16-9obtwtbyqw?file=metadata.json
+        checksum: blake3:1503bf6410ec5b86e58ea14bea2a8eaf0c63a967e6ab0d339f4611cb8886c91f
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp16-9obtwtbyqw?file=model.plan
+        checksum: blake3:8db6b627f0dd14597b60d187df33a130e2f3b098b0ad269df84f5a9b02ac15cf
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: 559383c085ac4149960e64c80cb9d094ede117c7e8ac753da2d1266b2231261c
+  tags:
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp16-81y02j4uow?file=checksums.blake3
+        checksum: blake3:cf0c66c943c091ce783336b311086c61e1dc6c015e2ab5a40195fb53b4ac6a96
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp16-81y02j4uow?file=memory_footprint.json
+        checksum: blake3:fc658a31c977fd82fd49d2c0db46a80edecbcc3b6ea886fbbb389c194e3d816a
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp16-81y02j4uow?file=metadata.json
+        checksum: blake3:d38ac103d23d04b8821924f988c6235a605de0d16230dda2e58b26f277370ac2
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp16-81y02j4uow?file=model.plan
+        checksum: blake3:33f2e1bfab49650d3b0093dbbb387849f92bb12e0a986dccc4417ba7987732ab
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: 5771e47a255ecced1575f31390662a85ec5d2fea250c64d1203c62daf96f4f57
+  tags:
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp16-rkitigzbtg?file=checksums.blake3
+        checksum: blake3:dd7670bbe4e9140fbfed90ced3ac57eb7dcab9ae6e7e4a8cc523c95a25c91929
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp16-rkitigzbtg?file=memory_footprint.json
+        checksum: blake3:36330cd0d6677d2db50096eda973be5968b27a717fda40ee66fd9e9a88e70b7a
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp16-rkitigzbtg?file=metadata.json
+        checksum: blake3:585cc965030e313284fef96876f6f521a3057d8c27076b78aebfd47bafa8083a
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp16-rkitigzbtg?file=model.plan
+        checksum: blake3:7a237cfc931b5444a6ba2f342adaf740df1d510abad0f563df78b5cc367dc040
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: 89c52cf8ba04f1d655bd8cac8d8ecd89efc986df9814198a332c11744532d276
+  tags:
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp8-6dlbvxvxuq?file=checksums.blake3
+        checksum: blake3:017b68fcb5be17cee286c35e32ac994794117a36a9a840ad94d0e11674191b6f
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp8-6dlbvxvxuq?file=memory_footprint.json
+        checksum: blake3:15af8f6a399f2e5feeff96f3e4bb5a42821156d78611e64d3dfd46539ca092df
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp8-6dlbvxvxuq?file=metadata.json
+        checksum: blake3:128077b3c99d78051da0986432603869b1244cb1bff52b8593cb8adb076e28c2
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:b200x1-trt-fp8-6dlbvxvxuq?file=model.plan
+        checksum: blake3:cff855f8030cb0800f8dd0f7f1a23d0092b74ba3e7b5aa4de88ca9f65ae9f169
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: 932a4fc51d25c06b69742d00261f0e9048482bf49a188074bca930fbbad60100
+  tags:
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp8-bcwondx8za?file=checksums.blake3
+        checksum: blake3:57759d394677804b037c10da991f2051dd2a95c554ecf5c5db965bf5b2c21d20
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp8-bcwondx8za?file=memory_footprint.json
+        checksum: blake3:77334df9485c8f271cf330cba8ee088cf8b23a50b23ff02fb9e818aa140ee51c
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp8-bcwondx8za?file=metadata.json
+        checksum: blake3:ca2c59313460e690d8e58aef1b8d897b4a7daf6f6c5d88a812cd7f70015e3fd1
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp8-bcwondx8za?file=model.plan
+        checksum: blake3:71053ff48e03c5b6b9aca89ed98a21beab28577056e1865ddf8cc778e183f015
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: a8c400714e2537b60f4863da222735e339acf567fdc2381ca2d943b5645572ac
+  tags:
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp8-q5xfdcxwva?file=checksums.blake3
+        checksum: blake3:460239714411f77d859a554ab5b28853b2f2ebc99d5447b668e2446f0e74f4e4
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp8-q5xfdcxwva?file=memory_footprint.json
+        checksum: blake3:15af8f6a399f2e5feeff96f3e4bb5a42821156d78611e64d3dfd46539ca092df
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp8-q5xfdcxwva?file=metadata.json
+        checksum: blake3:08357d8962af1199a245b416e01ea1beca8f8336b793b3c87edf3abd35e1058f
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:h100x1-trt-fp8-q5xfdcxwva?file=model.plan
+        checksum: blake3:ab22ec4d5829987d081b09e7956f2055797fdb1d8684f793201e96918a37169a
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: b313b88dbb2e4bf4fe60311a612e6216fe106be02375baa2e1d21cf8e24e5809
+  tags:
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp16-ytaiheneha?file=checksums.blake3
+        checksum: blake3:90e490493b73817c65869829a485a8e3e1c067431b95372f8d5f7c2782465e03
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp16-ytaiheneha?file=memory_footprint.json
+        checksum: blake3:cde413ba596c58cfa27f41ff425295701409bdb9786f4ff2454892dfa1867444
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp16-ytaiheneha?file=metadata.json
+        checksum: blake3:0f167083c33f06dbe26bef39094962ffca3a981d70507394aac5eb986de1ea37
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:l40sx1-trt-fp16-ytaiheneha?file=model.plan
+        checksum: blake3:0b76b8f3007f4631563216f79360f2157135388f127bd2ee9c47ac2ccfb264ec
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: decb2c6f0af861f40b4438444bc61d865f0fb053589b21f9bf48c01b52714fa1
+  tags:
+    compute_capability: '8.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-trt-fp16-bqsfmskqeq?file=checksums.blake3
+        checksum: blake3:6435f892747620c8a9727b4d296ffac8df3c82af4c374e4fdd0162cb544b653b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-trt-fp16-bqsfmskqeq?file=memory_footprint.json
+        checksum: blake3:bdb0f5a0663f8bad02833142abef219f2ac849a5b9c65ece5949787f5dfb71bd
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-trt-fp16-bqsfmskqeq?file=metadata.json
+        checksum: blake3:141e9189176df07c85f1207428ddd9343eaa376f47552305172e049616976162
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-trt-fp16-bqsfmskqeq?file=model.plan
+        checksum: blake3:a1ac4bb89b91f19361881bed4d03b589fffdbce661b066c22530d4cb04962ca4
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: e28f17c9c13a99055d065f88d725bf93c23b3aab14acd68f16323de1353fc528
+  tags:
+    model_type: onnx
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-onnx-fp16-u-6dtrvzgw?file=checksums.blake3
+        checksum: blake3:783ddb6001de0ec5d7f1cc0d761193d32be0fe36988dbac6aa3410db32aab270
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-onnx-fp16-u-6dtrvzgw?file=metadata.json
+        checksum: blake3:f6aeb45a2d5f9611c4b9f1e2cd5a368c5802c1ce9f2360cb92b47bd256d25715
+      model/model.onnx:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a100x1-onnx-fp16-u-6dtrvzgw?file=model.onnx
+        checksum: blake3:d77d833a135ad2b17082224685882507d8fada537f6a6ae2f383530e5ac8a505
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-b876310e?file=checksums.blake3
+        checksum: blake3:b876310e27f5d9b2f738a73da24ae3bc5970baa9c155d6e988dc49769b165fa5
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-b876310e?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-b876310e?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-b876310e?file=tokenizer_config.json
+        checksum: blake3:08996d26d2dcd4d7a73997fc477a41675d639fae9ced2052ca51e8cf23ecca1d
+- id: ee543681ee61cf712478f5c79e5e693963dd36d6a2675dfe1f26c790491229c6
+  tags:
+    compute_capability: '8.6'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a10gx1-trt-fp16-hrxvo19scw?file=checksums.blake3
+        checksum: blake3:2d41cb3d1abfe4532c31ae21da2e9fb947936e5251345dd6e0b9ae36b4afc68c
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a10gx1-trt-fp16-hrxvo19scw?file=memory_footprint.json
+        checksum: blake3:bdb0f5a0663f8bad02833142abef219f2ac849a5b9c65ece5949787f5dfb71bd
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a10gx1-trt-fp16-hrxvo19scw?file=metadata.json
+        checksum: blake3:f150bcd97204c5abde16031338309590a40ac5a452a1bebcc705edd6be67d768
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:a10gx1-trt-fp16-hrxvo19scw?file=model.plan
+        checksum: blake3:eac0847d3cf36bb1af4bee74e19b462c9359c7100ce8cc3ef17e8f6e81e98f64
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5
+- id: ee7364e4eba4df47443ed9df08f50d9551b529f7e12063cb9b7891fcec8b4e5c
+  tags:
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=VERSION
+        checksum: blake3:d63bd9a826af91c1fea371965a64e11ee20f13e46b5f52c59901136605b3a487
+      extra/embedding_ranges.npy:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=embedding_ranges.npy
+        checksum: blake3:62b1d642ba409545e42741403ca64207eec0dd63272a958beac1fa9907f37c79
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:extra-1?file=triton.yaml
+        checksum: blake3:c7013c1f9a403150820867a72f5d4be50e0ffb9ef6a3baffc4732e5d9320b51b
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp8-85n4shahyq?file=checksums.blake3
+        checksum: blake3:23be7084d3eb7b07542330ea45c29604fe8f5d0a21c8e4a06914ae5e35e2a55b
+      model/memory_footprint.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp8-85n4shahyq?file=memory_footprint.json
+        checksum: blake3:15af8f6a399f2e5feeff96f3e4bb5a42821156d78611e64d3dfd46539ca092df
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp8-85n4shahyq?file=metadata.json
+        checksum: blake3:2323144d6a1238e63251e450e4b25291cf7a30d0cf089b1db6e94080e6a99f60
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:rtx5090x1-trt-fp8-85n4shahyq?file=model.plan
+        checksum: blake3:62052f5501385cc0b8ff774650d9d35bd57ebff69162b446679af91ebb2f83f8
+      tokenizer/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=checksums.blake3
+        checksum: blake3:f42d57741ef4c31ab8f553fdb3551198faf75061fc066d7aca083190bcfbb997
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer.json
+        checksum: blake3:491f599eb81c6efc39748fba9e12f54bbb8aebecb1b03527069b2a6e29c35626
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-embed-300m-v2:tokenizer-8192-f42d5774?file=tokenizer_config.json
+        checksum: blake3:71a0df03dd89546818e1790b751539bf88b12e03966f687da883e3e967114df5

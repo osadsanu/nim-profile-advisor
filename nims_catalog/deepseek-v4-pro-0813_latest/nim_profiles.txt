@@ -1,0 +1,29 @@
+- id: 2cf4354f85b674da421b1f0c0edd95df85ba08d69d7243a7300f5b76d310c917
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    llm_engine: sglang
+    min_vram_per_device_gb: '135.0'
+    nim_description: agentic, throughput, ITL<20ms, speculative decoding on
+    nim_json_args: '{"dsv4_prefill_backend":"flashmla_sparse_q8","enable_hierarchical_cache":true,"gpu_memory_utilization":0.88,"hicache_io_backend":"kernel","hicache_ratio":2,"hicache_write_policy":"write_through","max_running_requests":64,"moe_runner_backend":"marlin","nim_specdec":{"speculative_algorithm":"DSPARK","speculative_dspark_block_size":3},"reasoning_parser":"deepseek-v4","tool_call_parser":"deepseekv4"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '8'
+
+- id: f6e709b4126a3f3c6db754c1d5090a5d1006d23b5f0e62c4cec8e423e8eb5de0
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    llm_engine: sglang
+    min_vram_per_device_gb: '175.0'
+    nim_description: agentic, throughput, ITL<20ms, speculative decoding on
+    nim_json_args: '{"chunked_prefill_size":8192,"gpu_memory_utilization":0.85,"max_running_requests":64,"moe_runner_backend":"flashinfer_trtllm_routed","nim_specdec":{"speculative_algorithm":"DSPARK","speculative_dspark_block_size":5},"reasoning_parser":"deepseek-v4","swa_full_tokens_ratio":0.1,"tool_call_parser":"deepseekv4"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '8'

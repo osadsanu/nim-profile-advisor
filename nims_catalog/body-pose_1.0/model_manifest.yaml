@@ -1,0 +1,101 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/body-pose
+release: 1.0.0
+profiles:
+- id: 00e11eeca5c7987c88a820cc332afe974e4c1b19a4a0df298d678da0c37a6f30
+  tags:
+    compute_capability: '8.6'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm86?file=body_keypoint_detector_fp16_86.engine.trtpkg
+        checksum: blake3:0c82cf7b9e040b439f6ce9c46f3f055a21d071e3207107641c70ab6a47fc0b7b
+      config/models/body-pose/bodypose_encoder_fp32_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm86?file=bodypose_encoder_fp32_86.engine.trtpkg
+        checksum: blake3:1e7cbd230b4824993dc4b9141afc362200392a59a11a41c19cc0357cce512671
+      config/models/body-pose/combinedengine_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm86?file=combinedengine_86.engine.trtpkg
+        checksum: blake3:1715b4e30d9a1fdc023d2f0c0b94603b5c51554b9b156c1f54557409dd602357
+  workspace_hash: ca0e3cdb316a4b2e9f1321b3ebf9b63992c7e2df3160be87998281011fd41b70
+- id: 0716545257d3b1e72dcd79e20634ab70dfc1317967349d32babe37d903a5b4ab
+  tags:
+    compute_capability: '8.0'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm80?file=body_keypoint_detector_fp16_80.engine.trtpkg
+        checksum: blake3:b709827dedcf1967b4b16bb78de8fffdca370ebcf1baba6b991ab4edaa52e852
+      config/models/body-pose/bodypose_encoder_fp32_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm80?file=bodypose_encoder_fp32_80.engine.trtpkg
+        checksum: blake3:e0c3f5b9930bd66761164e3333918eb26c0b2caf22b00107907f0bdd40ed66d1
+      config/models/body-pose/combinedengine_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm80?file=combinedengine_80.engine.trtpkg
+        checksum: blake3:8424b767240705199a5bc1d86be2040fc99234e77ff0687ed2be83d021acf1a6
+  workspace_hash: 71f03caaf8c6d151f9078c67a8e5f9821480563e9476e43c44136f135a31449f
+- id: 5ff89653925dc87493517218b14455eb6e54ad814920040f995f64f44df1729b
+  tags:
+    compute_capability: '9.0'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm90?file=body_keypoint_detector_fp16_90.engine.trtpkg
+        checksum: blake3:7aaf81addbf03d47af3c4c4880d7c59252b8076f3f6c3a5c0111ef1a4f294e16
+      config/models/body-pose/bodypose_encoder_fp32_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm90?file=bodypose_encoder_fp32_90.engine.trtpkg
+        checksum: blake3:89e041b40a930608a1c2c083ceca5717fc9e9f69396e0afec7ca7b22f9276d64
+      config/models/body-pose/combinedengine_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm90?file=combinedengine_90.engine.trtpkg
+        checksum: blake3:b96a15805d3a6147ee68373463e13204f391782aac81930e0c161d6e6a8a62cc
+  workspace_hash: ebcf4b10dc982653e91a154587514f52d70ad6f723446948550d04893eccb363
+- id: 860e93e457934391fdac8a0dfb3bab978b5cf74bb192fe89169eaed1893d1698
+  tags:
+    compute_capability: '12.0'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm120?file=body_keypoint_detector_fp16_120.engine.trtpkg
+        checksum: blake3:c3bf3c2bde8d1ebffcca2d55dc3db0986ac093917871a53a5d33c94124326df8
+      config/models/body-pose/bodypose_encoder_fp32_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm120?file=bodypose_encoder_fp32_120.engine.trtpkg
+        checksum: blake3:d493689244a79bfcf7b7fe4348c5e9385b1709d600405ebc001d37946847f565
+      config/models/body-pose/combinedengine_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm120?file=combinedengine_120.engine.trtpkg
+        checksum: blake3:75b8d7cf99f0ca4888263edd85bc09da8ef359c66d94f57129c4fb8ca233f326
+  workspace_hash: 4d4ef4b16a2e282647c4858c146dab72227f184c693112e10693ebef69b71115
+- id: 8e4b138e9d1a347ee11292b91cb8e4ded4c4763208e49cd71e0ecd2cf37ed95b
+  tags:
+    compute_capability: '8.9'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm89?file=body_keypoint_detector_fp16_89.engine.trtpkg
+        checksum: blake3:5b7e0deeccebe231d322fd8a1912d45703e10bd95b9a01d8590f7d66293f87ab
+      config/models/body-pose/bodypose_encoder_fp32_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm89?file=bodypose_encoder_fp32_89.engine.trtpkg
+        checksum: blake3:f4f238634ab4597b8609dd8d3c89c968ee921dacb9d3cd579866391983da03ff
+      config/models/body-pose/combinedengine_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm89?file=combinedengine_89.engine.trtpkg
+        checksum: blake3:b05f379cdbc33d1cc5a4df06d4aa57575e5dba1b96e2ce76e450c05e77d4f5d6
+  workspace_hash: 0c208760906aad591559e4f55986f1ac9caf8867e8e2f63f2299e35c0c80cef6
+- id: c573d6e10ed072bbf2b8839c0c3ddea8c5676b7f8c751628ad8ab977d94df130
+  tags:
+    compute_capability: '10.0'
+    precision: fp16
+  workspace:
+    files:
+      config/models/body-pose/body_keypoint_detector_fp16_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm100?file=body_keypoint_detector_fp16_100.engine.trtpkg
+        checksum: blake3:86896bfc61fd4dcf06323838f2c0dfd8ba330131e4903600290d7d99f9598de9
+      config/models/body-pose/bodypose_encoder_fp32_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm100?file=bodypose_encoder_fp32_100.engine.trtpkg
+        checksum: blake3:ce8a7e96762d989070d67b91734dd27c6cd51daf6fe8f3a9cc9a1d834ee9f558
+      config/models/body-pose/combinedengine_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/body-pose:1.2.1_linux_sm100?file=combinedengine_100.engine.trtpkg
+        checksum: blake3:35c6e0b14918a8fc1e740765778a578b12b2282d61e3f0ea0e268580ce0d3214
+  workspace_hash: a74d15d40fe6e40ed623b66340a078571c7d0ffddb404a3e0072bb847089de74

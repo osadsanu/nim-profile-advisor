@@ -1,0 +1,504 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: google/gemma-4-31b-it
+release: 2.1.5
+profiles:
+- id: 2da8f24075b563d2394e5947d9d7e1f72704a9de26783db2a96a2c351f35dbf3
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    gpu_sm_version: sm_90
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    nim_description: throughput-fp8kv
+    nim_json_args: '{"block_size":64,"kv_cache_dtype":"fp8"}'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=README.md
+        checksum: blake3:9a5536fac2d305dd24024c95be56b731dc289d8b18cd8580e08e7599fc829db6
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=checksums.blake3
+        checksum: blake3:467d9eaf934c7f11c8bb23267f0b04245a4ec1e7c2a41c61f95357d76705525e
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=config.json
+        checksum: blake3:c3ca76a94b0881f6c3cffa7cb8dc42a7ce04e822bfc1b113f3e2cea925de677e
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00001-of-00002.safetensors
+        checksum: blake3:a93b68eee287581f9564e31dc8bfdb0a667ca898a4f6f30215a8cfe6e59c84ca
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00002-of-00002.safetensors
+        checksum: blake3:253b8e9669b4f548b169b3c80d9c58bf27697eee32166c4c2a978cb097e93f13
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model.safetensors.index.json
+        checksum: blake3:738f9454bc2045fe2da397cb56f66ddc7fddb1b9e111691c368f1f4b9fd93e99
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: bd4b1c601bfa58b1c58ebe7a4bbefee7501ba6be51e54ec18892f80454db02c1
+- id: 38eddf6a8604d866e1945ea7878e3798ea1c6b21d6e230f91fbc3a1d6d37f318
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '103.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=README.md
+        checksum: blake3:9a5536fac2d305dd24024c95be56b731dc289d8b18cd8580e08e7599fc829db6
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=checksums.blake3
+        checksum: blake3:467d9eaf934c7f11c8bb23267f0b04245a4ec1e7c2a41c61f95357d76705525e
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=config.json
+        checksum: blake3:c3ca76a94b0881f6c3cffa7cb8dc42a7ce04e822bfc1b113f3e2cea925de677e
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00001-of-00002.safetensors
+        checksum: blake3:a93b68eee287581f9564e31dc8bfdb0a667ca898a4f6f30215a8cfe6e59c84ca
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00002-of-00002.safetensors
+        checksum: blake3:253b8e9669b4f548b169b3c80d9c58bf27697eee32166c4c2a978cb097e93f13
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model.safetensors.index.json
+        checksum: blake3:738f9454bc2045fe2da397cb56f66ddc7fddb1b9e111691c368f1f4b9fd93e99
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: bd4b1c601bfa58b1c58ebe7a4bbefee7501ba6be51e54ec18892f80454db02c1
+- id: 3d483628f0f80c511d45814c5d4b36357bf35ebdfd65a8358cb852fb9eedf815
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=README.md
+        checksum: blake3:59ea21b0d2ded41f67b23f7a85fc5cfdcb0974d767d336faa92b4358ae21d32b
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=checksums.blake3
+        checksum: blake3:b53c867d455aac0bb8f74227977c2330c0a1673e74304a2de3811ef5b52b8562
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=config.json
+        checksum: blake3:49ebdb761d65c2b975d9f2aa0a86bcdeaebc908883b522eaced48518284ba701
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=hf_quant_config.json
+        checksum: blake3:2383c3f1f2cc509177fa607a4bfce36aa60563dfc35f157f67f9aa78020b94e7
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00001-of-00004.safetensors
+        checksum: blake3:19abb6450731e3096e77e05a0207dbc17117d2b3f5d04f6ff90e87948b536a0d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00002-of-00004.safetensors
+        checksum: blake3:888a8578db8f3b36781f4ff7d488c8d5c65b497575cb102f564c2271f24846ec
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00003-of-00004.safetensors
+        checksum: blake3:a67166debf59c3d586dc1b587eb6cf42e7a859293509f7e09f4c4974ef4ae432
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00004-of-00004.safetensors
+        checksum: blake3:3fbcc3786efb8fed4270e31f4259851dbb68567a46321b959e5ae8ac5d5ad426
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:7dc9410808c1483b7629b7935d13c5a8627727c38ce28462fab7a66cd6a17ab0
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer_config.json
+        checksum: blake3:f650d1df39404eb3b7d17f962cb58eec74af572d26f7438304b264abb4a4befa
+  workspace_hash: 92637dea7cc7bcba054a15e27a96a07303726ce3e10a32b81555689c8a8c17d3
+- id: 5f2613453901ce34041f9390d1eb035bceabba0af65af73be562fa5cda704a48
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '75.0'
+    nim_description: mooncake15, throughput, bf16 KV; validated optimum c=4
+    nim_json_args: '{"kv_cache_dtype":"bfloat16"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=README.md
+        checksum: blake3:59ea21b0d2ded41f67b23f7a85fc5cfdcb0974d767d336faa92b4358ae21d32b
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=checksums.blake3
+        checksum: blake3:b53c867d455aac0bb8f74227977c2330c0a1673e74304a2de3811ef5b52b8562
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=config.json
+        checksum: blake3:49ebdb761d65c2b975d9f2aa0a86bcdeaebc908883b522eaced48518284ba701
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=hf_quant_config.json
+        checksum: blake3:2383c3f1f2cc509177fa607a4bfce36aa60563dfc35f157f67f9aa78020b94e7
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00001-of-00004.safetensors
+        checksum: blake3:19abb6450731e3096e77e05a0207dbc17117d2b3f5d04f6ff90e87948b536a0d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00002-of-00004.safetensors
+        checksum: blake3:888a8578db8f3b36781f4ff7d488c8d5c65b497575cb102f564c2271f24846ec
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00003-of-00004.safetensors
+        checksum: blake3:a67166debf59c3d586dc1b587eb6cf42e7a859293509f7e09f4c4974ef4ae432
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00004-of-00004.safetensors
+        checksum: blake3:3fbcc3786efb8fed4270e31f4259851dbb68567a46321b959e5ae8ac5d5ad426
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:7dc9410808c1483b7629b7935d13c5a8627727c38ce28462fab7a66cd6a17ab0
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer_config.json
+        checksum: blake3:f650d1df39404eb3b7d17f962cb58eec74af572d26f7438304b264abb4a4befa
+  workspace_hash: 92637dea7cc7bcba054a15e27a96a07303726ce3e10a32b81555689c8a8c17d3
+- id: 79d2280e2cab4024bf26cddad0a8dfec50d96ddabac789c0682abdfeb3417298
+  tags:
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=README.md
+        checksum: blake3:59ea21b0d2ded41f67b23f7a85fc5cfdcb0974d767d336faa92b4358ae21d32b
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=checksums.blake3
+        checksum: blake3:b53c867d455aac0bb8f74227977c2330c0a1673e74304a2de3811ef5b52b8562
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=config.json
+        checksum: blake3:49ebdb761d65c2b975d9f2aa0a86bcdeaebc908883b522eaced48518284ba701
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=hf_quant_config.json
+        checksum: blake3:2383c3f1f2cc509177fa607a4bfce36aa60563dfc35f157f67f9aa78020b94e7
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00001-of-00004.safetensors
+        checksum: blake3:19abb6450731e3096e77e05a0207dbc17117d2b3f5d04f6ff90e87948b536a0d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00002-of-00004.safetensors
+        checksum: blake3:888a8578db8f3b36781f4ff7d488c8d5c65b497575cb102f564c2271f24846ec
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00003-of-00004.safetensors
+        checksum: blake3:a67166debf59c3d586dc1b587eb6cf42e7a859293509f7e09f4c4974ef4ae432
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00004-of-00004.safetensors
+        checksum: blake3:3fbcc3786efb8fed4270e31f4259851dbb68567a46321b959e5ae8ac5d5ad426
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:7dc9410808c1483b7629b7935d13c5a8627727c38ce28462fab7a66cd6a17ab0
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer_config.json
+        checksum: blake3:f650d1df39404eb3b7d17f962cb58eec74af572d26f7438304b264abb4a4befa
+  workspace_hash: 92637dea7cc7bcba054a15e27a96a07303726ce3e10a32b81555689c8a8c17d3
+- id: 7e83e8e9bca94472c6d587c609e3765223eb8f4b97b7d57fe093633617adcb11
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=README.md
+        checksum: blake3:59ea21b0d2ded41f67b23f7a85fc5cfdcb0974d767d336faa92b4358ae21d32b
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=checksums.blake3
+        checksum: blake3:b53c867d455aac0bb8f74227977c2330c0a1673e74304a2de3811ef5b52b8562
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=config.json
+        checksum: blake3:49ebdb761d65c2b975d9f2aa0a86bcdeaebc908883b522eaced48518284ba701
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=hf_quant_config.json
+        checksum: blake3:2383c3f1f2cc509177fa607a4bfce36aa60563dfc35f157f67f9aa78020b94e7
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00001-of-00004.safetensors
+        checksum: blake3:19abb6450731e3096e77e05a0207dbc17117d2b3f5d04f6ff90e87948b536a0d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00002-of-00004.safetensors
+        checksum: blake3:888a8578db8f3b36781f4ff7d488c8d5c65b497575cb102f564c2271f24846ec
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00003-of-00004.safetensors
+        checksum: blake3:a67166debf59c3d586dc1b587eb6cf42e7a859293509f7e09f4c4974ef4ae432
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00004-of-00004.safetensors
+        checksum: blake3:3fbcc3786efb8fed4270e31f4259851dbb68567a46321b959e5ae8ac5d5ad426
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:7dc9410808c1483b7629b7935d13c5a8627727c38ce28462fab7a66cd6a17ab0
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer_config.json
+        checksum: blake3:f650d1df39404eb3b7d17f962cb58eec74af572d26f7438304b264abb4a4befa
+  workspace_hash: 92637dea7cc7bcba054a15e27a96a07303726ce3e10a32b81555689c8a8c17d3
+- id: 8abeace03393adc77f9a334deaf43b45f344209489423a8c8e8c5ea495de59f3
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=README.md
+        checksum: blake3:9a5536fac2d305dd24024c95be56b731dc289d8b18cd8580e08e7599fc829db6
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=checksums.blake3
+        checksum: blake3:467d9eaf934c7f11c8bb23267f0b04245a4ec1e7c2a41c61f95357d76705525e
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=config.json
+        checksum: blake3:c3ca76a94b0881f6c3cffa7cb8dc42a7ce04e822bfc1b113f3e2cea925de677e
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00001-of-00002.safetensors
+        checksum: blake3:a93b68eee287581f9564e31dc8bfdb0a667ca898a4f6f30215a8cfe6e59c84ca
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00002-of-00002.safetensors
+        checksum: blake3:253b8e9669b4f548b169b3c80d9c58bf27697eee32166c4c2a978cb097e93f13
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model.safetensors.index.json
+        checksum: blake3:738f9454bc2045fe2da397cb56f66ddc7fddb1b9e111691c368f1f4b9fd93e99
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: bd4b1c601bfa58b1c58ebe7a4bbefee7501ba6be51e54ec18892f80454db02c1
+- id: b53c8f34aa2f39d4adbe30c653831f98d2a60da9b7c06ac644264e8667c39a1f
+  tags:
+    compute_capability: '8.9'
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '35.0'
+    pp: '1'
+    precision: int4
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=README.md
+        checksum: blake3:21a27b8e25a7d14ae0329c59306ba04024037e3681f4570ea94825eae27dd6dd
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=chat_template.jinja
+        checksum: blake3:5983459f645cf55a3c618682c76bb51d28a846af524ef45413295f486b3d2162
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=checksums.blake3
+        checksum: blake3:2762591fc4c4b4ac225fcbb6e8de2ffce6524424b8c32e199a760f576c375837
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=config.json
+        checksum: blake3:57ee439656285850e7216d06d8f5373dd909cd80178020fb92175ddafa73146d
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=generation_config.json
+        checksum: blake3:6bf38bc898aa92bf4cb1fde7c4ba046093678addf95c1d58077b184145522d76
+      model.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=model.safetensors
+        checksum: blake3:b43ac0ec2ad233c2a1eed3a9fea9cadecdab26a2d35a7e428a441bdfe383cb5e
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-52f3f65b-qat-w4a16ct?file=tokenizer_config.json
+        checksum: blake3:f4e0b9a5363e3edcce9930c5b13eab85e19c77240b444f0b9353f1c1ff8c04b9
+  workspace_hash: 581b0672a7cca097ed9ca949a323f4912f3d25d3125ea97ca05df3565b9827ab
+- id: bbf0e9a3c9115d940cad96ea44ceec00cd1e253be9a1fffa9db824659abd376b
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=README.md
+        checksum: blake3:9a5536fac2d305dd24024c95be56b731dc289d8b18cd8580e08e7599fc829db6
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=checksums.blake3
+        checksum: blake3:467d9eaf934c7f11c8bb23267f0b04245a4ec1e7c2a41c61f95357d76705525e
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=config.json
+        checksum: blake3:c3ca76a94b0881f6c3cffa7cb8dc42a7ce04e822bfc1b113f3e2cea925de677e
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00001-of-00002.safetensors
+        checksum: blake3:a93b68eee287581f9564e31dc8bfdb0a667ca898a4f6f30215a8cfe6e59c84ca
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model-00002-of-00002.safetensors
+        checksum: blake3:253b8e9669b4f548b169b3c80d9c58bf27697eee32166c4c2a978cb097e93f13
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=model.safetensors.index.json
+        checksum: blake3:738f9454bc2045fe2da397cb56f66ddc7fddb1b9e111691c368f1f4b9fd93e99
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-ba74f5b-nim?file=tokenizer_config.json
+        checksum: blake3:88160a8f32a167797df6a57342ccffd8340f43f9e0f3fcd500ea4ab602b2f01e
+  workspace_hash: bd4b1c601bfa58b1c58ebe7a4bbefee7501ba6be51e54ec18892f80454db02c1
+- id: c501faa01b35490971bc36a103f3ad5425daf3b46351f969bc41600646fc49d3
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=README.md
+        checksum: blake3:59ea21b0d2ded41f67b23f7a85fc5cfdcb0974d767d336faa92b4358ae21d32b
+      chat_template.jinja:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=chat_template.jinja
+        checksum: blake3:59fbeb59bad8408d93ee2236019371ea24a3a9a6ce61ab71d66fc63735b592ad
+      checksums.blake3:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=checksums.blake3
+        checksum: blake3:b53c867d455aac0bb8f74227977c2330c0a1673e74304a2de3811ef5b52b8562
+      config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=config.json
+        checksum: blake3:49ebdb761d65c2b975d9f2aa0a86bcdeaebc908883b522eaced48518284ba701
+      generation_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=generation_config.json
+        checksum: blake3:723c1e240f74601835f843d48798e62982a44fedf2740c25d0eb8a15f38708b5
+      hf_quant_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=hf_quant_config.json
+        checksum: blake3:2383c3f1f2cc509177fa607a4bfce36aa60563dfc35f157f67f9aa78020b94e7
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00001-of-00004.safetensors
+        checksum: blake3:19abb6450731e3096e77e05a0207dbc17117d2b3f5d04f6ff90e87948b536a0d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00002-of-00004.safetensors
+        checksum: blake3:888a8578db8f3b36781f4ff7d488c8d5c65b497575cb102f564c2271f24846ec
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00003-of-00004.safetensors
+        checksum: blake3:a67166debf59c3d586dc1b587eb6cf42e7a859293509f7e09f4c4974ef4ae432
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model-00004-of-00004.safetensors
+        checksum: blake3:3fbcc3786efb8fed4270e31f4259851dbb68567a46321b959e5ae8ac5d5ad426
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=model.safetensors.index.json
+        checksum: blake3:7dc9410808c1483b7629b7935d13c5a8627727c38ce28462fab7a66cd6a17ab0
+      processor_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer.json
+        checksum: blake3:8fe5d27f5db95e4ae33671a71af824e39e3348c1f3baf9d6cc8f168cfca3eda2
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-4-31b-it:hf-e5ef03a-nim-nvfp4?file=tokenizer_config.json
+        checksum: blake3:f650d1df39404eb3b7d17f962cb58eec74af572d26f7438304b264abb4a4befa
+  workspace_hash: 92637dea7cc7bcba054a15e27a96a07303726ce3e10a32b81555689c8a8c17d3

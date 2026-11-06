@@ -1,0 +1,136 @@
+{
+  "exported_at": "2026-11-06T07:10:31.271Z",
+  "database": "nim_advisor",
+  "mongodb_version": "8.0.34",
+  "import_run": {
+    "id": "20261106T065541Z",
+    "started_at": "2026-11-06T06:55:41.289Z",
+    "finished_at": "2026-11-06T06:56:28.080Z",
+    "counts": {
+      "catalog_entries": 304,
+      "models": 304,
+      "models_with_profiles": 246,
+      "profiles": 3276,
+      "gpus": 50,
+      "pcai_configurations": 12,
+      "validation_rows": 164,
+      "manifest_issues": 6,
+      "fetch_status": {
+        "skipped": 2,
+        "ok": 244,
+        "failed": 58
+      },
+      "validation_status": {
+        "gpu_device:validated": 33,
+        "gpu_device:mapped": 1,
+        "gpu_device:conflict": 2,
+        "gpu_device:unknown": 3,
+        "gpu_name:validated": 96,
+        "gpu_name:mapped": 16,
+        "gpu_name:unknown": 1,
+        "gpu_name:conflict": 2,
+        "compute_capability:mapped": 10
+      }
+    }
+  },
+  "collections": {
+    "gpu_device_validation": 164,
+    "gpus": 50,
+    "import_runs": 5,
+    "manifest_issues": 6,
+    "models": 304,
+    "pcai_configurations": 12,
+    "profiles": 3276
+  },
+  "files": [
+    {
+      "file": "mongodump/nim_advisor/gpu_device_validation.bson.gz",
+      "bytes": 19887
+    },
+    {
+      "file": "mongodump/nim_advisor/gpu_device_validation.metadata.json.gz",
+      "bytes": 412
+    },
+    {
+      "file": "mongodump/nim_advisor/gpus.bson.gz",
+      "bytes": 19782
+    },
+    {
+      "file": "mongodump/nim_advisor/gpus.metadata.json.gz",
+      "bytes": 511
+    },
+    {
+      "file": "mongodump/nim_advisor/import_runs.bson.gz",
+      "bytes": 551
+    },
+    {
+      "file": "mongodump/nim_advisor/import_runs.metadata.json.gz",
+      "bytes": 301
+    },
+    {
+      "file": "mongodump/nim_advisor/manifest_issues.bson.gz",
+      "bytes": 1313
+    },
+    {
+      "file": "mongodump/nim_advisor/manifest_issues.metadata.json.gz",
+      "bytes": 413
+    },
+    {
+      "file": "mongodump/nim_advisor/models.bson.gz",
+      "bytes": 4533976
+    },
+    {
+      "file": "mongodump/nim_advisor/models.metadata.json.gz",
+      "bytes": 738
+    },
+    {
+      "file": "mongodump/nim_advisor/pcai_configurations.bson.gz",
+      "bytes": 3702
+    },
+    {
+      "file": "mongodump/nim_advisor/pcai_configurations.metadata.json.gz",
+      "bytes": 491
+    },
+    {
+      "file": "mongodump/nim_advisor/prelude.json.gz",
+      "bytes": 76
+    },
+    {
+      "file": "mongodump/nim_advisor/profiles.bson.gz",
+      "bytes": 4991208
+    },
+    {
+      "file": "mongodump/nim_advisor/profiles.metadata.json.gz",
+      "bytes": 692
+    },
+    {
+      "file": "json/gpu_device_validation.json",
+      "bytes": 155783
+    },
+    {
+      "file": "json/gpus.json",
+      "bytes": 83904
+    },
+    {
+      "file": "json/import_runs.json",
+      "bytes": 2889
+    },
+    {
+      "file": "json/manifest_issues.json",
+      "bytes": 3800
+    },
+    {
+      "file": "json/models.json.gz",
+      "bytes": 4644857
+    },
+    {
+      "file": "json/pcai_configurations.json",
+      "bytes": 16552
+    },
+    {
+      "file": "json/profiles.json.gz",
+      "bytes": 4599495
+    }
+  ],
+  "restore": "docker compose run --rm db-restore"
+}

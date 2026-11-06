@@ -1,0 +1,593 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: moonshotai/kimi-k2.6
+release: 2.0.9-variant.1
+profiles:
+- id: ea9b4439d873ea8a54b5943aa6d6ea07e9229d012426274d1214217a344165ed
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+  workspace:
+    files:
+      .gitattributes:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=.gitattributes
+        checksum: blake3:bf013b10679a860170949e83d6eb99ff96e50ee3a20948e4ca3c57c28c8b34e8
+      README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=README.md
+        checksum: blake3:83757f34b75e4e3d5437700c37918d5530ebd2c3890ec1689443b64fde744c9a
+      chat_template.jinja:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=chat_template.jinja
+        checksum: blake3:7f89001342446d48d4e07655d1fd513661aaade2c8fe6ec0dad822c7b951df1b
+      checksums.blake3:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=checksums.blake3
+        checksum: blake3:127479962cdde447ae2158e79316e82d40bd80cdd0f6587c452de6189dfc807e
+      config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=config.json
+        checksum: blake3:c0548cc0b80ef45d6a521b8f11ed3717c97f21a2ae0a38a1e0d657dd74c2a446
+      configuration_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=configuration_deepseek.py
+        checksum: blake3:a8b3d4f5bdd3df0eec279959f3b27fe7275f4a7361235deca9d0a5da10da4a74
+      configuration_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=configuration_kimi_k25.py
+        checksum: blake3:8b7f6b3e0b7d78db64d8573a66b8cfed1fdb1f6a603fad1c27344ceba68d45b9
+      eagle3/.gitattributes:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=.gitattributes
+        checksum: blake3:3d99c372b46ad34e67226075099ddc095a0d6dfb7850199c5ead7f50e35cc77e
+      eagle3/README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=README.md
+        checksum: blake3:dab4085ec2e456689c44dac876b885e9cb82e331cb9342a5fbd0f9e77339c770
+      eagle3/checksums.blake3:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=checksums.blake3
+        checksum: blake3:079e511d1de5606538a6042571d6731f9ec2d370ef3600eef03f588673b60886
+      eagle3/config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=config.json
+        checksum: blake3:bd5700afcc3f689df8ad5357db4995ad55507eadd041368c819872eaac735020
+      eagle3/model.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=model.safetensors
+        checksum: blake3:d67f99af73cab776b9babe60acfb54c8396b321ae54979712e5bade40bad5c70
+      generation_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=generation_config.json
+        checksum: blake3:e539fd9d1187ee551672dec71039e6b72b3278c774dfe05a1c124bf3e71f77fd
+      hf_quant_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=hf_quant_config.json
+        checksum: blake3:9628580aae5a3a7d21062768cfb6a6553f2d76801237613fb65361d8bd36efea
+      kimi_k25_processor.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=kimi_k25_processor.py
+        checksum: blake3:f3a1f26801b37f9e7bd6c09e77ac78fa5af9cd9b4654a2a61836e773116e5bfe
+      kimi_k25_vision_processing.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=kimi_k25_vision_processing.py
+        checksum: blake3:856a849fa0a58d0ce7fda807d42f35c60745fae8349dba0c3560f61c7270179c
+      media_utils.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=media_utils.py
+        checksum: blake3:eace4ed5d923c21f4f103d2a2fa472b3093cd660d48821b0140067ee82c00832
+      model-00001-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00001-of-00060.safetensors
+        checksum: blake3:3689b381e8944b107071ad6407fe096c21d8cd0e9b031804d08f8981a315e82f
+      model-00002-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00002-of-00060.safetensors
+        checksum: blake3:11a46a7fe79f3271410415ea46ddaf5e5f1717aa4feb28d8eca127bda8b30e9c
+      model-00003-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00003-of-00060.safetensors
+        checksum: blake3:ac40034ebc7ed927de7544d987a710d795c90c01e5d68f78f136efac4ec47a10
+      model-00004-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00004-of-00060.safetensors
+        checksum: blake3:5becbdc03121531b90021bf78208bcc4798cfa4dfba173bfe6f4c6f3bc60290e
+      model-00005-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00005-of-00060.safetensors
+        checksum: blake3:69ad4021d07a0465c757ec468c3ad97d05b1147c6f6f7170653df550a63be0f1
+      model-00006-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00006-of-00060.safetensors
+        checksum: blake3:e2c5c92372de32bec614a23907003c10b1720b23b99aabe93322b7384194fd7a
+      model-00007-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00007-of-00060.safetensors
+        checksum: blake3:17e51ab8067a41251e3ad5cdeb70f3291ded4ee9fc0c1ce93a715051b72191e0
+      model-00008-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00008-of-00060.safetensors
+        checksum: blake3:c0d047730d23f25ec95a642491d3738129b7893e6f6c40a052d146fa67ed910a
+      model-00009-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00009-of-00060.safetensors
+        checksum: blake3:66f93cb686bfd95ba15438e36e148bb8600327dc65b6723b767ba992aded166d
+      model-00010-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00010-of-00060.safetensors
+        checksum: blake3:bf4bf11726b9e29859cf474b8a7e8d3aedb4f1092a0c89cb205796250a71bc54
+      model-00011-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00011-of-00060.safetensors
+        checksum: blake3:958f0661c3df6cac49db1c62f4cfd15c1c2e4f54566cb7503f5bedbfb6d047ca
+      model-00012-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00012-of-00060.safetensors
+        checksum: blake3:1eacb415f51051a4fa4e4ed17ef4114dd0a1a125da31238626e894b6a680df72
+      model-00013-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00013-of-00060.safetensors
+        checksum: blake3:030c252697f97b1f920984631ea8c43f43c11480a6c857e2d7f7d8a056bf1874
+      model-00014-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00014-of-00060.safetensors
+        checksum: blake3:5fbf919be3cd3d0700d3b6975d986f85f6bda7ac482f704bafcaceedaa1ca8bf
+      model-00015-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00015-of-00060.safetensors
+        checksum: blake3:16ae53f594c4aa573c8ee404fb8d28a926bd897c4210da838e778803cfc154e8
+      model-00016-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00016-of-00060.safetensors
+        checksum: blake3:d502f25231f69b052d3551e6fb0248da26154bdd342dd7447acb64c520182f59
+      model-00017-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00017-of-00060.safetensors
+        checksum: blake3:a6f9b642c840f9555d4cf0acc1107bbf8a4a27f11f62136f4b6b843bba68f2b6
+      model-00018-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00018-of-00060.safetensors
+        checksum: blake3:ee3e1c4dd4f7ca9d629b231f0b387284deeea6c9fc7bce19983ca1a5f45c0b91
+      model-00019-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00019-of-00060.safetensors
+        checksum: blake3:1f6ab80392941f959561d9c6f3f44143dacb40a2dfcb3ddc6621fcbf61468f7c
+      model-00020-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00020-of-00060.safetensors
+        checksum: blake3:d6e723b30137ef47580437e1060632974b695d036bf695b668c89b1195f0aa13
+      model-00021-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00021-of-00060.safetensors
+        checksum: blake3:7c62948a48ece9344a08fbcf181e185d3d3b8084be3d68957683bab3ad5d3e2f
+      model-00022-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00022-of-00060.safetensors
+        checksum: blake3:7e3a2dd3fa194b0580570cac0ac76ccefdf1d300cc4d1a3426df71ea8b44020e
+      model-00023-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00023-of-00060.safetensors
+        checksum: blake3:6daf243c862f1a2c37a37a07cf9218985e1b2a22b2b2e1df97e6e4b6fa7f1fb8
+      model-00024-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00024-of-00060.safetensors
+        checksum: blake3:03addfe5c40bce6f17894166684c8358dcb4d3f9a8c96411c8b7270ee967ed36
+      model-00025-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00025-of-00060.safetensors
+        checksum: blake3:5a5c5e23a361549e50cb4600be539d46116bd97f497e862bd39e7738e8b79008
+      model-00026-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00026-of-00060.safetensors
+        checksum: blake3:9ba05e4e34f8914f325ab34824fcd324beee22574540bee17783c04f9c983a94
+      model-00027-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00027-of-00060.safetensors
+        checksum: blake3:cc9bd02ac3a3db0c54c75650fc674649267a689f694080dbb9f14bd6962bc018
+      model-00028-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00028-of-00060.safetensors
+        checksum: blake3:11a95a401fcb6efb91746b2928e15da10cc4e9e7359c9ab776e04f0cb1e9900a
+      model-00029-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00029-of-00060.safetensors
+        checksum: blake3:911605f1db9af15b09611f30b7ed10dd276236045918ea4638e7927368806928
+      model-00030-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00030-of-00060.safetensors
+        checksum: blake3:bf87f4bd43ae27271bcdc4251fcfe1402e0cf71c2259db0577a0e0d4e21f60e0
+      model-00031-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00031-of-00060.safetensors
+        checksum: blake3:39b3d4503eb3254dbc83599e19bc0297a4092a30a1553be15759a3326c5a3d40
+      model-00032-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00032-of-00060.safetensors
+        checksum: blake3:6c08b176d94c27abedc1b84b5ac96f45ded8416ca75afbf973b35879dc76c975
+      model-00033-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00033-of-00060.safetensors
+        checksum: blake3:7cbe9d165f266afcf2efb9dde7ecc50288e6a4dfaf3b803c3749c420fad51add
+      model-00034-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00034-of-00060.safetensors
+        checksum: blake3:05b8316722bc2bc73a76bd9a0e1e618389d6aab31e5156fbf693c204a62d41aa
+      model-00035-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00035-of-00060.safetensors
+        checksum: blake3:87a3f60e1eb0a01eb643a5c2d2b6038943de3929d72462c74a4427c16a01381b
+      model-00036-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00036-of-00060.safetensors
+        checksum: blake3:126663ceb25f9fc51cb00723ae1844f872dcdd5854941ce10fb1a2ede4f292f4
+      model-00037-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00037-of-00060.safetensors
+        checksum: blake3:438199e186995a2d2e42cbf9594ecb984e7cd89b400598c3100433aa932c9be7
+      model-00038-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00038-of-00060.safetensors
+        checksum: blake3:eb84a4579365cf44935f20883676af0119c23424e82214cae30d2351d99ac902
+      model-00039-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00039-of-00060.safetensors
+        checksum: blake3:4a362ff1d6678e045318e94a5a9df257fd94e0b08957bba4ff02e351b1c3bf80
+      model-00040-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00040-of-00060.safetensors
+        checksum: blake3:a0392e55b85d98980bcfbd2c621602f3688cda9dec649abadcdb0700081913fc
+      model-00041-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00041-of-00060.safetensors
+        checksum: blake3:f93ea59c40e4f309f61cff35bae47b6374bc5e3f13914223aa4c2f9f373b8c6c
+      model-00042-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00042-of-00060.safetensors
+        checksum: blake3:7e451b08754b1b1b01bfebbf1957a22a7f79c9f984461ca4821a705b8636aeaa
+      model-00043-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00043-of-00060.safetensors
+        checksum: blake3:6219d9ea1a8723b9283fba2ebd9f3e8149f3692d6ebe149f1cb8604a32e54ce0
+      model-00044-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00044-of-00060.safetensors
+        checksum: blake3:68807e98e58aef06eb49cbf3a1d9b0d7c1089ea3441d59dd378402365bcce817
+      model-00045-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00045-of-00060.safetensors
+        checksum: blake3:39540e708c8cb9a2edaa54b681c40b0a7edaab7ef1bd1628cb1fc62b14069381
+      model-00046-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00046-of-00060.safetensors
+        checksum: blake3:2fd81a332d0294f4762b35d0c7d8fd229021c9bd0ddd447668e909599e713222
+      model-00047-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00047-of-00060.safetensors
+        checksum: blake3:0d1f9d28590c2fa46b06ac65f3ed8b9afb449d16de609c19259e524cc55c3a1a
+      model-00048-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00048-of-00060.safetensors
+        checksum: blake3:a263d4de1f44e0d8bcef33631427d9e5b478332b6d7759c1aff0c4c3e6b60913
+      model-00049-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00049-of-00060.safetensors
+        checksum: blake3:97ccb2eabd5bcaf281feefda92e0eadf3fbaf548e86aee3d6c3848136ceaffdc
+      model-00050-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00050-of-00060.safetensors
+        checksum: blake3:90910a90ea298817a5d42d873b9ae86fd3f9c50fcc4d41f376d03a5757b5b92f
+      model-00051-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00051-of-00060.safetensors
+        checksum: blake3:18b6121a47d6241908c778b33c2eb48a568be42272b0bc9a5b10745a26c79bf7
+      model-00052-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00052-of-00060.safetensors
+        checksum: blake3:e690815b40e346319ae106c34ed91f97c928c8a4ac7fd10cbe1eebe07de19eaa
+      model-00053-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00053-of-00060.safetensors
+        checksum: blake3:aa93fe3caaeb48fb762c6521225c31d4d4599db2ebcd9da8d0a93167c796183a
+      model-00054-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00054-of-00060.safetensors
+        checksum: blake3:253cdf631c2c622b37942b681a7c7cbd676106ca01d42989b56c9d725019a141
+      model-00055-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00055-of-00060.safetensors
+        checksum: blake3:79af7ca987246a27acee822131f30122ff174ce9fc77950328c8a61573bc26c8
+      model-00056-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00056-of-00060.safetensors
+        checksum: blake3:f90f633e9ab1af2cd4e18cf057c97d356d1866365107b5e4bb3651eccb86133a
+      model-00057-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00057-of-00060.safetensors
+        checksum: blake3:0110a42683ca5d0e33bd6d9790ac6f1b0c748f0b26eb7aedca950d630ab5e7ed
+      model-00058-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00058-of-00060.safetensors
+        checksum: blake3:e6cb7e7eb818462c1b267d3f39e643b9580d8adad82bfb2018425137866112ce
+      model-00059-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00059-of-00060.safetensors
+        checksum: blake3:f00ceaa6eebfed5915bf299ba1a4acf7d9a5715b6996eb49ca9fef8ebbf3fe81
+      model-00060-of-00060.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model-00060-of-00060.safetensors
+        checksum: blake3:b569e0e7fd3fdbcdc90376d5684568e5ff16118fd86bc957cdf035c771a947d3
+      model.safetensors.index.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=model.safetensors.index.json
+        checksum: blake3:1a41070aa391831f4d9a4099f7760a2464e71f27a0fd922681a110c0e88a4157
+      modeling_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=modeling_deepseek.py
+        checksum: blake3:d59d350e5f5ad3b374c5e4bb61df3f864e50baf30401349b78861c066af0cb12
+      modeling_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=modeling_kimi_k25.py
+        checksum: blake3:9bae225672627c0104b4f12f090b1f023f7ba856355cee6798aa77ef8bb6947c
+      preprocessor_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=preprocessor_config.json
+        checksum: blake3:b8f9f39c23afc6e9850c07c06e8cab9e704c28d0280fda6672fb400536be8cce
+      processor_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=processor_config.json
+        checksum: blake3:a4bc322d0bab336ace8f82f7165d853b81a03f564a2c03587c4abbcca40abd65
+      runtime_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:b200-config-v7?file=runtime_config.json
+        checksum: blake3:26fc113cbef54a4f2862fbf9e8b78950327255bdf7a28994b968899482c581fd
+      special_tokens_map.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=special_tokens_map.json
+        checksum: blake3:1ba2fe748e3b93827e04deed45be014a08988ae58aff09ec0ba4eb5247d763d5
+      tiktoken.model:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=tiktoken.model
+        checksum: blake3:c893437b479f39927a9128d939a6ac52103adfac1d7f198e5765869057b521c8
+      tokenization_kimi.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=tokenization_kimi.py
+        checksum: blake3:9d65f28c47f5767df9ffff20bccc920304e8d357aee6c373e7f4ba43c7ad3e6e
+      tokenizer_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=tokenizer_config.json
+        checksum: blake3:c02001f985f75797c229403ea85302ded8ae96ac655aab0f40d3dabb5f703156
+      tool_declaration_ts.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:nvfp4-2fd3a800-b3?file=tool_declaration_ts.py
+        checksum: blake3:3405b73432651471d1f8cd94c3db2f6d5067620d8fb3ba413fe41154095b6d5d
+  workspace_hash: ecdfa7a508ba6385996be61942558086eedf2fe227efd49249929abc37c6e762
+- id: f9b115adb4ab099cd2d3e0bd9be09a638ccd89bef6795ad68289e57443f3df3b
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: int4
+    tp: '8'
+  workspace:
+    files:
+      .eval_results/aime_2026.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Faime_2026.yaml
+        checksum: blake3:c1db2e771d765e5c4e22b3c536584e118f6ba4e8ef5601c02fd91561b822a93c
+      .eval_results/gpqa_diamond.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fgpqa_diamond.yaml
+        checksum: blake3:b11636b33da4022f25c493f822a7b1ed5bb769bd9f1b794ae2a3d491c90be5a6
+      .eval_results/hle.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fhle.yaml
+        checksum: blake3:7f304c75e95cd24eb54d15023a87ff6cc7215bb91f2758e281d756699773a60c
+      .eval_results/hle_with_tools.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fhle_with_tools.yaml
+        checksum: blake3:308cff187752372b5f8b57a4f5b738dfe9f0612bd205bb23c96470de9c1334cf
+      .eval_results/hmmt_feb_2026.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fhmmt_feb_2026.yaml
+        checksum: blake3:ff45af41eb01e70d477950bc0874d70e854063febb02763c984d95ea94a47598
+      .eval_results/swe_bench_pro.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fswe_bench_pro.yaml
+        checksum: blake3:1412315ee1b79f83959a91ae0cbe7058a7097281326a40dd1ca7694edc2062d9
+      .eval_results/swe_bench_verified.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fswe_bench_verified.yaml
+        checksum: blake3:cdb8ef1d9da762076a8f2b182206d7c6692d3c11a44a3a0ac269db20b7530f21
+      .eval_results/terminal_bench_2.yaml:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=.eval_results%2Fterminal_bench_2.yaml
+        checksum: blake3:fc50b425f9ee14c49b22079b204393585b7ea58d96a2eff7154eecdad80695fc
+      LICENSE:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=LICENSE
+        checksum: blake3:766b79455cfb08a91e67097fb03fb19805b8d4c895712398ab52ab3ee947a040
+      README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=README.md
+        checksum: blake3:4337242645ebff5752a6516540e50c72d06f7afe3bddb7eabaf537abf76fd352
+      THIRD_PARTY_NOTICES.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=THIRD_PARTY_NOTICES.md
+        checksum: blake3:ca6d3c6af322460c90ff9eee6ca7ca457aa4624784461cb68da5f51518e6751d
+      chat_template.jinja:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=chat_template.jinja
+        checksum: blake3:7f89001342446d48d4e07655d1fd513661aaade2c8fe6ec0dad822c7b951df1b
+      checksums.blake3:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=checksums.blake3
+        checksum: blake3:3ca22036a46b28e4e998280b6746306a8dda0041343dedd150ed9ac5354560d5
+      config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=config.json
+        checksum: blake3:83b2c3a5a1949e58b47c571f469e93ee3d32107c6e466eb67d48a9e4761af465
+      configuration_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=configuration_deepseek.py
+        checksum: blake3:a8b3d4f5bdd3df0eec279959f3b27fe7275f4a7361235deca9d0a5da10da4a74
+      configuration_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=configuration_kimi_k25.py
+        checksum: blake3:8b7f6b3e0b7d78db64d8573a66b8cfed1fdb1f6a603fad1c27344ceba68d45b9
+      docs/deploy_guidance.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=docs%2Fdeploy_guidance.md
+        checksum: blake3:7e0362e98c12bec40b7867b0ef861eb02e78fb49765b45d994450822e24c4404
+      eagle3/.gitattributes:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=.gitattributes
+        checksum: blake3:3d99c372b46ad34e67226075099ddc095a0d6dfb7850199c5ead7f50e35cc77e
+      eagle3/README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=README.md
+        checksum: blake3:dab4085ec2e456689c44dac876b885e9cb82e331cb9342a5fbd0f9e77339c770
+      eagle3/checksums.blake3:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=checksums.blake3
+        checksum: blake3:079e511d1de5606538a6042571d6731f9ec2d370ef3600eef03f588673b60886
+      eagle3/config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=config.json
+        checksum: blake3:bd5700afcc3f689df8ad5357db4995ad55507eadd041368c819872eaac735020
+      eagle3/model.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:eagle3-d49b3f03-b3?file=model.safetensors
+        checksum: blake3:d67f99af73cab776b9babe60acfb54c8396b321ae54979712e5bade40bad5c70
+      figures/demo_video.mp4:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=figures%2Fdemo_video.mp4
+        checksum: blake3:15ea3b90d9b048831f475a1a5db2053d7865cfaef5dd2b5f55d06b6f6631d829
+      figures/kimi-logo.png:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=figures%2Fkimi-logo.png
+        checksum: blake3:5e434b4c83290214f41df1c0e28ba36186d46e92b814cb51ec56c2a4434171f7
+      generation_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=generation_config.json
+        checksum: blake3:e539fd9d1187ee551672dec71039e6b72b3278c774dfe05a1c124bf3e71f77fd
+      kimi_k25_processor.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=kimi_k25_processor.py
+        checksum: blake3:f3a1f26801b37f9e7bd6c09e77ac78fa5af9cd9b4654a2a61836e773116e5bfe
+      kimi_k25_vision_processing.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=kimi_k25_vision_processing.py
+        checksum: blake3:856a849fa0a58d0ce7fda807d42f35c60745fae8349dba0c3560f61c7270179c
+      media_utils.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=media_utils.py
+        checksum: blake3:eace4ed5d923c21f4f103d2a2fa472b3093cd660d48821b0140067ee82c00832
+      model-00001-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00001-of-000064.safetensors
+        checksum: blake3:14ca77a9f1c569829d77678d2cfbb0ef902ddbef01ad61deb484a3bd546576c5
+      model-00002-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00002-of-000064.safetensors
+        checksum: blake3:8e16d76fd04809f443f6ae82583f9718f7cb8a09af16d188707fdfa38be3be75
+      model-00003-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00003-of-000064.safetensors
+        checksum: blake3:e9f271b0e9ce0c361cbc9663f792e89d0d000dbc52dd07ff4e1f3b2992950841
+      model-00004-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00004-of-000064.safetensors
+        checksum: blake3:f2f78a314d338c9c8d84cc0f3bd63cd9a2fdde216085b4677bf5e3bd4b48e579
+      model-00005-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00005-of-000064.safetensors
+        checksum: blake3:8b7edf02ba5ba7085a86b2dda927624664ab891144d738d22c8ea574b2bcede2
+      model-00006-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00006-of-000064.safetensors
+        checksum: blake3:4fb88600068657d0e1e24470790aadc2874d8d8e55ee36a7f20169adf4d2e352
+      model-00007-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00007-of-000064.safetensors
+        checksum: blake3:0d7ce61243547061b1ef654ef5a6b208648d0a1a45023f505582b6c861c6f89c
+      model-00008-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00008-of-000064.safetensors
+        checksum: blake3:3eb4e9e3588fce8d92ad58538bf1008e977b5dd89558927190297d72a4ee5660
+      model-00009-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00009-of-000064.safetensors
+        checksum: blake3:4bfa18524f2e1e8189e611edccb8ec8b3b097156f1fb8df7d96e6f9f5e063a84
+      model-00010-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00010-of-000064.safetensors
+        checksum: blake3:f3a10d174de9754442edeee687726017ba361e29dc36f811a805cf6c2a49cef2
+      model-00011-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00011-of-000064.safetensors
+        checksum: blake3:565f1d03edfd7dcd67e832294a25d75611cd45d28b4ad44f77e3bb6697fbdfb6
+      model-00012-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00012-of-000064.safetensors
+        checksum: blake3:9e2d0fd42f6fb5557f2454aca038608cd1341d30ad786b6134b7f3aa5d82f362
+      model-00013-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00013-of-000064.safetensors
+        checksum: blake3:bf8a57c758ad0660580679f71c892bb85c769f3418822cc67ddf3a64237fd08a
+      model-00014-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00014-of-000064.safetensors
+        checksum: blake3:d2394b2b06b43cb5d26e53b07d6dec04ab2347ff3f3e6b33aee831e75b480359
+      model-00015-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00015-of-000064.safetensors
+        checksum: blake3:87bee82f2acdf290b59efea3817d72df47d42b8f0c037803fecee2ad3676180d
+      model-00016-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00016-of-000064.safetensors
+        checksum: blake3:a29010e0a6682cc8ce835e531215f9450e1ac602833adeef47caad067ed2355d
+      model-00017-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00017-of-000064.safetensors
+        checksum: blake3:6be944342acc64ab9901af969f0b646b13a832629b77e21d9ab2cd82812ebefc
+      model-00018-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00018-of-000064.safetensors
+        checksum: blake3:a873747adb1439fb9320641741a693ff15ab9e7b2861f4fb8ad5e2e2444cb6d3
+      model-00019-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00019-of-000064.safetensors
+        checksum: blake3:78b8b8577eba0a4af573d7fba6af155fdb2be77e6e1bde038250292fcdaee255
+      model-00020-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00020-of-000064.safetensors
+        checksum: blake3:b593a7acfc671fc802bb5fdc085b0bf3647b510156374e4b073489d9b725c1fa
+      model-00021-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00021-of-000064.safetensors
+        checksum: blake3:7909bcac8f79f6d477a7524c1b5ffa7e7405c39693d890b02a47060f089090d5
+      model-00022-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00022-of-000064.safetensors
+        checksum: blake3:37d362b25a6aae593de516a2c69774e2e4901ea008ce0acf84ec406ffd94321f
+      model-00023-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00023-of-000064.safetensors
+        checksum: blake3:7e9d70bcc076fd891a395f696d03f5cc90a309ff63cb434b00596b48154b13f9
+      model-00024-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00024-of-000064.safetensors
+        checksum: blake3:d8c4ce8f0d4f21c03f60dc2ad40d087ddf7b4152ddd23c7e3380f8499fc7b5c4
+      model-00025-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00025-of-000064.safetensors
+        checksum: blake3:026180ec44d9b6bda7ba3f69bc1d429440e07bbf1a652edca60a28d19fabdae4
+      model-00026-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00026-of-000064.safetensors
+        checksum: blake3:5cde29b378e39b9673e3fd54a3d909e7e2b42a85b19181b4f48bd5d70f1336c6
+      model-00027-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00027-of-000064.safetensors
+        checksum: blake3:1ab284619002694fd87a4f0eb5cd2a26dac1c067b87cb639dcbb63edbb49ecf7
+      model-00028-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00028-of-000064.safetensors
+        checksum: blake3:c673a344d8c891f98c9c2450775abb20c65eb84ea061cd355de394a598cd8870
+      model-00029-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00029-of-000064.safetensors
+        checksum: blake3:41a3bdba214b9a586aac9d31367f36d4a637deb5f85a84196ace3f02a1eb59d6
+      model-00030-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00030-of-000064.safetensors
+        checksum: blake3:4947f8e3c999f1dcdd2be66c2ddbf8c94b654531a829deb1921b0b3662dbd9ed
+      model-00031-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00031-of-000064.safetensors
+        checksum: blake3:321f6c867d7a0e4b89e4370664b03ac39c4f1df30fccbae5917eaa07c06a197e
+      model-00032-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00032-of-000064.safetensors
+        checksum: blake3:41c971088cf73a6d073486713c880768173d2ab47d317f1c9f718cde3257b6c0
+      model-00033-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00033-of-000064.safetensors
+        checksum: blake3:cfff52cade95b290bfd243aa10ad6a255dbcf416080b5cfeb98628663b44b43a
+      model-00034-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00034-of-000064.safetensors
+        checksum: blake3:aca20a4965d75833f2ab0c7ffa8adea453d81f6cb484c9965aaaaab5054ab028
+      model-00035-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00035-of-000064.safetensors
+        checksum: blake3:ad2103dd81d6d495d5284984694db03285fae6c122e9a17da0567a3e02aadbd3
+      model-00036-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00036-of-000064.safetensors
+        checksum: blake3:861d7c44d5be9b3193b2c108d8156fe77baad38171cc81ca2c522e5aa140cbe9
+      model-00037-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00037-of-000064.safetensors
+        checksum: blake3:f33ccab31fe05968eb0ba20877e8f0a925f456a01fffb03baa0d02ece0777ed1
+      model-00038-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00038-of-000064.safetensors
+        checksum: blake3:688b95fcc361774b9143bae8af3ec7598ebc556eb49dfd463f3871a1f4628a33
+      model-00039-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00039-of-000064.safetensors
+        checksum: blake3:001c5b470be5ed601e9154c0e55ff2cc7d6065d77b406866721253d24b76f635
+      model-00040-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00040-of-000064.safetensors
+        checksum: blake3:2bd8f4d6a26384f6f7023dcfa244775270e450aa983122e78f5c889867cc5a71
+      model-00041-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00041-of-000064.safetensors
+        checksum: blake3:e456ad7f95788f97733eece34cc5a379c6757ebb4bc1a6a67eaf717ab97f95af
+      model-00042-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00042-of-000064.safetensors
+        checksum: blake3:e136a6575390652517bf18b85de8ef614bd92e83f261358f7a70946426c88fcc
+      model-00043-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00043-of-000064.safetensors
+        checksum: blake3:1438b70dcdd39ff5ce91652d0cafa6bd1add4ab4a230c57b012d793deaca526a
+      model-00044-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00044-of-000064.safetensors
+        checksum: blake3:1452fed3abea2d38bb5ad4531bd51b2b40244afa47c30571e678b6e946905768
+      model-00045-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00045-of-000064.safetensors
+        checksum: blake3:b66bcf39ff079d7dfb890e1533ea7e7ee9849fac52f96cac85bb30fa1123808c
+      model-00046-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00046-of-000064.safetensors
+        checksum: blake3:57d9cb23b0709e5ebea20d3ad50fc654b4380c3b883d479e98818481e1d16a61
+      model-00047-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00047-of-000064.safetensors
+        checksum: blake3:ba2c0e20b02079037556967e636f2d19c9ebb2e14313957fca0e56aed443caee
+      model-00048-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00048-of-000064.safetensors
+        checksum: blake3:3743dd73f540c1482b16c5ba9ccdc5976ab0011c920cbb0ba85e9d02b6e54f97
+      model-00049-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00049-of-000064.safetensors
+        checksum: blake3:8a7def3c45de6b84e7ff70603b505dcac79ff948a6654852afcb9fd9f6383701
+      model-00050-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00050-of-000064.safetensors
+        checksum: blake3:c91d396834d4c870e86ed4c43a7a8b3805132f46a7b1e787604602ee1d5fdc59
+      model-00051-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00051-of-000064.safetensors
+        checksum: blake3:1176338721e010626497e8473517b12e6422cc8c5979a71d56d1805dae6ea5cd
+      model-00052-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00052-of-000064.safetensors
+        checksum: blake3:32b6e88ef3b806bcb252d483603a7924e841e329c05b2e749fcd56e1537aee66
+      model-00053-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00053-of-000064.safetensors
+        checksum: blake3:732d7d5e44917df2a90e5ce9dc28c178e0544fe3ed765aabdf0f13d49fd8df64
+      model-00054-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00054-of-000064.safetensors
+        checksum: blake3:e3f3bdc5948dd0bdd993c5eea4babfd9d0929bb633e297ac9b7e553ec5410810
+      model-00055-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00055-of-000064.safetensors
+        checksum: blake3:d54bfe5ffdcb2fdddf85ed78d546b4e7d0bc286b6d8c0d5007b2e408fd7d64e9
+      model-00056-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00056-of-000064.safetensors
+        checksum: blake3:f84bfdb58f44e6f9bfedfbe34f62a1cca2ea159f63552b88ec4c132be820da7e
+      model-00057-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00057-of-000064.safetensors
+        checksum: blake3:546e31b0679867fc59e8c3535dc8b55bc47ce325762d6d4e91a23a1070a7768f
+      model-00058-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00058-of-000064.safetensors
+        checksum: blake3:66ea018b4a1b683b82dfe158ca271b756788a53a1800237f970b499f6309d0ad
+      model-00059-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00059-of-000064.safetensors
+        checksum: blake3:6a399b118266fc548c2ff47c85d5b23bcc8a23bb0f2e17f666ef01f8eeff4de2
+      model-00060-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00060-of-000064.safetensors
+        checksum: blake3:67076278c4ef40e7d2c1fb4b2d3249787b9f75b3a4c57c26b2ca1d201123d3b8
+      model-00061-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00061-of-000064.safetensors
+        checksum: blake3:326ff28a26cf2a30349e82fb2366a6d735c472589f0185fd56e2392683025334
+      model-00062-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00062-of-000064.safetensors
+        checksum: blake3:d516fbd677f964670150d6af290d73b6c8b8fe5d5c0fd20e94c55daa5877abd8
+      model-00063-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00063-of-000064.safetensors
+        checksum: blake3:bd7c14eb974f28e8e25ff71db342399a51b3181f91bce99a4c7d77197386d0ed
+      model-00064-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model-00064-of-000064.safetensors
+        checksum: blake3:6aaaaf4387cb3fc4dd8058996c6de9b0879b7fd1dcfa14339e71a53e9fff6fa1
+      model.safetensors.index.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=model.safetensors.index.json
+        checksum: blake3:64b893c5a15d79eaf8ae2f9540446c164df7588a465a194c508ec16b6afbf223
+      modeling_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=modeling_deepseek.py
+        checksum: blake3:d59d350e5f5ad3b374c5e4bb61df3f864e50baf30401349b78861c066af0cb12
+      modeling_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=modeling_kimi_k25.py
+        checksum: blake3:bc86b33a89597e422aa21b08aa61728b1121615c3820d6113e580f26ae32ca6a
+      preprocessor_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=preprocessor_config.json
+        checksum: blake3:b8f9f39c23afc6e9850c07c06e8cab9e704c28d0280fda6672fb400536be8cce
+      runtime_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:h200-config-v5?file=runtime_config.json
+        checksum: blake3:b9a962461f1f6b34b3233f464508dbf21cbcbaff8a5961dcfaf4978a311ec51f
+      tiktoken.model:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=tiktoken.model
+        checksum: blake3:c893437b479f39927a9128d939a6ac52103adfac1d7f198e5765869057b521c8
+      tokenization_kimi.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=tokenization_kimi.py
+        checksum: blake3:9d65f28c47f5767df9ffff20bccc920304e8d357aee6c373e7f4ba43c7ad3e6e
+      tokenizer_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=tokenizer_config.json
+        checksum: blake3:c02001f985f75797c229403ea85302ded8ae96ac655aab0f40d3dabb5f703156
+      tool_declaration_ts.py:
+        uri: ngc://nim/moonshotai/kimi-k2.6:vlm-nim-with-checksum?file=tool_declaration_ts.py
+        checksum: blake3:3405b73432651471d1f8cd94c3db2f6d5067620d8fb3ba413fe41154095b6d5d
+  workspace_hash: 87396f0a77c0d8b1f58af23e692b20ec607ea977b7fee6f9d21f26f68243c3e9

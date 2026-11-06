@@ -1,0 +1,207 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: baai/bge-m3
+release: 1.5.0
+profiles:
+- id: 037eb6c468847dc15b9801e2df2977ea2850439c586797347dfc06366e7f0fce
+  tags:
+    backend: tensorrt
+    gpu: a10g
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:a10gx1-trt-fp16-caunwebd2a?file=checksums.blake3
+        checksum: blake3:b307efcb8ea288a97fa6dfbd9930565030e0c7a51da79d510fab42dba85369b4
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:a10gx1-trt-fp16-caunwebd2a?file=metadata.json
+        checksum: blake3:08a5f619aba9118b3b5bb772c3ca95d82e0dbe086ba0612785d47a990f3fabe1
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:a10gx1-trt-fp16-caunwebd2a?file=model.plan
+        checksum: blake3:982da0dddf0bb0c2b8b94c063ec35d79b4173fa50fba848c38a41e4c0f54c5b6
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: 43c6f3dae3e06f15c769ad6f90fdfb07766f68a2cfba2c6df7b987512ec5aed0
+  tags:
+    backend: tensorrt
+    gpu: h20
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:h20x1-trt-fp16-i6ng9geucg?file=checksums.blake3
+        checksum: blake3:3a37b13eeac3c420f0fc2ca5f192e5205b11bbb39d3cb7bda2e57d39280a3949
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:h20x1-trt-fp16-i6ng9geucg?file=metadata.json
+        checksum: blake3:3e6e3842c3fb3d661111b175a349eabd55331e2249f8849865e0729f67523402
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:h20x1-trt-fp16-i6ng9geucg?file=model.plan
+        checksum: blake3:79182ffb6cb166628e029b1ebdf9fe57769c6ad5370a8888cc9d7c9c2c2148ae
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: ab412b0239ed85250b13b6907a1e5efcee8c64d9a8bfd8f978482fbaa92660df
+  tags:
+    backend: tensorrt
+    gpu: a100-sxm4-80gb
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:a100x1-trt-fp16-yxwf6qnhsa?file=checksums.blake3
+        checksum: blake3:6c4c7d15d61eb45a6067c6a555cdc4a8ac7b5187884ab1288057d7737f48d8f4
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:a100x1-trt-fp16-yxwf6qnhsa?file=metadata.json
+        checksum: blake3:51535cb9f8f75c68315bf4e72ccb0b25ebc6ac71502e96149d607b809e44c722
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:a100x1-trt-fp16-yxwf6qnhsa?file=model.plan
+        checksum: blake3:efe0553f7d2bea0fd3cd4a397ce59d7b9ec118c57c5dbc6267ac3507478d6ad4
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: bd7c050e36afa6684c3fdce002171ee6755a841687f8fe4e425940223dc93020
+  tags:
+    backend: tensorrt
+    gpu: h100-hbm3-80gb
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:h100x1-trt-fp16-tjew-qw3iw?file=checksums.blake3
+        checksum: blake3:2f01541fab11d236d3efb90eb64e8c292c64b6c99b8a7e360f8540b279584234
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:h100x1-trt-fp16-tjew-qw3iw?file=metadata.json
+        checksum: blake3:d1ab0e6cc432e72fc3b5cf50d363e2cc3f35bc953911c15a7f03a2e47dc02598
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:h100x1-trt-fp16-tjew-qw3iw?file=model.plan
+        checksum: blake3:3ffbf87ecb37053a85e4c3489a3e6f2a90ff79b989e8e371b4e29d4bd67c386f
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: c9020f540eb278d0e77ac8072a346490de86f7130d988d1ebf71cb3c0ce31407
+  tags:
+    backend: tensorrt
+    gpu: l20
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:l20x1-trt-fp16-vkhkezhzzw?file=checksums.blake3
+        checksum: blake3:6e712b450d8aa5935ccefb019353e35fc6be1923e726b5e776036a1c98296a92
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:l20x1-trt-fp16-vkhkezhzzw?file=metadata.json
+        checksum: blake3:a79003e8b1526f84f2805faece4ca33139214521418245c7e2ad3084abd86023
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:l20x1-trt-fp16-vkhkezhzzw?file=model.plan
+        checksum: blake3:b352a3e6a6a39c26a274af1601bfc4a19e55b463dba70fff35279d8c78f49ae9
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: dd267fa7a6351300c70c84bc2f3298c76ffaa8afa3ee7d859d088d7db99b6921
+  tags:
+    backend: tensorrt
+    gpu: l40s
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:l40sx1-trt-fp16-zrxcsh-2hw?file=checksums.blake3
+        checksum: blake3:6ee5020f0ced41edaca763fd8e8499a3af97af33122a4518948ff71cd2b29421
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:l40sx1-trt-fp16-zrxcsh-2hw?file=metadata.json
+        checksum: blake3:ae55f3723680fbb487740a25a95112ec968e9b390d5c2069fa0920d607fa612e
+      model/model.plan:
+        uri: ngc://nim/baai/bge-m3:l40sx1-trt-fp16-zrxcsh-2hw?file=model.plan
+        checksum: blake3:48d0dc388a8cdd5d94217128f151fe41fa9bdd67d8e12d5c3222d586df1b6fb7
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4
+- id: f7391ddbcb95b2406853526b8e489fedf20083a2420563ca3e65358ff417b10f
+  tags:
+    backend: onnx
+    model_type: onnx
+    precision: fp16
+  workspace:
+    files:
+      model/checksums.blake3:
+        uri: ngc://nim/baai/bge-m3:a100x1-onnx-fp16-amxqz2emxg?file=checksums.blake3
+        checksum: blake3:d0d011bb1800cb19ce2b3d25eb642ff4eabb7304f7af95a7a02fabb26ada040d
+      model/metadata.json:
+        uri: ngc://nim/baai/bge-m3:a100x1-onnx-fp16-amxqz2emxg?file=metadata.json
+        checksum: blake3:627c33aa9d0713715c4ebbb379af5fe98b09b808371aca5d6fbb4ebe4f583689
+      model/model.onnx:
+        uri: ngc://nim/baai/bge-m3:a100x1-onnx-fp16-amxqz2emxg?file=model.onnx
+        checksum: blake3:15325c4aab3b9719933efc92fefebfbf6a0a9269f938d70b7a8467a6d580cc67
+      tokenizer/sentencepiece.bpe.model:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=sentencepiece.bpe.model
+        checksum: blake3:8f62bc4442807849d3c95286ddf1eb8c22fa7bc0eb107f8600587320e293c6a4
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=special_tokens_map.json
+        checksum: blake3:7928b0181fe837ea946ad566a4c8c3421b414988e65c61af6cedf79586971810
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer.json
+        checksum: blake3:a085385b8b6f4a3f16a3493c180e694f92897e919d00aa9b3cd7fbffe1269cee
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/baai/bge-m3:tokenizer-8192?file=tokenizer_config.json
+        checksum: blake3:edaa88adc0a2806c739cf5ccab9672ec19869cf58002203e4921607d7676f0b4

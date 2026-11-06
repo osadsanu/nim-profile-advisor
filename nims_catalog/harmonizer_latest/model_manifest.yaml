@@ -1,0 +1,285 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/harmonizer
+release: 1.0.0
+profiles:
+- id: 324c587222edcb00526165af96a1fbffc1d29b3a4b57c496fc78d5dbc9209584
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: 562d4e4294a0eb578db5a8cc1b3537d3b8cac2b9fcc3bc1dcec9d334422b14f8
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-GeForce-RTX-4090
+    gpu_device: 2684:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: 564c2208ed35cabe697e5048109a33e15eab1335f09262a711e5340d205481e6
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: 6ada8e7bebae880e4ed6ca90ec9a627a4dd4d95e5ecc8e1259c00bb563258cd6
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-GeForce-RTX-4090
+    gpu_device: 2684:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: 86d4dfde3f35de9d1060444dcc430cbdd5b4ec5296f98a3d0b661c4a2af880b4
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: 91746589b81b71692fc7b286fff46c01fd113a3be7377a22223c4cb4d7a405af
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-RTX-6000-Ada-Generation
+    gpu_device: 26b1:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: a2d87d6aea706be39aa4411e5bbf771e1c0f9fcec4450a5d7a4448398fef6471
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: b231ecd5b1fc4fc7d7367611047f90ba0440c31b63e05e630b8afc2c9654ce19
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: b6df5af3ef0f5814cd69a069342353d7674dd4632baca1966760684227c3e7c8
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-RTX-6000-Ada-Generation
+    gpu_device: 26b1:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: c76c1c26d8aa8efd577912f9b132e990d0ffffdb4aebfad7e13a83976e02ff01
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: ceb3abc76fcb79100f2db4513170e20fad784fc517f729c87fd4369c0e227ca8
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: e010f2e9d6ba91d645bc944cdfcf4f508119394bf8d172be605f324d77c133a4
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: eb1ebbcaf749f9f8a1346af304f9d0212b27fa6956d56ce8f6698f7222617569
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    inference_scenario: latency
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130
+- id: f5a11971c4ec751e574b2c8abf2c3d1d369a94935f51c26093b0f0cebcc5f072
+  tags:
+    backend: pytorch
+    gpu: NVIDIA-L40S
+    gpu_device: 26b9:10de
+    inference_scenario: throughput
+    model_type: text-image-to-image
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      harmonizer/checksums.blake3:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=checksums.blake3
+        checksum: blake3:df4af4a61073c26e6cb28bea325295bfd4f02f186b1534e58d35039102cdc57e
+      harmonizer/diffusion_harmonizer.pkl:
+        uri: ngc://nim/nvidia/harmonizer:hf-f2bae982-source-pkl-blake3?file=diffusion_harmonizer.pkl
+        checksum: blake3:9541c1fb09552a93cbab683b6ef8bdcb6b915ad9cc221bc44764f0c019d390d5
+  workspace_hash: d7200edee7997867f014d92af7e6f1dc657b80504b373d25323182d083d33130

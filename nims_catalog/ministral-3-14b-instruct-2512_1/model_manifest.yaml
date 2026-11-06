@@ -1,0 +1,125 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: mistralai/ministral-3-14b-instruct-2512
+release: 1.6.0
+profiles:
+- id: 1ad2fb4b8eb33a9f8a20662f4e976d8e2e773781f801e6bff71c2256b3e0cb35
+  tags:
+    feat_lora: 'false'
+    gpu: L40S
+    gpu_device: 26b9:10de
+    llm_engine: vllm
+    max_model_len: '100000'
+    nim_workspace_hash_v1: 0c3f2cfc8551dabb332faa33f4d14f5aa6ecb5f6879a408f13189033f5716dc2
+    pp: '1'
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=README.md
+        checksum: blake3:62d349c5e9b3dfe9f4ad28cbe454aaf0a0313865a2f6b1f54e61c4c426d6cab2
+      SYSTEM_PROMPT.txt:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=SYSTEM_PROMPT.txt
+        checksum: blake3:64550df2423be5a764498cb32b50544b8a25a2a8d1ced65cf0045ddddf7b7cbd
+      chat_template.jinja:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=chat_template.jinja
+        checksum: blake3:7c815dd0e7b793c42d7188628517bf4f7b1e03c8315fc80ff2a64b6b8b9a0306
+      config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=config.json
+        checksum: blake3:7c63c53b44367a0a9a9aa2346135b8469f2a9495e0a722a8cd350517dd674866
+      consolidated.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=consolidated.safetensors
+        checksum: blake3:73d78fff57c6ed8de80cffef9e488749f46fd6b6ee7307cfb857ab57eec4e264
+      generation_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=generation_config.json
+        checksum: blake3:c7555a68782bb2d440a0e6ee1f9c469b54bf8f4d158572efcbe666112b42ece8
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00001-of-00004.safetensors
+        checksum: blake3:46969ce8c37e8d072de88643cdbce67db4fa2d339065eb298d049815442c87ec
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00002-of-00004.safetensors
+        checksum: blake3:b0bf28bc91275d51c1b51dea15addddf25fbfc9702cc5d78e25ae750deb90767
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00003-of-00004.safetensors
+        checksum: blake3:923e86162d8200f0c8ffa76328079413beb45fdd9575043e80df69e4d98f4b82
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00004-of-00004.safetensors
+        checksum: blake3:79fe776d919941f326dfbb5a59aec3393de0bef3385bc847c41f5523aa824d5d
+      model.safetensors.index.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:eee4bb4712cca6129ff6eaea9a48e8b8aee5fa1df2764fa147a636ce2af50df0
+      params.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=params.json
+        checksum: blake3:2ce0dd8650834d0f12dd4a5c23d9ef447c9fef0ef4a612b02552fa16282650a6
+      processor_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=processor_config.json
+        checksum: blake3:5138ad348e918de40b89ce1ab5d18cf9b51580e4de8ba6325b89516c8b5a114b
+      tekken.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tekken.json
+        checksum: blake3:41d907c49880e5557a75fe0499229a7606b2633454e4289d324855738381ff81
+      tokenizer.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tokenizer.json
+        checksum: blake3:917586e639c834d8e3d05a212d5f1d0f89ee054dea3a93970c610eff7a046d18
+      tokenizer_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:84f80fcd6708aed04902478307da6de96c50317e0c858150de4f2d08a94d62b6
+- id: 90a2d2343c8494a337c8881e43cbe8e72e9666c19c856c9d06a886407e0aecc6
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    max_model_len: '262144'
+    nim_workspace_hash_v1: 0c3f2cfc8551dabb332faa33f4d14f5aa6ecb5f6879a408f13189033f5716dc2
+    pp: '1'
+    precision: fp8
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=README.md
+        checksum: blake3:62d349c5e9b3dfe9f4ad28cbe454aaf0a0313865a2f6b1f54e61c4c426d6cab2
+      SYSTEM_PROMPT.txt:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=SYSTEM_PROMPT.txt
+        checksum: blake3:64550df2423be5a764498cb32b50544b8a25a2a8d1ced65cf0045ddddf7b7cbd
+      chat_template.jinja:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=chat_template.jinja
+        checksum: blake3:7c815dd0e7b793c42d7188628517bf4f7b1e03c8315fc80ff2a64b6b8b9a0306
+      config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=config.json
+        checksum: blake3:7c63c53b44367a0a9a9aa2346135b8469f2a9495e0a722a8cd350517dd674866
+      consolidated.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=consolidated.safetensors
+        checksum: blake3:73d78fff57c6ed8de80cffef9e488749f46fd6b6ee7307cfb857ab57eec4e264
+      generation_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=generation_config.json
+        checksum: blake3:c7555a68782bb2d440a0e6ee1f9c469b54bf8f4d158572efcbe666112b42ece8
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00001-of-00004.safetensors
+        checksum: blake3:46969ce8c37e8d072de88643cdbce67db4fa2d339065eb298d049815442c87ec
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00002-of-00004.safetensors
+        checksum: blake3:b0bf28bc91275d51c1b51dea15addddf25fbfc9702cc5d78e25ae750deb90767
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00003-of-00004.safetensors
+        checksum: blake3:923e86162d8200f0c8ffa76328079413beb45fdd9575043e80df69e4d98f4b82
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model-00004-of-00004.safetensors
+        checksum: blake3:79fe776d919941f326dfbb5a59aec3393de0bef3385bc847c41f5523aa824d5d
+      model.safetensors.index.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=model.safetensors.index.json
+        checksum: blake3:eee4bb4712cca6129ff6eaea9a48e8b8aee5fa1df2764fa147a636ce2af50df0
+      params.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=params.json
+        checksum: blake3:2ce0dd8650834d0f12dd4a5c23d9ef447c9fef0ef4a612b02552fa16282650a6
+      processor_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=processor_config.json
+        checksum: blake3:5138ad348e918de40b89ce1ab5d18cf9b51580e4de8ba6325b89516c8b5a114b
+      tekken.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tekken.json
+        checksum: blake3:41d907c49880e5557a75fe0499229a7606b2633454e4289d324855738381ff81
+      tokenizer.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tokenizer.json
+        checksum: blake3:917586e639c834d8e3d05a212d5f1d0f89ee054dea3a93970c610eff7a046d18
+      tokenizer_config.json:
+        uri: ngc://nim/mistralai/ministral-3-14b-instruct-2512:vlm-nim?file=tokenizer_config.json
+        checksum: blake3:84f80fcd6708aed04902478307da6de96c50317e0c858150de4f2d08a94d62b6

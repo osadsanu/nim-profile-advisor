@@ -1,0 +1,287 @@
+# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+# property and proprietary rights in and to this material, related
+# documentation and any modifications thereto. Any use, reproduction,
+# disclosure or distribution of this material and related documentation
+# without an express license agreement from NVIDIA CORPORATION or
+# its affiliates is strictly prohibited.
+
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+model: 'maisi'
+release: '1.0.0'
+profiles:
+- id: 56df3d486bbd1c8ac4a1de4d613d4037927bd462d751bf4fe9cbeb8d14890cb8
+  tags:
+    backend: triton
+    bundle: ngc:default
+  workspace:
+    files:
+      models/maisi/1/model.py:
+        uri: local:///opt/triton_model?file=1/model.py
+        checksum: blake3:49be8c5f01340d162a8eb60bb8bb7072527337a93d5526643d10c4bb3441d0f1
+      models/maisi/1/utils.py:
+        uri: local:///opt/triton_model?file=1/utils.py
+        checksum: blake3:17b46b785f01ea6f2e65b85c5cd92b3ab3611cabd63a1ec0c89d1373a5de0410
+      models/maisi/config.pbtxt:
+        uri: local:///opt/triton_model?file=config.pbtxt
+        checksum: blake3:0e326f7c84c7598d2870770be29b9703217e76d422ce5c510e0c8277177351c6
+      models/maisi/bundle/LICENSE:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=LICENSE
+        checksum: blake3:4b170816b8a172c9865a7ced8a845cced3a44ad33e11c4dc6646bb670ab19feb
+      models/maisi/bundle/configs/all_anatomy_size_condtions.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/all_anatomy_size_condtions.json
+        checksum: blake3:b1e3bdfa5d0c09fd551a97b874efc9b53d03c24476629402451cbed6bb3411ce
+      models/maisi/bundle/configs/candidate_masks_flexible_size_and_spacing_3000.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/candidate_masks_flexible_size_and_spacing_3000.json
+        checksum: blake3:3e45c3039a055e52c5881eb2cdd7c05fa8d00c0da6404df5732a843960852d99
+      models/maisi/bundle/configs/image_median_statistics.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/image_median_statistics.json
+        checksum: blake3:7ea2f61259feeafec52d5020592b035db60bd28e963436f840cd4c3c356b1791
+      models/maisi/bundle/configs/inference.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/inference.json
+        checksum: blake3:b6dd36bcbb5db73e6cb56c42ff405aa0f8e0862f4c9eb6b2d7ce0bd67368c0d5
+      models/maisi/bundle/configs/inference_trt.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/inference_trt.json
+        checksum: blake3:b9eff7b82990cced3414d2a6d8f9e46ba21cebbfc3511ae45e60465b8a69a749
+      models/maisi/bundle/configs/integration_test_masks.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/integration_test_masks.json
+        checksum: blake3:499ed6df708b345370012abca8bc2922b8788d60e6796a7b9bb9bc8c3e08e5d2
+      models/maisi/bundle/configs/label_dict.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/label_dict.json
+        checksum: blake3:f62a96b1b7f56e601eb0f95189610cf6fe639bb6bee96d8bdeabba719b10d3cd
+      models/maisi/bundle/configs/label_dict_124_to_132.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/label_dict_124_to_132.json
+        checksum: blake3:843f63de7beca7595e4c2f8d9a4d1448b46f790c4f49733821ae497b0148e3ec
+      models/maisi/bundle/configs/logging.conf:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/logging.conf
+        checksum: blake3:0855e677b49f78e3327e625e9bd65c6c09ee5ae664085a11c94e2c568917935a
+      models/maisi/bundle/configs/metadata.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/metadata.json
+        checksum: blake3:f9084d441befff6e0cd2c07e3ccc99b078d1a7b6eb2352788a40be1b23e8d05a
+      models/maisi/bundle/configs/multi_gpu_train.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/multi_gpu_train.json
+        checksum: blake3:f85e3142b9de8e0e78c54e434ca5a691fa999b7d580cbb668eb1bca6389be4f3
+      models/maisi/bundle/configs/train.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=configs/train.json
+        checksum: blake3:ab7cf9ee0c6920646a81a21e12066a67f3df514f2e8221953b1d523150fd99ed
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.json:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=datasets/C4KC-KiTS_subset.json
+        checksum: blake3:afddaee13ad1a24a33bdb346a00b34339b67838f75206a403afc5ad599e400b9
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.zip:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=datasets/C4KC-KiTS_subset.zip
+        checksum: blake3:60ed4041a8cfdf4e4cbcf5daa1e35071e8e4e36b3be117e0b86ba07d22eeb43d
+      models/maisi/bundle/datasets/IntegrationTest-AbdomenCT.nii.gz:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=datasets/IntegrationTest-AbdomenCT.nii.gz
+        checksum: blake3:9b8b33628d10604c73bafeff3c3b7c9aa9a0499c31f932b65dc1fd5f5fc99cdf
+      models/maisi/bundle/datasets/all_masks_flexible_size_and_spacing_3000.zip:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=datasets/all_masks_flexible_size_and_spacing_3000.zip
+        checksum: blake3:8334fd98b6f28b56562b9837929fe2f667f19f3faf01cb80a231dcaa4f5312c7
+      models/maisi/bundle/docs/README.md:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=docs/README.md
+        checksum: blake3:cd3729b33833dcc061854db3e672150bcdfcb10da7ed791e0231981038489b60
+      models/maisi/bundle/docs/data_license.txt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=docs/data_license.txt
+        checksum: blake3:ae3ff2661413d895db2be6ab0b19bcc0b47dec8a2ae87d8b8e014ca0a75e9249
+      models/maisi/bundle/models/autoencoder.pt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=models/autoencoder.pt
+        checksum: blake3:5507657515362b1ac48e63baffd8d861ba3aaa0112b27b936d47c54e376257a7
+      models/maisi/bundle/models/controlnet.pt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=models/controlnet.pt
+        checksum: blake3:6c561e8fe6e038783f4bd915e2b25303e03bc07e3119dab142abfd4322d0b044
+      models/maisi/bundle/models/diffusion_unet.pt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=models/diffusion_unet.pt
+        checksum: blake3:880f7b419e3ec65765b846a12e59d278bb4c2fb4eecefa0a3d9b50c36e991377
+      models/maisi/bundle/models/mask_generation_autoencoder.pt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=models/mask_generation_autoencoder.pt
+        checksum: blake3:650e269fba88c1cf9fb04c5c55719d38d5d4cf83cfc1e008dd9393e5f3f58221
+      models/maisi/bundle/models/mask_generation_diffusion_unet.pt:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=models/mask_generation_diffusion_unet.pt
+        checksum: blake3:a963997c81d828b5b03c96cc806a288a1eb3ae549061500e81f0209709f5f0c1
+      models/maisi/bundle/scripts/__init__.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/__init__.py
+        checksum: blake3:7e59890698dc08cb3aaa79f85df5d8e4848caf44e8061ba48fa68c8593a7c238
+      models/maisi/bundle/scripts/augmentation.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/augmentation.py
+        checksum: blake3:bcc3cbce9ab0fc60716b1aa86b1aa545bbc1b732962b1619e3202e3dabaafbdc
+      models/maisi/bundle/scripts/find_masks.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/find_masks.py
+        checksum: blake3:ae3ce789d11c79098a15b803fcc96ddd34722bc5825b66c70181c1ad4ca37034
+      models/maisi/bundle/scripts/quality_check.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/quality_check.py
+        checksum: blake3:b0b77705344d453ba4ab546c3c5a4048ee81731510753550b6adc0a993ef2896
+      models/maisi/bundle/scripts/rectified_flow.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/rectified_flow.py
+        checksum: blake3:7c075b149cc7c11ae3b98f80366be67c8af63f314c8f2e80b77e918637c1415c
+      models/maisi/bundle/scripts/sample.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/sample.py
+        checksum: blake3:40cbdbbdca967c194c41e72565c90a40c84aa6bb29d4c7ecfb81ac000a3537dc
+      models/maisi/bundle/scripts/trainer.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/trainer.py
+        checksum: blake3:e5f454cfa2bfa24c5d315eba8f8fda8ffb7807d248276387901d8a6265c339f8
+      models/maisi/bundle/scripts/utils.py:
+        uri: ngc://nim/nvidia/maisi:1.0.0?file=scripts/utils.py
+        checksum: blake3:295223f3eb76ad7f3ccb5f94e8553d8f2e925986881429e28eb24efea57321d3
+
+- id: 43d0baebee73b7bdc2f9c7edf5c726b2323b4f7283eab92fab893d451592656d
+  tags:
+    backend: triton
+    bundle: /opt/bundle
+  workspace:
+    files:
+      models/maisi/1/model.py:
+        uri: local:///opt/triton_model?file=1/model.py
+        checksum: blake3:49be8c5f01340d162a8eb60bb8bb7072527337a93d5526643d10c4bb3441d0f1
+      models/maisi/1/utils.py:
+        uri: local:///opt/triton_model?file=1/utils.py
+        checksum: blake3:17b46b785f01ea6f2e65b85c5cd92b3ab3611cabd63a1ec0c89d1373a5de0410
+      models/maisi/config.pbtxt:
+        uri: local:///opt/triton_model?file=config.pbtxt
+        checksum: blake3:0e326f7c84c7598d2870770be29b9703217e76d422ce5c510e0c8277177351c6
+      models/maisi/bundle/LICENSE:
+        uri: local:///opt/bundle?file=LICENSE
+      models/maisi/bundle/configs/all_anatomy_size_condtions.json:
+        uri: local:///opt/bundle?file=configs/all_anatomy_size_condtions.json
+      models/maisi/bundle/configs/candidate_masks_flexible_size_and_spacing_3000.json:
+        uri: local:///opt/bundle?file=configs/candidate_masks_flexible_size_and_spacing_3000.json
+      models/maisi/bundle/configs/image_median_statistics.json:
+        uri: local:///opt/bundle?file=configs/image_median_statistics.json
+      models/maisi/bundle/configs/inference.json:
+        uri: local:///opt/bundle?file=configs/inference.json
+      models/maisi/bundle/configs/inference_trt.json:
+        uri: local:///opt/bundle?file=configs/inference_trt.json
+      models/maisi/bundle/configs/integration_test_masks.json:
+        uri: local:///opt/bundle?file=configs/integration_test_masks.json
+      models/maisi/bundle/configs/label_dict.json:
+        uri: local:///opt/bundle?file=configs/label_dict.json
+      models/maisi/bundle/configs/label_dict_124_to_132.json:
+        uri: local:///opt/bundle?file=configs/label_dict_124_to_132.json
+      models/maisi/bundle/configs/logging.conf:
+        uri: local:///opt/bundle?file=configs/logging.conf
+      models/maisi/bundle/configs/metadata.json:
+        uri: local:///opt/bundle?file=configs/metadata.json
+      models/maisi/bundle/configs/multi_gpu_train.json:
+        uri: local:///opt/bundle?file=configs/multi_gpu_train.json
+      models/maisi/bundle/configs/train.json:
+        uri: local:///opt/bundle?file=configs/train.json
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.json:
+        uri: local:///opt/bundle?file=datasets/C4KC-KiTS_subset.json
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.zip:
+        uri: local:///opt/bundle?file=datasets/C4KC-KiTS_subset.zip
+      models/maisi/bundle/datasets/IntegrationTest-AbdomenCT.nii.gz:
+        uri: local:///opt/bundle?file=datasets/IntegrationTest-AbdomenCT.nii.gz
+      models/maisi/bundle/datasets/all_masks_flexible_size_and_spacing_3000.zip:
+        uri: local:///opt/bundle?file=datasets/all_masks_flexible_size_and_spacing_3000.zip
+      models/maisi/bundle/docs/README.md:
+        uri: local:///opt/bundle?file=docs/README.md
+      models/maisi/bundle/docs/data_license.txt:
+        uri: local:///opt/bundle?file=docs/data_license.txt
+      models/maisi/bundle/models/autoencoder.pt:
+        uri: local:///opt/bundle?file=models/autoencoder.pt
+      models/maisi/bundle/models/controlnet.pt:
+        uri: local:///opt/bundle?file=models/controlnet.pt
+      models/maisi/bundle/models/diffusion_unet.pt:
+        uri: local:///opt/bundle?file=models/diffusion_unet.pt
+      models/maisi/bundle/models/mask_generation_autoencoder.pt:
+        uri: local:///opt/bundle?file=models/mask_generation_autoencoder.pt
+      models/maisi/bundle/models/mask_generation_diffusion_unet.pt:
+        uri: local:///opt/bundle?file=models/mask_generation_diffusion_unet.pt
+      models/maisi/bundle/scripts/__init__.py:
+        uri: local:///opt/bundle?file=scripts/__init__.py
+      models/maisi/bundle/scripts/augmentation.py:
+        uri: local:///opt/bundle?file=scripts/augmentation.py
+      models/maisi/bundle/scripts/find_masks.py:
+        uri: local:///opt/bundle?file=scripts/find_masks.py
+      models/maisi/bundle/scripts/quality_check.py:
+        uri: local:///opt/bundle?file=scripts/quality_check.py
+      models/maisi/bundle/scripts/rectified_flow.py:
+        uri: local:///opt/bundle?file=scripts/rectified_flow.py
+      models/maisi/bundle/scripts/sample.py:
+        uri: local:///opt/bundle?file=scripts/sample.py
+      models/maisi/bundle/scripts/trainer.py:
+        uri: local:///opt/bundle?file=scripts/trainer.py
+      models/maisi/bundle/scripts/utils.py:
+        uri: local:///opt/bundle?file=scripts/utils.py
+
+- id: 4f59603b064ace736ff833d1bbdddf69a2afc54056de38cf36713aa01e96129d
+  tags:
+    backend: triton
+    bundle: /config/models
+  workspace:
+    files:
+      models/maisi/1/model.py:
+        uri: local:///opt/triton_model?file=1/model.py
+        checksum: blake3:49be8c5f01340d162a8eb60bb8bb7072527337a93d5526643d10c4bb3441d0f1
+      models/maisi/1/utils.py:
+        uri: local:///opt/triton_model?file=1/utils.py
+        checksum: blake3:17b46b785f01ea6f2e65b85c5cd92b3ab3611cabd63a1ec0c89d1373a5de0410
+      models/maisi/config.pbtxt:
+        uri: local:///opt/triton_model?file=config.pbtxt
+        checksum: blake3:0e326f7c84c7598d2870770be29b9703217e76d422ce5c510e0c8277177351c6
+      models/maisi/bundle/LICENSE:
+        uri: local:///config/models/maisi?file=LICENSE
+      models/maisi/bundle/configs/all_anatomy_size_condtions.json:
+        uri: local:///config/models/maisi?file=configs/all_anatomy_size_condtions.json
+      models/maisi/bundle/configs/candidate_masks_flexible_size_and_spacing_3000.json:
+        uri: local:///config/models/maisi?file=configs/candidate_masks_flexible_size_and_spacing_3000.json
+      models/maisi/bundle/configs/image_median_statistics.json:
+        uri: local:///config/models/maisi?file=configs/image_median_statistics.json
+      models/maisi/bundle/configs/inference.json:
+        uri: local:///config/models/maisi?file=configs/inference.json
+      models/maisi/bundle/configs/inference_trt.json:
+        uri: local:///config/models/maisi?file=configs/inference_trt.json
+      models/maisi/bundle/configs/integration_test_masks.json:
+        uri: local:///config/models/maisi?file=configs/integration_test_masks.json
+      models/maisi/bundle/configs/label_dict.json:
+        uri: local:///config/models/maisi?file=configs/label_dict.json
+      models/maisi/bundle/configs/label_dict_124_to_132.json:
+        uri: local:///config/models/maisi?file=configs/label_dict_124_to_132.json
+      models/maisi/bundle/configs/logging.conf:
+        uri: local:///config/models/maisi?file=configs/logging.conf
+      models/maisi/bundle/configs/metadata.json:
+        uri: local:///config/models/maisi?file=configs/metadata.json
+      models/maisi/bundle/configs/multi_gpu_train.json:
+        uri: local:///config/models/maisi?file=configs/multi_gpu_train.json
+      models/maisi/bundle/configs/train.json:
+        uri: local:///config/models/maisi?file=configs/train.json
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.json:
+        uri: local:///config/models/maisi?file=datasets/C4KC-KiTS_subset.json
+      models/maisi/bundle/datasets/C4KC-KiTS_subset.zip:
+        uri: local:///config/models/maisi?file=datasets/C4KC-KiTS_subset.zip
+      models/maisi/bundle/datasets/IntegrationTest-AbdomenCT.nii.gz:
+        uri: local:///config/models/maisi?file=datasets/IntegrationTest-AbdomenCT.nii.gz
+      models/maisi/bundle/datasets/all_masks_flexible_size_and_spacing_3000.zip:
+        uri: local:///config/models/maisi?file=datasets/all_masks_flexible_size_and_spacing_3000.zip
+      models/maisi/bundle/docs/README.md:
+        uri: local:///config/models/maisi?file=docs/README.md
+      models/maisi/bundle/docs/data_license.txt:
+        uri: local:///config/models/maisi?file=docs/data_license.txt
+      models/maisi/bundle/models/autoencoder.pt:
+        uri: local:///config/models/maisi?file=models/autoencoder.pt
+      models/maisi/bundle/models/controlnet.pt:
+        uri: local:///config/models/maisi?file=models/controlnet.pt
+      models/maisi/bundle/models/diffusion_unet.pt:
+        uri: local:///config/models/maisi?file=models/diffusion_unet.pt
+      models/maisi/bundle/models/mask_generation_autoencoder.pt:
+        uri: local:///config/models/maisi?file=models/mask_generation_autoencoder.pt
+      models/maisi/bundle/models/mask_generation_diffusion_unet.pt:
+        uri: local:///config/models/maisi?file=models/mask_generation_diffusion_unet.pt
+      models/maisi/bundle/scripts/__init__.py:
+        uri: local:///config/models/maisi?file=scripts/__init__.py
+      models/maisi/bundle/scripts/augmentation.py:
+        uri: local:///config/models/maisi?file=scripts/augmentation.py
+      models/maisi/bundle/scripts/find_masks.py:
+        uri: local:///config/models/maisi?file=scripts/find_masks.py
+      models/maisi/bundle/scripts/quality_check.py:
+        uri: local:///config/models/maisi?file=scripts/quality_check.py
+      models/maisi/bundle/scripts/rectified_flow.py:
+        uri: local:///config/models/maisi?file=scripts/rectified_flow.py
+      models/maisi/bundle/scripts/sample.py:
+        uri: local:///config/models/maisi?file=scripts/sample.py
+      models/maisi/bundle/scripts/trainer.py:
+        uri: local:///config/models/maisi?file=scripts/trainer.py
+      models/maisi/bundle/scripts/utils.py:
+        uri: local:///config/models/maisi?file=scripts/utils.py

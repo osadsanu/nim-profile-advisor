@@ -1,0 +1,70 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/parakeet-tdt-0.6b-v2
+release: 1.1.0
+profiles:
+- id: 6fedd2cebb5498de5c35d4168d8d9e9bb5f97cd672873791cf15fbd06f180ca8
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: a100
+    gpu_device: 20b2
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-tdt-0.6b-v2
+    vad: default
+  workspace:
+    files:
+      parakeet-tdt-0.6b-v2-a100x1-ofl-25.10.3-fp16-t7pr4ryhfq/asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:a100x1-ofl-25.10.3-fp16-t7pr4ryhfq?file=asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz
+      parakeet-tdt-0.6b-v2-a100x1-ofl-25.10.3-fp16-t7pr4ryhfq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:a100x1-ofl-25.10.3-fp16-t7pr4ryhfq?file=checksums.blake3
+      parakeet-tdt-0.6b-v2-a100x1-ofl-25.10.3-fp16-t7pr4ryhfq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:a100x1-ofl-25.10.3-fp16-t7pr4ryhfq?file=metadata.json
+- id: 7334eee4d4e133fc86543aaf8196ee822492874b5fb0766a72a0f90e852c238a
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: h100
+    gpu_device: '2330'
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-tdt-0.6b-v2
+    vad: default
+  workspace:
+    files:
+      parakeet-tdt-0.6b-v2-h100x1-ofl-25.10.3-fp16-4vga06bl6w/asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:h100x1-ofl-25.10.3-fp16-4vga06bl6w?file=asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz
+      parakeet-tdt-0.6b-v2-h100x1-ofl-25.10.3-fp16-4vga06bl6w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:h100x1-ofl-25.10.3-fp16-4vga06bl6w?file=checksums.blake3
+      parakeet-tdt-0.6b-v2-h100x1-ofl-25.10.3-fp16-4vga06bl6w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:h100x1-ofl-25.10.3-fp16-4vga06bl6w?file=metadata.json
+- id: 8deb96c0faa7a43440ff15a0150f88a1597b80e689901cac9d295d40a236e042
+  tags:
+    diarizer: disabled
+    mode: ofl
+    model_type: rmir
+    name: parakeet-tdt-0.6b-v2
+    vad: default
+  workspace:
+    files:
+      parakeet-tdt-0.6b-v2-ofl-rmir-25.10.3/asr-parakeet-tdt-0.6b-en-US-offline-nemo.rmir:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:ofl-rmir-25.10.3?file=asr-parakeet-tdt-0.6b-en-US-offline-nemo.rmir
+- id: fe8e23eb3a485e73abd544645961f41e137e2a9c60a907d9c19779a844aa9a67
+  tags:
+    ampereplus: disabled
+    diarizer: disabled
+    gpu: l40s
+    gpu_device: 26b9
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-tdt-0.6b-v2
+    vad: default
+  workspace:
+    files:
+      parakeet-tdt-0.6b-v2-l40sx1-ofl-25.10.3-fp16-dkqcgsdknw/asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:l40sx1-ofl-25.10.3-fp16-dkqcgsdknw?file=asr-parakeet-tdt-0.6b-en-US-offline-nemo.tar.gz
+      parakeet-tdt-0.6b-v2-l40sx1-ofl-25.10.3-fp16-dkqcgsdknw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:l40sx1-ofl-25.10.3-fp16-dkqcgsdknw?file=checksums.blake3
+      parakeet-tdt-0.6b-v2-l40sx1-ofl-25.10.3-fp16-dkqcgsdknw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-tdt-0.6b-v2:l40sx1-ofl-25.10.3-fp16-dkqcgsdknw?file=metadata.json

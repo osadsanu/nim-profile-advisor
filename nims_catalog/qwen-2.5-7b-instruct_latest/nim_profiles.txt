@@ -1,0 +1,82 @@
+- id: 5b6ca943a38e1df0c2341caad30c9a76a41aa1fdaa1611dd2dbcc975f5b8f707
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '1'
+
+- id: a07eb1e9e154c3a218f575eeb5d868575455090322ab05c322d0ab93d7a770d5
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+
+- id: c3f4a2bbdbdf4304d01b73e0ab7bcad197e68e1c9f77389da1f3666fc6b2e420
+  tags:
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: balanced
+    tp: '1'
+
+- id: 67b7ebc82480c4f74c81f3da74db7fef37c6f7d3d65827d8c16926ffcb45679d
+  tags:
+    gpu: L20
+    gpu_device: 26ba:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+
+- id: 582445b82e81d3e9db3ad1cd9f891ce2923052768319cdefb67e45e0866432f3
+  tags:
+    gpu: A100-PCIE-40GB
+    gpu_device: 20f1:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: balanced
+    tp: '1'
+
+- id: ee0d01038c07770250f2c006c60ad737a6a4d1d4466c104e76212e6098179069
+  tags:
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'

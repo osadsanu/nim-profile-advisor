@@ -1,0 +1,85 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: google/gemma-2-2b-instruct
+release: 1.4.0
+profiles:
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=README.md
+        checksum: blake3:38d0fbca26f43023f297f5e6920ac26eeb76f53859843528adb0ea0959d4642e
+      config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=config.json
+        checksum: blake3:1b302bf5808cc9f0345a5e4e850d1abc4b5bd49551833f93dce37baf4e221cee
+      generation_config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=generation_config.json
+        checksum: blake3:08affdca05c1565623a146a6e3314fe0a6338bbbc9e24fb07aee524eb20b69b0
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model-00001-of-00002.safetensors
+        checksum: blake3:2eeb06cf907f154b627c8a5dee9a217a449bb9eb314dcc04238ca6d08906abb2
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model-00002-of-00002.safetensors
+        checksum: blake3:764a3c02acc2c3f643f49593b0fd8f1b014c2674b10032a88d1fe37eadfe085e
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model.safetensors.index.json
+        checksum: blake3:200f94c09c903e117458dbc87a23218b1d4efd9ce9ef9fdddfa1f71fbcb97411
+      special_tokens_map.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer_config.json
+        checksum: blake3:746947405c525de58cba056c9d5988a6400404230c16fa66660082aa6836927f
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=README.md
+        checksum: blake3:38d0fbca26f43023f297f5e6920ac26eeb76f53859843528adb0ea0959d4642e
+      config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=config.json
+        checksum: blake3:1b302bf5808cc9f0345a5e4e850d1abc4b5bd49551833f93dce37baf4e221cee
+      generation_config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=generation_config.json
+        checksum: blake3:08affdca05c1565623a146a6e3314fe0a6338bbbc9e24fb07aee524eb20b69b0
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model-00001-of-00002.safetensors
+        checksum: blake3:2eeb06cf907f154b627c8a5dee9a217a449bb9eb314dcc04238ca6d08906abb2
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model-00002-of-00002.safetensors
+        checksum: blake3:764a3c02acc2c3f643f49593b0fd8f1b014c2674b10032a88d1fe37eadfe085e
+      model.safetensors.index.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=model.safetensors.index.json
+        checksum: blake3:200f94c09c903e117458dbc87a23218b1d4efd9ce9ef9fdddfa1f71fbcb97411
+      special_tokens_map.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/google/gemma-2-2b-instruct:hf-299a856?file=tokenizer_config.json
+        checksum: blake3:746947405c525de58cba056c9d5988a6400404230c16fa66660082aa6836927f

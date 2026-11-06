@@ -1,0 +1,1309 @@
+schema_version: "2.1"
+profile_selection_criteria: auto
+model: zai-org_glm-51
+release: 1.0.0
+profiles:
+  - id: 190fa529d62ebbc9828fa5cd49672a7d00f5416b8a33856475f3849fe7caa27e
+    tags:
+      ep: "1"
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      mem_fraction_static: "0.8"
+      pp: "1"
+      precision: nvfp4
+      profile: rag-qa
+      tp: "8"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=README.md
+          checksum: blake3:09b8543b7f1c6df9e3d0f09a2e6e252623709bc64bec294c640270f86948335c
+        chat_template.jinja:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=chat_template.jinja
+          checksum: blake3:aa50ebd67eccf2fda184bc0215ea7842f18b4a8e5e433e4a9158ed6ef5b0b5a0
+        checksums.blake3:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=checksums.blake3
+          checksum: blake3:886e0b6398fb434b3ee40d147c5cc5f7547f802bd4bb8480f5736311922b9e0f
+        config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=config.json
+          checksum: blake3:76b384a860906cce171156e48f3407f373413ce32cc07ef6006437c2ed1d6e2a
+        generation_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=generation_config.json
+          checksum: blake3:6f2d9dd2a16ab923d05e811ba8fdc6f4bcd1ad61dfc2891995e471ed3511b6be
+        hf_quant_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=hf_quant_config.json
+          checksum: blake3:730588b229e7f9a488b6d53cc184d62d58353cfe13c71108af60ed9a2cbb167c
+        model-00001-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00001-of-00049.safetensors
+          checksum: blake3:9a5e9e3ac1eccb9b774e6f79ddde7ca8c0a6e33a38413046d70fed3dba6651cf
+        model-00002-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00002-of-00049.safetensors
+          checksum: blake3:164c84df985b749e78348377dcfe6d07e79d82fbf4804fb04bd3eb1d911b893e
+        model-00003-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00003-of-00049.safetensors
+          checksum: blake3:773479bffea235c2ec4daa753434de76489876a1e33b6a9c67b9a770d1c94aa9
+        model-00004-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00004-of-00049.safetensors
+          checksum: blake3:5a8811adaad9052f91ef7319263ba9f98fd8d8917183e6d7d96c309098684190
+        model-00005-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00005-of-00049.safetensors
+          checksum: blake3:8d56b0417df3770b00d96fa12c45a672ad0700939243ed8800bc92fe926a15fd
+        model-00006-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00006-of-00049.safetensors
+          checksum: blake3:980819c500508b1bd4da54a1eafd2f18ae9b36894e8931500271a4afd84fc023
+        model-00007-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00007-of-00049.safetensors
+          checksum: blake3:ec0edb6437dde10823c197d45f4685a1fcc376741723e155b468d37bc1459099
+        model-00008-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00008-of-00049.safetensors
+          checksum: blake3:db225d2b9771cf6140dd82398022b08c48f8405a503ebd39c47e619240aef7d1
+        model-00009-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00009-of-00049.safetensors
+          checksum: blake3:f890ae3dc419e8d31829c18d0bf65f070624fd6d01e443d3ec674edeb6483e76
+        model-00010-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00010-of-00049.safetensors
+          checksum: blake3:0e79ca461d40c133ce61bcd415f048b53b7846db89cfde63e6d9de16d1869df8
+        model-00011-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00011-of-00049.safetensors
+          checksum: blake3:7597548fa7ffa4cb02e7ba7aed34690ceee5d5c143d6851af6607b4b365a62d4
+        model-00012-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00012-of-00049.safetensors
+          checksum: blake3:0ab46056d0874844866062f86602dedc4367fff37615622a2833b75888a00e70
+        model-00013-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00013-of-00049.safetensors
+          checksum: blake3:c59d610189d38b7e2a86398b309e04dcf154492e5bd303dbc6bde7940bfd685a
+        model-00014-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00014-of-00049.safetensors
+          checksum: blake3:153e9463b4a0a51009cafa8b3343e231de3a3579ab4e1b1a49d8dfb1613a1b3d
+        model-00015-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00015-of-00049.safetensors
+          checksum: blake3:e4f2550ecc8a622ec47337f793064f682376b2aecc334a6b575f6267dd955588
+        model-00016-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00016-of-00049.safetensors
+          checksum: blake3:7b4d53a9d0b5abb9efa383fc6c27d73f6175c85923263e92105cdb09322a2e50
+        model-00017-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00017-of-00049.safetensors
+          checksum: blake3:0df710c2a03078bd47aa3c03987d762ff2efa68a491f8af6ec3483fa50c36abf
+        model-00018-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00018-of-00049.safetensors
+          checksum: blake3:4fba552dd545db5d39b13bf19c700e8e5f44bb8438fd317ff175abdbb592dfe3
+        model-00019-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00019-of-00049.safetensors
+          checksum: blake3:e9b220ded5025d281737d5e11dceaa562adfba3fa5a40841a194905968de72dd
+        model-00020-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00020-of-00049.safetensors
+          checksum: blake3:1bc5e3caac7be868539aba7c9a29c2f96312f4db75153d392a8aef680decadc2
+        model-00021-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00021-of-00049.safetensors
+          checksum: blake3:201ddcd011c057ed06d7c87c0126038461a44ea0e98168f2e023d38f5af64b2f
+        model-00022-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00022-of-00049.safetensors
+          checksum: blake3:2d76ac0cccc4bce079f9b57b23c82cd385e61f89792ee8d939ae37c52a3fd478
+        model-00023-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00023-of-00049.safetensors
+          checksum: blake3:528bd37fd0844982d49843bf8c18e9d6f63f2353afe95738dbe408c0140b615b
+        model-00024-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00024-of-00049.safetensors
+          checksum: blake3:5b1915f899122ab2cf4378d1f0591a6e646bf9e7678b12c583977c9b68c59514
+        model-00025-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00025-of-00049.safetensors
+          checksum: blake3:d057ce3fd8cf0e3800a3a5ab91c2855413a78adae542051e2a479a9ff6db80df
+        model-00026-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00026-of-00049.safetensors
+          checksum: blake3:c6d09edf7d4582fb6bec02c4380251efdc662ea3a736f5eac7ed0c2588cf8e3c
+        model-00027-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00027-of-00049.safetensors
+          checksum: blake3:27b98917f396b326140114ef572e74c697108e7548054ff0a360e156d6889a0f
+        model-00028-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00028-of-00049.safetensors
+          checksum: blake3:8cf7097c80778ab75d1d95da1fe7fd72716982053cb2885781eca568b2daf64a
+        model-00029-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00029-of-00049.safetensors
+          checksum: blake3:e8e1839c1205b6b911b40d064344deac24b1dcba755b10390ed63e77f567886b
+        model-00030-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00030-of-00049.safetensors
+          checksum: blake3:83a0b5be4274283e557430c39f5160a2599a23bfa8f0a72232063a38c3871845
+        model-00031-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00031-of-00049.safetensors
+          checksum: blake3:c24ac53017f8b1d8b598c5f138b5804a68864e56dba5e8871b4046869e69f130
+        model-00032-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00032-of-00049.safetensors
+          checksum: blake3:a6cd5affd8ef8c37810047ab94a8b2625196bc3f43779629d60c51f38142e3af
+        model-00033-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00033-of-00049.safetensors
+          checksum: blake3:f6ca559dd4ed13e753a4d3d773f7a2d649ee4985a93a8ee10178b0e255945def
+        model-00034-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00034-of-00049.safetensors
+          checksum: blake3:44287a9bc5d01d2a67c6b08416c846a2639e7f2b82d1496cfc03855451e1617a
+        model-00035-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00035-of-00049.safetensors
+          checksum: blake3:6ee0506d112c8eb4a133e4c19bf342641adcfd08de89e57aae44654d33394f95
+        model-00036-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00036-of-00049.safetensors
+          checksum: blake3:f1e56d11c1a5dadd341e4ea72454c0aa862c39088360c06b95cd7969effec1e7
+        model-00037-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00037-of-00049.safetensors
+          checksum: blake3:014a0e0515e21408e8771e404fd6c8a9fcebcf672c9bb293048c4ac29f60c108
+        model-00038-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00038-of-00049.safetensors
+          checksum: blake3:4b92f64d9c55c92a8baa87ce67a5d16aa7db95305b38d45205b1468f1daa740b
+        model-00039-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00039-of-00049.safetensors
+          checksum: blake3:180bd585e66ac375772c8767fe71c3aa0e963ed63a34cba3f4ad1ac9d3513d7e
+        model-00040-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00040-of-00049.safetensors
+          checksum: blake3:c813fc4c87e4e41e20ffba86e7b9bd677e049df3f2c29dafffc2be85e472cf3a
+        model-00041-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00041-of-00049.safetensors
+          checksum: blake3:cf32ec7b1210a57ed087242fcca606e0a9cdc1681be90a91a010359d943dff7b
+        model-00042-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00042-of-00049.safetensors
+          checksum: blake3:c9f867b0a223e628e0fbf231b7ea01ccbf2adb2a48508a6f4e2060f6f6a7d512
+        model-00043-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00043-of-00049.safetensors
+          checksum: blake3:811b9f7bc1142f4e303d45eaa2389119162e2bd31862c2b2f0a017e39446fc5f
+        model-00044-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00044-of-00049.safetensors
+          checksum: blake3:c74ea8e2a4da4f27bc9d442bb85a7cd78e7bb18bdac19c83707bb2b75399957d
+        model-00045-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00045-of-00049.safetensors
+          checksum: blake3:cebc92fd8907e8f97929799a69c7da785a7d325e0ffec6e2c03f512104783275
+        model-00046-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00046-of-00049.safetensors
+          checksum: blake3:cb923b35f78935637355cdae01660c8165225446f1fc2c342be8b194463e5bdd
+        model-00047-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00047-of-00049.safetensors
+          checksum: blake3:d42a1d98595568461091a9f0b8af2d599b036f55f9574d34167da70fd525d4af
+        model-00048-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00048-of-00049.safetensors
+          checksum: blake3:94896077f8f5d1e9fe2e01bfc003ea456a77e14c2425c1e09bdbc62ba540802b
+        model-00049-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00049-of-00049.safetensors
+          checksum: blake3:65cc6aee5ffa93055d6432102b8f2b486b274f0e99767437e7595ff7a58fdec8
+        model.safetensors.index.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model.safetensors.index.json
+          checksum: blake3:7f5b147734f617609ba446b5b474973e45d83598c6104e483b379d43fbb0afc7
+        tokenizer.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=tokenizer.json
+          checksum: blake3:95875d64ad7f0287b7c4c3ac262475aff876301b4d71c31a939496f92d0a4836
+        tokenizer_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=tokenizer_config.json
+          checksum: blake3:9fe9f862aa265a93efd90ee31b9f57b9197bb1c74be8c7d88d5c10ae127c9fd5
+  - id: 4e803f6293d24ff77eb29e798616c7847157b11b0ef8f3aaf17ac920c4ecbc0f
+    tags:
+      ep: "1"
+      feat_lora: "false"
+      gpu: H200
+      gpu_device: 2335:10de
+      llm_engine: sglang
+      mem_fraction_static: "0.85"
+      pp: "1"
+      precision: fp8
+      profile: rag-qa
+      tp: "8"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=README.md
+          checksum: blake3:cf794afbfcbed74ee8dd378e4983b062a491402a57bdd8ef40d6c1ba61eace43
+        chat_template.jinja:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=chat_template.jinja
+          checksum: blake3:ac2244cc06f39cefc3e9a6ee841be022e546fa821a740c850f19114fefc839f7
+        checksums.blake3:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=checksums.blake3
+          checksum: blake3:2462c9e724b1d225c45f51ceb6f18dd0f343ae39988951a69cc207c7972e3367
+        config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=config.json
+          checksum: blake3:c0dc7db1d1e0a65043efa4f4455e7c3d3ab50c74eb4ec931287fcc781ce23d0f
+        generation_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=generation_config.json
+          checksum: blake3:0e62fc22f41b9b1e1acc8e9850c2a246f6af85045ed8a916d00acfd722f41a96
+        model-00001-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00001-of-00142.safetensors
+          checksum: blake3:ef52425e3d1ddc25916003e84efa07d483f0eca3cfc2dc95e00eb380fe1ecae8
+        model-00002-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00002-of-00142.safetensors
+          checksum: blake3:a3979d61674c6c592f5de9844ca8f7c67bb6e4c2b2d7917cc229a0c2bf2cd0cb
+        model-00003-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00003-of-00142.safetensors
+          checksum: blake3:150b0343b558fc23832b0eee6f4976dcfa6cee1564c18c39c78e618ecbc5afd4
+        model-00004-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00004-of-00142.safetensors
+          checksum: blake3:7f88f170e7fa1e2ccfd478646440c0ee4c9f3968eae100b5429b60f14885db91
+        model-00005-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00005-of-00142.safetensors
+          checksum: blake3:45c77c751f54a0c5ce85312603147cfaf8f40b9c14d02691d05c3cf6752b2b7d
+        model-00006-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00006-of-00142.safetensors
+          checksum: blake3:d3d269bda3fa51faf6403774c23eb7ca1b03bf1a35378e6606ece76c0077eea5
+        model-00007-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00007-of-00142.safetensors
+          checksum: blake3:d585b731a5b26069d0a44799006f2f925e0cd90c349fe1b58c478b45af582411
+        model-00008-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00008-of-00142.safetensors
+          checksum: blake3:3587d5e634e8d6b5849d9951cf29e0b4edbc53e9b032aa5be92227c975b3d419
+        model-00009-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00009-of-00142.safetensors
+          checksum: blake3:7afdb8cb1881d4785bddf94cac2dad8a0cf5f4a80ced74e6329cf23d0ca4e356
+        model-00010-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00010-of-00142.safetensors
+          checksum: blake3:d9ac708aad8b4333f060a6a51ab09754d4f6db6363e112fafdc4f23abb1ecd28
+        model-00011-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00011-of-00142.safetensors
+          checksum: blake3:fd7eb58572c316fc37c8041e9a7214bde27bd4ad2e8c8e3aa0498583e590d338
+        model-00012-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00012-of-00142.safetensors
+          checksum: blake3:c7d86f98d04eb5379620d00c8ccb66a0aeace2010f4daf3a87fc39fae412b435
+        model-00013-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00013-of-00142.safetensors
+          checksum: blake3:f3a38fe5f9fcfeeeaf16cf4072f837d2d0206a89f83cde171c229cdd16e9e624
+        model-00014-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00014-of-00142.safetensors
+          checksum: blake3:fd2630ec6bfbfea6e4e6e4ae7c29da2ee5fdd751ca83f87851446bb6c5eb39a6
+        model-00015-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00015-of-00142.safetensors
+          checksum: blake3:982fd9cca6bec3e40592f5d1d53676a30a8cc28615e8932d9cc8259fdc275687
+        model-00016-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00016-of-00142.safetensors
+          checksum: blake3:d3517de216636cb6276750a691b3a34a9bbbab42bdf25d12d7bd4374648c2c6c
+        model-00017-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00017-of-00142.safetensors
+          checksum: blake3:dff4c9ba4a586b250eca4a2271500b12018c5bbe9b0dbcaf7fd291601bc38f9e
+        model-00018-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00018-of-00142.safetensors
+          checksum: blake3:ff0ef18eba51b0f8fa70cbf3604bc6aa80d165461a9378c3a0d93f6a7640a6d5
+        model-00019-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00019-of-00142.safetensors
+          checksum: blake3:685f96fa15525f5606deeb8a810ab1aec16f7afc532ecbf9e9dc213ffe793bdc
+        model-00020-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00020-of-00142.safetensors
+          checksum: blake3:e6d3bae44fa98cc1b4d600b1bc7987a29018cae30ef389e859e11a5ef395169a
+        model-00021-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00021-of-00142.safetensors
+          checksum: blake3:bd4bf2e09ab4bfc25daf354caf6b12980b3bd0f641d6e3c7b5687a42eb4a2c20
+        model-00022-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00022-of-00142.safetensors
+          checksum: blake3:e1d83a6cd3706be2de5413e3c4850ba1b984e95ef6dde168bef8ac3187b1a1f7
+        model-00023-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00023-of-00142.safetensors
+          checksum: blake3:fdcc72f6ccffc09e7c60efd757f65efd0cf90edb9740786626bbc57ed3380232
+        model-00024-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00024-of-00142.safetensors
+          checksum: blake3:3b4519e9b19de33b8a6fdcfeec028964f06b71ee42ceaedd75eaf60eab9f8417
+        model-00025-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00025-of-00142.safetensors
+          checksum: blake3:496afaad9fd07e08671e6ecda4457368ea328658d3313d9a5de8846a1ce04dd6
+        model-00026-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00026-of-00142.safetensors
+          checksum: blake3:1c2d7d98a2f6dac0e32c4e6abf880e67bcfe9efbccb660bc3ee3139b9efec113
+        model-00027-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00027-of-00142.safetensors
+          checksum: blake3:dca8e51cde73fcd3fbf3fc38c4d0e8ced39f40d585f2839fbf5b75f7fe4ce2c4
+        model-00028-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00028-of-00142.safetensors
+          checksum: blake3:cd6a2fa7b8250919616dead54f3fb959cff94eee811f2675026b8f458ebfb221
+        model-00029-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00029-of-00142.safetensors
+          checksum: blake3:fc1c32b3c3462e447ef813ebfc5e97c2b0ca1fbc80b87c27531a5a2519cde2fa
+        model-00030-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00030-of-00142.safetensors
+          checksum: blake3:040aa15f3cd11ab0a9acacdbe80dbb8ad18e4956112c103bf0ec614f4f542ed7
+        model-00031-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00031-of-00142.safetensors
+          checksum: blake3:d3530d3b0dd6d7e0de35081ebce3045bcf60e2814310a751158f9eacb726bc56
+        model-00032-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00032-of-00142.safetensors
+          checksum: blake3:59e7964b41ad5196a32413b6cece5f466a67a5d2ebe155e060e8ccc2113cab21
+        model-00033-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00033-of-00142.safetensors
+          checksum: blake3:7ad39f8a32f9e0452e78023be1a6bf6bf70b77e7f99aa3460aadd86ee55b5087
+        model-00034-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00034-of-00142.safetensors
+          checksum: blake3:35cc340fe57cc5fbed1a37ddbd38fd508e91f2fe49c1c9a8b203ff8472309329
+        model-00035-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00035-of-00142.safetensors
+          checksum: blake3:ea57e1d74b7eb37f42f39ffc78f1aa69570aaaa2d467d133e6989a9c46769110
+        model-00036-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00036-of-00142.safetensors
+          checksum: blake3:9b3c6eee26fe54b3048e3ad202e6f63daf4a02541fbc256f6d81ce93dd140a47
+        model-00037-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00037-of-00142.safetensors
+          checksum: blake3:6147f8543a40302943aa428d194cee08aa222241cf3bb0b66d027440701b3c42
+        model-00038-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00038-of-00142.safetensors
+          checksum: blake3:f55909d0c28f1dd8a7f9111951b66cf198c2ddc89cf5e4d31daa27de958b0dce
+        model-00039-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00039-of-00142.safetensors
+          checksum: blake3:f82aad76048478d8418e4925d06b350b41a46e06db2dfc9ed6609758ca6c207f
+        model-00040-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00040-of-00142.safetensors
+          checksum: blake3:f8abdb18d59da206634bd721a32447cffdbd270e14e3363a0a6e149ae7adef9d
+        model-00041-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00041-of-00142.safetensors
+          checksum: blake3:0f17c6fdff01547a7f7a72f6b734e52d41c5bcd625f2a1c459177b58ee257bf6
+        model-00042-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00042-of-00142.safetensors
+          checksum: blake3:b47c80b15c5d3d4c824d84c2a583690ee16b5e6fbe5b1243e6ab981934807be0
+        model-00043-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00043-of-00142.safetensors
+          checksum: blake3:318d3c4da469b1f2ac659a462a0b614a5a222d73e66446fca70e1b6c00bff7ce
+        model-00044-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00044-of-00142.safetensors
+          checksum: blake3:29aecd87c6188443875f5b0067a08e290c4c5c8beeb27aca6c6cdadd81d2e510
+        model-00045-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00045-of-00142.safetensors
+          checksum: blake3:67c1024359d8f2f8883f73d9772749b9c5e37f4d366045dc43130265947ef9c4
+        model-00046-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00046-of-00142.safetensors
+          checksum: blake3:ccbd014b3ff248d3c410dd645c58ec356fa79193cd6afd46e887995ee83c4020
+        model-00047-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00047-of-00142.safetensors
+          checksum: blake3:8dddd09e7436c1b134d4f4551480ff4e4471b40eb5f84e68f46b513425298c58
+        model-00048-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00048-of-00142.safetensors
+          checksum: blake3:41010ce8940a3a52ae09ab14a36ba0182934c623f72279e92e2e397bb0aead60
+        model-00049-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00049-of-00142.safetensors
+          checksum: blake3:511e3530f09197d20e056774ae63ad1cd1b5aa8c8f7250461cd37a4e62649dcf
+        model-00050-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00050-of-00142.safetensors
+          checksum: blake3:519a4f214cbd6e5739ce48a682a061ef002e69e3edee3aea6ec2e231266e0a7a
+        model-00051-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00051-of-00142.safetensors
+          checksum: blake3:414b7bf5f92d1ad99c31a629c2af76aa9274e863c8e03856eb2a9083eefcd6d1
+        model-00052-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00052-of-00142.safetensors
+          checksum: blake3:09fb9a5f1a104532cfb7e769643763c480d3329da60d656c2c7e4467f7d13c12
+        model-00053-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00053-of-00142.safetensors
+          checksum: blake3:14e17ffe55ff0d250096fdb3a338e16e9fa56a2986b2841a2084ba33ad3bb0ef
+        model-00054-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00054-of-00142.safetensors
+          checksum: blake3:d549f978a06e763feda019b80b932fa665c9d8781a93b782488f7f77c221589a
+        model-00055-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00055-of-00142.safetensors
+          checksum: blake3:9c8bb5d6174c2e4a944532b9b84a09e97a95946cbab7ea227fd6a5a9ce38588b
+        model-00056-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00056-of-00142.safetensors
+          checksum: blake3:4f16b9eda28a22501e5e21af3a1011b0e56268420492128ba5d3efba82b44143
+        model-00057-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00057-of-00142.safetensors
+          checksum: blake3:98645fe98016536ce78c42dcec3b1341c453359583d2b5bd5fa672876fe6c570
+        model-00058-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00058-of-00142.safetensors
+          checksum: blake3:2398d5450f3541ed55d31f498dcbf142bae81ce3bc5210c97dd7baefb8dc1e79
+        model-00059-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00059-of-00142.safetensors
+          checksum: blake3:f90951340d9b3e07ba5863b9a6a90f9bc351f57bbb69107dc3f099fd398adc28
+        model-00060-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00060-of-00142.safetensors
+          checksum: blake3:0adff9f2de5bc03f468b28fbab9144539a3ca9b14ec21c307e09c611bdae6329
+        model-00061-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00061-of-00142.safetensors
+          checksum: blake3:0419d48032857c976c8e0ba744bc8bcab3a84e04eb3f261d2efa5e245458ea4d
+        model-00062-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00062-of-00142.safetensors
+          checksum: blake3:d4ba358c779ea1c54bdeadc9d040b60aa27a7464c5b4a19ce8a12fd95a9f90f9
+        model-00063-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00063-of-00142.safetensors
+          checksum: blake3:7ab06939895e4a29e3b7c18c70098891078e779b4c5b925a50c492be6ada6008
+        model-00064-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00064-of-00142.safetensors
+          checksum: blake3:ff15e787b5a238566167b679fff013f604013d5a950f5c36b0e9c662e50ff308
+        model-00065-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00065-of-00142.safetensors
+          checksum: blake3:f2af197bd769c27d916e235fc42c593be930f89ccb15a03b6ca83cd966edd94a
+        model-00066-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00066-of-00142.safetensors
+          checksum: blake3:934977dc97ad031e799c2cc84da6bf6dc4071fd4ba14328f49fbf176459baad2
+        model-00067-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00067-of-00142.safetensors
+          checksum: blake3:28827bf6a456e7a00af55f3748cbb4228b40fe28862ad1b4efb2b0aacad69319
+        model-00068-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00068-of-00142.safetensors
+          checksum: blake3:b5ba3ed481e8a549116631bf030498217add0a4438267bf8bead6d39cd6cd353
+        model-00069-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00069-of-00142.safetensors
+          checksum: blake3:9d5165d82f20d5ea4f7fdc1a8d92af304bb96f596e8a8858b6da1fe1d4d6c31a
+        model-00070-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00070-of-00142.safetensors
+          checksum: blake3:33daae63e68885a31d97ce007172d3823edb79f5e93cb90b226f7434946a9d14
+        model-00071-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00071-of-00142.safetensors
+          checksum: blake3:9f68dc2c180dd866b942b7ab7895daf2386539518ae286b1fe59271725cf12a2
+        model-00072-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00072-of-00142.safetensors
+          checksum: blake3:eac7e98f32672e46c82223016d93c148081ba28baf555726f26d7d415c3032e5
+        model-00073-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00073-of-00142.safetensors
+          checksum: blake3:0cbd9845168ddd9ae2fb96b6afa00ca8933efa6fca5fd25b9829bc00133f7d70
+        model-00074-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00074-of-00142.safetensors
+          checksum: blake3:52f02dd3e5ea8bb70e95aa7a69c732e8087133105b8891bfe3553d5580914d05
+        model-00075-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00075-of-00142.safetensors
+          checksum: blake3:bcc0c52c0945fc473bcb4fd8bcd8416aab5ce5f699ed798da65e6da375723a8e
+        model-00076-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00076-of-00142.safetensors
+          checksum: blake3:7854383e51ea7bf33d467d58119906379315cf1cc4f58e1704e4f9a19948ded8
+        model-00077-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00077-of-00142.safetensors
+          checksum: blake3:0f2538b29b8a87a3bfdd986b5878f50a2f1b702c09670a4d234698fc42199e6c
+        model-00078-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00078-of-00142.safetensors
+          checksum: blake3:b5ba039e2789180fb0b37ee588e8e7a3635944307b53c587a0801e1312cde148
+        model-00079-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00079-of-00142.safetensors
+          checksum: blake3:4ad420d4dd6f2e6a35eb17358193a7a0e11d6b366d3d33f30d5d68aa09c1f4af
+        model-00080-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00080-of-00142.safetensors
+          checksum: blake3:db5e1a216136f685dbb3e1da22708432e17774bfd24459b36ad2da310a294c2c
+        model-00081-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00081-of-00142.safetensors
+          checksum: blake3:7f757b92ee91c5e85545840abf4ba9f07e68e13a016cb496b89f7030c846029a
+        model-00082-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00082-of-00142.safetensors
+          checksum: blake3:e03ca230d3af109f9aff3f67f7df1fb4d1eb434054ca27f375ab5d91924268cd
+        model-00083-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00083-of-00142.safetensors
+          checksum: blake3:6a289a267f1c8cac6f9807559eba3d99decaab2302fac9e0561f0b907adce30c
+        model-00084-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00084-of-00142.safetensors
+          checksum: blake3:e1d995a2a40442beae16bf3d9931cefb1d685e37267e9f773616478aa27b69de
+        model-00085-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00085-of-00142.safetensors
+          checksum: blake3:25e02cfbaf80797dc4318edf65628c45d7b4d67f36bfbe1b222d722ea4212d71
+        model-00086-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00086-of-00142.safetensors
+          checksum: blake3:1481d1b3203e876992558ee121b2d129ed65319f1b4839d20464aab6621c2640
+        model-00087-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00087-of-00142.safetensors
+          checksum: blake3:c4b4fcb3a01f09a70c2987f54a739e8a19201f7f49d87efe8894d4bf537a0f5a
+        model-00088-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00088-of-00142.safetensors
+          checksum: blake3:c10a245f3632695bbd52e8c0699b8630f88489568d14947aae5fe29efe243295
+        model-00089-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00089-of-00142.safetensors
+          checksum: blake3:5667149feda7fa5b525f6ce78b2abe6584fff628a65c19b6d878d918edb1bff1
+        model-00090-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00090-of-00142.safetensors
+          checksum: blake3:b5ab737b5df3047b3f4bc9ec2a31640be21a5ed3e03c2ea12a09aa736b13fa0f
+        model-00091-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00091-of-00142.safetensors
+          checksum: blake3:d4d421e102c25cb9866dd8f021112151768dde004e256b99144cd4d68fcdf06e
+        model-00092-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00092-of-00142.safetensors
+          checksum: blake3:08172267476e5199d9fc4a3b6bb3691cdfc11a447bcff619846c5d53da904536
+        model-00093-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00093-of-00142.safetensors
+          checksum: blake3:49a42ae42c90dcd84e9019e937b3195f1402de7136dd11abc1c110573e212633
+        model-00094-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00094-of-00142.safetensors
+          checksum: blake3:38f2cff67f425c3e2d18cf26f9ff1e09e3e75104eb658310c178b2e680339c59
+        model-00095-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00095-of-00142.safetensors
+          checksum: blake3:06d6999c9e4731fb9a9c8d77d60aaa230300cb14151396950342a5e05e5566a3
+        model-00096-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00096-of-00142.safetensors
+          checksum: blake3:ab26ebaf0ecc9a2d007414374fe76a8f02eec7537e0eb751652cbb675e9de1f2
+        model-00097-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00097-of-00142.safetensors
+          checksum: blake3:1ff03aaaa769f3c01939bd0dd8f36b2e0fd5d75ef8f6826b63a9082fc69d6f4c
+        model-00098-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00098-of-00142.safetensors
+          checksum: blake3:135a01002ace5092c8c75fadf0f73847294d70eb0698d686ac843123d88e1d4a
+        model-00099-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00099-of-00142.safetensors
+          checksum: blake3:0bd001e3b9a2df2a6acbf35a4dcef6825f621a524c567a2f5bfad0b99ed14889
+        model-00100-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00100-of-00142.safetensors
+          checksum: blake3:32d1b3e812d8cbffff9870854a3fa9421c69b8ab11141f16828c2e9f277f2d89
+        model-00101-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00101-of-00142.safetensors
+          checksum: blake3:f7b36640a81069913910e55ca295ee4ba8aff2903fe315b0e705bf0ab0b0f0a2
+        model-00102-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00102-of-00142.safetensors
+          checksum: blake3:2dad9cbfe7bae1f4f93376cadf0c6ac118e8f0937e5535ce4a521252d2f5c3b7
+        model-00103-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00103-of-00142.safetensors
+          checksum: blake3:8058e3a1fc7d74c5cd1bf6c47eb7d98706e986bff24547b7a771e801f1ed27c6
+        model-00104-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00104-of-00142.safetensors
+          checksum: blake3:ea78dcb93f90631bd0e10c7db2a79bb2b5da2c30cb21fc16bb18c9a56069d9ef
+        model-00105-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00105-of-00142.safetensors
+          checksum: blake3:ca58e4fa5b7ce0c61ce57e4597ebe509b376a97fc0eeda0d5f478a68dedf3811
+        model-00106-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00106-of-00142.safetensors
+          checksum: blake3:62bb02ffe76c5652b4516695411de7577b8cf7653dd98b73657062f7e62d2c9d
+        model-00107-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00107-of-00142.safetensors
+          checksum: blake3:285eeb01ffeb9840d70d7e3c4a3a189d793c0e36c3d9d3dd12db3bc232e1a99a
+        model-00108-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00108-of-00142.safetensors
+          checksum: blake3:391a1f9c00338a131c506d2bf87018712901143c4041d1967c00c87bf9921acd
+        model-00109-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00109-of-00142.safetensors
+          checksum: blake3:8c8c0bce4a40ec5d2947a1ca86c8a9cd3ae9e456ab7941d9dd4e2ddc40bfdff7
+        model-00110-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00110-of-00142.safetensors
+          checksum: blake3:e13e5b1540c9b6a174eb4b74f81a1241a54c2aea12e1b2f08bf9abdec409a29a
+        model-00111-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00111-of-00142.safetensors
+          checksum: blake3:a90c029367b8aa3633c679d95e044cbe748967357b3ebaaff392d8398e1aacd1
+        model-00112-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00112-of-00142.safetensors
+          checksum: blake3:751b6a000cd57e3010d4dc1524db739190cb90bf2ba7b22ba9ce8bf7d4a66bc1
+        model-00113-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00113-of-00142.safetensors
+          checksum: blake3:c57e71541baf63d664e7ef7609ce6d8ab1dbee65f41c5f72a03dd10c9776ad6e
+        model-00114-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00114-of-00142.safetensors
+          checksum: blake3:a3a32c77f3e8b6956df5e4735a886363aac19256a9edf9727179198a33287cc0
+        model-00115-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00115-of-00142.safetensors
+          checksum: blake3:a90446845f2edcb0d48587a0a5877021d4da1184f18561d0568e9904c5a4bf84
+        model-00116-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00116-of-00142.safetensors
+          checksum: blake3:f5dde315dd90dc5c5b13626894e0a3ef53ea030d4825b6cb90276f27ae8d8dec
+        model-00117-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00117-of-00142.safetensors
+          checksum: blake3:2b2f10d3c9d2830bc0a61a0767422e5ed04b611d7b0653d5ae3d2f9301cd8e4d
+        model-00118-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00118-of-00142.safetensors
+          checksum: blake3:82b8559c454982d6a68b5f1906023cd281e53ba4a1c303477a3f10967151de0a
+        model-00119-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00119-of-00142.safetensors
+          checksum: blake3:9c4b625447153cce124a7552ae711ebdabebc0608bab6660c5175e808ae6889c
+        model-00120-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00120-of-00142.safetensors
+          checksum: blake3:3b543b8728dc5ea92d947d411be02e9d0c410987dc487a5e8ca05348b73e2f2c
+        model-00121-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00121-of-00142.safetensors
+          checksum: blake3:34fcaec9c85e3c1567d1790748a24f8ff96c31e3a5038a2a5a4180da50f57ef9
+        model-00122-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00122-of-00142.safetensors
+          checksum: blake3:159a4da4b42d9e4bb949b5121b9ec55998a8a94d21ccd9832f478fc6a43db5e1
+        model-00123-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00123-of-00142.safetensors
+          checksum: blake3:c54d4bdb04d5d40ec18b09f2f692975187e4bd1b091ca61ef1f399cacc6158c0
+        model-00124-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00124-of-00142.safetensors
+          checksum: blake3:e97384e94a0fc83c1eb56f04f8e8577d82861f7e72d8d835b160189f1dff5604
+        model-00125-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00125-of-00142.safetensors
+          checksum: blake3:9979954e5df331ef32afa4710737612de8b07f470d3f24ed89a08013394a766d
+        model-00126-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00126-of-00142.safetensors
+          checksum: blake3:20b481ed69d42a652b34ae214f2b18de3344d23a026dacf5403acf2fe08b657d
+        model-00127-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00127-of-00142.safetensors
+          checksum: blake3:b140710de4cc8da9aced878e094502227575766373843c222c39d629de7dce2e
+        model-00128-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00128-of-00142.safetensors
+          checksum: blake3:bbeac12ebd8b279333d3473fc10894d772bc3e552b1e001a822fdad430f6044e
+        model-00129-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00129-of-00142.safetensors
+          checksum: blake3:63c989796d484a5290b26a1c3a8db8b688022de4ed093b4459292c5aa2cf04af
+        model-00130-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00130-of-00142.safetensors
+          checksum: blake3:ed4204ca5d4c4db37f3eadaea4121b0586706fa91f95b168f1ea805648cc9dbf
+        model-00131-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00131-of-00142.safetensors
+          checksum: blake3:873c1812fc92c31c5322bc1d2e0c0a7d18b488db3fe799116388abcfb25b9610
+        model-00132-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00132-of-00142.safetensors
+          checksum: blake3:2abaef76f3e36e75db35874accaf105ec50c7627c2da5207284c42430fb1718c
+        model-00133-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00133-of-00142.safetensors
+          checksum: blake3:37e09ba0c08e32822ebf9bf675e26c641b64074e0f370a158e85e7d3b981b6e7
+        model-00134-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00134-of-00142.safetensors
+          checksum: blake3:7f9a090363df1dac3399a27f797f6fababfa990eebd77ac511a1b4efcab1ae57
+        model-00135-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00135-of-00142.safetensors
+          checksum: blake3:d3609148669c2e206d043fb489039b659762f67f9b74941e0cb91eab4084a7a9
+        model-00136-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00136-of-00142.safetensors
+          checksum: blake3:4913b4a1dc85b0c62485179d3822ceef3688977ff5ed1e7361ff96242966b47e
+        model-00137-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00137-of-00142.safetensors
+          checksum: blake3:8623a8068edfd16206c0d4497b28276a1f555ab866b7a9627a596186d27b9122
+        model-00138-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00138-of-00142.safetensors
+          checksum: blake3:70d669edf1cc75e1d85889e8a15e2d555035bb763656de3d085b52dc78eca1a2
+        model-00139-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00139-of-00142.safetensors
+          checksum: blake3:a07d938558b3f7a0f76fc47fba84b4f9b70f4eedbd36cad995d29f98ff695e32
+        model-00140-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00140-of-00142.safetensors
+          checksum: blake3:fb28a0f8bdd898cb7d2e7155c5f3aefd15cc5b4569cee7e1952257a54ff07d87
+        model-00141-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00141-of-00142.safetensors
+          checksum: blake3:45cd60a6f829a56859a079c4c0cf36c85d134a0c5433eedd782fd13715fe1dee
+        model-00142-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00142-of-00142.safetensors
+          checksum: blake3:9c27e3d8023cd3f8478b9fad5bb42649ab83cfc04d7f751baad6183c2e63a7ad
+        model.safetensors.index.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model.safetensors.index.json
+          checksum: blake3:be6bcde46801aaea1e11d385c4e9c78a7be8914ef95b6c3e3c22e58caccbf332
+        tokenizer.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=tokenizer.json
+          checksum: blake3:95875d64ad7f0287b7c4c3ac262475aff876301b4d71c31a939496f92d0a4836
+        tokenizer_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=tokenizer_config.json
+          checksum: blake3:d29eb71694e535ddea7f1a87bdf90de50c084d269079ce3a111ecad2b93a4e09
+  - id: 516e32ea381f639b63338725cbce1217df76698648d6b918abc7e2252b286108
+    tags:
+      ep: "1"
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      mem_fraction_static: "0.8"
+      pp: "1"
+      precision: nvfp4
+      profile: long-context
+      tp: "8"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=README.md
+          checksum: blake3:09b8543b7f1c6df9e3d0f09a2e6e252623709bc64bec294c640270f86948335c
+        chat_template.jinja:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=chat_template.jinja
+          checksum: blake3:aa50ebd67eccf2fda184bc0215ea7842f18b4a8e5e433e4a9158ed6ef5b0b5a0
+        checksums.blake3:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=checksums.blake3
+          checksum: blake3:886e0b6398fb434b3ee40d147c5cc5f7547f802bd4bb8480f5736311922b9e0f
+        config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=config.json
+          checksum: blake3:76b384a860906cce171156e48f3407f373413ce32cc07ef6006437c2ed1d6e2a
+        generation_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=generation_config.json
+          checksum: blake3:6f2d9dd2a16ab923d05e811ba8fdc6f4bcd1ad61dfc2891995e471ed3511b6be
+        hf_quant_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=hf_quant_config.json
+          checksum: blake3:730588b229e7f9a488b6d53cc184d62d58353cfe13c71108af60ed9a2cbb167c
+        model-00001-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00001-of-00049.safetensors
+          checksum: blake3:9a5e9e3ac1eccb9b774e6f79ddde7ca8c0a6e33a38413046d70fed3dba6651cf
+        model-00002-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00002-of-00049.safetensors
+          checksum: blake3:164c84df985b749e78348377dcfe6d07e79d82fbf4804fb04bd3eb1d911b893e
+        model-00003-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00003-of-00049.safetensors
+          checksum: blake3:773479bffea235c2ec4daa753434de76489876a1e33b6a9c67b9a770d1c94aa9
+        model-00004-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00004-of-00049.safetensors
+          checksum: blake3:5a8811adaad9052f91ef7319263ba9f98fd8d8917183e6d7d96c309098684190
+        model-00005-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00005-of-00049.safetensors
+          checksum: blake3:8d56b0417df3770b00d96fa12c45a672ad0700939243ed8800bc92fe926a15fd
+        model-00006-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00006-of-00049.safetensors
+          checksum: blake3:980819c500508b1bd4da54a1eafd2f18ae9b36894e8931500271a4afd84fc023
+        model-00007-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00007-of-00049.safetensors
+          checksum: blake3:ec0edb6437dde10823c197d45f4685a1fcc376741723e155b468d37bc1459099
+        model-00008-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00008-of-00049.safetensors
+          checksum: blake3:db225d2b9771cf6140dd82398022b08c48f8405a503ebd39c47e619240aef7d1
+        model-00009-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00009-of-00049.safetensors
+          checksum: blake3:f890ae3dc419e8d31829c18d0bf65f070624fd6d01e443d3ec674edeb6483e76
+        model-00010-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00010-of-00049.safetensors
+          checksum: blake3:0e79ca461d40c133ce61bcd415f048b53b7846db89cfde63e6d9de16d1869df8
+        model-00011-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00011-of-00049.safetensors
+          checksum: blake3:7597548fa7ffa4cb02e7ba7aed34690ceee5d5c143d6851af6607b4b365a62d4
+        model-00012-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00012-of-00049.safetensors
+          checksum: blake3:0ab46056d0874844866062f86602dedc4367fff37615622a2833b75888a00e70
+        model-00013-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00013-of-00049.safetensors
+          checksum: blake3:c59d610189d38b7e2a86398b309e04dcf154492e5bd303dbc6bde7940bfd685a
+        model-00014-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00014-of-00049.safetensors
+          checksum: blake3:153e9463b4a0a51009cafa8b3343e231de3a3579ab4e1b1a49d8dfb1613a1b3d
+        model-00015-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00015-of-00049.safetensors
+          checksum: blake3:e4f2550ecc8a622ec47337f793064f682376b2aecc334a6b575f6267dd955588
+        model-00016-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00016-of-00049.safetensors
+          checksum: blake3:7b4d53a9d0b5abb9efa383fc6c27d73f6175c85923263e92105cdb09322a2e50
+        model-00017-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00017-of-00049.safetensors
+          checksum: blake3:0df710c2a03078bd47aa3c03987d762ff2efa68a491f8af6ec3483fa50c36abf
+        model-00018-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00018-of-00049.safetensors
+          checksum: blake3:4fba552dd545db5d39b13bf19c700e8e5f44bb8438fd317ff175abdbb592dfe3
+        model-00019-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00019-of-00049.safetensors
+          checksum: blake3:e9b220ded5025d281737d5e11dceaa562adfba3fa5a40841a194905968de72dd
+        model-00020-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00020-of-00049.safetensors
+          checksum: blake3:1bc5e3caac7be868539aba7c9a29c2f96312f4db75153d392a8aef680decadc2
+        model-00021-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00021-of-00049.safetensors
+          checksum: blake3:201ddcd011c057ed06d7c87c0126038461a44ea0e98168f2e023d38f5af64b2f
+        model-00022-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00022-of-00049.safetensors
+          checksum: blake3:2d76ac0cccc4bce079f9b57b23c82cd385e61f89792ee8d939ae37c52a3fd478
+        model-00023-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00023-of-00049.safetensors
+          checksum: blake3:528bd37fd0844982d49843bf8c18e9d6f63f2353afe95738dbe408c0140b615b
+        model-00024-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00024-of-00049.safetensors
+          checksum: blake3:5b1915f899122ab2cf4378d1f0591a6e646bf9e7678b12c583977c9b68c59514
+        model-00025-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00025-of-00049.safetensors
+          checksum: blake3:d057ce3fd8cf0e3800a3a5ab91c2855413a78adae542051e2a479a9ff6db80df
+        model-00026-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00026-of-00049.safetensors
+          checksum: blake3:c6d09edf7d4582fb6bec02c4380251efdc662ea3a736f5eac7ed0c2588cf8e3c
+        model-00027-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00027-of-00049.safetensors
+          checksum: blake3:27b98917f396b326140114ef572e74c697108e7548054ff0a360e156d6889a0f
+        model-00028-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00028-of-00049.safetensors
+          checksum: blake3:8cf7097c80778ab75d1d95da1fe7fd72716982053cb2885781eca568b2daf64a
+        model-00029-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00029-of-00049.safetensors
+          checksum: blake3:e8e1839c1205b6b911b40d064344deac24b1dcba755b10390ed63e77f567886b
+        model-00030-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00030-of-00049.safetensors
+          checksum: blake3:83a0b5be4274283e557430c39f5160a2599a23bfa8f0a72232063a38c3871845
+        model-00031-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00031-of-00049.safetensors
+          checksum: blake3:c24ac53017f8b1d8b598c5f138b5804a68864e56dba5e8871b4046869e69f130
+        model-00032-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00032-of-00049.safetensors
+          checksum: blake3:a6cd5affd8ef8c37810047ab94a8b2625196bc3f43779629d60c51f38142e3af
+        model-00033-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00033-of-00049.safetensors
+          checksum: blake3:f6ca559dd4ed13e753a4d3d773f7a2d649ee4985a93a8ee10178b0e255945def
+        model-00034-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00034-of-00049.safetensors
+          checksum: blake3:44287a9bc5d01d2a67c6b08416c846a2639e7f2b82d1496cfc03855451e1617a
+        model-00035-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00035-of-00049.safetensors
+          checksum: blake3:6ee0506d112c8eb4a133e4c19bf342641adcfd08de89e57aae44654d33394f95
+        model-00036-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00036-of-00049.safetensors
+          checksum: blake3:f1e56d11c1a5dadd341e4ea72454c0aa862c39088360c06b95cd7969effec1e7
+        model-00037-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00037-of-00049.safetensors
+          checksum: blake3:014a0e0515e21408e8771e404fd6c8a9fcebcf672c9bb293048c4ac29f60c108
+        model-00038-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00038-of-00049.safetensors
+          checksum: blake3:4b92f64d9c55c92a8baa87ce67a5d16aa7db95305b38d45205b1468f1daa740b
+        model-00039-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00039-of-00049.safetensors
+          checksum: blake3:180bd585e66ac375772c8767fe71c3aa0e963ed63a34cba3f4ad1ac9d3513d7e
+        model-00040-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00040-of-00049.safetensors
+          checksum: blake3:c813fc4c87e4e41e20ffba86e7b9bd677e049df3f2c29dafffc2be85e472cf3a
+        model-00041-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00041-of-00049.safetensors
+          checksum: blake3:cf32ec7b1210a57ed087242fcca606e0a9cdc1681be90a91a010359d943dff7b
+        model-00042-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00042-of-00049.safetensors
+          checksum: blake3:c9f867b0a223e628e0fbf231b7ea01ccbf2adb2a48508a6f4e2060f6f6a7d512
+        model-00043-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00043-of-00049.safetensors
+          checksum: blake3:811b9f7bc1142f4e303d45eaa2389119162e2bd31862c2b2f0a017e39446fc5f
+        model-00044-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00044-of-00049.safetensors
+          checksum: blake3:c74ea8e2a4da4f27bc9d442bb85a7cd78e7bb18bdac19c83707bb2b75399957d
+        model-00045-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00045-of-00049.safetensors
+          checksum: blake3:cebc92fd8907e8f97929799a69c7da785a7d325e0ffec6e2c03f512104783275
+        model-00046-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00046-of-00049.safetensors
+          checksum: blake3:cb923b35f78935637355cdae01660c8165225446f1fc2c342be8b194463e5bdd
+        model-00047-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00047-of-00049.safetensors
+          checksum: blake3:d42a1d98595568461091a9f0b8af2d599b036f55f9574d34167da70fd525d4af
+        model-00048-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00048-of-00049.safetensors
+          checksum: blake3:94896077f8f5d1e9fe2e01bfc003ea456a77e14c2425c1e09bdbc62ba540802b
+        model-00049-of-00049.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model-00049-of-00049.safetensors
+          checksum: blake3:65cc6aee5ffa93055d6432102b8f2b486b274f0e99767437e7595ff7a58fdec8
+        model.safetensors.index.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=model.safetensors.index.json
+          checksum: blake3:7f5b147734f617609ba446b5b474973e45d83598c6104e483b379d43fbb0afc7
+        tokenizer.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=tokenizer.json
+          checksum: blake3:95875d64ad7f0287b7c4c3ac262475aff876301b4d71c31a939496f92d0a4836
+        tokenizer_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-aed286e-nvfp4?file=tokenizer_config.json
+          checksum: blake3:9fe9f862aa265a93efd90ee31b9f57b9197bb1c74be8c7d88d5c10ae127c9fd5
+  - id: 70d72ae401a257c523d12f2ccd0b899d9d0dddf9e3345132635b986f07e062e5
+    tags:
+      ep: "1"
+      feat_lora: "false"
+      gpu: H200
+      gpu_device: 2335:10de
+      llm_engine: sglang
+      mem_fraction_static: "0.85"
+      pp: "1"
+      precision: fp8
+      profile: long-context
+      tp: "8"
+    workspace:
+      files:
+        README.md:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=README.md
+          checksum: blake3:cf794afbfcbed74ee8dd378e4983b062a491402a57bdd8ef40d6c1ba61eace43
+        chat_template.jinja:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=chat_template.jinja
+          checksum: blake3:ac2244cc06f39cefc3e9a6ee841be022e546fa821a740c850f19114fefc839f7
+        checksums.blake3:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=checksums.blake3
+          checksum: blake3:2462c9e724b1d225c45f51ceb6f18dd0f343ae39988951a69cc207c7972e3367
+        config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=config.json
+          checksum: blake3:c0dc7db1d1e0a65043efa4f4455e7c3d3ab50c74eb4ec931287fcc781ce23d0f
+        generation_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=generation_config.json
+          checksum: blake3:0e62fc22f41b9b1e1acc8e9850c2a246f6af85045ed8a916d00acfd722f41a96
+        model-00001-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00001-of-00142.safetensors
+          checksum: blake3:ef52425e3d1ddc25916003e84efa07d483f0eca3cfc2dc95e00eb380fe1ecae8
+        model-00002-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00002-of-00142.safetensors
+          checksum: blake3:a3979d61674c6c592f5de9844ca8f7c67bb6e4c2b2d7917cc229a0c2bf2cd0cb
+        model-00003-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00003-of-00142.safetensors
+          checksum: blake3:150b0343b558fc23832b0eee6f4976dcfa6cee1564c18c39c78e618ecbc5afd4
+        model-00004-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00004-of-00142.safetensors
+          checksum: blake3:7f88f170e7fa1e2ccfd478646440c0ee4c9f3968eae100b5429b60f14885db91
+        model-00005-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00005-of-00142.safetensors
+          checksum: blake3:45c77c751f54a0c5ce85312603147cfaf8f40b9c14d02691d05c3cf6752b2b7d
+        model-00006-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00006-of-00142.safetensors
+          checksum: blake3:d3d269bda3fa51faf6403774c23eb7ca1b03bf1a35378e6606ece76c0077eea5
+        model-00007-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00007-of-00142.safetensors
+          checksum: blake3:d585b731a5b26069d0a44799006f2f925e0cd90c349fe1b58c478b45af582411
+        model-00008-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00008-of-00142.safetensors
+          checksum: blake3:3587d5e634e8d6b5849d9951cf29e0b4edbc53e9b032aa5be92227c975b3d419
+        model-00009-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00009-of-00142.safetensors
+          checksum: blake3:7afdb8cb1881d4785bddf94cac2dad8a0cf5f4a80ced74e6329cf23d0ca4e356
+        model-00010-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00010-of-00142.safetensors
+          checksum: blake3:d9ac708aad8b4333f060a6a51ab09754d4f6db6363e112fafdc4f23abb1ecd28
+        model-00011-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00011-of-00142.safetensors
+          checksum: blake3:fd7eb58572c316fc37c8041e9a7214bde27bd4ad2e8c8e3aa0498583e590d338
+        model-00012-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00012-of-00142.safetensors
+          checksum: blake3:c7d86f98d04eb5379620d00c8ccb66a0aeace2010f4daf3a87fc39fae412b435
+        model-00013-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00013-of-00142.safetensors
+          checksum: blake3:f3a38fe5f9fcfeeeaf16cf4072f837d2d0206a89f83cde171c229cdd16e9e624
+        model-00014-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00014-of-00142.safetensors
+          checksum: blake3:fd2630ec6bfbfea6e4e6e4ae7c29da2ee5fdd751ca83f87851446bb6c5eb39a6
+        model-00015-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00015-of-00142.safetensors
+          checksum: blake3:982fd9cca6bec3e40592f5d1d53676a30a8cc28615e8932d9cc8259fdc275687
+        model-00016-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00016-of-00142.safetensors
+          checksum: blake3:d3517de216636cb6276750a691b3a34a9bbbab42bdf25d12d7bd4374648c2c6c
+        model-00017-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00017-of-00142.safetensors
+          checksum: blake3:dff4c9ba4a586b250eca4a2271500b12018c5bbe9b0dbcaf7fd291601bc38f9e
+        model-00018-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00018-of-00142.safetensors
+          checksum: blake3:ff0ef18eba51b0f8fa70cbf3604bc6aa80d165461a9378c3a0d93f6a7640a6d5
+        model-00019-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00019-of-00142.safetensors
+          checksum: blake3:685f96fa15525f5606deeb8a810ab1aec16f7afc532ecbf9e9dc213ffe793bdc
+        model-00020-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00020-of-00142.safetensors
+          checksum: blake3:e6d3bae44fa98cc1b4d600b1bc7987a29018cae30ef389e859e11a5ef395169a
+        model-00021-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00021-of-00142.safetensors
+          checksum: blake3:bd4bf2e09ab4bfc25daf354caf6b12980b3bd0f641d6e3c7b5687a42eb4a2c20
+        model-00022-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00022-of-00142.safetensors
+          checksum: blake3:e1d83a6cd3706be2de5413e3c4850ba1b984e95ef6dde168bef8ac3187b1a1f7
+        model-00023-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00023-of-00142.safetensors
+          checksum: blake3:fdcc72f6ccffc09e7c60efd757f65efd0cf90edb9740786626bbc57ed3380232
+        model-00024-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00024-of-00142.safetensors
+          checksum: blake3:3b4519e9b19de33b8a6fdcfeec028964f06b71ee42ceaedd75eaf60eab9f8417
+        model-00025-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00025-of-00142.safetensors
+          checksum: blake3:496afaad9fd07e08671e6ecda4457368ea328658d3313d9a5de8846a1ce04dd6
+        model-00026-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00026-of-00142.safetensors
+          checksum: blake3:1c2d7d98a2f6dac0e32c4e6abf880e67bcfe9efbccb660bc3ee3139b9efec113
+        model-00027-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00027-of-00142.safetensors
+          checksum: blake3:dca8e51cde73fcd3fbf3fc38c4d0e8ced39f40d585f2839fbf5b75f7fe4ce2c4
+        model-00028-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00028-of-00142.safetensors
+          checksum: blake3:cd6a2fa7b8250919616dead54f3fb959cff94eee811f2675026b8f458ebfb221
+        model-00029-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00029-of-00142.safetensors
+          checksum: blake3:fc1c32b3c3462e447ef813ebfc5e97c2b0ca1fbc80b87c27531a5a2519cde2fa
+        model-00030-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00030-of-00142.safetensors
+          checksum: blake3:040aa15f3cd11ab0a9acacdbe80dbb8ad18e4956112c103bf0ec614f4f542ed7
+        model-00031-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00031-of-00142.safetensors
+          checksum: blake3:d3530d3b0dd6d7e0de35081ebce3045bcf60e2814310a751158f9eacb726bc56
+        model-00032-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00032-of-00142.safetensors
+          checksum: blake3:59e7964b41ad5196a32413b6cece5f466a67a5d2ebe155e060e8ccc2113cab21
+        model-00033-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00033-of-00142.safetensors
+          checksum: blake3:7ad39f8a32f9e0452e78023be1a6bf6bf70b77e7f99aa3460aadd86ee55b5087
+        model-00034-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00034-of-00142.safetensors
+          checksum: blake3:35cc340fe57cc5fbed1a37ddbd38fd508e91f2fe49c1c9a8b203ff8472309329
+        model-00035-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00035-of-00142.safetensors
+          checksum: blake3:ea57e1d74b7eb37f42f39ffc78f1aa69570aaaa2d467d133e6989a9c46769110
+        model-00036-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00036-of-00142.safetensors
+          checksum: blake3:9b3c6eee26fe54b3048e3ad202e6f63daf4a02541fbc256f6d81ce93dd140a47
+        model-00037-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00037-of-00142.safetensors
+          checksum: blake3:6147f8543a40302943aa428d194cee08aa222241cf3bb0b66d027440701b3c42
+        model-00038-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00038-of-00142.safetensors
+          checksum: blake3:f55909d0c28f1dd8a7f9111951b66cf198c2ddc89cf5e4d31daa27de958b0dce
+        model-00039-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00039-of-00142.safetensors
+          checksum: blake3:f82aad76048478d8418e4925d06b350b41a46e06db2dfc9ed6609758ca6c207f
+        model-00040-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00040-of-00142.safetensors
+          checksum: blake3:f8abdb18d59da206634bd721a32447cffdbd270e14e3363a0a6e149ae7adef9d
+        model-00041-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00041-of-00142.safetensors
+          checksum: blake3:0f17c6fdff01547a7f7a72f6b734e52d41c5bcd625f2a1c459177b58ee257bf6
+        model-00042-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00042-of-00142.safetensors
+          checksum: blake3:b47c80b15c5d3d4c824d84c2a583690ee16b5e6fbe5b1243e6ab981934807be0
+        model-00043-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00043-of-00142.safetensors
+          checksum: blake3:318d3c4da469b1f2ac659a462a0b614a5a222d73e66446fca70e1b6c00bff7ce
+        model-00044-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00044-of-00142.safetensors
+          checksum: blake3:29aecd87c6188443875f5b0067a08e290c4c5c8beeb27aca6c6cdadd81d2e510
+        model-00045-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00045-of-00142.safetensors
+          checksum: blake3:67c1024359d8f2f8883f73d9772749b9c5e37f4d366045dc43130265947ef9c4
+        model-00046-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00046-of-00142.safetensors
+          checksum: blake3:ccbd014b3ff248d3c410dd645c58ec356fa79193cd6afd46e887995ee83c4020
+        model-00047-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00047-of-00142.safetensors
+          checksum: blake3:8dddd09e7436c1b134d4f4551480ff4e4471b40eb5f84e68f46b513425298c58
+        model-00048-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00048-of-00142.safetensors
+          checksum: blake3:41010ce8940a3a52ae09ab14a36ba0182934c623f72279e92e2e397bb0aead60
+        model-00049-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00049-of-00142.safetensors
+          checksum: blake3:511e3530f09197d20e056774ae63ad1cd1b5aa8c8f7250461cd37a4e62649dcf
+        model-00050-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00050-of-00142.safetensors
+          checksum: blake3:519a4f214cbd6e5739ce48a682a061ef002e69e3edee3aea6ec2e231266e0a7a
+        model-00051-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00051-of-00142.safetensors
+          checksum: blake3:414b7bf5f92d1ad99c31a629c2af76aa9274e863c8e03856eb2a9083eefcd6d1
+        model-00052-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00052-of-00142.safetensors
+          checksum: blake3:09fb9a5f1a104532cfb7e769643763c480d3329da60d656c2c7e4467f7d13c12
+        model-00053-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00053-of-00142.safetensors
+          checksum: blake3:14e17ffe55ff0d250096fdb3a338e16e9fa56a2986b2841a2084ba33ad3bb0ef
+        model-00054-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00054-of-00142.safetensors
+          checksum: blake3:d549f978a06e763feda019b80b932fa665c9d8781a93b782488f7f77c221589a
+        model-00055-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00055-of-00142.safetensors
+          checksum: blake3:9c8bb5d6174c2e4a944532b9b84a09e97a95946cbab7ea227fd6a5a9ce38588b
+        model-00056-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00056-of-00142.safetensors
+          checksum: blake3:4f16b9eda28a22501e5e21af3a1011b0e56268420492128ba5d3efba82b44143
+        model-00057-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00057-of-00142.safetensors
+          checksum: blake3:98645fe98016536ce78c42dcec3b1341c453359583d2b5bd5fa672876fe6c570
+        model-00058-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00058-of-00142.safetensors
+          checksum: blake3:2398d5450f3541ed55d31f498dcbf142bae81ce3bc5210c97dd7baefb8dc1e79
+        model-00059-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00059-of-00142.safetensors
+          checksum: blake3:f90951340d9b3e07ba5863b9a6a90f9bc351f57bbb69107dc3f099fd398adc28
+        model-00060-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00060-of-00142.safetensors
+          checksum: blake3:0adff9f2de5bc03f468b28fbab9144539a3ca9b14ec21c307e09c611bdae6329
+        model-00061-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00061-of-00142.safetensors
+          checksum: blake3:0419d48032857c976c8e0ba744bc8bcab3a84e04eb3f261d2efa5e245458ea4d
+        model-00062-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00062-of-00142.safetensors
+          checksum: blake3:d4ba358c779ea1c54bdeadc9d040b60aa27a7464c5b4a19ce8a12fd95a9f90f9
+        model-00063-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00063-of-00142.safetensors
+          checksum: blake3:7ab06939895e4a29e3b7c18c70098891078e779b4c5b925a50c492be6ada6008
+        model-00064-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00064-of-00142.safetensors
+          checksum: blake3:ff15e787b5a238566167b679fff013f604013d5a950f5c36b0e9c662e50ff308
+        model-00065-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00065-of-00142.safetensors
+          checksum: blake3:f2af197bd769c27d916e235fc42c593be930f89ccb15a03b6ca83cd966edd94a
+        model-00066-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00066-of-00142.safetensors
+          checksum: blake3:934977dc97ad031e799c2cc84da6bf6dc4071fd4ba14328f49fbf176459baad2
+        model-00067-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00067-of-00142.safetensors
+          checksum: blake3:28827bf6a456e7a00af55f3748cbb4228b40fe28862ad1b4efb2b0aacad69319
+        model-00068-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00068-of-00142.safetensors
+          checksum: blake3:b5ba3ed481e8a549116631bf030498217add0a4438267bf8bead6d39cd6cd353
+        model-00069-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00069-of-00142.safetensors
+          checksum: blake3:9d5165d82f20d5ea4f7fdc1a8d92af304bb96f596e8a8858b6da1fe1d4d6c31a
+        model-00070-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00070-of-00142.safetensors
+          checksum: blake3:33daae63e68885a31d97ce007172d3823edb79f5e93cb90b226f7434946a9d14
+        model-00071-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00071-of-00142.safetensors
+          checksum: blake3:9f68dc2c180dd866b942b7ab7895daf2386539518ae286b1fe59271725cf12a2
+        model-00072-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00072-of-00142.safetensors
+          checksum: blake3:eac7e98f32672e46c82223016d93c148081ba28baf555726f26d7d415c3032e5
+        model-00073-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00073-of-00142.safetensors
+          checksum: blake3:0cbd9845168ddd9ae2fb96b6afa00ca8933efa6fca5fd25b9829bc00133f7d70
+        model-00074-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00074-of-00142.safetensors
+          checksum: blake3:52f02dd3e5ea8bb70e95aa7a69c732e8087133105b8891bfe3553d5580914d05
+        model-00075-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00075-of-00142.safetensors
+          checksum: blake3:bcc0c52c0945fc473bcb4fd8bcd8416aab5ce5f699ed798da65e6da375723a8e
+        model-00076-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00076-of-00142.safetensors
+          checksum: blake3:7854383e51ea7bf33d467d58119906379315cf1cc4f58e1704e4f9a19948ded8
+        model-00077-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00077-of-00142.safetensors
+          checksum: blake3:0f2538b29b8a87a3bfdd986b5878f50a2f1b702c09670a4d234698fc42199e6c
+        model-00078-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00078-of-00142.safetensors
+          checksum: blake3:b5ba039e2789180fb0b37ee588e8e7a3635944307b53c587a0801e1312cde148
+        model-00079-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00079-of-00142.safetensors
+          checksum: blake3:4ad420d4dd6f2e6a35eb17358193a7a0e11d6b366d3d33f30d5d68aa09c1f4af
+        model-00080-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00080-of-00142.safetensors
+          checksum: blake3:db5e1a216136f685dbb3e1da22708432e17774bfd24459b36ad2da310a294c2c
+        model-00081-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00081-of-00142.safetensors
+          checksum: blake3:7f757b92ee91c5e85545840abf4ba9f07e68e13a016cb496b89f7030c846029a
+        model-00082-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00082-of-00142.safetensors
+          checksum: blake3:e03ca230d3af109f9aff3f67f7df1fb4d1eb434054ca27f375ab5d91924268cd
+        model-00083-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00083-of-00142.safetensors
+          checksum: blake3:6a289a267f1c8cac6f9807559eba3d99decaab2302fac9e0561f0b907adce30c
+        model-00084-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00084-of-00142.safetensors
+          checksum: blake3:e1d995a2a40442beae16bf3d9931cefb1d685e37267e9f773616478aa27b69de
+        model-00085-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00085-of-00142.safetensors
+          checksum: blake3:25e02cfbaf80797dc4318edf65628c45d7b4d67f36bfbe1b222d722ea4212d71
+        model-00086-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00086-of-00142.safetensors
+          checksum: blake3:1481d1b3203e876992558ee121b2d129ed65319f1b4839d20464aab6621c2640
+        model-00087-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00087-of-00142.safetensors
+          checksum: blake3:c4b4fcb3a01f09a70c2987f54a739e8a19201f7f49d87efe8894d4bf537a0f5a
+        model-00088-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00088-of-00142.safetensors
+          checksum: blake3:c10a245f3632695bbd52e8c0699b8630f88489568d14947aae5fe29efe243295
+        model-00089-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00089-of-00142.safetensors
+          checksum: blake3:5667149feda7fa5b525f6ce78b2abe6584fff628a65c19b6d878d918edb1bff1
+        model-00090-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00090-of-00142.safetensors
+          checksum: blake3:b5ab737b5df3047b3f4bc9ec2a31640be21a5ed3e03c2ea12a09aa736b13fa0f
+        model-00091-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00091-of-00142.safetensors
+          checksum: blake3:d4d421e102c25cb9866dd8f021112151768dde004e256b99144cd4d68fcdf06e
+        model-00092-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00092-of-00142.safetensors
+          checksum: blake3:08172267476e5199d9fc4a3b6bb3691cdfc11a447bcff619846c5d53da904536
+        model-00093-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00093-of-00142.safetensors
+          checksum: blake3:49a42ae42c90dcd84e9019e937b3195f1402de7136dd11abc1c110573e212633
+        model-00094-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00094-of-00142.safetensors
+          checksum: blake3:38f2cff67f425c3e2d18cf26f9ff1e09e3e75104eb658310c178b2e680339c59
+        model-00095-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00095-of-00142.safetensors
+          checksum: blake3:06d6999c9e4731fb9a9c8d77d60aaa230300cb14151396950342a5e05e5566a3
+        model-00096-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00096-of-00142.safetensors
+          checksum: blake3:ab26ebaf0ecc9a2d007414374fe76a8f02eec7537e0eb751652cbb675e9de1f2
+        model-00097-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00097-of-00142.safetensors
+          checksum: blake3:1ff03aaaa769f3c01939bd0dd8f36b2e0fd5d75ef8f6826b63a9082fc69d6f4c
+        model-00098-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00098-of-00142.safetensors
+          checksum: blake3:135a01002ace5092c8c75fadf0f73847294d70eb0698d686ac843123d88e1d4a
+        model-00099-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00099-of-00142.safetensors
+          checksum: blake3:0bd001e3b9a2df2a6acbf35a4dcef6825f621a524c567a2f5bfad0b99ed14889
+        model-00100-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00100-of-00142.safetensors
+          checksum: blake3:32d1b3e812d8cbffff9870854a3fa9421c69b8ab11141f16828c2e9f277f2d89
+        model-00101-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00101-of-00142.safetensors
+          checksum: blake3:f7b36640a81069913910e55ca295ee4ba8aff2903fe315b0e705bf0ab0b0f0a2
+        model-00102-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00102-of-00142.safetensors
+          checksum: blake3:2dad9cbfe7bae1f4f93376cadf0c6ac118e8f0937e5535ce4a521252d2f5c3b7
+        model-00103-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00103-of-00142.safetensors
+          checksum: blake3:8058e3a1fc7d74c5cd1bf6c47eb7d98706e986bff24547b7a771e801f1ed27c6
+        model-00104-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00104-of-00142.safetensors
+          checksum: blake3:ea78dcb93f90631bd0e10c7db2a79bb2b5da2c30cb21fc16bb18c9a56069d9ef
+        model-00105-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00105-of-00142.safetensors
+          checksum: blake3:ca58e4fa5b7ce0c61ce57e4597ebe509b376a97fc0eeda0d5f478a68dedf3811
+        model-00106-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00106-of-00142.safetensors
+          checksum: blake3:62bb02ffe76c5652b4516695411de7577b8cf7653dd98b73657062f7e62d2c9d
+        model-00107-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00107-of-00142.safetensors
+          checksum: blake3:285eeb01ffeb9840d70d7e3c4a3a189d793c0e36c3d9d3dd12db3bc232e1a99a
+        model-00108-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00108-of-00142.safetensors
+          checksum: blake3:391a1f9c00338a131c506d2bf87018712901143c4041d1967c00c87bf9921acd
+        model-00109-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00109-of-00142.safetensors
+          checksum: blake3:8c8c0bce4a40ec5d2947a1ca86c8a9cd3ae9e456ab7941d9dd4e2ddc40bfdff7
+        model-00110-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00110-of-00142.safetensors
+          checksum: blake3:e13e5b1540c9b6a174eb4b74f81a1241a54c2aea12e1b2f08bf9abdec409a29a
+        model-00111-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00111-of-00142.safetensors
+          checksum: blake3:a90c029367b8aa3633c679d95e044cbe748967357b3ebaaff392d8398e1aacd1
+        model-00112-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00112-of-00142.safetensors
+          checksum: blake3:751b6a000cd57e3010d4dc1524db739190cb90bf2ba7b22ba9ce8bf7d4a66bc1
+        model-00113-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00113-of-00142.safetensors
+          checksum: blake3:c57e71541baf63d664e7ef7609ce6d8ab1dbee65f41c5f72a03dd10c9776ad6e
+        model-00114-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00114-of-00142.safetensors
+          checksum: blake3:a3a32c77f3e8b6956df5e4735a886363aac19256a9edf9727179198a33287cc0
+        model-00115-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00115-of-00142.safetensors
+          checksum: blake3:a90446845f2edcb0d48587a0a5877021d4da1184f18561d0568e9904c5a4bf84
+        model-00116-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00116-of-00142.safetensors
+          checksum: blake3:f5dde315dd90dc5c5b13626894e0a3ef53ea030d4825b6cb90276f27ae8d8dec
+        model-00117-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00117-of-00142.safetensors
+          checksum: blake3:2b2f10d3c9d2830bc0a61a0767422e5ed04b611d7b0653d5ae3d2f9301cd8e4d
+        model-00118-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00118-of-00142.safetensors
+          checksum: blake3:82b8559c454982d6a68b5f1906023cd281e53ba4a1c303477a3f10967151de0a
+        model-00119-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00119-of-00142.safetensors
+          checksum: blake3:9c4b625447153cce124a7552ae711ebdabebc0608bab6660c5175e808ae6889c
+        model-00120-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00120-of-00142.safetensors
+          checksum: blake3:3b543b8728dc5ea92d947d411be02e9d0c410987dc487a5e8ca05348b73e2f2c
+        model-00121-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00121-of-00142.safetensors
+          checksum: blake3:34fcaec9c85e3c1567d1790748a24f8ff96c31e3a5038a2a5a4180da50f57ef9
+        model-00122-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00122-of-00142.safetensors
+          checksum: blake3:159a4da4b42d9e4bb949b5121b9ec55998a8a94d21ccd9832f478fc6a43db5e1
+        model-00123-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00123-of-00142.safetensors
+          checksum: blake3:c54d4bdb04d5d40ec18b09f2f692975187e4bd1b091ca61ef1f399cacc6158c0
+        model-00124-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00124-of-00142.safetensors
+          checksum: blake3:e97384e94a0fc83c1eb56f04f8e8577d82861f7e72d8d835b160189f1dff5604
+        model-00125-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00125-of-00142.safetensors
+          checksum: blake3:9979954e5df331ef32afa4710737612de8b07f470d3f24ed89a08013394a766d
+        model-00126-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00126-of-00142.safetensors
+          checksum: blake3:20b481ed69d42a652b34ae214f2b18de3344d23a026dacf5403acf2fe08b657d
+        model-00127-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00127-of-00142.safetensors
+          checksum: blake3:b140710de4cc8da9aced878e094502227575766373843c222c39d629de7dce2e
+        model-00128-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00128-of-00142.safetensors
+          checksum: blake3:bbeac12ebd8b279333d3473fc10894d772bc3e552b1e001a822fdad430f6044e
+        model-00129-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00129-of-00142.safetensors
+          checksum: blake3:63c989796d484a5290b26a1c3a8db8b688022de4ed093b4459292c5aa2cf04af
+        model-00130-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00130-of-00142.safetensors
+          checksum: blake3:ed4204ca5d4c4db37f3eadaea4121b0586706fa91f95b168f1ea805648cc9dbf
+        model-00131-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00131-of-00142.safetensors
+          checksum: blake3:873c1812fc92c31c5322bc1d2e0c0a7d18b488db3fe799116388abcfb25b9610
+        model-00132-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00132-of-00142.safetensors
+          checksum: blake3:2abaef76f3e36e75db35874accaf105ec50c7627c2da5207284c42430fb1718c
+        model-00133-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00133-of-00142.safetensors
+          checksum: blake3:37e09ba0c08e32822ebf9bf675e26c641b64074e0f370a158e85e7d3b981b6e7
+        model-00134-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00134-of-00142.safetensors
+          checksum: blake3:7f9a090363df1dac3399a27f797f6fababfa990eebd77ac511a1b4efcab1ae57
+        model-00135-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00135-of-00142.safetensors
+          checksum: blake3:d3609148669c2e206d043fb489039b659762f67f9b74941e0cb91eab4084a7a9
+        model-00136-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00136-of-00142.safetensors
+          checksum: blake3:4913b4a1dc85b0c62485179d3822ceef3688977ff5ed1e7361ff96242966b47e
+        model-00137-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00137-of-00142.safetensors
+          checksum: blake3:8623a8068edfd16206c0d4497b28276a1f555ab866b7a9627a596186d27b9122
+        model-00138-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00138-of-00142.safetensors
+          checksum: blake3:70d669edf1cc75e1d85889e8a15e2d555035bb763656de3d085b52dc78eca1a2
+        model-00139-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00139-of-00142.safetensors
+          checksum: blake3:a07d938558b3f7a0f76fc47fba84b4f9b70f4eedbd36cad995d29f98ff695e32
+        model-00140-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00140-of-00142.safetensors
+          checksum: blake3:fb28a0f8bdd898cb7d2e7155c5f3aefd15cc5b4569cee7e1952257a54ff07d87
+        model-00141-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00141-of-00142.safetensors
+          checksum: blake3:45cd60a6f829a56859a079c4c0cf36c85d134a0c5433eedd782fd13715fe1dee
+        model-00142-of-00142.safetensors:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model-00142-of-00142.safetensors
+          checksum: blake3:9c27e3d8023cd3f8478b9fad5bb42649ab83cfc04d7f751baad6183c2e63a7ad
+        model.safetensors.index.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=model.safetensors.index.json
+          checksum: blake3:be6bcde46801aaea1e11d385c4e9c78a7be8914ef95b6c3e3c22e58caccbf332
+        tokenizer.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=tokenizer.json
+          checksum: blake3:95875d64ad7f0287b7c4c3ac262475aff876301b4d71c31a939496f92d0a4836
+        tokenizer_config.json:
+          uri: ngc://nim/zai-org/glm-51:nim-278f44-fp8?file=tokenizer_config.json
+          checksum: blake3:d29eb71694e535ddea7f1a87bdf90de50c084d269079ce3a111ecad2b93a4e09

@@ -1,0 +1,260 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: llama-3.1-nemoguard-8b-content-safety
+release: 1.10.1
+profiles:
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=checksums.blake3
+        checksum: blake3:ef1405ed9adc4ae10cdaee166fdb2db5c64e6ca707519b0fa0cc4141f94935f0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=config.json
+        checksum: blake3:980990252eda2db54b5f3a1a426d706191d1c2eb089bbc7fbfcdaa9814130cca
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=generation_config.json
+        checksum: blake3:ed18c6f816e2c78593b4aa55b8005e9bccc7992d02875e5aff1a603af6577951
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00001-of-00004.safetensors
+        checksum: blake3:4bafa3bb64c00bebe57d1d2073f0621f7796fba3f249a032b3b08f261f55c56d
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00002-of-00004.safetensors
+        checksum: blake3:c12276251444f2b09c1e32479cc6c7c425ff8feae08bf40d8f474cc3f8b699c2
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00003-of-00004.safetensors
+        checksum: blake3:c69a75195ea63b7340a31a3b5296e0c1ee6d30e97d0f145eb0925a93e755c451
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model-00004-of-00004.safetensors
+        checksum: blake3:62bf336a0f0dc723d272c7b952437c376aa347d62406b55aada28d7a26d343a2
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemoguard-8b-content-safety:2024.11.18-fix-checksum-2?file=tokenizer_config.json
+        checksum: blake3:ea3865c7f6f322eeab4d3a61ea83102e19bcfefb5b9022acf16b8ffeaabf21c9

@@ -1,0 +1,1283 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: cosmos-diffusion-transfer1-7b
+release: 0.1.0
+profiles:
+- id: 0c0a8ddb49d1fe2fcce19205a42cef15dde9a5dba7e0a728f6e5855426a775d0
+  tags:
+    family: Random
+    llm_precision: fp8
+    precision: bf16
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=config.json
+        checksum: blake3:f9c1930c27f83e9782206b5b6e4299d3e33c24bdbef179eaf60ff034959e9bfa
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:88e366f8844d3a5c144613fa79ee15ec1dfdba688a6496388a74882d215edaac
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: 14dc58c8d94a84b96af426639db9df69e1806d38bc5c0aa95aa6c7afd2b04175
+  tags:
+    family: Random
+    llm_precision: int8
+    precision: bf16
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=config.json
+        checksum: blake3:eb9e2b1e931dae0a794ec0b0b1609da13b6737fb88d9b8ac7e7f3551237e7948
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=rank0.safetensors
+        checksum: blake3:6dd7270e3d314410ad35b5a71a31863228da1118fa47822405a7312c32a9d07e
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=config.json
+        checksum: blake3:3141f584cf44ef3d9b77ed7d72804b27a55c31bbd7f5a3669df10713090df31d
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=rank0.safetensors
+        checksum: blake3:f97b95cd60615745075844b11526df13139fdb1e7cd884b50e08b8adc862a70e
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: 15d4690330e4410b2223e541956ef40aaa6728c3f09bffec9744a7a183f36170
+  tags:
+    family: Random
+    llm_precision: fp8
+    precision: bf16
+    profile: latency
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=config.json
+        checksum: blake3:f9c1930c27f83e9782206b5b6e4299d3e33c24bdbef179eaf60ff034959e9bfa
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:88e366f8844d3a5c144613fa79ee15ec1dfdba688a6496388a74882d215edaac
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: 4d491eeb625776de0ebfcf60b3d2f3eabaec26a7078a718de25a84504679ffae
+  tags:
+    family: L40
+    llm_precision: fp8
+    precision: bf16
+    profile: latency
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=config.json
+        checksum: blake3:f9c1930c27f83e9782206b5b6e4299d3e33c24bdbef179eaf60ff034959e9bfa
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:88e366f8844d3a5c144613fa79ee15ec1dfdba688a6496388a74882d215edaac
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: 50c796a16f3ed17d8b35ed5ec7b842b4ad63de0760cae0429307e5b8a38b1c89
+  tags:
+    family: Random
+    llm_precision: int8
+    precision: bf16
+    profile: latency
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=config.json
+        checksum: blake3:eb9e2b1e931dae0a794ec0b0b1609da13b6737fb88d9b8ac7e7f3551237e7948
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=rank0.safetensors
+        checksum: blake3:6dd7270e3d314410ad35b5a71a31863228da1118fa47822405a7312c32a9d07e
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-int8-sq?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=config.json
+        checksum: blake3:3141f584cf44ef3d9b77ed7d72804b27a55c31bbd7f5a3669df10713090df31d
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=rank0.safetensors
+        checksum: blake3:f97b95cd60615745075844b11526df13139fdb1e7cd884b50e08b8adc862a70e
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-int8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: 7efdd28664424bbf0983f63ea2060ac47c49859afb6cb481c8c6903ed4fc7385
+  tags:
+    family: L40
+    llm_precision: fp8
+    precision: bf16
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/aegis_filter/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig_l40.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/detect_faces/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig_l40.pbtxt
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2F.gitattributes
+        checksum: blake3:cfff24c1e9c6277c484dbde51ae51ec7cdb39fd6567fb4c862cbe869aba300d9
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2FREADME.md
+        checksum: blake3:676bc370658aff3bbbe6e1707b00aab823dfe01c96c22f27f2422fd42940f36e
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fautoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fconfig.json
+        checksum: blake3:36c672ae9cb123f58eb82645ae1d8c0c6ecea97b6f81ec5681a9ba1d74caf15a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fdecoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fencoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel.pt
+        checksum: blake3:5bfa64bf65b553d4acf63675ace8399de0967fc12583157b8b4de0e63b7d80d5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Tokenize1-CV8x8x8-720p/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Tokenize1-CV8x8x8-720p%2Fmodel_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/.gitattributes:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F.gitattributes
+        checksum: blake3:451cac292c84ac903b5dd4574497e96b0c1cf88c6f66fa26d4b262f0bd2cbe1a
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/4kupscaler_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2F4kupscaler_control.pt
+        checksum: blake3:92e5238b075a39f6eceb5675d8e61b9c6026ddd50c8c3ddd782a7700ded050b6
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/README.md:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2FREADME.md
+        checksum: blake3:cff41f730e84c4b0e388cb6ebb73f8eefea7b756c22c3bb037efddf59768e9bc
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/base_model.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fbase_model.pt
+        checksum: blake3:a339b831748d00f3488f103baf468e786df91df625c2692345284e84e501ece5
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fconfig.json
+        checksum: blake3:ba2cfc7131f187e5d078e0bb1eab43b13ec907ebcea7ec4bbf591ab6abe55876
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/depth_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fdepth_control.pt
+        checksum: blake3:11f58e9dd5a3800f9506ebf5c72085e320001d9831e7f5767d73c63f1cbb3337
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/edge_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fedge_control.pt
+        checksum: blake3:bffa782fd24f6322742e3c1fb1ac863d97d8e9ee2134de4cf9837b48f85c888d
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/keypoint_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fkeypoint_control.pt
+        checksum: blake3:9b009f8b70edd84b62fbd478811385a99a21a546b5196c498d3ef206d6314e6b
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/seg_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fseg_control.pt
+        checksum: blake3:3df38a9cdaadcb362e3282f2112c34619443fa1ebd7a0d7b9413c19d30ca4862
+      model_repo/diffusion/1/checkpoint/transfer1/nvidia/Cosmos-Transfer1-7B/vis_control.pt:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-nvidia_diffusion_hugging_face?file=Cosmos-Transfer1-7B%2Fvis_control.pt
+        checksum: blake3:886700877c272bffcfbb959990698022d55f981f43bbe09e263b7f8d32a18ac5
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput_l40.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/preprocessors/1/model.py:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2F1%2Fmodel.py
+      model_repo/preprocessors/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=preprocessors%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=chat_template.json
+        checksum: blake3:71001d628721e2f18b0ab714b0e50b3d86ce4abe5512a9a09a0f519ae02555b2
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=config.json
+        checksum: blake3:f9c1930c27f83e9782206b5b6e4299d3e33c24bdbef179eaf60ff034959e9bfa
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=hf_config.json
+        checksum: blake3:1e2bb9e4f37a708bf9b63b67baa941f241787e03a3031d22fd53a6c98f29a2de
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=processor_config.json
+        checksum: blake3:9b621a0b97fd559ea4fe3ebbd7034877821a2695951e79c5721da73826347846
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:88e366f8844d3a5c144613fa79ee15ec1dfdba688a6496388a74882d215edaac
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:1bc34584a9d22c02838598997315799e988a551195aa64f530da62d68a27f355
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:6f5987d0d12cec4505114d01b29349851a40d376a932b1114bca61ce28298cb2
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-prompt-upsampler-trtllm-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/prompt_upsampler/config_l40.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig_l40.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-transfer1-7b:0.1.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt

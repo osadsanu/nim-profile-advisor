@@ -1,0 +1,44 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: riva_translate_4b_instruct_8k
+release: 1.8.5
+profiles:
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=LICENSE
+        checksum: blake3:3c3b83dcc633e36c572da8f39565a5a3994bf338a7cc56e8ee1a662935ea30d8
+      checksums.blake3:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=checksums.blake3
+        checksum: blake3:68d4d94056b58201f62423fcc02ec33f62d6985f5240923b60c189f3391b1c45
+      config.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=config.json
+        checksum: blake3:efba6288fd24b738e35fc07d8df96e01e35e1bbebee35668b66612d37a6dd59a
+      generation_config.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=generation_config.json
+        checksum: blake3:47798694d672ec2dd68f78d1beeddc4f2db7d214cf2a93aa6ff77d8a538cd7e5
+      model-00001-of-00002.safetensors:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=model-00001-of-00002.safetensors
+        checksum: blake3:4a76decc9c799dc927d0b711e67ed334ed83ca12a5ad46cb95977c93bf176348
+      model-00002-of-00002.safetensors:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=model-00002-of-00002.safetensors
+        checksum: blake3:6d24ad4b05daefb699327bd7fcd9372dab8e0ddb8e4b490f76590d59dac81cb3
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=model.safetensors.index.json
+        checksum: blake3:799458e835a59ec2be4e46fed0868077ef66a797b3d58ffce9fb82bcde39126b
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      tokenizer.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=tokenizer.json
+        checksum: blake3:2b1a3602df596f2247aa289d62fe37526ac59aac8f00f763880f62a8a880fd74
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/riva_translate_4b_instruct:riva_translate_4b_instruct_8k?file=tokenizer_config.json
+        checksum: blake3:22eb004d6a4f673c2ef802d54656f58d9b3406de08d0cce200821c724f072e5c

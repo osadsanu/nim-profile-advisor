@@ -1,0 +1,654 @@
+0109314c2a33f84c814fc10a6703290544f311098ad2a4eb69181a98315adffa:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-l40sx1-fp16-throughput-lora.1.0.0.16238301-b
+
+0b4af8e8f5445e9e12cd1f6a9d76bfa055477051113e450d4be15bd8783877fa:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-l40sx2-fp16-latency.1.0.0.16238301-b
+
+10af07e9a89d63307c3d6f49d30e214f8a9b9d9d11fafd7eee9f16eae6de3722:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00002.safetensors'
+            - !name 'model-00002-of-00002.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+
+13763044ab2b4ef067f42abcfd4ccd759bf393fe0a6602ef9d8737ddfeee9925:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-h100x1-fp16-throughput.1.0.0.16238301-b
+
+1a582b70aa05fafdc5c0c2b2f214bfbf51df0ad3807bc20413c656352b44d0ae:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '32'
+    llm_engine: vllm
+    precision: fp16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00002.safetensors'
+            - !name 'model-00002-of-00002.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+
+1af0b55ef81f49d06a04cee845822e89130b9ec321093db3b092ec9be22a1e91:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-a100x1-fp16-throughput.1.0.0.16238301-b
+
+204d99d035b093d6b9e1f5f4aa885ceb50455520798a126f63ac9f600568f798:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-l40sx1-fp16-throughput.1.0.0.16238301-b
+
+2249f8c926ccc2095503b0a231842136a442440c528068a2a177fbf1a8962264:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-h100x1-fp8-throughput.1.0.0.16238301-b
+
+2cbe445784de1b602b7a715c81104f72f1a358ce6636b2907a11b553eb225f37:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-l40sx1-fp8-throughput.1.0.0.16238301-b
+
+40183634964d0c92cb21957df961ad3645084089a184ad2964cf6109e939ec6f:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-a100x1-fp16-throughput-lora.1.0.0.16238301-b
+
+62d277292a5dda56d2dff3e0f6ecf05a2b1b856c21cb39f81394ab5abfe6c499:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-l40sx2-fp8-latency.1.0.0.16238301-b
+
+750abd26822b4beed54f9f9755b7cd6896db71b6fd79970b1fedf4d911e877f1:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-a100x2-fp16-latency.1.0.0.16238301-b
+
+9eed9cd187dc2ac470cab567f68bf22114e39261c7506888ba15abadecc27a59:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00002.safetensors'
+            - !name 'model-00002-of-00002.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+
+b1bc0fff2eb518b55e5484c78a82db93cee69d747264747946736849c6a18dee:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: true
+    feat_lora_max_rank: '32'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-h100x1-fp16-throughput-lora.1.0.0.16238301-b
+
+d4b122ee284a8d9514e271dff8a5aa671a944c7c30f9603186cb0c16c759a332:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-h100x2-fp16-latency.1.0.0.16238301-b
+
+ed4a332ad81d80dbfa14eec2a7a4c5014d89e37649aa7edf8a78135e3da9a60e:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'trt_llm_config.yaml'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:0.10.1+79a76176-h100x2-fp8-latency.1.0.0.16238301-b
+
+f31d3198385b8a258c29ffa78ee72de75b594042de04f1ff508a0d4d9b9b0944:
+  container_url: nvcr.io/nim/meta/llama-2-7b-chat:1.0.3
+  model: meta/llama-2-7b-chat
+  release: 1.0.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: fp16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'README.md'
+            - !name 'USE_POLICY.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00002.safetensors'
+            - !name 'model-00002-of-00002.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/llama-2-7b-chat:hf-f5db02d

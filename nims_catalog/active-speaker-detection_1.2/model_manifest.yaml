@@ -1,0 +1,166 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/nvaractivespeakerdetection
+release: 1.2.0-prd-fb-build.1
+profiles:
+- id: 85f1043c43b43b954053946f6649e6a24f57a125e74ee656668d7889d0f9a186
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm89?file=denoiser_16k_89.engine.trtpkg
+        checksum: blake3:fb96ae21811e2375575c6ab5cf489790d553f3b18d956cb0c5b9b53fcf8299c1
+      face_and_landmark_detector_119_fp32_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm89?file=face_and_landmark_detector_119_fp32_89.engine.trtpkg
+        checksum: blake3:6f22ef33d527bc2443661f233f134714ba690a8f2dde4fbb8167bf30dcf0b9b5
+      reid_fp32_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm89?file=reid_fp32_89.engine.trtpkg
+        checksum: blake3:f5863a4409b0c1f07e3f6eadcf3f593adc49b701bfa4c2012c3fddd50e227c6d
+      sync_discriminator_fp16_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm89?file=sync_discriminator_fp16_89.engine.trtpkg
+        checksum: blake3:7b863dfbbaa2188f036fcb0d0e16e51ae3b0f6bb6ccf11291e1c3809ab5693ea
+  workspace_hash: d247f3cb8ded458a8af04b9da2b42741f5b04c70228e76e44c26fdf527ec102b
+- id: 95ab357f947b3020e1ead7b5e039740d6a24438a83c3a6dcb70e4d4a96aabe10
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm86?file=denoiser_16k_86.engine.trtpkg
+        checksum: blake3:45d2fcfd434efc3f05a9125c2ed30787ecef537e6965ed75026af2d545e9eaa5
+      face_and_landmark_detector_119_fp32_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm86?file=face_and_landmark_detector_119_fp32_86.engine.trtpkg
+        checksum: blake3:5b4283bffd0e8c198cb63875cfc298133224c5a170730c95842d0560f680c55d
+      reid_fp32_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm86?file=reid_fp32_86.engine.trtpkg
+        checksum: blake3:f7b2c3a9bf713b92b1a31d9e488ff8ec41903eea8f994773b4848d8ce14ff067
+      sync_discriminator_fp16_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm86?file=sync_discriminator_fp16_86.engine.trtpkg
+        checksum: blake3:fbee2804b1e1cd90d0361c17c0628efd6c3e6922933ab00e920e90eb208535f8
+  workspace_hash: f9ce3e668a57e437ec9748c0a3e017dfa64e0f3f650720ac33ffda2f39258aa3
+- id: d8e49a40fcf78248e355a542405cbd9ccb975ac79f5c07bb2775975017c979c7
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm90?file=denoiser_16k_90.engine.trtpkg
+        checksum: blake3:9695c709fdd3bc370e689f9e6dabb95c0cd75c512b5d7a5cedc2086e4b6b0843
+      face_and_landmark_detector_119_fp32_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm90?file=face_and_landmark_detector_119_fp32_90.engine.trtpkg
+        checksum: blake3:fee8d4553ed082edb08d19c4ab25478ad0e410eeabc883b2a9f3c3591cd41fba
+      reid_fp32_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm90?file=reid_fp32_90.engine.trtpkg
+        checksum: blake3:1e7db9a9dba567dce9ba7daa0b5cda2dc874685b7d748d47a983a7ab44c8a41d
+      sync_discriminator_fp16_90.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm90?file=sync_discriminator_fp16_90.engine.trtpkg
+        checksum: blake3:5609e371ec6257c248d9bdbd9087a3bc59f5424cff7de38228bf1e0f64d888cc
+  workspace_hash: 3eea903011608d39e12e40bcc3a4fe284b01a6d7dbca0a8b33bf8307e98058c4
+- id: eb02786152e604d9495f891e38b2da550db36fa2c9e91d25211b0c1c8c9d6175
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm120?file=denoiser_16k_120.engine.trtpkg
+        checksum: blake3:6b3fc28a75672627fa1f29980fe8fd33a45a52a02131b5eb91d6c597ce388750
+      face_and_landmark_detector_119_fp32_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm120?file=face_and_landmark_detector_119_fp32_120.engine.trtpkg
+        checksum: blake3:e01b260d34b0ca8e5a7c104f1d2673b68e7adab26af0e9b8c4174765fe5a9cf9
+      reid_fp32_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm120?file=reid_fp32_120.engine.trtpkg
+        checksum: blake3:b382009ab63dc4231e83df0b8e0429bb9dca3622b36f8505da56c9ba241a385e
+      sync_discriminator_fp16_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm120?file=sync_discriminator_fp16_120.engine.trtpkg
+        checksum: blake3:5a7a5956782752bc68db10316921f469a963419650589fc8dfaae6fb1d3645c9
+  workspace_hash: 447635cf3461f06dd3fcabb03b3991d3aacc5e7c07cca07d24c0328ecd54ac0a
+- id: f1d12a64b41e0a9972ba7b361437c0367e08c5df79a04ca01d8af6581deda1a0
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm100?file=denoiser_16k_100.engine.trtpkg
+        checksum: blake3:d827dd62b5d7f7deba3ac808dbf31dfd1ea90878a7a042924797a5f9d67bcf67
+      face_and_landmark_detector_119_fp32_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm100?file=face_and_landmark_detector_119_fp32_100.engine.trtpkg
+        checksum: blake3:30ec8114fb0b1263cc1005a99c6d637ae216a44aee8db496a5ae1c20df75b15b
+      reid_fp32_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm100?file=reid_fp32_100.engine.trtpkg
+        checksum: blake3:dda7717d57622fb1b8c547ed143e23de20daef54fb3ee6a18dde3ca049911723
+      sync_discriminator_fp16_100.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm100?file=sync_discriminator_fp16_100.engine.trtpkg
+        checksum: blake3:cf86a89c89d50f970870740419e7b022bfee736a6853299c4ad7a6e596d3ca7b
+  workspace_hash: f85ca471a105ff62bd4ad6119e8c89c960d35a1da46acb8a65f8d283c43baeea
+- id: f4a75f436f19b3e4728c334240d5b2ff15b102ec953ee7d1cb231c9fc93dd3d3
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm80?file=denoiser_16k_80.engine.trtpkg
+        checksum: blake3:aa10919b7e0c5643a1a67ba455de1975d02fcdc1d54f62c46fe9cab8d09965a9
+      face_and_landmark_detector_119_fp32_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm80?file=face_and_landmark_detector_119_fp32_80.engine.trtpkg
+        checksum: blake3:fe264f5f3a1b8c804d488b8e771957d98f35bc370a8a42d4a12c69fde2d7f0f7
+      reid_fp32_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm80?file=reid_fp32_80.engine.trtpkg
+        checksum: blake3:f524f705ca2e4be0cb45381f40d627960a911cb4407a422442ad1f278872cf1b
+      sync_discriminator_fp16_80.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm80?file=sync_discriminator_fp16_80.engine.trtpkg
+        checksum: blake3:caec6608187c27bec22be6829f646eb5b43ef810884fe965f497a30fcf12360b
+  workspace_hash: 4e085e11e13587edb25eb717cd7f76effcc517cc5060d982110e79c7b384af96
+- id: fabc73f93374ed9ad5069e6e05a0a95ad9e28e1ab65b3a235199b53320c77a3c
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    model_type: trt
+    pp: '1'
+    precision: fp32
+    tp: '1'
+  workspace:
+    files:
+      denoiser_16k_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm75?file=denoiser_16k_75.engine.trtpkg
+        checksum: blake3:bf463914e6a71d11991592f220bdc3d55687e226c4b3fb98ccc8f328df5c4e4a
+      face_and_landmark_detector_119_fp32_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm75?file=face_and_landmark_detector_119_fp32_75.engine.trtpkg
+        checksum: blake3:0b5c605aeb2f672b6f945ef390785ed99cebd251d2cd68d0f08dbe1d8648e897
+      reid_fp32_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm75?file=reid_fp32_75.engine.trtpkg
+        checksum: blake3:e7ab88ebdc1ff2b71a9f883dda3a76aab3d9aa7640959ad16af9bf1111b58a19
+      sync_discriminator_fp16_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/nvaractivespeakerdetection:1.2.0.1_models_linux_sm75?file=sync_discriminator_fp16_75.engine.trtpkg
+        checksum: blake3:5113e05fdde35b344a5b5e083015e3216ddd07f6202eaf5bca82069927cd4b02
+  workspace_hash: 7211b222665e2cc08fb58a1ab9c1fb7dfa63ac551dbd411ee56bd6821151fece

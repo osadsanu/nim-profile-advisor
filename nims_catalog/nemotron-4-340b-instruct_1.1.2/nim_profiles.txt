@@ -1,0 +1,105 @@
+71d99cb219d9e866ea57934f0e0e47e0ea6414d3d7e9f92b29ca1307f5dd2b8f:
+  container_url: nvcr.io/nim/nvidia/nvidia/nemotron-4-340b-instruct:1.0.0
+  model: nvidia/nemotron-4-340b-instruct
+  release: 1.0.0
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '2'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nvidia/nemotron-4-340b-instruct:hf-0729
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank10.engine'
+            - !name 'rank11.engine'
+            - !name 'rank12.engine'
+            - !name 'rank13.engine'
+            - !name 'rank14.engine'
+            - !name 'rank15.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+            - !name 'rank8.engine'
+            - !name 'rank9.engine'
+          repo_id: ngc://nim/nvidia/nemotron-4-340b-instruct:0.11.1+ba20956e-a100x16-fp16-latency.1.1.0.1
+
+cd2c1c578308645c160853ee5bcabfdd11bfde3cf97c03e256b09de34a6860b6:
+  container_url: nvcr.io/nim/nvidia/nvidia/nemotron-4-340b-instruct:1.0.0
+  model: nvidia/nemotron-4-340b-instruct
+  release: 1.0.0
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '2'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nvidia/nemotron-4-340b-instruct:hf-0729
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank10.engine'
+            - !name 'rank11.engine'
+            - !name 'rank12.engine'
+            - !name 'rank13.engine'
+            - !name 'rank14.engine'
+            - !name 'rank15.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+            - !name 'rank8.engine'
+            - !name 'rank9.engine'
+          repo_id: ngc://nim/nvidia/nemotron-4-340b-instruct:0.11.1+ba20956e-h100x16-fp16-latency.1.1.0.1

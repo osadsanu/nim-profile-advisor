@@ -1,0 +1,2288 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/llama-3.1-nemotron-safety-guard-8b-v3
+release: 1.14.0
+profiles:
+- id: 032ae037e7cddf2e43f37341027d8060e5eb5082797ed3e39d803f1c6af4eb84
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 8f66e1558c9a4c46e5d17bb68e08932fb659b1e591a7c00068e06bd5e369c462
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-fp8-8ed-ncfj1w?file=checksums.blake3
+        checksum: blake3:0911f5364fee428a060827b4b31128b111d3b3b09bb3befc7bf66ff96ca2537e
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-fp8-8ed-ncfj1w?file=config.json
+        checksum: blake3:176e2224ba95b9c9c29aff34c82d94557dc702173ad9bf64287019b1f6c76876
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-fp8-8ed-ncfj1w?file=metadata.json
+        checksum: blake3:f27223e44a7dc140818870ca9d103b4f779065a3e6d2d306b95459382c5b76cb
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-fp8-8ed-ncfj1w?file=rank0.engine
+        checksum: blake3:7faf8a1d12abb7ff838b4d97f777a8eefc38df4a6069037e7710d51fa309c045
+- id: 052a14156d375521d64c584a0197a00ab3c54ae742b55145f1df091072656de7
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: f0fb9d0fe267d35c0e621f15f093c54b6d7de3abc6e8d3a380a4f64d45935261
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-fp8-zjbt9zgvwa?file=checksums.blake3
+        checksum: blake3:c7ed01390463c1dba5deceadf3fe8c4227c1228a26a93a866e7273d409d37f74
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-fp8-zjbt9zgvwa?file=config.json
+        checksum: blake3:1c03186c4a6186ef2135ff8dd0d9f8744219459eea633ad825b29c2b2d2459c3
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-fp8-zjbt9zgvwa?file=metadata.json
+        checksum: blake3:d5a311bbb2c0358f6bee7ddd36fb2df63bcaf000ecc1d9134d6f5e66049fa217
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-fp8-zjbt9zgvwa?file=rank0.engine
+        checksum: blake3:74aeca5968c41f3d44e881098027b81cf3e6f62cbe9c44e8cf6ac167bb92be75
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-fp8-zjbt9zgvwa?file=rank1.engine
+        checksum: blake3:5b615d8e906beaec2f49d92fccfcd16f79900d6dd531a217f3d639826490256b
+- id: 076e5a3eec39670d90ef75725966fabc895074660b42a0ba3edce65c0eb15756
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_480gb
+    gpu_device: 2342:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 7e3eb091f581614078a2e83d312d769d395b32e0cda7a781bc1fef85fe5088e5
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-bf16-wkdu61szww?file=checksums.blake3
+        checksum: blake3:12046537c84f0578548e4577af6c9c14fd15d3dad9e5ad4f6c9d9ce4d11d8957
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-bf16-wkdu61szww?file=config.json
+        checksum: blake3:0722b6f6b47240b87bd2c40ee1424f4c8d9e71fa1c6771d810fff08325c2d06b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-bf16-wkdu61szww?file=metadata.json
+        checksum: blake3:1329a3cb9d048667c5a2e679b692647df1c5a52d86f7d004ac844deb9149e084
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-bf16-wkdu61szww?file=rank0.engine
+        checksum: blake3:1d503ed36438e5a4142d4b4e1b07e6231e9316d4b9c6de8601d75194bf4da337
+- id: 105f6654f47c50206ac6dc9662aa774e1d8bad4b7268e1db3358ac0e446d9abc
+  tags:
+    feat_lora: 'false'
+    gpu: a10g
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 8f10f3dbbfd44232f48e45133c0702d86bffece653bbac2ee88f9503c16dd4db
+    number_of_gpus: '4'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '4'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=checksums.blake3
+        checksum: blake3:c62abd9952ac53659104c9dbc81da3cf592da6ad9c5d58eb9e1c89e84c056dc6
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=config.json
+        checksum: blake3:f436f24266b7313dee5a237bf077c9bd62303dfac11d7f989f01181f579f4582
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=metadata.json
+        checksum: blake3:d196785c8219d9e5ce09d16b7bc8ab3c76262d8f975a7bcbeb088d4be03680d5
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=rank0.engine
+        checksum: blake3:29ada7b053bcebf60131d262aba7f6284e10f0653e1e333fb21741120b7c8784
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=rank1.engine
+        checksum: blake3:a61803f8d9dfd2ee44586b29c27319b70e6e419a27c96c6cef25f7f5a60ed689
+      trtllm_engine/rank2.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=rank2.engine
+        checksum: blake3:bf7d93181a5db32b842b6c3421b48f278d4a77168a00dc42b084d8e2b1c8592a
+      trtllm_engine/rank3.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx4-throughput-bf16-nzlvtt8dga?file=rank3.engine
+        checksum: blake3:f2799952159ccbb8faea7719cc95745ef2ed62d595371b599c8eddf1443b4921
+- id: 158a13eff79873eb73689daf87c365fa06946f74856646e54edc69728ef59a8e
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 012acfa4c05b7904bd95371e47e08b58a191b686a96617cf32c0cfe36ad8f5f1
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-bf16-npq4cpurua?file=checksums.blake3
+        checksum: blake3:9c1bb634a5ab76b78a964e7288b5304a9c1b7e8a8769c8ee4764e0263fcb54b0
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-bf16-npq4cpurua?file=config.json
+        checksum: blake3:5560f3cceec318711029a65f123c48874105621afa9824941b35eddf17fd42db
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-bf16-npq4cpurua?file=metadata.json
+        checksum: blake3:16dc479b2ba14ee0fdcd0b5868b3df55937da2805057d738bb3ed9cb8339435a
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-bf16-npq4cpurua?file=rank0.engine
+        checksum: blake3:9183e54989fdd9585bfe346ec7c73b36cf2f37a10271455d145087126b7f2a2b
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-bf16-npq4cpurua?file=rank1.engine
+        checksum: blake3:a4c2aea0456a0bf55722705d5644242480885b6f29c88a8e35bd003150f86b0e
+- id: 1b953829736de1f2ffc00c8d25316a24d43ed398b5f8599957c9547007fd5471
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 43d3b74ac6ff0a89bc147a0c7cddc56a7a22b6dbafd216c09bd83a34941eb353
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-bf16-0z6k5tizpa?file=checksums.blake3
+        checksum: blake3:b3e0aab49a1ec721543a31923d8fe741e0be3983824d8ab4426e8addb4fcadee
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-bf16-0z6k5tizpa?file=config.json
+        checksum: blake3:f5ea3a40fe1e55c3f73f88fdbb9afdd5d217f38884b8c817e7a2d4b142695ac0
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-bf16-0z6k5tizpa?file=metadata.json
+        checksum: blake3:6ef59da9cf19d422296ab4b330c87ebdd913ec41b392e3dec753ddd2a168d275
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-bf16-0z6k5tizpa?file=rank0.engine
+        checksum: blake3:1ff81a8180b70d487ce4a2a1f10ac265e33e53a31bd5bf17c2c8291c8814053c
+- id: 1c67491281ac66f32ca917bc566808bf4657ad20dec137f2b40c78d95b3a40dd
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 27afd62082ec543ed0cfa967766c4e7ef9d412fb0e6345e5694569990158ff53
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-fp8-t4nutpe3yw?file=checksums.blake3
+        checksum: blake3:5f639b9926c77241fe27a9b458c43e7897381a9e4fb54d715e1fc7e652dfc73b
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-fp8-t4nutpe3yw?file=config.json
+        checksum: blake3:d62ad0a8c3ea53ae562910ff25a8cf1f274693b1ccd7ecbe41e95f063c608bd5
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-fp8-t4nutpe3yw?file=metadata.json
+        checksum: blake3:30016ca58c38ee07e4c5da0b277a5c1d92d708a2f56f92a8b80413f479953308
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-fp8-t4nutpe3yw?file=rank0.engine
+        checksum: blake3:f6bc2fb080f249fe61c676483a322140d9c10f887ad3eff0f4d3e6d873da882e
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-fp8-t4nutpe3yw?file=rank1.engine
+        checksum: blake3:00692a0022ebd2c981099c54b846262b497ab329d54b57796b9ff825d2d90b76
+- id: 20ac8ad6d3cb6b083facc320669292ab06972015f432839c64c841494beb4177
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 5ecf52d80965e02ce354fac446f43a4a6a152256becfa2b9426d624e6d12b8a0
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-bf16-jyacmwdkva?file=checksums.blake3
+        checksum: blake3:498975bcf49f858dc31f14b4742af0cc756661660b30f14fb3ddac6fa4e560ca
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-bf16-jyacmwdkva?file=config.json
+        checksum: blake3:b9bb54daeac6e6c9db4d26b864458353d999050484698a0734754913712c6fe8
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-bf16-jyacmwdkva?file=metadata.json
+        checksum: blake3:973af5d3a0ce8ea7f40fe881fba011272080d35a235f391d59a08eb5d29839bb
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-bf16-jyacmwdkva?file=rank0.engine
+        checksum: blake3:9af950e873d3b6aea10d3ccfff467b44fe6446f71f6c26cc249396d6ef721ef7
+- id: 21879fb81cb016c598cb4324a7cfa93acac1904ebc8cbfd9fff42d79a929b19d
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 1e71fb9d235727b179d1b44b4ae512a8b672e492d65dd26d19062997b7dfa801
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-fp8-va-pn92u5q?file=checksums.blake3
+        checksum: blake3:259e114b7fb3ccf5f895f5fa3620b1720027d9a6ad7c200d25ebb93f3b7650ac
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-fp8-va-pn92u5q?file=config.json
+        checksum: blake3:7b886c1f8f2e01e86168e0a20fc79e00282fc9765d9c1038694c9d1b44ea5270
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-fp8-va-pn92u5q?file=metadata.json
+        checksum: blake3:c3b925a1a00668cab419f6a00a27e92f93b014208d15458c89fbec0f297140dd
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-fp8-va-pn92u5q?file=rank0.engine
+        checksum: blake3:6afbe8e85f23fec8205a3f3d50db8f96930a502799cf1bb5688ad46ac68aeaf7
+- id: 260a963986f4b26d55e2af38ef19fd45341314564cc55f6b3f968e0323a8daea
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: ce2d4d6cd542dd3798084c4577087cba35c1d7459e6f8a0b017c3efe0761ee62
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-bf16-cklhkobarq?file=checksums.blake3
+        checksum: blake3:569d8073637a0b702f0c8e3696cd8f632ebb398f6f449f98ea772269b84255fe
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-bf16-cklhkobarq?file=config.json
+        checksum: blake3:fe337076a1b63c1f24f4fb41e0cf05d5a4d6e96447d78e7254cd07d27c2e9b6b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-bf16-cklhkobarq?file=metadata.json
+        checksum: blake3:c588202039256115d4ce58d55cb41f3bbf97dc1b300ca98a569f430e1980ed29
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-bf16-cklhkobarq?file=rank0.engine
+        checksum: blake3:c507baff14243cfbf23f747d87d534ac5aecf2bda6bda84327c11101e1b2d24b
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-bf16-cklhkobarq?file=rank1.engine
+        checksum: blake3:b1b7b2118158ec6ebf047fe14fe16c9a0017d29dedebe85d2e43db8c78f2da71
+- id: 2f69689bf8fef4118bb018bb07869fc2d4b6eb3185115b2117ad62150f5d0006
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 5de61a19715738626006ec4c9ffe074ecaa6228b290a4876b72e877fb9f2c5b2
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-bf16-91x8nlwung?file=checksums.blake3
+        checksum: blake3:0d8709e08283392b7fae8a7dee41e030576af650abb5f9c521400ec56f9d27f2
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-bf16-91x8nlwung?file=config.json
+        checksum: blake3:bd407c9c26c5dd5d9e238761209623839d9947ed666336cdd856a0c4d0292cd6
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-bf16-91x8nlwung?file=metadata.json
+        checksum: blake3:6964b73b806b218fb306ba1a2b911756081e224dc648f27c618154f70acb99f5
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-bf16-91x8nlwung?file=rank0.engine
+        checksum: blake3:f298ce53a8b8d07f48e6daed83c0f9ea3e80e1261e32fdf22eb8685dc97b09d6
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-bf16-91x8nlwung?file=rank1.engine
+        checksum: blake3:1f5e2d16c2a07d20e2132d2bf9604c2001b2d62b68e106ce56b5effb126d071d
+- id: 373b366ba1d0bf15e9c7087967fadcc00db30c079943feee2ae0e2489aee9d66
+  tags:
+    feat_lora: 'false'
+    gpu: h200_nvl
+    gpu_device: 233b:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 2a333943ea27886c0631ce6c7c9148883ba1dc0f30e4a08070b298886352a7ba
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-fp8-xtoovpb5cq?file=checksums.blake3
+        checksum: blake3:260c6218997e225f57cc4e2538702a26c6c40d92bfe9e491a4a32328f076605c
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-fp8-xtoovpb5cq?file=config.json
+        checksum: blake3:d591b5bdbcdcb2720c92c152d03cfa0befd5509d5301bf69097b1741bfaa13b6
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-fp8-xtoovpb5cq?file=metadata.json
+        checksum: blake3:370d203872c0195977371a00a322442240996acb10c11d464a261011a5707fa8
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-fp8-xtoovpb5cq?file=rank0.engine
+        checksum: blake3:3398ad8acbf64b726450e6470f3621df6c150c3875b7ffbf3c15c609feb56497
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-fp8-xtoovpb5cq?file=rank1.engine
+        checksum: blake3:da9641dc84a37ec1f668a7e9f9f4e16aea9b8b85a10bf06e4d5a1fa0acb4534b
+- id: 3a8d53337b395483663f3d96e4528a759d1474c5afa8b68d74a39e99fad7aebf
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: b8cae88fb98ae95a3c1e092043030b13cd1fffee85fda30b23429310b188d567
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-fp8-gr0peta8mw?file=checksums.blake3
+        checksum: blake3:8453bb9485d4bdb92a9eb1b39e79bc577f3527fcf6d20ca6024fc79661b88664
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-fp8-gr0peta8mw?file=config.json
+        checksum: blake3:3b7e3e73d1505c5366271e62e22859c16a8eb791d155ae833c50b38e7686e449
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-fp8-gr0peta8mw?file=metadata.json
+        checksum: blake3:63b45b927797ad566faf2b613196deb8b4f13c7e8f91cdf9eac978351a98d743
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-fp8-gr0peta8mw?file=rank0.engine
+        checksum: blake3:64f3a2aa9a1915b6414819db6aa531b99b901db15c0e7dd0e6336f6abdadcf98
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x2-latency-fp8-gr0peta8mw?file=rank1.engine
+        checksum: blake3:c4c717f717eae564b8aca5f9faa066623ba5d4500098f5f31b35aa610c158cd4
+- id: 3b86e1c4eafac6dd59612ed5cea6878177867773d567fcc0e0127ad5b2b1221b
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 42cf3e018ffbe7489f4eae0fa2cc34bdfd695c89519e5c0ba593dafcda6985f2
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-bf16-77m1wbhx6g?file=checksums.blake3
+        checksum: blake3:64e74bc4aae688e31b03e2f2e8321092165c4d7f17dd9a50078776ecbfd5162f
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-bf16-77m1wbhx6g?file=config.json
+        checksum: blake3:9d18f7794bf2940233cfb74f1d30cf4aa31fc76ba4aeaed1197cc31bcdcf0c4e
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-bf16-77m1wbhx6g?file=metadata.json
+        checksum: blake3:a226b7c57ed220ceb5227c9fdf902d01481f0f0261c14ed6999478afb2ff0be5
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-bf16-77m1wbhx6g?file=rank0.engine
+        checksum: blake3:80a707665e6b4f92d99fb322bb9e0d58cbd84317aa029316ae517f52a621b6af
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-bf16-77m1wbhx6g?file=rank1.engine
+        checksum: blake3:0ee0a849ed57863bc2a78d155ab91149ae5dac5f4b49e415de8e6174da33640a
+- id: 3f24e5c0ba016486c057ff9997caa9341f1f974f5dbf53e96fdbf9a0558bc9ab
+  tags:
+    feat_lora: 'false'
+    gpu: a100_sxm4_40gb
+    gpu_device: 20b0:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 295073e30fd8bc54a3fdbd540fe858ae5b7d1a9eafca9b4bdce889573d8bdf51
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx1-throughput-bf16-mdbmfyak4w?file=checksums.blake3
+        checksum: blake3:22a3a731f6a603863fa9cbe92e09f596e2da5289009f4d80a31391fecade0574
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx1-throughput-bf16-mdbmfyak4w?file=config.json
+        checksum: blake3:2a16c6d26c19a193f02ceee9891bdb07c91a552e536d97a7ef86cdfc602cc5db
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx1-throughput-bf16-mdbmfyak4w?file=metadata.json
+        checksum: blake3:539031c9deb859b6cdf01d10caaf27e7f8e274d106d3a664bd9eaf137e015c93
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx1-throughput-bf16-mdbmfyak4w?file=rank0.engine
+        checksum: blake3:adf904b470230825464bba98c7d9d29c361ab4705ebf90305694c0fdb1ad4ad2
+- id: 45999aa05eca849f11beb20bbf70dd48f2970a01dcf4c2617302b8038fca1662
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: e028dbb8893d09cd221f2fe3d4ce68892c3a74858f45fade2dc0eccbe61472c7
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-fp8-j-bfockowq?file=checksums.blake3
+        checksum: blake3:97f72927e2a6f35a5805aa6d2ad3e61f2b7cd1e38841059f090dded9ddafcb94
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-fp8-j-bfockowq?file=config.json
+        checksum: blake3:f51b0f6fbb605b1857a460b377e9f8e259a524803d7ce867dd5ea918c292a12e
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-fp8-j-bfockowq?file=metadata.json
+        checksum: blake3:8b52f38d4a93790cd51c639ae7da3c1ea096ce18f6996dd9de96925ee9096eb1
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x1-throughput-fp8-j-bfockowq?file=rank0.engine
+        checksum: blake3:83b584d21a117178a893e5130b74e2f460485912faa123de97e60118f2d0e15c
+- id: 47804570e8db67fdc60d9cb518b0f60316ac4eb0f3a55af81aafefe124505a8f
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: b9e27e9c88f5f5947d49618806eacac533b6d37db6e551acdad1f143e6c4c619
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00001-of-00004.safetensors
+        checksum: blake3:0b75f761e671b2fc72b06a3265ce539bc5d59bc73048c223ab040d89b42ef708
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00002-of-00004.safetensors
+        checksum: blake3:c8a1c64eb2486ae606c9699c398987306e85b469b885b45366e25712c920a0da
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00003-of-00004.safetensors
+        checksum: blake3:7b1ef4f3c007057b4dcd85ff7e9da345912096474b35f6b7cb051f09cb5c2b94
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00004-of-00004.safetensors
+        checksum: blake3:e9c3eef2a539ed72c52ae840ed6724315c27ac78a265181a27491e8a7b89972f
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+- id: 511022fb9a93b2c8b1eb84f4c472f05833e6904e51de7fd676be168a0aa9d63d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: b9e27e9c88f5f5947d49618806eacac533b6d37db6e551acdad1f143e6c4c619
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00001-of-00004.safetensors
+        checksum: blake3:0b75f761e671b2fc72b06a3265ce539bc5d59bc73048c223ab040d89b42ef708
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00002-of-00004.safetensors
+        checksum: blake3:c8a1c64eb2486ae606c9699c398987306e85b469b885b45366e25712c920a0da
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00003-of-00004.safetensors
+        checksum: blake3:7b1ef4f3c007057b4dcd85ff7e9da345912096474b35f6b7cb051f09cb5c2b94
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00004-of-00004.safetensors
+        checksum: blake3:e9c3eef2a539ed72c52ae840ed6724315c27ac78a265181a27491e8a7b89972f
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+- id: 542edd6068b3fee7bb9431ba988f167dfc9f6e5b6dbf005b2e208d42bd17d705
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 39ecf4cae5d01f432c577b611c5777babc7c60998a2ff47a2b1d153c3d26498c
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-bf16-cu0mrsotuw?file=checksums.blake3
+        checksum: blake3:be96c9c2bd9ebdf1cf86150b8d5e0f06aacc9baef63cd17aceddf44cf80ed147
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-bf16-cu0mrsotuw?file=config.json
+        checksum: blake3:804b0583e4bfde751b9db7548a59884e8e996348315e74eea30a901154228ba6
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-bf16-cu0mrsotuw?file=metadata.json
+        checksum: blake3:75bea6cf14d3ea4ed2d980556864bbd66ae36f2d137011b1ddca985b49fd725b
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-bf16-cu0mrsotuw?file=rank0.engine
+        checksum: blake3:424a70a142a2e03455d5afe6ad735bab40e0844582bff7fcfcf3439f50dd26a2
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx2-latency-bf16-cu0mrsotuw?file=rank1.engine
+        checksum: blake3:54dc136a4bffdec1bf5e962dc0ffe336d835d629f51697c078fcf95425394e0b
+- id: 58041a8daba4de24b75c86456d256fbc34e881de58ebdab6135aad18466d8130
+  tags:
+    feat_lora: 'false'
+    gpu: h200_nvl
+    gpu_device: 233b:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: f98c474c1e977a8373e0e83d2de2a820153e4517da165702b9334708c4e5ae59
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-bf16-rgopajzbdg?file=checksums.blake3
+        checksum: blake3:baa3f6cebce14cd3808f3e9d9f740bfe3a7bdbf1f785e771637bc296ef772424
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-bf16-rgopajzbdg?file=config.json
+        checksum: blake3:8a165fe0b643576b94662a8e8789d428b5500955058748edd2de2905b29ab632
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-bf16-rgopajzbdg?file=metadata.json
+        checksum: blake3:027371abb0791328770ad8ea20ad6408504fd4e35ab9fa4fb540686fec00d3c2
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-bf16-rgopajzbdg?file=rank0.engine
+        checksum: blake3:3e0c4b6f6a5cab8950b117d88d9d5a5219d6b143065b5f215a4eb6bf6045d7a3
+- id: 5a708fe91514e2aa44438158af955b35d51fab4ca1fb7268e35930e67fce6e08
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 9ce96361bdf7d61567339e7d0223de8fb75590d8216f1ae670305f5f86363b2d
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-fp8-m6rajkcsia?file=checksums.blake3
+        checksum: blake3:e26a3fd42bd260c6573ead43dadd4724474af3fe6b034ba8248b604c597951ce
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-fp8-m6rajkcsia?file=config.json
+        checksum: blake3:dce0b3ce12ade10b41a98cb9ac2a3f2f9f58c57a057bde2672ae53977c0b5a06
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-fp8-m6rajkcsia?file=metadata.json
+        checksum: blake3:e84ef2198e0ec4b65906a06fc5a5b773b1ee98334d99ac88398b70d295164b40
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-fp8-m6rajkcsia?file=rank0.engine
+        checksum: blake3:c94d3899749cbd82bd3da02a712a57b0e3d0712d5b7548eb470bceeb258f5fb1
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x2-latency-fp8-m6rajkcsia?file=rank1.engine
+        checksum: blake3:26f11f6546ee24de86d6aa17d7a160b2c458a7b0cf2eea06d1f061e7a91f416a
+- id: 5e8a78e4d0c9e2e513466ec23ac181ae8d75ce05bda5c4653eddf8f3a99f2d58
+  tags:
+    feat_lora: 'false'
+    gpu: h100_nvl
+    gpu_device: 2321:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: a41c2fcd7684cbaf37fc455b37c39794b2f3ae0b25affbe9d3a18897f7f44f4a
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-fp8-4eiralwbxg?file=checksums.blake3
+        checksum: blake3:3cec3770ab84e7eccd9b8fdaa7ca228474f7c349d6cbe0f68981caa76ca0f47d
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-fp8-4eiralwbxg?file=config.json
+        checksum: blake3:5a752a2943f9d6db441a1c910689bb90b5b46fa03795bd80f64f13bb87aa6f6b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-fp8-4eiralwbxg?file=metadata.json
+        checksum: blake3:b0b3d6e82b1e93e15824885594100bd734538dfc149491397109be9ef4ac4e7b
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-fp8-4eiralwbxg?file=rank0.engine
+        checksum: blake3:7af77f642d16d52d172fad6fc72beeb933711ca5d17156a004f6ba1ff830110d
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-fp8-4eiralwbxg?file=rank1.engine
+        checksum: blake3:bfb4739088975465300ecaf331489e7072b44b80b125c620566aa3de7a1af514
+- id: 5f2aea268787b1aea54e98d370f99685f2d6066310615ff946cf4f76242dcbfc
+  tags:
+    feat_lora: 'false'
+    gpu: rtx6000_blackwell_sv
+    gpu_device: 2bb5:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 02cdfde5d90a065a18c3ad3449991b3d69860137ad377c193d2b983aea9f0a71
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx2-latency-bf16-htgnh7149g?file=checksums.blake3
+        checksum: blake3:4d9db160bdfc29585430610b43b22e6890185b7ea6ea8170d14b4723b7937b48
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx2-latency-bf16-htgnh7149g?file=config.json
+        checksum: blake3:615b3097acf63c4df6cb4f131248b5c5325306901bb034a064b3cd732ac56e47
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx2-latency-bf16-htgnh7149g?file=metadata.json
+        checksum: blake3:b55fad395e3d0ed988df5e148930caf33e1e5a672b6f1f02d652a7a5c9763b25
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx2-latency-bf16-htgnh7149g?file=rank0.engine
+        checksum: blake3:2b0f4794b2cbbf2b2d7de1165cb04b7cdbb0d718dbb0e61c530ad773bad52b19
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx2-latency-bf16-htgnh7149g?file=rank1.engine
+        checksum: blake3:b62047883ed25125f638b91b9e3010873f5700b9ca3bd4f5e3ada2ef8ab7ac1b
+- id: 60cc64256f69a6242aa2b7320a1070ae84e88fe5416674cbbe9a2cb6ecb8e992
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: b9e27e9c88f5f5947d49618806eacac533b6d37db6e551acdad1f143e6c4c619
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00001-of-00004.safetensors
+        checksum: blake3:0b75f761e671b2fc72b06a3265ce539bc5d59bc73048c223ab040d89b42ef708
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00002-of-00004.safetensors
+        checksum: blake3:c8a1c64eb2486ae606c9699c398987306e85b469b885b45366e25712c920a0da
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00003-of-00004.safetensors
+        checksum: blake3:7b1ef4f3c007057b4dcd85ff7e9da345912096474b35f6b7cb051f09cb5c2b94
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00004-of-00004.safetensors
+        checksum: blake3:e9c3eef2a539ed72c52ae840ed6724315c27ac78a265181a27491e8a7b89972f
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+- id: 7a4c46a6911fff7e11e99df87161eeae73b08c48cc75f1928e8289fbacc188fc
+  tags:
+    feat_lora: 'false'
+    gpu: h200_nvl
+    gpu_device: 233b:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 2050bc7b8670f2c3a5fc066b9a3dbf9734c249719c60d25865546d4223de5672
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-fp8-4sau2vx5cq?file=checksums.blake3
+        checksum: blake3:54e4a063e440a4d04fdeb9f0c9673f7af0bd3f30461c00951019251fb38fc153
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-fp8-4sau2vx5cq?file=config.json
+        checksum: blake3:4a19f115c1999fb1b8f26ad6122be0b2043705718ac5232b01ffaa10fccedfff
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-fp8-4sau2vx5cq?file=metadata.json
+        checksum: blake3:3b33c4513e3b879e5b7ce3800a4a5ca33537e1a5416730e57a27e0509b7dc93e
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx1-throughput-fp8-4sau2vx5cq?file=rank0.engine
+        checksum: blake3:b4461fe6899f3894a5fd6d35052cc38078d4c554a059e2b51a7b3762ad62afef
+- id: 7b2460a744467de931be74543f3b1be6a4540edd8f5d3523c31aca253d3ee714
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 065a5593ea51b640bb4bc3285c8c4d220e6c0e1eff8598d0dba31038b11a7529
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-bf16-vxlbg3drmw?file=checksums.blake3
+        checksum: blake3:446d4b8fb1b60377b6fa49c99f7456cb22e37020f0c5fee7b5af56257a3c45ae
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-bf16-vxlbg3drmw?file=config.json
+        checksum: blake3:4b66f4507d003954d971e3caea472288d827939f312868c3680779aef2de7b9c
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-bf16-vxlbg3drmw?file=metadata.json
+        checksum: blake3:299cd16250478b3b21d9cf2128ab370535b54225005ec4cb3d20e23f725e7ef5
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-bf16-vxlbg3drmw?file=rank0.engine
+        checksum: blake3:43481b9f2c30e9b3f9b0d716de5180723408e549412eb4859d16c85805af7e8b
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x2-latency-bf16-vxlbg3drmw?file=rank1.engine
+        checksum: blake3:c21246eab102813d65a3fb9ac613b9474a776afc6399d147151ebd389034abb2
+- id: 7dedab87edfe691a1eb95d7bdc3fa74cc3e7fb6eeb6b56ab933f2ea3561d4c8d
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 4fc498d255ccf5dbf7ac73b6ef421adad1f534411f5b7e35f43fe919a5f73c14
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-bf16-pgx-ayoayq?file=checksums.blake3
+        checksum: blake3:c06b934f4e4b73ea88128513efda815fb0745a4e2994c3460d43c4ce0a85b140
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-bf16-pgx-ayoayq?file=config.json
+        checksum: blake3:0f312d0c830ac61bff8cbbdfd0b74d2a2011767a5624cd418ef1e6b993a438cc
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-bf16-pgx-ayoayq?file=metadata.json
+        checksum: blake3:1861d0edc81916bacb648e11cefecaa9729c2102d0f370d32589207c9dd36f52
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx1-throughput-bf16-pgx-ayoayq?file=rank0.engine
+        checksum: blake3:6da96020fe493de833baaf626963d84870261de6db8e73998e63c9defb926b29
+- id: 80b75e35feecbcc4f3cc33ea634318bff503afcea1924a140f9fe9c3a848b99c
+  tags:
+    feat_lora: 'false'
+    gpu: a10g
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: bb7891ab3567040a19c7421e907e97136a603f184e18cd840eecba1b194d4352
+    number_of_gpus: '8'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '8'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=checksums.blake3
+        checksum: blake3:36ef48e941c7e241d1c210af62f1411d35a8be53c21aa86eb832d612ba341959
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=config.json
+        checksum: blake3:a539d75026259ab35a6f51f70ca4746f43fc3563c1355f54df003f93e10d57b0
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=metadata.json
+        checksum: blake3:5ea4fd9206cedb24f4f3336c77f097a8082bae0d560012bf4121b273716959bd
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank0.engine
+        checksum: blake3:d613ea17c09c7d8530ae143051f56c1263ef68dc93ab6cb246c2470f8ab4386a
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank1.engine
+        checksum: blake3:e13c7fc97246de170e51b333ea5cab2e04c305866f98ed94355ea82813a6264a
+      trtllm_engine/rank2.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank2.engine
+        checksum: blake3:d7b09625f70832c63af35fdaf71a656f9d0c0898f7bf3db98d6095c7dec8e0cb
+      trtllm_engine/rank3.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank3.engine
+        checksum: blake3:68a8fb31360e1cb6a0592a9a08104c650e82a2c88b8046570d742781737095f7
+      trtllm_engine/rank4.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank4.engine
+        checksum: blake3:14f630a1c1e997b226f63db79a0986f6f07b3a0ff676e29d7d3e3d7a9ab55f17
+      trtllm_engine/rank5.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank5.engine
+        checksum: blake3:c77c6c3eecde7f33b77a3b8f4974034c0242522e89445f33747d04b056cf6a30
+      trtllm_engine/rank6.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank6.engine
+        checksum: blake3:b7efc11287b1a26104358395bc0ebec05008abcbf62358d27d67bcd1c149af04
+      trtllm_engine/rank7.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a10gx8-latency-bf16-jlvshhtgca?file=rank7.engine
+        checksum: blake3:d8c4dbd628af3aaf859841f5ae19a8019f65d3cfde17ee15bd64643ed04b6254
+- id: 8125bb2032b5649b5152192498543b77543de174d39f18dfb7473a6332c9b3fd
+  tags:
+    feat_lora: 'false'
+    gpu: a100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 98ba90cf238fe28970e39e559e129cce8c8a98b6afa57617cb73615879e0ace3
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x1-throughput-bf16-ckp1wm-stw?file=checksums.blake3
+        checksum: blake3:48150fcfc5111618886656345d40f5102dd7a016b8ea07df496caa3dbf1ac2b5
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x1-throughput-bf16-ckp1wm-stw?file=config.json
+        checksum: blake3:d9747f2122339c159a303f774a294298f8b1bdbd8869656f265e9d2c43e85b2c
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x1-throughput-bf16-ckp1wm-stw?file=metadata.json
+        checksum: blake3:c75a70408666282c111cd9c4ee579530249d18766f1bce28333c72e354d7ad21
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x1-throughput-bf16-ckp1wm-stw?file=rank0.engine
+        checksum: blake3:4a155ce62ebbbd0e280fc72422518b886ac7c8f206041e7910b256df5d24ee8e
+- id: 8258db301f5fb0a5b5a5b9c263af9334ffc0714c6ae82d2a0687b95c11f5834e
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: e26a8537ae09adef12ffe96ad74f5631e07d41a98d49745d222e414d4390754f
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-fp8-mngpkqqqka?file=checksums.blake3
+        checksum: blake3:ac3ac4cd6cd2a5fdce2eba7f29189e54855d814781145f2059a4542e937f14f1
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-fp8-mngpkqqqka?file=config.json
+        checksum: blake3:c122575953b3e4fe78d365e91890b035b471b2fd342a0dcba796eb8b2a345e3b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-fp8-mngpkqqqka?file=metadata.json
+        checksum: blake3:a159383f52e9dbc9c5e8a4a99b88b225402515a6494baac50e5622207422349c
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-fp8-mngpkqqqka?file=rank0.engine
+        checksum: blake3:5ed66bb04aa5fd165b47042293e07f4da50d26d992f34f88a46e13bc97a322a3
+- id: 8534f70d957abfcbb4353276dcb754f0a0820e90f555afe233be835f8d5c9743
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_480gb
+    gpu_device: 2342:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: df3c6048aecd7da9fca1e0b71e5a30111f961f84d91f14b11b3e9bc627a8a28b
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-fp8-1vbqn4kzdg?file=checksums.blake3
+        checksum: blake3:fe39e29edfdee85999e3dcfbf30b992c8ead91e2f65430e48f1f090582d08a5c
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-fp8-1vbqn4kzdg?file=config.json
+        checksum: blake3:20653fe3f1e66acc07f74cbe0b24da3ed3bfd460b10912af4a1c35df6e9c8f95
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-fp8-1vbqn4kzdg?file=metadata.json
+        checksum: blake3:2cb2c3e046f8acabd68b4af970132ccb4fc0b1de31503ae9864b08b23f886000
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-throughput-fp8-1vbqn4kzdg?file=rank0.engine
+        checksum: blake3:d783954515cdd72a2d0d1bb5aebc44faf5ea07011647a98f2b72254d3cb47762
+- id: 86edc198bd7a53981bd95f612e07e204727e116bdf779f1405e0c8ff92e0f067
+  tags:
+    feat_lora: 'false'
+    gpu: rtx6000_blackwell_sv
+    gpu_device: 2bb5:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: c2914745aba9d88c89fff0d44ac6088a7a0d2c8bf19eab8fe13e60397e5e25ac
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-bf16-jqnvl3so1a?file=checksums.blake3
+        checksum: blake3:d5d74d79f2c44a080e05a00233e3d194cef3cdf6a5ddfdc243a952a80e0501b7
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-bf16-jqnvl3so1a?file=config.json
+        checksum: blake3:fb92ab5c2d4163b747c411b15ab59643a49335b2c83bc67521b0723877acb5df
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-bf16-jqnvl3so1a?file=metadata.json
+        checksum: blake3:5f688b7592edad30aa9db152ab006af7cbab0abe22b29e5e8fd3450974785700
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-bf16-jqnvl3so1a?file=rank0.engine
+        checksum: blake3:a3c27aa6689a6dd54720349aecc71cdbb722a35ae41358d64a2b8ab299634632
+- id: 8f0e0665f4f53a02e2e68ab690ba990d5d9a3a6b49cdcd4ff679031757de30ed
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 80cb3c01c6bc0620a15eee51a8f9220b46c07d586660b011601d756324dee0c6
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-bf16-icbehzog0q?file=checksums.blake3
+        checksum: blake3:a4a98aa3841b812c5661406b03c8255c3e1b88ff344bac24614c152c75c5ff6f
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-bf16-icbehzog0q?file=config.json
+        checksum: blake3:3371680779b2dd9d52f5f08dc89d7de8123de3289d63caeeed9b159f6ada5c6c
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-bf16-icbehzog0q?file=metadata.json
+        checksum: blake3:9e3508ed664c667936b4ad08d8dd7adddac0da1491ffabf94c676d99112f8777
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-bf16-icbehzog0q?file=rank0.engine
+        checksum: blake3:bf1b435bcc92397ea307bd6e1c7bc06b20165581cd6011b952f6996ca0b0acff
+- id: 908a7d5dbabe5e1a7956b66d90747b34d44edb357546ab098474efc28a1f95f2
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: ffaf278b6c3e516c45b8175b87c14129782c5cc6a6265e5935e1be04103c4f4f
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-fp8-g6om-qlf4q?file=checksums.blake3
+        checksum: blake3:0987addacd6f95e0e77ddfbeb9e344b2a042b715de93cc60e74efd165f0e2516
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-fp8-g6om-qlf4q?file=config.json
+        checksum: blake3:a3e5e5d5c3da7d80ac082e8f4e1ad9a688094b3ff299fb93832fe8568aa76231
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-fp8-g6om-qlf4q?file=metadata.json
+        checksum: blake3:3a65610ac926e92c7bca806f6c893cee670887ddb2e60199f718f72eb68133b3
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200x1-throughput-fp8-g6om-qlf4q?file=rank0.engine
+        checksum: blake3:f6142b6e69ddf83b12833b7d12f334f2d040f249aeaf484a51bbfb6589fa2967
+- id: 9325fdaeebf47da133de2bffcbfdcfb7537de5f0cf72adb091fb5bb8429047ad
+  tags:
+    feat_lora: 'false'
+    gpu: rtx6000_blackwell_sv
+    gpu_device: 2bb5:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: d969b0dea4a414a75ca0b53fa1379676b1c3fd7bd94bdd26bbcabf7724ccd24b
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-latency-fp8-y50nz3b2dg?file=checksums.blake3
+        checksum: blake3:5ee6f9d88021ad14c6da6bb63c52cca86b01014305354748bb2f011f89ed51fe
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-latency-fp8-y50nz3b2dg?file=config.json
+        checksum: blake3:0aeecf1b437fddd35020fdb670832031fc7d968506f7c6412adf72fd5d88662f
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-latency-fp8-y50nz3b2dg?file=metadata.json
+        checksum: blake3:d99064e1e8054269f00013483cceeb58c76be410e51ee3db288b448cb6e5b4d6
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-latency-fp8-y50nz3b2dg?file=rank0.engine
+        checksum: blake3:126b871af9273d46ae7c291c6ebe8ceec8af56ba4c44113ed4be0210b1e80926
+- id: 9784974c7d8bd2e2081fc751d02a70bd619b1b16d535d3ff764622c1b7e73ff2
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_480gb
+    gpu_device: 2342:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: f5807fce630fc2cd7dbdc9448c0616347db6de2aaec1429f884cc1ccae9c678d
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-fp8-q3ihs3ctxa?file=checksums.blake3
+        checksum: blake3:08a29fa47a706ffd8fe15acabbddd222165d0f3ca96edc2f6f933113dcb86047
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-fp8-q3ihs3ctxa?file=config.json
+        checksum: blake3:a3e5e5d5c3da7d80ac082e8f4e1ad9a688094b3ff299fb93832fe8568aa76231
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-fp8-q3ihs3ctxa?file=metadata.json
+        checksum: blake3:2ab4e5be3bf064669d7a01484116f1bcd066d8945e0fab52ccefadffb9fd5fb5
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-fp8-q3ihs3ctxa?file=rank0.engine
+        checksum: blake3:4bf077bcf85bfe92bb709e04c36cb48b5851376b00f91282cdabea14c9f2dd1c
+- id: a91cc87e8e98c7e88967319c273392e447fab72dd22aa8231630b573284525b2
+  tags:
+    feat_lora: 'false'
+    gpu: h100_nvl
+    gpu_device: 2321:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 60fac8af21293dc3412647ee544910aa681f61f4d89b96bcc7b771583d312899
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-bf16-dq4cfkcyxg?file=checksums.blake3
+        checksum: blake3:336c98794211acf161944eb8e64031b42ad5526abdab79054b2c588f4978a81e
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-bf16-dq4cfkcyxg?file=config.json
+        checksum: blake3:818adf631ffb6e5f35022ad2c66a28f1efe16dd3da26ca6933cee08d10baf420
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-bf16-dq4cfkcyxg?file=metadata.json
+        checksum: blake3:035b9b146e57c6c59e061ef9397923e915e550ffd22164a08e61f359c14cca2f
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-bf16-dq4cfkcyxg?file=rank0.engine
+        checksum: blake3:011dc4abcb73b27dc01fa2714bf9a88a208dd4ab2fec50d40c275aa5891cffe3
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx2-latency-bf16-dq4cfkcyxg?file=rank1.engine
+        checksum: blake3:c8924b7eba036bada77eb035c13b66d560db2af1ef8dfcf17e4c4292a163b870
+- id: a98cb8c244d2fd95e65a102758e4b039c94864f322c5b64bc9ee5749ddac59ab
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: b9e27e9c88f5f5947d49618806eacac533b6d37db6e551acdad1f143e6c4c619
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00001-of-00004.safetensors
+        checksum: blake3:0b75f761e671b2fc72b06a3265ce539bc5d59bc73048c223ab040d89b42ef708
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00002-of-00004.safetensors
+        checksum: blake3:c8a1c64eb2486ae606c9699c398987306e85b469b885b45366e25712c920a0da
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00003-of-00004.safetensors
+        checksum: blake3:7b1ef4f3c007057b4dcd85ff7e9da345912096474b35f6b7cb051f09cb5c2b94
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model-00004-of-00004.safetensors
+        checksum: blake3:e9c3eef2a539ed72c52ae840ed6724315c27ac78a265181a27491e8a7b89972f
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=model.safetensors.index.json
+        checksum: blake3:48a3037475a6e92ecd96c740cd0a86b23bad64f4b757057b0a42519c14037f09
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+- id: b5938999f25208fbf5ef64ad1ce0d3978ac52d5b18d32f9b7e1551cbc97737db
+  tags:
+    feat_lora: 'false'
+    gpu: rtx6000_blackwell_sv
+    gpu_device: 2bb5:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 060ea6809cc1818ec863169550c4c34ecccac3453e9d9663b25801f7bb651b39
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-fp8-upvtrz3s7q?file=checksums.blake3
+        checksum: blake3:24b7888b483166205c597da1b8abdf36afc21cc37f455e509fcfa468a8aa2300
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-fp8-upvtrz3s7q?file=config.json
+        checksum: blake3:0aeecf1b437fddd35020fdb670832031fc7d968506f7c6412adf72fd5d88662f
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-fp8-upvtrz3s7q?file=metadata.json
+        checksum: blake3:b282f2bb34a00980685816d0f7e1082139e459536a09cd6068f82eeada964dd3
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:rtx6000-blackwell-svx1-throughput-fp8-upvtrz3s7q?file=rank0.engine
+        checksum: blake3:684ce44fd8ad2aa3ce5cad26846a7ce4fd88e5fcca3341b02160605cdab94c93
+- id: bd225e66799ed1e826ae5e2d7db017e1ba9a73855807e4f362967f22b2d7fecb
+  tags:
+    feat_lora: 'false'
+    gpu: a100_sxm4_40gb
+    gpu_device: 20b0:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 599285716f84afa54f28cc7ef95f39c4fa87182d19a869b6937a6c3609f2f713
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx2-latency-bf16-awwlaipnug?file=checksums.blake3
+        checksum: blake3:e417667885a636c34f920a7bb54a4be3d3aa5e370f030a18d08a2f61c80ed316
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx2-latency-bf16-awwlaipnug?file=config.json
+        checksum: blake3:cbb0a7aa740f3650b0b40341863307d66c825258869dfbaa21544db3d0a8b691
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx2-latency-bf16-awwlaipnug?file=metadata.json
+        checksum: blake3:41b473ce02ee0afe8fce5769832ce0dc3f69a1659474283081d4bf181271ab25
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx2-latency-bf16-awwlaipnug?file=rank0.engine
+        checksum: blake3:967c1d0bf0fceb483bb225a3ac7afefe677dda64652ac2395ff51a5d576ba27f
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100-sxm4-40gbx2-latency-bf16-awwlaipnug?file=rank1.engine
+        checksum: blake3:a1db9a3e7f597a5acb35ab2dfec3f5c2c997d63318635c746021c30aba1c112c
+- id: c53b2566c86bf5ca53d25883b3f305f7fcfa1b8a854a52bf21d6901fec27fd3f
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_144gb
+    gpu_device: 2348:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 1a5a08cce9bf0a92285db5a76a4b005b5bb58669820ca24b627f6c636975b958
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-fp8-dpzjh1irwa?file=checksums.blake3
+        checksum: blake3:f9c652b07486ca985bc783b15a918e9c0de957b1891947f7594233bce60a2e6d
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-fp8-dpzjh1irwa?file=config.json
+        checksum: blake3:20653fe3f1e66acc07f74cbe0b24da3ed3bfd460b10912af4a1c35df6e9c8f95
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-fp8-dpzjh1irwa?file=metadata.json
+        checksum: blake3:7502ac65be453f5ad8019106a7445052c96999726e2d6b5738d7a739146e4fa0
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-144gbx1-throughput-fp8-dpzjh1irwa?file=rank0.engine
+        checksum: blake3:8a9c1906d7701d1109886486276b33024c76dea60588189574aadbc0ff5e2aad
+- id: cfca3a90be399e2fc6b91dfe19aa141fe7db0ad114df365cf43d77c675711049
+  tags:
+    feat_lora: 'false'
+    gpu: gb200
+    gpu_device: 2941:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 2eea30d835f2280aede9407932ccaa3da4cb585e885aa27acaa345f8154d2fd3
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-fp8-vajw9uo12w?file=checksums.blake3
+        checksum: blake3:da2b66cda018bb5384afe62b6a4d85646b7e65cbf85e8f7239f87ec8f8204eaa
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-fp8-vajw9uo12w?file=config.json
+        checksum: blake3:2a7fac909fb9ae6b676420018fd242bbb205be43c7a96510e2cf72b61984588a
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-fp8-vajw9uo12w?file=metadata.json
+        checksum: blake3:417b8b91d0c53ba538e35ff6cb85330809d9650af57e18e60153f7d1bb4b47b4
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-fp8-vajw9uo12w?file=rank0.engine
+        checksum: blake3:615240d0d06eb7a1a2666ae8d15dc151099c86b3b373c8301ebdced73a42a4ce
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gb200x2-latency-fp8-vajw9uo12w?file=rank1.engine
+        checksum: blake3:e942c2697e8ecaa20f724467d95ec20879529632ad2cd984b0abf9f403a2aaeb
+- id: d9bab56236ea000a0e0760e76d2530d7e460dde85cb6487b496009cbbb9ea7b2
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: e99042c0caa8e63e26d39442753477bea1606782ff803cc973cea7bed5173d69
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-bf16-g5hfgownba?file=checksums.blake3
+        checksum: blake3:d2894a594ed77269d6e40b29f2190f00e50dfeae011d7638f14c5ab2e2b6d662
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-bf16-g5hfgownba?file=config.json
+        checksum: blake3:78116b55a0e9a30613d5b3cd3d4f160effc3ba093474dcc5f6f5facd18db0aad
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-bf16-g5hfgownba?file=metadata.json
+        checksum: blake3:b555302e6574c7acc6a488746477f37271dff5f94f2c1a2c60a2d29064fe8aff
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:b200x1-throughput-bf16-g5hfgownba?file=rank0.engine
+        checksum: blake3:509395706d73dd51333155bfe62479f8bda8b24b97696cbdd7b062c31e7f2809
+- id: dbb457d9b5a45d0a6976c0ba1a8ee6072deb8fe64c49a12e47ba9c71863618d2
+  tags:
+    feat_lora: 'false'
+    gpu: h200_nvl
+    gpu_device: 233b:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 1d4498dc1a0c5a7b464f3d34cfb55f0b642166cff733fe05560a631ef2d28ce3
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-bf16-7-579rt1aa?file=checksums.blake3
+        checksum: blake3:25be40d6a0ea79a93fb5757363633d2b390b3cbd71ba4039853c625a43b59899
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-bf16-7-579rt1aa?file=config.json
+        checksum: blake3:804b0583e4bfde751b9db7548a59884e8e996348315e74eea30a901154228ba6
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-bf16-7-579rt1aa?file=metadata.json
+        checksum: blake3:d428b5472a125748fb025ed31d2161fcbeb36396d0da275e7c2c89537ecfaf58
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-bf16-7-579rt1aa?file=rank0.engine
+        checksum: blake3:776f4367a2452f0bf364300a23d50ac3c839ce3644b44b14d9b915f186ebbb24
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h200-nvlx2-latency-bf16-7-579rt1aa?file=rank1.engine
+        checksum: blake3:69f3702c594d49ddebd329e9b8f8d7d286d29d69c1a459a46cd43760c9ce1805
+- id: dbf1e0e5f43bcabfdd0791b0ffa83036fd7cf6be28fd5266990cf94bb8ffc338
+  tags:
+    feat_lora: 'false'
+    gpu: h100_nvl
+    gpu_device: 2321:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: c20f227a3ce22bdf2106282a61c3a777d80631af49be74b12a5245c705329957
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-bf16-ydqzpbzxqw?file=checksums.blake3
+        checksum: blake3:3c299f15584889a25f409664b588d77087afc1fadede20a195fe6fac49f6f8f4
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-bf16-ydqzpbzxqw?file=config.json
+        checksum: blake3:76455e573d3a856a37158ace5dfea8a32292aa02f1d832a011e98e1b368e5626
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-bf16-ydqzpbzxqw?file=metadata.json
+        checksum: blake3:e91c9cccd9c3c6f650598c9db44dc502b6e3b5feb1e079fbc46a2ceef2c6c657
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-bf16-ydqzpbzxqw?file=rank0.engine
+        checksum: blake3:b57fbf60e3009f0392413f771414868ef554d27939cc002ef7e29e055bfd5956
+- id: dfe2b2518ce82cb404a639f9039d956ec1b8f35703e7594d066ef080d1172156
+  tags:
+    feat_lora: 'false'
+    gpu: h100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 80fc04f75aee88f0d7d65aef1d65ac60338c9abaa07e706bde08ed703069af8a
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-bf16-tzoltst1hq?file=checksums.blake3
+        checksum: blake3:dd6f096652ba68b3b76adbd7e0c285d94caef0464484bfa9896b81fd1e5923ce
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-bf16-tzoltst1hq?file=config.json
+        checksum: blake3:bbf7a754641819c6ed2df76b06df5c3aec9fc3cf08153638489600a48de1c357
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-bf16-tzoltst1hq?file=metadata.json
+        checksum: blake3:e74d5c39e3cc928b829ab63d51eb8cae043d825e5b43b887f1622e3dd02dccc6
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100x1-throughput-bf16-tzoltst1hq?file=rank0.engine
+        checksum: blake3:f4be24c1fe29a1c1fe8d82e024f9c739eb9f6a05c1fe4cde7e8cc52b734994ba
+- id: f282d4039fc42e3ab8a69854daf1a3a9e0fdce7974d06c3924969e3196e4ac08
+  tags:
+    feat_lora: 'false'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: e5cdae44fc7bddc80d00cb2b7df59b3e8426c94a60188cf29d2131daaa6cb65e
+    number_of_gpus: '2'
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-fp8-70ha-53mag?file=checksums.blake3
+        checksum: blake3:c914cbcbbd06c17542a7b0b0f40bdb0fb3c815653d8b4b11c7ede218bfd5b892
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-fp8-70ha-53mag?file=config.json
+        checksum: blake3:ca4f534d49ee24f1a7dac268bc052197aa9d6c897a52019504b460c454559f1d
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-fp8-70ha-53mag?file=metadata.json
+        checksum: blake3:9768c7c34d8ee6d81898a2f911e392ec41ea790c228e409bd95e3906c7d92603
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-fp8-70ha-53mag?file=rank0.engine
+        checksum: blake3:7c0f8f6e544760592ed261b98c5afd07ba4208c90283dccf7bcbbffd3877df63
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:l40sx2-latency-fp8-70ha-53mag?file=rank1.engine
+        checksum: blake3:c5fcded22baea3c560fd8f449da58aa4fbc3bdf3f9883a0b6f4a45691394a4c4
+- id: f3fd46462fe31ea44e5207d9f97ea190d8928b5688f5752445bb7dfd8afc999c
+  tags:
+    feat_lora: 'false'
+    gpu: h100_nvl
+    gpu_device: 2321:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 1b5a5036daad89cd0960970af6495fec6d661bd64a9e303c8553ee210f9ae611
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-fp8-nuh2pe0qbg?file=checksums.blake3
+        checksum: blake3:dd835e294ce2b7deda07b0081b4496a5eb4dff10757c759639ec456b9399e863
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-fp8-nuh2pe0qbg?file=config.json
+        checksum: blake3:442d21834ef2765a8d5161aa46dbbab415e21075ab8238d40db2708db1f897ab
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-fp8-nuh2pe0qbg?file=metadata.json
+        checksum: blake3:5be3d2190af9897b5639a5a5e5e334c1024905e71d969d5d5fa168a005d83b98
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:h100-nvlx1-throughput-fp8-nuh2pe0qbg?file=rank0.engine
+        checksum: blake3:d5050fb76ab39a8408e0b854c253624d24f68781714510daf20a3db447af5d21
+- id: f41c136a67469ae0bda89f96d78cb8c2b9c01c27d0ac618112248025320817c3
+  tags:
+    feat_lora: 'false'
+    gpu: gh200_480gb
+    gpu_device: 2342:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: ea96461fe876133eff3ddf5cabc713faf6de1f5b48dc45b0ee5068d76e230f37
+    number_of_gpus: '1'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '1'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-bf16-onh-ikqchg?file=checksums.blake3
+        checksum: blake3:1a5acaabc19f96dfd43f45e03e03a952e4d525ae7e6eeec163f3892dcfa64019
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-bf16-onh-ikqchg?file=config.json
+        checksum: blake3:0722b6f6b47240b87bd2c40ee1424f4c8d9e71fa1c6771d810fff08325c2d06b
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-bf16-onh-ikqchg?file=metadata.json
+        checksum: blake3:255bdf1684d6eaeda6cf1d16c2b614a984c4f3da7974ec147123f61dd3b3ccfc
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:gh200-480gbx1-latency-bf16-onh-ikqchg?file=rank0.engine
+        checksum: blake3:11d0ed931b5327fb86b12b9a32a2b1ba0c5d0d128e344787541dc7d18e5da819
+- id: f5a41523d4dd3de5340276b18dfcbce17bb047b2457a36c1310e61589cc28935
+  tags:
+    feat_lora: 'false'
+    gpu: a100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    nim_workspace_hash_v1: 750ab3ad780057e35bb33a0f4f528b4c150b16afb2e561cc476f745b85a825bc
+    number_of_gpus: '2'
+    pp: '1'
+    precision: bf16
+    profile: latency
+    tp: '2'
+  workspace:
+    files:
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=checksums.blake3
+        checksum: blake3:8fe9d8b6ef1dbefcd37d3f22bfc31f31f6904baf18ea79b9993887d8366e8c3a
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=config.json
+        checksum: blake3:daae549ea7785e003bb14358bf0249d9267e4064b1872aab505b2c70da703579
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=generation_config.json
+        checksum: blake3:4124774e2f14605a5f42a9b9de53cb09a75b9d97373dffe6bb08831aa087fca3
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=special_tokens_map.json
+        checksum: blake3:10e3e87761a5f83ad742fbfaa79726a070730a5635755032cc44f1bffbbea340
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:1.2-checksum-jet?file=tokenizer_config.json
+        checksum: blake3:1f527c20229891948f6ce34049c55acbd970f7730b2e4e47c7174e4c235a7187
+      trtllm_engine/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x2-latency-bf16-m58vlae4dq?file=checksums.blake3
+        checksum: blake3:42981a74ea650c008c7e96d86b96ab95f66f91a151bb58913db5813e514c28fb
+      trtllm_engine/config.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x2-latency-bf16-m58vlae4dq?file=config.json
+        checksum: blake3:7611ab35bb8fccaddf0d00cfc46ea5b217b1a07049b8c70f18ecf5d2e882f6c5
+      trtllm_engine/metadata.json:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x2-latency-bf16-m58vlae4dq?file=metadata.json
+        checksum: blake3:b9d2f374a6f837d2efbb30b6f1602c79a7d54ca24108413a9c85eea1f68e47a1
+      trtllm_engine/rank0.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x2-latency-bf16-m58vlae4dq?file=rank0.engine
+        checksum: blake3:2d4947605413ad0dcf709157b604862d09db645bb8d5b8e2a35e35668ad5ac31
+      trtllm_engine/rank1.engine:
+        uri: ngc://nim/nvidia/llama-3.1-nemotron-safety-guard-8b-v3:a100x2-latency-bf16-m58vlae4dq?file=rank1.engine
+        checksum: blake3:efe92faca5dcc2a573c010bc0abe0dd96bc0acedd86ffa23fc16fc1c1d66b2dd

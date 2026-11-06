@@ -1,0 +1,157 @@
+schema_version: "2.0"
+profile_selection_criteria: auto
+profiles:
+  - id: 56df3d486bbd1c8ac4a1de4d613d4037927bd462d751bf4fe9cbeb8d14890cb8
+    tags:
+      backend: triton
+      bundle: ngc:default
+    workspace:
+      files:
+        models/vista3d/1/model.py:
+          uri: local:///opt/triton_model?file=1/model.py
+          checksum: blake3:a1fd3977e10a1d821c2e74567a6dc01586e593ebd54ab7a5bcb767288c46eaa9
+        models/vista3d/1/utils.py:
+          uri: local:///opt/triton_model?file=1/utils.py
+          checksum: blake3:ea1a15267ccc2077f0d5c4270add408c30c9049fe1ab8e6ab080dd20ea771629
+        models/vista3d/config.pbtxt:
+          uri: local:///opt/triton_model?file=config.pbtxt
+          checksum: blake3:31be2cba3a05f368963bf236d2ba137fa98ce7102b96a6e76c0a8db81acd3810
+        models/vista3d/bundle/LICENSE:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=LICENSE
+          checksum: blake3:4b170816b8a172c9865a7ced8a845cced3a44ad33e11c4dc6646bb670ab19feb
+        models/vista3d/bundle/configs/batch_inference.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/batch_inference.json
+          checksum: blake3:739fb11bb9e0e5ff540763ecc95cd0c802ddc4f749c7eeeb7dd40bd7737d9118
+        models/vista3d/bundle/configs/evaluate.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/evaluate.json
+          checksum: blake3:c68d7969f4d168613a3cae7d8f8737f238668e0ac7c68045fdd1571247810c15
+        models/vista3d/bundle/configs/inference.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/inference.json
+          checksum: blake3:94028713af241e8f3be13a76cf1a044783036005160a938cfd1bf57cd2dd8fcb
+        models/vista3d/bundle/configs/inference_trt.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/inference_trt.json
+          checksum: blake3:f344b4e3bb82e41146b8538bd3a3ab0dfc9130b72199871213ad5b69eab4b8f9
+        models/vista3d/bundle/configs/logging.conf:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/logging.conf
+          checksum: blake3:2e36485be870bf417b7adaddb96eb7fb487e52586c7d44091fa73d30b45e94f6
+        models/vista3d/bundle/configs/metadata.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/metadata.json
+          checksum: blake3:948e41e8936d6fae10f9e3bc70495af7e478d036ef9eb9eccb1632d6a90083df
+        models/vista3d/bundle/configs/mgpu_evaluate.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/mgpu_evaluate.json
+          checksum: blake3:e2100d19967a033ca9079a8ad15f9c791d1025c7639e60edcc6a98328e5071a0
+        models/vista3d/bundle/configs/msd_task09_spleen_folds.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/msd_task09_spleen_folds.json
+          checksum: blake3:5e9bd44cbfe1ace01e5e9d244cdc289f951c574c36bc8dba71bd2d6c153ff781
+        models/vista3d/bundle/configs/multi_gpu_train.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/multi_gpu_train.json
+          checksum: blake3:56c1e91f7d2e9cc60131959bd890ec898d9d7dc749193b756465a53c6f951121
+        models/vista3d/bundle/configs/train.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/train.json
+          checksum: blake3:1c4344268eebac93f2ad4f5e62535a83ea429e0f44552c3464d94099d8ef82a4
+        models/vista3d/bundle/configs/train_continual.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=configs/train_continual.json
+          checksum: blake3:b277917c31d337fe21ea091d42a7c31f7e939f09a1a2ac3f5d550d1540d00da8
+        models/vista3d/bundle/docs/README.md:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=docs/README.md
+          checksum: blake3:614186e7e76edc34d3080ad6a8b174c04f6042b39b5fec2f255274b534875f1d
+        models/vista3d/bundle/docs/data_license.txt:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=docs/data_license.txt
+          checksum: blake3:be6875fddd583c005b83af08c954f2eed6a558160de5b9b759b9d2a851c8ac67
+        models/vista3d/bundle/docs/labels.json:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=docs/labels.json
+          checksum: blake3:0e9ea62363ab517fccc6475be158ae507fdcf6e74cfad70c3e3fe3df2c275e35
+        models/vista3d/bundle/models/model.pt:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=models/model.pt
+          checksum: blake3:83f46cdddca25aa9b8c0425de108f9fbf7937b7d287a3fc9122eb2334bb98d5f
+        models/vista3d/bundle/scripts/__init__.py:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=scripts/__init__.py
+          checksum: blake3:33c306b49632af73b349bf3fa9bdd865e50a0ca5874819ceb73e60d82c4cee4d
+        models/vista3d/bundle/scripts/early_stop_score_function.py:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=scripts/early_stop_score_function.py
+          checksum: blake3:a76b5101d960f01cb89cad386df1bce4b833b6d2ed01978c014d9cd1cd3eb510
+        models/vista3d/bundle/scripts/evaluator.py:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=scripts/evaluator.py
+          checksum: blake3:602201c9f870bef986f6f12419271ea847f3332241bdd0ed6c919bd3515cdfdf
+        models/vista3d/bundle/scripts/inferer.py:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=scripts/inferer.py
+          checksum: blake3:9d452598561dc742d1cca7170fbdb3648702c5a66b6196f53ca4a3cbb0d1fa6a
+        models/vista3d/bundle/scripts/trainer.py:
+          uri: ngc://nim/nvidia/vista3d:0.5.7?file=scripts/trainer.py
+          checksum: blake3:b0987946929d07921ceee735d7ed36d99c92b4e04e3375369edec2016f0b2997
+
+  - id: 43d0baebee73b7bdc2f9c7edf5c726b2323b4f7283eab92fab893d451592656d
+    tags:
+      backend: triton
+      bundle: /opt/bundle
+    workspace:
+      files:
+        models/vista3d/1/model.py:
+          uri: local:///opt/triton_model?file=1/model.py
+          checksum: blake3:a1fd3977e10a1d821c2e74567a6dc01586e593ebd54ab7a5bcb767288c46eaa9
+        models/vista3d/1/utils.py:
+          uri: local:///opt/triton_model?file=1/utils.py
+          checksum: blake3:ea1a15267ccc2077f0d5c4270add408c30c9049fe1ab8e6ab080dd20ea771629
+        models/vista3d/config.pbtxt:
+          uri: local:///opt/triton_model?file=config.pbtxt
+          checksum: blake3:31be2cba3a05f368963bf236d2ba137fa98ce7102b96a6e76c0a8db81acd3810
+        models/vista3d/bundle/configs/inference.json:
+          uri: local:///opt/bundle?file=configs/inference.json
+        models/vista3d/bundle/configs/inference_trt.json:
+          uri: local:///opt/bundle?file=configs/inference_trt.json
+        models/vista3d/bundle/configs/logging.conf:
+          uri: local:///opt/bundle?file=configs/logging.conf
+        models/vista3d/bundle/configs/metadata.json:
+          uri: local:///opt/bundle?file=configs/metadata.json
+        models/vista3d/bundle/docs/README.md:
+          uri: local:///opt/bundle?file=docs/README.md
+        models/vista3d/bundle/docs/labels.json:
+          uri: local:///opt/bundle?file=docs/labels.json
+        models/vista3d/bundle/models/model.pt:
+          uri: local:///opt/bundle?file=models/model.pt
+        models/vista3d/bundle/scripts/__init__.py:
+          uri: local:///opt/bundle?file=scripts/__init__.py
+        models/vista3d/bundle/scripts/early_stop_score_function.py:
+          uri: local:///opt/bundle?file=scripts/early_stop_score_function.py
+        models/vista3d/bundle/scripts/evaluator.py:
+          uri: local:///opt/bundle?file=scripts/evaluator.py
+        models/vista3d/bundle/scripts/inferer.py:
+          uri: local:///opt/bundle?file=scripts/inferer.py
+
+  - id: 4f59603b064ace736ff833d1bbdddf69a2afc54056de38cf36713aa01e96129d
+    tags:
+      backend: triton
+      bundle: /config/models
+    workspace:
+      files:
+        models/vista3d/1/model.py:
+          uri: local:///opt/triton_model?file=1/model.py
+          checksum: blake3:a1fd3977e10a1d821c2e74567a6dc01586e593ebd54ab7a5bcb767288c46eaa9
+        models/vista3d/1/utils.py:
+          uri: local:///opt/triton_model?file=1/utils.py
+          checksum: blake3:ea1a15267ccc2077f0d5c4270add408c30c9049fe1ab8e6ab080dd20ea771629
+        models/vista3d/config.pbtxt:
+          uri: local:///opt/triton_model?file=config.pbtxt
+          checksum: blake3:31be2cba3a05f368963bf236d2ba137fa98ce7102b96a6e76c0a8db81acd3810
+        models/vista3d/bundle/configs/inference.json:
+          uri: local:///config/models/vista3d?file=configs/inference.json
+        models/vista3d/bundle/configs/inference_trt.json:
+          uri: local:///config/models/vista3d?file=configs/inference_trt.json
+        models/vista3d/bundle/configs/logging.conf:
+          uri: local:///config/models/vista3d?file=configs/logging.conf
+        models/vista3d/bundle/configs/metadata.json:
+          uri: local:///config/models/vista3d?file=configs/metadata.json
+        models/vista3d/bundle/docs/README.md:
+          uri: local:///config/models/vista3d?file=docs/README.md
+        models/vista3d/bundle/docs/labels.json:
+          uri: local:///config/models/vista3d?file=docs/labels.json
+        models/vista3d/bundle/models/model.pt:
+          uri: local:///config/models/vista3d?file=models/model.pt
+        models/vista3d/bundle/scripts/__init__.py:
+          uri: local:///config/models/vista3d?file=scripts/__init__.py
+        models/vista3d/bundle/scripts/early_stop_score_function.py:
+          uri: local:///config/models/vista3d?file=scripts/early_stop_score_function.py
+        models/vista3d/bundle/scripts/evaluator.py:
+          uri: local:///config/models/vista3d?file=scripts/evaluator.py
+        models/vista3d/bundle/scripts/inferer.py:
+          uri: local:///config/models/vista3d?file=scripts/inferer.py

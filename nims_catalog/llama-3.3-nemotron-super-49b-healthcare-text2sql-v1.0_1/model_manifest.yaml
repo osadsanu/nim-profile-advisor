@@ -1,0 +1,537 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0
+release: 1.15.1
+profiles:
+- id: 126a630e60dd3da53565c96a4bca38af094eebc2d0248805f321f1313d95a4f2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 27ee8ecd9dfdcd956c97922f427fd945d67aff631ec68491812f43634795903e
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      block_config.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=block_config.py
+        checksum: blake3:03e2da3bf9a58d111002b693bc2ba9f6b7992455639e971047675b8fe4e63e11
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=chat_template.jinja
+        checksum: blake3:6124cb36200caf8a3917d975fafaf7e091e06f949f13a25a97c960510c087397
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=checksums.blake3
+        checksum: blake3:185f1ad589e830518325bac6eacce832b7b9a8f8a99c648c534a44d2afff69c0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=config.json
+        checksum: blake3:2a8fdf7cd75c44052fa41ce2215a921deb06cba27a3b46a8aca416e5ac571fc0
+      configuration_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=configuration_decilm.py
+        checksum: blake3:a5970627ace78ed5f576cd5bcafb7d89bfc41e7327278fc4657524b3f030e5a9
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=generation_config.json
+        checksum: blake3:138b505f67deca7fdc82dfd60192a6d97765c8e156d98f3088be04ced2f4d104
+      model-00001-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00001-of-00021.safetensors
+        checksum: blake3:0288caff10ab532f9e3ff40ba035e00f8a2a5f760b243b604ca69d8a9e70b22d
+      model-00002-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00002-of-00021.safetensors
+        checksum: blake3:892a1bd8479c410d5668d589dabecb566df6717f42bbf76fb545a1ccaaefe898
+      model-00003-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00003-of-00021.safetensors
+        checksum: blake3:7b14ddeac9b99ee023e39fe771e73700e0fc9770d5e7ce684067837372ef572e
+      model-00004-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00004-of-00021.safetensors
+        checksum: blake3:592a688ac0a290ecaedc811f29cd7a68c642ae1b542a57a6866d40492f0367c2
+      model-00005-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00005-of-00021.safetensors
+        checksum: blake3:a7d8ee7d6e068ff0aa48220763d3bfe0412efe86678989771f3d80c4563547ce
+      model-00006-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00006-of-00021.safetensors
+        checksum: blake3:4f23c507ee9d6979e349e25c26a22d9e819771b88137565795b9667556bbc66f
+      model-00007-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00007-of-00021.safetensors
+        checksum: blake3:4e2e950294ff0aa7209db9270da0f42d7687f1942bdc1ae4bf2425e56d4a1f5a
+      model-00008-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00008-of-00021.safetensors
+        checksum: blake3:b7545764c271339064a451baaefb3116245171daf2b0e38959fcfdc85f052fe7
+      model-00009-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00009-of-00021.safetensors
+        checksum: blake3:7515c5b7f26895ae2b89eb3736bc269cf99313530a37b1344903f28ff69ece19
+      model-00010-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00010-of-00021.safetensors
+        checksum: blake3:2be398553b167ecf0a7920084e97b7146ef21648d15f105235bd971bf8db4ef8
+      model-00011-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00011-of-00021.safetensors
+        checksum: blake3:3236982e3b5a49e311ef6a55990b0418ba14a6ed84cbac64551bfc46766bb833
+      model-00012-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00012-of-00021.safetensors
+        checksum: blake3:1153a2be0cdc1756783af3c253eb41ae1f2240aa72e5708eb10916ad2d76ddbf
+      model-00013-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00013-of-00021.safetensors
+        checksum: blake3:69f658e7c3c84f10ce86b03fe7ff39ff8f7d03f3f165bb65b18f4caaddadc982
+      model-00014-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00014-of-00021.safetensors
+        checksum: blake3:879deafcbad6c15d72441333f0700f9616e52948925e1756467e8c67665a3794
+      model-00015-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00015-of-00021.safetensors
+        checksum: blake3:c9159e4f412101ef1507abe005b8304cbe9d45ab64ce502b146d65b0c3ef5684
+      model-00016-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00016-of-00021.safetensors
+        checksum: blake3:f5466effa5478282592c2cbcd2fbe9f1531563dbeaa2e17b193e9d199ffe120a
+      model-00017-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00017-of-00021.safetensors
+        checksum: blake3:335a20918ddc5b6b498cb04396f9978e8648eba1f787064fc5c5451d3820e60d
+      model-00018-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00018-of-00021.safetensors
+        checksum: blake3:52b7b03eced93454c2b5ac0735d65ece8fe55dd390e751973ca298e88c3a348f
+      model-00019-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00019-of-00021.safetensors
+        checksum: blake3:0cf8f2b8538e706db2a296a0bcc24cbcb13e9d56b90f8e298260e8cdc815afa2
+      model-00020-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00020-of-00021.safetensors
+        checksum: blake3:f007b0eadcaef6543f71121b7a510492bc8f505028c5adb85cf6842057c28fd6
+      model-00021-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00021-of-00021.safetensors
+        checksum: blake3:ceff3fae4c7997f0c46ee696ff3662bdfc8f4594d3b0598389283f715a85a509
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model.safetensors.index.json
+        checksum: blake3:34479d152a2fda969ae9c9bf4153a1ff49fff2e460c7071c849c2cbacfa336bf
+      modeling_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=modeling_decilm.py
+        checksum: blake3:ce2845c08f080da387f5cfda82b6d9d1d6ccb19c7c2e8849762b99f03b74478e
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=special_tokens_map.json
+        checksum: blake3:192b8054a69b48a7658601e45262196b7fcbe85302227ab9f18cc77d57542280
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer_config.json
+        checksum: blake3:c86272fb2498c0bc429a3eba5124c7b04b1b00e76ae6dc7d02ffa5775df7b06a
+      transformers_4_44_2__activations.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__activations.py
+        checksum: blake3:8943dae353045d84672ef16443507f022bccc2685ac0aed43f92a414c225510e
+      transformers_4_44_2__cache_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__cache_utils.py
+        checksum: blake3:25ee77a3619325d81c8e17c967813038dc9a1a817adf8c88682b55efec775c05
+      transformers_4_44_2__configuration_llama.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__configuration_llama.py
+        checksum: blake3:dc25061f38c49559e524e82e0e06ca6fec69191a76b6f88d924bd491b0fad538
+      transformers_4_44_2__modeling_attn_mask_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_attn_mask_utils.py
+        checksum: blake3:2fe1afe769e0905e52d3edf22f9bf7eb867699129a358a2bc6bb8010c0a797b3
+      transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py
+        checksum: blake3:b1b2f6936b19b3d3445c5fb49a6ac54e2ab03bc7cdf925540614f38a45b765f3
+      transformers_4_44_2__modeling_outputs.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_outputs.py
+        checksum: blake3:06cc27206feac239b4a1d9dab23d60316fbd69c58f42ac53160864fdfdcd6058
+      transformers_4_44_2__modeling_rope_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_rope_utils.py
+        checksum: blake3:e0de6d7eb22bf515abf1d10a51f7a3cfc31669667c63479186e95581c8301eb4
+      transformers_4_44_2__pytorch_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__pytorch_utils.py
+        checksum: blake3:c146e75fc6dec6bc23dee49148a6b2cbfac3fc1a737fa7104fb0126ba2273171
+      variable_cache.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=variable_cache.py
+        checksum: blake3:915c16de5993e94bfdf1bbe0713bb313a891999cf7654ed4fcc31cbd339f5e49
+- id: 1e3a5550384ce06e987b8e3b6186edca1618611f0d1f835c3c61ae7231bb4875
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 27ee8ecd9dfdcd956c97922f427fd945d67aff631ec68491812f43634795903e
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      block_config.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=block_config.py
+        checksum: blake3:03e2da3bf9a58d111002b693bc2ba9f6b7992455639e971047675b8fe4e63e11
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=chat_template.jinja
+        checksum: blake3:6124cb36200caf8a3917d975fafaf7e091e06f949f13a25a97c960510c087397
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=checksums.blake3
+        checksum: blake3:185f1ad589e830518325bac6eacce832b7b9a8f8a99c648c534a44d2afff69c0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=config.json
+        checksum: blake3:2a8fdf7cd75c44052fa41ce2215a921deb06cba27a3b46a8aca416e5ac571fc0
+      configuration_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=configuration_decilm.py
+        checksum: blake3:a5970627ace78ed5f576cd5bcafb7d89bfc41e7327278fc4657524b3f030e5a9
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=generation_config.json
+        checksum: blake3:138b505f67deca7fdc82dfd60192a6d97765c8e156d98f3088be04ced2f4d104
+      model-00001-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00001-of-00021.safetensors
+        checksum: blake3:0288caff10ab532f9e3ff40ba035e00f8a2a5f760b243b604ca69d8a9e70b22d
+      model-00002-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00002-of-00021.safetensors
+        checksum: blake3:892a1bd8479c410d5668d589dabecb566df6717f42bbf76fb545a1ccaaefe898
+      model-00003-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00003-of-00021.safetensors
+        checksum: blake3:7b14ddeac9b99ee023e39fe771e73700e0fc9770d5e7ce684067837372ef572e
+      model-00004-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00004-of-00021.safetensors
+        checksum: blake3:592a688ac0a290ecaedc811f29cd7a68c642ae1b542a57a6866d40492f0367c2
+      model-00005-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00005-of-00021.safetensors
+        checksum: blake3:a7d8ee7d6e068ff0aa48220763d3bfe0412efe86678989771f3d80c4563547ce
+      model-00006-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00006-of-00021.safetensors
+        checksum: blake3:4f23c507ee9d6979e349e25c26a22d9e819771b88137565795b9667556bbc66f
+      model-00007-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00007-of-00021.safetensors
+        checksum: blake3:4e2e950294ff0aa7209db9270da0f42d7687f1942bdc1ae4bf2425e56d4a1f5a
+      model-00008-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00008-of-00021.safetensors
+        checksum: blake3:b7545764c271339064a451baaefb3116245171daf2b0e38959fcfdc85f052fe7
+      model-00009-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00009-of-00021.safetensors
+        checksum: blake3:7515c5b7f26895ae2b89eb3736bc269cf99313530a37b1344903f28ff69ece19
+      model-00010-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00010-of-00021.safetensors
+        checksum: blake3:2be398553b167ecf0a7920084e97b7146ef21648d15f105235bd971bf8db4ef8
+      model-00011-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00011-of-00021.safetensors
+        checksum: blake3:3236982e3b5a49e311ef6a55990b0418ba14a6ed84cbac64551bfc46766bb833
+      model-00012-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00012-of-00021.safetensors
+        checksum: blake3:1153a2be0cdc1756783af3c253eb41ae1f2240aa72e5708eb10916ad2d76ddbf
+      model-00013-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00013-of-00021.safetensors
+        checksum: blake3:69f658e7c3c84f10ce86b03fe7ff39ff8f7d03f3f165bb65b18f4caaddadc982
+      model-00014-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00014-of-00021.safetensors
+        checksum: blake3:879deafcbad6c15d72441333f0700f9616e52948925e1756467e8c67665a3794
+      model-00015-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00015-of-00021.safetensors
+        checksum: blake3:c9159e4f412101ef1507abe005b8304cbe9d45ab64ce502b146d65b0c3ef5684
+      model-00016-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00016-of-00021.safetensors
+        checksum: blake3:f5466effa5478282592c2cbcd2fbe9f1531563dbeaa2e17b193e9d199ffe120a
+      model-00017-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00017-of-00021.safetensors
+        checksum: blake3:335a20918ddc5b6b498cb04396f9978e8648eba1f787064fc5c5451d3820e60d
+      model-00018-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00018-of-00021.safetensors
+        checksum: blake3:52b7b03eced93454c2b5ac0735d65ece8fe55dd390e751973ca298e88c3a348f
+      model-00019-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00019-of-00021.safetensors
+        checksum: blake3:0cf8f2b8538e706db2a296a0bcc24cbcb13e9d56b90f8e298260e8cdc815afa2
+      model-00020-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00020-of-00021.safetensors
+        checksum: blake3:f007b0eadcaef6543f71121b7a510492bc8f505028c5adb85cf6842057c28fd6
+      model-00021-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00021-of-00021.safetensors
+        checksum: blake3:ceff3fae4c7997f0c46ee696ff3662bdfc8f4594d3b0598389283f715a85a509
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model.safetensors.index.json
+        checksum: blake3:34479d152a2fda969ae9c9bf4153a1ff49fff2e460c7071c849c2cbacfa336bf
+      modeling_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=modeling_decilm.py
+        checksum: blake3:ce2845c08f080da387f5cfda82b6d9d1d6ccb19c7c2e8849762b99f03b74478e
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=special_tokens_map.json
+        checksum: blake3:192b8054a69b48a7658601e45262196b7fcbe85302227ab9f18cc77d57542280
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer_config.json
+        checksum: blake3:c86272fb2498c0bc429a3eba5124c7b04b1b00e76ae6dc7d02ffa5775df7b06a
+      transformers_4_44_2__activations.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__activations.py
+        checksum: blake3:8943dae353045d84672ef16443507f022bccc2685ac0aed43f92a414c225510e
+      transformers_4_44_2__cache_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__cache_utils.py
+        checksum: blake3:25ee77a3619325d81c8e17c967813038dc9a1a817adf8c88682b55efec775c05
+      transformers_4_44_2__configuration_llama.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__configuration_llama.py
+        checksum: blake3:dc25061f38c49559e524e82e0e06ca6fec69191a76b6f88d924bd491b0fad538
+      transformers_4_44_2__modeling_attn_mask_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_attn_mask_utils.py
+        checksum: blake3:2fe1afe769e0905e52d3edf22f9bf7eb867699129a358a2bc6bb8010c0a797b3
+      transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py
+        checksum: blake3:b1b2f6936b19b3d3445c5fb49a6ac54e2ab03bc7cdf925540614f38a45b765f3
+      transformers_4_44_2__modeling_outputs.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_outputs.py
+        checksum: blake3:06cc27206feac239b4a1d9dab23d60316fbd69c58f42ac53160864fdfdcd6058
+      transformers_4_44_2__modeling_rope_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_rope_utils.py
+        checksum: blake3:e0de6d7eb22bf515abf1d10a51f7a3cfc31669667c63479186e95581c8301eb4
+      transformers_4_44_2__pytorch_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__pytorch_utils.py
+        checksum: blake3:c146e75fc6dec6bc23dee49148a6b2cbfac3fc1a737fa7104fb0126ba2273171
+      variable_cache.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=variable_cache.py
+        checksum: blake3:915c16de5993e94bfdf1bbe0713bb313a891999cf7654ed4fcc31cbd339f5e49
+- id: d368ce9c4d61c1006ac50bf74ded4717578662c62e34ba7c189023714e0d5519
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 27ee8ecd9dfdcd956c97922f427fd945d67aff631ec68491812f43634795903e
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      block_config.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=block_config.py
+        checksum: blake3:03e2da3bf9a58d111002b693bc2ba9f6b7992455639e971047675b8fe4e63e11
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=chat_template.jinja
+        checksum: blake3:6124cb36200caf8a3917d975fafaf7e091e06f949f13a25a97c960510c087397
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=checksums.blake3
+        checksum: blake3:185f1ad589e830518325bac6eacce832b7b9a8f8a99c648c534a44d2afff69c0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=config.json
+        checksum: blake3:2a8fdf7cd75c44052fa41ce2215a921deb06cba27a3b46a8aca416e5ac571fc0
+      configuration_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=configuration_decilm.py
+        checksum: blake3:a5970627ace78ed5f576cd5bcafb7d89bfc41e7327278fc4657524b3f030e5a9
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=generation_config.json
+        checksum: blake3:138b505f67deca7fdc82dfd60192a6d97765c8e156d98f3088be04ced2f4d104
+      model-00001-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00001-of-00021.safetensors
+        checksum: blake3:0288caff10ab532f9e3ff40ba035e00f8a2a5f760b243b604ca69d8a9e70b22d
+      model-00002-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00002-of-00021.safetensors
+        checksum: blake3:892a1bd8479c410d5668d589dabecb566df6717f42bbf76fb545a1ccaaefe898
+      model-00003-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00003-of-00021.safetensors
+        checksum: blake3:7b14ddeac9b99ee023e39fe771e73700e0fc9770d5e7ce684067837372ef572e
+      model-00004-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00004-of-00021.safetensors
+        checksum: blake3:592a688ac0a290ecaedc811f29cd7a68c642ae1b542a57a6866d40492f0367c2
+      model-00005-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00005-of-00021.safetensors
+        checksum: blake3:a7d8ee7d6e068ff0aa48220763d3bfe0412efe86678989771f3d80c4563547ce
+      model-00006-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00006-of-00021.safetensors
+        checksum: blake3:4f23c507ee9d6979e349e25c26a22d9e819771b88137565795b9667556bbc66f
+      model-00007-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00007-of-00021.safetensors
+        checksum: blake3:4e2e950294ff0aa7209db9270da0f42d7687f1942bdc1ae4bf2425e56d4a1f5a
+      model-00008-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00008-of-00021.safetensors
+        checksum: blake3:b7545764c271339064a451baaefb3116245171daf2b0e38959fcfdc85f052fe7
+      model-00009-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00009-of-00021.safetensors
+        checksum: blake3:7515c5b7f26895ae2b89eb3736bc269cf99313530a37b1344903f28ff69ece19
+      model-00010-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00010-of-00021.safetensors
+        checksum: blake3:2be398553b167ecf0a7920084e97b7146ef21648d15f105235bd971bf8db4ef8
+      model-00011-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00011-of-00021.safetensors
+        checksum: blake3:3236982e3b5a49e311ef6a55990b0418ba14a6ed84cbac64551bfc46766bb833
+      model-00012-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00012-of-00021.safetensors
+        checksum: blake3:1153a2be0cdc1756783af3c253eb41ae1f2240aa72e5708eb10916ad2d76ddbf
+      model-00013-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00013-of-00021.safetensors
+        checksum: blake3:69f658e7c3c84f10ce86b03fe7ff39ff8f7d03f3f165bb65b18f4caaddadc982
+      model-00014-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00014-of-00021.safetensors
+        checksum: blake3:879deafcbad6c15d72441333f0700f9616e52948925e1756467e8c67665a3794
+      model-00015-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00015-of-00021.safetensors
+        checksum: blake3:c9159e4f412101ef1507abe005b8304cbe9d45ab64ce502b146d65b0c3ef5684
+      model-00016-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00016-of-00021.safetensors
+        checksum: blake3:f5466effa5478282592c2cbcd2fbe9f1531563dbeaa2e17b193e9d199ffe120a
+      model-00017-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00017-of-00021.safetensors
+        checksum: blake3:335a20918ddc5b6b498cb04396f9978e8648eba1f787064fc5c5451d3820e60d
+      model-00018-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00018-of-00021.safetensors
+        checksum: blake3:52b7b03eced93454c2b5ac0735d65ece8fe55dd390e751973ca298e88c3a348f
+      model-00019-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00019-of-00021.safetensors
+        checksum: blake3:0cf8f2b8538e706db2a296a0bcc24cbcb13e9d56b90f8e298260e8cdc815afa2
+      model-00020-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00020-of-00021.safetensors
+        checksum: blake3:f007b0eadcaef6543f71121b7a510492bc8f505028c5adb85cf6842057c28fd6
+      model-00021-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00021-of-00021.safetensors
+        checksum: blake3:ceff3fae4c7997f0c46ee696ff3662bdfc8f4594d3b0598389283f715a85a509
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model.safetensors.index.json
+        checksum: blake3:34479d152a2fda969ae9c9bf4153a1ff49fff2e460c7071c849c2cbacfa336bf
+      modeling_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=modeling_decilm.py
+        checksum: blake3:ce2845c08f080da387f5cfda82b6d9d1d6ccb19c7c2e8849762b99f03b74478e
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=special_tokens_map.json
+        checksum: blake3:192b8054a69b48a7658601e45262196b7fcbe85302227ab9f18cc77d57542280
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer_config.json
+        checksum: blake3:c86272fb2498c0bc429a3eba5124c7b04b1b00e76ae6dc7d02ffa5775df7b06a
+      transformers_4_44_2__activations.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__activations.py
+        checksum: blake3:8943dae353045d84672ef16443507f022bccc2685ac0aed43f92a414c225510e
+      transformers_4_44_2__cache_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__cache_utils.py
+        checksum: blake3:25ee77a3619325d81c8e17c967813038dc9a1a817adf8c88682b55efec775c05
+      transformers_4_44_2__configuration_llama.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__configuration_llama.py
+        checksum: blake3:dc25061f38c49559e524e82e0e06ca6fec69191a76b6f88d924bd491b0fad538
+      transformers_4_44_2__modeling_attn_mask_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_attn_mask_utils.py
+        checksum: blake3:2fe1afe769e0905e52d3edf22f9bf7eb867699129a358a2bc6bb8010c0a797b3
+      transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py
+        checksum: blake3:b1b2f6936b19b3d3445c5fb49a6ac54e2ab03bc7cdf925540614f38a45b765f3
+      transformers_4_44_2__modeling_outputs.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_outputs.py
+        checksum: blake3:06cc27206feac239b4a1d9dab23d60316fbd69c58f42ac53160864fdfdcd6058
+      transformers_4_44_2__modeling_rope_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_rope_utils.py
+        checksum: blake3:e0de6d7eb22bf515abf1d10a51f7a3cfc31669667c63479186e95581c8301eb4
+      transformers_4_44_2__pytorch_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__pytorch_utils.py
+        checksum: blake3:c146e75fc6dec6bc23dee49148a6b2cbfac3fc1a737fa7104fb0126ba2273171
+      variable_cache.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=variable_cache.py
+        checksum: blake3:915c16de5993e94bfdf1bbe0713bb313a891999cf7654ed4fcc31cbd339f5e49
+- id: df2da6e1958886fa3fba15304c8151c5c4e8f3b9ce41322f73e3a4db01eb2fb0
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    nim_workspace_hash_v1: 27ee8ecd9dfdcd956c97922f427fd945d67aff631ec68491812f43634795903e
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      block_config.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=block_config.py
+        checksum: blake3:03e2da3bf9a58d111002b693bc2ba9f6b7992455639e971047675b8fe4e63e11
+      chat_template.jinja:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=chat_template.jinja
+        checksum: blake3:6124cb36200caf8a3917d975fafaf7e091e06f949f13a25a97c960510c087397
+      checksums.blake3:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=checksums.blake3
+        checksum: blake3:185f1ad589e830518325bac6eacce832b7b9a8f8a99c648c534a44d2afff69c0
+      config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=config.json
+        checksum: blake3:2a8fdf7cd75c44052fa41ce2215a921deb06cba27a3b46a8aca416e5ac571fc0
+      configuration_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=configuration_decilm.py
+        checksum: blake3:a5970627ace78ed5f576cd5bcafb7d89bfc41e7327278fc4657524b3f030e5a9
+      generation_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=generation_config.json
+        checksum: blake3:138b505f67deca7fdc82dfd60192a6d97765c8e156d98f3088be04ced2f4d104
+      model-00001-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00001-of-00021.safetensors
+        checksum: blake3:0288caff10ab532f9e3ff40ba035e00f8a2a5f760b243b604ca69d8a9e70b22d
+      model-00002-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00002-of-00021.safetensors
+        checksum: blake3:892a1bd8479c410d5668d589dabecb566df6717f42bbf76fb545a1ccaaefe898
+      model-00003-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00003-of-00021.safetensors
+        checksum: blake3:7b14ddeac9b99ee023e39fe771e73700e0fc9770d5e7ce684067837372ef572e
+      model-00004-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00004-of-00021.safetensors
+        checksum: blake3:592a688ac0a290ecaedc811f29cd7a68c642ae1b542a57a6866d40492f0367c2
+      model-00005-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00005-of-00021.safetensors
+        checksum: blake3:a7d8ee7d6e068ff0aa48220763d3bfe0412efe86678989771f3d80c4563547ce
+      model-00006-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00006-of-00021.safetensors
+        checksum: blake3:4f23c507ee9d6979e349e25c26a22d9e819771b88137565795b9667556bbc66f
+      model-00007-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00007-of-00021.safetensors
+        checksum: blake3:4e2e950294ff0aa7209db9270da0f42d7687f1942bdc1ae4bf2425e56d4a1f5a
+      model-00008-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00008-of-00021.safetensors
+        checksum: blake3:b7545764c271339064a451baaefb3116245171daf2b0e38959fcfdc85f052fe7
+      model-00009-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00009-of-00021.safetensors
+        checksum: blake3:7515c5b7f26895ae2b89eb3736bc269cf99313530a37b1344903f28ff69ece19
+      model-00010-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00010-of-00021.safetensors
+        checksum: blake3:2be398553b167ecf0a7920084e97b7146ef21648d15f105235bd971bf8db4ef8
+      model-00011-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00011-of-00021.safetensors
+        checksum: blake3:3236982e3b5a49e311ef6a55990b0418ba14a6ed84cbac64551bfc46766bb833
+      model-00012-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00012-of-00021.safetensors
+        checksum: blake3:1153a2be0cdc1756783af3c253eb41ae1f2240aa72e5708eb10916ad2d76ddbf
+      model-00013-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00013-of-00021.safetensors
+        checksum: blake3:69f658e7c3c84f10ce86b03fe7ff39ff8f7d03f3f165bb65b18f4caaddadc982
+      model-00014-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00014-of-00021.safetensors
+        checksum: blake3:879deafcbad6c15d72441333f0700f9616e52948925e1756467e8c67665a3794
+      model-00015-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00015-of-00021.safetensors
+        checksum: blake3:c9159e4f412101ef1507abe005b8304cbe9d45ab64ce502b146d65b0c3ef5684
+      model-00016-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00016-of-00021.safetensors
+        checksum: blake3:f5466effa5478282592c2cbcd2fbe9f1531563dbeaa2e17b193e9d199ffe120a
+      model-00017-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00017-of-00021.safetensors
+        checksum: blake3:335a20918ddc5b6b498cb04396f9978e8648eba1f787064fc5c5451d3820e60d
+      model-00018-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00018-of-00021.safetensors
+        checksum: blake3:52b7b03eced93454c2b5ac0735d65ece8fe55dd390e751973ca298e88c3a348f
+      model-00019-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00019-of-00021.safetensors
+        checksum: blake3:0cf8f2b8538e706db2a296a0bcc24cbcb13e9d56b90f8e298260e8cdc815afa2
+      model-00020-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00020-of-00021.safetensors
+        checksum: blake3:f007b0eadcaef6543f71121b7a510492bc8f505028c5adb85cf6842057c28fd6
+      model-00021-of-00021.safetensors:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model-00021-of-00021.safetensors
+        checksum: blake3:ceff3fae4c7997f0c46ee696ff3662bdfc8f4594d3b0598389283f715a85a509
+      model.safetensors.index.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=model.safetensors.index.json
+        checksum: blake3:34479d152a2fda969ae9c9bf4153a1ff49fff2e460c7071c849c2cbacfa336bf
+      modeling_decilm.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=modeling_decilm.py
+        checksum: blake3:ce2845c08f080da387f5cfda82b6d9d1d6ccb19c7c2e8849762b99f03b74478e
+      special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=special_tokens_map.json
+        checksum: blake3:192b8054a69b48a7658601e45262196b7fcbe85302227ab9f18cc77d57542280
+      tokenizer.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer.json
+        checksum: blake3:51e63f3c7d58ec06403bc442606644976fb4b92b45171faebcd67927d8a437eb
+      tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=tokenizer_config.json
+        checksum: blake3:c86272fb2498c0bc429a3eba5124c7b04b1b00e76ae6dc7d02ffa5775df7b06a
+      transformers_4_44_2__activations.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__activations.py
+        checksum: blake3:8943dae353045d84672ef16443507f022bccc2685ac0aed43f92a414c225510e
+      transformers_4_44_2__cache_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__cache_utils.py
+        checksum: blake3:25ee77a3619325d81c8e17c967813038dc9a1a817adf8c88682b55efec775c05
+      transformers_4_44_2__configuration_llama.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__configuration_llama.py
+        checksum: blake3:dc25061f38c49559e524e82e0e06ca6fec69191a76b6f88d924bd491b0fad538
+      transformers_4_44_2__modeling_attn_mask_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_attn_mask_utils.py
+        checksum: blake3:2fe1afe769e0905e52d3edf22f9bf7eb867699129a358a2bc6bb8010c0a797b3
+      transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_flash_attention_utils_backward_compat.py
+        checksum: blake3:b1b2f6936b19b3d3445c5fb49a6ac54e2ab03bc7cdf925540614f38a45b765f3
+      transformers_4_44_2__modeling_outputs.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_outputs.py
+        checksum: blake3:06cc27206feac239b4a1d9dab23d60316fbd69c58f42ac53160864fdfdcd6058
+      transformers_4_44_2__modeling_rope_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__modeling_rope_utils.py
+        checksum: blake3:e0de6d7eb22bf515abf1d10a51f7a3cfc31669667c63479186e95581c8301eb4
+      transformers_4_44_2__pytorch_utils.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=transformers_4_44_2__pytorch_utils.py
+        checksum: blake3:c146e75fc6dec6bc23dee49148a6b2cbfac3fc1a737fa7104fb0126ba2273171
+      variable_cache.py:
+        uri: ngc://nim/nvidia/llama-3.3-nemotron-super-49b-healthcare-text2sql-v1.0:1.0.rc1?file=variable_cache.py
+        checksum: blake3:915c16de5993e94bfdf1bbe0713bb313a891999cf7654ed4fcc31cbd339f5e49

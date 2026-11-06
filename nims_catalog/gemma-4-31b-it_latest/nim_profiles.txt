@@ -1,0 +1,109 @@
+- id: 2da8f24075b563d2394e5947d9d7e1f72704a9de26783db2a96a2c351f35dbf3
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    gpu_sm_version: sm_90
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    nim_description: throughput-fp8kv
+    nim_json_args: '{"block_size":64,"kv_cache_dtype":"fp8"}'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+
+- id: 38eddf6a8604d866e1945ea7878e3798ea1c6b21d6e230f91fbc3a1d6d37f318
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '103.0'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+
+- id: 3d483628f0f80c511d45814c5d4b36357bf35ebdfd65a8358cb852fb9eedf815
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: 5f2613453901ce34041f9390d1eb035bceabba0af65af73be562fa5cda704a48
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '75.0'
+    nim_description: mooncake15, throughput, bf16 KV; validated optimum c=4
+    nim_json_args: '{"kv_cache_dtype":"bfloat16"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: 79d2280e2cab4024bf26cddad0a8dfec50d96ddabac789c0682abdfeb3417298
+  tags:
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 7e83e8e9bca94472c6d587c609e3765223eb8f4b97b7d57fe093633617adcb11
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: 8abeace03393adc77f9a334deaf43b45f344209489423a8c8e8c5ea495de59f3
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+
+- id: b53c8f34aa2f39d4adbe30c653831f98d2a60da9b7c06ac644264e8667c39a1f
+  tags:
+    compute_capability: '8.9'
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '35.0'
+    pp: '1'
+    precision: int4
+    tp: '2'
+
+- id: bbf0e9a3c9115d940cad96ea44ceec00cd1e253be9a1fffa9db824659abd376b
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '54.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+
+- id: c501faa01b35490971bc36a103f3ad5425daf3b46351f969bc41600646fc49d3
+  tags:
+    feat_lora: 'false'
+    inference_scenario: latency
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'

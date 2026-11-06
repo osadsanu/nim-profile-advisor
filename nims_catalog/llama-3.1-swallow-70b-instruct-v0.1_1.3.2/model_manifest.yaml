@@ -1,0 +1,818 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1
+release: 1.3.0
+profiles:
+- id: 1d7b604f835f74791e6bfd843047fc00a5aef0f72954ca48ce963811fb6f3f09
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414
+- id: f95be114df33dd6613105f76fd567a071ed3bd08232888a5ba2f0545a99dbd92
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      GEMMA_TERMS_OF_USE.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=GEMMA_TERMS_OF_USE.md
+        checksum: blake3:2819caf412ae38741fbae761ca3bbb640b3e66b58f37ec155c324a4f547392f9
+      LICENSE:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=LICENSE
+        checksum: blake3:6ef7bcb5d3b675da407e5237da2a2d145006ce8dbf986927ff9408ab8f31d1c3
+      Notice:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=Notice
+        checksum: blake3:0c02a94a5e318927109799a45d8409ac6ba180fd90d450c1d421c09bf82014e3
+      README.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=README.md
+        checksum: blake3:391000689a094109bf13de258da8aef1d085dd800d7da2a45d61926e9b6e3454
+      USE_POLICY.md:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=USE_POLICY.md
+        checksum: blake3:fc1e82940207d90f9c50caa6b03b432d6621dec6c20e26b9a40689c7af2728a9
+      config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=config.json
+        checksum: blake3:1bdc36874383576a9163f5d969131561e12cdc63fb957a566f66d4bdc2c4c7fe
+      generation_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=generation_config.json
+        checksum: blake3:6e4de842c89596a46bf825d21358fefa2a906520d58421996e4fa40a81fde34c
+      logo.png:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=logo.png
+        checksum: blake3:a36279d0e4b4aaaff012a83c6cc3343bc66c9f7eaac982db3cac8c05fcd57752
+      model-00001-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00001-of-00030.safetensors
+        checksum: blake3:7dad5faa962d01225950d4f2e3f7b313bd7f8a329a8c4946ee456d10e1d95f5b
+      model-00002-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00002-of-00030.safetensors
+        checksum: blake3:c0c05b9c4d28abfb761a6c4f527d79c3db1a97393174d9547a4df83e8c807319
+      model-00003-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00003-of-00030.safetensors
+        checksum: blake3:d5ed02fbae0a6b8c6486a515ce4d08ae9f64aa6ecbae48d627d1f1d67bcc7f9b
+      model-00004-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00004-of-00030.safetensors
+        checksum: blake3:72d9d17a41d1e50879637b5cee2956b5b7c89e2a4a78c8804e3251e10f45970e
+      model-00005-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00005-of-00030.safetensors
+        checksum: blake3:e2755c92a7d6a68fbfced39f49ae447e9380e103f4da08be426dd6b4985e11a2
+      model-00006-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00006-of-00030.safetensors
+        checksum: blake3:b0995f6f8897f01f66efba7c5fb43087221863b8642ad497e2eb2d8b482f25f6
+      model-00007-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00007-of-00030.safetensors
+        checksum: blake3:19dc866d6c8701ed78da778940256532cb174d06d98347ad42c906e758a8cf22
+      model-00008-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00008-of-00030.safetensors
+        checksum: blake3:57b719a1700b10182cb43164328ac7b5882d6dd8a1664cc9ab4638b08d9e00ef
+      model-00009-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00009-of-00030.safetensors
+        checksum: blake3:0610cc72627370ec2545fc8bcdc11c8f20f2564ddf1db537b0ee5fbfc3bb12ae
+      model-00010-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00010-of-00030.safetensors
+        checksum: blake3:b84c6180044b6272143775d06da698997fea5bc703d9ea017932632f8031203d
+      model-00011-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00011-of-00030.safetensors
+        checksum: blake3:93db850dceefa21e39cbb5aed66607360d9e3f84f151105334631c5a031a77e5
+      model-00012-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00012-of-00030.safetensors
+        checksum: blake3:b602f951414c040c5142918030931b5ab71da4aac9201626e77ad5c0919d68d0
+      model-00013-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00013-of-00030.safetensors
+        checksum: blake3:e70956b69f96960f05797b9aee4c04a82d7a743ff465e0093e37f931f3e826bc
+      model-00014-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00014-of-00030.safetensors
+        checksum: blake3:fcbc6ba01b99e29d81cf7944a77e42ae5d267129efaf92ac9d37f28ebef9e2f5
+      model-00015-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00015-of-00030.safetensors
+        checksum: blake3:7650bf7185f042eb433fcffa937adcf474b09df1978bfad15ed998c5623fce5e
+      model-00016-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00016-of-00030.safetensors
+        checksum: blake3:0902bb291e7f73f70cee1e50b76302e20a3c4683a72eb83e359ceca7997a53ef
+      model-00017-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00017-of-00030.safetensors
+        checksum: blake3:8625494b3d325e608bb12aa17a53ce9e9254441442a4729324444ff12fb4d8f3
+      model-00018-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00018-of-00030.safetensors
+        checksum: blake3:b94d9a3347abc0cc599ab1d1cf63c27e6a289b8fbe8ab2a1d02353de4f4f3382
+      model-00019-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00019-of-00030.safetensors
+        checksum: blake3:29987491de547e834b76f1fec75c670e9c0fafc94775229be3eeb9006d0ec56a
+      model-00020-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00020-of-00030.safetensors
+        checksum: blake3:bcc7cca896dde796f244eecd6e92479cb602468369e4006f0ded73aed224ee18
+      model-00021-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00021-of-00030.safetensors
+        checksum: blake3:123e004c46e43754c9151a06090394a24c7723af34f1e15fc6f61d8a961d4fa3
+      model-00022-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00022-of-00030.safetensors
+        checksum: blake3:26a5b44482add67afd4d4673ac546451e27ae3c13ed9a3214415f72fda580035
+      model-00023-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00023-of-00030.safetensors
+        checksum: blake3:3612b3f3619b18a1f2ea5f3b1bd308eff01a574d36ad64e10b4ca4132c95492a
+      model-00024-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00024-of-00030.safetensors
+        checksum: blake3:ebc80239622fc35b11b436291abbf0562d23b170c8ed31c1d86c24fb352c29e6
+      model-00025-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00025-of-00030.safetensors
+        checksum: blake3:b72202eacea53cc3dbecba49cce5b2d376d236b9c5ebff76e97075a38cfbad5a
+      model-00026-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00026-of-00030.safetensors
+        checksum: blake3:b2df4d12f9117b73a7ce9a2c49ee1aad12fb7db27c15f5373fb6291717c01eab
+      model-00027-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00027-of-00030.safetensors
+        checksum: blake3:3ecdf3e4ed5cf281e84124d0ed36ab460e6d945b8a9b11db4a447d730b754534
+      model-00028-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00028-of-00030.safetensors
+        checksum: blake3:a52e974b2ae31e8cfdb2196d632fcda3d4a5395f9374b4995e226d26881609f4
+      model-00029-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00029-of-00030.safetensors
+        checksum: blake3:5041dec568acd9c4604bfcb193ab92e2b4867f2c42953860067c15ee38940342
+      model-00030-of-00030.safetensors:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model-00030-of-00030.safetensors
+        checksum: blake3:9dd81d814dfc138d37e9c7828b35fc82fcdb5dd79a427416228a00c3676d77ec
+      model.safetensors.index.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=model.safetensors.index.json
+        checksum: blake3:daef5ab5fcf0a1a3e640d94078b175f1930b51b1c2c3923d7ea08d874ed1cc0e
+      special_tokens_map.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=special_tokens_map.json
+        checksum: blake3:bd4810c204bd65c644162454d052045bd61159aef9ecedafb67fa7be2258c2fc
+      tokenizer.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer.json
+        checksum: blake3:64aab291087b0abab6ecb80c62b68f58b51c8d7201a91cdcd9c830826db88096
+      tokenizer_config.json:
+        uri: ngc://nim/tokyotech-llm/llama-3_1-swallow-70b-instruct-v0-1:hf-f718a57?file=tokenizer_config.json
+        checksum: blake3:d71e57078b5e6b48846d1444456b3aaa56e4d9433154dda8103c7d4ee716e414

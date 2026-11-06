@@ -1,0 +1,350 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/llama-nemotron-rerank-1b-v2
+release: 1.10.0
+profiles:
+- id: 30deb3f6ab82ce062835b4e97894ad0ea76b5459ecd7f1f113ee7f4a920f81e9
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp16-esk-x2tbpg?file=checksums.blake3
+        checksum: blake3:77442dd791c6ec82fae3dcc5410fdb91b1d07ec36666f5d66dfe15ef72e608ec
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp16-esk-x2tbpg?file=metadata.json
+        checksum: blake3:ee557e61b4fb4da3fe600b1c4199d39f7a0d994102d57530155d5cc2b4da5286
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp16-esk-x2tbpg?file=model.plan
+        checksum: blake3:51a188dd3c4ff9c38eefa2e1f9420e90f4506869962ae8400023c24563e9a2c5
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 448d9749eede748c122f71cb0d0ad009557b5f6d7c1599cce7dfe24af4474d83
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a10gx1-trt-fp16-dwplog3zkg?file=checksums.blake3
+        checksum: blake3:214209314237ac49677c6fc75745630dbbf6269aaddecb7a25c94551fd29ba4c
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a10gx1-trt-fp16-dwplog3zkg?file=metadata.json
+        checksum: blake3:f33354fd34d49a4f641f9368f5ca4a158090ba23972404127818072cd1b7344e
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a10gx1-trt-fp16-dwplog3zkg?file=model.plan
+        checksum: blake3:4e01913945d4264d84eab298245f7640096f93a12fd9f0eda0953599bcb25d2b
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 44d1f6e283eb0365efb617f8c255e42f9d8c97fe039774c2837cdfcef54296ce
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp8--0w3-zwp6w?file=checksums.blake3
+        checksum: blake3:127b3338a960c4bf16f49fa5faf270afab9b30657841756178434092ed50f34a
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp8--0w3-zwp6w?file=metadata.json
+        checksum: blake3:ec937ed49fff6943dc864fde601ce7a6daac25a5e3e6fe2178c8b48549eb6ef4
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp8--0w3-zwp6w?file=model.plan
+        checksum: blake3:6358b73acf8caea9a7f88cedb4d2afc3aba5cf221d6b4e9ad5e059ba832de885
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 8f04bf773931e5b983e6812a1bae11bbccf68f4cb62644421c42c3174c0ae143
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp16-tp9qexs8aa?file=checksums.blake3
+        checksum: blake3:9d13906014a561d5daf10de499a985a7bf7efc60aa0611c761bda97f523f6791
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp16-tp9qexs8aa?file=metadata.json
+        checksum: blake3:f520de387fe3203f1e4cbbedffeac4ef706e7b59cb21173f9232b5d8d572e6ff
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp16-tp9qexs8aa?file=model.plan
+        checksum: blake3:b2fd4dd6cbc76ee9ee34a7e27bc0db5634773ed526bc8158c13973caae3483d6
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: 91b1800959ef14ba7340038e06e3ac51d7fa71975ba6e89c580affaf3cce7788
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp8-gwpyadqtcg?file=checksums.blake3
+        checksum: blake3:a177a291d28ae944e3f0f7bc7275ef5f7f7835bf260f2d9d81e338f7ac6467f9
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp8-gwpyadqtcg?file=metadata.json
+        checksum: blake3:aa29a575dc5067c14914d2459351e18b2cfd87703ea3067f8a22bb93ceddab64
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:h100x1-trt-fp8-gwpyadqtcg?file=model.plan
+        checksum: blake3:f5bb2e9d22b72c6d5ba4e3ab0ed401d4ae9720dfe41a227711f6e6ea6d7676f7
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: a1c13d988e661ffcff9de9a919de942e2257c8a1990280e18f1fcfbf1bdd39e5
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp16-k-t3vzuirg?file=checksums.blake3
+        checksum: blake3:ac780406bbe911a05b2b70ae67180fc50d705d799eec1ffa7bcdc10062a2a54a
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp16-k-t3vzuirg?file=metadata.json
+        checksum: blake3:22bcb8d0e1c2a38c8cfff1a55596bf20f6a80214ba82ed3e8e0ee4a95e2719fe
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp16-k-t3vzuirg?file=model.plan
+        checksum: blake3:05ff68e7f28f9c12915f6afc9d4a7be2eca7f2f1274ba42f8eefe7b6946e579c
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: a2a98d9d648d970f17ebca4b8ddacf96aaf7266ec66c74c83c6b42e3f5f5b97c
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp8-cf2memrcbw?file=checksums.blake3
+        checksum: blake3:46b662ad78a5c6a81d87a34317e3ad511fdc1e9eb41368d03f74f942f020c84e
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp8-cf2memrcbw?file=metadata.json
+        checksum: blake3:921caeb87fbd94e7dfe6acd857e98897ce587c7f7f5669f75d3633a39231cc98
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:l40sx1-trt-fp8-cf2memrcbw?file=model.plan
+        checksum: blake3:3ef2ddd490e795128d87897dc94b1375a6d0033c7416452869b3450a24705750
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: ac9898291cd6590f16956c43779ee8a191bd9ff1c091cf2ddecf51ea13f72877
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a100x1-trt-fp16-hmlr636rdq?file=checksums.blake3
+        checksum: blake3:2398c9ac0fa47881bc9e049bd29beb732f29b3a3f9aada6838204bc6e07e57b0
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a100x1-trt-fp16-hmlr636rdq?file=metadata.json
+        checksum: blake3:412918869569f752ce8c3a8348484db02f3643de5bf6e932b42e2edcf7c254bb
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:a100x1-trt-fp16-hmlr636rdq?file=model.plan
+        checksum: blake3:41aa45a4adf87e36db40cde3fbfb0119c1d7046c27f0ed4013f5faafebba918e
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: c10e0d36e7605cdd0ccbb0e25f0be6d97c00b4113cc9242b577d550b92d83da8
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    model_type: tensorrt
+    precision: fp8
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp8-kdrhsvesdq?file=checksums.blake3
+        checksum: blake3:4e2655b13f5b25ab03fc10af1960f6c878055668acba7f4aaa6b277e4e5335a7
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp8-kdrhsvesdq?file=metadata.json
+        checksum: blake3:682ed332adb6acace08802dd36f6ae62c08cdd7e283ac1db7a47b8e6866f5149
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:rtx6000-blackwell-svx1-trt-fp8-kdrhsvesdq?file=model.plan
+        checksum: blake3:3fcd7855c793c412ad074c8f422785d1900234547db3b616ae4e9bde25e1f40f
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: c3caccfe9fcbc6c3d8d911cfa19992e6bf3398d38298cfa97da79ad8f5f35723
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    model_type: tensorrt
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/checksums.blake3:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp16-fko0g3dgxg?file=checksums.blake3
+        checksum: blake3:9dc431bd4dd2fa90eebf6db7e24990055cfdf03f0787f5d28a108c55a437ca21
+      model/metadata.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp16-fko0g3dgxg?file=metadata.json
+        checksum: blake3:8f47780e55a3915536b11071cd7bab5733225ad77f016c96452ea91e6fed00d0
+      model/model.plan:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:b200x1-trt-fp16-fko0g3dgxg?file=model.plan
+        checksum: blake3:81f7addd048873d96368ed77ce3b404b696fcacd61e1eae57de09514ab487d42
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-8192-3fe66485?file=tokenizer_config.json
+        checksum: blake3:90afe2ebe6df3196de737bd375d8c17389718605c5d2a61a85e2f9e149807815
+- id: f7391ddbcb95b2406853526b8e489fedf20083a2420563ca3e65358ff417b10f
+  tags:
+    backend: onnx
+    model_type: onnx
+    precision: fp16
+  workspace:
+    files:
+      extra/VERSION:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=VERSION
+        checksum: blake3:50cc1102b1c612e6962547aacdcef9a400d4416ef8dd9388e885991853c400c9
+      extra/triton.yaml:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:extra-1?file=triton.yaml
+        checksum: blake3:3a026210264249888e7b8338dc8be9db74840177e0b85d66d2771bd381927f84
+      model/model.onnx.tar:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:onnx-precision.fp16-d03bf375?file=model.onnx.tar
+        checksum: blake3:b05d384b4c3332d9a7605bc6c26e4dee5ddc120727bc052c1cd93f8cf63fa710
+      tokenizer/special_tokens_map.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-4096-f250c002?file=special_tokens_map.json
+        checksum: blake3:532a13dbec6deb90ff6efe6fbdee0c274109b757bfde7d2a4d67b44d9a61674c
+      tokenizer/tokenizer.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-4096-f250c002?file=tokenizer.json
+        checksum: blake3:6c628c92d1623f93fe811c3974c81fbc415d776f33cc440d44ee6c7d9ed9e066
+      tokenizer/tokenizer_config.json:
+        uri: ngc://nim/nvidia/llama-nemotron-rerank-1b-v2:tokenizer-4096-f250c002?file=tokenizer_config.json
+        checksum: blake3:e6db3817fd6026853c8f697dffc42b63f5392c426184181a7475ff3b97bb7e65

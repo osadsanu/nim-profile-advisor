@@ -1,0 +1,50 @@
+- id: 44921fd0826a34fcb9a46a35cc26351fab055b6470e24f717cd042ea57cad0e2
+  tags:
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_runtime: torch
+    k: runtime
+    kv_handoff: native
+    llm_engine: tensorrt-llm
+    min_k: '1'
+    nim_workspace_hash_v1: 955f07ef66b3776e4a3023f551397d2b787c7ea7af164f732c8985c1f0e68e31
+    number_of_gpus: '1'
+    precision: fp8
+    profile: latency
+    profile_name: fp8
+    quantization: fp8
+    vram: 20 GiB
+
+- id: 9ea2c4429da25086ea610581eae58ed6f387663c82fe767ff272cea9ae447e92
+  tags:
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_runtime: torch
+    k: runtime
+    kv_handoff: native
+    llm_engine: tensorrt-llm
+    min_k: '1'
+    nim_workspace_hash_v1: 753e9312a9471826bb8a2598d35152c4eacc113ab48103a756b202034a27ca53
+    number_of_gpus: '1'
+    precision: w4a16
+    profile: latency
+    profile_name: w4a16
+    quantization: w4a16
+    vram: 20 GiB
+
+- id: b46dd54e986c69b13e3716d3c4b8d890b84210288ee11efdb96b2f7921a15ade
+  tags:
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_runtime: torch
+    k: runtime
+    kv_handoff: native
+    llm_engine: tensorrt-llm
+    min_k: '1'
+    nim_workspace_hash_v1: 40b10e4b1f6b547a167cb4e95858b4459053deed208b761222914334f56088ca
+    number_of_gpus: '1'
+    precision: bf16
+    profile: latency
+    profile_name: bf16
+    quantization: bf16
+    vram: 30 GiB

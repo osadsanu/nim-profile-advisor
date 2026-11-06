@@ -1,0 +1,25 @@
+# Stub manifest for a model-free ALCHEMI NIM.
+#
+# nimlib's start_server calls get_model_manifest() unconditionally and NIMCraft
+# does not generate a manifest for model-free NIMs, so the serving stack supplies
+# one. nim_sdk rejects a manifest with no profiles, a profile without tags or
+# workspace, or a workspace with no files -- so this declares a single local://
+# placeholder that ships in the image. Nothing is downloaded; the real checkpoint
+# is fetched by move_triton_repo.sh.
+#
+# Overwritten by NIMCraft's own COPY if a non-model-free NIM is ever built on
+# this serving stack, since both target the same path.
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+profiles:
+  - id: "6c493b5fb271f93464babbcfe316a77a0a565df06921990e1488e01aeb79e008"
+    model: "alchemi"
+    release: "1.1.0"
+    tags:
+      backend: pytorch
+    workspace:
+      files:
+        model-free.txt:
+          uri: "local:///opt/nim/etc/model-free?file=model-free.txt"
+          checksum: "blake3:c8569bd2ae0dfe59861166f1a69d5f0af1b52f9c71aafd4840ae40d4f5eae7fe"

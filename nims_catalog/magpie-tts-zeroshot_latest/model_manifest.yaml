@@ -1,0 +1,235 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/magpie-tts-zeroshot
+release: 1.2.0
+profiles:
+- id: 25fece99097b9fa5d2b15e10c18d12dc8f118ead922f76daab93aa64a8390b9c
+  tags:
+    ampereplus: disabled
+    batch_size: '8'
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16-cuvayclgbq/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16-cuvayclgbq?file=checksums.blake3
+        checksum: blake3:eaf927e21ae7342a079e866c90296cb481b8e93cc1ba82d19ae09ae44602f9a8
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16-cuvayclgbq/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16-cuvayclgbq?file=metadata.json
+        checksum: blake3:82a6988057b85fc1f110a55a17e24aea9329a703bfcc2c968d6db2f648b491c9
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16-cuvayclgbq/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16-cuvayclgbq?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:3ae98a9a5a1fab5f8e8b596392af7b0be9f55054ac0f0e32e56ae4d32d638d95
+  workspace_hash: 49d375826f5d669f08d848c8d2ed6d7235b011277ff0b879fac0e3e961cb7546
+- id: 2a722032a0069636fb782af6de04c30f63221d8c8cc091a7f8dad931197be460
+  tags:
+    ampereplus: disabled
+    batch_size: '32'
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug?file=checksums.blake3
+        checksum: blake3:facd3e767c7f4897153ee3fa098ff2ec2b4e9d7a62e57da016e185777e38427d
+      magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug?file=metadata.json
+        checksum: blake3:689b100083bb815956e737b9b28ffdeb073110b9a22c16b53763d0378a24da31
+      ? magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+      : uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-d0wkm42uug?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:519b2b401510328c688007ec99e990c3d0469a12dfc631054196b492d1371a0f
+  workspace_hash: 84e9f83e7666822477656e622cdcb0c3a2d08f7d406c6383c83820ded86ebab9
+- id: 2af78125b4b01459e787a65a8cbfad1d6541cab0ebb4fc24c84ed3740d16cfab
+  tags:
+    batch_size: '32'
+    model_type: rmir
+    name: magpie-tts-zeroshot
+  workspace:
+    files:
+      magpie-tts-zeroshot-rmir-bs32-26.05.8/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.rmir:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:rmir-bs32-26.05.8?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.rmir
+        checksum: blake3:8a0f661e729494a089f17a06c3d3a615472635d7edf3dd15a349cc5f21780360
+  workspace_hash: 2c9d4cefa7e6efc5ed4e2e2e2df63d5bbf513546dccafb0a95aedb5057e640fa
+- id: 3eb73ee9fc93589ffd837469b2fd68aa9cb8756cbb88feed146f8b8583af1de4
+  tags:
+    batch_size: '8'
+    model_type: rmir
+    name: magpie-tts-zeroshot
+  workspace:
+    files:
+      magpie-tts-zeroshot-rmir-bs8-26.05.8/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.rmir:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:rmir-bs8-26.05.8?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.rmir
+        checksum: blake3:353900286f1bd2fbc3d99b1b2ab2fa380f61e14fe2a41e72d85ac6f174150bcb
+  workspace_hash: b592d9d9d49d54a807d186a6dd4959a5d4ae4105c99e6afa4ea0836d04bf5547
+- id: 5cb7876a54eb835c69ebdfac0c2d46cdd8cfe93a468652895dbd37503f130f0a
+  tags:
+    ampereplus: disabled
+    batch_size: '8'
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw?file=checksums.blake3
+        checksum: blake3:7235e9a699e2833764478efae3a35278e45501b6d1189d9cbb5ad089a320bef2
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw?file=metadata.json
+        checksum: blake3:c3d32cabd4faaf199f796929c9a10f3546d79f09c3608eec284def6c7ffa16d7
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-o9qawtsryw?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:a7a0162e5d280218b01226f5803bfa4a12259336512415a6eb1a9ec2c7f2b28a
+  workspace_hash: 89440cc9587cd7087d088ae4f917758ec6ee5761828fa615dd9cc806f2aaa8d1
+- id: 7357709e9e8c664dad4899368cd6740b7c21fdcac8729bad1b3b7ab2742c1c12
+  tags:
+    ampereplus: disabled
+    batch_size: '32'
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw?file=checksums.blake3
+        checksum: blake3:be809618394a870ed461f371ca9e5b65bb429d58aa88c63e5739b0b6736ae2da
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw?file=metadata.json
+        checksum: blake3:82a6988057b85fc1f110a55a17e24aea9329a703bfcc2c968d6db2f648b491c9
+      magpie-tts-zeroshot-h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:h100x1-multi-generic-26.05.8-fp16--ebpiy2vgw?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:829a1dfea617e8cb3c554b464650001a54cc7ba3aaa9ac048cfc176ae66808f5
+  workspace_hash: 01d172c56c849ec1334116e306a026ce32fd43649c282739851ba08563910082
+- id: 7aa18f54d1be23719acaf038c3c9ee00da9d51e9cfbeb749e2c167a57ddcb3e4
+  tags:
+    ampereplus: disabled
+    batch_size: '32'
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq?file=checksums.blake3
+        checksum: blake3:901db7cfcb82cfab7aedfdf7f5acd35bdc90e40b822d8343076fec936ec8ef3b
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq?file=metadata.json
+        checksum: blake3:c3d32cabd4faaf199f796929c9a10f3546d79f09c3608eec284def6c7ffa16d7
+      magpie-tts-zeroshot-l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:l40sx1-multi-generic-26.05.8-fp16-ffstc3thfq?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:a64b683b084ff94bedb88ec2d00bd1608943b4b24a310348720496b1d19833db
+  workspace_hash: 186623f2025a83daa77d1e9040559cf52e5c4c8d3f70b7d3c7de0c33f1ea8a21
+- id: cd72ec913a165918302fd849ba8381577093a5c6c30a681fcdd2d701f00c3cc1
+  tags:
+    ampereplus: disabled
+    batch_size: '8'
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq?file=checksums.blake3
+        checksum: blake3:ef0733aa5d0d766549f1fcc16a7076d2ccc3cca633b047e348542cfdce5e61c1
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq?file=metadata.json
+        checksum: blake3:ba4ec0743cbb4c8650f50063e973518007b7039e34437441d00a10e4e9dbaba4
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-0r-1bcllhq?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:e39dd141d0fe4d792663878aadcb8614cb86a4fdfeefbeaf2bd0995769f0b5c1
+  workspace_hash: 359c71d9ac918be5852da0881e85818d35a4dc0eda70b6ac0ed2ceb1db6d4e5a
+- id: f40d7fe96844b187192888f3d273e01f711f04c25feffc788bc917202f74a078
+  tags:
+    ampereplus: disabled
+    batch_size: '32'
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq?file=checksums.blake3
+        checksum: blake3:893c4858254842b4e9b77778d0832c3d3d50473e5295e1a319bbf9cacb117807
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq?file=metadata.json
+        checksum: blake3:ba4ec0743cbb4c8650f50063e973518007b7039e34437441d00a10e4e9dbaba4
+      magpie-tts-zeroshot-a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:a100x1-multi-generic-26.05.8-fp16-5dhn3w9qyq?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:84ddbed07a455db7f2db4327b9f58f9a67d434225a3d0fa359e16022744510a4
+  workspace_hash: a077edba8b0d52758a4121c662a6e41407a135952f77d2193c6ac07babd93aa1
+- id: fe8d8483077aa4409c34883083bf5a8a3896f5f31c8cffdd7ae0bdc5bbe356a5
+  tags:
+    ampereplus: disabled
+    batch_size: '8'
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    model_type: prebuilt
+    name: magpie-tts-zeroshot
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: multi_generic_26.05.8
+    tp: '1'
+  workspace:
+    files:
+      magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a/checksums.blake3:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a?file=checksums.blake3
+        checksum: blake3:ca89843e64ff0275e94082a4bfdb13701ef89cc184f7a55915c625557a72fe55
+      magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a/metadata.json:
+        uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a?file=metadata.json
+        checksum: blake3:689b100083bb815956e737b9b28ffdeb073110b9a22c16b53763d0378a24da31
+      ? magpie-tts-zeroshot-dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a/tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+      : uri: ngc://nim/nvidia/magpie-tts-zeroshot:dgx-sparkx1-multi-generic-26.05.8-fp16-x8pf7nmo8a?file=tts-MagpieTTS_21hz_codec_trtllm_ZeroShot_Multilingual.tar.gz
+        checksum: blake3:de8400a2873ee64aad3c2de51d070c9e960d4b42cee1c9d99602318634d95960
+  workspace_hash: f50edc7749ef55c140e8ebdc73c0d01f184be005dff45854b0584beaa4f2a75e

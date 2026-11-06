@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: Copyright (c) 2024-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+
+---
+schema_version: '2.1'
+profile_selection_criteria: 'auto'
+model: 'video-super-resolution'
+release: '1.0'
+
+# VSR NIM has its model binary baked into the service container
+# (NIM_SERVICE_BINARY in nimconfig.ini, NIM_DISABLE_MODEL_DOWNLOAD=1).
+# `local://` URI + `<<nochecksum>>` (model_manifest_v2 schema) declares
+# "no remote artifact, no checksum" without a placeholder NGC URI.
+# `workspace_hash` lives at profile level (not as a tag) per v2 schema —
+# value is the BLAKE3 hash of the per-file checksum strings (regenerated
+# by NFP build; if workspace.files content changes, copy the new hash
+# from the build job's regenerated model_manifest.yaml artifact).
+
+profiles:
+- id: ef36067fd7700372876ba06de041f1c6204d60ba9d82a5ab69100ad9304923fd
+  tags:
+    gpu: L40S
+    gpu_cc: '8.9'
+    profile: quality
+  workspace:
+    files:
+      models/vsr/video_service_vsr:
+        uri: local:///opt/nvidia/videonim/video-service/video_service_vsr
+        checksum: "<<nochecksum>>"
+  workspace_hash: 805b13e8d2a00c2388b9007afa200808dedc14a07fa89d8bc8ee97607007102a
+
+- id: 50c151b45511c665c3cbba55040db85b3a88cd7c7650cd0dda9d0d3d8376fa5e
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    profile: quality
+  workspace:
+    files:
+      models/vsr/video_service_vsr:
+        uri: local:///opt/nvidia/videonim/video-service/video_service_vsr
+        checksum: "<<nochecksum>>"
+  workspace_hash: 805b13e8d2a00c2388b9007afa200808dedc14a07fa89d8bc8ee97607007102a

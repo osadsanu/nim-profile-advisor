@@ -1,0 +1,2341 @@
+schema_version: "2.0"
+profile_selection_criteria: auto
+model: Qwen/Qwen3-Next-80B-A3B-Thinking
+release: 0.0.1-dev
+profiles:
+  - id: 05d57f70c6be5fed3bc2ac32f99dadf5082b537641f611645ebb680e5053d92d
+    tags:
+      feat_lora: "false"
+      gpu: H20-3e
+      gpu_device: 232c:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "2"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 1d7f46feca911de2c936a84420569ecb3be29542bfdfe2609ce7b5e1c69509df
+    tags:
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: latency
+      tp: "2"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 21226f8ab61c827e0450b4385228626b03376505ec46e8d1f3e03060d50e76ae
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H100
+      gpu_device: 2330:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: latency
+      tp: "4"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 2d53018cf44c4de87b8cbf4774ea4f5b50983a377d571712f562abdbdafabb2b
+    tags:
+      feat_lora: "false"
+      gpu: H20-3e
+      gpu_device: 232c:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: throughput
+      tp: "2"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 630b91f578540cc04f995517c4b4dcdf0c1d352fa860f6205721b3c57d3799b6
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 82db4cac7b097f6f9d02a2490b861177f8fa2d6e561a975614d6629e72d25b83
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H200
+      gpu_device: 2335:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 9041680adf68ffba70fabd7213e500142ecb5522bfef60daa2247654be2fd5c2
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H20-3e
+      gpu_device: 232c:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 931e266d9411aeeb01f7439004e71972f3e6bae6662cf7d5a8fd6ab45f22f6f8
+    tags:
+      feat_lora: "false"
+      gpu: H200
+      gpu_device: 2335:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: throughput
+      tp: "2"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: 9378edf0de429e0b8aa11101342cf6fa46b14cf18865d32e759257c34c639b4d
+    tags:
+      ep: "2"
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: throughput
+      tp: "2"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: b39f9065e7706888876c24e6b6aeafce1e606213913773506e287bfb3c81f197
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H20
+      gpu_device: 2329:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: ceb7c3d46bded77ecb6b51b87b80fe3a114a246dcdaeb8aa046465be1a800da3
+    tags:
+      feat_lora: "false"
+      gpu: H200
+      gpu_device: 2335:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "2"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: db1810f91449c3ebad509fbd35f20bb3d74dc6493306cf8520b2e0fbd1954df0
+    tags:
+      feat_lora: "false"
+      gpu: B200
+      gpu_device: 2901:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: latency
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: f570699de77aa59b9530eeb8affa4e7c510398d3f5ab63922e7e1718376d57d3
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H100
+      gpu_device: 2330:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: bf16
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=README.md
+          checksum: blake3:b3e5d111126f053550a5394f968658002e67179ae3489eb2bb32912434dc2cf6
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=checksums.blake3
+          checksum: blake3:4c5e46b7b6b9257488c8799eb0d48577e3316ece5719b5ff04af750de63eb41e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=config.json
+          checksum: blake3:16ba8c5ff2d13c280fe3e80f4338898f57b9122fd7d7942662729f07c8f2e273
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=merges.txt
+          checksum: blake3:1af09d2fb0802de70033177197c481ae7beea7f01def35ae4e87c9d8df39d653
+        model-00001-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00001-of-00041.safetensors
+          checksum: blake3:0c67ee114a222d87acd666ce163a7c5c35d4b21a9447b13bdf0478a1312e84bf
+        model-00002-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00002-of-00041.safetensors
+          checksum: blake3:5f14c90f57ccffdb68cac260c258927448eaeb1512c6e9470c7fd8d649666caf
+        model-00003-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00003-of-00041.safetensors
+          checksum: blake3:4fcb63a3434b4937ebecdb5c9d891b20f490d4451fae2054cf0f43fb33b041ca
+        model-00004-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00004-of-00041.safetensors
+          checksum: blake3:ff1b347e858a684eed2a2ae8fee5b10a218e9840395ef70fffe66cfb6450937a
+        model-00005-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00005-of-00041.safetensors
+          checksum: blake3:32f90ed3e947942b0a4782393c135e04ac05c7bb7f9b1ca993f6eee5f454190f
+        model-00006-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00006-of-00041.safetensors
+          checksum: blake3:6aca4ade89d9ce0607a228b1b079852ede53a26217fbd9297d4b016b4735d693
+        model-00007-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00007-of-00041.safetensors
+          checksum: blake3:278bc260ca0302561f194655a1372d485790b38e9914360b59310b132c334d0e
+        model-00008-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00008-of-00041.safetensors
+          checksum: blake3:4985c9f494c1a24709ac3f846b2cfb0f5c1353e5f2f32953588e996bb090f445
+        model-00009-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00009-of-00041.safetensors
+          checksum: blake3:1c018ee994e8925a8ffb6ae96d829aa5bece492b1ed02e1adde3266c441df64a
+        model-00010-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00010-of-00041.safetensors
+          checksum: blake3:9c476c28d31ddc7e7297b7790ff5c4d21ab60ad57752d5155700f61e608465a3
+        model-00011-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00011-of-00041.safetensors
+          checksum: blake3:7eb9d4fa5a82e76dc9f36cccd4dcc678bb6cbb14bcd51ba5917e12159ea675e8
+        model-00012-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00012-of-00041.safetensors
+          checksum: blake3:b84dd1ce04e7e650734fb6040da3b47ad5eb8b5a9a323aac2b3732749d7d0b60
+        model-00013-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00013-of-00041.safetensors
+          checksum: blake3:5f6cf8f4d7072dd3dfb02807b3c26193b3a30fa32453ca18252b36ed3eb0b9b1
+        model-00014-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00014-of-00041.safetensors
+          checksum: blake3:ff139ac2dc0e12c6126b6d1fe3f55ebab01f811ce03eb9eadf9ea3c6774418bf
+        model-00015-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00015-of-00041.safetensors
+          checksum: blake3:9e06309e5e76f3e994d8f3947895a0b924658b5cfe9f7ac7711f74dc28470cde
+        model-00016-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00016-of-00041.safetensors
+          checksum: blake3:25626c841884fd1998482054f6dc41a41fd1a7635c8df70ad02dfff115dae7ea
+        model-00017-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00017-of-00041.safetensors
+          checksum: blake3:df3b63004c2e9cb59ad859ef3b83c0302a30e2c4feb324b1ea13a1d779c0f668
+        model-00018-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00018-of-00041.safetensors
+          checksum: blake3:9a0cd0b725930ac8a17d3ebd2d00bff8acb6513bfdbbf55a2c78a38f85ab02e2
+        model-00019-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00019-of-00041.safetensors
+          checksum: blake3:99b721032193c82589e904d65495adffa6d67db62eba5c903485b443448769c4
+        model-00020-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00020-of-00041.safetensors
+          checksum: blake3:5189bce7852e24c8d731f21888d573b46c3c4094b26d6ac82ab9a1e47b2edf10
+        model-00021-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00021-of-00041.safetensors
+          checksum: blake3:b107002b92c6a56af7ba9f41b62bc0a0a9ca1273414eff84f0ef54be13dd8ce5
+        model-00022-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00022-of-00041.safetensors
+          checksum: blake3:9c9efcbeab73167355162d4f2a45b557271610d9a05889ca04b84007511755bd
+        model-00023-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00023-of-00041.safetensors
+          checksum: blake3:f34ff637c29f77bba7d60c4c0db546cd82849ffb7329ce4ea4bcff37302ed3c8
+        model-00024-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00024-of-00041.safetensors
+          checksum: blake3:9bac2e38fa8ace5aaf57326e913ac0cec34d9279aa2aab9272d523e46906bf01
+        model-00025-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00025-of-00041.safetensors
+          checksum: blake3:3e412c23d1230f3de34fcd9b4abf6f51a61111346a1a2cc81115eb49033df367
+        model-00026-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00026-of-00041.safetensors
+          checksum: blake3:beb81243e7b4ac4def8b5814cea9fadf2ba10aa3a26061902fc9cde4cdbe0445
+        model-00027-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00027-of-00041.safetensors
+          checksum: blake3:6a0e42eee60f6dbd40424a1c270981b3dc6fe5286ab312ea6200130678c77918
+        model-00028-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00028-of-00041.safetensors
+          checksum: blake3:26c8993384f811ed41ae7752c3509e0ecb4f6e82a3485a849ee6b42071db6eb0
+        model-00029-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00029-of-00041.safetensors
+          checksum: blake3:f5f697fd7c470a120dd7628f03e550a8e6ebe552cccef287f3e299fb53550943
+        model-00030-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00030-of-00041.safetensors
+          checksum: blake3:3506cde04f5c3f89e9b5341d41099c3e4f4659e8bfba981e4074346e70ee8dbc
+        model-00031-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00031-of-00041.safetensors
+          checksum: blake3:fb14a7c323da3003278d0f550d169fea87b9816343bbf6d9f9b103fc9da63449
+        model-00032-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00032-of-00041.safetensors
+          checksum: blake3:5df9a4c3d01c0f7b50bf78f8a86415ebe18a3a19d7ce07f1cf77995eb31b20c0
+        model-00033-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00033-of-00041.safetensors
+          checksum: blake3:5da49a7df2703382eeba8d77eafd5339dd46f06df8bae13b4aa0014d87c08fbe
+        model-00034-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00034-of-00041.safetensors
+          checksum: blake3:f42351161745b7bb39ad48269deb2f195ddb10efb17ed0e29b7fb2348930f319
+        model-00035-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00035-of-00041.safetensors
+          checksum: blake3:0cd3736289574f394b277f419128d79df803c2a4b1952a799e2bdca41f5d7c80
+        model-00036-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00036-of-00041.safetensors
+          checksum: blake3:b8d3bde98f0cb9cac88c0dddba9edf94fa4636a77052d9c7a833faf64ada64cc
+        model-00037-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00037-of-00041.safetensors
+          checksum: blake3:c7960b277e9978b45e76bdd9343740ef8457a81a88c6206de9c546698aec524d
+        model-00038-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00038-of-00041.safetensors
+          checksum: blake3:6e2a40f42ec5aa2bc31a8bcd6b065f505fceb1843fc7627ab6961adb58864f9a
+        model-00039-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00039-of-00041.safetensors
+          checksum: blake3:00a70ed8019a57f85eea0f63aaf8600c41cba03e477f40271785a3a8a74d8b98
+        model-00040-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00040-of-00041.safetensors
+          checksum: blake3:9ef35bdb649acb56d6ff2811036704d58f91da59803a625f8da152cb06c7140b
+        model-00041-of-00041.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model-00041-of-00041.safetensors
+          checksum: blake3:bf6308b2b07c4297ca7258cc2f8d15aa743962ae59e2e7aac3e8bcb9712ad475
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=model.safetensors.index.json
+          checksum: blake3:466dda8a3452bd4e4588896c183b88841210d800b07880569e2604740bd423ef
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-9284628-nim?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  - id: fbbab618c3b7d27d4cf2a9e9dcb077d511bebfa64debb39a3ce49e1924d6f6cf
+    tags:
+      ep: "4"
+      feat_lora: "false"
+      gpu: H20
+      gpu_device: 2329:10de
+      llm_engine: sglang
+      pp: "1"
+      precision: fp8
+      profile: throughput
+      tp: "4"
+    workspace:
+      files:
+        .cache/huggingface/download/LICENSE.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/LICENSE.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+          checksum: blake3:3e7f21bb7725d8145efd3bf86c8facdab458f8f50721e3d5925c3a01412eddbb
+        .cache/huggingface/download/README.md.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/README.md.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+          checksum: blake3:c41a4807bc09e70baa88b9d8aba19793467ab1423727814fedc47c9ed7c2010d
+        .cache/huggingface/download/config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+          checksum: blake3:d1ceb3edb8e0acec8046b82336c7e6c999bef137b4f8dde8ce08422aa6192a02
+        .cache/huggingface/download/generation_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/generation_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+          checksum: blake3:c1a3fb47aa48041a070f80f3a25d35fccef0fc17ac928c8ac2ace15831fb2177
+        .cache/huggingface/download/merges.txt.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/merges.txt.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmerges.txt.metadata
+          checksum: blake3:11d5a2bf6fa91e1aa2cf0d1c7ed57a5bb8dbc6689ff82b12ff23c8cf952c2b65
+        .cache/huggingface/download/model-00001-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00001-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-00008.safetensors.metadata
+          checksum: blake3:f3accd014033604f1df43a9b6a19a11b7f6029a788ec0457bef12088fda54b4d
+        .cache/huggingface/download/model-00002-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00002-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-00008.safetensors.metadata
+          checksum: blake3:91b7742325f1dcaca94558679e6dbac470408e9514bf73c69198403e65df2407
+        .cache/huggingface/download/model-00003-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00003-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-00008.safetensors.metadata
+          checksum: blake3:6806e6001d6b5a1073fb467509ec84b146c01f77934b3a1336d0b8a0e30abd49
+        .cache/huggingface/download/model-00004-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00004-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-00008.safetensors.metadata
+          checksum: blake3:094784a8706c51d9bbd586bdc55e7ff0f391d84faf346494f3e091667997b857
+        .cache/huggingface/download/model-00005-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00005-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-00008.safetensors.metadata
+          checksum: blake3:efd0e5373ba9f15939521627a3232a7e1cfe6aa993c617f82a1e191fc297ece4
+        .cache/huggingface/download/model-00006-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00006-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-00008.safetensors.metadata
+          checksum: blake3:431271e70a139b3b0095069bd3edbd7bca1e7e81f852848a516ecfeaa6836a91
+        .cache/huggingface/download/model-00007-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00007-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-00008.safetensors.metadata
+          checksum: blake3:8a1d1fc260c6adf11a9f8f3c1709ee307d94c5d502e69268e5efe35a9b1ab1d1
+        .cache/huggingface/download/model-00008-of-00008.safetensors.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model-00008-of-00008.safetensors.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-00008.safetensors.metadata
+          checksum: blake3:2a59cffb2938b7912fb987a87ae540022ecdcbe528ef618a4deda7bf240d432a
+        .cache/huggingface/download/model.safetensors.index.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/model.safetensors.index.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+          checksum: blake3:55120888d8b1379259b1c7db855d700c3509c84170055aee12af88dcc7e83410
+        .cache/huggingface/download/tokenizer.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer.json.metadata
+          checksum: blake3:eb4f1aa51ffb34ab996a663a9558a9148643a688903c15d2192ade2b1653e114
+        .cache/huggingface/download/tokenizer_config.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/tokenizer_config.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+          checksum: blake3:2f497d7590a6a7734bdbec13718a3b32b25d693907ca7f6b489cae9dcf522601
+        .cache/huggingface/download/vocab.json.lock:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.lock
+          checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+        .cache/huggingface/download/vocab.json.metadata:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=.cache%2Fhuggingface%2Fdownload%2Fvocab.json.metadata
+          checksum: blake3:a37e23ff7edca8a14ac761b70df493980713607e376bc8e78b116a2c0a58df94
+        LICENSE:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=LICENSE
+          checksum: blake3:5ce7b3f9d40107ec7977f3e7c2c521f0e2de8b29b7bee649e91b831943ccb1dc
+        README.md:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=README.md
+          checksum: blake3:7f4ca87b416e18383d2329791a7d5476dabf3346383ea6df71ba444f208b9cb1
+        checksums.blake3:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=checksums.blake3
+          checksum: blake3:6970f2530ef34a2c7549c2efec76a6982c25bb914e1e903119aaf4ac38a7c25e
+        config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=config.json
+          checksum: blake3:3b930ab06aa2c6ddd4dd340c9128511047e8e499717eb97c5f337c0d4c0e5bae
+        generation_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=generation_config.json
+          checksum: blake3:c2cc6f4f564b6bd825c58a9aec24bf21be079932e373dba0ac29ad210357a798
+        merges.txt:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=merges.txt
+          checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        model-00001-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00001-of-00008.safetensors
+          checksum: blake3:99912ad40320e22961a0035e97362a7f3fc6fe19405989908b0b89e49816925c
+        model-00002-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00002-of-00008.safetensors
+          checksum: blake3:d0d66c2154b701c8dbbcf714edb441e050908870a4736e3e269bac58b5c07d35
+        model-00003-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00003-of-00008.safetensors
+          checksum: blake3:9575f292019dbc22d11d62f77d2037aeac6fb9bb7685678ce3cb1f938d72a975
+        model-00004-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00004-of-00008.safetensors
+          checksum: blake3:95429259ee7cb2c757996b11a2e684e3e9ef906a45fe4f48bf557b69c2251722
+        model-00005-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00005-of-00008.safetensors
+          checksum: blake3:b74f9d7a70fa95b54dec667b8b7a337d7d5d6f93e045e8d2081dfb097ce58f46
+        model-00006-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00006-of-00008.safetensors
+          checksum: blake3:a31fdb203990dac0686f391e58f8d2dbedc4ecdcc286533ef733bd39230dac1a
+        model-00007-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00007-of-00008.safetensors
+          checksum: blake3:8a00e5f0dda150a9edbbab04a642e8dad1b2976df7692a490fd80a16f40e816d
+        model-00008-of-00008.safetensors:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model-00008-of-00008.safetensors
+          checksum: blake3:f9635b2447e0421e7d6ef30c9fc966ff69c917f3f941577399aece220d369224
+        model.safetensors.index.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=model.safetensors.index.json
+          checksum: blake3:3f08ef3c88d44fc8300c3d9014262a120e1d2c0fb8c2d9c7dea9d2d42c650fbb
+        tokenizer.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer.json
+          checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        tokenizer_config.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=tokenizer_config.json
+          checksum: blake3:533838df8f5ec0231a3f4f5798a156bde7b37c5b859d66cdac0a97946365843f
+        vocab.json:
+          uri: ngc://nim/qwen/qwen3-next-80b-a3b-thinking:hf-1a28d48-nim-fp8?file=vocab.json
+          checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe

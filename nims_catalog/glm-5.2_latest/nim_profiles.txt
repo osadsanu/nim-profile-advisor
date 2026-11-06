@@ -1,0 +1,131 @@
+- id: 088cff9cc143df7429155262df371065fd1f5d37beec929bcc46d67061a03bf3
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '269.0'
+    nim_json_args: '{"gpu_memory_utilization":0.85,"reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    tp: '4'
+
+- id: 1d899955fcdf7ef48ab9ef8530b244a8131f7273407daa799416cb181de138a4
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '269.0'
+    nim_json_args: '{"gpu_memory_utilization":0.85,"nim_specdec":{"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":6,"speculative_num_steps":5},"reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    tp: '4'
+
+- id: 28a9b5fd93083449373fbca26192707d1f417d6295e1ec93d2b399f30be6886a
+  tags:
+    ep: '1'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    llm_engine: sglang
+    min_vram_per_device_gb: '135.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"attention_backend":"dsa","cp_strategy":"interleave","dsa_prefill_backend":"flashmla_kv","enable_hierarchical_cache":true,"enable_prefill_cp":true,"flashinfer_allreduce_fusion_backend":"auto","fp8_gemm_backend":"flashinfer_deepgemm","gpu_memory_utilization":0.92,"hicache_size":80,"kv_cache_dtype":"fp8_e4m3","max_model_len":250000,"model_loader_extra_config":"{\"enable_multithread_load\":true,\"num_threads\":32}","moe_a2a_backend":"none","nim_specdec":{"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":6,"speculative_num_steps":5},"quantization":"fp8","reasoning_parser":"glm45","tool_call_parser":"glm47","trust_remote_code":true,"watchdog_timeout":3600}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '8'
+
+- id: 2e64b4102712ce6b769b30b33f58e007290499b8355695c9fc032414f73801a5
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '103.0'
+    nim_json_args: '{"chunked_prefill_size":8192,"cuda_graph_max_bs_decode":16,"gpu_memory_utilization":0.85,"max_prefill_tokens":8192,"max_running_requests":16,"quantization":"modelopt_fp4","reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: 378b44c44369c3a298ae18266cb729bc5da261ac28ac7b5909aad34dfc2d235c
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '157.0'
+    nim_json_args: '{"chunked_prefill_size":8192,"cuda_graph_max_bs_decode":16,"gpu_memory_utilization":0.85,"max_prefill_tokens":8192,"max_running_requests":16,"quantization":"modelopt_fp4","reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 87b3f5b36b7dbdb49f9ad557585b87b2175975fd24f042b26b0bda8a5e1a8b5c
+  tags:
+    ep: '1'
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '141.0'
+    nim_json_args: '{"gpu_memory_utilization":0.85,"reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    tp: '8'
+
+- id: 9f8783939e6f55a2acef07764ec1cb668af785ee3a4260eaf904d3c0074e5c5f
+  tags:
+    ep: '1'
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '141.0'
+    nim_json_args: '{"gpu_memory_utilization":0.85,"nim_specdec":{"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":6,"speculative_num_steps":5},"reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    tp: '8'
+
+- id: a6f622470e63f8941a87cf9815cd310c5564ac88db47139c6d9b8fe31519f82f
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '157.0'
+    nim_json_args: '{"chunked_prefill_size":8192,"cuda_graph_max_bs_decode":16,"gpu_memory_utilization":0.85,"max_prefill_tokens":8192,"max_running_requests":16,"nim_specdec":{"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":6,"speculative_num_steps":5},"quantization":"modelopt_fp4","reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: b4ecb381a6e2a44cb4cd2fa1949a12d36f321783da067bd52b5eb394f016ff8a
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '103.0'
+    nim_json_args: '{"chunked_prefill_size":8192,"cuda_graph_max_bs_decode":16,"gpu_memory_utilization":0.85,"max_prefill_tokens":8192,"max_running_requests":16,"nim_specdec":{"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_moe_a2a_backend":"none","speculative_moe_runner_backend":"triton","speculative_num_draft_tokens":6,"speculative_num_steps":5},"quantization":"modelopt_fp4","reasoning_parser":"glm45","tool_call_parser":"glm47"}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: db9e51c28691d979ca29e4570c3b3782e4293e2671aa10888f4e70420cba76cc
+  tags:
+    ep: '1'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '175.0'
+    nim_description: agentic, throughput, ITL<20ms
+    nim_json_args: '{"cuda_graph_max_bs_decode":32,"enable_hierarchical_cache":true,"flashinfer_allreduce_fusion_backend":"auto","hicache_size":170,"log_level":"info","log_level_http":"info","max_running_requests":32,"mem_fraction_static":0.88,"nim_specdec":{"speculative_algorithm":"EAGLE","speculative_attention_mode":"decode","speculative_eagle_topk":1,"speculative_moe_a2a_backend":"none","speculative_moe_runner_backend":"flashinfer_cutlass","speculative_num_draft_tokens":6,"speculative_num_steps":5},"prefill_decode_interval":12,"quantization":"modelopt_fp4","reasoning_parser":"glm45","tool_call_parser":"glm47","trust_remote_code":true}'
+    nim_optimized: 'true'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'

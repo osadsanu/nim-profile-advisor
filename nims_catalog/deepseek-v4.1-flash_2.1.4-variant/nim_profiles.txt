@@ -1,0 +1,232 @@
+- id: 06fcf7c1ee59efbe08a000038172357db612b3f00d35a0f293f7691f93cf580f
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    nim_description: agentic, throughput (Turbo recipe)
+    nim_json_args: '{"language_model_only":true,"enable_expert_parallel":true,"moe_backend":"deep_gemm_mega_moe","enable_ep_weight_filter":true,"enable_eplb":true,"eplb_config":{"communicator":"torch_gloo"},"kv_cache_dtype":"fp8_ds_mla","block_size":128,"max_cudagraph_capture_size":512,"prefix_cache_retention_interval":1024,"enable_prefix_caching":true,"max_num_seqs":1024,"max_num_batched_tokens":16384,"gpu_memory_utilization":0.92,"max_model_len":1048576,"attention_config":{"indexer_kv_dtype":"mxfp4","indexer_sparse_logits":true,"backend":"FLASHMLA_MEGA_ATTN_DSV41"},"nim_specdec":{"speculative_config":"{\"method\":\"dspark\",\"num_speculative_tokens\":3,\"draft_sample_method\":\"probabilistic\",\"rejection_sample_method\":\"block\",\"enable_adaptive_verification\":false}"}}'
+    nim_optimized: 'true'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 2485f6bf339957f15baa4e60c8d20d3401f9d0222e4c807bb2a7c87706462e95
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: vllm
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '8'
+
+- id: 30d2c978b8a1a2271e38f636de7402172262ef3a30f79d1c09b2991512cde916
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: 33a4f33df4a3e23afca9aa08794e1c096903c164ab12062747edb584842a5aec
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: vllm
+    nim_description: agentic, throughput (Turbo recipe)
+    nim_json_args: '{"language_model_only":true,"enable_expert_parallel":true,"moe_backend":"deep_gemm_mega_moe","enable_ep_weight_filter":true,"enable_eplb":true,"eplb_config":{"communicator":"torch_gloo"},"kv_cache_dtype":"fp8_ds_mla","block_size":128,"max_cudagraph_capture_size":512,"prefix_cache_retention_interval":1024,"enable_prefix_caching":true,"max_num_seqs":1024,"max_num_batched_tokens":16384,"gpu_memory_utilization":0.92,"max_model_len":1048576,"attention_config":{"indexer_kv_dtype":"mxfp4","indexer_sparse_logits":true,"backend":"FLASHMLA_MEGA_ATTN_DSV41"},"nim_specdec":{"speculative_config":"{\"method\":\"dspark\",\"num_speculative_tokens\":3,\"draft_sample_method\":\"probabilistic\",\"rejection_sample_method\":\"block\",\"enable_adaptive_verification\":false}"}}'
+    nim_optimized: 'true'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 365b393561330a88be49370ab66f8a151ebeb6ad78e2526fced8a5a70a5eae2b
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: 4168ffef5b76dbd61d14bb409a21dfb94d169c0442fe725f023fc481e1029f79
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB300
+    gpu_device: 31c2:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 44fb6adf8c2101e9a51cff52c86c3d5f6888836c549927c9d051bb23778cee28
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-GB200
+    gpu_device: 2941:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: 45266af5d2b4e172a9cd6ba6f3efe1db1a2b04bfac184c414a05180b373da7e6
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-NVL
+    gpu_device: 2321:10de
+    llm_engine: vllm
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '8'
+
+- id: 47fc20c35c9a8230c84a26573a1c0d364214dbfc76e9a3c24501bfc42cb171b0
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: 765680638787e9b733ec7c139beb68d70ac31cfbe7f5656708754162920e90a7
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '8'
+
+- id: 915fa4e844359866d56f88534b6281c70d84f53a7e93dbeea8f09af3690d820e
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H100-80GB-HBM3
+    gpu_device: 2330:10de
+    llm_engine: vllm
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '8'
+
+- id: 9f34efd50f49c2ff891db2deb4d51a666580bbbf4053d59e0a3ca7a0c33c2cf6
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    nim_description: agentic, throughput (Turbo recipe)
+    nim_json_args: '{"language_model_only":true,"enable_expert_parallel":true,"moe_backend":"flashinfer_cutlass","enable_ep_weight_filter":true,"enable_eplb":true,"kv_cache_dtype":"fp8_ds_mla","max_cudagraph_capture_size":512,"prefix_cache_retention_interval":1024,"enable_prefix_caching":true,"max_num_seqs":1024,"max_num_batched_tokens":8192,"gpu_memory_utilization":0.92,"nim_specdec":{"speculative_config":"{\"method\":\"dspark\",\"num_speculative_tokens\":3,\"draft_sample_method\":\"probabilistic\",\"rejection_sample_method\":\"block\",\"enable_adaptive_verification\":false}"}}'
+    nim_optimized: 'true'
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: b2dd478c2227a88e8135f8b621945650ab5ddaf318e5a13b8844507d2d43acce
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: c980256e07d167c33ad03cbc35719d2ac31d17c5b4a836c755b864423d18f148
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+
+- id: ec894d10bc186b37ccc51567befa07edd148ef8cf756a1d03d2895d53973143d
+  tags:
+    compute_capability: '10.3'
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'
+
+- id: ef1a0084673ceb98d6581aeb89ffa02ca4e0432bae1f058a8472f9c4579daa2f
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200-NVL
+    gpu_device: 233b:10de
+    llm_engine: vllm
+    number_of_gpus: '4'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '4'

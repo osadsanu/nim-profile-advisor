@@ -1,0 +1,472 @@
+20f8b7cccbd55d17c2cd90ae768b6b27603562b6899127e8416a18c1e38b0819:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-a100x4-fp16-throughput.1.1.2.17756911
+5229b7dc3edfd27b07d14b78a4663b5f455602e7e13e6020948a63f2c75521cd:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-h100x4-fp16-throughput.1.1.2.17756911
+5c43853d06b58d11414b2793ed11412d7cfa129fa20252458a6be24a6aa51b74:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-h100x8-fp8-latency.1.1.2.17756911
+9d80e4731eb2f07e6f1d1c6c68f9dbda45e51b5759882c667cdd7a4d9292de38:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-h100x4-fp8-throughput.1.1.2.17756911
+a0493f067d3b6a28a1018e814ecd5e7f7f5d7988300752fc3f84874413a7f470:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00029.safetensors'
+            - !name 'model-00002-of-00029.safetensors'
+            - !name 'model-00003-of-00029.safetensors'
+            - !name 'model-00004-of-00029.safetensors'
+            - !name 'model-00005-of-00029.safetensors'
+            - !name 'model-00006-of-00029.safetensors'
+            - !name 'model-00007-of-00029.safetensors'
+            - !name 'model-00008-of-00029.safetensors'
+            - !name 'model-00009-of-00029.safetensors'
+            - !name 'model-00010-of-00029.safetensors'
+            - !name 'model-00011-of-00029.safetensors'
+            - !name 'model-00012-of-00029.safetensors'
+            - !name 'model-00013-of-00029.safetensors'
+            - !name 'model-00014-of-00029.safetensors'
+            - !name 'model-00015-of-00029.safetensors'
+            - !name 'model-00016-of-00029.safetensors'
+            - !name 'model-00017-of-00029.safetensors'
+            - !name 'model-00018-of-00029.safetensors'
+            - !name 'model-00019-of-00029.safetensors'
+            - !name 'model-00020-of-00029.safetensors'
+            - !name 'model-00021-of-00029.safetensors'
+            - !name 'model-00022-of-00029.safetensors'
+            - !name 'model-00023-of-00029.safetensors'
+            - !name 'model-00024-of-00029.safetensors'
+            - !name 'model-00025-of-00029.safetensors'
+            - !name 'model-00026-of-00029.safetensors'
+            - !name 'model-00027-of-00029.safetensors'
+            - !name 'model-00028-of-00029.safetensors'
+            - !name 'model-00029-of-00029.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+a42995905f473546ae085e2f72264c6c9a7ddbdd999b7c44df420fa629479371:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-h100x8-fp16-latency.1.1.2.17756911
+b46884b4bb8147a250f4745b089427204724d618262ebb783c37660ed2b99f4d:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-a100x8-fp16-latency.1.1.2.17756911
+b8934dc8a4778c6d534eb71f83bf9d2825e643ebb322d145cc3738a7fce01812:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00029.safetensors'
+            - !name 'model-00002-of-00029.safetensors'
+            - !name 'model-00003-of-00029.safetensors'
+            - !name 'model-00004-of-00029.safetensors'
+            - !name 'model-00005-of-00029.safetensors'
+            - !name 'model-00006-of-00029.safetensors'
+            - !name 'model-00007-of-00029.safetensors'
+            - !name 'model-00008-of-00029.safetensors'
+            - !name 'model-00009-of-00029.safetensors'
+            - !name 'model-00010-of-00029.safetensors'
+            - !name 'model-00011-of-00029.safetensors'
+            - !name 'model-00012-of-00029.safetensors'
+            - !name 'model-00013-of-00029.safetensors'
+            - !name 'model-00014-of-00029.safetensors'
+            - !name 'model-00015-of-00029.safetensors'
+            - !name 'model-00016-of-00029.safetensors'
+            - !name 'model-00017-of-00029.safetensors'
+            - !name 'model-00018-of-00029.safetensors'
+            - !name 'model-00019-of-00029.safetensors'
+            - !name 'model-00020-of-00029.safetensors'
+            - !name 'model-00021-of-00029.safetensors'
+            - !name 'model-00022-of-00029.safetensors'
+            - !name 'model-00023-of-00029.safetensors'
+            - !name 'model-00024-of-00029.safetensors'
+            - !name 'model-00025-of-00029.safetensors'
+            - !name 'model-00026-of-00029.safetensors'
+            - !name 'model-00027-of-00029.safetensors'
+            - !name 'model-00028-of-00029.safetensors'
+            - !name 'model-00029-of-00029.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+ecc95b0995db06bdcadf19cf840b05166892662a6b1b8dbf6b517f9b0869e260:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00029.safetensors'
+            - !name 'model-00002-of-00029.safetensors'
+            - !name 'model-00003-of-00029.safetensors'
+            - !name 'model-00004-of-00029.safetensors'
+            - !name 'model-00005-of-00029.safetensors'
+            - !name 'model-00006-of-00029.safetensors'
+            - !name 'model-00007-of-00029.safetensors'
+            - !name 'model-00008-of-00029.safetensors'
+            - !name 'model-00009-of-00029.safetensors'
+            - !name 'model-00010-of-00029.safetensors'
+            - !name 'model-00011-of-00029.safetensors'
+            - !name 'model-00012-of-00029.safetensors'
+            - !name 'model-00013-of-00029.safetensors'
+            - !name 'model-00014-of-00029.safetensors'
+            - !name 'model-00015-of-00029.safetensors'
+            - !name 'model-00016-of-00029.safetensors'
+            - !name 'model-00017-of-00029.safetensors'
+            - !name 'model-00018-of-00029.safetensors'
+            - !name 'model-00019-of-00029.safetensors'
+            - !name 'model-00020-of-00029.safetensors'
+            - !name 'model-00021-of-00029.safetensors'
+            - !name 'model-00022-of-00029.safetensors'
+            - !name 'model-00023-of-00029.safetensors'
+            - !name 'model-00024-of-00029.safetensors'
+            - !name 'model-00025-of-00029.safetensors'
+            - !name 'model-00026-of-00029.safetensors'
+            - !name 'model-00027-of-00029.safetensors'
+            - !name 'model-00028-of-00029.safetensors'
+            - !name 'model-00029-of-00029.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+eeb5e89c823ef1ee44bc425c6e44553e12e01ff117e7566b85b02468913b3d22:
+  container_url: nvcr.io/nim/meta/codellama-70b-instruct:1.2.2
+  model: codellama/codellama-70b-instruct
+  release: 1.2.2
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'README.md'
+            - !name 'added_tokens.json'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'pytorch_model.bin.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer.model'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:hf-397cae9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+            - !name 'rank4.engine'
+            - !name 'rank5.engine'
+            - !name 'rank6.engine'
+            - !name 'rank7.engine'
+          repo_id: ngc://nim/meta/codellama-70b-instruct:0.11.1+14957bf8-a10gx8-fp16-throughput.1.1.2.17756911

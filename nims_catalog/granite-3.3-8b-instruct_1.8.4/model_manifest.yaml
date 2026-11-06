@@ -1,0 +1,167 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: granite-3.3-8b-instruct
+release: 1.8.4
+profiles:
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=README.md
+        checksum: blake3:8f6d654f9e2f3b3f05195e230513cf8a5f89684f2d8ebb505e1fa925e81226de
+      added_tokens.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=added_tokens.json
+        checksum: blake3:d78107e0b3ad74bdadef1033b3905c61b950cc943805afdfcab6d65fba22a736
+      checksums.blake3:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:1a796bac89fbc9a33fba972f4e35ba0ed70f3a73b31e68617c97655cf717caff
+      config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=config.json
+        checksum: blake3:0d5eb814567938bfad762070816233ce146d3dd21c77ad3bf58b1782a3e7cea2
+      generation_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=generation_config.json
+        checksum: blake3:9e0bde26dba1fed15eecbbd92681d9f52eacad0e73636552edd2071b06c03981
+      merges.txt:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=merges.txt
+        checksum: blake3:8cdd8106aeb05792fb311e738e9b6e4ee0404cb462a5d188b5d09156da515e47
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:886c499bba279e52768bd3e2a9cd2ce255014ac25862fc53a8b82fc978e67246
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:4e501ed6d792aca7f1307b3b890ae7abaa168ab3ab91d4282bfca4d3c84e8a9a
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:a1e556c4cab843f2dc14c28a51d5a1a65f03e370b1cacd565fac732950743a2f
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:e97e5b767cdad55e83267ae52a9d9eb74e23b4f027378596d841fba3d91bbcc8
+      model.safetensors.index.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:811adea3c8273d5b33f0b80fd6d812b7be075d1fdb30189e882a6f1f98fc53bf
+      special_tokens_map.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:29d6bf19a7aeff60bf6d78f1682254f62c1f1266bb795a81c9e8c9ee3230a74a
+      tokenizer.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:729e55c908d3f55f89a3428f8a33f861869cd16f1f55e0d5c11f63fdf849489f
+      tokenizer_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:bcbdcd54db0ce2b33aef90f72b7178dcb901d2fbcc5e69f60a1b05d24172345e
+      vocab.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=vocab.json
+        checksum: blake3:9b7ef19a861f3bd71953db14e5a7f0e36587daa702cd07df3280dabb2bb5d901
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=README.md
+        checksum: blake3:8f6d654f9e2f3b3f05195e230513cf8a5f89684f2d8ebb505e1fa925e81226de
+      added_tokens.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=added_tokens.json
+        checksum: blake3:d78107e0b3ad74bdadef1033b3905c61b950cc943805afdfcab6d65fba22a736
+      checksums.blake3:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:1a796bac89fbc9a33fba972f4e35ba0ed70f3a73b31e68617c97655cf717caff
+      config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=config.json
+        checksum: blake3:0d5eb814567938bfad762070816233ce146d3dd21c77ad3bf58b1782a3e7cea2
+      generation_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=generation_config.json
+        checksum: blake3:9e0bde26dba1fed15eecbbd92681d9f52eacad0e73636552edd2071b06c03981
+      merges.txt:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=merges.txt
+        checksum: blake3:8cdd8106aeb05792fb311e738e9b6e4ee0404cb462a5d188b5d09156da515e47
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:886c499bba279e52768bd3e2a9cd2ce255014ac25862fc53a8b82fc978e67246
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:4e501ed6d792aca7f1307b3b890ae7abaa168ab3ab91d4282bfca4d3c84e8a9a
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:a1e556c4cab843f2dc14c28a51d5a1a65f03e370b1cacd565fac732950743a2f
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:e97e5b767cdad55e83267ae52a9d9eb74e23b4f027378596d841fba3d91bbcc8
+      model.safetensors.index.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:811adea3c8273d5b33f0b80fd6d812b7be075d1fdb30189e882a6f1f98fc53bf
+      special_tokens_map.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:29d6bf19a7aeff60bf6d78f1682254f62c1f1266bb795a81c9e8c9ee3230a74a
+      tokenizer.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:729e55c908d3f55f89a3428f8a33f861869cd16f1f55e0d5c11f63fdf849489f
+      tokenizer_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:bcbdcd54db0ce2b33aef90f72b7178dcb901d2fbcc5e69f60a1b05d24172345e
+      vocab.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=vocab.json
+        checksum: blake3:9b7ef19a861f3bd71953db14e5a7f0e36587daa702cd07df3280dabb2bb5d901
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=README.md
+        checksum: blake3:8f6d654f9e2f3b3f05195e230513cf8a5f89684f2d8ebb505e1fa925e81226de
+      added_tokens.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=added_tokens.json
+        checksum: blake3:d78107e0b3ad74bdadef1033b3905c61b950cc943805afdfcab6d65fba22a736
+      checksums.blake3:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=checksums.blake3
+        checksum: blake3:1a796bac89fbc9a33fba972f4e35ba0ed70f3a73b31e68617c97655cf717caff
+      config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=config.json
+        checksum: blake3:0d5eb814567938bfad762070816233ce146d3dd21c77ad3bf58b1782a3e7cea2
+      generation_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=generation_config.json
+        checksum: blake3:9e0bde26dba1fed15eecbbd92681d9f52eacad0e73636552edd2071b06c03981
+      merges.txt:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=merges.txt
+        checksum: blake3:8cdd8106aeb05792fb311e738e9b6e4ee0404cb462a5d188b5d09156da515e47
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00001-of-00004.safetensors
+        checksum: blake3:886c499bba279e52768bd3e2a9cd2ce255014ac25862fc53a8b82fc978e67246
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00002-of-00004.safetensors
+        checksum: blake3:4e501ed6d792aca7f1307b3b890ae7abaa168ab3ab91d4282bfca4d3c84e8a9a
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00003-of-00004.safetensors
+        checksum: blake3:a1e556c4cab843f2dc14c28a51d5a1a65f03e370b1cacd565fac732950743a2f
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model-00004-of-00004.safetensors
+        checksum: blake3:e97e5b767cdad55e83267ae52a9d9eb74e23b4f027378596d841fba3d91bbcc8
+      model.safetensors.index.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:811adea3c8273d5b33f0b80fd6d812b7be075d1fdb30189e882a6f1f98fc53bf
+      special_tokens_map.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:29d6bf19a7aeff60bf6d78f1682254f62c1f1266bb795a81c9e8c9ee3230a74a
+      tokenizer.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer.json
+        checksum: blake3:729e55c908d3f55f89a3428f8a33f861869cd16f1f55e0d5c11f63fdf849489f
+      tokenizer_config.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:bcbdcd54db0ce2b33aef90f72b7178dcb901d2fbcc5e69f60a1b05d24172345e
+      vocab.json:
+        uri: ngc://nim/ibm-granite/granite-3.3-8b-instruct:hf-51dd4bc-nim-bf16?file=vocab.json
+        checksum: blake3:9b7ef19a861f3bd71953db14e5a7f0e36587daa702cd07df3280dabb2bb5d901

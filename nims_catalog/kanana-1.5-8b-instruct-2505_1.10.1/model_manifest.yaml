@@ -1,0 +1,489 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: kanana-1.5-8b-instruct-2505
+release: 1.10.1
+profiles:
+- id: 1d7b604f835f74791e6bfd843047fc00a5aef0f72954ca48ce963811fb6f3f09
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7
+- id: f95be114df33dd6613105f76fd567a071ed3bd08232888a5ba2f0545a99dbd92
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '8'
+  workspace:
+    files:
+      LICENSE:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=LICENSE
+        checksum: blake3:e0776daa2171ef0abb1b14c82cee85e1fad63c3ea346a0b8a3cb5d3f6295ce54
+      README.md:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=README.md
+        checksum: blake3:a850b46e13ad1448012e46835f9db32dafd78ed379a8f794c4c59a4346c9039a
+      assets/logo/kanana-logo.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Flogo%2Fkanana-logo.png
+        checksum: blake3:5426fc5d9a54a974a32450f6803879da66261f0100a40ac5c90dda176aeabad3
+      assets/performance/kanana-1.5-radar-8b.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar-8b.png
+        checksum: blake3:a45aadf639517c3c09624b66fd27a79a639b61349a2034dd07569fde7ba057c3
+      assets/performance/kanana-1.5-radar.png:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=assets%2Fperformance%2Fkanana-1.5-radar.png
+        checksum: blake3:0995d55beb023e407a81a008a76a3653761ea7658bc3ea042315066cee923331
+      config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=config.json
+        checksum: blake3:8afb9c30b7fb4af6641d8d862d9bd378f12924860bcd22b54a6caba79ff7a4a7
+      generation_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=generation_config.json
+        checksum: blake3:cda686a188be528d521854700f4375b94f0141eb756649b1df6d4bffba25adb4
+      model-00001-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00001-of-00004.safetensors
+        checksum: blake3:d70210f8702a8dd871a156b69d0ce23c36a64cd78b4a96a52abb6db749a6af64
+      model-00002-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00002-of-00004.safetensors
+        checksum: blake3:83ae303a28b5188c51e3747c968d00211ba7f750412c556f69fc37cff03f45d3
+      model-00003-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00003-of-00004.safetensors
+        checksum: blake3:99633f683c09398a33e66870df366572204d91eb55b2508d15da8aa1319f396b
+      model-00004-of-00004.safetensors:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model-00004-of-00004.safetensors
+        checksum: blake3:4e7387d1694b2562814d4ef5d0a4e0c6ad80bf68ddecb5c5a8d730f791cf3383
+      model.safetensors.index.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=model.safetensors.index.json
+        checksum: blake3:051a869230f3ff13935da9ef49c449890977eb8a1a5c30790d5da670842f96f6
+      special_tokens_map.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=special_tokens_map.json
+        checksum: blake3:17b7f49b095c2280d86bff9d08762c0c5e57bb172c116f66359ff036f1fcf824
+      tokenizer.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer.json
+        checksum: blake3:2595080c133c5c1ffe133e14cd7888ca408ae39448cf0caa601bb74ffed7bf46
+      tokenizer_config.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tokenizer_config.json
+        checksum: blake3:bee9edb7c6563d765c251ac5da6023cd52b647b37dd10d9e014048b560e10483
+      tool_calling_parser_plugin/functionary_v3_llama_31_tool_parser.py:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_calling_parser_plugin%2Ffunctionary_v3_llama_31_tool_parser.py
+        checksum: blake3:c008a4f1a0f5224ee0c1f26c8309012f42a3c071f34166276a28f3edf19ce97d
+      tool_use_config_v2.json:
+        uri: ngc://nim/kakaocorp/kanana-1.5-8b-instruct-2505:hf-c963a5f4f6496c749f94064a20b33028b0db9f19-nim-toolcall-plugin?file=tool_use_config_v2.json
+        checksum: blake3:f3864f670d6516fc3c8f75d7c7e67a1730e8aa270aba0dc9da3dc743cafa2ef7

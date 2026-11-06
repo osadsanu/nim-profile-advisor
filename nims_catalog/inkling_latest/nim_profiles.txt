@@ -1,0 +1,94 @@
+- id: 4a30cb634a0f720cc28572ec4592876d255762f2bfe7bf0d2dceff6890f1f5f4
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    nim_json_args: '{"attention_backend":"fa4","enable_torch_symm_mem":true,"fp4_gemm_backend":"marlin","mamba_full_memory_ratio":0.1,"mamba_radix_cache_strategy":"extra_buffer","mem_fraction_static":0.78,"moe_runner_backend":"marlin","nim_specdec":{"enable_multi_layer_eagle":true,"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":9,"speculative_num_steps":8,"speculative_use_rejection_sampling":true},"page_size":128,"quantization":"modelopt_fp4","swa_full_tokens_ratio":0.1}'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    profile: throughput
+    tp: '8'
+
+- id: 57e65daec390d667c926a59d0d45d88ae3094da11eebad65f381fcdad3fda1ef
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '279.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 8502d8a44bc24573a17d5e1b20381cc2c74669280ddb9cc3fde765cf15bbb27a
+  tags:
+    compute_capability: '10.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","enable_torch_symm_mem":true,"fp4_gemm_backend":"flashinfer_trtllm","mamba_full_memory_ratio":0.1,"mamba_radix_cache_strategy":"extra_buffer","max_running_requests":24,"mem_fraction_static":0.8,"moe_runner_backend":"flashinfer_trtllm_routed","nim_specdec":{"enable_multi_layer_eagle":true,"speculative_algorithm":"EAGLE","speculative_eagle_topk":1,"speculative_num_draft_tokens":9,"speculative_num_steps":8,"speculative_use_rejection_sampling":true},"page_size":128,"quantization":"modelopt_fp4","swa_full_tokens_ratio":0.1}'
+    nim_optimized: 'true'
+    number_of_gpus: '8'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: nvfp4
+    profile: throughput
+    tp: '8'
+
+- id: 97efe2ea847d9dbe4c7240fbfa766cd94b060fb7b3b9179bf952d9a8a3e765e6
+  tags:
+    feat_lora: 'false'
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"quantization":"modelopt_fp4","page_size":128,"moe_runner_backend":"flashinfer_trtllm_routed"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: abe667223aac8d65d80dbb2ae304516d41a3d2d3bc3d89f463fa254e100876a9
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'true'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    tp: '8'
+
+- id: b3c684611768268a07d295f30a010369b672750cdaa40d1735d7ddecc917e4ab
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"quantization":"modelopt_fp4","page_size":128,"moe_runner_backend":"flashinfer_trtllm_routed"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '8'
+
+- id: b71876219f49544d9e42967621ef19a1858458b6bcd333f6c5d55b92f0f27fba
+  tags:
+    compute_capability: '9.0'
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: sglang
+    min_vram_per_device_gb: '73.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    tp: '8'
+
+- id: ea382610a2d4e4fa80583bee8a6c5dadd00f880e2d41cc35a9acb349656b8d4f
+  tags:
+    feat_lora: 'true'
+    llm_engine: sglang
+    min_vram_per_device_gb: '279.0'
+    nim_json_args: '{"attention_backend":"fa4","fp4_gemm_backend":"marlin","mamba_radix_cache_strategy":"extra_buffer","moe_runner_backend":"marlin","quantization":"modelopt_fp4"}'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'

@@ -1,0 +1,14 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/video-super-resolution
+release: 1.0.12
+profiles:
+- id: a93ae0ac951115098f31a45858366ac39f42e67fb10b56a30db07141e1cb5287
+  tags:
+    vsr_profile: quality
+  workspace:
+    files:
+      models/vsr/video_service_vsr:
+        uri: local:///opt/nvidia/videonim/video-service/video_service_vsr
+        checksum: <<nochecksum>>
+  workspace_hash: 805b13e8d2a00c2388b9007afa200808dedc14a07fa89d8bc8ee97607007102a

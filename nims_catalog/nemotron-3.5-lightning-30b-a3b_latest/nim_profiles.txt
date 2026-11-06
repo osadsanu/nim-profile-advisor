@@ -1,0 +1,240 @@
+- id: 15766f03e594ee013d9328b909c1b4bbd432f7f7fcdb5503372b354e34d14662
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: 15a2c515deebfafbb3c18fdd24b4091708c0626894c2909109bd969b184341cd
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '14.0'
+    pp: '1'
+    precision: int4
+    tp: '4'
+
+- id: 1a25ad763f1a1099280b0b21bd6c6ebfcdb4fd27aa59d252d1bf105aec9fd4f0
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '32.0'
+    pp: '1'
+    precision: int4
+    tp: '1'
+
+- id: 1c7c7e658481b60fcb855594b0398c076d32e6447c79f08c740b2da80551ad31
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: 2b28b859b310b857ac6cf272d42a2c984995ba0266f78725f4e26f73eb8ee5ba
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: 2ef85c7286907e706eb0d6c4750a1aefa719447097d151ab34c7837fc02bdac4
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '32.0'
+    pp: '1'
+    precision: int4
+    tp: '1'
+
+- id: 53ab2d71e38822d9de3e76416f0b5a738c50642a53592cb963c3ddd0d69dbc16
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_json_args: '{"max_num_seqs": 512}'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+
+- id: 5604d174b9e629afbabd56079f61b7cbf545516baedb6a1a93e1d623d3023870
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_description: agentic, throughput, ITL<=20ms
+    nim_json_args: '{"enable_mamba_cache_stochastic_rounding":true,"enable_prefix_caching":true,"mamba_backend":"flashinfer","mamba_cache_mode":"align","mamba_cache_philox_rounds":5,"mamba_ssm_cache_dtype":"float16","max_num_batched_tokens":3072,"moe_backend":"flashinfer_cutlass","speculative_config":{"disable_eagle_block_drop":true,"method":"mtp","num_speculative_tokens":3}}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+
+- id: 5bf306dda1d1e2456f27c27ba9fb5b0c87a02716885cb751ad167e6d21718b56
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '14.0'
+    pp: '1'
+    precision: int4
+    tp: '4'
+
+- id: 6d2a23010dd0c0182b594e9a73b07a224ff4b9053c7ae9aac58a53035e31216b
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: 7080bc738c057992ab9d6effd8e2e4b82bde79184f67336fbf4f69914a17f812
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: int4
+    tp: '2'
+
+- id: 72649a172b3633f17f2f03b0c022772079d641639b2b8ed70c599ee8f1e8471a
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '35.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+
+- id: 920207996e4ec77b396e25f4e360ac80331a67dcae0fec428803f556afe1d47c
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: a0346f9034dcc748493ab698b63b267d97dae5887c31b9cfd719d34025763da5
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B300-SXM6-AC
+    gpu_device: 3182:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '30.0'
+    nim_json_args: '{"moe_backend":"flashinfer_cutedsl"}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: nvfp4
+    tp: '1'
+
+- id: a34b006cd6f1c2a9e3fdfb02fbac4a56425e56c50298fb9e190feaf6386c41b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: int4
+    tp: '2'
+
+- id: aa2e5b4037abde0c64186023f4ffcd5947d1a40654dcd7b735e66ee3fcda34bd
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_json_args: '{"max_num_seqs": 512}'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+
+- id: aeed9c5f4c7a7db6064879994008197db08f6d15db16da67cf85739f2defa939
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_description: throughput
+    nim_json_args: '{"enable_mamba_cache_stochastic_rounding":true,"mamba_backend":"flashinfer","mamba_cache_philox_rounds":5,"mamba_ssm_cache_dtype":"float16","max_num_batched_tokens":8192,"max_num_seqs":512,"speculative_config":{"disable_eagle_block_drop":true,"method":"dspark","model":"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark","num_speculative_tokens":5,"revision":"6d127b50ecd98562cea85d0087680b7d86091fb0"}}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+
+- id: b0a4b290a5f1fae166df1952aea0441a86738b8e0dce1ef5612fc619cc026a3d
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '66.0'
+    nim_description: agentic, throughput, ITL<=20ms
+    nim_json_args: '{"enable_mamba_cache_stochastic_rounding":true,"enable_prefix_caching":true,"mamba_backend":"flashinfer","mamba_cache_mode":"align","mamba_cache_philox_rounds":5,"mamba_ssm_cache_dtype":"float16","max_num_batched_tokens":16384,"moe_backend":"flashinfer_trtllm","speculative_config":{"disable_eagle_block_drop":true,"method":"dspark","model":"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark","num_speculative_tokens":5,"revision":"6d127b50ecd98562cea85d0087680b7d86091fb0"}}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: bf16
+    profile: throughput
+    tp: '1'
+
+- id: c4360e990fe29363cddc4588704948a60153060e878159bca67b247206613a5a
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: bf16
+    tp: '8'
+
+- id: c89e45d56d6089f43bf0b4b12793bea4a27627765cf0d94b73d6849623ea47c1
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+
+- id: cd20534b2bb51e6aebdc98f62d3b16fa7addf820454a1ce04b3ba53e2ad6d710
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '20.0'
+    pp: '1'
+    precision: bf16
+    tp: '4'
+
+- id: cd4a70b27e6ab06c27b7f29df4d41fa4f99215b2addef75b766254e44d41587c
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '18.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '2'
+
+- id: f55a64aafb792fd5cb325c00850e2cb10c7f1c1e9ecb0da7a45cb318dd0f1929
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: nvfp4
+    tp: '4'
+
+- id: fc3d08762c6016216855d4d7ed62a5e115c8dcfbac4307f773b513ce44115c1b
+  tags:
+    feat_lora: 'true'
+    llm_engine: vllm
+    min_vram_per_device_gb: '35.0'
+    pp: '1'
+    precision: bf16
+    tp: '2'

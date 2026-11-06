@@ -1,0 +1,680 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: wan2.2-a14b
+release: 1.0.0
+profiles:
+- id: f23c954c2ba48263b4daea9bad0bdde11ebf83b06720fe57bb49ca5fe08c49bc
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: nvfp4
+    variant: t2v
+    version: wan2.2-t2v-14b
+    nim_workspace_hash_v1: fb39646017f8e25c5f7aa466aff8f14048bab84bc987a72e2666933af6f8c8de
+  workspace:
+    files:
+      framework_model_dir/wan2.2/TXT2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=model_index.json
+        checksum: blake3:be5e4497110db21427f9f879af0d3a344fffa538f5948025cdd14d48ae52c824
+      framework_model_dir/wan2.2/TXT2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/TXT2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=transformer%2Fconfig.json
+        checksum: blake3:8a6653476a1acb71b7a615251d5efb3aec7547098023d915dd111571dd453a77
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=transformer%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:74b8a2a4815edebfcf30d81a1b0ee6e129d22187a184bf5bc0a43064abf7d75b
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=transformer_2%2Fconfig.json
+        checksum: blake3:8a6653476a1acb71b7a615251d5efb3aec7547098023d915dd111571dd453a77
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=transformer_2%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:83dc4d24852c75d3759b0d17cd16fdbd708e2ff5501cab8477685836bfa714b6
+      framework_model_dir/wan2.2/TXT2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/TXT2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-nvfp4?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+- id: 2d3d8c2dd5183c13be1b0075baca114544a574c89f29f98b642f242dab3ab528
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: fp8
+    variant: t2v
+    version: wan2.2-t2v-14b
+    nim_workspace_hash_v1: 89b2b00d9bd9044e0d4f0e79ac3708507e623a2219429fb558304e5ca255afa6
+  workspace:
+    files:
+      framework_model_dir/wan2.2/TXT2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=model_index.json
+        checksum: blake3:be5e4497110db21427f9f879af0d3a344fffa538f5948025cdd14d48ae52c824
+      framework_model_dir/wan2.2/TXT2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/TXT2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=transformer%2Fconfig.json
+        checksum: blake3:105d97cc18bd62fa5650da38c49ba3472c6b7663e386d5f9255cd46fb93c363f
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=transformer%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:8303b872ce03ba1a458f592c0d80cc2276370220ae39f6dbbcfb35c7358822bb
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=transformer_2%2Fconfig.json
+        checksum: blake3:105d97cc18bd62fa5650da38c49ba3472c6b7663e386d5f9255cd46fb93c363f
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=transformer_2%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:df05c39aec2f6c92aeb650b9ee0ef99ad0b42c123533129612f970f1613130a7
+      framework_model_dir/wan2.2/TXT2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/TXT2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-fp8?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+
+- id: 6804489a9416df56fbc1e64b16ca12c356b225349134a5e4282446da4fc024f2
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: nvfp4
+    variant: i2v
+    version: wan2.2-i2v-14b
+    nim_workspace_hash_v1: a75ff6d2206e72580e605eef23d18f1678f283f916df5a4788cf4eaa59538083
+  workspace:
+    files:
+      framework_model_dir/wan2.2/IMG2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=model_index.json
+        checksum: blake3:cc0304e1c629416e7c2d5cfcce32dd310988c103c22178ed6caf64e745b508b5
+      framework_model_dir/wan2.2/IMG2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/IMG2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=transformer%2Fconfig.json
+        checksum: blake3:311b05d35f1806b92811fb658d2714f97855aa06564017ed7f9b31340147ab2e
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=transformer%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:e5d86c5a5a7154cbf1dc266cb2b7ca9304a325c4926dc36fb2494d39f284373b
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=transformer_2%2Fconfig.json
+        checksum: blake3:311b05d35f1806b92811fb658d2714f97855aa06564017ed7f9b31340147ab2e
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=transformer_2%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:9b74d2cc7a71d79b943868d2dea06a1650a1284ca2a11415d073090a448826a9
+      framework_model_dir/wan2.2/IMG2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/IMG2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-nvfp4?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+- id: 637a9fc36fb34d1c1ea8e75f3a8620779a1c4f036dbf1489285a850894017129
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: fp8
+    variant: i2v
+    version: wan2.2-i2v-14b
+    nim_workspace_hash_v1: 8ced7dfc05c2226110f5a93f786eea444a458d0a8ed5b19c72f84bbb902e246a
+  workspace:
+    files:
+      framework_model_dir/wan2.2/IMG2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=model_index.json
+        checksum: blake3:cc0304e1c629416e7c2d5cfcce32dd310988c103c22178ed6caf64e745b508b5
+      framework_model_dir/wan2.2/IMG2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/IMG2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=transformer%2Fconfig.json
+        checksum: blake3:ae26d92d059339a567d3dae3fa8526759b3bd4821b1b47417e6411f6bf786888
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=transformer%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:a464a53ff767c630605ed10a08dd720a84aa5fdda27b8db34437f7cb435ecc06
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=transformer_2%2Fconfig.json
+        checksum: blake3:ae26d92d059339a567d3dae3fa8526759b3bd4821b1b47417e6411f6bf786888
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=transformer_2%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:27d2e0fd97c623734cf2a82c8434a29ceb3fefd7b5531e843da8174f7592a57b
+      framework_model_dir/wan2.2/IMG2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/IMG2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-fp8?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+
+- id: e38919caed06f51e1039e841a6c116b7388244b05ad62576100b38c935fb6924
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: bf16
+    variant: i2v
+    version: wan2.2-i2v-14b
+    nim_workspace_hash_v1: 8af0887e4282a43ddea85d482c0bda64e223be40fffe32e36978d76242ffb379
+  workspace:
+    files:
+      framework_model_dir/wan2.2/IMG2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=model_index.json
+        checksum: blake3:cc0304e1c629416e7c2d5cfcce32dd310988c103c22178ed6caf64e745b508b5
+      framework_model_dir/wan2.2/IMG2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/IMG2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/IMG2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/IMG2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fconfig.json
+        checksum: blake3:574d974a3a690c2a2d7d255b6104e92d168684cf4676b2eb68b0fd751df81e3a
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00001-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00001-of-00012.safetensors
+        checksum: blake3:49f128ac13cd02ba96c4f7e9f665341ceb6896fc9073b804f8b043a4b49bee64
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00002-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00002-of-00012.safetensors
+        checksum: blake3:da4d62d61cc7b291e4eafc4e925eda775c8e9bab48b8aa1f15c0fc628500f5a3
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00003-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00003-of-00012.safetensors
+        checksum: blake3:1b0815bb8e06b2a0f360f8f9b85988d932a33cf0c6aeb807f3d7792f294d661d
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00004-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00004-of-00012.safetensors
+        checksum: blake3:801e9e9bc7d7eb9a61c71f2fbb72e01c3ba36776312b2911bc04dd9b7ed80f23
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00005-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00005-of-00012.safetensors
+        checksum: blake3:5ed96352c4760f44aa391ffb93f70a4227931bd0dc443b21073c7fed9686f3ab
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00006-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00006-of-00012.safetensors
+        checksum: blake3:d1bd03c1405dfc3bc203e5820dc36ffdac77059f32a59a2ca35a83a4dfd99925
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00007-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00007-of-00012.safetensors
+        checksum: blake3:f97d8c38ff56cd12bf0307067b2f7713a61d44be7838c97a24c325616fb31586
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00008-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00008-of-00012.safetensors
+        checksum: blake3:68469f5380ff47f4ba60f14b845cd4bbb1d828bd17700c4960e7c460c2e309fb
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00009-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00009-of-00012.safetensors
+        checksum: blake3:f423916f2d04de1d5ebb83347b931dfad68a6e6982c8b0b9d6ae5d2d6c3b4c9c
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00010-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00010-of-00012.safetensors
+        checksum: blake3:6c1d628440a6d789aec949f3aa736db9fc67db5414591a2165fd46b139da981c
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00011-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00011-of-00012.safetensors
+        checksum: blake3:82e887dc1a25a20972b3012cb3a8f8a3f3ae5fc9cc46a523a26698c09caf364d
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model-00012-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00012-of-00012.safetensors
+        checksum: blake3:055312aa2aa3dfd0aa5f19cf87d423d574d5d74d4ee463206e1281c3abb76685
+      framework_model_dir/wan2.2/IMG2VID/transformer/diffusion_pytorch_model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer%2Fdiffusion_pytorch_model.safetensors.index.json
+        checksum: blake3:45d2854ea2b0ce0197401ea44b1d345b87b51c14f09bcaa728b90d48bb0a7fe8
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fconfig.json
+        checksum: blake3:574d974a3a690c2a2d7d255b6104e92d168684cf4676b2eb68b0fd751df81e3a
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00001-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00001-of-00012.safetensors
+        checksum: blake3:a4da0638d6c3c402772c0a5e3ef25f8ea5fb55e52cce06e4ccbed8950fcd8df9
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00002-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00002-of-00012.safetensors
+        checksum: blake3:5763b3b5363eb17e4bc30cafe4836e78abe5a7a961896f54de5739c77d75c45c
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00003-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00003-of-00012.safetensors
+        checksum: blake3:3bc23693bec18a25be04036ae10ffaec250e409c9bfba5351429a1a0acc0f51e
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00004-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00004-of-00012.safetensors
+        checksum: blake3:bc40bb2ae279ea47aa522b2314dbf9c68750cf287012aab430c105d5d58484e0
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00005-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00005-of-00012.safetensors
+        checksum: blake3:169b2bea3eb75501ab4bddb1f1ad2ebaed9deeddcf833ef4db20f04fd97b69b3
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00006-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00006-of-00012.safetensors
+        checksum: blake3:b5c384bb3726d57716273d8df5246a526310367fa0ed9ae69c22e42051c2bc44
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00007-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00007-of-00012.safetensors
+        checksum: blake3:9f8cb680858fc88fa72400ce266a8e3448e53bc5db98292d8b6d4abb54e8507a
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00008-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00008-of-00012.safetensors
+        checksum: blake3:13db61f6b8048367bdf6892974679bc1172bef8c736c2ba6436da05c3644d135
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00009-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00009-of-00012.safetensors
+        checksum: blake3:3fa1a492f396358a339b70fbbb2f90417cce87e01e4ddafead9ce64f9a4fb469
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00010-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00010-of-00012.safetensors
+        checksum: blake3:bff0483c30d3dc3affb38d9ab9bc49fdb84b8ee1243c3ed0e939d38d6f7626e9
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00011-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00011-of-00012.safetensors
+        checksum: blake3:6a69901257a14269344fad13a9dd86b9ec21e071474b4e657d007cd392ae6f7a
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model-00012-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00012-of-00012.safetensors
+        checksum: blake3:9b165b375ce892b31eb5e096ef7e478fbd44a79a42951eaac7758682bc3705bb
+      framework_model_dir/wan2.2/IMG2VID/transformer_2/diffusion_pytorch_model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model.safetensors.index.json
+        checksum: blake3:45d2854ea2b0ce0197401ea44b1d345b87b51c14f09bcaa728b90d48bb0a7fe8
+      framework_model_dir/wan2.2/IMG2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/IMG2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-i2v-bf16?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+
+- id: 83310ae8f14819f6e09119801b1702fbaa0cc5ffd7bfc6ca1dde9cdbb81bca2f
+  tags:
+    gpu: generic
+    hf_token_required: 'false'
+    precision: bf16
+    variant: t2v
+    version: wan2.2-t2v-14b
+    nim_workspace_hash_v1: 177e6ce86c6686346bd3b1a27526c92707c4ef5f4e04ef3eccca398fd5c6b6cf
+  workspace:
+    files:
+      framework_model_dir/wan2.2/TXT2VID/model_index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=model_index.json
+        checksum: blake3:be5e4497110db21427f9f879af0d3a344fffa538f5948025cdd14d48ae52c824
+      framework_model_dir/wan2.2/TXT2VID/scheduler/scheduler_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=scheduler%2Fscheduler_config.json
+        checksum: blake3:6f3bcc728d17c8f472ffe370c4605e3d7e9e920f1e9345859017c4b4dfe20426
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=text_encoder%2Fconfig.json
+        checksum: blake3:6af85b436a0f7491adb9503c579bcd199d6ec598e16cf7701b018102509aaa3e
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00001-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=text_encoder%2Fmodel-00001-of-00003.safetensors
+        checksum: blake3:eb9935d488cd07c826c8710917e9499faf8b55ee0808125609f1abd985f9c5b7
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00002-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=text_encoder%2Fmodel-00002-of-00003.safetensors
+        checksum: blake3:90dfe91dae1834f0a139723a5e4a7cbef70900837790b133173a51807dc7de26
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model-00003-of-00003.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=text_encoder%2Fmodel-00003-of-00003.safetensors
+        checksum: blake3:f57542d1ce8c8ab336104a7738ce4b27d2deeef8a1235de861e532ee31a36faa
+      framework_model_dir/wan2.2/TXT2VID/text_encoder/model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=text_encoder%2Fmodel.safetensors.index.json
+        checksum: blake3:6d5b8f190836a746492387fcaea59abba4b368b1fb66f3fd7af7866787e2ff99
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/special_tokens_map.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=tokenizer%2Fspecial_tokens_map.json
+        checksum: blake3:c606afce92e49a08204b04922f738b591b109ef7ed600d9314c2ddb0d24c0b6a
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/spiece.model:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=tokenizer%2Fspiece.model
+        checksum: blake3:efb932571a1db5fe564bb0f9034cfe3a7317aab76b99aa41292791b0141e7238
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=tokenizer%2Ftokenizer.json
+        checksum: blake3:95bf3baadefb20a1f19a96ce011de3ab67b3bb7b97e91ec96bc45a6af02c62e0
+      framework_model_dir/wan2.2/TXT2VID/tokenizer/tokenizer_config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=tokenizer%2Ftokenizer_config.json
+        checksum: blake3:63ad1addf7127cf106efb545ac57f9849768898fb650f8be7ec54b6aeb7cfcff
+      framework_model_dir/wan2.2/TXT2VID/transformer/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fconfig.json
+        checksum: blake3:f35c01fb2a20bd0915df28a74d31a46ddf76082accf75dc653451f968da480b4
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00001-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00001-of-00012.safetensors
+        checksum: blake3:a4ca82cd2d97ad0edde2cf3de464a70bd1504937a143bcc2ce42d97babcd3d79
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00002-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00002-of-00012.safetensors
+        checksum: blake3:dc3f98ac090877eb3716a8183e0c97da89c84be3fd619178de0e181f49a01eb2
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00003-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00003-of-00012.safetensors
+        checksum: blake3:460f9dce30cf70144110a806f3f1aa2cfa752ee060452cf8b0eec056b296d983
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00004-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00004-of-00012.safetensors
+        checksum: blake3:53d3e9f65b5c196ce3c9f2116f28342719e18bec6a5a33216920d44ab498f9bf
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00005-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00005-of-00012.safetensors
+        checksum: blake3:dd77ae1e9100a29e46bed65b4c1e9a46849c2565fc14c1330c71d9c348fd44aa
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00006-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00006-of-00012.safetensors
+        checksum: blake3:6ae04db443fb6d38b197402682c557826c563f3e9bedc4bff5497f12ef1d9508
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00007-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00007-of-00012.safetensors
+        checksum: blake3:dba289bb84218eee9ec05a8c2afe003187fb4d8eaf9e46d61d12bcd81e6862e4
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00008-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00008-of-00012.safetensors
+        checksum: blake3:cf289a36fc4fe917ff8329369f2193ea68d2549554f9a4b3e6222d09819cbb35
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00009-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00009-of-00012.safetensors
+        checksum: blake3:431285b853a9da8676082fc2640e57b9171a540e2e13eec7ecfe3bcfc778007d
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00010-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00010-of-00012.safetensors
+        checksum: blake3:cf370de43f70ba14d31c7a6292aa599a39d53a3c4c845043bfd5a7c0579d2c2a
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00011-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00011-of-00012.safetensors
+        checksum: blake3:65e83237d7b63eb6a262fd2d1fe179aaf63a103b2175efcb4bae9823f6fb360d
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model-00012-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model-00012-of-00012.safetensors
+        checksum: blake3:e01fca507efea4ed4ba9c504112a44fc131169e8be217bd3ae8f822eacae356f
+      framework_model_dir/wan2.2/TXT2VID/transformer/diffusion_pytorch_model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer%2Fdiffusion_pytorch_model.safetensors.index.json
+        checksum: blake3:7714b5c3e53c08ffb2393a4ba0a5894e81cf1d915329388e8ef8ab9ea569dccf
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fconfig.json
+        checksum: blake3:f35c01fb2a20bd0915df28a74d31a46ddf76082accf75dc653451f968da480b4
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00001-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00001-of-00012.safetensors
+        checksum: blake3:e03419f5dd19e7f532352079e3741965e4b0e39439cb3677da8ef6bf240db826
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00002-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00002-of-00012.safetensors
+        checksum: blake3:6b9fc9536e3a1f0fd176f23472310755499ce79b93cb8522fa9e51cd2c6cb0f0
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00003-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00003-of-00012.safetensors
+        checksum: blake3:3781a86f7eaa474e1d7a74fec0d530143f193ae29bbaa6289f4c4550ffbc788c
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00004-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00004-of-00012.safetensors
+        checksum: blake3:f9e0806b7d5b6f1cac4d59527713ef0da9bedc8bd115602c2177cd08a66f9e4f
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00005-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00005-of-00012.safetensors
+        checksum: blake3:7f77a215205fefbca96c6a4089f83374138528293f5b99f834ac6a50a551920f
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00006-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00006-of-00012.safetensors
+        checksum: blake3:291efb3295106f3dcb30fc0fcbd6c564073552248194bf794f39de34d589ede6
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00007-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00007-of-00012.safetensors
+        checksum: blake3:a7e1631816f792c65234c36301c3f5f074ec51079c2d6fb28b984ea0b69c8114
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00008-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00008-of-00012.safetensors
+        checksum: blake3:d5d7b2670720778cd616ca935eec56279755a83db514079b779832954006f9ca
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00009-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00009-of-00012.safetensors
+        checksum: blake3:3420687fd6296dbef686670f506f77e220cc4762f6beae2f1eb133ae196699f1
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00010-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00010-of-00012.safetensors
+        checksum: blake3:3351ef762493009030f2d1dbe248072127a3ad51aaf63a48c0aa8804b457b10a
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00011-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00011-of-00012.safetensors
+        checksum: blake3:2aca2470819e3655ce8d8014dab05a38957382ae8735fd46472af506a1fd023d
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model-00012-of-00012.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model-00012-of-00012.safetensors
+        checksum: blake3:d1e374db722eb550cffd42ecdaf78c3e60b327f87514bff2920c780110c20e97
+      framework_model_dir/wan2.2/TXT2VID/transformer_2/diffusion_pytorch_model.safetensors.index.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=transformer_2%2Fdiffusion_pytorch_model.safetensors.index.json
+        checksum: blake3:7714b5c3e53c08ffb2393a4ba0a5894e81cf1d915329388e8ef8ab9ea569dccf
+      framework_model_dir/wan2.2/TXT2VID/vae/config.json:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=vae%2Fconfig.json
+        checksum: blake3:bf1e19b05b02da08a1e067388fb4ab7006ad2b37596326138174c865f71cfb1f
+      framework_model_dir/wan2.2/TXT2VID/vae/diffusion_pytorch_model.safetensors:
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-t2v-bf16?file=vae%2Fdiffusion_pytorch_model.safetensors
+        checksum: blake3:369796e7bf3def42b053131529210ebd3455c7cdbd0609821c637ae07e02745a
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/wan-ai/wan2.2-a14b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json

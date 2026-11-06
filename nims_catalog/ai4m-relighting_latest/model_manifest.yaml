@@ -1,0 +1,73 @@
+schema_version: "2.0"
+profile_selection_criteria: auto
+model: nim/nvidia/ai4m-relighting
+release: 1.1.0
+profiles:
+  - id: 00eba71f1b818164eb4849937de044821184bd7d86e806ba6bebd634259990e6
+    tags:
+      gpu: T4
+      gpu_cc: "7.5"
+      nim_workspace_hash_v1: 5b2b7cf282adc40e71cae63420a2b5d1ab28d8c81faf55ad2f01abe80f35a130
+      precision: fp16
+    workspace:
+      files:
+        config/models/ai4m-relighting/AIGS_288x512_75_m2.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm75?file=AIGS_288x512_75_m2.engine.trtpkg
+          checksum: blake3:66ae2245f6f93e9aacc9d91ef17b5160b6df67cfdf71f4bb47c7f844be845704
+        config/models/ai4m-relighting/relight_0thframe_perf_75.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm75?file=relight_0thframe_perf_75.engine.trtpkg
+          checksum: blake3:877e73566eb4e888af60dc5a11b1f6a28aa3f5c82bcac4c60e192fc8ecb7c21e
+        config/models/ai4m-relighting/relight_nthframe_perf_75.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm75?file=relight_nthframe_perf_75.engine.trtpkg
+          checksum: blake3:8d399d974fa830e9fb91a9a85bd843d5bfea570a63349701ff5dd2f45efb7984
+  - id: 836049b226b20a087b007fbeb6fd7dd4b9e649a2e344cf9632da98e4833ad786
+    tags:
+      gpu: GA102, GA104, RTX3070, RTX3080, A40, A10
+      gpu_cc: "8.6"
+      nim_workspace_hash_v1: 873dd653e7886d727fef3919ef5a369aa8870221d43eb469f184cb7586a6bb55
+      precision: fp16
+    workspace:
+      files:
+        config/models/ai4m-relighting/AIGS_288x512_86_m2.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm86?file=AIGS_288x512_86_m2.engine.trtpkg
+          checksum: blake3:e723f780391d9cc8ddb59f79d8161e40eb44f8dc98d255c717c1969b31d95e92
+        config/models/ai4m-relighting/relight_0thframe_perf_86.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm86?file=relight_0thframe_perf_86.engine.trtpkg
+          checksum: blake3:8e59e1cbfc13c16ebbf3202c5042d0ebcca27e1b86df0017119a5ebc56e5d626
+        config/models/ai4m-relighting/relight_nthframe_perf_86.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm86?file=relight_nthframe_perf_86.engine.trtpkg
+          checksum: blake3:406481f65dd2a77dc3bbedd25ea784bf0fb2ee0c43ef8c56bac012b18dff176f
+  - id: 9697136675f0a8998e3b2c5370aba86fc484c05ba64fcb5c068adf72d3282edb
+    tags:
+      gpu: B40, GB20, RTX5090, RTX5080
+      gpu_cc: "12.0"
+      nim_workspace_hash_v1: 604c465abe85bc263f25f8bcd426ec898a624ac60310947648f3a0c3df14e223
+      precision: fp16
+    workspace:
+      files:
+        config/models/ai4m-relighting/AIGS_288x512_120_m2.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm120?file=AIGS_288x512_120_m2.engine.trtpkg
+          checksum: blake3:ce4df95992496f3d99a3697ad729228e8007ceb540f00cfbabd8c1d052644b6a
+        config/models/ai4m-relighting/relight_0thframe_perf_120.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm120?file=relight_0thframe_perf_120.engine.trtpkg
+          checksum: blake3:fdb8336f195bee82f4e79a03215a9e71f1fc1d438ee49b9a48d92edc9ad6ebdf
+        config/models/ai4m-relighting/relight_nthframe_perf_120.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm120?file=relight_nthframe_perf_120.engine.trtpkg
+          checksum: blake3:5bc6366b05dab883116970b0dc3b8e4c77ff971769096b4560464b3a937db0ab
+  - id: eb4d86fede4a539a0b1170645e7cddcab1efec9b6ac7dd6091fc73ca4d2a832d
+    tags:
+      gpu: L4, L40, RTX4090
+      gpu_cc: "8.9"
+      nim_workspace_hash_v1: 44ff7d328b9bbb1e739f0ce0fe8a287d61a208e0438b6d787bdf7c523b6ad27d
+      precision: fp16
+    workspace:
+      files:
+        config/models/ai4m-relighting/AIGS_288x512_89_m2.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm89?file=AIGS_288x512_89_m2.engine.trtpkg
+          checksum: blake3:9e66e38b5e1f918b6be43755b66e19cf13967faa954fb43e42e529f985a2762a
+        config/models/ai4m-relighting/relight_0thframe_perf_89.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm89?file=relight_0thframe_perf_89.engine.trtpkg
+          checksum: blake3:ad1588a0e8458a5f8fada28f898f20252b27d5a53fa6da8be6d8de55734669bf
+        config/models/ai4m-relighting/relight_nthframe_perf_89.engine.trtpkg:
+          uri: ngc://nim/nvidia/ai4m-relighting:1.1.0_models_linux_sm89?file=relight_nthframe_perf_89.engine.trtpkg
+          checksum: blake3:2b36c10168f7c46892200355a50157ad7fc27ad194315692cf91ce6887a84214

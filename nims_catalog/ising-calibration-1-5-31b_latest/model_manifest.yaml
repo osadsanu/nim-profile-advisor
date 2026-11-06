@@ -1,0 +1,156 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/NVIDIA-Ising-Calibration-1.5-31B
+release: 1.5.0
+profiles:
+- id: 39f242bdca130ed249f8008f64b2c51fb6ae803c0c8b6fb6bea28ecbdce01037
+  tags:
+    custom: 'true'
+    feat_lora: 'false'
+    kv_cache_dtype: fp8_e4m3
+    llm_engine: vllm
+    max_model_len: '32768'
+    model_name: vllm-nvfp4-tp1-pp1-32768-b90c83986aa5838f841fe513303fa869c6d640bf53efb3563a999ee703ac12f7
+    pp: '1'
+    precision: fp4
+    quantization: modelopt_fp4
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=LICENSE
+        checksum: blake3:81d6be07df4ddff849734fe0e8704f88ba280a7902ef2ba31b36f715bb0c1bb4
+      NOTICE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=NOTICE
+        checksum: blake3:a683f8cbbbdcc7a07237bd50d0758eb68c2609f092f6cc71fd0d445c0e1d46d2
+      README.md:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=README.md
+        checksum: blake3:4da661831ccc7e4bdc4d662c4e96edfb3ace19a264963329c2cb288a3e78f316
+      chat_template.jinja:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=chat_template.jinja
+        checksum: blake3:68c43decc2e80586585a0cf0ec801cccbad1358cffcc712bc007eb59163ab639
+      config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=config.json
+        checksum: blake3:27df07273e4af18c7d3ce047e5a22158d26c1918fd41886937351087d4f2a724
+      generation_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=generation_config.json
+        checksum: blake3:effa471b9de66deaa5e0dfa872989b02ac887f7a20920131cc4572586bdc6a3d
+      hf_quant_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=hf_quant_config.json
+        checksum: blake3:ad7c32471848d40af5ff122b8522a91a02a9aa478fa1f1dccab73961228c1f92
+      model-00001-of-00003.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=model-00001-of-00003.safetensors
+        checksum: blake3:c4b58c4ac698bc2db726a0bc5c9da0001c08e3c7b48fb8f15560567bfa5347db
+      model-00002-of-00003.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=model-00002-of-00003.safetensors
+        checksum: blake3:7772d514c33a1c8641e9377db7c1a1f0070294141645b00f0baaaa37eee79c49
+      model-00003-of-00003.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=model-00003-of-00003.safetensors
+        checksum: blake3:3ce35c468ce293153042ed19b75eb4a812f5d4f7fa4776bba94897beb78c9aa4
+      model.safetensors.index.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=model.safetensors.index.json
+        checksum: blake3:e32a7137901ff5d2607216adad70137c00b92c850f6f3d0b1b7c7df8388ce01c
+      processor_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=tokenizer.json
+        checksum: blake3:535ae7cda8e47644d9c92dbd1f0f30f2c870dc210fe8da548862e84f5bf36d9d
+      tokenizer_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-NVFP4:52e7342d7443025198dc52e5ce89d75da4b693b8?file=tokenizer_config.json
+        checksum: blake3:f04dd4f1c31a53b34d519273663ae51a8b4910442c613f7f5d6ae5cbccd3107b
+  workspace_hash: b90c83986aa5838f841fe513303fa869c6d640bf53efb3563a999ee703ac12f7
+- id: 750ef06839b10ad5cca06a0d0fe8f42ab0545bdb0fe91ce75a5c7eda033cfbe3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    max_model_len: '32768'
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      LICENSE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=LICENSE
+        checksum: blake3:81d6be07df4ddff849734fe0e8704f88ba280a7902ef2ba31b36f715bb0c1bb4
+      NOTICE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=NOTICE
+        checksum: blake3:07490f029d5e6924fbaa8950ed72964c681ad9eaad54d800f8aa61ffed052d4b
+      README.md:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=README.md
+        checksum: blake3:fd61120eb2d3978c188c8c458d73f3fbeb649418f8359b2fa4d1aad49184bd3d
+      chat_template.jinja:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=chat_template.jinja
+        checksum: blake3:68c43decc2e80586585a0cf0ec801cccbad1358cffcc712bc007eb59163ab639
+      config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=config.json
+        checksum: blake3:f6b19f1cfcdb85b3b2d289d5edf9ccff7326b722104d6794923ea9924364403a
+      generation_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=generation_config.json
+        checksum: blake3:effa471b9de66deaa5e0dfa872989b02ac887f7a20920131cc4572586bdc6a3d
+      model-00001-of-00002.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model-00001-of-00002.safetensors
+        checksum: blake3:c9f60be006773728d4e556ae995cc26199ed473239e1b573e1fd3c57b5db4e37
+      model-00002-of-00002.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model-00002-of-00002.safetensors
+        checksum: blake3:f87ae948bd835a8b09f5a635da5205dc0cc7ea1dc920834056ef90ddd7902834
+      model.safetensors.index.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model.safetensors.index.json
+        checksum: blake3:a3a15c1038c07f0fdd4dbcaf34708e57f8042987978919c58a6e1e111dfd3835
+      processor_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=tokenizer.json
+        checksum: blake3:535ae7cda8e47644d9c92dbd1f0f30f2c870dc210fe8da548862e84f5bf36d9d
+      tokenizer_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=tokenizer_config.json
+        checksum: blake3:f04dd4f1c31a53b34d519273663ae51a8b4910442c613f7f5d6ae5cbccd3107b
+  workspace_hash: 5a0896ac151353ce4933357e2232d59ce163a3a0f88889ed9ffd8ba82811d721
+- id: 88229f140bcb88aac6eba94dee416c320301ff96c880202a7d78f19644355a90
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    max_model_len: '32768'
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      LICENSE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=LICENSE
+        checksum: blake3:81d6be07df4ddff849734fe0e8704f88ba280a7902ef2ba31b36f715bb0c1bb4
+      NOTICE:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=NOTICE
+        checksum: blake3:07490f029d5e6924fbaa8950ed72964c681ad9eaad54d800f8aa61ffed052d4b
+      README.md:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=README.md
+        checksum: blake3:fd61120eb2d3978c188c8c458d73f3fbeb649418f8359b2fa4d1aad49184bd3d
+      chat_template.jinja:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=chat_template.jinja
+        checksum: blake3:68c43decc2e80586585a0cf0ec801cccbad1358cffcc712bc007eb59163ab639
+      config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=config.json
+        checksum: blake3:f6b19f1cfcdb85b3b2d289d5edf9ccff7326b722104d6794923ea9924364403a
+      generation_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=generation_config.json
+        checksum: blake3:effa471b9de66deaa5e0dfa872989b02ac887f7a20920131cc4572586bdc6a3d
+      model-00001-of-00002.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model-00001-of-00002.safetensors
+        checksum: blake3:c9f60be006773728d4e556ae995cc26199ed473239e1b573e1fd3c57b5db4e37
+      model-00002-of-00002.safetensors:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model-00002-of-00002.safetensors
+        checksum: blake3:f87ae948bd835a8b09f5a635da5205dc0cc7ea1dc920834056ef90ddd7902834
+      model.safetensors.index.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=model.safetensors.index.json
+        checksum: blake3:a3a15c1038c07f0fdd4dbcaf34708e57f8042987978919c58a6e1e111dfd3835
+      processor_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=processor_config.json
+        checksum: blake3:2677e09583638c5e40114adb7a9184ede18cdf8409716a0c37426058758ee545
+      tokenizer.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=tokenizer.json
+        checksum: blake3:535ae7cda8e47644d9c92dbd1f0f30f2c870dc210fe8da548862e84f5bf36d9d
+      tokenizer_config.json:
+        uri: hf://nvidia/Ising-Calibration-1.5-31B-BF16:a9909df453587b9296c59aa2c967652b4d4296db?file=tokenizer_config.json
+        checksum: blake3:f04dd4f1c31a53b34d519273663ae51a8b4910442c613f7f5d6ae5cbccd3107b
+  workspace_hash: 5a0896ac151353ce4933357e2232d59ce163a3a0f88889ed9ffd8ba82811d721

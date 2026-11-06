@@ -1,0 +1,341 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/maxine-bnr
+release: 2.1.0
+profiles:
+- id: 066f24f0284cc7365c0ba7b9f79fdd55db1551bf87d3d2266852e7c8f586f6a0
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_89/denoiser_v2_48k_4480.trtpkg
+        checksum: blake3:8470219c1e93bd27afb96a23551284b6680856874fa2a5e9eaeb6caf3c07b15d
+  workspace_hash: e6467ae8212f9b103e5075f4def6d8457b12e2cc3663360213e0135e57db412d
+- id: 07a0fe82aaa5e16b9220ad92e6142a61478bd3d7e510f777d5a65a7578797407
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_75/denoiser_16k_1280.trtpkg
+        checksum: blake3:0c5848551e85974e198c1ca3e4e4fc957b90541e9aae4de1585f7bf7dab2a971
+  workspace_hash: bb5d9d65369aac17c4db78771ea47c6ce70379b29dab15b616989f7530ad3879
+- id: 16cfa5f667a1b26205a0b27eec99acf9efb934940f123636fad16ba4f37b4dce
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_120/denoiser_v2_48k_4096.trtpkg
+        checksum: blake3:bfac5ae66e6a67167320fe37dae08ada9c964bc5031cdd66191e840890177b34
+  workspace_hash: 761168b7886488d04629c5233b59fa84e286300d49efdb5a3b140ed2301cbc48
+- id: 1945e8736c9062d00a126b55bad94879afc4a047c919c5457dd759c8ce59c6f4
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_90/denoiser_v2_16k_10240.trtpkg
+        checksum: blake3:697d28c3834ffcb53a875ae9497f9877e1351c9afde05d43be341204e3d14272
+  workspace_hash: c1c22b0de7e2f6d0acfaa722a696995e8462aeae188874f988bac4735ba3f79f
+- id: 1ae35f22c550a4f452c1def19123d02f0bbc71e277b940fd667d60b3a09ff54d
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_75/denoiser_v2_48k_388.trtpkg
+        checksum: blake3:b38c6ea23126ad3f91fa803fd70c8647c1e6355b0030ac209d7e94b126713c8d
+  workspace_hash: 475efa1fb9bf7ea1eed4c4db1bcaa84a443834b344ccc5a5eb0be501576e1631
+- id: 1f898f1e25cbe79587523cf418e91667fc4ecf6a96edd0dcad0f806ad93b47c9
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_120/denoiser_48k_10752.trtpkg
+        checksum: blake3:7dd0681bb92782d26e87c1fb58653e6a20f4aea3f19131e5a9307fe9d1014855
+  workspace_hash: 54e17b6d8423713462dd56202f2e05d428feb143f1f38948e9870970ca3eb7a7
+- id: 24e593f54b80cd0a75169902a16b4ee4968fc7ba7d2824a4e8916bfa319ab3a2
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_80/denoiser_16k_6144.trtpkg
+        checksum: blake3:77d82118cc8c538eac0faa96a6bf3e8aee585327f4502c8981e6774fb5faf247
+  workspace_hash: 148097650e3d2ec6e7aa3cbfcedc1c51f09f88b79b17aacd645243a5a5e9da0c
+- id: 3579c98ee0ff61a39b40bb95ae59d823ee6dd3448f41c23db6161ed21b32fcb3
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_120/denoiser_v2_16k_10752.trtpkg
+        checksum: blake3:7c1369d6433c07dfdb2b0c20fda91780b20aab2df2e32f58300c19f11837133d
+  workspace_hash: 94f670501664c3197d54c7b7e11a95c3f380e281751910c52a298ad19e636a7f
+- id: 37ac562ad8358e5c6eb7cc3e506dfd8245d5e4c3a7f3ebf05577f68b29546f2e
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_100/denoiser_v2_48k_4096.trtpkg
+        checksum: blake3:93b8cd5e7a2dd604646581f7af24d2b067257413f4ba627e928647280ac5195c
+  workspace_hash: 8a80372fb4266207107c6cfde049aaa3ade30a85882cddcf6ae4870aa739735c
+- id: 4ea1d2843dd51da5ec1c88459563c93b4224c23f0df345a183746676997b1358
+  tags:
+    backend: trt
+    compute_capability: '12.0'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm120.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_120/denoiser_16k_10752.trtpkg
+        checksum: blake3:78d8a331e9c7b7f61da37000e214baa65155cc988e875d219c65bb54adcd9fef
+  workspace_hash: de668c5cf3f221b5c132d4ceb7261f1b7fab2f90033aff1f90d9dcfff0fbd5db
+- id: 789f6924a23dd2088d61ec7622a2c775ecb73d69dbb6cebc611dc09250e517bc
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_75/denoiser_v2_16k_896.trtpkg
+        checksum: blake3:4de622575e7de1068695f84b8e9e7906bed09f022a85d58a9591a0e473ed9159
+  workspace_hash: bec21601691a49fdf5743513034fd6a7af79299ab5f9412ab2b2da65386a99ce
+- id: 7d8a103bda84bee27cb4f4e49b3d4c42b12a33cebd261bddfd5092bfba465fcf
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_86/denoiser_v2_16k_3072.trtpkg
+        checksum: blake3:5ca391a65b8605ff3c0a24e4e59ee1334ba0cfd6f31e0abd2ccf4163f74c1f90
+  workspace_hash: 3aa995495adeb9f4bf19be6f97b514eea94a7dde12393b85431fc52b64f05e5f
+- id: 7ec150358095335085b74ed7fdc8a1a2a39ad8120762c8cf502dbde5558b444b
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_89/denoiser_v2_16k_7680.trtpkg
+        checksum: blake3:af3c73cecc8537272243ded39aa1b15b15fdd4dbff3a7e046f8d02490e9c1af1
+  workspace_hash: bd3a4643c64e5f658f3bbeb7d6bb2ee1edf76d5d4f9c2357495a980c3d5e3dbd
+- id: 832f68ee3eda3b71c92e6632709d5db902188023c24e7ac06037a91dcd225c6a
+  tags:
+    backend: trt
+    compute_capability: '7.5'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_75/denoiser_48k_1280.trtpkg
+        checksum: blake3:6a492efba1df515b74cd04fc963dd988d7d70e2954c0622119ab24747c81a50c
+  workspace_hash: fd25a95381b83b9feaed40d2785a8181bb3edbf7543b3dbbcf708225ea0f81a2
+- id: ab0fda49c6cb80dcbbdd2df80e8cfa11ba75a19658696c39512cf41fd1a3aee5
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_100/denoiser_48k_10240.trtpkg
+        checksum: blake3:70cef7eaf84619b3260a9306d3635086050ba87470a1aec813baff3230edb205
+  workspace_hash: b8437929fd72b5a294c0fb5e7721eb91e16063f1d49c50e11565b0bfa1062af2
+- id: bf6dd772cece52cdd146eff27e19977a7b9163708e6da3eac76a27e3ab8924ab
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_100/denoiser_v2_16k_10752.trtpkg
+        checksum: blake3:280a38c32c99e8c238b95a8d1e1e51a725398e60ec48cb79d7966f1a3124bcf3
+  workspace_hash: d0e48c54179b0ce8765e6235c7c907ac5436cce18d0272802567eff39b0d90eb
+- id: bf8778d19f2ca7bb17c1c1fca2ea68c5f494c1df949f38fc99399e56f76409f5
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_90/denoiser_48k_7680.trtpkg
+        checksum: blake3:adc79adab698390948e39a7b80602c308f122e614048085e2462079cf488394e
+  workspace_hash: 3bbf838718137dfbf851f2880496c6eb30eeca01eea9b9247c7ba9451429403e
+- id: c0bbdbe139b1be8fea10c87c4885c853cd9e3726b81d89fc2fb8d0ca1c0907c5
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_80/denoiser_48k_6144.trtpkg
+        checksum: blake3:f0d3bfdb4ad40b873dc845b782f1334620d62ad6b7ace102b2586c35e9e17156
+  workspace_hash: 0189e8ecc88fafad20699ad6f7b20b05dea56cfbd54fda5c0d7f0a629f464c57
+- id: d59ce8fb37763d8a6b7213753299805ca631d957951606217d890e6397d45c32
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_86/denoiser_16k_3072.trtpkg
+        checksum: blake3:1c24351c4af7c8a483c0caf905dad63cd3ca72ed2c0aefb0ded7d05d32068100
+  workspace_hash: 89acbfff49d0010ce2b5081f5a9842b216154ed78671ac0c30ba7822c7292a06
+- id: dc6a67eba47230f747361612e2e7ae9532beeb94876abfd610597c2607d79b7d
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    sample-rate: 16k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_16k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_80/denoiser_v2_16k_6144.trtpkg
+        checksum: blake3:22d1d90dd0366f6ffb397f86852deed4609564ddc536568c88736e0445dce0e6
+  workspace_hash: 3ffba4f95f447af85191ad74709d3867d0d7eb303cb15f22147481ad32a6035d
+- id: ddda14ac04e39524a1951050b5dc0e88cc0b6db7a6e7421df0cc3ece26e9a806
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_89/denoiser_48k_6656.trtpkg
+        checksum: blake3:11b8629330e75834d86275ebc595b88d0113cec3aec756fe59a5d19aa8c7fea2
+  workspace_hash: 0b4fc33902d83719e9cf861bfd481128881a03e8734a5605e7f8c50d815c92dc
+- id: e1d6a19e7c422838966e2e03b48056da89f5ce84a2c8a37911544ee350c2ed9a
+  tags:
+    backend: trt
+    compute_capability: '8.0'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_80/denoiser_v2_48k_2560.trtpkg
+        checksum: blake3:50c29b9dfff31f48f029bdcd465cb4010ed367b7ee85f76a9e3952034b988a66
+  workspace_hash: afb1b14b1fde23bf61ad201e7d248b3a6a6ad2073cfb1bd29c2ce2cafe6aaca7
+- id: e396d515016235f5c402d49591d695d1901bba1451c15dbdf69001b0445f3524
+  tags:
+    backend: trt
+    compute_capability: '10.0'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_100/denoiser_16k_10240.trtpkg
+        checksum: blake3:d0b1a72967240f57953c85427fb912154d65647575d6afb9c8e9dc43faf6a3c9
+  workspace_hash: 6fe161c30804d12d0576879dc1159aeab9951e54469870ddeaf950a3fad343fd
+- id: e44f48a47fb1794268e694598e3c8cf9d6c33d9c95b7768251728d496d5a3139
+  tags:
+    backend: trt
+    compute_capability: '8.9'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_89/denoiser_16k_6656.trtpkg
+        checksum: blake3:63a1a61a27f73f11f6c6548239190d0edfbe0c0cd2d44894a041a3b4341c8381
+  workspace_hash: d7d9c87133a8bc77cf13de39200eaaa41fe73bd0a57b8735ce59f067b129db7d
+- id: ed88840380c4b14f011679a1f9f81c94dec2612d6b246d2106e766b0554701b5
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_90/denoiser_v2_48k_5120.trtpkg
+        checksum: blake3:f5d2e8b58377e96b9c03942c934094f1f099479599fb4b0ce920fe95958b0fa2
+  workspace_hash: 2ac21d36d2f16c0adce0e65faef51c18539ecbe1f83a014f105605822f6a6a5c
+- id: f4901a0df3355c3f88ff5ea0f78cf587eab82d4433c3e2c92ada28f9360c38b2
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    sample-rate: 48k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_86/denoiser_48k_3072.trtpkg
+        checksum: blake3:47eb31697f4bc6cdc4ba0f0146109f8d66c0b9001d6a3d71cd255a9ca01c339c
+  workspace_hash: 86d5966dfe094f57a86cabc0e90a09e29109e8f7e8b5fe525b0f14540bc2a124
+- id: f7e0e50a5213b2534cbb163967e88a36893a562961d6cb39d7cad3b3ddcdf5f0
+  tags:
+    backend: trt
+    compute_capability: '9.0'
+    sample-rate: 16k
+    version: v1
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_16k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_90/denoiser_16k_7680.trtpkg
+        checksum: blake3:d81821779776c26aadeca02cce39b4bbc1f45a9e0742efd02780bc8ab6ddce73
+  workspace_hash: 52cc2e780d91dd5f7ab7b775ffaf50f758f2eb6d95d547cf2ad1ad8a6d2b79fd
+- id: fbc9be9d2545c3d1691bc5e2c3a9e94904fd426b5096d7b84dcf71627f4e44b0
+  tags:
+    backend: trt
+    compute_capability: '8.6'
+    sample-rate: 48k
+    version: v2
+  workspace:
+    files:
+      config/models/maxine-bnr/denoiser_v2_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-bnr:2.1.0?file=sm_86/denoiser_v2_48k_1920.trtpkg
+        checksum: blake3:418419462266bfa6c751c0669610304e20f8683f413fffe42a96a94540638b08
+  workspace_hash: fcebe8a1dd88abe624b0f9f875495e03c888ee378247d55ad461c08314cc86ff

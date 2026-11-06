@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIM Profile Advisor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">◆</span>
+    <div>
+      <h1>NIM Profile Advisor</h1>
+      <p class="sub">Pick the best NVIDIA NIM profile for an HPE Private Cloud AI GPU configuration</p>
+    </div>
+  </div>
+  <div id="stats" class="stats" aria-live="polite"></div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <a href="#recommend" class="tab" data-tab="recommend" role="tab">Recommend</a>
+  <a href="#models" class="tab" data-tab="models" role="tab">Models</a>
+  <a href="#validation" class="tab" data-tab="validation" role="tab">GPU validation</a>
+  <a href="#pcai" class="tab" data-tab="pcai" role="tab">PCAI systems</a>
+  <a href="#about" class="tab" data-tab="about" role="tab">How it works</a>
+</nav>
+
+<main>
+  <!-- RECOMMEND -->
+  <section id="tab-recommend" class="panel" data-panel="recommend">
+    <div class="layout">
+      <form id="rec-form" class="card form" autocomplete="off">
+        <h2>Your GPU setup</h2>
+
+        <label for="f-pcai">Start from a PCAI system <span class="muted">(optional)</span></label>
+        <select id="f-pcai"><option value="">— custom —</option></select>
+
+        <label for="f-gpu">GPU model</label>
+        <input id="f-gpu" name="gpu" list="gpu-list" placeholder="e.g. H200 NVL, L40S, 233b, NVIDIA-H200-NVL" required>
+        <datalist id="gpu-list"></datalist>
+        <div id="gpu-resolve" class="resolve" aria-live="polite"></div>
+
+        <div class="row2">
+          <div>
+            <label for="f-count">GPUs per node</label>
+            <input id="f-count" name="count" type="number" min="1" max="512" value="1" required>
+            <div class="quick" data-target="f-count">
+              <button type="button" data-v="1">1</button><button type="button" data-v="2">2</button>
+              <button type="button" data-v="4">4</button><button type="button" data-v="8">8</button>
+            </div>
+          </div>
+          <div>
+            <label for="f-nodes">Nodes</label>
+            <input id="f-nodes" name="nodes" type="number" min="1" max="64" value="1">
+          </div>
+        </div>
+
+        <label for="f-mig">MIG slice <span class="muted">(optional)</span></label>
+        <select id="f-mig" name="mig"><option value="">Full GPU (no MIG)</option></select>
+
+        <label for="f-vram">Memory per GPU, GB <span class="muted">(optional override)</span></label>
+        <input id="f-vram" name="vram_gb" type="number" min="1" max="2048" step="any" placeholder="from the GPU reference">
+
+        <label for="f-goal">Optimize for</label>
+        <select id="f-goal" name="goal"></select>
+
+        <label for="f-category">NIM category</label>
+        <select id="f-category" name="category"><option value="">All categories</option></select>
+
+        <label for="f-q">Model search</label>
+        <input id="f-q" name="q" placeholder="e.g. llama, embed, qwen">
+
+        <label class="check"><input id="f-lora" name="lora" type="checkbox"> I need LoRA adapters</label>
+
+        <button class="primary" type="submit">Recommend profiles</button>
+      </form>
+
+      <div class="results">
+        <div id="rec-gpu"></div>
+        <div id="rec-summary"></div>
+        <div id="rec-filters" class="chips" hidden>
+          <button class="chip active" data-f="all">All</button>
+          <button class="chip" data-f="compatible">Compatible</button>
+          <button class="chip" data-f="exact">Exact GPU match</button>
+          <button class="chip" data-f="incompatible">Not compatible</button>
+        </div>
+        <div id="rec-results"><div class="empty card">Choose a GPU model and GPU count, then press <b>Recommend profiles</b>.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section id="tab-models" class="panel" data-panel="models" hidden>
+    <div class="toolbar card">
+      <input id="m-q" placeholder="Search models, images, gpu_device ids…">
+      <select id="m-category"><option value="">All categories</option></select>
+      <select id="m-status">
+        <option value="">Any fetch status</option>
+        <option value="ok">ok</option><option value="skipped">skipped (cached)</option>
+        <option value="failed">failed</option><option value="missing">missing</option>
+      </select>
+      <span id="m-count" class="muted"></span>
+    </div>
+    <div class="table-wrap card"><table id="m-table" class="table"></table></div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section id="tab-validation" class="panel" data-panel="validation" hidden>
+    <div class="card intro">
+      <h2>Internal GPU model ↔ gpu_device validation</h2>
+      <p>NIM profiles target hardware with a PCI <code>gpu_device</code> id (e.g. <code>233b:10de</code>), an internal
+        <code>gpu</code> name (e.g. <code>h200-nvl</code>) or a <code>compute_capability</code>. Every value found in the
+        manifests is checked against the NVIDIA driver README (supported GPU products) and the PCI ID repository, mapped
+        to a GPU of the reference catalog and cross-checked: when a profile carries both a name and a device id, they
+        must point to the same GPU. Re-run <code>tools/validate_gpu_ids.py</code> after refreshing the catalog.</p>
+      <div class="legend">
+        <span class="badge ok">validated</span> name and device id agree across profiles
+        <span class="badge info">mapped</span> resolved from the PCI-id / alias reference only
+        <span class="badge warn">conflict</span> name and device id disagree
+        <span class="badge bad">unknown</span> not in the GPU reference
+      </div>
+    </div>
+    <div id="v-issues" class="card"></div>
+    <div class="toolbar card">
+      <select id="v-kind">
+        <option value="gpu_device">gpu_device ids</option>
+        <option value="gpu_name">internal gpu names</option>
+        <option value="compute_capability">compute capabilities</option>
+      </select>
+      <select id="v-status">
+        <option value="">Any status</option><option value="validated">validated</option><option value="mapped">mapped</option>
+        <option value="conflict">conflict</option><option value="unknown">unknown</option>
+      </select>
+      <span id="v-count" class="muted"></span>
+    </div>
+    <div class="table-wrap card"><table id="v-table" class="table"></table></div>
+  </section>
+
+  <!-- PCAI -->
+  <section id="tab-pcai" class="panel" data-panel="pcai" hidden>
+    <div class="card intro">
+      <h2>HPE Private Cloud AI GPU configurations</h2>
+      <p>G2 (current) configurations come from HPE QuickSpecs a50009216enw V9 (March 2026), G1 (legacy, still installed)
+        from V7 (September 2025). GPUs per worker node, MIG partitions and NVLink domains come from the local HPE AI
+        Essentials 2026.07.1 documentation. Use one to pre-fill the recommender.</p>
+    </div>
+    <div id="pcai-list" class="grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="tab-about" class="panel" data-panel="about" hidden>
+    <div id="about" class="card prose"></div>
+  </section>
+</main>
+
+<dialog id="modal">
+  <div class="modal-head">
+    <h2 id="modal-title"></h2>
+    <button id="modal-close" class="ghost" aria-label="Close">✕</button>
+  </div>
+  <div id="modal-body"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

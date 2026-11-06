@@ -1,0 +1,332 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: silma-9b-instruct-v1.0
+release: 1.8.4
+profiles:
+- id: 375dc0ff86133c2a423fbe9ef46d8fdf12d6403b3caa3b8e70d7851a89fc90dd
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5
+- id: 4f904d571fe60ff24695b5ee2aa42da58cb460787a968f1e8a09f5a7e862728d
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5
+- id: 54946b08b79ecf9e7f2d5c000234bf2cce19c8fee21b243c1a084b03897e8c95
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5
+- id: 7fa4a5a68c0338f16aef61de94977acfdacb7cabd848d38c49c48d2f639f04b3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '2'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5
+- id: ac34857f8dcbd174ad524974248f2faf271bd2a0355643b2cf1490d0fe7787c2
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: bf16
+    tp: '1'
+    trtllm_buildable: 'true'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5
+- id: c84b2a068e56a551906563035ed77f88c88cbe1a63c6768fb2d4a9e0af1e67ba
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    pp: '1'
+    precision: bf16
+    tp: '4'
+  workspace:
+    files:
+      README.md:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=README.md
+        checksum: blake3:a7f6825759fcc2d130906425fa233ceab4d0bc122d2656138c436f8356522569
+      checksums.blake3:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=checksums.blake3
+        checksum: blake3:44a533c1eecdb82d7a6422172fe9865393f261a8d926d5b1f5e698814ca024aa
+      config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=config.json
+        checksum: blake3:80968e1c6d32770ff30e64484403ba43c8129a6638be7bb6949bf48c7ce7d76e
+      generation_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=generation_config.json
+        checksum: blake3:b3e8703ee9f5b841e622c68009d4f3df92a7cc41f9a7a763edff38e9679f1b90
+      model-00001-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00001-of-00005.safetensors
+        checksum: blake3:34227fee8b580edc272860fe64eb9e5434dee258130ed73ad050820d8ccf7ffd
+      model-00002-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00002-of-00005.safetensors
+        checksum: blake3:fbdd4404b225e0a0eac39c250b8259d89b4226016fabe3d61dffc21c5b9258dc
+      model-00003-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00003-of-00005.safetensors
+        checksum: blake3:d51139813e77a68ece81e92b405be92fe57ba27b8e99afe16a69113d1062c80c
+      model-00004-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00004-of-00005.safetensors
+        checksum: blake3:ae0f44ba7ec1cc38a3493ccc21377f2aaced749f14889dc72728fc2ad7833cff
+      model-00005-of-00005.safetensors:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model-00005-of-00005.safetensors
+        checksum: blake3:761b03d8acb59f736025b5a580bfe311972049994a06270d7cb7bb4e75dca1e6
+      model.safetensors.index.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=model.safetensors.index.json
+        checksum: blake3:9dcee801c1df0e5eff12bcfb9d048c866aefe4262da12271184e0f2d9cdc8b12
+      notice.txt:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=notice.txt
+        checksum: blake3:ef37594d00f24cb38c67fd5f4bc2b01f2e89b015fbc679262ea94b0aa408ae37
+      special_tokens_map.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=special_tokens_map.json
+        checksum: blake3:690207dafc1c7583b1bf465ceb14a691f4dce210af82d5f82ee5ea6b96ffe136
+      tokenizer.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.json
+        checksum: blake3:7e8d9bfc505e187f92921e574a36991eef018ded6744adc658d2d343d6de1010
+      tokenizer.model:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer.model
+        checksum: blake3:83e9cb746b1847bab2a6295b8024404ad6593b60968740ae3a7cccb53386d678
+      tokenizer_config.json:
+        uri: ngc://nim/silma-ai/silma-9b-instruct-v1.0:hf-a70cfb1-nim-bf16?file=tokenizer_config.json
+        checksum: blake3:7fc4a6fb553341d717a53d1a4dfcbd93430da1108edb980911667414e4d2fbf5

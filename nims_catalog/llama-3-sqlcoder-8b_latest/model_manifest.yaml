@@ -1,0 +1,577 @@
+049299f82779b6c03e3dd44c28465b5d7f7af9e29a7683ac7a321b24adfd2cb4:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-l40sx2-fp8-latency.1.2.39569
+065b4fb2a1d0756a94d654b1a38ef9a3cf26501b4b629f8efd21e97e233a2fa6:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-l40sx2-fp16-latency.1.2.93482
+07e32ce066c351503bfca1253065f630f8bc423e92819422d7ea7967d522390e:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+3596c90018cfd9b03605a1470027ef1e3939ac385bff0ac16835efd188d51791:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-a100x2-fp16-latency.1.2.32895
+42c24ac50ded4b7428e01cc3ffc73480162953eca1d6c8116678d228b1777402:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-h100x2-fp16-latency.1.2.32895
+4f39fccfd9d59a4bc6b7cfcca424cd6ab6b01adaf439d81de115e6273a1f0926:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-a10gx2-fp16-throughput.1.2.93482
+61390930bd327f194dfbd4339061c0b25fc4744b5fdca24428955b2926c308f2:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-l40sx1-fp16-throughput.1.2.93482
+652fa9b317319c6849c3ff386028034bf38c45e52f0b6ea84eeb6aba0e16e500:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-h100x1-fp16-throughput.1.2.32895
+6a3bc8ce8f1dff0c77e1abda6da96332facf9e076ac219bfca7521151fd53048:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-a100x1-fp16-throughput.1.2.32895
+7c42486398b47b06fc21576c7520067ac8a7a2c341f56377326f455918b61bb9:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-a10gx4-fp16-latency.1.2.93482
+842b96cee5770e9593901c9a52ad8777456bd371f16981b951a783052969e825:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+9cf1eb10dc0ad03d999805c232247e882e740df9b9e58e5a62014818a2c945cc:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-h100x2-fp8-latency.1.2.32895
+aa1047a875802e0085e8cd0b8ae1dc38ced78cf6f4d4306e380136d608e92ef9:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-a10gx1-fp16-throughput.1.2.93482
+c5199f0a7de44e8ef7f7b2cbe56d45eb128503eb04109688e004eed1f0dea3ba:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-l40sx1-fp8-throughput.1.2.39569
+c8dc9236a7be1d273b6bbd4a1a8f8489c595671ad09926021245b476d4575d98:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:0.11+14957bf8-h100x1-fp8-throughput.1.2.32895
+fe01d2fc094cd8c5278d65861a217c222a82aa409d1acd5cfafdad307c023564:
+  container_url: nim/defog/llama-3-sqlcoder-8b:1.2.3
+  model: defog/llama-3-sqlcoder-8b
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'META_COMMUNITY_LICENSE'
+            - !name 'README.md'
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+            - !name 'trainer_state.json'
+            - !name 'training_args.bin'
+          repo_id: ngc://nim/defog/llama-3-sqlcoder-8b:hf-0f96d32

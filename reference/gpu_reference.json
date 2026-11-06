@@ -1,0 +1,2129 @@
+{
+  "meta": {
+    "description": "GPU reference for the NIM Profile Advisor. pci_device_ids are what NIM matches (gpu_device = <id>:10de). internal_names are NIM manifest 'gpu' tags that are not plain aliases and were mapped from device-id co-occurrence evidence (see gpu_device_validation.json).",
+    "generated": "2026-11-05",
+    "sources": {
+      "nvidia_driver_readme": {
+        "version": "595.80",
+        "url": "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html",
+        "devices": 997
+      },
+      "pci_ids": {
+        "version": "2026.11.05",
+        "url": "https://pci-ids.ucw.cz/v2.2/pci.ids",
+        "devices": 1995
+      }
+    }
+  },
+  "gpus": [
+    {
+      "id": "l20",
+      "name": "NVIDIA L20",
+      "family": "L20",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 48,
+      "form_factor": "PCIe (China-market)",
+      "pci_device_ids": [
+        "26ba",
+        "26b7"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA L20"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-L20"
+      ],
+      "aliases": [
+        "NVIDIA L20",
+        "L20"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not documented (PCIe)",
+      "confidence": "medium",
+      "notes": "INFERRED: compute capability 8.9 and FP8 support, because L20 is not on the CUDA GPUs page; it uses the AD102 die. 26b7 appears only in pci-ids (not in README), and NIM profiles use 26ba. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 26ba, 26b7)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA L20 26BA 10DE 1957' and '1990'; 26B7 absent)",
+        "https://pci-ids.ucw.cz/read/PC/10de (26b7 and 26ba both 'AD102GL [L20]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 lines 13072 (26b7) and 13075 (26ba)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('L20 48 GB GDDR6')",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:672-673 (l20 / 26ba:10de)",
+        "nims_catalog/deepseek-r1-distill-qwen-14b_latest/model_manifest.yaml:108 (L20 / 26ba:10de)"
+      ]
+    },
+    {
+      "id": "l40",
+      "name": "NVIDIA L40",
+      "family": "L40",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 300W",
+      "pci_device_ids": [
+        "26b5"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA L40"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-L40"
+      ],
+      "aliases": [
+        "NVIDIA L40",
+        "L40"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not stated on NVIDIA L40 page (PCIe card)",
+      "confidence": "high",
+      "notes": "Many older LLM NIM manifests label 26b5 as 'L40S' (see the L40S row). By README and pci.ids, 26b5 is the L40. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 26b5)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA L40 26B5 10DE 169D' and '17DA')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13071",
+        "https://www.nvidia.com/en-us/data-center/l40/ (48GB GDDR6 ECC, 864GB/s, 300W, supports FP8)",
+        "https://developer.nvidia.com/cuda-gpus (L40 = 8.9)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:823-824 (l40 / 26b5:10de)",
+        "nims_catalog/ai-generated-image-detection_1/model_manifest.yaml:9-13 (l40 / 26b5:10de)"
+      ]
+    },
+    {
+      "id": "l40s",
+      "name": "NVIDIA L40S",
+      "family": "L40S",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 350W",
+      "pci_device_ids": [
+        "26b9"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA L40S"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-L40S"
+      ],
+      "aliases": [
+        "NVIDIA L40S",
+        "L40S"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "No (NVIDIA L40S spec: NVLink support 'No')",
+      "confidence": "high",
+      "notes": "MANIFEST DATA ERROR: older NIM manifests tag 'gpu: L40S' with 'gpu_device: 26b5:10de' (the L40 id). Examples: llama-2-7b-chat_1.0.3:8-9, llama-2-70b-chat_1.0.3:7-8, codellama-13b-instruct_1.2.2:296-297, codellama-34b-instruct_latest:167-168, llama-3-sqlcoder-8b_latest:7-8, llama-3.1-8b-base_1.1.2:312-313, llama-3-taiwan-70b-instruct_latest:342-343, llama-3-swallow-70b-instruct-v0.1_latest:202-203, llama-3.2-11b-vision-instruct_1.1.1:692-693, llama-3.2-90b-vision-instruct_1.1.1:580-581. On a real L40S (26b9) those profiles do not match by gpu_device. PCAI: legacy G1 configurations (4, 8 or 16x L40S per search extracts of HPE QuickSpecs; removed from the current v9 QuickSpecs).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 26b9)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA L40S 26B9 10DE 1851' and '18CF')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13074",
+        "https://www.nvidia.com/en-us/data-center/l40s/ (48GB GDDR6 ECC, 864GB/s, FP8 733/1,466 TFLOPS, 350W, NVLink No, MIG No)",
+        "https://developer.nvidia.com/cuda-gpus (L40S = 8.9)",
+        "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (worked example: L40S = '26b9:10de')",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:131-133 (device_id 26b9:10de / 'NVIDIA L40S')",
+        "nims_catalog/llama-2-7b-chat_1.0.3/model_manifest.yaml:8-9 (gpu: L40S but gpu_device: 26b5:10de)"
+      ]
+    },
+    {
+      "id": "rtx-4090",
+      "name": "NVIDIA GeForce RTX 4090",
+      "family": "GeForce RTX 4090",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 24,
+      "form_factor": "Consumer PCIe card",
+      "pci_device_ids": [
+        "2684"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 4090"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-4090"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 4090",
+        "RTX 4090",
+        "GeForce RTX 4090"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "None",
+      "confidence": "high",
+      "notes": "Not relevant to PCAI; included because NIM manifests use it. The RTX 4090 D is a different id (2685).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2684)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GeForce RTX 4090 2684')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13066",
+        "https://www.nvidia.com/en-us/geforce/graphics-cards/compare/ (24 GB GDDR6X, Ada Lovelace)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 4090 = 8.9)",
+        "nims_catalog/harmonizer_latest/model_manifest.yaml:30 (NVIDIA-GeForce-RTX-4090 / 2684:10de)",
+        "nims_catalog/audio2face-3d_latest/model_manifest.yaml:146-147 (RTX4090 / 2684:10de)"
+      ]
+    },
+    {
+      "id": "rtx-5000-ada",
+      "name": "NVIDIA RTX 5000 Ada Generation",
+      "family": "RTX 5000 Ada",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 32,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 250W",
+      "pci_device_ids": [
+        "26b2"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX 5000 Ada Generation"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-5000-Ada-Generation"
+      ],
+      "aliases": [
+        "NVIDIA RTX 5000 Ada Generation",
+        "RTX 5000 Ada",
+        "RTX 5000 Ada Generation"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not mentioned",
+      "confidence": "high",
+      "notes": "The Laptop (2730) and Embedded (2770) versions have different ids. Not in local manifests. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 26b2)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX 5000 Ada Generation 26B2 ... 17FA')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13069",
+        "https://www.nvidia.com/en-us/products/workstations/rtx-5000/ (32GB GDDR6 ECC, 250W)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 5000 Ada = 8.9)"
+      ]
+    },
+    {
+      "id": "rtx-6000-ada",
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "family": "RTX 6000 Ada",
+      "chip": "AD102",
+      "architecture": "Ada Lovelace (AD102)",
+      "compute_capability": "8.9",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 300W",
+      "pci_device_ids": [
+        "26b1"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX 6000 Ada Generation"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-6000-Ada-Generation"
+      ],
+      "aliases": [
+        "NVIDIA RTX 6000 Ada Generation",
+        "RTX 6000 Ada",
+        "RTX 6000 Ada Generation"
+      ],
+      "internal_names": [
+        "RTX6000"
+      ],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not mentioned (no NVLink)",
+      "confidence": "high",
+      "notes": "The audio2face tag 'RTX6000' is ambiguous with the RTX PRO 6000 Blackwell; key on gpu_device. The K8s label is derived, but this exact string appears as a NIM gpu tag.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 26b1)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX 6000 Ada Generation 26B1 ... 16A1')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13068",
+        "https://www.nvidia.com/en-us/products/workstations/rtx-6000/ (48GB GDDR6 ECC, 300 W, FP8 tensor cores)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 6000 Ada = 8.9)",
+        "nims_catalog/harmonizer_latest/model_manifest.yaml:110 (NVIDIA-RTX-6000-Ada-Generation / 26b1:10de)",
+        "nims_catalog/audio2face-3d_latest/model_manifest.yaml:486-487 (RTX6000 / 26b1:10de)"
+      ]
+    },
+    {
+      "id": "rtx-4080",
+      "name": "NVIDIA GeForce RTX 4080",
+      "family": "GeForce RTX 4080",
+      "chip": "AD103",
+      "architecture": "Ada Lovelace (AD103)",
+      "compute_capability": "8.9",
+      "vram_gb": 16,
+      "form_factor": "Consumer PCIe card",
+      "pci_device_ids": [
+        "2704"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 4080"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-4080"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 4080",
+        "RTX 4080",
+        "GeForce RTX 4080"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "None",
+      "confidence": "high",
+      "notes": "INFERRED: compute capability 8.9 (Ada; RTX 4080 not checked on the CUDA page). The RTX 4080 SUPER uses different ids (2702/2703). Not relevant to PCAI.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2704)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13079 ('2704 AD103 [GeForce RTX 4080]')",
+        "https://www.nvidia.com/en-us/geforce/graphics-cards/compare/ (16 GB GDDR6X, Ada Lovelace)",
+        "nims_catalog/deepseek-r1-distill-llama-8b_1.8.0-RTX/model_manifest.yaml:217-218 (RTX4080 / 2704:10de)",
+        "nims_catalog/mistral-nemo-12b-instruct_1.8.0-rtx/model_manifest.yaml:92-93"
+      ]
+    },
+    {
+      "id": "l4",
+      "name": "NVIDIA L4",
+      "family": "L4",
+      "chip": "AD104",
+      "architecture": "Ada Lovelace (AD104)",
+      "compute_capability": "8.9",
+      "vram_gb": 24,
+      "form_factor": "PCIe Gen4 x16 1-slot low-profile, 72W",
+      "pci_device_ids": [
+        "27b8"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA L4"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-L4"
+      ],
+      "aliases": [
+        "NVIDIA L4",
+        "L4"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "None (PCIe Gen4 x16 64GB/s)",
+      "confidence": "high",
+      "notes": "None. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 27b8)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA L4 27B8 10DE 16CA' and '16EE')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13097",
+        "https://www.nvidia.com/en-us/data-center/l4/ (24GB, 300GB/s, FP8 485 TFLOPS sparse, 72W)",
+        "https://developer.nvidia.com/cuda-gpus (L4 = 8.9)",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:464 (device_id 27b8:10de / 'NVIDIA L4')",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:570-571 (l4 / 27b8:10de)"
+      ]
+    },
+    {
+      "id": "rtx-4500-ada",
+      "name": "NVIDIA RTX 4500 Ada Generation",
+      "family": "RTX 4500 Ada",
+      "chip": "AD104",
+      "architecture": "Ada Lovelace (AD104)",
+      "compute_capability": "8.9",
+      "vram_gb": 24,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 210W",
+      "pci_device_ids": [
+        "27b1"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX 4500 Ada Generation"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-4500-Ada-Generation"
+      ],
+      "aliases": [
+        "NVIDIA RTX 4500 Ada Generation",
+        "RTX 4500 Ada",
+        "RTX 4500 Ada Generation"
+      ],
+      "internal_names": [
+        "rtx4500"
+      ],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not mentioned",
+      "confidence": "high",
+      "notes": "The NIM tag 'rtx4500' could be confused with the RTX PRO 4500 Blackwell (2c31). The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 27b1)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX 4500 Ada Generation 27B1 ... 180C')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 13093",
+        "https://www.nvidia.com/en-us/products/workstations/rtx-4500/ (24GB GDDR6 ECC, 210W)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 4500 Ada = 8.9)",
+        "nims_catalog/cosmos-reason2-2b_latest/model_manifest.yaml:761-762 (rtx4500 / 27b1:10de)"
+      ]
+    },
+    {
+      "id": "a100-pcie-40gb",
+      "name": "NVIDIA A100-PCIE-40GB",
+      "family": "A100",
+      "chip": "GA100",
+      "architecture": "Ampere (GA100)",
+      "compute_capability": "8.0",
+      "vram_gb": 40,
+      "form_factor": "PCIe dual-slot",
+      "pci_device_ids": [
+        "20f1",
+        "20b1"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A100-PCIE-40GB"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A100-PCIE-40GB"
+      ],
+      "aliases": [
+        "NVIDIA A100-PCIE-40GB",
+        "A100 PCIe 40GB"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink Bridge for 2 GPUs (A100 datasheet, read via search extract)",
+      "confidence": "high",
+      "notes": "20f1 is the production id (README + NIM). 20b1 appears only in pci-ids and is absent from README 595.80; it is probably an early id, and NIM profiles never use it.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 20f1, 20b1)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A100-PCIE-40GB 20F1 10DE 145F'; 20B1 absent)",
+        "https://pci-ids.ucw.cz/read/PC/10de (20f1 and 20b1 both 'GA100 [A100 PCIe 40GB]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 lines 12881 (20b1) and 12897 (20f1)",
+        "https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf (40GB HBM2; search extract)",
+        "https://developer.nvidia.com/cuda-gpus (A100 = 8.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-A100-PCIE-40GB)",
+        "nims_catalog/qwen-2.5-7b-instruct_latest/model_manifest.yaml:8-9 (A100-PCIE-40GB / 20f1:10de)"
+      ]
+    },
+    {
+      "id": "a100-pcie-80gb",
+      "name": "NVIDIA A100 80GB PCIe",
+      "family": "A100",
+      "chip": "GA100",
+      "architecture": "Ampere (GA100)",
+      "compute_capability": "8.0",
+      "vram_gb": 80,
+      "form_factor": "PCIe dual-slot air-cooled or single-slot liquid-cooled, 300W",
+      "pci_device_ids": [
+        "20b5"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A100 80GB PCIe"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A100-80GB-PCIe"
+      ],
+      "aliases": [
+        "NVIDIA A100 80GB PCIe",
+        "A100 PCIe 80GB",
+        "A100 80GB PCIe"
+      ],
+      "internal_names": [
+        "A100-PCIe"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink Bridge for 2 GPUs: 600 GB/s",
+      "confidence": "high",
+      "notes": "None. The NIM tag 'A100-PCIe' does not state the size; the device id resolves it.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 20b5)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A100 80GB PCIe 20B5 10DE 1533' and '1642')",
+        "https://pci-ids.ucw.cz/read/PC/10de (20b5 'GA100 [A100 PCIe 80GB]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12885",
+        "https://www.nvidia.com/en-us/data-center/a100/ (80GB HBM2e, 1,935 GB/s, NVLink Bridge 600 GB/s, 300W)",
+        "https://developer.nvidia.com/cuda-gpus (A100 = 8.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-A100-80GB-PCIe)",
+        "nims_catalog/llama-3.2-11b-vision-instruct_1.1.1/model_manifest.yaml:433-434 (A100-PCIe / 20b5:10de; older profile-id-keyed schema)"
+      ]
+    },
+    {
+      "id": "a100-sxm4-40gb",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "family": "A100",
+      "chip": "GA100",
+      "architecture": "Ampere (GA100)",
+      "compute_capability": "8.0",
+      "vram_gb": 40,
+      "form_factor": "SXM4 (HGX A100)",
+      "pci_device_ids": [
+        "20b0"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A100-SXM4-40GB",
+        "NVIDIA A100-PG509-200"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A100-SXM4-40GB",
+        "NVIDIA-A100-PG509-200"
+      ],
+      "aliases": [
+        "NVIDIA A100-SXM4-40GB",
+        "A100 SXM4 40GB",
+        "A100 PG509 200",
+        "A100-PG509-200",
+        "NVIDIA A100-PG509-200"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink 3, 600 GB/s (A100 datasheet, read via search extract)",
+      "confidence": "high",
+      "notes": "Memory type: the NVIDIA datasheet says HBM2 and the Cosmos NIM table says HBM2e. 20b0 is shared with the A100-PG509-200 board (subsystem 10DE:1450), which gpu_device cannot distinguish. | The device id and subsystem are VERIFIED (README). VRAM, form factor and NVLink are INFERRED because the board shares device 20b0 with the A100 SXM4 40GB; no NVIDIA datasheet for PG509-200 was found. NIM gpu_device '20b0:10de' matches it the same as an A100-SXM4-40GB. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 20b0)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A100-SXM4-40GB 20B0')",
+        "https://pci-ids.ucw.cz/read/PC/10de/20b0 ('GA100 [A100 SXM4 40GB]', 2020-06-23)",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12880",
+        "https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf (40GB HBM2, 1,555 GB/s; search extract)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('A100 SXM4 40 GB: 40 GB HBM2e')",
+        "https://developer.nvidia.com/cuda-gpus (A100 = 8.0)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:543 (NVIDIA-A100-SXM4-40GB / 20b0:10de)",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:71-73",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A100-PG509-200 20B0 10DE 1450')",
+        "https://pci-ids.ucw.cz/read/PC/10de/20b0 (device 20b0 = A100 SXM4 40GB)"
+      ]
+    },
+    {
+      "id": "a100-sxm4-80gb",
+      "name": "NVIDIA A100-SXM4-80GB",
+      "family": "A100",
+      "chip": "GA100",
+      "architecture": "Ampere (GA100)",
+      "compute_capability": "8.0",
+      "vram_gb": 80,
+      "form_factor": "SXM4 (HGX A100), 400W standard",
+      "pci_device_ids": [
+        "20b2"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A100-SXM4-80GB",
+        "NVIDIA PG509-210"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A100-SXM4-80GB",
+        "NVIDIA-PG509-210"
+      ],
+      "aliases": [
+        "NVIDIA A100-SXM4-80GB",
+        "A100 SXM4 80GB",
+        "A100 80GB SXM",
+        "PG509-210",
+        "NVIDIA PG509-210"
+      ],
+      "internal_names": [
+        "a100",
+        "A100"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink 3, 600 GB/s",
+      "confidence": "high",
+      "notes": "VALIDATED seed id 20b2:10de = A100 SXM4 80GB. The PG509-210 board shares 20b2 (only the subsystem differs), so NIM cannot tell them apart. canary-1b_1.5/model_manifest.yaml:24 writes '20b2' without ':10de'. The 'NVIDIA-PG509-210' label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 20b2)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A100-SXM4-80GB 20B2 10DE 1463/147F/1622/1623'; 'NVIDIA PG509-210 20B2 10DE 1625')",
+        "https://pci-ids.ucw.cz/read/PC/10de (20b2 'GA100 [A100 SXM4 80GB]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12882",
+        "https://www.nvidia.com/en-us/data-center/a100/ (A100 80GB SXM: 80GB HBM2e, 2,039 GB/s, NVLink 600 GB/s, no FP8 row)",
+        "https://developer.nvidia.com/cuda-gpus (A100 = 8.0)",
+        "https://docs.nvidia.com/nim-operator/latest/nim-build.html (nodeSelector nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB)",
+        "nim-profile-output/model_manifest.yaml:828-829 (gpu: NVIDIA-A100-SXM4-80GB / gpu_device: 20b2:10de)",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:9-11 (device_id 20b2:10de / 'NVIDIA A100-SXM4-80GB' / a100-sxm4-80gb)"
+      ]
+    },
+    {
+      "id": "a30",
+      "name": "NVIDIA A30",
+      "family": "A30",
+      "chip": "GA100",
+      "architecture": "Ampere (GA100)",
+      "compute_capability": "8.0",
+      "vram_gb": 24,
+      "form_factor": "PCIe Gen4 dual-slot FHFL, 165W",
+      "pci_device_ids": [
+        "20b7"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A30"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A30"
+      ],
+      "aliases": [
+        "NVIDIA A30",
+        "A30 PCIe"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "3rd-gen NVLink bridge 200 GB/s, up to 2 GPUs",
+      "confidence": "high",
+      "notes": "None. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 20b7)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A30 20B7 10DE 1532/1804/1852')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12887",
+        "https://www.nvidia.com/en-us/data-center/products/a30-gpu/ (24GB HBM2, 933GB/s, NVLink 200GB/s, 165W)",
+        "https://developer.nvidia.com/cuda-gpus (A30 = 8.0)",
+        "nims_catalog/audio2face-3d_latest/model_manifest.yaml:78-79 (A30 / 20b7:10de)"
+      ]
+    },
+    {
+      "id": "a10",
+      "name": "NVIDIA A10",
+      "family": "A10",
+      "chip": "GA102",
+      "architecture": "Ampere (GA102)",
+      "compute_capability": "8.6",
+      "vram_gb": 24,
+      "form_factor": "PCIe Gen4 single-slot FHFL, 150W",
+      "pci_device_ids": [
+        "2236"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A10"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A10"
+      ],
+      "aliases": [
+        "NVIDIA A10",
+        "A10"
+      ],
+      "internal_names": [
+        "GA102"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "Not listed (PCIe Gen4 64 GB/s only)",
+      "confidence": "high",
+      "notes": "No local manifest uses gpu_device 2236. A10 appears only inside multi-GPU name lists with compute capability tags (active-speaker-detection-h4m-nim_1.0.0/model_manifest.yaml:59-60 'A2, A10, A16, A40' / gpu_cc 8.6). The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2236)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A10 2236 10DE 1482')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12940",
+        "https://www.nvidia.com/en-us/data-center/products/a10-gpu/ (24GB GDDR6, 600GB/s, single-slot FHFL, 150W)",
+        "https://developer.nvidia.com/cuda-gpus (A10 = 8.6)"
+      ]
+    },
+    {
+      "id": "a10g",
+      "name": "NVIDIA A10G",
+      "family": "A10",
+      "chip": "GA102",
+      "architecture": "Ampere (GA102)",
+      "compute_capability": "8.6",
+      "vram_gb": 24,
+      "form_factor": "PCIe, AWS-only (EC2 G5)",
+      "pci_device_ids": [
+        "2237"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A10G"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A10G"
+      ],
+      "aliases": [
+        "NVIDIA A10G",
+        "A10G"
+      ],
+      "internal_names": [
+        "GA102"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "Not documented (PCIe)",
+      "confidence": "high",
+      "notes": "INFERRED: compute capability 8.6. The CUDA GPUs page does not list A10G; it uses the same GA102 die as the A10 (8.6). Not relevant to PCAI (cloud-only).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2237)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A10G 2237 10DE 152F')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2237 'GA102GL [A10G]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12941",
+        "https://aws.amazon.com/ec2/instance-types/g5/ ('NVIDIA A10G Tensor Core GPUs', '24 GB of memory per GPU')",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-A10G)",
+        "nims_catalog/audio2face-3d_latest/model_manifest.yaml:10-11 (A10G / 2237:10de)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:443 (NVIDIA-A10G)"
+      ]
+    },
+    {
+      "id": "a40",
+      "name": "NVIDIA A40",
+      "family": "A40",
+      "chip": "GA102",
+      "architecture": "Ampere (GA102)",
+      "compute_capability": "8.6",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot, 300W",
+      "pci_device_ids": [
+        "2235"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A40"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A40"
+      ],
+      "aliases": [
+        "NVIDIA A40",
+        "A40"
+      ],
+      "internal_names": [
+        "GA102"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink bridge 112.5 GB/s bidirectional (2-way)",
+      "confidence": "high",
+      "notes": "No local manifest uses gpu_device 2235 (A40 appears only in gpu_cc 8.6 name lists). The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2235)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA A40 2235 10DE 145A')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12939",
+        "https://www.nvidia.com/en-us/data-center/a40/ (48GB GDDR6 ECC, 696 GB/s, 300W, NVLink 112.5 GB/s)",
+        "https://developer.nvidia.com/cuda-gpus (A40 = 8.6)"
+      ]
+    },
+    {
+      "id": "rtx-3080",
+      "name": "NVIDIA GeForce RTX 3080",
+      "family": "GeForce RTX 3080",
+      "chip": "GA102",
+      "architecture": "Ampere (GA102)",
+      "compute_capability": "8.6",
+      "vram_gb": 10,
+      "form_factor": "Consumer PCIe card (10 GB / 12 GB)",
+      "pci_device_ids": [
+        "2206",
+        "220a",
+        "2216"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 3080"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-3080"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 3080",
+        "RTX 3080",
+        "GeForce RTX 3080",
+        "GeForce RTX 3080 12GB",
+        "GeForce RTX 3080 Lite Hash Rate"
+      ],
+      "internal_names": [
+        "GA102"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": null,
+      "confidence": "high",
+      "notes": null,
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2206, 220a, 2216)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    },
+    {
+      "id": "rtx-a6000",
+      "name": "NVIDIA RTX A6000",
+      "family": "RTX A6000",
+      "chip": "GA102",
+      "architecture": "Ampere (GA102)",
+      "compute_capability": "8.6",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 300W",
+      "pci_device_ids": [
+        "2230"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX A6000"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-A6000"
+      ],
+      "aliases": [
+        "NVIDIA RTX A6000",
+        "RTX A6000"
+      ],
+      "internal_names": [
+        "GA102"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "2-way NVLink bridge, up to 112 GB/s",
+      "confidence": "high",
+      "notes": "Not in local manifests. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2230)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX A6000 2230 ... 1459')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12935",
+        "https://www.nvidia.com/en-us/products/workstations/rtx-a6000/ (48 GB GDDR6 ECC, 300 W, 2-way NVLink up to 112 GB/s)",
+        "https://developer.nvidia.com/cuda-gpus (RTX A6000 = 8.6)"
+      ]
+    },
+    {
+      "id": "rtx-3070",
+      "name": "NVIDIA GeForce RTX 3070",
+      "family": "GeForce RTX 3070",
+      "chip": "GA104",
+      "architecture": "Ampere (GA104)",
+      "compute_capability": "8.6",
+      "vram_gb": 8,
+      "form_factor": "Consumer PCIe card",
+      "pci_device_ids": [
+        "2484",
+        "2488"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 3070"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-3070"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 3070",
+        "RTX 3070",
+        "GeForce RTX 3070",
+        "GeForce RTX 3070 Lite Hash Rate"
+      ],
+      "internal_names": [
+        "GA104"
+      ],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": null,
+      "confidence": "high",
+      "notes": null,
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2484, 2488)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    },
+    {
+      "id": "a16",
+      "name": "NVIDIA A16",
+      "family": "A16",
+      "chip": "GA107",
+      "architecture": "Ampere (GA107)",
+      "compute_capability": "8.6",
+      "vram_gb": 16,
+      "form_factor": "PCIe board with 4 GPUs x 16 GB GDDR6 (values are per GPU)",
+      "pci_device_ids": [
+        "25b6"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A16"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A16"
+      ],
+      "aliases": [
+        "NVIDIA A16",
+        "A16"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": null,
+      "confidence": "high",
+      "notes": "25b6 is shared by A16 and A2 (different subsystem ids).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 25b6)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    },
+    {
+      "id": "a2",
+      "name": "NVIDIA A2",
+      "family": "A2",
+      "chip": "GA107",
+      "architecture": "Ampere (GA107)",
+      "compute_capability": "8.6",
+      "vram_gb": 16,
+      "form_factor": "PCIe Gen4 x8 low-profile, 40-60W",
+      "pci_device_ids": [
+        "25b6"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA A2"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-A2"
+      ],
+      "aliases": [
+        "NVIDIA A2",
+        "A2"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": null,
+      "confidence": "high",
+      "notes": "25b6 is shared by A16 and A2 (different subsystem ids).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 25b6)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    },
+    {
+      "id": "b100",
+      "name": "NVIDIA B100",
+      "family": "B100",
+      "chip": "GB100",
+      "architecture": "Blackwell (GB100)",
+      "compute_capability": "10.0",
+      "vram_gb": 180,
+      "form_factor": "SXM (HGX B100)",
+      "pci_device_ids": [
+        "2920"
+      ],
+      "nvidia_smi_names": [],
+      "k8s_gpu_product": [],
+      "aliases": [
+        "NVIDIA B100",
+        "B100",
+        "TS4 / B100"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink 5",
+      "confidence": "low",
+      "notes": "Only pci.ids knows 2920 ('GB100 [TS4 / B100]'); not listed in the NVIDIA driver README. No NIM profile uses a B100 device id.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2920)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    },
+    {
+      "id": "b200",
+      "name": "NVIDIA B200",
+      "family": "B200",
+      "chip": "GB100",
+      "architecture": "Blackwell (GB100)",
+      "compute_capability": "10.0",
+      "vram_gb": 180,
+      "form_factor": "SXM (HGX B200 8-GPU baseboard)",
+      "pci_device_ids": [
+        "2901",
+        "2909"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA B200"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-B200"
+      ],
+      "aliases": [
+        "NVIDIA B200",
+        "B200",
+        "HGX B200 168GB"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink 5, 1.8 TB/s per GPU",
+      "confidence": "high",
+      "notes": "VALIDATED seed id 2901:10de = NVIDIA B200. VRAM is 180 GB usable (HGX 1.4TB / 8 GPUs; NIM LLM matrix) vs 192 GB nominal (Cosmos). 2909 is a newer B200 id ('HGX B200 168GB' in pci-ids; the 168GB size is unverified). No local manifest uses 2909, so a 2909 host will not match 2901 profiles by gpu_device. 290a 'B200' appears only in pci-ids.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2901, 2909)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA B200 2901 10DE 1999/199B/20DA'; 'NVIDIA B200 2909 10DE 22EB')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2901 'GB100 [B200]'; 290a 'GB100 [B200]')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2909 (named 'B200' via driver 595.58.03 on 2026-03-24, renamed 'HGX B200 168GB' on 2026-05-08)",
+        "https://www.nvidia.com/en-us/data-center/hgx/ (HGX B200: 8x Blackwell SXM, 1.4 TB total, NVLink 5 1.8 TB/s, FP4/FP8)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html ('180 GB' for NVIDIA-B200)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('B200 192 GB HBM3e' nominal)",
+        "https://developer.nvidia.com/cuda-gpus (B200 = 10.0)",
+        "nim-profile-output/model_manifest.yaml:747-748 (NVIDIA-B200 / 2901:10de)",
+        "nims_catalog/audio2face-3d_latest/model_manifest.yaml:622-623 (B200 / 2901:10de)"
+      ]
+    },
+    {
+      "id": "gb200",
+      "name": "NVIDIA GB200",
+      "family": "GB200",
+      "chip": "GB100",
+      "architecture": "Blackwell (GB100) + Grace CPU",
+      "compute_capability": "10.0",
+      "vram_gb": 186,
+      "form_factor": "Superchip (1 Grace : 2 Blackwell GPUs) in GB200 NVL72 rack",
+      "pci_device_ids": [
+        "2941"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GB200"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GB200"
+      ],
+      "aliases": [
+        "NVIDIA GB200",
+        "HGX GB200"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink 5: 3.6 TB/s per superchip (1.8 TB/s per GPU); 130 TB/s per NVL72",
+      "confidence": "high",
+      "notes": "186 GB is DERIVED (372 GB per superchip / 2, which matches 13.4 TB / 72). Cosmos lists 192 GB nominal.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2941)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GB200 2941 10DE 2046/20CA/20D5/21C9/21CA')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2941 ('GB100 [HGX GB200]', 2025-02-12)",
+        "https://www.nvidia.com/en-us/data-center/gb200-nvl72/ (superchip 372 GB HBM3E, 3.6 TB/s NVLink; NVL72 13.4 TB, 130 TB/s, NVFP4)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('GB200 192 GB HBM3e' nominal)",
+        "https://developer.nvidia.com/cuda-gpus (GB200 = 10.0)",
+        "nims_catalog/deepseek-v4.1-flash_2.1.4-variant/model_manifest.yaml:566 (NVIDIA-GB200 / 2941:10de)",
+        "nims_catalog/cosmos-reason2-2b_latest/model_manifest.yaml:942 (gb200 / 2941:10de)"
+      ]
+    },
+    {
+      "id": "jetson-thor",
+      "name": "NVIDIA Jetson AGX Thor",
+      "family": "Jetson Thor",
+      "chip": "GB10B",
+      "architecture": "Blackwell (GB10B, Tegra Thor SoC)",
+      "compute_capability": "11.0",
+      "vram_gb": 128,
+      "form_factor": "Embedded SoC module (Jetson T5000/T4000; IGX T7000/T5000 boards), unified LPDDR5X",
+      "pci_device_ids": [
+        "2b00"
+      ],
+      "nvidia_smi_names": [],
+      "k8s_gpu_product": [
+        "NVIDIA-Thor"
+      ],
+      "aliases": [
+        "NVIDIA Jetson AGX Thor",
+        "Thor",
+        "IGX Thor",
+        "Jetson AGX Thor"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "None (integrated GPU)",
+      "confidence": "medium",
+      "notes": "The device id comes only from community sources (pci-ids and a GitHub issue). Thor is absent from the x86_64 README 595.80. INFERRED: the IGX Thor iGPU uses the same 2b00 id, and T4000 may use a different id. pci-ids also lists 3400 'GB10B [Tegra RP iGPU]' (product unknown). FP8 is INFERRED from CC 11.0 >= 8.9; the NVIDIA page lists only FP4. CUDA 12.9 and older report Thor as sm_101 (10.1), so manifests could carry 10.1. On IGX Thor, NIM would usually match the dGPU (2bb4 or 2bb3). No local manifest references Thor. The K8s label is derived (low confidence).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2b00)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://pci-ids.ucw.cz/read/PC/10de/2b00 ('GB10B [Jetson AGX Thor]'; history 2025-07-02 to 2025-10-30)",
+        "https://github.com/microsoft/onnxruntime/issues/33296 (2026-10-12, AGX Thor Dev Kit: DRM uevent PCI_ID=10DE:2B00, PCI_SLOT_NAME=0000:01:00.0, DRIVER=nvidia)",
+        "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/ (T5000: 2560-core Blackwell GPU, 128 GB LPDDR5X, 2070 TFLOPS FP4 sparse; T4000: 1536-core, 64 GB)",
+        "https://developer.nvidia.com/cuda-gpus (Jetson T5000/T4000 = 11.0)",
+        "https://docs.nvidia.com/cuda/archive/13.0.0/cuda-toolkit-release-notes/index.html (SM101 renumbered to SM110 from CUDA 13.0; search extract)",
+        "https://forum.level1techs.com/t/nvidia-jetson-thor-ramblings/236527 (2025-09-08: name='NVIDIA Thor', major=11, minor=0, total_memory=125772MB)",
+        "https://www.nvidia.com/en-us/edge-computing/products/igx/ (IGX Thor: same 2560-core iGPU + dGPU RTX PRO 6000 Blackwell Max-Q on Dev Kit/T7000, or RTX PRO 5000 Blackwell on T5000)",
+        "https://docs.nvidia.com/igx/user-guide/latest/OV/thor/system-overview-t7000.html (populated dGPU: RTX PRO 6000 Blackwell Max-Q Workstation Edition)"
+      ]
+    },
+    {
+      "id": "rtx-5090",
+      "name": "NVIDIA GeForce RTX 5090",
+      "family": "GeForce RTX 5090",
+      "chip": "GB202",
+      "architecture": "Blackwell (GB202)",
+      "compute_capability": "12.0",
+      "vram_gb": 32,
+      "form_factor": "Consumer PCIe card",
+      "pci_device_ids": [
+        "2b85"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-5090"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 5090",
+        "RTX 5090",
+        "GeForce RTX 5090"
+      ],
+      "internal_names": [
+        "5090-wsl",
+        "GB20"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "None",
+      "confidence": "high",
+      "notes": "MANIFEST DATA ERROR: audio2face-3d_latest tags RTX5090 with gpu_device 2e02:10de (lines 282-283, 299-300, 316-317, 333-334). pci-ids names 2e02 'GB20B [JMJWOA-Generic-GPU]' (2026-10-14), which is not an RTX 5090. The 5090 D (2b87) and D v2 (2b8c) have different ids. Not relevant to PCAI.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2b85)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GeForce RTX 5090 2B85')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2b85 'GB202 [GeForce RTX 5090]')",
+        "https://www.nvidia.com/en-us/geforce/graphics-cards/compare/ (32 GB GDDR7, Blackwell)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 5090 = 12.0)",
+        "nims_catalog/deepseek-r1-distill-llama-8b_1.8.0-RTX/model_manifest.yaml:165-166 (RTX5090 / 2b85:10de)",
+        "nims_catalog/nvclip_2.0.0/model_manifest.yaml:1006-1007 (5090-wsl / '2B85', uppercase with no vendor)"
+      ]
+    },
+    {
+      "id": "rtx-pro-5000",
+      "name": "NVIDIA RTX PRO 5000 Blackwell",
+      "family": "RTX PRO 5000",
+      "chip": "GB202",
+      "architecture": "Blackwell (GB202)",
+      "compute_capability": "12.0",
+      "vram_gb": 48,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 300W",
+      "pci_device_ids": [
+        "2bb3"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 5000 Blackwell",
+        "NVIDIA RTX PRO 5000 72GB Blackwell"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-5000-Blackwell",
+        "NVIDIA-RTX-PRO-5000-72GB-Blackwell"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 5000 Blackwell",
+        "NVIDIA RTX PRO 5000 72GB Blackwell",
+        "RTX PRO 5000 Blackwell / RTX PRO 5000 72GB Blackwell"
+      ],
+      "internal_names": [
+        "GB20"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "Not listed",
+      "confidence": "high",
+      "notes": "The 48 GB and 72 GB cards share device 2bb3 (only the subsystem differs), so use nvidia-smi memory to tell them apart. Not in local manifests. Added for IGX Thor. K8s labels are derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2bb3)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 5000 Blackwell 2BB3 ... 204D'; 'NVIDIA RTX PRO 5000 72GB Blackwell 2BB3 ... 227A')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2bb3)",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5000/ ('48 GB | 72 GB GDDR7 with ECC', 1,344 GB/s, 300W)",
+        "https://www.nvidia.com/en-us/edge-computing/products/igx/ (IGX T5000 with RTX PRO 5000 Blackwell, 48 GB GDDR7)",
+        "https://developer.nvidia.com/cuda-gpus (RTX PRO 5000 Blackwell = 12.0)"
+      ]
+    },
+    {
+      "id": "rtx-pro-6000-bse",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "family": "RTX PRO 6000",
+      "chip": "GB202",
+      "architecture": "Blackwell (GB202)",
+      "compute_capability": "12.0",
+      "vram_gb": 96,
+      "form_factor": "PCIe Gen5 dual-slot FHFL passive (air) or single-slot FHXL (liquid), 400-600W configurable",
+      "pci_device_ids": [
+        "2bb5"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "RTX PRO 6000 Server Edition",
+        "RTX PRO 6000 BSE",
+        "RTX PRO 6000 Blackwell Server Edition"
+      ],
+      "internal_names": [
+        "GB20",
+        "rtx-pro-6k-bse",
+        "rtx6000-blackwell-sv",
+        "rtx6000_blackwell_sv"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "None listed (PCIe Gen5)",
+      "confidence": "high",
+      "notes": "MANIFEST DATA ERROR: audio2face-3d_latest (release 2.0.0-rc8) tags 'rtx6000-blackwell-sv' with gpu_device 2e14:10de (lines 554-555, 571-572, 588-589, 605-606). 2e14 does not exist in pci-ids (HTTP 404) or README 595.80; the correct id is 2bb5. PCAI-relevant: G2 Developer (2x), Small (4 or 8x) and Large (16x H200 or RTX PRO 6000), per search extracts of HPE QuickSpecs v9 (March 2026).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2bb5)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 6000 Blackwell Server Edition 2BB5 10DE 204E' and '220B')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2bb5 (history 2025-04-17 to 2025-05-19)",
+        "https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/ (96 GB GDDR7 ECC, 1597 GB/s, FP4 4 PFLOPS, FP8 2 PFLOPS, up to 600W, MIG up to 4)",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/ (Server: 400-600 W, passive)",
+        "https://developer.nvidia.com/cuda-gpus (RTX PRO 6000 Blackwell = 12.0)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:644 (NVIDIA-RTX-PRO-6000-Blackwell-Server-Edition / 2bb5:10de)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:974-975 (rtx-pro-6k-bse / 2bb5:10de)",
+        "https://www.storagereview.com/news/hpe-private-cloud-ai-mcp-servers-mixed-gpu-clusters-vera-cpu-rack (2026-10-21: PCAI mixes H200 and RTX PRO 6000 Blackwell Server Edition)"
+      ]
+    },
+    {
+      "id": "rtx-pro-6000-maxq",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "family": "RTX PRO 6000",
+      "chip": "GB202",
+      "architecture": "Blackwell (GB202)",
+      "compute_capability": "12.0",
+      "vram_gb": 96,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 300W, active cooler",
+      "pci_device_ids": [
+        "2bb4"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-6000-Blackwell-Max-Q-Workstation-Edition"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+        "RTX PRO 6000 Max-Q",
+        "RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+      ],
+      "internal_names": [
+        "GB20",
+        "rtx-pro-6k-bwe-maxq"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "Not listed",
+      "confidence": "high",
+      "notes": "China Max-Q variant RTX PRO 6000D Max-Q is 2bbc (pci-ids only). The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2bb4)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition 2BB4 ... 204C')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2bb4)",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/ (96 GB GDDR7 ECC, 300 W, active)",
+        "https://www.nvidia.com/en-us/edge-computing/products/igx/ (IGX Thor Dev Kit / T7000 dGPU = RTX PRO 6000 Blackwell Max-Q, 96 GB GDDR7, 1792 GB/s)",
+        "https://developer.nvidia.com/cuda-gpus (12.0)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:111-112 (rtx-pro-6k-bwe-maxq / 2bb4:10de)"
+      ]
+    },
+    {
+      "id": "rtx-pro-6000-wse",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+      "family": "RTX PRO 6000",
+      "chip": "GB202",
+      "architecture": "Blackwell (GB202)",
+      "compute_capability": "12.0",
+      "vram_gb": 96,
+      "form_factor": "PCIe dual-slot 5.4in x 12in, 600W, double flow-through cooler",
+      "pci_device_ids": [
+        "2bb1"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 6000 Blackwell Workstation Edition"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-6000-Blackwell-Workstation-Edition"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+        "RTX PRO 6000 Workstation Edition",
+        "RTX PRO 6000 Blackwell Workstation Edition"
+      ],
+      "internal_names": [
+        "GB20",
+        "rtx-pro-6k-bwe",
+        "rtx6000-blackwell-ws",
+        "rtx6000_blackwell_ws"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "Not listed",
+      "confidence": "high",
+      "notes": "China variants have different ids: RTX PRO 6000D Blackwell WS 2bb2 (pci-ids only) and RTX 6000D 2bb9 (README 595.80 'NVIDIA RTX 6000D 2BB9').",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2bb1)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 6000 Blackwell Workstation Edition 2BB1 1028/103C/10DE/17AA 204B')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2bb1)",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/ (96 GB GDDR7 ECC, 600 W, double flow-through)",
+        "https://developer.nvidia.com/cuda-gpus (12.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-RTX-PRO-6000-Blackwell-Workstation-Edition)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:1331-1332 (rtx-pro-6k-bwe / 2bb1:10de)",
+        "nims_catalog/flux.1-dev_1.2.4/model_manifest.yaml:7681 (rtx6000-blackwell-ws / 2bb1:10de)"
+      ]
+    },
+    {
+      "id": "rtx-5080",
+      "name": "NVIDIA GeForce RTX 5080",
+      "family": "GeForce RTX 5080",
+      "chip": "GB203",
+      "architecture": "Blackwell (GB203)",
+      "compute_capability": "12.0",
+      "vram_gb": 16,
+      "form_factor": "Consumer PCIe card",
+      "pci_device_ids": [
+        "2c02"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GeForce RTX 5080"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GeForce-RTX-5080"
+      ],
+      "aliases": [
+        "NVIDIA GeForce RTX 5080",
+        "RTX 5080",
+        "GeForce RTX 5080"
+      ],
+      "internal_names": [
+        "5080-wsl",
+        "GB20"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "None",
+      "confidence": "high",
+      "notes": "MANIFEST DATA ERROR: audio2face-3d_latest tags RTX5080 with gpu_device 2e01:10de (lines 214-215, 231-232, 248-249, 265-266). 2e01 does not exist in pci-ids (HTTP 404) or README 595.80. Not relevant to PCAI.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2c02)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GeForce RTX 5080 2C02')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2c02 'GB203 [GeForce RTX 5080]')",
+        "https://www.nvidia.com/en-us/geforce/graphics-cards/compare/ (16 GB GDDR7, Blackwell)",
+        "https://developer.nvidia.com/cuda-gpus (RTX 5080 = 12.0)",
+        "nims_catalog/deepseek-r1-distill-llama-8b_1.8.0-RTX/model_manifest.yaml:9-10 (RTX5080 / 2c02:10de)",
+        "nims_catalog/nvclip_2.0.0/model_manifest.yaml:943-944 (5080-wsl / '2C02')"
+      ]
+    },
+    {
+      "id": "rtx-pro-4500",
+      "name": "NVIDIA RTX PRO 4500 Blackwell",
+      "family": "RTX PRO 4500",
+      "chip": "GB203",
+      "architecture": "Blackwell (GB203)",
+      "compute_capability": "12.0",
+      "vram_gb": 32,
+      "form_factor": "PCIe dual-slot 4.4in x 10.5in, 200W, active cooler",
+      "pci_device_ids": [
+        "2c31"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 4500 Blackwell"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-4500-Blackwell"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 4500 Blackwell",
+        "RTX PRO 4500 Blackwell"
+      ],
+      "internal_names": [
+        "GB20"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "Not listed",
+      "confidence": "high",
+      "notes": "Do not confuse with the Server Edition (2c3a). The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2c31)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 4500 Blackwell 2C31 ... 2051')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2c31 'GB203GL [RTX PRO 4500 Blackwell]')",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-4500/ (32GB GDDR7 ECC, 896 GB/s, 200W, FP4 support)",
+        "https://developer.nvidia.com/cuda-gpus (RTX PRO 4500 Blackwell = 12.0)",
+        "nims_catalog/cosmos-reason2-2b_latest/model_manifest.yaml:1043-1044 (rtx-pro-4500-blackwell / 2c31:10de)"
+      ]
+    },
+    {
+      "id": "rtx-pro-4500-bse",
+      "name": "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+      "family": "RTX PRO 4500",
+      "chip": "GB203",
+      "architecture": "Blackwell (GB203)",
+      "compute_capability": "12.0",
+      "vram_gb": 32,
+      "form_factor": "PCIe Gen5 x16 single-slot FHFL passive, 165W",
+      "pci_device_ids": [
+        "2c3a"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA RTX PRO 4500 Blackwell Server Edition"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition"
+      ],
+      "aliases": [
+        "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+        "RTX PRO 4500 Server Edition",
+        "RTX PRO 4500 Blackwell Server Edition"
+      ],
+      "internal_names": [
+        "GB20"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "Not listed",
+      "confidence": "high",
+      "notes": "Compute capability 12.0 comes from the CUDA page's 'RTX PRO 4500 Blackwell' entry; the Server Edition is not listed separately (same GB203 die, so INFERRED). PCAI support for this card is not confirmed.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2c3a)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA RTX PRO 4500 Blackwell Server Edition 2C3A 10DE 21F4')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2c3a)",
+        "https://www.nvidia.com/en-us/data-center/rtx-pro-4500-blackwell-server-edition/ (32 GB GDDR7, 800 GB/s, FP4 1.6 PFLOPS, FP8 811 TFLOPS, 165 W, MIG up to 2 x 16 GB)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('RTX PRO 4500 Blackwell Server Edition 32 GB GDDR7')",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:111 (NVIDIA-RTX-PRO-4500-Blackwell-Server-Edition / 2c3a:10de)"
+      ]
+    },
+    {
+      "id": "gb10",
+      "name": "NVIDIA GB10 (DGX Spark)",
+      "family": "GB10",
+      "chip": "GB20B",
+      "architecture": "Blackwell (GB20B) + Grace CPU",
+      "compute_capability": "12.1",
+      "vram_gb": 128,
+      "form_factor": "Desktop superchip (unified 128 GB LPDDR5x; a 64 GB OEM-only variant exists)",
+      "pci_device_ids": [
+        "2e12"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GB10"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GB10"
+      ],
+      "aliases": [
+        "NVIDIA GB10 (DGX Spark)",
+        "GB10",
+        "DGX Spark",
+        "NVIDIA GB10"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "No GPU-to-GPU NVLink; systems pair over a ConnectX-7 200 Gbps NIC",
+      "confidence": "high",
+      "notes": "Memory is unified CPU+GPU (about 119 GiB visible). Other GB20B ids in pci-ids (2e02 'JMJWOA-Generic-GPU', 2e03/2e06/2e13 'RTX Spark N1X', 2e2a) are not DGX Spark.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2e12)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GB10 2E12 10DE 21EC')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2e12 ('GB20B [GB10]', 2025-10-30)",
+        "https://www.nvidia.com/en-us/products/workstations/dgx-spark/ (GB10 Grace Blackwell Superchip; 64 GB* or 128 GB LPDDR5x unified; up to 1 PFLOP FP4; ConnectX-7 200 Gbps)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('DGX Spark (GB10) 128 GB (about 119 GiB)')",
+        "https://developer.nvidia.com/cuda-gpus (GB10 = 12.1)",
+        "nims_catalog/chatterbox-tts-multilingual_1.1.0/model_manifest.yaml:89-90 (dgx_spark / 2e12:10de)",
+        "nims_catalog/magpie-tts-multilingual_1.10.1/model_manifest.yaml:12 (NVIDIA-GB10 / 2e12:10de)"
+      ]
+    },
+    {
+      "id": "b300",
+      "name": "NVIDIA B300 SXM6 AC",
+      "family": "B300",
+      "chip": "GB110",
+      "architecture": "Blackwell Ultra (GB110)",
+      "compute_capability": "10.3",
+      "vram_gb": 288,
+      "form_factor": "SXM6 (HGX B300 8-GPU baseboard)",
+      "pci_device_ids": [
+        "3182"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA B300 SXM6 AC"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-B300-SXM6-AC"
+      ],
+      "aliases": [
+        "NVIDIA B300 SXM6 AC",
+        "B300",
+        "B300 SXM6",
+        "B300 SXM6 AC"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink 5, 1.8 TB/s per GPU",
+      "confidence": "high",
+      "notes": "VRAM: 288 GB (DGX B300 guide, Cosmos, NIM LLM matrix) vs the HGX page total of 2.1 TB (about 262 GB per GPU) vs the Blackwell Ultra datasheet '279 GB' (search extract). The meaning of 'AC' (air-cooled?) is not confirmed. GB110 ids 3183 and 3184 are unnamed in pci-ids and absent from README 595.80; they may be other B300 variants (unverified).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 3182)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA B300 SXM6 AC 3182 10DE 20E6')",
+        "https://pci-ids.ucw.cz/read/PC/10de/3182 ('GB110 [B300 SXM6 AC]', 2025-10-30)",
+        "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html ('8 x 288 GB = 2.3 TB total')",
+        "https://www.nvidia.com/en-us/data-center/hgx/ (HGX B300: 8x Blackwell Ultra SXM, 2.1 TB, NVLink 5 1.8 TB/s, FP4)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('B300 SXM6 288 GB HBM3e')",
+        "https://developer.nvidia.com/cuda-gpus (B300 = 10.3)",
+        "nims_catalog/deepseek-v4.1-flash_2.1.4-variant/model_manifest.yaml:2412 (NVIDIA-B300-SXM6-AC / 3182:10de)",
+        "nims_catalog/cosmos-reason2-2b_latest/model_manifest.yaml:226 (b300 / 3182:10de)"
+      ]
+    },
+    {
+      "id": "gb300-dgx-station",
+      "name": "NVIDIA GB300 Desktop (DGX Station)",
+      "family": "GB300",
+      "chip": "GB110",
+      "architecture": "Blackwell Ultra (GB110) + 72-core Grace CPU",
+      "compute_capability": "10.3",
+      "vram_gb": 252,
+      "form_factor": "Deskside workstation superchip (1 GPU + Grace, 496 GB LPDDR5X CPU memory)",
+      "pci_device_ids": [
+        "31c3"
+      ],
+      "nvidia_smi_names": [],
+      "k8s_gpu_product": [
+        "NVIDIA-GB300"
+      ],
+      "aliases": [
+        "NVIDIA GB300 Desktop (DGX Station)",
+        "GB300 Desktop",
+        "DGX Station GB300",
+        "GB300-252"
+      ],
+      "internal_names": [
+        "NVIDIA-GB300-WS"
+      ],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink-C2C 900 GB/s CPU-GPU only",
+      "confidence": "medium",
+      "notes": "INFERRED mapping: 31c3 is treated as the DGX Station GPU because pci-ids names it 'GB300-252', which matches the Station's 252 GB HBM3e. NemoClaw accepts either 31c2 or 31c3 on a Station, so this is not certain. The NIM key 'NVIDIA-GB300-WS' differs from the K8s label (the nvidia-smi name is 'NVIDIA GB300', so the label is NVIDIA-GB300). No local manifest uses 31c3 yet.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 31c3)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GB300 31C3 10DE 22F8')",
+        "https://pci-ids.ucw.cz/read/PC/10de/31c3 ('GB300' via driver 595.58.03 on 2026-03-24; renamed 'GB110 [GB300-252]' on 2026-10-21)",
+        "https://www.nvidia.com/en-us/products/workstations/dgx-station/ ('252 GB HBM3e ECC | 7.1 TB/s', 'NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip', NVLink-C2C 900 GB/s)",
+        "https://docs.nvidia.com/nim/large-language-models/2.0.11/reference/support-matrix.html ('The GB300-WS GPU is more commonly known as DGX Station.')",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('GB300 Workstation 252 GB HBM3e')",
+        "https://github.com/NVIDIA/NemoClaw/pull/10914 (Station detection: 'GB300 device 0x31c2 or 0x31c3'; log 'gpu=NVIDIA GB300 ... driver=595.58.03')"
+      ]
+    },
+    {
+      "id": "gb300",
+      "name": "NVIDIA GB300",
+      "family": "GB300",
+      "chip": "GB110",
+      "architecture": "Blackwell Ultra (GB110) + Grace CPU",
+      "compute_capability": "10.3",
+      "vram_gb": 288,
+      "form_factor": "Superchip in GB300 NVL72 rack (72 GPUs : 36 Grace CPUs)",
+      "pci_device_ids": [
+        "31c2"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GB300"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GB300"
+      ],
+      "aliases": [
+        "NVIDIA GB300",
+        "GB300"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": true,
+      "nvlink": "NVLink 5: 130 TB/s per NVL72 (1.8 TB/s per GPU)",
+      "confidence": "high",
+      "notes": "VALIDATED seed id 31c2:10de = NVIDIA GB300. VRAM: 20 TB / 72 is about 278 GB vs 288 GB nominal. README also names 31C3 'NVIDIA GB300' (see the DGX Station row). 31a1 'GB110 [GB300 MaxQ]' appears only in pci-ids.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 31c2)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GB300 31C2 10DE 21F1')",
+        "https://pci-ids.ucw.cz/read/PC/10de (31c2 'GB110 [GB300]')",
+        "https://www.nvidia.com/en-us/data-center/gb300-nvl72/ (72 Blackwell Ultra GPUs, 20 TB, 130 TB/s NVLink, FP4)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('GB300 288 GB HBM3e')",
+        "https://developer.nvidia.com/cuda-gpus (GB300 = 10.3)",
+        "nim-profile-output/model_manifest.yaml:2860-2861 (NVIDIA-GB300 / 31c2:10de)",
+        "nims_catalog/deepseek-v4.1-flash_2.1.4-variant/model_manifest.yaml:753 (NVIDIA-GB300 / 31c2:10de)"
+      ]
+    },
+    {
+      "id": "h100-nvl",
+      "name": "NVIDIA H100 NVL",
+      "family": "H100",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 94,
+      "form_factor": "PCIe Gen5 dual-slot air-cooled, 350-400W configurable",
+      "pci_device_ids": [
+        "2321"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H100 NVL"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H100-NVL"
+      ],
+      "aliases": [
+        "NVIDIA H100 NVL",
+        "H100 NVL",
+        "H100 94GB",
+        "H100L 94GB"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink bridge, 600 GB/s",
+      "confidence": "high",
+      "notes": "Naming only: pci-ids calls it 'H100L 94GB', NVIDIA calls it 'H100 NVL' (same id). PCAI: legacy G1 (2x / 16 / 32x H100 NVL per search extracts of HPE QuickSpecs); search extracts also say H100 NVL was removed from the NVIDIA Accelerators for HPE QuickSpecs in v79 (April 2026). Not verified directly because hpe.com timed out.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2321)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H100 NVL 2321 10DE 1839')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2321 ('GH100 [H100L 94GB]', renamed 2023-06-14)",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12951",
+        "https://www.nvidia.com/en-us/data-center/h100/ (H100 NVL 94GB, 3.9TB/s, PCIe dual-slot, NVLink 600GB/s, 350-400W)",
+        "https://developer.nvidia.com/cuda-gpus (H100 = 9.0)",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:40-42 (device_id 2321:10de, gpu 'NVIDIA H100 NVL', gpu_key h100-nvl)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:468-469 (h100-nvl / 2321:10de)",
+        "https://www.hpe.com/us/en/collaterals/collateral.c04123180.html (NVIDIA Accelerators for HPE QuickSpecs; search extract only)"
+      ]
+    },
+    {
+      "id": "h100-pcie",
+      "name": "NVIDIA H100 PCIe 80GB",
+      "family": "H100",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 80,
+      "form_factor": "PCIe Gen5 dual-slot, 350W default/max",
+      "pci_device_ids": [
+        "2331"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H100 PCIe"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H100-PCIe"
+      ],
+      "aliases": [
+        "NVIDIA H100 PCIe 80GB",
+        "H100 PCIe",
+        "NVIDIA H100 PCIe"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink bridge between 2 cards (3 bridges); product brief table says 600 GB/s",
+      "confidence": "high",
+      "notes": "Memory type: NVIDIA product brief says HBM2e, Cosmos NIM 4.0.0 support matrix says HBM3. NVLink: product brief table says 600 GB/s, but its text says 900 GB/s bidirectional. The current NVIDIA H100 page has no PCIe column, so the product brief (2022) may be outdated.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2331)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H100 PCIe 2331 10DE 1626')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2331 'GH100 [H100 PCIe]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12956",
+        "https://www.nvidia.com/content/dam/en-zz/Solutions/gtcs22/data-center/h100/PB-11133-001_v01.pdf (H100 PCIe product brief: 80GB HBM2e, 2,000 GB/s, 350W, NVLink bridge; read via search extract only)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('H100 PCIe 80 GB HBM3')",
+        "https://developer.nvidia.com/cuda-gpus (H100 = 9.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-H100-PCIe)",
+        "nims_catalog/cosmos-predict1-7b-text2world_1.0.0/model_manifest.yaml:155-156 (H100-PCIe / 2331:10de)"
+      ]
+    },
+    {
+      "id": "h100-sxm",
+      "name": "NVIDIA H100 SXM5 80GB",
+      "family": "H100",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 80,
+      "form_factor": "SXM5 (HGX H100), up to 700W configurable",
+      "pci_device_ids": [
+        "2330"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H100 80GB HBM3"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H100-80GB-HBM3"
+      ],
+      "aliases": [
+        "NVIDIA H100 SXM5 80GB",
+        "H100 SXM",
+        "H100 SXM5",
+        "H100 80GB HBM3",
+        "NVIDIA H100 80GB HBM3",
+        "H100 SXM5 80GB"
+      ],
+      "internal_names": [
+        "h100",
+        "H100",
+        "h100-hbm3-80gb"
+      ],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink 4, 900 GB/s per GPU",
+      "confidence": "high",
+      "notes": "None on the id. Older NIMs tag it generically 'H100'/'h100'; canary-1b_1.5/model_manifest.yaml:46 writes '2330' without ':10de' (normalize). Other GH100 ids that a host could report instead (2336 'H100', 2337 'H100 SXM5 64GB', 2338 'H100 SXM5 96GB', 233d 'H100 96GB') exist only in pci-ids (local lines 12958-12963) and are absent from README 595.80; 2339 is listed separately.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2330)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H100 80GB HBM3 2330 10DE 16C0' and '16C1')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2330 'GH100 [H100 SXM5 80GB]')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12955",
+        "https://www.nvidia.com/en-us/data-center/h100/ (H100 SXM 80GB, 3.35TB/s, NVLink 900GB/s, up to 700W)",
+        "https://developer.nvidia.com/cuda-gpus (H100 = 9.0)",
+        "https://docs.nvidia.com/nim/metadata-api/reference/response-fields (gpu_device example '2330:10de')",
+        "nims_catalog/llama-3.2-nemoretriever-500m-rerank-v2_1.8/model_manifest.yaml:404 (device_id 2330:10de, gpu 'NVIDIA H100 80GB HBM3', gpu_key h100-hbm3-80gb)",
+        "nims_catalog/deepseek-v4.1-flash_2.1.4-variant/model_manifest.yaml:1673 (NVIDIA-H100-80GB-HBM3 / 2330:10de)"
+      ]
+    },
+    {
+      "id": "h20",
+      "name": "NVIDIA H20",
+      "family": "H20",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 96,
+      "form_factor": "SXM5 (HGX H20 8-GPU), China-market",
+      "pci_device_ids": [
+        "2329"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H20"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H20"
+      ],
+      "aliases": [
+        "NVIDIA H20",
+        "H20"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "900 GB/s (HGX H20) according to secondary sources only",
+      "confidence": "medium",
+      "notes": "INFERRED: compute capability 9.0 (the CUDA GPUs page does not list H20; it uses the GH100 die). NVLink 900 GB/s comes only from secondary sources (Tom's Hardware and an-link through search extracts); getdeploying.com says the part has no NVLink. NVIDIA publishes no public H20 product page.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2329)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H20 2329 10DE 198B' and '198C')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2329 'GH100 [H20]'; also 2328 'H20B')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12954",
+        "https://docs.nvidia.com/ai-enterprise/release-8/latest/infra-software/vgpu/reference/hopper-h20.html ('NVIDIA H20 SXM5 96 GB')",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('H20 96 GB HBM3')",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:213-214 (h20 / 2329:10de)",
+        "nims_catalog/deepseek-r1-distill-qwen-14b_latest/model_manifest.yaml:59 (H20 / 2329:10de)"
+      ]
+    },
+    {
+      "id": "h20-3e",
+      "name": "NVIDIA H20-3e",
+      "family": "H20",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 141,
+      "form_factor": "SXM5 (inferred), China-market",
+      "pci_device_ids": [
+        "232c"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H20-3e"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H20-3e"
+      ],
+      "aliases": [
+        "NVIDIA H20-3e",
+        "H20 HBM3e"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "Not verified",
+      "confidence": "medium",
+      "notes": "qwen3-32b_1.0.0 tags 232c as plain 'H20'. VRAM: treating H20-3e as the 'H20 SXM5 141 GB' vGPU board is an INFERENCE. A third-party site (flopper.io) says press reports gave 144GB and that 141GB is usable. Compute capability 9.0 is inferred from the GH100 die.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 232c)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H20-3e 232C 10DE 2063')",
+        "https://pci-ids.ucw.cz/read/PC/10de (232c 'GH100 [H20 HBM3e]')",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-H20-3e in GPU list)",
+        "https://docs.nvidia.com/ai-enterprise/release-8/latest/infra-software/vgpu/reference/hopper-h20.html ('NVIDIA H20 SXM5 141 GB')",
+        "nims_catalog/deepseek-v3.1-terminus_latest/model_manifest.yaml:635 (H20-3e / 232c:10de)",
+        "nims_catalog/qwen3-32b_1.0.0/model_manifest.yaml:9-10 (gpu: H20 / 232c:10de)"
+      ]
+    },
+    {
+      "id": "h20-nvl16",
+      "name": "NVIDIA H20 NVL16",
+      "family": "H20",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": null,
+      "form_factor": "Unknown (NVL16 system, China-market)",
+      "pci_device_ids": [
+        "230e",
+        "230c"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H20 NVL16"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H20-NVL16"
+      ],
+      "aliases": [
+        "NVIDIA H20 NVL16",
+        "H20 NVL16"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "The 'NVL16' name implies a 16-GPU NVLink domain (unverified)",
+      "confidence": "medium",
+      "notes": "230c appears only in pci-ids, not in README 595.80. No primary source was found for VRAM (left null). Compute capability is inferred from GH100. The K8s label is derived.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 230e, 230c)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H20 NVL16 230E 10DE 20DF')",
+        "https://pci-ids.ucw.cz/read/PC/10de (230c and 230e both 'GH100 [H20 NVL16]')",
+        "nims_catalog/gpt-oss-120b_2.1.6/model_manifest.yaml:372 (gpu_device 230e:10de, no gpu tag, min_vram_per_device_gb 72.0)"
+      ]
+    },
+    {
+      "id": "h200-nvl",
+      "name": "NVIDIA H200 NVL",
+      "family": "H200",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 141,
+      "form_factor": "PCIe Gen5 dual-slot air-cooled, up to 600W configurable",
+      "pci_device_ids": [
+        "233b"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H200 NVL"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H200-NVL"
+      ],
+      "aliases": [
+        "NVIDIA H200 NVL",
+        "H200 NVL"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "2- or 4-way NVLink bridge, 900 GB/s per GPU",
+      "confidence": "high",
+      "notes": "Absent from the 2024-03-31 local pci.ids (too old). PCAI-relevant: G2 Medium (8x H200) and Large (16x H200) per search extracts of HPE QuickSpecs; that HPE 'H200' means H200 NVL is an INFERENCE (PCIe DL380a Gen12 nodes; NVIDIA Accelerators for HPE QuickSpecs lists H200 NVL).",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 233b)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA H200 NVL 233B 10DE 1996')",
+        "https://pci-ids.ucw.cz/read/PC/10de (233b 'GH100 [H200 NVL]')",
+        "https://www.nvidia.com/en-us/data-center/h200/ (H200 NVL: 141GB, PCIe dual-slot, 2/4-way NVLink bridge 900GB/s per GPU, up to 600W)",
+        "https://developer.nvidia.com/cuda-gpus (H200 = 9.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-H200-NVL)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:772-773 (h200-nvl / 233b:10de)",
+        "nims_catalog/deepseek-v4.1-flash_2.1.4-variant/model_manifest.yaml:1489 (NVIDIA-H200-NVL / 233b:10de)",
+        "https://www.hpe.com/us/en/collaterals/collateral.a50009216enw.html (HPE PCAI QuickSpecs v9; seen only via search-engine extracts, page timed out)"
+      ]
+    },
+    {
+      "id": "h200-sxm",
+      "name": "NVIDIA H200 SXM 141GB",
+      "family": "H200",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100)",
+      "compute_capability": "9.0",
+      "vram_gb": 141,
+      "form_factor": "SXM (HGX H200 baseboard), up to 700W configurable",
+      "pci_device_ids": [
+        "2335"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA H200"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-H200"
+      ],
+      "aliases": [
+        "NVIDIA H200 SXM 141GB",
+        "H200 SXM",
+        "HGX H200",
+        "NVIDIA H200",
+        "H200 SXM 141GB"
+      ],
+      "internal_names": [],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink 4, 900 GB/s per GPU (SXM)",
+      "confidence": "high",
+      "notes": "VALIDATED seed id 2335:10de = NVIDIA H200 (SXM) by README + pci-ids + local pci.ids + NIM gpu tag. No conflicts. INFERENCE: HPE PCAI G2 'H200' nodes are PCIe DL380a-class, i.e. H200 NVL (233b), not this SXM part; verify on site with lspci -nn.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2335)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (rows 'NVIDIA H200 2335 10DE 18BE' and '2335 10DE 18BF'; 595.80 = latest per https://download.nvidia.com/XFree86/Linux-x86_64/latest.txt)",
+        "https://pci-ids.ucw.cz/read/PC/10de (2335 'GH100 [H200 SXM 141GB]'; redirects to admin.pci-ids.ucw.cz)",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12957 (//wsl.localhost/Ubuntu/usr/share/misc/pci.ids)",
+        "https://www.nvidia.com/en-us/data-center/h200/ (141GB, 4.8TB/s, SXM, NVLink 900GB/s, up to 700W, FP8 3,958 TFLOPS sparse)",
+        "https://developer.nvidia.com/cuda-gpus (H200 = 9.0)",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (GPU list contains NVIDIA-H200)",
+        "nim-profile-output/model_manifest.yaml:2340-2341 (gpu: NVIDIA-H200 / gpu_device: 2335:10de)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:366-367 (h200 / 2335:10de)"
+      ]
+    },
+    {
+      "id": "gh200-144gb",
+      "name": "NVIDIA GH200 144G HBM3e",
+      "family": "GH200",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100) + Grace CPU",
+      "compute_capability": "9.0",
+      "vram_gb": 144,
+      "form_factor": "Superchip module (Grace CPU + Hopper GPU via NVLink-C2C)",
+      "pci_device_ids": [
+        "2348"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GH200 144G HBM3e"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GH200-144G-HBM3e"
+      ],
+      "aliases": [
+        "NVIDIA GH200 144G HBM3e",
+        "GH200 144GB",
+        "GH200 144G HBM3e"
+      ],
+      "internal_names": [
+        "gh200"
+      ],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink-C2C 900 GB/s CPU-GPU; GH200 NVL2 links 2 superchips (up to 288GB HBM)",
+      "confidence": "high",
+      "notes": "Absent from the 2024 local pci.ids. flux.1-dev_1.2.4/model_manifest.yaml:6135 tags 2348 with the bare name 'gh200', which other manifests use for 2342.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2348)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GH200 144G HBM3e 2348 10DE 18D2')",
+        "https://pci-ids.ucw.cz/read/PC/10de (2348 'GH100 [GH200 144G HBM3e]')",
+        "https://docs.nvidia.com/dccpu/grace-perf-tuning-guide/ (144 GB HBM3e, up to 4.9 TB/s)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('GH200 144 GB HBM3e')",
+        "https://docs.nvidia.com/nim/large-language-models/latest/reference/support-matrix.html (NVIDIA-GH200-144G-HBM3e)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:691 (NVIDIA-GH200-144G-HBM3e / 2348:10de)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:264-265 (gh200-144gb / 2348:10de)"
+      ]
+    },
+    {
+      "id": "gh200-480gb",
+      "name": "NVIDIA GH200 480GB / 120GB",
+      "family": "GH200",
+      "chip": "GH100",
+      "architecture": "Hopper (GH100) + Grace CPU",
+      "compute_capability": "9.0",
+      "vram_gb": 96,
+      "form_factor": "Superchip module (Grace CPU + Hopper GPU via NVLink-C2C); 480GB = CPU LPDDR5X",
+      "pci_device_ids": [
+        "2342"
+      ],
+      "nvidia_smi_names": [
+        "NVIDIA GH200 120GB",
+        "NVIDIA GH200 480GB"
+      ],
+      "k8s_gpu_product": [
+        "NVIDIA-GH200-480GB",
+        "NVIDIA-GH200-120GB"
+      ],
+      "aliases": [
+        "NVIDIA GH200 480GB / 120GB",
+        "GH200 120GB",
+        "GH200 480GB",
+        "NVIDIA GH200 120GB",
+        "NVIDIA GH200 480GB",
+        "GH200 120GB / 480GB"
+      ],
+      "internal_names": [
+        "gh200"
+      ],
+      "fp8": true,
+      "nvfp4": false,
+      "nvlink": "NVLink-C2C 900 GB/s CPU-GPU; GH200 NVL2 links 2 superchips with NVLink",
+      "confidence": "high",
+      "notes": "2342 is shared by GH200 120GB (subsystems 10DE:16EB and 10DE:1805) and GH200 480GB (10DE:1809). gpu_device cannot tell them apart; use the nvidia-smi name. The bare tag 'gh200' is also used for 2348 (flux.1-dev_1.2.4/model_manifest.yaml:6135), so always key on gpu_device. | The device id is verified. The 96 GB GPU memory is INFERRED from the pci-ids discussion and the GH200 96GB-HBM3 variant; NVIDIA does not separately document the 120GB SKU's GPU memory. The K8s label is derived. Not seen in local manifests by name; it uses the same gpu_device as GH200 480GB.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 2342)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GH200 480GB 2342 10DE 1809')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2342 (name 'GH100 [GH200 120GB / 480GB]'; 2023-07-19 note: memory size refers to CPU RAM, GPU RAM remains 96 GB)",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12964",
+        "https://docs.nvidia.com/dccpu/grace-perf-tuning-guide/ ('96GB HBM3 | 144 GB HBM3e', 'Up to 480 GB LPDDR5X')",
+        "https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/ (NVLink-C2C 900 GB/s; GH200 NVL2)",
+        "https://docs.nvidia.com/nim/cosmos/4.0.0/support-matrix.html ('GH200 480 GB: 96 GB HBM3')",
+        "https://developer.nvidia.com/cuda-gpus (GH200 = 9.0)",
+        "nims_catalog/gemma-4-26b-a4b-it_latest/model_manifest.yaml:832 (NVIDIA-GH200-480GB / 2342:10de)",
+        "nims_catalog/cosmos-reason1-7b_1/model_manifest.yaml:9-10 (gh200 / 2342:10de)",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('NVIDIA GH200 120GB 2342 10DE 16EB' and '2342 10DE 1805')",
+        "https://pci-ids.ucw.cz/read/PC/10de/2342 (2023-07-19 note: memory size refers to CPU RAM; GPU RAM 96 GB)",
+        "https://docs.nvidia.com/dccpu/grace-perf-tuning-guide/ (96GB HBM3 GPU variant)"
+      ]
+    },
+    {
+      "id": "t4",
+      "name": "NVIDIA Tesla T4",
+      "family": "T4",
+      "chip": "TU104",
+      "architecture": "Turing (TU104)",
+      "compute_capability": "7.5",
+      "vram_gb": 16,
+      "form_factor": "PCIe Gen3 x16 low-profile, 70W",
+      "pci_device_ids": [
+        "1eb8"
+      ],
+      "nvidia_smi_names": [
+        "Tesla T4"
+      ],
+      "k8s_gpu_product": [
+        "Tesla-T4"
+      ],
+      "aliases": [
+        "NVIDIA Tesla T4",
+        "T4",
+        "Tesla T4"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "None",
+      "confidence": "high",
+      "notes": "The K8s label is derived. The k8s-device-plugin README selector example writes 'TESLA-T4' in uppercase, but GFD keeps the NVML name's case. Not relevant to PCAI.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 1eb8)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html ('Tesla T4 1EB8 10DE 12A2')",
+        "WSL Ubuntu /usr/share/misc/pci.ids v2024.03.31 line 12808",
+        "https://www.nvidia.com/en-us/data-center/tesla-t4/ (16 GB GDDR6, 320+ GB/s, 70 W)",
+        "https://developer.nvidia.com/cuda-gpus (T4 = 7.5)",
+        "nims_catalog/active-speaker-detection-h4m-nim_1.0.0/model_manifest.yaml:8-9 (gpu: T4 / gpu_cc '7.5')"
+      ]
+    },
+    {
+      "id": "v100",
+      "name": "NVIDIA Tesla V100",
+      "family": "V100",
+      "chip": "GV100",
+      "architecture": "Volta (GV100)",
+      "compute_capability": "7.0",
+      "vram_gb": 32,
+      "form_factor": "SXM2 or PCIe, 16 GB or 32 GB HBM2",
+      "pci_device_ids": [
+        "1db1",
+        "1db3",
+        "1db4",
+        "1db5",
+        "1db6",
+        "1db8",
+        "1dbd",
+        "1dbe",
+        "1df0",
+        "1df2",
+        "1df5",
+        "1df6"
+      ],
+      "nvidia_smi_names": [
+        "Tesla V100-SXM2-16GB",
+        "Tesla V100-FHHL-16GB",
+        "Tesla V100-PCIE-16GB-LS",
+        "Tesla V100-SXM2-32GB-LS",
+        "Tesla V100-SXM3-32GB-H",
+        "Tesla PG503-216",
+        "Tesla V100S-PCIE-32GB"
+      ],
+      "k8s_gpu_product": [
+        "Tesla-V100-SXM2-16GB",
+        "Tesla-V100-FHHL-16GB",
+        "Tesla-V100-PCIE-16GB-LS",
+        "Tesla-V100-SXM2-32GB-LS",
+        "Tesla-V100-SXM3-32GB-H",
+        "Tesla-PG503-216",
+        "Tesla-V100S-PCIE-32GB"
+      ],
+      "aliases": [
+        "NVIDIA Tesla V100",
+        "V100",
+        "Tesla V100",
+        "Tesla V100-SXM2-16GB",
+        "Tesla V100-FHHL-16GB",
+        "Tesla V100-PCIE-16GB-LS",
+        "Tesla V100-SXM2-32GB-LS",
+        "Tesla V100-SXM3-32GB-H",
+        "Tesla PG503-216",
+        "Tesla V100S-PCIE-32GB",
+        "Tesla V100 SXM2 16GB",
+        "Tesla V100 FHHL 16GB",
+        "Tesla V100 PCIe 16GB",
+        "Tesla V100 SXM2 32GB",
+        "Tesla V100 PCIe 32GB",
+        "Tesla V100 SXM3 32GB",
+        "Tesla GV100 DGX1-V",
+        "Tesla PG500-216",
+        "Tesla V100S PCIe 32GB"
+      ],
+      "internal_names": [],
+      "fp8": false,
+      "nvfp4": false,
+      "nvlink": "NVLink 2 (SXM2)",
+      "confidence": "high",
+      "notes": "16 GB variants exist: override VRAM per GPU when needed. No bf16 support.",
+      "sources": [
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids 1db1, 1db3, 1db4, 1db5, 1db6, 1db8, 1dbd, 1dbe, 1df0, 1df2, 1df5, 1df6)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids version 2026.11.05",
+        "https://download.nvidia.com/XFree86/Linux-x86_64/595.80/README/supportedchips.html (device ids)",
+        "https://pci-ids.ucw.cz/v2.2/pci.ids (version 2026.11.05)",
+        "https://developer.nvidia.com/cuda-gpus (compute capability)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1799 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/parakeet-1-1b-rnnt-multilingual
+release: 1.5.0
+profiles:
+- id: 048303626120b6f2e1a223b4b66287378373b6a86b81b799fb9f69d16b07b312
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 3fbb3d919da2c3ef2cf7dea063e1b099ccc2130fb729f08489d128c95eeaa2d0
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:078067d2cb3081076c6de6b608ec7be722974d60af5168b611b85510113e6279
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=checksums.blake3
+        checksum: blake3:3e0c816e178c4394b4664956c48002ef2d88326abe3a2db00f54368da1c1ffa7
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=metadata.json
+        checksum: blake3:5457b9c120f238791ff2f0f9a0b4a2b4a633365bcb27381da8e1cdc91ed1979e
+- id: 150a1c2163883093bee0c39c904243f0ed8db97e08a3dda5e114b2af9bba5cfa
+  tags:
+    diarizer: sortformer
+    mode: all
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f979a9ed05fc1007af5da2537ca921eb1b705e063391322b3e16d2d76a6a2910
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:31a89bfaf088cb1ecc6d3a9c44060191c7fb461cf77cf3d88f6abdb849962a89
+      ? parakeet-1-1b-rnnt-multilingual-str-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:3f7433465566e0aad68af0558f35d7b807c0b1f606eca608dcda11b4598a4dbb
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:38589a1370d576e54449147e3583230334b6905d8e9ef7fb807472cbdc37f134
+- id: 194b7ca975b5fe9fe834d74ee7824190998d1f8a8d63dd2b447dc9556d7283db
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: cca0080f3673abf4f147a62e322a17894e5d2363020e91dd2016b03604d1311a
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:0750831a7a0ab47a4da4cdbc9944e8a1abcefa8ae21ada282dee2c48d5a214ef
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=checksums.blake3
+        checksum: blake3:ae2c02032e4cc401cec338d79063600088d7ffa84c4628d4ca75723abbae44b6
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=metadata.json
+        checksum: blake3:2b1e21a5d21574eac7ae3de42b50f8ef312c736de14ad92e1752e8298d01734b
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7e405572188d7c6176948eb9a84989df0c716fc35a5b0ec7c219b25654632375
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=checksums.blake3
+        checksum: blake3:b03a15691a7e51cf165b83aa988738a70f27ac661ee90951be99123e8bfbbe5b
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=metadata.json
+        checksum: blake3:0a1c7bb727c7a1d86e581022fb6d3de3f6b2163053da8658ec280ecdfd336ada
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:eae19749fc572ced1f0c0076d3402bd1f4609f2536ea8ce363857ea1d574b4e1
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=checksums.blake3
+        checksum: blake3:f69e39e90548ae2c94339d712011be70bce4d1525ba6416ec1ea58c709e6008d
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=metadata.json
+        checksum: blake3:c3db2eb9d756c087bcd2da01c53d3ea1bba5902bfb6a966fba71fe6d54ab2c79
+- id: 1d8c83b6a14e78b2103e6c009095ef1e41f13ed063af99822b01236627406bb3
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 2c34c94a40a03c95dd3053f586680eb93fe20468d577602830a785e04fc8cec0
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7a660a041e9684eb65d8e2048bf34e81d271eaf12ac91910db5ace171e6d8943
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=checksums.blake3
+        checksum: blake3:f096986a14503354bf3719ec04371d99921fc08ea9708ebcd0375677ffc815d4
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=metadata.json
+        checksum: blake3:78ba1887594f2c0780bc3a0b58117c0f035b824c40090c8711ebc2e6f112eb99
+- id: 243ac6c5a0fb0f6b94db2310b6b92db6283ca906a975c56e62f41e7f775495e6
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 85344e35180ddf43051715ff1c6c1fe008f313cec373c923eabfc70956a5a4af
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:47b0c21a8d91b5f9f876319ab9d9a32b441e593e84da2f3513f13ec6c55e79ac
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=checksums.blake3
+        checksum: blake3:443f2e5d0ea91d6155a4496bab7366971da5c10af1ad6f844056581b628138a0
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=metadata.json
+        checksum: blake3:77e416467570118a1479f6bc48adaa5aeaaed07a9d68e1ecf94f4bcce1582c3d
+- id: 25041f49e2ad6d96c74a41813ddd9720f64e196e49b19c8a9d521e1dc7141e50
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 02a40ec71111cbc95b3f50ae598337202d3f0e07fd229bb3aaa460949d7f8440
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:67fe8f7f4066fa35d9c899ee74de484a42303ed37e4c1015d9730ea2f3c20242
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=checksums.blake3
+        checksum: blake3:a100ea7cca702fc754005d5f5ec82d254fa965d6805819660cf29cffb29933a5
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=metadata.json
+        checksum: blake3:238be779312e23cadb3cfdea328cd2d18bf1c03f729d05ca435bf841ed8715b4
+- id: 276afed812bbbce5f8856a29ef8e62bd0e0abe11fa420083d0d6257ef7f2581b
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 4acdb94360db55d212e04ae21001d5356961c6e1534679e740aab796bae47631
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:2fde4d13741459d5422294805cf95f8d205ada4ac6441da8ea4776bc095235f3
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=checksums.blake3
+        checksum: blake3:1fef08eece25a2030995871e23d34aede2c4436a8ae4eb6e92c8672e24bba63c
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=metadata.json
+        checksum: blake3:794d3d62b7fde66a6a405ffb181bef00399c34859d5eb629f5d95c2bd1c72d5a
+- id: 27fc87ff1d5ff6fb42a20bb1e4215bcc8df432ed03f02c4093fc1377c9813997
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: cf9e03353dfbafa78f1cf4e23d2ca511da3ff650a535d5e7cf9a1d466f80f6c7
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:0750831a7a0ab47a4da4cdbc9944e8a1abcefa8ae21ada282dee2c48d5a214ef
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=checksums.blake3
+        checksum: blake3:ae2c02032e4cc401cec338d79063600088d7ffa84c4628d4ca75723abbae44b6
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-multi-silero-sortformer-26.02.3-fp16-roeo01nsuw?file=metadata.json
+        checksum: blake3:2b1e21a5d21574eac7ae3de42b50f8ef312c736de14ad92e1752e8298d01734b
+- id: 2af2c45c9a9ef0aa7c1f8c44d972ba35e18cb0b2006af6f78c7d46330b5ed75d
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 1c35f81c09f0b4f39f7b7d5dc0308aa75b08a38a2da7b81625e6f10b0604fbe8
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:570b702e3c9be0fa22df7aee0e8608b2a04eac6d2e884cc603b1c2cfb58fedd7
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=checksums.blake3
+        checksum: blake3:a1fc36010b5cabe7d01d8345be52717f2a0f44f624f34c1ee81ce40706f7bc4a
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=metadata.json
+        checksum: blake3:e7be5852edfb4e837d0cfbaf7ec2a10e463802f96273478eff70a0d8d1a7c887
+- id: 2cd9ca2e4bfff530c0e749001ca6dcdc636ccf3bce5373290f80f14498a5e86d
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: cf98d85e9c2c388915a46d06457ded761095234435be4977d79e2b83047870db
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:221cd2eb8810f3bd7812a762eec45078b46689b082e89e79ad940f5185d4a3e1
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=checksums.blake3
+        checksum: blake3:75c406860604b546175b33e3aec842eff35805baab43f997ef6760e28c8306b3
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=metadata.json
+        checksum: blake3:9c6d1926532de022d9936935013e81fa8d1329ccfffef36091f982f876556651
+- id: 2e8a1958232724fda4041d80005d7da11252739e0e05da4a2f33b7669ae7634a
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f5baea4d57c090cda862a0146ae16071c9896acf988d3b70d5581ff1a5e1e595
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:eae19749fc572ced1f0c0076d3402bd1f4609f2536ea8ce363857ea1d574b4e1
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=checksums.blake3
+        checksum: blake3:f69e39e90548ae2c94339d712011be70bce4d1525ba6416ec1ea58c709e6008d
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-j4syujrp7g?file=metadata.json
+        checksum: blake3:c3db2eb9d756c087bcd2da01c53d3ea1bba5902bfb6a966fba71fe6d54ab2c79
+- id: 2f58e18e2b04e678a908f7cb8ab5ec008809c293cf795b1874ca0eb5fd47b287
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: eb844c9a8c36ab41c866efbf4ca342c27c349de43cc75bf74c80d55891acb8f5
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:5934a2e833bdb810b118b69423a51ed8787bc97681fe431f65be5a2bedbd615d
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=checksums.blake3
+        checksum: blake3:489899b680592d4cfdf5c3cae1e8c42d215ff1edc3ef1788b246b13d5b1bebbc
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=metadata.json
+        checksum: blake3:6ccb67fc729b6353cab32d754fd06b27d031d24005dd3bf2249953e4f7b9835c
+- id: 2f6d5871db7f6832eff4e64de69f6c03357d57df641dc879371e338dd756b64a
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 12596840bc93771cc626e1a7355f4d2ae56ca8aa3d5297de154f1b9b04bd3ccb
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:c6c13f84506494b2aa19eaa2839f7903d3d1a8baf0a05b8e31405f007711c6ca
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=checksums.blake3
+        checksum: blake3:6151fb6bae73677d191f4abf320df82c005639742e56ce09dee2c0f03653b479
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=metadata.json
+        checksum: blake3:0a0327fbf77c7698255f0d7fb18e1b7f9febbec405ac7d0fdf97bff3939d9f5b
+- id: 3753ec840cfc1fbd44aebfb3289016d53a87150aa5395255ac04ff48aa1aab05
+  tags:
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 7c4053f425a735b5109c2442eff9c0dd71370e64b3dd6e3c95ef6424c2071cab
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:3f7433465566e0aad68af0558f35d7b807c0b1f606eca608dcda11b4598a4dbb
+- id: 3a7ce61f4e622bdc20cb35a4380b41f7327236977444affb1eb70e0c18b556dd
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 10226c9594f598567c05d885dc84bcf9835b1586648be21cce56a1cf6cbc6a1b
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:9ca4125e81ed3da033b843ff2c466594b79d632a79ba067c7ea2e996844200bb
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=checksums.blake3
+        checksum: blake3:f61062bfcf2baf7c05419a87dc2e54214316415fbe22ff2f771d4b81459be3b8
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=metadata.json
+        checksum: blake3:d3e3bfba119b620d0b0109cfdc075b7bc4f5dbaad38a5bf9f0f01c087907e13a
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:affa69397b6434e82f0d59bd7b0497b4b7f9b30949e79f1e1e1b69ad8a6cb5a6
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=checksums.blake3
+        checksum: blake3:9ca5125bebb0673261c821f5a238e730183bce3c741f1b50bfe547ac21b2e33a
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=metadata.json
+        checksum: blake3:24fbf91a520ae0d4d62fce669ae89c319d50293266ba0c9e358c3b802732f21d
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7a660a041e9684eb65d8e2048bf34e81d271eaf12ac91910db5ace171e6d8943
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=checksums.blake3
+        checksum: blake3:f096986a14503354bf3719ec04371d99921fc08ea9708ebcd0375677ffc815d4
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-indic-silero-sortformer-26.02.3-fp16-06x6vrhl6w?file=metadata.json
+        checksum: blake3:78ba1887594f2c0780bc3a0b58117c0f035b824c40090c8711ebc2e6f112eb99
+- id: 3c796136e0b2f7c2ae7c538b50bf2becbad8532013f807fbf12835ecaca20ccd
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 1ec016dfe85804bf6b85bb91815c03c801073b40cbbdc220a0c9bb52bf339dba
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:6c80a152d289e7d254a2368387fcd38f9826b4803ae49391d3f9ba53df82bc7d
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=checksums.blake3
+        checksum: blake3:f3705c94894001c2bf42e4afd5f3cbcd3e63c214b7872196c3e958d0f9b7aa25
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=metadata.json
+        checksum: blake3:260bc828d68560661d380723e5f82bf253b91b7e2b07cb42f344d537f19b5fed
+- id: 43250d28954bf8689a0c5eaf78936eee1e0d52ae2146ca69458068ab93b09627
+  tags:
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: ce8f187a2c4c2dbd73d23b6af4d5b4ede794e5053700a96a1cebb06acfb21789
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:acd2477ea8723b20d614f050c3483a0a6baa9924de317d2fc1c7a49c006d4b85
+- id: 4d7bca214e5f8ab0ea44b2a213ec15982ddcf556b684cb9882c943bc37966c38
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f21d806ab3ce37728ecffbac2db91c3b1ad09beb892e4b07fcadcaf83ba496ad
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:4c93eae5819aa9a15e5cd682ac2356c016113d05ea716fc28212fca2a7eb0bcd
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=checksums.blake3
+        checksum: blake3:82981ab93b282e664b90613d2c02e303e928d3cf1e17b68bc2d31b4adae76663
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=metadata.json
+        checksum: blake3:7242c58550ffc2d6723360863e25125aa52f9cdcf9359c9cdf267168ea02a480
+- id: 51c10bd83f928ef2a7097847b41a3bf51d076bc36d2287ddc27c0754271088a4
+  tags:
+    diarizer: sortformer
+    mode: str-thr
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f875938871a338c05a36b986c94201252540dca5559c29503fd5b17136139541
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:38589a1370d576e54449147e3583230334b6905d8e9ef7fb807472cbdc37f134
+- id: 535b7a030e39cc866ce3ec8f599142d22280446d98567e1500e58ff6becf1d49
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 2141623a5b98f5f7dc0a42ef39a3d28b0a0dcaf791ef5360229980e74a29c823
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:15013bc725944d9ce2e7cc0f643b6bb2aac6169c461a8e1364e086f43e80bfec
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=checksums.blake3
+        checksum: blake3:e8b6a57778f1146afd923e3d39298932f9993517815ef45f58f41ad041b3bbd7
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=metadata.json
+        checksum: blake3:cadde536e7fee7d7c0b0858ff0248ba2c1b358221d0a3daf820e5795e415622b
+- id: 54d996561937017ceb7138283423878df6ed332f30bddaedb458e8d81dce44f0
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b54e66c491dc303e7bdb67e95332ff0f7827d6a588c8a15964e76b2a3d91dfe4
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:2d73b0cde0b07f696c273de5523afd590a52cef2135857a3afeb993e2b5fb1ac
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=checksums.blake3
+        checksum: blake3:87f6388524c217f5b774764c8139366d153041d6d7fe0250a226ab950a83b3a2
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=metadata.json
+        checksum: blake3:fd1a52e4bf47694ceff80f226c9c7bd255db5a06a5c2e2ac99a51afe3187ea62
+- id: 588747f36385c0a96b50bcd41210db4a63923b4ac0d273c7a69e79b53aee6abf
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b19b9d28672b9b2247feec5c5fc0a4daaef7034b20dbb7e4ac0d5ac67d7c9c9e
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:b0a7881522982f99be7c77fde3fbad9b935183d646cc57b5ffebb0e09978fe16
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=checksums.blake3
+        checksum: blake3:58e94f77191ccd009dba632872f18b9c0009606d1dfc4587a819bdcde3f8027b
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=metadata.json
+        checksum: blake3:4f71af2a30837ac12edc2c8acc64cde0be2625c3ff7c471a5d960276884ecb5b
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:15013bc725944d9ce2e7cc0f643b6bb2aac6169c461a8e1364e086f43e80bfec
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=checksums.blake3
+        checksum: blake3:e8b6a57778f1146afd923e3d39298932f9993517815ef45f58f41ad041b3bbd7
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-multi-silero-sortformer-26.02.3-fp16-4rhnbuafuq?file=metadata.json
+        checksum: blake3:cadde536e7fee7d7c0b0858ff0248ba2c1b358221d0a3daf820e5795e415622b
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:4e37c079007ebaf57301ff0b4f6d25ece3c2893c49edd1ed08203704f08e2808
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=checksums.blake3
+        checksum: blake3:5a2d3be81e5c9afd070dc449a197f7a273e9f7d2ca1a735220d451d5ffece247
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=metadata.json
+        checksum: blake3:c5f29691cf6529a4a300973ed6178bc4e26ba1ab4f71033f9bbcc83df7ce8cc1
+- id: 58963915301e1037208370b06ddb248c829983aceaaebbfe3e6a043e9f835de4
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 4dd2eb301e9e8a9b5d4d9ff73665079b5368e01545ead18de7e7ef4ce1ad3c89
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e2cd9361d13e2b2b1557e7c034d3122270f0bfd555852aae96e1f038fc9a19fb
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=checksums.blake3
+        checksum: blake3:0c3e8951611d6fbc1e6271ca47d3bfef699bb921c4beec9869e45e34b853704c
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=metadata.json
+        checksum: blake3:43120f09d3f051e3f8fc0ce8ec18e6137bb6a7d476802c146678d1ebd349339a
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:bf09b2289ce90b162956168c6c656400bd03ace972541d0e059b4e61dd6133f3
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=checksums.blake3
+        checksum: blake3:e6c3dbd77bc9d1fd43d1906ddc2fe07acb79b403a3ffb68a4d30341a524a2127
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=metadata.json
+        checksum: blake3:ff17d5f43d025697e7af3382575b02c143936c077573d5c63f6b6488addcaf8d
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:5934a2e833bdb810b118b69423a51ed8787bc97681fe431f65be5a2bedbd615d
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=checksums.blake3
+        checksum: blake3:489899b680592d4cfdf5c3cae1e8c42d215ff1edc3ef1788b246b13d5b1bebbc
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-o5-ir9moeq?file=metadata.json
+        checksum: blake3:6ccb67fc729b6353cab32d754fd06b27d031d24005dd3bf2249953e4f7b9835c
+- id: 5ae45e5c5ccc31ee2e505bd2c65242d7b7d9d43be5908ee2807b2fa1d3ba1334
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 1babacae17ef4bd6287b59a780438692270f8726f6d188645da60bf81dcd0d6f
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:4c93eae5819aa9a15e5cd682ac2356c016113d05ea716fc28212fca2a7eb0bcd
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=checksums.blake3
+        checksum: blake3:82981ab93b282e664b90613d2c02e303e928d3cf1e17b68bc2d31b4adae76663
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-w0ejdm150q?file=metadata.json
+        checksum: blake3:7242c58550ffc2d6723360863e25125aa52f9cdcf9359c9cdf267168ea02a480
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:2d73b0cde0b07f696c273de5523afd590a52cef2135857a3afeb993e2b5fb1ac
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=checksums.blake3
+        checksum: blake3:87f6388524c217f5b774764c8139366d153041d6d7fe0250a226ab950a83b3a2
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-prompt-silero-sortformer-26.02.3-fp16-n3udedtoka?file=metadata.json
+        checksum: blake3:fd1a52e4bf47694ceff80f226c9c7bd255db5a06a5c2e2ac99a51afe3187ea62
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7ef30c0a031543d87dd1a07fd25bc4d4da73ec9e85102accac01aa60a060c9ed
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=checksums.blake3
+        checksum: blake3:0adb27222e07de96273f694f85c1a1258d8b176ace06b5c32797784dd119d009
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=metadata.json
+        checksum: blake3:2ae9f40aabe34100af817e772af07c41d09203c0c41186fe06ac06e3f312f4e7
+- id: 5f510d9da9cb49757ec2be7529d4819127706e6f05652309bd36f93e147a4fb7
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: cf3de148422174c857ff1bc5816ab5c0afc72d675d0299bd9c061cc5eb373fa8
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:cfd85c1b875f58c4588b089add23d95daf8bf47d51c6b4942a5e6737debde041
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=checksums.blake3
+        checksum: blake3:6c91563e9d7300c64a66a7943bb14d7905b3a7ffef484c67d75ad75962f468fd
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=metadata.json
+        checksum: blake3:4d5b8707924d239fc1962c5256211f4ce9d59b02f13562d42236b6005088939f
+- id: 6065e8498ddd0771af2884c0df7bda9daef2ec804a0625835ae6a28fef77d083
+  tags:
+    diarizer: sortformer
+    mode: ofl
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: df72d7fe5e700ed86c698c57abd6ad3299f6544121070f374a8d4d2a042939a5
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-multi-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-multi-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:31a89bfaf088cb1ecc6d3a9c44060191c7fb461cf77cf3d88f6abdb849962a89
+- id: 6bc912f9840b5ef9b3c9507dd3d68e76c88efc8fe172b2fdd40ab817ea7c64a8
+  tags:
+    diarizer: sortformer
+    mode: all
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f3904a865c117472ecedc0af9843272446128419bedfab56f0ab16903e9c9788
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:b81a041e37b7b2cfe41936c6c8fdd656a1efd4496243610fab0a0946e831f4bc
+      ? parakeet-1-1b-rnnt-multilingual-str-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:acd2477ea8723b20d614f050c3483a0a6baa9924de317d2fc1c7a49c006d4b85
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:b9e08e2ee0f681e00d172d0f11158eecefb0f167d981f29d9b8281100ffde273
+- id: 6e552047b722b639dece7bad4086fef8ec0ef2ee3f5980cc3527db877ee1be89
+  tags:
+    diarizer: sortformer
+    mode: all
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b8b76d62a1368417ee6308ad528bb0f1c889a826dc70ca95663c911d35401f93
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:513a3081bf1b1f29fce283516632be31bf87a3409feb4f2340f7ac6a39eaa7a1
+      ? parakeet-1-1b-rnnt-multilingual-str-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:fce38a53ce4af372f3d09c0b04a934bccc13f8e7b91fd0851988bedb63e90ea0
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:cf6f754d14eca60966aaf3f5cb4c5b01f4c01fb909e022c1384293b763373ba8
+- id: 77bc58b1fc8fe3e3b5a8ffb81bd0f51ea187fc7ac6d68eebe70b51aa1e17f658
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 32fa85554fcfb0c54e28716326b82eae0d0c0f062a91e2b850e3276052b1fb7e
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:35c9d9369d5cbb183b6ca6dd7fd0cb3421772ff78ba51029b401efb2c7cbac09
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=checksums.blake3
+        checksum: blake3:09ddcd162bc6daf3ccb5b7b79196784551b06180ed2bf05c287cc7d1aeb18cd7
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=metadata.json
+        checksum: blake3:c7c2bcd637dee29e67cea9c016708c39a94284114efd3a5c0ee2d0652a80c641
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e94c398c0520b570155ba0949ed94538d18db38e00e31a582796b1cd83fb160f
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=checksums.blake3
+        checksum: blake3:910be7989f185d2072d8886beb575b69a6b2553ef2f7d49e7617514edc1deebe
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=metadata.json
+        checksum: blake3:9cd2864025c6f4a67f3e2a20e78332832128ab39b58f703dfd92bdc6f6ca0503
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:9d92308b356ba52a9e37e4661f536ba3685bf6b1de77bf31e3df776311141a56
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=checksums.blake3
+        checksum: blake3:a792d9d166ec9196e6a6eeafd78f5d4b8606864ff7cb9e19dab6eafbbe3ef1d4
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=metadata.json
+        checksum: blake3:3af0dcdd6cdcb4019b07c56d27b2aeb43a359506b9977b0c6d74d8f0d9c55fad
+- id: 8653c0ef9b82a2b04f7ae9023233604e8877a83c5256599468af055675e06c36
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b25bb7387a336355a37bf9cb74bb57bc731345e626e9dfa73fe5e8afce222b80
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:bf09b2289ce90b162956168c6c656400bd03ace972541d0e059b4e61dd6133f3
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=checksums.blake3
+        checksum: blake3:e6c3dbd77bc9d1fd43d1906ddc2fe07acb79b403a3ffb68a4d30341a524a2127
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-indic-silero-sortformer-26.02.3-fp16-ngdlvbn8ka?file=metadata.json
+        checksum: blake3:ff17d5f43d025697e7af3382575b02c143936c077573d5c63f6b6488addcaf8d
+- id: 8d15bd2fa9d3bfe1cc5c285201c0ffe8524ee373ad74df3cf9943dd0ffff59ce
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 77040095c14d0de161b9e4d33341c884f717fe8337606a28013a70dafc2650b4
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:9d92308b356ba52a9e37e4661f536ba3685bf6b1de77bf31e3df776311141a56
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=checksums.blake3
+        checksum: blake3:a792d9d166ec9196e6a6eeafd78f5d4b8606864ff7cb9e19dab6eafbbe3ef1d4
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-multi-silero-sortformer-26.02.3-fp16-sneswsyala?file=metadata.json
+        checksum: blake3:3af0dcdd6cdcb4019b07c56d27b2aeb43a359506b9977b0c6d74d8f0d9c55fad
+- id: 8eb266fb498e56acdd0437104e71045902a2522a3aa603e279ca41cd004a678d
+  tags:
+    diarizer: sortformer
+    mode: str
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: dceb5921cec23c002840cc0afcb49d16b2c00dd2f91c4fc34805430a1f5e4542
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:fce38a53ce4af372f3d09c0b04a934bccc13f8e7b91fd0851988bedb63e90ea0
+- id: 91df6880339971fbfd841493c8bd46a11d309de9f4c91badaead62c560bf8f16
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 905169921a370a114e4f93ae31f15af31cc99adb224cc66c52cbc04171245c5b
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:078067d2cb3081076c6de6b608ec7be722974d60af5168b611b85510113e6279
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=checksums.blake3
+        checksum: blake3:3e0c816e178c4394b4664956c48002ef2d88326abe3a2db00f54368da1c1ffa7
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-indic-silero-sortformer-26.02.3-fp16-veprtrimcg?file=metadata.json
+        checksum: blake3:5457b9c120f238791ff2f0f9a0b4a2b4a633365bcb27381da8e1cdc91ed1979e
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:118be0515fede665023879807ba44a3838355e23e88ba80c577170a87c546bfe
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=checksums.blake3
+        checksum: blake3:ee54dd887a71a801a070e8c6313dd48de0127d9e9406cb2418ef15830fe17946
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=metadata.json
+        checksum: blake3:e5fb2a663c2befda66674a2f7f5f664327ed98e0825b39d77c40963b59c90734
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:c6c13f84506494b2aa19eaa2839f7903d3d1a8baf0a05b8e31405f007711c6ca
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=checksums.blake3
+        checksum: blake3:6151fb6bae73677d191f4abf320df82c005639742e56ce09dee2c0f03653b479
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-indic-silero-sortformer-26.02.3-fp16-eqvfddogqq?file=metadata.json
+        checksum: blake3:0a0327fbf77c7698255f0d7fb18e1b7f9febbec405ac7d0fdf97bff3939d9f5b
+- id: 9b315e83ed9107e2c13f68fa25509596c67a6a24c2212073d364fe563ae5c990
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 3a326a0d463ea281b0296c84fad825762452de26f575e65470ea621e07e2d124
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:b54c365da0b7e1a6cb4de18bc86780faac76791afff61f7a46c7a7acc2dda81d
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=checksums.blake3
+        checksum: blake3:5ecf1c8bbf3e0ed4848a048168b8161a9789656eea050a9244c7d9a1f063b9ca
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=metadata.json
+        checksum: blake3:7bbdf84c78ff147e051a54bfb42541618b8e9ab399e38bf38a6c8298295a09fc
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e1f693bd20d6bd3809fbb98c9fa7bf1541f173b99a22f66637a208f1b0832977
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=checksums.blake3
+        checksum: blake3:92dd218a84c17eb458d46e47cfdf185624a05dbba9aaa86437232b198fd8fabc
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=metadata.json
+        checksum: blake3:7d3c833ac2f5f6a9ac700faa3588dae09794e7c44fca3b9caaa90707a6e95d19
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:47b0c21a8d91b5f9f876319ab9d9a32b441e593e84da2f3513f13ec6c55e79ac
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=checksums.blake3
+        checksum: blake3:443f2e5d0ea91d6155a4496bab7366971da5c10af1ad6f844056581b628138a0
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-multi-silero-sortformer-26.02.3-fp16-lkip1qvuza?file=metadata.json
+        checksum: blake3:77e416467570118a1479f6bc48adaa5aeaaed07a9d68e1ecf94f4bcce1582c3d
+- id: 9d4c93f67c2a5f5d3777ccd58138b70aa5919d9b92c8374b92986fe1c011364b
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b84078a68b6acf83fb1221e4d4a5792f17a8f015796650352bf10c41b727f2dc
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:866feb5288696cbd92c1faf0c64b8001b4901e510bd89cd88e5e1b086de4c474
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=checksums.blake3
+        checksum: blake3:63e96cfbb180e2f61625539f592e710b8f2d2149e8b6fda8136c38853da860f2
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=metadata.json
+        checksum: blake3:6e7255eac7417aa09df88db5e9c5076058dba56cf6d0b61c9005bc92f82aeb9d
+- id: 9e19c42f48407c59b1a04c976535e52b4dbf1fb38558f5fdc623ab294d4e4ef1
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 28e80f1c28f5c23ed1c2c01b1ef24066ae82e28f2b11c8c5db6d04ea97936a0b
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:affa69397b6434e82f0d59bd7b0497b4b7f9b30949e79f1e1e1b69ad8a6cb5a6
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=checksums.blake3
+        checksum: blake3:9ca5125bebb0673261c821f5a238e730183bce3c741f1b50bfe547ac21b2e33a
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-indic-silero-sortformer-26.02.3-fp16-dgpfcpxa-w?file=metadata.json
+        checksum: blake3:24fbf91a520ae0d4d62fce669ae89c319d50293266ba0c9e358c3b802732f21d
+- id: 9facd1bfb624fbc071ef89a9f597a4a3e0b4ab357d736560a79a3aa613124957
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 36ef1f6dbe4925cb4242e2382a59c20580409d12ce95f352f4ff46766d2f0855
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:ca7cee8223bb3bc0b8c2a9f9fb7fc361ac0060cf4f36d83b26b02ffb88539412
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=checksums.blake3
+        checksum: blake3:c0b821fae801a0d9d9e7e447a59a34b0e8cb9f56739c253a9bfd28834c96e670
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=metadata.json
+        checksum: blake3:abd9295a6fe37145b94f0b792d42cefd554a911542d5eee7b13bee7bc8e335ed
+- id: a3185dd4f1adfb47529091269efb436862b57fa5cb0e75b87172a4275756eb67
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 5921c29b8aa585e466850cebbb7a62233a383349ba275dbd6173d361f2f1301f
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7e405572188d7c6176948eb9a84989df0c716fc35a5b0ec7c219b25654632375
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=checksums.blake3
+        checksum: blake3:b03a15691a7e51cf165b83aa988738a70f27ac661ee90951be99123e8bfbbe5b
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-multi-silero-sortformer-26.02.3-fp16-05jznuubdg?file=metadata.json
+        checksum: blake3:0a1c7bb727c7a1d86e581022fb6d3de3f6b2163053da8658ec280ecdfd336ada
+- id: bdd51f729413bd322aed6eea6ea27bbb1b0d4eeac94895d72d9890544fd5a631
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: b6f8bfcfb0f4b48b8ab92b59d5e72258f2716946511b71a12f138eee4efca8fc
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e94c398c0520b570155ba0949ed94538d18db38e00e31a582796b1cd83fb160f
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=checksums.blake3
+        checksum: blake3:910be7989f185d2072d8886beb575b69a6b2553ef2f7d49e7617514edc1deebe
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-multi-silero-sortformer-26.02.3-fp16-zhuvd6eg-q?file=metadata.json
+        checksum: blake3:9cd2864025c6f4a67f3e2a20e78332832128ab39b58f703dfd92bdc6f6ca0503
+- id: bfb68083e1e03ab7b8fb6343b52e193fb5cfa4ce17f9089634c5343bf78f0fb3
+  tags:
+    diarizer: sortformer
+    mode: ofl
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 52ecdace706a5572a30be0c914b761f229405dd6bf57b03189c96115dfbf09a1
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:b81a041e37b7b2cfe41936c6c8fdd656a1efd4496243610fab0a0946e831f4bc
+- id: c119ebae782e922b7a4c73f1a52aa69770cee0f7db5ab45f8b4b7adae70e9907
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: fd26b71745bb6f0f0f81a9b67631a1da3bd5689d4026c8d38bd654c8cfb8571e
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:afb7713039fe987b8dea6385c13596c4ee18e658bd3e4ef1f19d12a2217af63b
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=checksums.blake3
+        checksum: blake3:15c6919e86ee1bf25e83724f1afd20ec338105e8f13d56b7d9986f0139019d7d
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=metadata.json
+        checksum: blake3:9e833eadeaeb94eb9223f6e8bf4a82885b96f4a8f17c01d221c654190fd206c5
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:313076ed5d5e4a4c5ab48cdfa10ca50fa37e6f8d4fd5f5f5bfba2687bd9687bd
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=checksums.blake3
+        checksum: blake3:d8040d630bff4b23ec8df704bd516530b6bb94a652aa74d3e48615e5901bf5a6
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=metadata.json
+        checksum: blake3:fa5789ece9354b62d46a7c15e124762ed05d329d71d1069be3e8648ed0b7e0d5
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:570b702e3c9be0fa22df7aee0e8608b2a04eac6d2e884cc603b1c2cfb58fedd7
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=checksums.blake3
+        checksum: blake3:a1fc36010b5cabe7d01d8345be52717f2a0f44f624f34c1ee81ce40706f7bc4a
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-thr-prompt-silero-sortformer-26.02.3-fp16--qtoq7axuw?file=metadata.json
+        checksum: blake3:e7be5852edfb4e837d0cfbaf7ec2a10e463802f96273478eff70a0d8d1a7c887
+- id: c22c57e5389d63b1add82b35fdce3128576f40de5d3c71761a095f8c543d13e4
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: fe83bed76403062a366e4c63dd9a84e6ff776d397bae5c10c3703a6541871733
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:b54c365da0b7e1a6cb4de18bc86780faac76791afff61f7a46c7a7acc2dda81d
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=checksums.blake3
+        checksum: blake3:5ecf1c8bbf3e0ed4848a048168b8161a9789656eea050a9244c7d9a1f063b9ca
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-multi-silero-sortformer-26.02.3-fp16-hvlllet4da?file=metadata.json
+        checksum: blake3:7bbdf84c78ff147e051a54bfb42541618b8e9ab399e38bf38a6c8298295a09fc
+- id: c74b7540bd2c026812c3b0bbcdef239d39cab3ceffedba294da923295a5cc566
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: aaa80c29b35ab5dfd76bc11c6cf3a7f3c0d9d9e079b2bc933e9a013797eb388c
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:ee33b6fc5c7c77bfeda75baa15248720cd9cfa59abda0ccf16c18947dc6221cf
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=checksums.blake3
+        checksum: blake3:9e4e68df9f84505aea316ce8dbc4c0f30aa4fcc983ae4b4e45262850a0ae046d
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=metadata.json
+        checksum: blake3:861859de8ed3cb204686b89aacb58af446cc47721a3ef7f653ed271cb617d2e5
+- id: c7c26c068a6f4c14872937e1c4bb4ed1fd7d3bd55885e9790527a94d6ab0f5a6
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 9396094e6225087198b327b2892ca01d59e2feefd4f71fc82eebed8b78ecdffe
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:4e37c079007ebaf57301ff0b4f6d25ece3c2893c49edd1ed08203704f08e2808
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=checksums.blake3
+        checksum: blake3:5a2d3be81e5c9afd070dc449a197f7a273e9f7d2ca1a735220d451d5ffece247
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-multi-silero-sortformer-26.02.3-fp16-umrfbbw-ga?file=metadata.json
+        checksum: blake3:c5f29691cf6529a4a300973ed6178bc4e26ba1ab4f71033f9bbcc83df7ce8cc1
+- id: cbd2811d1e25c31b65b3204b896104e5496393f1552a1ec1771b3f5a2fb3ee3e
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 7d0b095084995f07cfe46c9006b32602f5b8627d2f635df698ac61b5b63cda45
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:b0a7881522982f99be7c77fde3fbad9b935183d646cc57b5ffebb0e09978fe16
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=checksums.blake3
+        checksum: blake3:58e94f77191ccd009dba632872f18b9c0009606d1dfc4587a819bdcde3f8027b
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-multi-silero-sortformer-26.02.3-fp16-evycuasppa?file=metadata.json
+        checksum: blake3:4f71af2a30837ac12edc2c8acc64cde0be2625c3ff7c471a5d960276884ecb5b
+- id: ce614b7bec517666236f1010f9d199386bac09a9530a9f4f467dc4b2a4003208
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 41411e9773c550b4540716b614c0f266463e8fea5f4c6bc0611f146a7d7461ac
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:221cd2eb8810f3bd7812a762eec45078b46689b082e89e79ad940f5185d4a3e1
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=checksums.blake3
+        checksum: blake3:75c406860604b546175b33e3aec842eff35805baab43f997ef6760e28c8306b3
+      parakeet-1-1b-rnnt-multilingual-a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-ofl-prompt-silero-sortformer-26.02.3-fp16-kfeltjqtew?file=metadata.json
+        checksum: blake3:9c6d1926532de022d9936935013e81fa8d1329ccfffef36091f982f876556651
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:2fde4d13741459d5422294805cf95f8d205ada4ac6441da8ea4776bc095235f3
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=checksums.blake3
+        checksum: blake3:1fef08eece25a2030995871e23d34aede2c4436a8ae4eb6e92c8672e24bba63c
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-prompt-silero-sortformer-26.02.3-fp16-jhnz7-8ing?file=metadata.json
+        checksum: blake3:794d3d62b7fde66a6a405ffb181bef00399c34859d5eb629f5d95c2bd1c72d5a
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:67fe8f7f4066fa35d9c899ee74de484a42303ed37e4c1015d9730ea2f3c20242
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=checksums.blake3
+        checksum: blake3:a100ea7cca702fc754005d5f5ec82d254fa965d6805819660cf29cffb29933a5
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-44nzxfhixa?file=metadata.json
+        checksum: blake3:238be779312e23cadb3cfdea328cd2d18bf1c03f729d05ca435bf841ed8715b4
+- id: cee91e2ba36b4d00e00af7bb4864bd7f1d19dd45250bcc665c4d7359650e2a8a
+  tags:
+    diarizer: sortformer
+    mode: ofl
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 9047819362eb8c8caae6c8f2e11d038627baf7f2f715aa1b67ce34d01dec6c7f
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-ofl-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:ofl-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:513a3081bf1b1f29fce283516632be31bf87a3409feb4f2340f7ac6a39eaa7a1
+- id: d3be70f8fc64adf6da6ee1d6c8a5a2554685c85c54a69ea39082096b71712336
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: de235d70cb283decb0bcd4ebb7390b9509863e7502a2a41533469800de49f0a6
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:44b3ff85a2b73b6b526eb76e9b19e6488ea85880032ac186d504655ed2b08510
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=checksums.blake3
+        checksum: blake3:ae69b327d675b1c600f7669c4eaf01b6e68db5d5c338b914b049526db42f2601
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=metadata.json
+        checksum: blake3:194e9e6830011ee03e0465618b5887e254dfe22d77780acf19e2efee4d9ee57d
+- id: d5ce367063a316627fe838ef3ce7e16ee363a72bfa9bdd040aa9c8d22db84f28
+  tags:
+    diarizer: sortformer
+    mode: str-thr
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: c4d7e31deb4361313ca055014b9745381ee05f683c0b85b2e0adba157b1dd1a1
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-indic-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-indic-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:b9e08e2ee0f681e00d172d0f11158eecefb0f167d981f29d9b8281100ffde273
+- id: d7e5586b7a63d61a72ceeb0d78a7a891c0e00925c216790a0b81076414d193b3
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: aa2a47b6483f3e3f34c6045a2270f7b620d281b54c76ab661c9e889deaf3c723
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:6c80a152d289e7d254a2368387fcd38f9826b4803ae49391d3f9ba53df82bc7d
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=checksums.blake3
+        checksum: blake3:f3705c94894001c2bf42e4afd5f3cbcd3e63c214b7872196c3e958d0f9b7aa25
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-indic-silero-sortformer-26.02.3-fp16-xncvtb-yaw?file=metadata.json
+        checksum: blake3:260bc828d68560661d380723e5f82bf253b91b7e2b07cb42f344d537f19b5fed
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:866feb5288696cbd92c1faf0c64b8001b4901e510bd89cd88e5e1b086de4c474
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=checksums.blake3
+        checksum: blake3:63e96cfbb180e2f61625539f592e710b8f2d2149e8b6fda8136c38853da860f2
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-indic-silero-sortformer-26.02.3-fp16-oejwmrofpq?file=metadata.json
+        checksum: blake3:6e7255eac7417aa09df88db5e9c5076058dba56cf6d0b61c9005bc92f82aeb9d
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=asr-parakeet-rnnt-1.1b-indic-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:cfd85c1b875f58c4588b089add23d95daf8bf47d51c6b4942a5e6737debde041
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=checksums.blake3
+        checksum: blake3:6c91563e9d7300c64a66a7943bb14d7905b3a7ffef484c67d75ad75962f468fd
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-indic-silero-sortformer-26.02.3-fp16-1gjij-mu3g?file=metadata.json
+        checksum: blake3:4d5b8707924d239fc1962c5256211f4ce9d59b02f13562d42236b6005088939f
+- id: dd9e7ac2b5e10ac2b921bd7ed65ba1d8499f65dc3e4552b0c8ea85764d2a67b0
+  tags:
+    diarizer: sortformer
+    mode: str-thr
+    model_type: rmir
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 8baf45d2b1e5be4a416955fd7d1458cb8bab1ca7d302bab66385e26ff33607dd
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-str-thr-prompt-silero-sortformer-rmir-26.02.3/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.rmir
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:str-thr-prompt-silero-sortformer-rmir-26.02.3?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.rmir
+        checksum: blake3:cf6f754d14eca60966aaf3f5cb4c5b01f4c01fb909e022c1384293b763373ba8
+- id: df287612fe849d34be80b00b69482cdd85b6dffaa4644a4e4ee2098abc68b5da
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: a100
+    gpu_device: 20b2:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: d4cd5c3ead41691ce59cf519bb766afa2ede49411af25c4f4e304668aad36e29
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=asr-parakeet-rnnt-1.1b-indic-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:118be0515fede665023879807ba44a3838355e23e88ba80c577170a87c546bfe
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=checksums.blake3
+        checksum: blake3:ee54dd887a71a801a070e8c6313dd48de0127d9e9406cb2418ef15830fe17946
+      parakeet-1-1b-rnnt-multilingual-a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:a100x1-str-indic-silero-sortformer-26.02.3-fp16-tjjmngjf5a?file=metadata.json
+        checksum: blake3:e5fb2a663c2befda66674a2f7f5f664327ed98e0825b39d77c40963b59c90734
+- id: e202887367d6d56cf252f7f6df4951781b4bb464fd8ed919247514ddb8166304
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 1f482448491a0eda3846bc5bcf37d81c528617a7a8a6e1ddaf35406fbf50ebd4
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:afb7713039fe987b8dea6385c13596c4ee18e658bd3e4ef1f19d12a2217af63b
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=checksums.blake3
+        checksum: blake3:15c6919e86ee1bf25e83724f1afd20ec338105e8f13d56b7d9986f0139019d7d
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-prompt-silero-sortformer-26.02.3-fp16-bor-jnub8g?file=metadata.json
+        checksum: blake3:9e833eadeaeb94eb9223f6e8bf4a82885b96f4a8f17c01d221c654190fd206c5
+- id: e7af6de69cc0a8dd11cee8253158c0c38ddd9266989bedcb93cad206cbabc50b
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: bf3f71ff86d0d03a90cd23032b73194bb2f73d23511f15c4809c7c491ccd0b5f
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:313076ed5d5e4a4c5ab48cdfa10ca50fa37e6f8d4fd5f5f5bfba2687bd9687bd
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=checksums.blake3
+        checksum: blake3:d8040d630bff4b23ec8df704bd516530b6bb94a652aa74d3e48615e5901bf5a6
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-prompt-silero-sortformer-26.02.3-fp16-h1syp6sfuq?file=metadata.json
+        checksum: blake3:fa5789ece9354b62d46a7c15e124762ed05d329d71d1069be3e8648ed0b7e0d5
+- id: ebde10cfcb617a39f70b4b5840fa8238bce4fc9c67f70a1fa3b4fa9a435c003f
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 9e6ba9aa70301406a9d60e39df462bc1f7ce4e4e7c274b6993a327ac279aafa7
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:35c9d9369d5cbb183b6ca6dd7fd0cb3421772ff78ba51029b401efb2c7cbac09
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=checksums.blake3
+        checksum: blake3:09ddcd162bc6daf3ccb5b7b79196784551b06180ed2bf05c287cc7d1aeb18cd7
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-multi-silero-sortformer-26.02.3-fp16-azwg9mfifw?file=metadata.json
+        checksum: blake3:c7c2bcd637dee29e67cea9c016708c39a94284114efd3a5c0ee2d0652a80c641
+- id: f11d84ebaf1a1653d054fcec490860ac94d9aa17199ae13251d660c4940e3942
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: str-thr
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 041249f3e6ef55116bd4f4b101c7b5c3dce3f6db0bac0269947ffd51b9e7f623
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-thr-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:7ef30c0a031543d87dd1a07fd25bc4d4da73ec9e85102accac01aa60a060c9ed
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=checksums.blake3
+        checksum: blake3:0adb27222e07de96273f694f85c1a1258d8b176ace06b5c32797784dd119d009
+      parakeet-1-1b-rnnt-multilingual-h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-str-thr-prompt-silero-sortformer-26.02.3-fp16-9igofp56pa?file=metadata.json
+        checksum: blake3:2ae9f40aabe34100af817e772af07c41d09203c0c41186fe06ac06e3f312f4e7
+- id: f5876607c981ffca6a616b2b13524458f095d03c10b80050a37c3a28c542997e
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f50d43325ca9d6390e3c2da9bbdfd60a0440fca7bff20381048593cf13f4a554
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:9ca4125e81ed3da033b843ff2c466594b79d632a79ba067c7ea2e996844200bb
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=checksums.blake3
+        checksum: blake3:f61062bfcf2baf7c05419a87dc2e54214316415fbe22ff2f771d4b81459be3b8
+      parakeet-1-1b-rnnt-multilingual-l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-ofl-indic-silero-sortformer-26.02.3-fp16-ksjeccgirw?file=metadata.json
+        checksum: blake3:d3e3bfba119b620d0b0109cfdc075b7bc4f5dbaad38a5bf9f0f01c087907e13a
+- id: f7549a274f22dbcadbd93944cbb793b61b5be6476794d7c6723536b6eb2c6d09
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: l40s
+    gpu_device: 26b9:10de
+    mode: str
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 1e07100449d9cd0f5db6a050c5d940d0f9b0a44df143c384b499f4fd5ab7cfb7
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-multi-silero-sortformer-26.02.3
+    tp: '1'
+    type: default
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-multi-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e1f693bd20d6bd3809fbb98c9fa7bf1541f173b99a22f66637a208f1b0832977
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=checksums.blake3
+        checksum: blake3:92dd218a84c17eb458d46e47cfdf185624a05dbba9aaa86437232b198fd8fabc
+      parakeet-1-1b-rnnt-multilingual-l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:l40sx1-str-multi-silero-sortformer-26.02.3-fp16-ka9bpjvwgq?file=metadata.json
+        checksum: blake3:7d3c833ac2f5f6a9ac700faa3588dae09794e7c44fca3b9caaa90707a6e95d19
+- id: fdc33578fc303308c30c15a13855c2df08b590e2b78ed548e5898bad33c0d6b6
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: h100
+    gpu_device: 2330:10de
+    mode: ofl
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: f27ca58fb36d55e0a1911e9ddd6b3a625901e2a158387391040299c0bde55bac
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: ofl-indic-silero-sortformer-26.02.3
+    tp: '1'
+    type: indic
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=asr-parakeet-rnnt-1.1b-indic-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:e2cd9361d13e2b2b1557e7c034d3122270f0bfd555852aae96e1f038fc9a19fb
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=checksums.blake3
+        checksum: blake3:0c3e8951611d6fbc1e6271ca47d3bfef699bb921c4beec9869e45e34b853704c
+      parakeet-1-1b-rnnt-multilingual-h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:h100x1-ofl-indic-silero-sortformer-26.02.3-fp16-ojnxu3mgeg?file=metadata.json
+        checksum: blake3:43120f09d3f051e3f8fc0ce8ec18e6137bb6a7d476802c146678d1ebd349339a
+- id: fffb5fcc08fd8621d419ee471c44258df8e7b3b2729a722bfee3961834072d7a
+  tags:
+    ampereplus: disabled
+    diarizer: sortformer
+    feat_lora: 'False'
+    gpu: dgx_spark
+    gpu_device: 2e12:10de
+    mode: all
+    model_type: prebuilt
+    name: parakeet-1-1b-rnnt-multilingual
+    nim_workspace_hash_v1: 004ae4c9c1e6ebd2c4c6d2758e988ef82282ee4f6a19b5a13cac70fa78520cea
+    number_of_gpus: '1'
+    pp: '1'
+    precision: fp16
+    profile: str-prompt-silero-sortformer-26.02.3
+    tp: '1'
+    type: prompt
+    vad: silero
+  workspace:
+    files:
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-offline-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:ee33b6fc5c7c77bfeda75baa15248720cd9cfa59abda0ccf16c18947dc6221cf
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=checksums.blake3
+        checksum: blake3:9e4e68df9f84505aea316ce8dbc4c0f30aa4fcc983ae4b4e45262850a0ae046d
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-ofl-prompt-silero-sortformer-26.02.3-fp16-yic0dpmowg?file=metadata.json
+        checksum: blake3:861859de8ed3cb204686b89aacb58af446cc47721a3ef7f653ed271cb617d2e5
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:44b3ff85a2b73b6b526eb76e9b19e6488ea85880032ac186d504655ed2b08510
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=checksums.blake3
+        checksum: blake3:ae69b327d675b1c600f7669c4eaf01b6e68db5d5c338b914b049526db42f2601
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-prompt-silero-sortformer-26.02.3-fp16-t-dtst7dcg?file=metadata.json
+        checksum: blake3:194e9e6830011ee03e0465618b5887e254dfe22d77780acf19e2efee4d9ee57d
+      ? parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+      : uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=asr-parakeet-rnnt-1.1b-unified-ml-cs-universal-prompt-streaming-throughput-nemo-silero-vad-sortformer.tar.gz
+        checksum: blake3:ca7cee8223bb3bc0b8c2a9f9fb7fc361ac0060cf4f36d83b26b02ffb88539412
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/checksums.blake3:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=checksums.blake3
+        checksum: blake3:c0b821fae801a0d9d9e7e447a59a34b0e8cb9f56739c253a9bfd28834c96e670
+      parakeet-1-1b-rnnt-multilingual-dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a/metadata.json:
+        uri: ngc://nim/nvidia/parakeet-1-1b-rnnt-multilingual:dgx-sparkx1-str-thr-prompt-silero-sortformer-26.02.3-fp16-cjgqbyos-a?file=metadata.json
+        checksum: blake3:abd9295a6fe37145b94f0b792d42cefd554a911542d5eee7b13bee7bc8e335ed

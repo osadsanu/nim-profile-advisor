@@ -1,0 +1,93 @@
+release: 1.0.0
+schema_version: '2.0'
+model: black-forest-labs/flux.2-klein-4b
+profile_selection_criteria: auto
+profiles:
+- id: ff6ec6066062e3f68458bc59cb6a3213abd2b0201cef0d53f0b351d3dd247317
+  tags:
+    gpu: generic
+    precision: bf16
+    version: flux.2-klein-4b
+  workspace:
+    files:
+      framework_model_dir/flux.2-klein/TXT2IMG/model_index.json:
+        checksum: blake3:e97a1bb351ba46f62aead75ceb48301cf6325c4898eaf9bac50cdb709e8f715a
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=model_index.json
+      framework_model_dir/flux.2-klein/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b8b34acbcad949b054d6bfd5d4078daa1bf8584dbff66223cb9cddf6114a1af
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/text_encoder/config.json:
+        checksum: blake3:e04536d1df13fe39524a4c146aa7ee970533b44e043a9cbb9493e2fa7aa138c7
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=text_encoder/config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/text_encoder/generation_config.json:
+        checksum: blake3:86c143f0fc40aadd24edb431612a7a743bb78137973614faf402e5de30629b2e
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=text_encoder/generation_config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/text_encoder/model-00001-of-00002.safetensors:
+        checksum: blake3:756b78d5f04d023d2bf95446bc06e8239e36f0887196fd5eb8ebedb8977f39b0
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=text_encoder/model-00001-of-00002.safetensors
+      framework_model_dir/flux.2-klein/TXT2IMG/text_encoder/model-00002-of-00002.safetensors:
+        checksum: blake3:8ab6e5bd55df4687be27ba002efb9807a8bd8a9784d038bad24b0fca0f6386e7
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=text_encoder/model-00002-of-00002.safetensors
+      framework_model_dir/flux.2-klein/TXT2IMG/text_encoder/model.safetensors.index.json:
+        checksum: blake3:a610e6347cf430ef21e362c2c0aa06c56789240cb2c560203c9bc731b8f0c8b7
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=text_encoder/model.safetensors.index.json
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/added_tokens.json:
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/added_tokens.json
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/chat_template.jinja:
+        checksum: blake3:72a1a5e64f5ff443c86b9332e82c85afd838c9e398b8e8f8bb38579d0e76d892
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/chat_template.jinja
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/merges.txt
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/tokenizer.json:
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/tokenizer.json
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:1e1c1d9042b7f0ad16ce4adfbc41fb986c4f9ccc4643d90e946691c244bcaf05
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=tokenizer/vocab.json
+      framework_model_dir/flux.2-klein/TXT2IMG/transformer/config.json:
+        checksum: blake3:0ca1d6a433a24c570897915e9dcadef448fa8b9e1ec48bedf88c3eac56c0f2f3
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=transformer/config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/transformer/diffusion_pytorch_model.safetensors:
+        checksum: blake3:8d53396173b01e4c6cf7745c430340a7775f2520af7a600096bed69d731140dc
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=transformer/diffusion_pytorch_model.safetensors
+      framework_model_dir/flux.2-klein/TXT2IMG/vae/config.json:
+        checksum: blake3:8ce8a45bb016adf8b665acbd32229b4d78b55e5a98a2c83229368c50ec1dcd07
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=vae/config.json
+      framework_model_dir/flux.2-klein/TXT2IMG/vae/diffusion_pytorch_model.safetensors:
+        checksum: blake3:e9ce10212e48ff5cf6c9f23811fbcb75243c89ffe665f5c1e5e60f6f917b3f28
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-hf-flux.2-klein-4b?file=vae/diffusion_pytorch_model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/black-forest-labs/flux.2-klein-4b:1.0.0-cosmos-guardrails?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json

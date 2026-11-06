@@ -1,0 +1,40 @@
+- id: 00251ce5c115afeeeeb9b09597276581bb717dbd6ba5ea7c7ba8d5e621eabba6
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '2'
+    precision: fp16
+    profile: latency
+    tp: '8'
+
+- id: 14584cab665fe404fd435e44764b587de160bf30ef2348a4f82a50fc28b29e59
+  tags:
+    feat_lora: 'false'
+    llm_engine: tensorrt_llm
+    precision: bf16
+    tp: '16'
+    trtllm_buildable: 'true'
+
+- id: 3d90a4e87d5d335c6ef308e3c2110326f5d45ba9e34fb12aaa5cb27c7a6629eb
+  tags:
+    feat_lora: 'false'
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '2'
+    precision: fp16
+    profile: latency
+    tp: '8'
+
+- id: a29dc20fff4ad67746205295ccb4af9e010f8f31207235c75e27786fb834e574
+  tags:
+    feat_lora: 'false'
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '8'

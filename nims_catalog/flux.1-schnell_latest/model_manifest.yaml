@@ -1,0 +1,1912 @@
+release: 1.1.0
+schema_version: '2.0'
+model: black-forest-labs/flux.1-schnell
+profile_selection_criteria: auto
+profiles:
+- id: f0d0d4ac2ea5b121defa3e82a1fe82f289856cf5db49aa99e670e8851d8f0305
+  tags:
+    gpu: generic
+    model_type: pytorch
+    number_of_gpus: '1'
+    precision: bf16
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'false'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder/config.json:
+        checksum: blake3:045c04463edc289e61ccba0a13ea5c366d842a3133e6c1ab25d5f39b6bf97e04
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder/model.safetensors:
+        checksum: blake3:835139acd4a32ba78b06421c019aa4e65f09559f31a627f4039c730c42929db4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder/model.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/model-00001-of-00002.safetensors:
+        checksum: blake3:322c22aa0963e859477f1476daa6d9bbe88dfe5c82a7948a9756fa790a631c4e
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/model-00001-of-00002.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/model-00002-of-00002.safetensors:
+        checksum: blake3:9ce67b60f495cc2b0d7bb397b127ab61dc0c3c239fc44e166fc4d7aee8538a51
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/model-00002-of-00002.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/model.safetensors.index.json:
+        checksum: blake3:7684dfbf27f9d676c6a9dd035d40df5473458c6e4e09957ce469a43f705205ca
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/model.safetensors.index.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/diffusion_pytorch_model-00001-of-00003.safetensors:
+        checksum: blake3:ae297269743d45aae5fcd3827ac5810ab97bf282aa2009d9af24b7dd4b9b53eb
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/diffusion_pytorch_model-00001-of-00003.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/diffusion_pytorch_model-00002-of-00003.safetensors:
+        checksum: blake3:0336029cf5edfaadb10570a525d6d0901d04c4587c245c1daf0431635e4d601f
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/diffusion_pytorch_model-00002-of-00003.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/diffusion_pytorch_model-00003-of-00003.safetensors:
+        checksum: blake3:a655d2aa39b5630d08b79edca52156b2c0f8b769ff4bba7ce424fc1fa9ac276e
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/diffusion_pytorch_model-00003-of-00003.safetensors
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/diffusion_pytorch_model.safetensors.index.json:
+        checksum: blake3:0fad24a785d312281b09b1b776b4bf4408bb36c06c0871efb724ae61d767f171
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/diffusion_pytorch_model.safetensors.index.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/diffusion_pytorch_model.safetensors:
+        checksum: blake3:2d84759c83e70cd5fa5314030af61370ee8d6fd6f312dbe19bec560052228178
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/diffusion_pytorch_model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+      metadata.json:
+        checksum: blake3:11a6a437bd610a23bce3b8191e2cf35cff70a1f03a42b4b85a5cbd864bf8618d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-metadata?file=generic-pytorch-metadata/pytorch/base/metadata.json
+- id: ac23ec4dc4fb7e4a8a979d131d06ddedb8499afab2be0d6a8f5e08061969a368
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/safety_filter.pt:
+        checksum: blake3:524003ee9a0805cb8e69aafb31df4c0b4beb46c61f43ebd7d28e41b58353e799
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/safety_filter.pt
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/config.json:
+        checksum: blake3:dc0871cc16615b480187d343e6ed9c0496d55c6904f647dcd8717902b58c554e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors:
+        checksum: blake3:261b68a4a886bbe7e774afff8f9af12cdd8cb7d3df3638e815796d8b6fda5a93
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/model.safetensors
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json:
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/special_tokens_map.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model:
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/spiece.model
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json:
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json:
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/tokenizer_config.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+- id: d9571df38cdf56f348433abdda887e49b6436a8b8c653d156fb8cf9db07004a4
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+  workspace:
+    files:
+      onnx/flux.1-schnell/TXT2IMG/t5.opt/backbone.onnx_data:
+        checksum: blake3:85db221a7f348e1450c3a4ef0f0a541af1f9e822cb975826316c2f56e8421a11
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5.opt/model.onnx:
+        checksum: blake3:dde0039ec76bf6ddf200880d6cd4ba7f27cfcc0f32c3be679c01d9339730e454
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5.opt/model.onnx
+- id: cecbfc054ec0d010bf1cb2bd4ebeb86950d384836889623945e1cbb6284f3560
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+  workspace:
+    files:
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+- id: 3db093fe7f7845c44271c592a99135e210350f520209109235e272c23c5ebebc
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp8
+    variant: base
+  workspace:
+    files:
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+- id: fb430dd082cb1c45474cb6f2b103c21886cddbd82a5fec29a01fe3119b1b25b2
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: fp4
+    variant: base
+  workspace:
+    files:
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+- id: a6ac960a5b9640dadcac1f0611c48d6ccd421d4c4b8d0539ec02aff941714995
+  tags:
+    gpu: generic
+    model_type: onnx_build
+    number_of_gpus: '1'
+    precision: bf16
+    variant: base
+  workspace:
+    files:
+      onnx/flux.1-schnell/TXT2IMG/transformer.opt/backbone.onnx_data:
+        checksum: blake3:1de0382e2433480b15f65450230afba396581ce041c34a5e5bf3726994c54d62
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/bf16/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer.opt/model.onnx:
+        checksum: blake3:5d74d531ac17a85e1391e347d73bc57523f377d8d978fdc994b8cd7052c496cb
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/bf16/model.onnx
+- id: abaf49b800fe505242da7a6e4349cd96bed587da88a2f48b4f70a6130bcad63a
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:46c5094920eca4fc20382554b93931c26f1e5c43929f92ba00320758b044c92a
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gb10-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:25e68fcd6598b07e97ea9a916d79f3aa45f347e8249b37aadf48e3ee11c61683
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gb10-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:3b81ca9418468475a2eaa1958bb08d839487173dde28a23cc3c7e47b9a023b5b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:6c470a73fba5cb6f814d5e86153668f1a71b488c06275c47e14daaa4833568bb
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        checksum: blake3:3c4fbd63611e3fc6476090fefbcf923eff33cbfbced486dcd9b1cc668cf38206
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:d4bda3827d3fc6aea16d17752025e487b673a0f2d08370aaff7da0ed2fc808ed
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:cdbb843cf18444e421fd61ac10e65e09d24a416159a18935d50ac2d7e4026e2e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: a16df93c2c9a800b6ebb55426c930b5c84b4d9e5c0640473634226ea0549a71d
+  tags:
+    gpu: gb10
+    gpu_device: 2e12:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:25e68fcd6598b07e97ea9a916d79f3aa45f347e8249b37aadf48e3ee11c61683
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gb10-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:cdbb843cf18444e421fd61ac10e65e09d24a416159a18935d50ac2d7e4026e2e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gb10x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: bf784da42fee9d538aeda8d9430509354779a359119443942906477707f93473
+  tags:
+    gpu: gh200
+    gpu_device: 2348:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:740a71fd0a08dbecba583c9bf74c779aee52954157a9bee5f075f7ac19c46e01
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gh200-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:86d0a1084e6241abb01480dcd3134cec864ff612c663f9eb2a4a8622d1943342
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gh200-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:21d1c6b0738bf88a838062a12e750ad16ca6fad3ef9295755e006d27f9709841
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:ca34d4df9772d8ac1e6d37b4f9ef018b9ceb5c7cd4d42158df49ee8be3571e3c
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        checksum: blake3:8ca19d93e6870d79f1a4f54629bc55d05e296dd9900abd04c52879f4f74c63d2
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:671cd8a716f376b6ee8bcb72d81f0e2dbb77bf11fe9727dadea970c576a5985c
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:0ac4071061c606b5950bad9499af4566beb527676e8c27ff322a4a079fbb9ac1
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 464ccb03eb30985dc302cf5bdc6fdbaa01747b395ab0883a5dabf4d2d7412fca
+  tags:
+    gpu: gh200
+    gpu_device: 2348:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:86d0a1084e6241abb01480dcd3134cec864ff612c663f9eb2a4a8622d1943342
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=gh200-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:0ac4071061c606b5950bad9499af4566beb527676e8c27ff322a4a079fbb9ac1
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-gh200x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 0376eb85528b177c914b3a435c6d34456f1ce16bd9287c7e9f22392d87de0441
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:a94dc0c68d45cd752245229caaf306de3a94dcfd3bd58befed3767b9228d0e47
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=h100-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:da3fb4d9b3c2d58cee81b8979ad0a33fde37fc734f62a835c474834bbec61ec0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=h100-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:5fa2adaf770b192953b7c6c22daf15f4f45706f780b643e3bb6bfae7befb6919
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:91f82e97a5969cb06cef5d9f5ae842c4aefac8409a28b199d9ead9380e9e9fb1
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        checksum: blake3:c74fdc5c3878c466c26b7f1b84350a4c48545520c2e746d416d8648fccb17db0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:95406e20ed17774095bf6efe1130246c5a5c028cb8feacd495ae7e8185c2fb61
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:c9d69ca00085b3d3b84200305ea72129f4f7b3171650de360d9d931c321877be
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 99785ea9872860b227ee8c63b5011723ef1d3723595c173cd9b33625d5803883
+  tags:
+    gpu: h100
+    gpu_device: 2330:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:da3fb4d9b3c2d58cee81b8979ad0a33fde37fc734f62a835c474834bbec61ec0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=h100-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:c9d69ca00085b3d3b84200305ea72129f4f7b3171650de360d9d931c321877be
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-h100x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: fde1571bb1c3127b047f5e7ab37b48c893b055988473bab4fc5399874b964337
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:ee70ec30d831a0f377520535e6d6e9039b58c4efbed18e8079c4fa92f40472f3
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=l40s-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:ad6742621a29daf7301d7329ede637239ffd9f55e6ecc15a8680719d529b204f
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=l40s-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:a18e6debffd102636e0f68a86a5e429ecc64b2fc86561ca3e80cff1d84dd72bd
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:67941041e8c3fe6fb95131770e3e9d9b34ed0a31955d076f2d02438b73f2637c
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        checksum: blake3:2b0acaa1834364f57764bd4081cf606f8b2e77432dec96169268231169255749
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:6388001ebede83f5fac24e8bf49126e5c267f47a27bdda56d5bf52b1580c16fe
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:c5cd126d32c07a0f5c7cbf588551c9417a56649908422eb0586726f80920aaf0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 954d02e9b3650159ce1c802725e0b8a501237ab0d1b772201938e4d296351099
+  tags:
+    gpu: l40s
+    gpu_device: 26b9:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:ad6742621a29daf7301d7329ede637239ffd9f55e6ecc15a8680719d529b204f
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=l40s-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:c5cd126d32c07a0f5c7cbf588551c9417a56649908422eb0586726f80920aaf0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-l40sx1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 9b8c05dd711ea235c7390c838a54730dd762466484996275c6b362ed3c87d4f7
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:04e5152134bf94db94381285202898a7a45983afe730e22d0d27e80fccd5e812
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx4090-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:cca584a3a5f78ceb0447c1c9fbe25df8a67f4255efb69dc4754422830f9964b6
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx4090-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:ebda30953d8340515e5c6fab20b1f9494060854e3dfc2a15da9d9d54a09ee89d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:6485af61a9052e8071c335a4e15e5480aba22fe83ff34d2d770fb318f6e7b719
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        checksum: blake3:42ce714cd8d1adaf829f20437455d2e99d83f5dcae8bc88f9db8af5cf396e7c7
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:b87ea54e57401f19aa139e741d44f6ec7c51d8039326076694f7f1f78ed0e7e9
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:0be17a9ee11b9a0748bdbb43f84d7e60fa9bfcfcfd1c974b3f003b5590d7ebe8
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: c6115b36116054fdcf98edf32a5fbda3ca55a7b152647b5f477083ac2114caed
+  tags:
+    gpu: rtx4090
+    gpu_device: 2684:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    t5_weight_streaming_perc: '0'
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:cca584a3a5f78ceb0447c1c9fbe25df8a67f4255efb69dc4754422830f9964b6
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx4090-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:0be17a9ee11b9a0748bdbb43f84d7e60fa9bfcfcfd1c974b3f003b5590d7ebe8
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx4090x1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 365d6883d978bb2f2c00f5af2678115e0d92c2d09f1fe4f8bcdd813b8d731a5f
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:e6c87920f401b91707f27070980d9e4bae70b02074b5d6827379886dd70f1456
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5080-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:a60155179e41b4f81dbcfb40947ddb4f74eaa3de5ef0c5714ea1130dc0740ada
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5080-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:48c4c5616be8b1a1e365b772d5128958fc75450a34346888183823ffd588786d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:a7cd46774c88ce4f2da6cd1d52b149ce3531bd0cebf06aee4d4beaeb71c327b5
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        checksum: blake3:037ba99a5ae613f7b7e3d9b6948b96a9ace2ce3ca3c14d431c28cfe12f356aff
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:7130ababc0173f93081fb2921550f15d7473fb36adb7d544aa420588353d6de2
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:165b377cbf0e259f6eb17ee9fbb2ba1e9548552cba5bfc4d1e2295e1db4a3e73
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: b127725ec542e77efa04c77d79ea7daf86caa1e8b48229b71cb12828784a0c12
+  tags:
+    gpu: rtx5080
+    gpu_device: 2c02:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:a60155179e41b4f81dbcfb40947ddb4f74eaa3de5ef0c5714ea1130dc0740ada
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5080-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:165b377cbf0e259f6eb17ee9fbb2ba1e9548552cba5bfc4d1e2295e1db4a3e73
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5080x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 1b2d236d5fa4e0425e80ff17c9480ed73f2a66a5190a102299b3c9b8936670ff
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:e52dfd957437ad4a2ba82ee8be7a6f10325e09d06b5af395ac732c4fdfad8f4d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5090-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:b8879f124fa7c6282b551a1724ce9835b1c6e438ea0722b0910cb560033cc3bd
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5090-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:110a2077e5ff317ee5a1ffbe47ff2e2a3849772dbdaa73168387ee529d979cd2
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:9c9c8ccf8f89616b063bce5635b800bc5dc60778d6df39e4c4bb5b67c8324c72
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        checksum: blake3:1a697a800c2ce3ac07ae7bc5d2179de78d1c1aaf7d2762fa183245cd80ddd705
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:f635bff48f800511ddfe34b706069e08cbbbe642277d6fbf70c354e7909e58e6
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:628b2ea5cb987882c842a247e29583167d0f9f28aa32b38e88ea754a11009ced
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: cf956cc576361f4a0b90adeb7a7358d1c5dbd69ac5637699292e124812a28a9c
+  tags:
+    gpu: rtx5090
+    gpu_device: 2b85:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:b8879f124fa7c6282b551a1724ce9835b1c6e438ea0722b0910cb560033cc3bd
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx5090-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:628b2ea5cb987882c842a247e29583167d0f9f28aa32b38e88ea754a11009ced
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx5090x1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 9ed3f545f2316939af1984fb703115e9b706f8c7e9b4eb452f37f86a06df5bbc
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:ff8cd30d2193930cf233028bdbd006ae5910a25a670e1c91c41f68036342cb6c
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-ada-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:4691c0c172ea9c8c15bab730baf9ab30d6983fe9a6a165093c13c277e021245b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-ada-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/backbone.onnx_data:
+        checksum: blake3:378ccfba673d9dc4750bb2137f505fd154a9ff764063723adf7069f074f3eb3b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp8.l4.0.opt/model.onnx:
+        checksum: blake3:8e7a6c80db350ce4f6fa30ee48b1248d6e631835282f5ae0bd467ea86c16a55b
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp8/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:63a895960e7e076889cf6985ce5e7b4c010c86538b6c8b04c495b8e08074b2a0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:5cb892f681cbd8a45caf47dd44a0b93b1bb9668c531dd558bc5a0d531d81e38d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        checksum: blake3:0d3a22980f2351656c04ea5cf1a47fdcb7e2f9cd57060cd2f5d56ba0c23b6f94
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:70c6273ca4ee0d3858299cb7d93a18b015fd9fe8a7ba2e4946026bd3d6cfc963
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:daaa75e34ae5aead9d21587631309cdbccc851b4ae970fd581d663335540e3fd
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: dc0497054a3699085f46f8d1e19fb65fca4454ec22f50e43ca484bb533a15fb3
+  tags:
+    gpu: rtx6000-ada
+    gpu_device: 26b1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp8
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:4691c0c172ea9c8c15bab730baf9ab30d6983fe9a6a165093c13c277e021245b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-ada-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp8.l4.0.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp8.l4.0.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:daaa75e34ae5aead9d21587631309cdbccc851b4ae970fd581d663335540e3fd
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-adax1-fp8-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 5e225127aa1a4dff5ac630fea2be767e0740407d2bdea5b046892cec6083810a
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:14ae7319cfa49f84f3c616221cfd2130e385d0cd947ad4e1ebe1b59a2f93bdd2
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-sv-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:7c68efe0a7958bbda91ad08944de5bbeca61a21de66814c3ab935295c51cd5c7
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-sv-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:9be3647fd54603c12c8742fc7651440e98b571816689d09189d69f650934e153
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:b34b610ddc68d85e937e487ed596ece2f951decb33f4548fb5e8efd04c8eb31d
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        checksum: blake3:7c40a184dd692fcc24c08e3d5dbe5724c9f5940ccd5bc8ada672f5e3a4d91120
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:d8398c9f47ce4d5e104207cc3ebcd96b37a7b40c2c044783acdb4ccc4679ff05
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:e2bee48eaf2733d9da76e8b2cc79d4065441c335a50413d0ddfad04719c79aee
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 179ea1d4cacabbffd9c444f0350e8eae8704589b4d74d0a7d4535ad1ffb54266
+  tags:
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2bb5:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:7c68efe0a7958bbda91ad08944de5bbeca61a21de66814c3ab935295c51cd5c7
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-sv-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:e2bee48eaf2733d9da76e8b2cc79d4065441c335a50413d0ddfad04719c79aee
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-svx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: d3bf029a15e32df752d7bd3cad2032b4ed56b1ecc9dc780645a7f66d1a2b4776
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'true'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:f59dc8c7819fe69e370d70cd08d44fbde7837b0203f9a3c639a6bf792d97b5b0
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-ws-metadata/tensorrt/base/metadata.json
+      metadata_local.json:
+        checksum: blake3:507798f8fed8a90fe4c79de1502d65756fab7931f84068fc659a98f51311a53e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-ws-metadata/tensorrt_local/base/metadata.json
+      onnx/flux.1-schnell/TXT2IMG/clip.opt/model.onnx:
+        checksum: blake3:674ad4942a0f541bc80c8ae065c64f10cc8d791b4559fb7657d4ef270a798ba9
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=clip.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/backbone.onnx_data:
+        checksum: blake3:ef1f414228bf93f9bbe86d8f8e32323b48c2fa5d4fbfcf90d281eb7e56c1b437
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/t5-fp8.opt/model.onnx:
+        checksum: blake3:cc4bddd763bf963c756605f5cd05007d16dcab5f8a0f0f42f06f7edf6cf93920
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=t5-fp8.opt/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/backbone.onnx_data:
+        checksum: blake3:9f1caeaae1b7181c2fa975506b1dfc050729576445d44391f5b37b4d7156bc81
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/backbone.onnx_data
+      onnx/flux.1-schnell/TXT2IMG/transformer-fp4.opt/model.onnx:
+        checksum: blake3:00c86c41d51f18957f9eba7efb177175c4c34482702f8a12dd69146e5014307d
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=transformer.opt/fp4/model.onnx
+      onnx/flux.1-schnell/TXT2IMG/vae.opt/model.onnx:
+        checksum: blake3:03033dc8d39a30e56991a12c8673097342a6b4c4d6cf17147cb45d83dd406a96
+        uri: hf://black-forest-labs/FLUX.1-schnell-onnx?file=vae.opt/model.onnx
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        checksum: blake3:b04fb14fd63e58626bac241f4cda24dd2c15dfd31e15cc4a09f57b1ec6383cca
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        checksum: blake3:dedfcc559f2ce37f3665eee4ad268f2047c60c92a132bf0d3a2fba265c686091
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        checksum: blake3:fa2cf8958768bd3cc713915128f72674ebb57ef75f1baa26d51708211c523cd1
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        checksum: blake3:a9630078f777f1c305b0690ce2be43abc9ac83a35782c590f4e81be542b3f609
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:75551a2729476af1df15b1e1f00b2352de841c0bd2290ea9313b574d81e7c874
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan
+- id: 5e5faffdf37f95bd3dcd40093470334ddef2c67b5703091ae514d60e32989338
+  tags:
+    gpu: rtx6000-blackwell-ws
+    gpu_device: 2bb1:10de
+    model_type: tensorrt_local
+    number_of_gpus: '1'
+    precision: fp4
+    resolution: 768-1344x768-1344
+    use_t5_fp8: 'true'
+    variant: base
+    weightless_engines: 'false'
+  workspace:
+    files:
+      framework_model_dir/flux.1-schnell/TXT2IMG/scheduler/scheduler_config.json:
+        checksum: blake3:4b32879eb8283d80e90451d306d5e7218c41a8bbe4d0a519c4f7abb1d0bb4c77
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=scheduler/scheduler_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/text_encoder_2/config.json:
+        checksum: blake3:bc39efbc17164259e7481c3e237ca2da4153e5965775ffdf3a600e672f3cc38b
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=text_encoder_2/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/merges.txt:
+        checksum: blake3:64a704d74f18e52434c694dac7226f4dfa267600c615929126c4795be0d3d8d9
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/merges.txt
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/special_tokens_map.json:
+        checksum: blake3:e4f2e11a2eb7ff6f0402a16f3bdbc01e298dd28d0e94212ff3abc1fe3a8c2e94
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/tokenizer_config.json:
+        checksum: blake3:86bb8df8ec5de9f45dc2b2770e9cade4c46e98441c7b634980891dcbd564e30c
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer/vocab.json:
+        checksum: blake3:c3d996e86b659a4c358aa0a9931bc18e4388a75753495399d874b1c3271511e4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer/vocab.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/special_tokens_map.json:
+        checksum: blake3:82665312af5382eda02940964b17d54f5e256ce1b973c9625a31f76fab5ccbf4
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/special_tokens_map.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/spiece.model:
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/spiece.model
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer.json:
+        checksum: blake3:f53e363feea8c7f05682cced2491d01fa7ea602b2a08dcef1588b20a0198e1ad
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/tokenizer_2/tokenizer_config.json:
+        checksum: blake3:b94cbc732768fe536cb2d610c2a5f9d038776d25bbd2da3da75bebb294ba58f8
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=tokenizer_2/tokenizer_config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/transformer/config.json:
+        checksum: blake3:82a8c3a8c1a94a3f4bf7347d62f939ab6b4b17f8ab2f72dd845cd7e026e12c11
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=transformer/config.json
+      framework_model_dir/flux.1-schnell/TXT2IMG/vae/config.json:
+        checksum: blake3:d442ba694e36f419385188d61383fb99bb9f7cfd3e6de234f4d0999150161b23
+        uri: hf://black-forest-labs/FLUX.1-schnell?file=vae/config.json
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/blocklist/blocklist.tar:
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=blocklist/blocklist.tar
+      framework_model_dir/guardrails/Cosmos-1.0-Guardrail/frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json:
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.0.0-cosmos-guardrail?file=frame_content_safety_filter/siglip-so400m-patch14-384/preprocessor_config.json
+      metadata.json:
+        checksum: blake3:507798f8fed8a90fe4c79de1502d65756fab7931f84068fc659a98f51311a53e
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-metadata?file=rtx6000-blackwell-ws-metadata/tensorrt_local/base/metadata.json
+      trt_engines_dir/flux.1-schnell/clip.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=clip.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/t5-fp8.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=t5-fp8.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/transformer-fp4.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=transformer-fp4.trt10.14.1.48.post1.plan
+      trt_engines_dir/flux.1-schnell/vae.trt10.14.1.48.post1.plan:
+        uri: local:///opt/nim/.cache/trt_engines_cache/flux.1-schnell?file=vae.trt10.14.1.48.post1.plan
+      trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan:
+        checksum: blake3:75551a2729476af1df15b1e1f00b2352de841c0bd2290ea9313b574d81e7c874
+        uri: ngc://nim/black-forest-labs/flux.1-schnell:1.1.0-rtx6000-blackwell-wsx1-fp4-fp8-768-1344x768-1344?file=trt_engines_dir/guardrails/cosmos-frame-content-safety-filter/model.plan

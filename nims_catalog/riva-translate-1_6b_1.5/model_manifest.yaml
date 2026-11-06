@@ -1,0 +1,15 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/riva-translate-1_6b
+release: 2.1.0
+profiles:
+- id: 9d89393cb9e0853f96a7324b7e6d3a10f3171858ea52044372b2bcaa9091649a
+  tags:
+    model_type: prebuilt
+    name: riva-translate-1_6b
+    nim_workspace_hash_v1: eff86fbe7999fc8ac64ea18aa1b09ec3a1a6057e9401ca4082b580032c54a392
+  workspace:
+    files:
+      nmt_megatron_1b_any_any.tar.gz:
+        uri: ngc://nim/nvidia/riva-translate-1_6b:any-any_generic_25.05?file=nmt_megatron_1b_any_any.tar.gz
+        checksum: blake3:3a4033d5b7e50c7919e9dafafab217f4d9eddf5d71aa5b4344d166c07ecc4d42

@@ -1,0 +1,544 @@
+039ccb00b5568ae6e597f63bb01adea5b2c71f0dc6aa1745d9739ee58f940b90:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+
+051e697ed8c63c8aa7ba6423137c75c73637bdb0202717d0f0fca5f18fe37b1a:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+
+1b94cfb8a5f5ba3ae5e182bc2211059b30c4e3cf169a9c10d41b7a9dcc0701a3:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-h100x2-fp16-latency.1.2.98010
+
+2a03241ae641fdccd906052bbe119c686a60dc931a60e1c464b790153ff1ea81:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-a100x1-fp16-throughput.1.2.98010
+
+2ec2ed3616e6110cfd0c8544a50d47f76cd88f2c92910a7fd4f7b318853f2ae0:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-l40sx2-fp8-latency.1.2.68610
+
+35ec3caf698d4f387e49a5336c6692585e81169eb2fdd464f20c06b787d13198:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-l40sx1-fp16-throughput.1.2.98010
+
+3fd6f99c2fa9076a52e67468275603f6cba109a4afb87a5809317dfab8a6c7aa:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-l40sx1-fp8-throughput.1.2.68610
+
+43066e5638f0ce8743a1fb5ca717b95cdb1543d9db5343356dbd4be1be28fde8:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-a10gx2-fp16-throughput.1.2.98010
+
+4a9e9e19657967816d2ceb19ebe7ace156e305d41c25859bbcb23d7199721adb:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: L40S
+    gpu_device: 26b5:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-l40sx2-fp16-latency.1.2.98010
+
+523fc5991c8ee154eccb1515c54a4860807d1f665de2394a21ed997fc443f236:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '8'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+
+5d05f3517983591004b428a6b8f1ec273a19b4dec1ec702179c767b6b24c7fcf:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    precision: bf16
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model-00001-of-00004.safetensors'
+            - !name 'model-00002-of-00004.safetensors'
+            - !name 'model-00003-of-00004.safetensors'
+            - !name 'model-00004-of-00004.safetensors'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+
+68d5664545c10d2d255cb8f7eb0addea23529e23ebaadf3d9b164aafc74c1573:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A100
+    gpu_device: 20b2:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-a100x2-fp16-latency.1.2.98010
+
+74f6934c2550f471b1dba80cf193c461fb7e0eba7fb4baae15afd400b87f2db0:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: latency
+    tp: '2'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-h100x2-fp8-latency.1.2.68610
+
+e0be23f061d9a0cb3a52d8ff60b98b27ad0f47bc8c00622bcb698cebcb2786c4:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-h100x1-fp16-throughput.1.2.98010
+
+e94dc9dbe7ea86d747de1d9e7325f4b608965be3db8e7d6b5d952bfce97c00d3:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp8
+    profile: throughput
+    tp: '1'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-h100x1-fp8-throughput.1.2.68610
+
+f9a9780c3805d73929bb38ce34e59f3809258d29b3e61b1678ae0cd9168fa283:
+  container_url: nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:1.2.3
+  model: nv-mistralai/mistral-nemo-minitron-8b-8k-instruct
+  release: 1.2.3
+  tags:
+    feat_lora: false
+    gpu: A10G
+    gpu_device: 2237:10de
+    llm_engine: tensorrt_llm
+    pp: '1'
+    precision: fp16
+    profile: latency
+    tp: '4'
+  workspace: !workspace
+    components:
+      - dst: ''
+        src:
+          files:
+            - !name 'config.json'
+            - !name 'generation_config.json'
+            - !name 'model.safetensors.index.json'
+            - !name 'special_tokens_map.json'
+            - !name 'tokenizer.json'
+            - !name 'tokenizer_config.json'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.1.9
+      - dst: trtllm_engine
+        src:
+          files:
+            - !name 'LICENSE.txt'
+            - !name 'NOTICE.txt'
+            - !name 'checksums.blake3'
+            - !name 'config.json'
+            - !name 'metadata.json'
+            - !name 'rank0.engine'
+            - !name 'rank1.engine'
+            - !name 'rank2.engine'
+            - !name 'rank3.engine'
+          repo_id: ngc://nim/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct:0.11+14957bf8-a10gx4-fp16-latency.1.2.98010

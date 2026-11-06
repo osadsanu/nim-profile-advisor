@@ -1,0 +1,1027 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: cosmos-predict1-7b-video2world
+release: 1.0.0
+profiles:
+- id: 56669394552c0cbbc84e907213267a92087768ecb28e078b3a4f3bb04ee8a513
+  tags:
+    gpu: H100
+    gpu_device: 2330:10de
+    llm_precision: fp8
+    precision: fp8
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/trt/model.plan:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-diffusion-trt-h100sxm?file=model.plan
+        checksum: blake3:5792d7d4f32b36ae0a1c6155e13e878b5634e0eadf920a7d7745d1b119277f6e
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=config.json
+        checksum: blake3:474717cfd31f78e8854825ee6aee426301e212491094416c6acbb58ee929b604
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=rank0.safetensors
+        checksum: blake3:a1ad768638955f42d48db748ba3383a4f902a3700a18e22192ada164caf554b1
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: a406d86fd569f252c8423b2b35e1762423de6fc33997bdacaa380be87b28d85a
+  tags:
+    gpu: H100-PCIe
+    gpu_device: 2331:10de
+    llm_precision: fp8
+    precision: fp8
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/trt/model.plan:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-diffusion-trt-h100pcie?file=model.plan
+        checksum: blake3:93a8f81833fb041e83fd7c41fac7b93362a232756823f3a870de4983763cea3d
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=config.json
+        checksum: blake3:474717cfd31f78e8854825ee6aee426301e212491094416c6acbb58ee929b604
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=rank0.safetensors
+        checksum: blake3:a1ad768638955f42d48db748ba3383a4f902a3700a18e22192ada164caf554b1
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: ad9e1b42331f5453f5b041830cebc89ea65c6fffacdc22962ecb4be3173559f6
+  tags:
+    llm_precision: int8
+    precision: bf16
+    profile: latency
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=config.json
+        checksum: blake3:eb9e2b1e931dae0a794ec0b0b1609da13b6737fb88d9b8ac7e7f3551237e7948
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=rank0.safetensors
+        checksum: blake3:6dd7270e3d314410ad35b5a71a31863228da1118fa47822405a7312c32a9d07e
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-int8-sq?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/nemo.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-nemo?file=nemo.tar
+        checksum: blake3:20fe05b436e644cbd57ec5d933c2ebae0412cd974cd9487b8545ebc7dfafb6e9
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=config.json
+        checksum: blake3:1a13b3c024acd57494f2b4aa4b24d352ad88e54f68f4fb9ce71cfb5c910019a8
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=rank0.safetensors
+        checksum: blake3:3e150eafbf3c08fd2039c64d2f162b5837a3050aa7021a0b4cca63e5057f76bd
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-int8-wo?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: d04e7f25d0fe307b787a8e7e549f7f44bc2b79dc89aa90bcc04294224be4b3c4
+  tags:
+    llm_precision: fp8
+    precision: bf16
+    profile: latency
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/nemo.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-nemo?file=nemo.tar
+        checksum: blake3:20fe05b436e644cbd57ec5d933c2ebae0412cd974cd9487b8545ebc7dfafb6e9
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=config.json
+        checksum: blake3:474717cfd31f78e8854825ee6aee426301e212491094416c6acbb58ee929b604
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=rank0.safetensors
+        checksum: blake3:a1ad768638955f42d48db748ba3383a4f902a3700a18e22192ada164caf554b1
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: f1ef8f67e6eadce823702fe7b0892d19b38ac8827a6ffa0948068b2c97ea46e7
+  tags:
+    gpu: H200
+    gpu_device: 2335:10de
+    llm_precision: fp8
+    precision: fp8
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/trt/model.plan:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-diffusion-trt-h200sxm?file=model.plan
+        checksum: blake3:5ef573a265fd9c7af7f1a1f99591a184e774e9bc0a7195fc66f92e1365d7c084
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=config.json
+        checksum: blake3:474717cfd31f78e8854825ee6aee426301e212491094416c6acbb58ee929b604
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=rank0.safetensors
+        checksum: blake3:a1ad768638955f42d48db748ba3383a4f902a3700a18e22192ada164caf554b1
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt
+- id: f47f4d018a18f6468f992ccdcd49eba6461599a753e199ff4c305a50fccd4c59
+  tags:
+    gpu: H100-NVL
+    gpu_device: 2321:10de
+    llm_precision: fp8
+    precision: fp8
+    profile: throughput
+    required_ram: '91268055040'
+  workspace:
+    files:
+      model_repo/aegis_filter/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=config.json
+        checksum: blake3:b6a4100d478a03eb843a891f5c03fa5db82503a9afe825e6723f3d4831aa4f12
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_config.json
+        checksum: blake3:9174a0b8a2e39baae3b3f8c9ca94910c9d28a2e97ce6e92a259e41d23d5da0bb
+      model_repo/aegis_filter/1/checkpoint/lora/adapter_model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=lora%2Fadapter_model.safetensors
+        checksum: blake3:0976379d81a38fc38e069533ce5ace33cb099150c82cf921208055ebb50a847c
+      model_repo/aegis_filter/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=rank0.safetensors
+        checksum: blake3:8708c2b903302373f3845e3fb7d41a035ed0811077e2133bb504e68dd350f7a7
+      model_repo/aegis_filter/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=special_tokens_map.json
+        checksum: blake3:2e07b1a5aefde06f6611f7965e0a62eb9ba1132410dfcceb7716e5b61a3cb4c9
+      model_repo/aegis_filter/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer.json
+        checksum: blake3:8c5759f7c2d412e2d62898d4b06651fe8fc841049aea57bbeb4470907887a9df
+      model_repo/aegis_filter/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-aegis-filter-trtllm-fp8?file=tokenizer_config.json
+        checksum: blake3:e76d2b2769c64e00d003abfae1e1b9f584737bf01a664a7b4d1920f5cca2a1b5
+      model_repo/aegis_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2F1%2Fmodel.py
+      model_repo/aegis_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=aegis_filter%2Fconfig.pbtxt
+      model_repo/blocklist_filter/1/checkpoint/blocklist.tar:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-blocklist?file=blocklist.tar
+        checksum: blake3:1cfb49b95f12cd1de64bbab8020d5cf091aaaf269782413333158730c34b9361
+      model_repo/blocklist_filter/1/model.py:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2F1%2Fmodel.py
+      model_repo/blocklist_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=blocklist_filter%2Fconfig.pbtxt
+      model_repo/detect_faces/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-detect-faces-onnx?file=model.onnx
+        checksum: blake3:31947eebfe7d7a3be8e1b6ce1328ceccf4a04a248049f80c1415c446f960c54f
+      model_repo/detect_faces/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=detect_faces%2Fconfig.pbtxt
+      model_repo/diffusion/1/checkpoint/tokenizer/autoencoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=autoencoder.jit
+        checksum: blake3:33b10e42a887a4005b622f7f0ef551f187cf5221cb1fd407022bc992456bfd31
+      model_repo/diffusion/1/checkpoint/tokenizer/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=config.json
+        checksum: blake3:422c82852148ae63a52c30419be89ee7cf006834faedaf297d3cee7a5df634b5
+      model_repo/diffusion/1/checkpoint/tokenizer/decoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=decoder.jit
+        checksum: blake3:44dfb3fa51bcaa2978b293b4e5a769b77d6a1f6a9f1a874f0928af50a9448bf8
+      model_repo/diffusion/1/checkpoint/tokenizer/encoder.jit:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=encoder.jit
+        checksum: blake3:124949807f1a2a224c95389f02ea99331f81fc2827a0c4c481baa809bc275877
+      model_repo/diffusion/1/checkpoint/tokenizer/mean_std.pt:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=mean_std.pt
+        checksum: blake3:41f8dbd17fb525eac3d68e82aa648db4570da4b0e673d98858085444cdcabeda
+      model_repo/diffusion/1/checkpoint/tokenizer/model_config.yaml:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-tokenizer?file=model_config.yaml
+        checksum: blake3:18032d078fa7d923193475ded845af77742ace83041d956e8e4dec5d7ed69b59
+      model_repo/diffusion/1/checkpoint/trt/model.plan:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-diffusion-trt-h100nvl?file=model.plan
+        checksum: blake3:79ebc2399add52959a5a7eb3184be569d21995d4bcf26f0a066faa16e5549746
+      model_repo/diffusion/1/model.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/1/model_trt.py:
+        uri: local:///opt/nim/model_repo?file=diffusion%2F1%2Fmodel_trt.py
+      model_repo/diffusion/config.pbtxt:  
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/diffusion/config_throughput.pbtxt:
+        uri: local:///opt/nim/model_repo?file=diffusion%2Fconfig_throughput.pbtxt
+      model_repo/ensemble/1/model.py:
+        uri: local:///opt/nim/model_repo?file=ensemble%2F1%2Fmodel.py
+      model_repo/ensemble/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=ensemble%2Fconfig.pbtxt
+      model_repo/face_blur/1/model.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Fmodel.py
+      model_repo/face_blur/1/utils.py:
+        uri: local:///opt/nim/model_repo?file=face_blur%2F1%2Futils.py
+      model_repo/face_blur/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=face_blur%2Fconfig.pbtxt
+      model_repo/prompt_upsampler/1/checkpoint/chat_template.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=chat_template.json
+        checksum: blake3:ede23a02edd0f97dc55a4c565d3c29d3d56c80f356ac5b0ed961b24911d6d10f
+      model_repo/prompt_upsampler/1/checkpoint/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=config.json
+        checksum: blake3:474717cfd31f78e8854825ee6aee426301e212491094416c6acbb58ee929b604
+      model_repo/prompt_upsampler/1/checkpoint/generation_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=generation_config.json
+        checksum: blake3:e9caabdef762f90ee349cca33abedabf962089aa81abcf93207919e699a97806
+      model_repo/prompt_upsampler/1/checkpoint/hf_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=hf_config.json
+        checksum: blake3:ed830e6ed2c3bf1292b1da57a538b854979eca054c3b325adefacd6405a9a3d1
+      model_repo/prompt_upsampler/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=preprocessor_config.json
+        checksum: blake3:3d1ee7e576f57271842dd4d00624c8a125ecbf24bf7a6ef224ad6e1180409a72
+      model_repo/prompt_upsampler/1/checkpoint/processor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=processor_config.json
+        checksum: blake3:a2164996f07121208d78406702da3efc820ccae6776771ab7b0d8e256fa62ebd
+      model_repo/prompt_upsampler/1/checkpoint/projector.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=projector.safetensors
+        checksum: blake3:4352ae2017a0e7e6f8fe7f907fa217b8688212ebf97760e3dade91cb25357c76
+      model_repo/prompt_upsampler/1/checkpoint/rank0.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=rank0.safetensors
+        checksum: blake3:a1ad768638955f42d48db748ba3383a4f902a3700a18e22192ada164caf554b1
+      model_repo/prompt_upsampler/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=special_tokens_map.json
+        checksum: blake3:bb8115684b6fc49d96909ffa1fa824c6d663cd64f53361b8f1ad1c164c0e8a1f
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer.json
+        checksum: blake3:bd2006f9a928b45489893f107dba2292ea8b445b16eef585a02d21ecbbdf6277
+      model_repo/prompt_upsampler/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=tokenizer_config.json
+        checksum: blake3:78fba6af3b7cd680f1b56cbf999dfca56f9b1768c79450951d8fbae40ffdd508
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fconfig.json
+        checksum: blake3:910fcacf0431a694ea4e7c7fd1addb1458a2ba144cbfc414d03dfc1e021f1377
+      model_repo/prompt_upsampler/1/checkpoint/vision_tower/model.safetensors:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-pixtral-fp8?file=vision_tower%2Fmodel.safetensors
+        checksum: blake3:76ababe381781084acc481092bd61049f5f2f03ececacbd99b6de1d095be0e9b
+      model_repo/prompt_upsampler/1/model.py:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2F1%2Fmodel.py
+      model_repo/prompt_upsampler/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=prompt_upsampler%2Fconfig.pbtxt
+      model_repo/siglip_filter/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-onnx?file=model.onnx
+        checksum: blake3:696a971e28fee107b27ecdd8d64d95fd5bccfcf00462e69f0679e8d1a9b23995
+      model_repo/siglip_filter/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter%2Fconfig.pbtxt
+      model_repo/siglip_filter_processor/1/checkpoint/preprocessor_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=preprocessor_config.json
+        checksum: blake3:6b9b61151a9dbbcdd17b4480ebc4994dc25463d8b05cfd2c571cddcff5ef5f6b
+      model_repo/siglip_filter_processor/1/checkpoint/special_tokens_map.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=special_tokens_map.json
+        checksum: blake3:9b449b6c9d627eb0a3d34b519bd5339da839cfea741a8790498ccd54f34a6fe6
+      model_repo/siglip_filter_processor/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=spiece.model
+        checksum: blake3:910a84a9e12120028e4ddaa9ec9ec4baaa83aedc6eed38fb489606616835c330
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer.json
+        checksum: blake3:829436c714ff2c19bbf6fb9821b5f2ad0c825f4a35baf651b1910d071a39949d
+      model_repo/siglip_filter_processor/1/checkpoint/tokenizer_config.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-siglip-filter-processor?file=tokenizer_config.json
+        checksum: blake3:8cdab4ffab4628212098d405f99e80b9c116953fbdc3ee5c084bacd1a04c0402
+      model_repo/siglip_filter_processor/1/model.py:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2F1%2Fmodel.py
+      model_repo/siglip_filter_processor/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=siglip_filter_processor%2Fconfig.pbtxt
+      model_repo/t5/1/extra_data.bin:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=extra_data.bin
+        checksum: blake3:7342829fcc628e531b7ffc52571a2f082a6f096a83761cf1e31fb4d0d9f5190a
+      model_repo/t5/1/model.onnx:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-onnx-bf16-2?file=model.onnx
+        checksum: blake3:3cdb425f0db3b5cb827b6f0428e6ccbb40b7b47e00b201ac86fcda88e1430522
+      model_repo/t5/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5%2Fconfig.pbtxt
+      model_repo/t5_tokenizer/1/checkpoint/spiece.model:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=spiece.model
+        checksum: blake3:18af7072534a34d626ca166c92f5e37c7ccfcd6ce6877c3c25d325bc8201090d
+      model_repo/t5_tokenizer/1/checkpoint/tokenizer.json:
+        uri: ngc://nim/nvidia/cosmos-predict1-7b-video2world:1.0.0-t5-tokenizer?file=tokenizer.json
+        checksum: blake3:9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820
+      model_repo/t5_tokenizer/1/model.py:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2F1%2Fmodel.py
+      model_repo/t5_tokenizer/config.pbtxt:
+        uri: local:///opt/nim/model_repo?file=t5_tokenizer%2Fconfig.pbtxt

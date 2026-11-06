@@ -1,0 +1,1577 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: moonshotai/kimi-k2.5
+release: 1.0.0-variant
+profiles:
+- id: 17800e1cb374589f936975846938b4319a87f3551af358ff7381aa88d361efd5
+  tags:
+    feat_lora: 'false'
+    gpu: b200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 3e03b8e20a896bdd1ff8b9d6cd4e8e6c7692c080d74cb63aaff27e699f80862b
+    pp: '1'
+    precision: int4
+    tp: '8'
+  workspace:
+    files:
+      .cache/huggingface/download/LICENSE.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/LICENSE.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+        checksum: blake3:2e05bc4603f3cb2c6372489b5639fc28238ef9340b7e363dccd3bec4d9b3026a
+      .cache/huggingface/download/README.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/README.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+        checksum: blake3:f0f2e8b6b244eb139c1abe747c30e50ae7df2440954de9ab2331dbe97995c7d7
+      .cache/huggingface/download/THIRD_PARTY_NOTICES.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FTHIRD_PARTY_NOTICES.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/THIRD_PARTY_NOTICES.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FTHIRD_PARTY_NOTICES.md.metadata
+        checksum: blake3:63a49754afeaa2dbc002b9e4f81323d04b4bdd5f2ce6028693732b7a7e8d612e
+      .cache/huggingface/download/chat_template.jinja.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fchat_template.jinja.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/chat_template.jinja.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fchat_template.jinja.metadata
+        checksum: blake3:02a99d61f6718ea290820f3f7be91def3d19674e5760d31911c1d311cb86743e
+      .cache/huggingface/download/config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+        checksum: blake3:b5e262ce19ff13459e25bb49cbe89aa0919b72b45d0f9e8153914a11e02a9903
+      .cache/huggingface/download/configuration_deepseek.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_deepseek.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/configuration_deepseek.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_deepseek.py.metadata
+        checksum: blake3:311a971677db7c61d6e3f3de70193e8a2e47d312b1630d78fc4632d0dc71d208
+      .cache/huggingface/download/configuration_kimi_k25.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_kimi_k25.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/configuration_kimi_k25.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_kimi_k25.py.metadata
+        checksum: blake3:7f2e097de3c40fbc8a4322684d59790a7cb6db2c276398fe85e8076176a697c9
+      .cache/huggingface/download/docs/deploy_guidance.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fdocs%2Fdeploy_guidance.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/docs/deploy_guidance.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fdocs%2Fdeploy_guidance.md.metadata
+        checksum: blake3:8d3a51c2f7d2593b4e1dcebc9ab284d8544ee27a4fdabe2a3d03d61496be0ee4
+      .cache/huggingface/download/figures/demo_video.mp4.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fdemo_video.mp4.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/figures/demo_video.mp4.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fdemo_video.mp4.metadata
+        checksum: blake3:44c538febf6e0a293b238b3dcef9839ad87c04e7e44495d70eb380fcd53e4f6a
+      .cache/huggingface/download/figures/kimi-logo.png.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fkimi-logo.png.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/figures/kimi-logo.png.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fkimi-logo.png.metadata
+        checksum: blake3:516191544c4fc2b3efdaf6348ff123a623bcdee704c81dcb66068a64f517555a
+      .cache/huggingface/download/generation_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/generation_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+        checksum: blake3:1b214be68a6582a9ee2e4e8019616b139fc20fc0ccdd5d283fb5dc2ef67d8ff5
+      .cache/huggingface/download/kimi_k25_processor.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_processor.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/kimi_k25_processor.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_processor.py.metadata
+        checksum: blake3:1732f67160173fdba1617ffe3d7e9b59d18b8c4d0883b6f45a3c7406bd2b5979
+      .cache/huggingface/download/kimi_k25_vision_processing.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_vision_processing.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/kimi_k25_vision_processing.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_vision_processing.py.metadata
+        checksum: blake3:876126fb505dd4809003bfe915501abc18ae24e5b3af2fd6df597ec63ea6952e
+      .cache/huggingface/download/media_utils.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmedia_utils.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/media_utils.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmedia_utils.py.metadata
+        checksum: blake3:3a4c9ef8526d3a2ae1f97a80a7570361d1d3754143a77329bb53547a9f897f0d
+      .cache/huggingface/download/model-00001-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00001-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-000064.safetensors.metadata
+        checksum: blake3:8dbd36a1d12f8934785c81a171f6d384b95c672f064fa6d2325af80ea07467f8
+      .cache/huggingface/download/model-00002-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00002-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-000064.safetensors.metadata
+        checksum: blake3:2edef2d57091d17713c56a0905df6baa7d5d7f0a5225e3214bbbc368e3bc1693
+      .cache/huggingface/download/model-00003-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00003-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-000064.safetensors.metadata
+        checksum: blake3:02f948a656bcf9afc9ce67b71cc99adfe04a3a291d034afd308b7f21f1419ce2
+      .cache/huggingface/download/model-00004-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00004-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-000064.safetensors.metadata
+        checksum: blake3:14790985d1122e55205a5b6db47b8640b7686400adf3da386e28456381e12273
+      .cache/huggingface/download/model-00005-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00005-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-000064.safetensors.metadata
+        checksum: blake3:69e56ffb9cee52e966c795a1340bdae491aaf278808ecca9f46a4c910723e491
+      .cache/huggingface/download/model-00006-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00006-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-000064.safetensors.metadata
+        checksum: blake3:758cb8abd839a05d2b245f1ebb036603f257ba05fd454c35818ffb421df73407
+      .cache/huggingface/download/model-00007-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00007-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-000064.safetensors.metadata
+        checksum: blake3:f8e41d2f60de38abe9ad448999c6f10e4a69e2230fab25cc07c13835ef022e54
+      .cache/huggingface/download/model-00008-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00008-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-000064.safetensors.metadata
+        checksum: blake3:ade25dc9510bdd0316fe53847176304af44b2e123a510b6c84fa337cda672c7b
+      .cache/huggingface/download/model-00009-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00009-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00009-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00009-of-000064.safetensors.metadata
+        checksum: blake3:9570b38c9de47871c089176a154082f9d68331aae6f2eefdded5d85a38bccd73
+      .cache/huggingface/download/model-00010-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00010-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00010-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00010-of-000064.safetensors.metadata
+        checksum: blake3:565d93915c188856323aa54e1db01a64053f9544d14d8c770f41c07134a1c72c
+      .cache/huggingface/download/model-00011-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00011-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00011-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00011-of-000064.safetensors.metadata
+        checksum: blake3:e8b8acdc2f1226ad1f1fbf4730159f630d6fcab370a711adb97bb69e601073ed
+      .cache/huggingface/download/model-00012-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00012-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00012-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00012-of-000064.safetensors.metadata
+        checksum: blake3:968e199a6122c96ddecc7db982b2eb5309c04f762ebc1d0de1afc8b8fd50e104
+      .cache/huggingface/download/model-00013-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00013-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00013-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00013-of-000064.safetensors.metadata
+        checksum: blake3:7347b051d6e24ba39a719dab1dcf52a8daad69d1ac1bbd1dc647ae6f0875270f
+      .cache/huggingface/download/model-00014-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00014-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00014-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00014-of-000064.safetensors.metadata
+        checksum: blake3:e41d982e551f8c8a828ef0f789b6beab47d57942714cad883733d41826008ace
+      .cache/huggingface/download/model-00015-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00015-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00015-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00015-of-000064.safetensors.metadata
+        checksum: blake3:8bc06422a4ff9bb88b44673c8ade5ba687cf726e77976d914201fed047842749
+      .cache/huggingface/download/model-00016-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00016-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00016-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00016-of-000064.safetensors.metadata
+        checksum: blake3:44dc67e4ad81b0da3951734f59e2f69a40b68d3f65deaf545fee961d9123c451
+      .cache/huggingface/download/model-00017-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00017-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00017-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00017-of-000064.safetensors.metadata
+        checksum: blake3:5242eeb89d07333572293279c006956f3b88bef3643bca4e5a799af3994e3a85
+      .cache/huggingface/download/model-00018-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00018-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00018-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00018-of-000064.safetensors.metadata
+        checksum: blake3:ff7ac28ae9306fd61e8c0033a660ccbd67e4df737278618fecb189b3e56441f8
+      .cache/huggingface/download/model-00019-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00019-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00019-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00019-of-000064.safetensors.metadata
+        checksum: blake3:897bd94ff4eb8820e22a32b521d8a23ae84b433655e7a7a623f126e834c6942d
+      .cache/huggingface/download/model-00020-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00020-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00020-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00020-of-000064.safetensors.metadata
+        checksum: blake3:01da1b52e387d694e9435233682d5e4d3a668147b8b4d5fc70f54efb13f78fd3
+      .cache/huggingface/download/model-00021-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00021-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00021-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00021-of-000064.safetensors.metadata
+        checksum: blake3:b589ab579c92f211750281b7e7a2b64edafe995b23fa72bde0a681fa89fd7a7b
+      .cache/huggingface/download/model-00022-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00022-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00022-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00022-of-000064.safetensors.metadata
+        checksum: blake3:768c4ef3d61d14d8b50800fcf5d849202a7d0a1c6ae1cc1cb2b42f73a75257a0
+      .cache/huggingface/download/model-00023-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00023-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00023-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00023-of-000064.safetensors.metadata
+        checksum: blake3:6f8944387de8f509ffd8f5725b6089ec792b71a9e45d36142bca2c022675e32c
+      .cache/huggingface/download/model-00024-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00024-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00024-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00024-of-000064.safetensors.metadata
+        checksum: blake3:6ddf908940f868d57bf5b2df970ed1ee465d2ae37d3e6f4e2a62767dd9f696dc
+      .cache/huggingface/download/model-00025-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00025-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00025-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00025-of-000064.safetensors.metadata
+        checksum: blake3:1975c4fc2db21c3166cf944e474a95b21165d9b473a2198374caccb83d072260
+      .cache/huggingface/download/model-00026-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00026-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00026-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00026-of-000064.safetensors.metadata
+        checksum: blake3:47b24e55f04bfcd682e822d5d35b8ad74fb937cc81eba9a11c87b1896c2cff27
+      .cache/huggingface/download/model-00027-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00027-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00027-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00027-of-000064.safetensors.metadata
+        checksum: blake3:1e0fd30a867d4f211f5fc1e815a90ff40a43cb4c764dc0c6f9b49274a7916096
+      .cache/huggingface/download/model-00028-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00028-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00028-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00028-of-000064.safetensors.metadata
+        checksum: blake3:685dacb248a062dd51a3a780dca80f5285b6c3d6d87f4f6d055251e22dcb5f3f
+      .cache/huggingface/download/model-00029-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00029-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00029-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00029-of-000064.safetensors.metadata
+        checksum: blake3:285bed5f86e148257a38dc41208ab94bffc95d62e13fd92bade5fda47ad10f3a
+      .cache/huggingface/download/model-00030-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00030-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00030-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00030-of-000064.safetensors.metadata
+        checksum: blake3:269e1a672fc444f36fcba442b3ee68b28399013821f40be5125243d954f60934
+      .cache/huggingface/download/model-00031-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00031-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00031-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00031-of-000064.safetensors.metadata
+        checksum: blake3:52e2a44e4db4ba4f153b419dc91299f132a0a7019b5d6e00f92d3f8395926288
+      .cache/huggingface/download/model-00032-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00032-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00032-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00032-of-000064.safetensors.metadata
+        checksum: blake3:ab6f8ca6f098e0673e16622f7e494d3088f534dd1771499a51c7aa50dee5bf4b
+      .cache/huggingface/download/model-00033-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00033-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00033-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00033-of-000064.safetensors.metadata
+        checksum: blake3:0d8c45819889e00a09995caea115bfaaea7dffa8db8dfaf3d149207f8be28cd6
+      .cache/huggingface/download/model-00034-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00034-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00034-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00034-of-000064.safetensors.metadata
+        checksum: blake3:33f1010d3884b4d1bca8f99254ad36eebaf3c31784f254f1c6ebd071aa3a5cde
+      .cache/huggingface/download/model-00035-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00035-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00035-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00035-of-000064.safetensors.metadata
+        checksum: blake3:5d5e505c437224f724d2924d86498dae20d737785d7241c06f1824c48c40f764
+      .cache/huggingface/download/model-00036-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00036-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00036-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00036-of-000064.safetensors.metadata
+        checksum: blake3:b6310f21119c420ce6958e7c7070fa3407071b563a78139a1bc28971e1879238
+      .cache/huggingface/download/model-00037-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00037-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00037-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00037-of-000064.safetensors.metadata
+        checksum: blake3:42120e9688f2cd8ab1d759edb0022a83b3f4401e19bf26096cb13c4c521f7cba
+      .cache/huggingface/download/model-00038-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00038-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00038-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00038-of-000064.safetensors.metadata
+        checksum: blake3:248ca20c8eaf31eed21aa0f396a14525aebead1929c8fb6a9148b5716e4f47b6
+      .cache/huggingface/download/model-00039-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00039-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00039-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00039-of-000064.safetensors.metadata
+        checksum: blake3:2f4f581283bd57d5bc64888c17839dbdb5908542f1b793460fccc9d09f6d27ee
+      .cache/huggingface/download/model-00040-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00040-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00040-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00040-of-000064.safetensors.metadata
+        checksum: blake3:5eec60a913b922fcc955bd393598f2ca96b6dac2fefcff7aebd24377f4bca82e
+      .cache/huggingface/download/model-00041-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00041-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00041-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00041-of-000064.safetensors.metadata
+        checksum: blake3:57c7d5bf2f9be81c65a527775f5bb4b1ed12f1bcef3f19d7fac042bcbe6cb56c
+      .cache/huggingface/download/model-00042-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00042-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00042-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00042-of-000064.safetensors.metadata
+        checksum: blake3:963081bfe50c999cf99c2fcabeb655a17676da839138eb7a332e39b37dc9277c
+      .cache/huggingface/download/model-00043-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00043-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00043-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00043-of-000064.safetensors.metadata
+        checksum: blake3:2df8e53ff280ba7f15badf8dbc4c0604b638f0d5238931b1502499bcecd2545c
+      .cache/huggingface/download/model-00044-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00044-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00044-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00044-of-000064.safetensors.metadata
+        checksum: blake3:3bb893b090f99a28ee2cde93edef508e60406acb63d525a8af72edf86393ddc9
+      .cache/huggingface/download/model-00045-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00045-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00045-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00045-of-000064.safetensors.metadata
+        checksum: blake3:a03d77570e4b270de826d671d1a6689dbf6d5284287b0826089ea0120c675f17
+      .cache/huggingface/download/model-00046-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00046-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00046-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00046-of-000064.safetensors.metadata
+        checksum: blake3:898ef20af502ad526f8501c2558ccfc3be1d060e87536a3955bdf91f0be12257
+      .cache/huggingface/download/model-00047-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00047-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00047-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00047-of-000064.safetensors.metadata
+        checksum: blake3:93bd55bb38d81e43d5d21ac5dea16d9562a8b5b986f4d895066e0efadcbbe835
+      .cache/huggingface/download/model-00048-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00048-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00048-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00048-of-000064.safetensors.metadata
+        checksum: blake3:547afb0a71a4d1770a203ef635a975290456d454e33e3e054382780f2e16d663
+      .cache/huggingface/download/model-00049-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00049-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00049-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00049-of-000064.safetensors.metadata
+        checksum: blake3:c8a64dfb50c67433a9eb6e276fc6de55ead09d7b8bd3630ab85ba931e389840b
+      .cache/huggingface/download/model-00050-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00050-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00050-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00050-of-000064.safetensors.metadata
+        checksum: blake3:e126de334ff705ac4b24432411ec72c74c2e9f3c8cb753557cc3ab5a84223031
+      .cache/huggingface/download/model-00051-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00051-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00051-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00051-of-000064.safetensors.metadata
+        checksum: blake3:114d6bace3b5da0164d19f6e2ecf85a20d5a062d80c14308c7c7f73d5a812ba5
+      .cache/huggingface/download/model-00052-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00052-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00052-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00052-of-000064.safetensors.metadata
+        checksum: blake3:35debcd20399664ced01731eb3635bbf121f0066efd36bd5eb28a0a6b7e09b4f
+      .cache/huggingface/download/model-00053-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00053-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00053-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00053-of-000064.safetensors.metadata
+        checksum: blake3:df5ccd0f11ceec4a72277b9c29ab6549ae801a32edd3e57a53d22c03b6817d9a
+      .cache/huggingface/download/model-00054-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00054-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00054-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00054-of-000064.safetensors.metadata
+        checksum: blake3:a5bed2377d88b5ccf1052151e849ade301f9f0b9295b071054b08fb93b15d965
+      .cache/huggingface/download/model-00055-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00055-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00055-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00055-of-000064.safetensors.metadata
+        checksum: blake3:1c411cca0ac6b8d4b80d0880b6ee2b47b63e0e4a4cbe24d65421391d372e80b2
+      .cache/huggingface/download/model-00056-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00056-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00056-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00056-of-000064.safetensors.metadata
+        checksum: blake3:999591934c2b56e776525a9c68bf80a2d55d805a10b4798614c47886f12d6155
+      .cache/huggingface/download/model-00057-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00057-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00057-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00057-of-000064.safetensors.metadata
+        checksum: blake3:2b46f89d589ecfdd64c082e6ee9bbc4001fc92790e2ecb934619d0de92d5b715
+      .cache/huggingface/download/model-00058-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00058-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00058-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00058-of-000064.safetensors.metadata
+        checksum: blake3:76bb344e0ef2220adf17ede79aff550d2dd9199efcee0e2301d7462da8003a7d
+      .cache/huggingface/download/model-00059-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00059-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00059-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00059-of-000064.safetensors.metadata
+        checksum: blake3:856d4228bcbfa4151f9f43b05aeace4db50d3721b9bfb0f1caf2dbfa34f18d49
+      .cache/huggingface/download/model-00060-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00060-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00060-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00060-of-000064.safetensors.metadata
+        checksum: blake3:5105023811aee1dda47c4510e1dd2ed7aa95a11b1a78f7960ce35f2accd87167
+      .cache/huggingface/download/model-00061-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00061-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00061-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00061-of-000064.safetensors.metadata
+        checksum: blake3:a0518c405c9dcfadb560774b33e8a0d522dff9d6eed9454069dc77c5d1c971ec
+      .cache/huggingface/download/model-00062-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00062-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00062-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00062-of-000064.safetensors.metadata
+        checksum: blake3:922b1a50698eb81538fd3ecb616381fa2695fbd62f86e05ff0a8837c484249a7
+      .cache/huggingface/download/model-00063-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00063-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00063-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00063-of-000064.safetensors.metadata
+        checksum: blake3:d555d84747b036655b450aad920e0832830a97b61db0127a787fcc973962ff98
+      .cache/huggingface/download/model-00064-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00064-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00064-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00064-of-000064.safetensors.metadata
+        checksum: blake3:ac87b2302b94a7c4c64223286c5e54084b108c64fb4fc24ed54910856e4333d5
+      .cache/huggingface/download/model.safetensors.index.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model.safetensors.index.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+        checksum: blake3:ca9caec1780b4d7dddcb6767d14435e2272e87f224b278495f19581712fb5542
+      .cache/huggingface/download/modeling_deepseek.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_deepseek.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/modeling_deepseek.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_deepseek.py.metadata
+        checksum: blake3:d4bcb3c4e80dfca4eda8d561d2bccfa92dc4dde907a1225b83bc04a8e1a8438d
+      .cache/huggingface/download/modeling_kimi_k25.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_kimi_k25.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/modeling_kimi_k25.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_kimi_k25.py.metadata
+        checksum: blake3:bb3570121d83ec500d4d0e1dac8e4b9a7d2ef628c3b2361acd64710a3cf6747f
+      .cache/huggingface/download/preprocessor_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fpreprocessor_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/preprocessor_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fpreprocessor_config.json.metadata
+        checksum: blake3:c18b4b5e46f4696297a92c34808048bd7b6338b0acdb6783733400a9b0caf9d1
+      .cache/huggingface/download/tiktoken.model.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftiktoken.model.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tiktoken.model.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftiktoken.model.metadata
+        checksum: blake3:f0b146396af21acc0c14878f8bc6a37a9638cc796efb03bde26af2d921889356
+      .cache/huggingface/download/tokenization_kimi.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenization_kimi.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tokenization_kimi.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenization_kimi.py.metadata
+        checksum: blake3:d593d5a90c31af6fd894f813b16e93893345dddbf77eaf0689c6d307a662f76b
+      .cache/huggingface/download/tokenizer_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tokenizer_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+        checksum: blake3:2508a49d5030d4ffc00188a4b1c3344512b7a7bd2340aac87fa4a7dc994d0a89
+      .cache/huggingface/download/tool_declaration_ts.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftool_declaration_ts.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tool_declaration_ts.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftool_declaration_ts.py.metadata
+        checksum: blake3:2f32da7e0ea15153ea15a6f3bec91973086ad8a389545f505795f3700b8f495a
+      LICENSE:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=LICENSE
+        checksum: blake3:24f85ac2cbd120475b930d09beef167719bb12aa6f8add3e525385d5ba11e9bc
+      README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=README.md
+        checksum: blake3:abc70c2465b6efed034bdbb54f218ffc01979d7dd2321939cd1045a1b0639e04
+      THIRD_PARTY_NOTICES.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=THIRD_PARTY_NOTICES.md
+        checksum: blake3:2973df045d1a8641a60b8ca0858b402853e01fa5ec2305dd74e91954c9e4a16a
+      chat_template.jinja:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=chat_template.jinja
+        checksum: blake3:ca9d3d4cf0eb31cc318e8c8c16629b80e8bc5e9a0d5dd794d4155e32c121495a
+      config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=config.json
+        checksum: blake3:c5cd6dd0a7c7621a32f4158aa8694c042a375f4fc8c448ec4b41b48345c1a0ae
+      configuration_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=configuration_deepseek.py
+        checksum: blake3:a8b3d4f5bdd3df0eec279959f3b27fe7275f4a7361235deca9d0a5da10da4a74
+      configuration_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=configuration_kimi_k25.py
+        checksum: blake3:8b7f6b3e0b7d78db64d8573a66b8cfed1fdb1f6a603fad1c27344ceba68d45b9
+      docs/deploy_guidance.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=docs%2Fdeploy_guidance.md
+        checksum: blake3:f43c383a71f9b7983232f345e523a1ed8771e60591cb3ec110f909a784e05641
+      figures/demo_video.mp4:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=figures%2Fdemo_video.mp4
+        checksum: blake3:15ea3b90d9b048831f475a1a5db2053d7865cfaef5dd2b5f55d06b6f6631d829
+      figures/kimi-logo.png:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=figures%2Fkimi-logo.png
+        checksum: blake3:5e434b4c83290214f41df1c0e28ba36186d46e92b814cb51ec56c2a4434171f7
+      generation_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=generation_config.json
+        checksum: blake3:e539fd9d1187ee551672dec71039e6b72b3278c774dfe05a1c124bf3e71f77fd
+      kimi_k25_processor.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=kimi_k25_processor.py
+        checksum: blake3:f3a1f26801b37f9e7bd6c09e77ac78fa5af9cd9b4654a2a61836e773116e5bfe
+      kimi_k25_vision_processing.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=kimi_k25_vision_processing.py
+        checksum: blake3:856a849fa0a58d0ce7fda807d42f35c60745fae8349dba0c3560f61c7270179c
+      media_utils.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=media_utils.py
+        checksum: blake3:eace4ed5d923c21f4f103d2a2fa472b3093cd660d48821b0140067ee82c00832
+      model-00001-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00001-of-000064.safetensors
+        checksum: blake3:a0acecf31b7925cb96785b46dccc286cbcff968615d7466926e2ffcb41c0f450
+      model-00002-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00002-of-000064.safetensors
+        checksum: blake3:f889d099c575e95cc73f70fe17ed2570022a59230782e39a7adc5733bc704360
+      model-00003-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00003-of-000064.safetensors
+        checksum: blake3:3bebc41121f95194ec5a961ecd1c4f3ce726670bee090d3ed41059fca895960a
+      model-00004-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00004-of-000064.safetensors
+        checksum: blake3:1d60adb7534e7b9ebd96006977dad67bc5960075c103d368b3d0cd049b67c720
+      model-00005-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00005-of-000064.safetensors
+        checksum: blake3:07dcf02b96f7745d8ad78d9ed70a8a779d738b4b6f4af1a144fd20cac871bb2b
+      model-00006-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00006-of-000064.safetensors
+        checksum: blake3:020f0755c60ae3d8ed4f6786d439cf0a4690d3f9287fb6bce57cb2be4b5baf31
+      model-00007-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00007-of-000064.safetensors
+        checksum: blake3:2741a595fb5080947401645525a763bd7429d4d54cfca78128b52cc7c7be7239
+      model-00008-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00008-of-000064.safetensors
+        checksum: blake3:d0aaa7ce6a5d4dd580d207bdf8e4bc519598097fb7c5e8664a381c60a1f12493
+      model-00009-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00009-of-000064.safetensors
+        checksum: blake3:fe2f50d817294758121568a4eb592f174dd4025d9bf14bd20b3834b5e2d69cf6
+      model-00010-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00010-of-000064.safetensors
+        checksum: blake3:180a4620ad35b84742269170bb163fd902fd915e7425cd4beab909a09763a522
+      model-00011-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00011-of-000064.safetensors
+        checksum: blake3:962b69839e930f376d76b9576944c7af9a1584089549419c4a582ba2de23e227
+      model-00012-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00012-of-000064.safetensors
+        checksum: blake3:a9b43e2de59757009aab61be5aa93902e0b524243dd9455948aea1fe5d71116f
+      model-00013-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00013-of-000064.safetensors
+        checksum: blake3:8f97c423dabbcab852d71117aaedcfc283e4ad0e4615246fe03bc0d0958a4a15
+      model-00014-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00014-of-000064.safetensors
+        checksum: blake3:daaa32df2e6dc4d2052d480e159ddfcbe127f2dfa230ff026189c9817ebfea55
+      model-00015-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00015-of-000064.safetensors
+        checksum: blake3:deb5ee8a748b839641f585b29350fe63ade47985fe33248e202052adef9b9af3
+      model-00016-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00016-of-000064.safetensors
+        checksum: blake3:364f772938215cb3a5960f72e897b303f75099b5895be9101482d473304361c1
+      model-00017-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00017-of-000064.safetensors
+        checksum: blake3:293e359da15e5389b3699531f6095ae814e80bca3d6fed58cf33d6463fee11b1
+      model-00018-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00018-of-000064.safetensors
+        checksum: blake3:e2c34b536b2713f93cb9d7eb8a0f3b4ec49e28182c39ce1609529ce494ab2a74
+      model-00019-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00019-of-000064.safetensors
+        checksum: blake3:d17a73903e3ea3ecba6c859e61a7809825037ac9d087e8ea262ee57ffcc56e06
+      model-00020-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00020-of-000064.safetensors
+        checksum: blake3:acd97495ef4af89850319062145250c0f36246514f517a885c4595d032bf129c
+      model-00021-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00021-of-000064.safetensors
+        checksum: blake3:4955331989c9e5308089f89a359dd1cef9c6862d8ab8b5637d34f3d82b5782f9
+      model-00022-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00022-of-000064.safetensors
+        checksum: blake3:42dbd16ac362174b3b642f842ade31bd0f9ec1a7d0fe8a5799c4f48b8ad9d997
+      model-00023-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00023-of-000064.safetensors
+        checksum: blake3:d6397f4ec2bac2f66e94799404c636fd559b764ec494b588bd198670df82e404
+      model-00024-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00024-of-000064.safetensors
+        checksum: blake3:adf6dc8a028342123a921de84660bd4068befc848571f65ae9e3d32e876cac48
+      model-00025-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00025-of-000064.safetensors
+        checksum: blake3:a4944c7f55e76ec1f101ba31e8d52e3cca578aaa98dcad62ac2fdfb68927da4c
+      model-00026-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00026-of-000064.safetensors
+        checksum: blake3:444ebc7a9a06968a07b6c11174395b16aea11b4619f6ade01d8b376d9ec6f6d4
+      model-00027-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00027-of-000064.safetensors
+        checksum: blake3:f1f14130259af6421c8e8479e8d134ca045679cce4237cce80c721c610eaa7d9
+      model-00028-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00028-of-000064.safetensors
+        checksum: blake3:79a0fd9291e7cad02c002ae9e7c1d1a33c67e03bcfbafa252a8ac79ba9245fa5
+      model-00029-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00029-of-000064.safetensors
+        checksum: blake3:2f20e4cf99e98a45af4b35e895d78fdd63e63810899d0572efbd9d613dbf4e65
+      model-00030-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00030-of-000064.safetensors
+        checksum: blake3:4a9b3fe57b59f89f1fba5c05f2767269ce976d6bb454368b60713a26782ec626
+      model-00031-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00031-of-000064.safetensors
+        checksum: blake3:2dad57c10276161deaf298f08dcac0115c93a5b9369dfbbba73b261decc336d2
+      model-00032-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00032-of-000064.safetensors
+        checksum: blake3:efb803bf618e172116431bad52864437f6552930824c6fd0dbfc6944caf1ca67
+      model-00033-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00033-of-000064.safetensors
+        checksum: blake3:785c2a76bfa873b9cf73223538a5d6e41a9341437d46f315f2e2ff4a7019e3d3
+      model-00034-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00034-of-000064.safetensors
+        checksum: blake3:bcd3a684f52dbc6ff2d4cec5d2026dd2bbbda28eaa167ecda95d7480387f91e2
+      model-00035-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00035-of-000064.safetensors
+        checksum: blake3:a882bc49df9331ccf6ecfbe320f013c480b901fdfe8189c5fbe0d34d1c758121
+      model-00036-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00036-of-000064.safetensors
+        checksum: blake3:3665c03530a002cfbdc03fa86b929e6c991426eb78fc13c7e65142eb2e15b4e0
+      model-00037-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00037-of-000064.safetensors
+        checksum: blake3:8ac8c45d85ec4b40a12acba56bd9a623036d9145c4d22fd0a3c9e4d3a775e61a
+      model-00038-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00038-of-000064.safetensors
+        checksum: blake3:48b66621a9b75bac01073477e039658e02b0b221e3f797431b7071c5f7dc431f
+      model-00039-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00039-of-000064.safetensors
+        checksum: blake3:030f67ed9fe89990643ace67b86cbd422de2b45612fd415f5d3ff876e6cd131d
+      model-00040-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00040-of-000064.safetensors
+        checksum: blake3:dd19f62c69e07b40fb740b136cc0a85686ef70b3acabb8127e96894ef502c0ed
+      model-00041-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00041-of-000064.safetensors
+        checksum: blake3:7a77bcdcdee9218890a070e08b0a2cbb6749e3996f779279e8c12b4ae0e22b00
+      model-00042-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00042-of-000064.safetensors
+        checksum: blake3:ee8fe521b927d9f2410b573c9a3a1d6618d59f17b6c778607164852ece6b41eb
+      model-00043-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00043-of-000064.safetensors
+        checksum: blake3:827709c35df54e08e221b95ab37bfd98e0a06ba3e5d77c53895286897c08cf91
+      model-00044-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00044-of-000064.safetensors
+        checksum: blake3:e068f1e279682c8192f196fd0388cf16a634d5267170f2db91abc484b847e2b6
+      model-00045-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00045-of-000064.safetensors
+        checksum: blake3:071d89e841ad410c76fa8ba834f9ff60a26c67e7700a57532d57aeee73fec985
+      model-00046-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00046-of-000064.safetensors
+        checksum: blake3:c735d3954f30dcb18684fb408045a8a24d300ee5bcdfedbd76f509f05089c568
+      model-00047-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00047-of-000064.safetensors
+        checksum: blake3:1c414600a10d3c48e5bcdb4e1d87120ce7791de58d625d69ca6cd98e5601a29d
+      model-00048-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00048-of-000064.safetensors
+        checksum: blake3:aa2538216c972507d37cfc98ef095c5d075076ef20affd6d25e5368e79db91e6
+      model-00049-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00049-of-000064.safetensors
+        checksum: blake3:1b067ff6147cfcdc052f2fa511c41f1e723307e650c8b64dad2e801f6f04e93a
+      model-00050-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00050-of-000064.safetensors
+        checksum: blake3:d29540062ec977f6588bd70f89b7dd88afb33ee5ddb0919f437e9d1551e612df
+      model-00051-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00051-of-000064.safetensors
+        checksum: blake3:700afa7d7f48512ce7e2827be3b907f4452faee75a9cd706b634f9c61e858051
+      model-00052-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00052-of-000064.safetensors
+        checksum: blake3:9f09085742a77b9b0d6b617437e3e755795afff3182e2d4556fc975277e125e3
+      model-00053-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00053-of-000064.safetensors
+        checksum: blake3:ec151d4a668d337b6f997946c3e472d7940afbe6c54d0ba5535efb5ee5e62656
+      model-00054-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00054-of-000064.safetensors
+        checksum: blake3:114e724352d9bd5f7d3c2e6b575280cec0da7f12e5424ca39139066c9d82287f
+      model-00055-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00055-of-000064.safetensors
+        checksum: blake3:dc1bd295b1fe6b59dd3818b4dc8e52e57a1192dcd86680fbed896cb18d504557
+      model-00056-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00056-of-000064.safetensors
+        checksum: blake3:23ff80df7093b1d3a277ded52f5b1658abb3ea303d450011861cb03c8ced944f
+      model-00057-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00057-of-000064.safetensors
+        checksum: blake3:d1800cf1c4dd68ad233283b9977af40b50b5ac3e7034ad1d7af1b03ea28ec5cd
+      model-00058-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00058-of-000064.safetensors
+        checksum: blake3:16404609bf939718f58303caa74447abdc5cad01ee3bd6ed38201817685cdc9b
+      model-00059-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00059-of-000064.safetensors
+        checksum: blake3:ddc4f09db9741cbaedbfb9cefa244447a3ab4d323eb680f1d603c6f0f6c1248d
+      model-00060-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00060-of-000064.safetensors
+        checksum: blake3:5ba0a18d3d9f132dee2f83b3ed0d0dec23c26e8aabfea16dd67ead957cfb3e7d
+      model-00061-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00061-of-000064.safetensors
+        checksum: blake3:cfb2074cb71edfc4c1639d3ccd391cb1f693d22293e2fdfb6f12c9f9276520d7
+      model-00062-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00062-of-000064.safetensors
+        checksum: blake3:845647b1fb6188473c9bd067f6cd37f5e8a7081346282e8c5e5c1cb490f9087e
+      model-00063-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00063-of-000064.safetensors
+        checksum: blake3:1f008edd7fb6a6d913f85d2fdfd5507592abe2210f7f7b64728763f5c83d7b48
+      model-00064-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00064-of-000064.safetensors
+        checksum: blake3:98b35f08ed5767ce40535f261d597c0889aa18fa6c35f6df960a998384b59573
+      model.safetensors.index.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model.safetensors.index.json
+        checksum: blake3:0d0d89c6dbbc0a1a86de85317dda8ca52939dca50714b3991cbaad7c7f4d28a4
+      modeling_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=modeling_deepseek.py
+        checksum: blake3:d59d350e5f5ad3b374c5e4bb61df3f864e50baf30401349b78861c066af0cb12
+      modeling_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=modeling_kimi_k25.py
+        checksum: blake3:bc86b33a89597e422aa21b08aa61728b1121615c3820d6113e580f26ae32ca6a
+      preprocessor_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=preprocessor_config.json
+        checksum: blake3:b8f9f39c23afc6e9850c07c06e8cab9e704c28d0280fda6672fb400536be8cce
+      tiktoken.model:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tiktoken.model
+        checksum: blake3:c893437b479f39927a9128d939a6ac52103adfac1d7f198e5765869057b521c8
+      tokenization_kimi.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tokenization_kimi.py
+        checksum: blake3:e2dd555d408dcdc0e1afedbdbc014ce1a8e27488b6c4f2636545ccae708215ee
+      tokenizer_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tokenizer_config.json
+        checksum: blake3:c02001f985f75797c229403ea85302ded8ae96ac655aab0f40d3dabb5f703156
+      tool_declaration_ts.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tool_declaration_ts.py
+        checksum: blake3:3405b73432651471d1f8cd94c3db2f6d5067620d8fb3ba413fe41154095b6d5d
+- id: c4fa94b0c88772b30d1a5429f5663d953c7558867622cc4ce543b6c583b1b298
+  tags:
+    feat_lora: 'false'
+    gpu: h200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    nim_workspace_hash_v1: 3e03b8e20a896bdd1ff8b9d6cd4e8e6c7692c080d74cb63aaff27e699f80862b
+    pp: '1'
+    precision: int4
+    tp: '8'
+  workspace:
+    files:
+      .cache/huggingface/download/LICENSE.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/LICENSE.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FLICENSE.metadata
+        checksum: blake3:2e05bc4603f3cb2c6372489b5639fc28238ef9340b7e363dccd3bec4d9b3026a
+      .cache/huggingface/download/README.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/README.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FREADME.md.metadata
+        checksum: blake3:f0f2e8b6b244eb139c1abe747c30e50ae7df2440954de9ab2331dbe97995c7d7
+      .cache/huggingface/download/THIRD_PARTY_NOTICES.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FTHIRD_PARTY_NOTICES.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/THIRD_PARTY_NOTICES.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2FTHIRD_PARTY_NOTICES.md.metadata
+        checksum: blake3:63a49754afeaa2dbc002b9e4f81323d04b4bdd5f2ce6028693732b7a7e8d612e
+      .cache/huggingface/download/chat_template.jinja.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fchat_template.jinja.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/chat_template.jinja.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fchat_template.jinja.metadata
+        checksum: blake3:02a99d61f6718ea290820f3f7be91def3d19674e5760d31911c1d311cb86743e
+      .cache/huggingface/download/config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfig.json.metadata
+        checksum: blake3:b5e262ce19ff13459e25bb49cbe89aa0919b72b45d0f9e8153914a11e02a9903
+      .cache/huggingface/download/configuration_deepseek.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_deepseek.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/configuration_deepseek.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_deepseek.py.metadata
+        checksum: blake3:311a971677db7c61d6e3f3de70193e8a2e47d312b1630d78fc4632d0dc71d208
+      .cache/huggingface/download/configuration_kimi_k25.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_kimi_k25.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/configuration_kimi_k25.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fconfiguration_kimi_k25.py.metadata
+        checksum: blake3:7f2e097de3c40fbc8a4322684d59790a7cb6db2c276398fe85e8076176a697c9
+      .cache/huggingface/download/docs/deploy_guidance.md.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fdocs%2Fdeploy_guidance.md.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/docs/deploy_guidance.md.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fdocs%2Fdeploy_guidance.md.metadata
+        checksum: blake3:8d3a51c2f7d2593b4e1dcebc9ab284d8544ee27a4fdabe2a3d03d61496be0ee4
+      .cache/huggingface/download/figures/demo_video.mp4.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fdemo_video.mp4.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/figures/demo_video.mp4.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fdemo_video.mp4.metadata
+        checksum: blake3:44c538febf6e0a293b238b3dcef9839ad87c04e7e44495d70eb380fcd53e4f6a
+      .cache/huggingface/download/figures/kimi-logo.png.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fkimi-logo.png.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/figures/kimi-logo.png.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ffigures%2Fkimi-logo.png.metadata
+        checksum: blake3:516191544c4fc2b3efdaf6348ff123a623bcdee704c81dcb66068a64f517555a
+      .cache/huggingface/download/generation_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/generation_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fgeneration_config.json.metadata
+        checksum: blake3:1b214be68a6582a9ee2e4e8019616b139fc20fc0ccdd5d283fb5dc2ef67d8ff5
+      .cache/huggingface/download/kimi_k25_processor.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_processor.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/kimi_k25_processor.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_processor.py.metadata
+        checksum: blake3:1732f67160173fdba1617ffe3d7e9b59d18b8c4d0883b6f45a3c7406bd2b5979
+      .cache/huggingface/download/kimi_k25_vision_processing.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_vision_processing.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/kimi_k25_vision_processing.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fkimi_k25_vision_processing.py.metadata
+        checksum: blake3:876126fb505dd4809003bfe915501abc18ae24e5b3af2fd6df597ec63ea6952e
+      .cache/huggingface/download/media_utils.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmedia_utils.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/media_utils.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmedia_utils.py.metadata
+        checksum: blake3:3a4c9ef8526d3a2ae1f97a80a7570361d1d3754143a77329bb53547a9f897f0d
+      .cache/huggingface/download/model-00001-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00001-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00001-of-000064.safetensors.metadata
+        checksum: blake3:8dbd36a1d12f8934785c81a171f6d384b95c672f064fa6d2325af80ea07467f8
+      .cache/huggingface/download/model-00002-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00002-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00002-of-000064.safetensors.metadata
+        checksum: blake3:2edef2d57091d17713c56a0905df6baa7d5d7f0a5225e3214bbbc368e3bc1693
+      .cache/huggingface/download/model-00003-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00003-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00003-of-000064.safetensors.metadata
+        checksum: blake3:02f948a656bcf9afc9ce67b71cc99adfe04a3a291d034afd308b7f21f1419ce2
+      .cache/huggingface/download/model-00004-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00004-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00004-of-000064.safetensors.metadata
+        checksum: blake3:14790985d1122e55205a5b6db47b8640b7686400adf3da386e28456381e12273
+      .cache/huggingface/download/model-00005-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00005-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00005-of-000064.safetensors.metadata
+        checksum: blake3:69e56ffb9cee52e966c795a1340bdae491aaf278808ecca9f46a4c910723e491
+      .cache/huggingface/download/model-00006-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00006-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00006-of-000064.safetensors.metadata
+        checksum: blake3:758cb8abd839a05d2b245f1ebb036603f257ba05fd454c35818ffb421df73407
+      .cache/huggingface/download/model-00007-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00007-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00007-of-000064.safetensors.metadata
+        checksum: blake3:f8e41d2f60de38abe9ad448999c6f10e4a69e2230fab25cc07c13835ef022e54
+      .cache/huggingface/download/model-00008-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00008-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00008-of-000064.safetensors.metadata
+        checksum: blake3:ade25dc9510bdd0316fe53847176304af44b2e123a510b6c84fa337cda672c7b
+      .cache/huggingface/download/model-00009-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00009-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00009-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00009-of-000064.safetensors.metadata
+        checksum: blake3:9570b38c9de47871c089176a154082f9d68331aae6f2eefdded5d85a38bccd73
+      .cache/huggingface/download/model-00010-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00010-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00010-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00010-of-000064.safetensors.metadata
+        checksum: blake3:565d93915c188856323aa54e1db01a64053f9544d14d8c770f41c07134a1c72c
+      .cache/huggingface/download/model-00011-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00011-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00011-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00011-of-000064.safetensors.metadata
+        checksum: blake3:e8b8acdc2f1226ad1f1fbf4730159f630d6fcab370a711adb97bb69e601073ed
+      .cache/huggingface/download/model-00012-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00012-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00012-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00012-of-000064.safetensors.metadata
+        checksum: blake3:968e199a6122c96ddecc7db982b2eb5309c04f762ebc1d0de1afc8b8fd50e104
+      .cache/huggingface/download/model-00013-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00013-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00013-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00013-of-000064.safetensors.metadata
+        checksum: blake3:7347b051d6e24ba39a719dab1dcf52a8daad69d1ac1bbd1dc647ae6f0875270f
+      .cache/huggingface/download/model-00014-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00014-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00014-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00014-of-000064.safetensors.metadata
+        checksum: blake3:e41d982e551f8c8a828ef0f789b6beab47d57942714cad883733d41826008ace
+      .cache/huggingface/download/model-00015-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00015-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00015-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00015-of-000064.safetensors.metadata
+        checksum: blake3:8bc06422a4ff9bb88b44673c8ade5ba687cf726e77976d914201fed047842749
+      .cache/huggingface/download/model-00016-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00016-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00016-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00016-of-000064.safetensors.metadata
+        checksum: blake3:44dc67e4ad81b0da3951734f59e2f69a40b68d3f65deaf545fee961d9123c451
+      .cache/huggingface/download/model-00017-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00017-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00017-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00017-of-000064.safetensors.metadata
+        checksum: blake3:5242eeb89d07333572293279c006956f3b88bef3643bca4e5a799af3994e3a85
+      .cache/huggingface/download/model-00018-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00018-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00018-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00018-of-000064.safetensors.metadata
+        checksum: blake3:ff7ac28ae9306fd61e8c0033a660ccbd67e4df737278618fecb189b3e56441f8
+      .cache/huggingface/download/model-00019-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00019-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00019-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00019-of-000064.safetensors.metadata
+        checksum: blake3:897bd94ff4eb8820e22a32b521d8a23ae84b433655e7a7a623f126e834c6942d
+      .cache/huggingface/download/model-00020-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00020-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00020-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00020-of-000064.safetensors.metadata
+        checksum: blake3:01da1b52e387d694e9435233682d5e4d3a668147b8b4d5fc70f54efb13f78fd3
+      .cache/huggingface/download/model-00021-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00021-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00021-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00021-of-000064.safetensors.metadata
+        checksum: blake3:b589ab579c92f211750281b7e7a2b64edafe995b23fa72bde0a681fa89fd7a7b
+      .cache/huggingface/download/model-00022-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00022-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00022-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00022-of-000064.safetensors.metadata
+        checksum: blake3:768c4ef3d61d14d8b50800fcf5d849202a7d0a1c6ae1cc1cb2b42f73a75257a0
+      .cache/huggingface/download/model-00023-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00023-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00023-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00023-of-000064.safetensors.metadata
+        checksum: blake3:6f8944387de8f509ffd8f5725b6089ec792b71a9e45d36142bca2c022675e32c
+      .cache/huggingface/download/model-00024-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00024-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00024-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00024-of-000064.safetensors.metadata
+        checksum: blake3:6ddf908940f868d57bf5b2df970ed1ee465d2ae37d3e6f4e2a62767dd9f696dc
+      .cache/huggingface/download/model-00025-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00025-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00025-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00025-of-000064.safetensors.metadata
+        checksum: blake3:1975c4fc2db21c3166cf944e474a95b21165d9b473a2198374caccb83d072260
+      .cache/huggingface/download/model-00026-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00026-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00026-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00026-of-000064.safetensors.metadata
+        checksum: blake3:47b24e55f04bfcd682e822d5d35b8ad74fb937cc81eba9a11c87b1896c2cff27
+      .cache/huggingface/download/model-00027-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00027-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00027-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00027-of-000064.safetensors.metadata
+        checksum: blake3:1e0fd30a867d4f211f5fc1e815a90ff40a43cb4c764dc0c6f9b49274a7916096
+      .cache/huggingface/download/model-00028-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00028-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00028-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00028-of-000064.safetensors.metadata
+        checksum: blake3:685dacb248a062dd51a3a780dca80f5285b6c3d6d87f4f6d055251e22dcb5f3f
+      .cache/huggingface/download/model-00029-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00029-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00029-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00029-of-000064.safetensors.metadata
+        checksum: blake3:285bed5f86e148257a38dc41208ab94bffc95d62e13fd92bade5fda47ad10f3a
+      .cache/huggingface/download/model-00030-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00030-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00030-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00030-of-000064.safetensors.metadata
+        checksum: blake3:269e1a672fc444f36fcba442b3ee68b28399013821f40be5125243d954f60934
+      .cache/huggingface/download/model-00031-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00031-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00031-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00031-of-000064.safetensors.metadata
+        checksum: blake3:52e2a44e4db4ba4f153b419dc91299f132a0a7019b5d6e00f92d3f8395926288
+      .cache/huggingface/download/model-00032-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00032-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00032-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00032-of-000064.safetensors.metadata
+        checksum: blake3:ab6f8ca6f098e0673e16622f7e494d3088f534dd1771499a51c7aa50dee5bf4b
+      .cache/huggingface/download/model-00033-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00033-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00033-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00033-of-000064.safetensors.metadata
+        checksum: blake3:0d8c45819889e00a09995caea115bfaaea7dffa8db8dfaf3d149207f8be28cd6
+      .cache/huggingface/download/model-00034-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00034-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00034-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00034-of-000064.safetensors.metadata
+        checksum: blake3:33f1010d3884b4d1bca8f99254ad36eebaf3c31784f254f1c6ebd071aa3a5cde
+      .cache/huggingface/download/model-00035-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00035-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00035-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00035-of-000064.safetensors.metadata
+        checksum: blake3:5d5e505c437224f724d2924d86498dae20d737785d7241c06f1824c48c40f764
+      .cache/huggingface/download/model-00036-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00036-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00036-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00036-of-000064.safetensors.metadata
+        checksum: blake3:b6310f21119c420ce6958e7c7070fa3407071b563a78139a1bc28971e1879238
+      .cache/huggingface/download/model-00037-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00037-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00037-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00037-of-000064.safetensors.metadata
+        checksum: blake3:42120e9688f2cd8ab1d759edb0022a83b3f4401e19bf26096cb13c4c521f7cba
+      .cache/huggingface/download/model-00038-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00038-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00038-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00038-of-000064.safetensors.metadata
+        checksum: blake3:248ca20c8eaf31eed21aa0f396a14525aebead1929c8fb6a9148b5716e4f47b6
+      .cache/huggingface/download/model-00039-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00039-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00039-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00039-of-000064.safetensors.metadata
+        checksum: blake3:2f4f581283bd57d5bc64888c17839dbdb5908542f1b793460fccc9d09f6d27ee
+      .cache/huggingface/download/model-00040-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00040-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00040-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00040-of-000064.safetensors.metadata
+        checksum: blake3:5eec60a913b922fcc955bd393598f2ca96b6dac2fefcff7aebd24377f4bca82e
+      .cache/huggingface/download/model-00041-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00041-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00041-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00041-of-000064.safetensors.metadata
+        checksum: blake3:57c7d5bf2f9be81c65a527775f5bb4b1ed12f1bcef3f19d7fac042bcbe6cb56c
+      .cache/huggingface/download/model-00042-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00042-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00042-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00042-of-000064.safetensors.metadata
+        checksum: blake3:963081bfe50c999cf99c2fcabeb655a17676da839138eb7a332e39b37dc9277c
+      .cache/huggingface/download/model-00043-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00043-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00043-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00043-of-000064.safetensors.metadata
+        checksum: blake3:2df8e53ff280ba7f15badf8dbc4c0604b638f0d5238931b1502499bcecd2545c
+      .cache/huggingface/download/model-00044-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00044-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00044-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00044-of-000064.safetensors.metadata
+        checksum: blake3:3bb893b090f99a28ee2cde93edef508e60406acb63d525a8af72edf86393ddc9
+      .cache/huggingface/download/model-00045-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00045-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00045-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00045-of-000064.safetensors.metadata
+        checksum: blake3:a03d77570e4b270de826d671d1a6689dbf6d5284287b0826089ea0120c675f17
+      .cache/huggingface/download/model-00046-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00046-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00046-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00046-of-000064.safetensors.metadata
+        checksum: blake3:898ef20af502ad526f8501c2558ccfc3be1d060e87536a3955bdf91f0be12257
+      .cache/huggingface/download/model-00047-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00047-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00047-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00047-of-000064.safetensors.metadata
+        checksum: blake3:93bd55bb38d81e43d5d21ac5dea16d9562a8b5b986f4d895066e0efadcbbe835
+      .cache/huggingface/download/model-00048-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00048-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00048-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00048-of-000064.safetensors.metadata
+        checksum: blake3:547afb0a71a4d1770a203ef635a975290456d454e33e3e054382780f2e16d663
+      .cache/huggingface/download/model-00049-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00049-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00049-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00049-of-000064.safetensors.metadata
+        checksum: blake3:c8a64dfb50c67433a9eb6e276fc6de55ead09d7b8bd3630ab85ba931e389840b
+      .cache/huggingface/download/model-00050-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00050-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00050-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00050-of-000064.safetensors.metadata
+        checksum: blake3:e126de334ff705ac4b24432411ec72c74c2e9f3c8cb753557cc3ab5a84223031
+      .cache/huggingface/download/model-00051-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00051-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00051-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00051-of-000064.safetensors.metadata
+        checksum: blake3:114d6bace3b5da0164d19f6e2ecf85a20d5a062d80c14308c7c7f73d5a812ba5
+      .cache/huggingface/download/model-00052-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00052-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00052-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00052-of-000064.safetensors.metadata
+        checksum: blake3:35debcd20399664ced01731eb3635bbf121f0066efd36bd5eb28a0a6b7e09b4f
+      .cache/huggingface/download/model-00053-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00053-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00053-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00053-of-000064.safetensors.metadata
+        checksum: blake3:df5ccd0f11ceec4a72277b9c29ab6549ae801a32edd3e57a53d22c03b6817d9a
+      .cache/huggingface/download/model-00054-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00054-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00054-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00054-of-000064.safetensors.metadata
+        checksum: blake3:a5bed2377d88b5ccf1052151e849ade301f9f0b9295b071054b08fb93b15d965
+      .cache/huggingface/download/model-00055-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00055-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00055-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00055-of-000064.safetensors.metadata
+        checksum: blake3:1c411cca0ac6b8d4b80d0880b6ee2b47b63e0e4a4cbe24d65421391d372e80b2
+      .cache/huggingface/download/model-00056-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00056-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00056-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00056-of-000064.safetensors.metadata
+        checksum: blake3:999591934c2b56e776525a9c68bf80a2d55d805a10b4798614c47886f12d6155
+      .cache/huggingface/download/model-00057-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00057-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00057-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00057-of-000064.safetensors.metadata
+        checksum: blake3:2b46f89d589ecfdd64c082e6ee9bbc4001fc92790e2ecb934619d0de92d5b715
+      .cache/huggingface/download/model-00058-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00058-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00058-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00058-of-000064.safetensors.metadata
+        checksum: blake3:76bb344e0ef2220adf17ede79aff550d2dd9199efcee0e2301d7462da8003a7d
+      .cache/huggingface/download/model-00059-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00059-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00059-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00059-of-000064.safetensors.metadata
+        checksum: blake3:856d4228bcbfa4151f9f43b05aeace4db50d3721b9bfb0f1caf2dbfa34f18d49
+      .cache/huggingface/download/model-00060-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00060-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00060-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00060-of-000064.safetensors.metadata
+        checksum: blake3:5105023811aee1dda47c4510e1dd2ed7aa95a11b1a78f7960ce35f2accd87167
+      .cache/huggingface/download/model-00061-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00061-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00061-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00061-of-000064.safetensors.metadata
+        checksum: blake3:a0518c405c9dcfadb560774b33e8a0d522dff9d6eed9454069dc77c5d1c971ec
+      .cache/huggingface/download/model-00062-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00062-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00062-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00062-of-000064.safetensors.metadata
+        checksum: blake3:922b1a50698eb81538fd3ecb616381fa2695fbd62f86e05ff0a8837c484249a7
+      .cache/huggingface/download/model-00063-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00063-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00063-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00063-of-000064.safetensors.metadata
+        checksum: blake3:d555d84747b036655b450aad920e0832830a97b61db0127a787fcc973962ff98
+      .cache/huggingface/download/model-00064-of-000064.safetensors.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00064-of-000064.safetensors.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model-00064-of-000064.safetensors.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel-00064-of-000064.safetensors.metadata
+        checksum: blake3:ac87b2302b94a7c4c64223286c5e54084b108c64fb4fc24ed54910856e4333d5
+      .cache/huggingface/download/model.safetensors.index.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/model.safetensors.index.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodel.safetensors.index.json.metadata
+        checksum: blake3:ca9caec1780b4d7dddcb6767d14435e2272e87f224b278495f19581712fb5542
+      .cache/huggingface/download/modeling_deepseek.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_deepseek.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/modeling_deepseek.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_deepseek.py.metadata
+        checksum: blake3:d4bcb3c4e80dfca4eda8d561d2bccfa92dc4dde907a1225b83bc04a8e1a8438d
+      .cache/huggingface/download/modeling_kimi_k25.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_kimi_k25.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/modeling_kimi_k25.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fmodeling_kimi_k25.py.metadata
+        checksum: blake3:bb3570121d83ec500d4d0e1dac8e4b9a7d2ef628c3b2361acd64710a3cf6747f
+      .cache/huggingface/download/preprocessor_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fpreprocessor_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/preprocessor_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Fpreprocessor_config.json.metadata
+        checksum: blake3:c18b4b5e46f4696297a92c34808048bd7b6338b0acdb6783733400a9b0caf9d1
+      .cache/huggingface/download/tiktoken.model.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftiktoken.model.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tiktoken.model.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftiktoken.model.metadata
+        checksum: blake3:f0b146396af21acc0c14878f8bc6a37a9638cc796efb03bde26af2d921889356
+      .cache/huggingface/download/tokenization_kimi.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenization_kimi.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tokenization_kimi.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenization_kimi.py.metadata
+        checksum: blake3:d593d5a90c31af6fd894f813b16e93893345dddbf77eaf0689c6d307a662f76b
+      .cache/huggingface/download/tokenizer_config.json.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tokenizer_config.json.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftokenizer_config.json.metadata
+        checksum: blake3:2508a49d5030d4ffc00188a4b1c3344512b7a7bd2340aac87fa4a7dc994d0a89
+      .cache/huggingface/download/tool_declaration_ts.py.lock:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftool_declaration_ts.py.lock
+        checksum: blake3:af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262
+      .cache/huggingface/download/tool_declaration_ts.py.metadata:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=.cache%2Fhuggingface%2Fdownload%2Ftool_declaration_ts.py.metadata
+        checksum: blake3:2f32da7e0ea15153ea15a6f3bec91973086ad8a389545f505795f3700b8f495a
+      LICENSE:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=LICENSE
+        checksum: blake3:24f85ac2cbd120475b930d09beef167719bb12aa6f8add3e525385d5ba11e9bc
+      README.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=README.md
+        checksum: blake3:abc70c2465b6efed034bdbb54f218ffc01979d7dd2321939cd1045a1b0639e04
+      THIRD_PARTY_NOTICES.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=THIRD_PARTY_NOTICES.md
+        checksum: blake3:2973df045d1a8641a60b8ca0858b402853e01fa5ec2305dd74e91954c9e4a16a
+      chat_template.jinja:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=chat_template.jinja
+        checksum: blake3:ca9d3d4cf0eb31cc318e8c8c16629b80e8bc5e9a0d5dd794d4155e32c121495a
+      config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=config.json
+        checksum: blake3:c5cd6dd0a7c7621a32f4158aa8694c042a375f4fc8c448ec4b41b48345c1a0ae
+      configuration_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=configuration_deepseek.py
+        checksum: blake3:a8b3d4f5bdd3df0eec279959f3b27fe7275f4a7361235deca9d0a5da10da4a74
+      configuration_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=configuration_kimi_k25.py
+        checksum: blake3:8b7f6b3e0b7d78db64d8573a66b8cfed1fdb1f6a603fad1c27344ceba68d45b9
+      docs/deploy_guidance.md:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=docs%2Fdeploy_guidance.md
+        checksum: blake3:f43c383a71f9b7983232f345e523a1ed8771e60591cb3ec110f909a784e05641
+      figures/demo_video.mp4:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=figures%2Fdemo_video.mp4
+        checksum: blake3:15ea3b90d9b048831f475a1a5db2053d7865cfaef5dd2b5f55d06b6f6631d829
+      figures/kimi-logo.png:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=figures%2Fkimi-logo.png
+        checksum: blake3:5e434b4c83290214f41df1c0e28ba36186d46e92b814cb51ec56c2a4434171f7
+      generation_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=generation_config.json
+        checksum: blake3:e539fd9d1187ee551672dec71039e6b72b3278c774dfe05a1c124bf3e71f77fd
+      kimi_k25_processor.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=kimi_k25_processor.py
+        checksum: blake3:f3a1f26801b37f9e7bd6c09e77ac78fa5af9cd9b4654a2a61836e773116e5bfe
+      kimi_k25_vision_processing.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=kimi_k25_vision_processing.py
+        checksum: blake3:856a849fa0a58d0ce7fda807d42f35c60745fae8349dba0c3560f61c7270179c
+      media_utils.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=media_utils.py
+        checksum: blake3:eace4ed5d923c21f4f103d2a2fa472b3093cd660d48821b0140067ee82c00832
+      model-00001-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00001-of-000064.safetensors
+        checksum: blake3:a0acecf31b7925cb96785b46dccc286cbcff968615d7466926e2ffcb41c0f450
+      model-00002-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00002-of-000064.safetensors
+        checksum: blake3:f889d099c575e95cc73f70fe17ed2570022a59230782e39a7adc5733bc704360
+      model-00003-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00003-of-000064.safetensors
+        checksum: blake3:3bebc41121f95194ec5a961ecd1c4f3ce726670bee090d3ed41059fca895960a
+      model-00004-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00004-of-000064.safetensors
+        checksum: blake3:1d60adb7534e7b9ebd96006977dad67bc5960075c103d368b3d0cd049b67c720
+      model-00005-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00005-of-000064.safetensors
+        checksum: blake3:07dcf02b96f7745d8ad78d9ed70a8a779d738b4b6f4af1a144fd20cac871bb2b
+      model-00006-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00006-of-000064.safetensors
+        checksum: blake3:020f0755c60ae3d8ed4f6786d439cf0a4690d3f9287fb6bce57cb2be4b5baf31
+      model-00007-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00007-of-000064.safetensors
+        checksum: blake3:2741a595fb5080947401645525a763bd7429d4d54cfca78128b52cc7c7be7239
+      model-00008-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00008-of-000064.safetensors
+        checksum: blake3:d0aaa7ce6a5d4dd580d207bdf8e4bc519598097fb7c5e8664a381c60a1f12493
+      model-00009-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00009-of-000064.safetensors
+        checksum: blake3:fe2f50d817294758121568a4eb592f174dd4025d9bf14bd20b3834b5e2d69cf6
+      model-00010-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00010-of-000064.safetensors
+        checksum: blake3:180a4620ad35b84742269170bb163fd902fd915e7425cd4beab909a09763a522
+      model-00011-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00011-of-000064.safetensors
+        checksum: blake3:962b69839e930f376d76b9576944c7af9a1584089549419c4a582ba2de23e227
+      model-00012-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00012-of-000064.safetensors
+        checksum: blake3:a9b43e2de59757009aab61be5aa93902e0b524243dd9455948aea1fe5d71116f
+      model-00013-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00013-of-000064.safetensors
+        checksum: blake3:8f97c423dabbcab852d71117aaedcfc283e4ad0e4615246fe03bc0d0958a4a15
+      model-00014-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00014-of-000064.safetensors
+        checksum: blake3:daaa32df2e6dc4d2052d480e159ddfcbe127f2dfa230ff026189c9817ebfea55
+      model-00015-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00015-of-000064.safetensors
+        checksum: blake3:deb5ee8a748b839641f585b29350fe63ade47985fe33248e202052adef9b9af3
+      model-00016-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00016-of-000064.safetensors
+        checksum: blake3:364f772938215cb3a5960f72e897b303f75099b5895be9101482d473304361c1
+      model-00017-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00017-of-000064.safetensors
+        checksum: blake3:293e359da15e5389b3699531f6095ae814e80bca3d6fed58cf33d6463fee11b1
+      model-00018-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00018-of-000064.safetensors
+        checksum: blake3:e2c34b536b2713f93cb9d7eb8a0f3b4ec49e28182c39ce1609529ce494ab2a74
+      model-00019-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00019-of-000064.safetensors
+        checksum: blake3:d17a73903e3ea3ecba6c859e61a7809825037ac9d087e8ea262ee57ffcc56e06
+      model-00020-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00020-of-000064.safetensors
+        checksum: blake3:acd97495ef4af89850319062145250c0f36246514f517a885c4595d032bf129c
+      model-00021-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00021-of-000064.safetensors
+        checksum: blake3:4955331989c9e5308089f89a359dd1cef9c6862d8ab8b5637d34f3d82b5782f9
+      model-00022-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00022-of-000064.safetensors
+        checksum: blake3:42dbd16ac362174b3b642f842ade31bd0f9ec1a7d0fe8a5799c4f48b8ad9d997
+      model-00023-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00023-of-000064.safetensors
+        checksum: blake3:d6397f4ec2bac2f66e94799404c636fd559b764ec494b588bd198670df82e404
+      model-00024-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00024-of-000064.safetensors
+        checksum: blake3:adf6dc8a028342123a921de84660bd4068befc848571f65ae9e3d32e876cac48
+      model-00025-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00025-of-000064.safetensors
+        checksum: blake3:a4944c7f55e76ec1f101ba31e8d52e3cca578aaa98dcad62ac2fdfb68927da4c
+      model-00026-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00026-of-000064.safetensors
+        checksum: blake3:444ebc7a9a06968a07b6c11174395b16aea11b4619f6ade01d8b376d9ec6f6d4
+      model-00027-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00027-of-000064.safetensors
+        checksum: blake3:f1f14130259af6421c8e8479e8d134ca045679cce4237cce80c721c610eaa7d9
+      model-00028-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00028-of-000064.safetensors
+        checksum: blake3:79a0fd9291e7cad02c002ae9e7c1d1a33c67e03bcfbafa252a8ac79ba9245fa5
+      model-00029-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00029-of-000064.safetensors
+        checksum: blake3:2f20e4cf99e98a45af4b35e895d78fdd63e63810899d0572efbd9d613dbf4e65
+      model-00030-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00030-of-000064.safetensors
+        checksum: blake3:4a9b3fe57b59f89f1fba5c05f2767269ce976d6bb454368b60713a26782ec626
+      model-00031-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00031-of-000064.safetensors
+        checksum: blake3:2dad57c10276161deaf298f08dcac0115c93a5b9369dfbbba73b261decc336d2
+      model-00032-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00032-of-000064.safetensors
+        checksum: blake3:efb803bf618e172116431bad52864437f6552930824c6fd0dbfc6944caf1ca67
+      model-00033-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00033-of-000064.safetensors
+        checksum: blake3:785c2a76bfa873b9cf73223538a5d6e41a9341437d46f315f2e2ff4a7019e3d3
+      model-00034-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00034-of-000064.safetensors
+        checksum: blake3:bcd3a684f52dbc6ff2d4cec5d2026dd2bbbda28eaa167ecda95d7480387f91e2
+      model-00035-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00035-of-000064.safetensors
+        checksum: blake3:a882bc49df9331ccf6ecfbe320f013c480b901fdfe8189c5fbe0d34d1c758121
+      model-00036-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00036-of-000064.safetensors
+        checksum: blake3:3665c03530a002cfbdc03fa86b929e6c991426eb78fc13c7e65142eb2e15b4e0
+      model-00037-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00037-of-000064.safetensors
+        checksum: blake3:8ac8c45d85ec4b40a12acba56bd9a623036d9145c4d22fd0a3c9e4d3a775e61a
+      model-00038-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00038-of-000064.safetensors
+        checksum: blake3:48b66621a9b75bac01073477e039658e02b0b221e3f797431b7071c5f7dc431f
+      model-00039-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00039-of-000064.safetensors
+        checksum: blake3:030f67ed9fe89990643ace67b86cbd422de2b45612fd415f5d3ff876e6cd131d
+      model-00040-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00040-of-000064.safetensors
+        checksum: blake3:dd19f62c69e07b40fb740b136cc0a85686ef70b3acabb8127e96894ef502c0ed
+      model-00041-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00041-of-000064.safetensors
+        checksum: blake3:7a77bcdcdee9218890a070e08b0a2cbb6749e3996f779279e8c12b4ae0e22b00
+      model-00042-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00042-of-000064.safetensors
+        checksum: blake3:ee8fe521b927d9f2410b573c9a3a1d6618d59f17b6c778607164852ece6b41eb
+      model-00043-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00043-of-000064.safetensors
+        checksum: blake3:827709c35df54e08e221b95ab37bfd98e0a06ba3e5d77c53895286897c08cf91
+      model-00044-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00044-of-000064.safetensors
+        checksum: blake3:e068f1e279682c8192f196fd0388cf16a634d5267170f2db91abc484b847e2b6
+      model-00045-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00045-of-000064.safetensors
+        checksum: blake3:071d89e841ad410c76fa8ba834f9ff60a26c67e7700a57532d57aeee73fec985
+      model-00046-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00046-of-000064.safetensors
+        checksum: blake3:c735d3954f30dcb18684fb408045a8a24d300ee5bcdfedbd76f509f05089c568
+      model-00047-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00047-of-000064.safetensors
+        checksum: blake3:1c414600a10d3c48e5bcdb4e1d87120ce7791de58d625d69ca6cd98e5601a29d
+      model-00048-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00048-of-000064.safetensors
+        checksum: blake3:aa2538216c972507d37cfc98ef095c5d075076ef20affd6d25e5368e79db91e6
+      model-00049-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00049-of-000064.safetensors
+        checksum: blake3:1b067ff6147cfcdc052f2fa511c41f1e723307e650c8b64dad2e801f6f04e93a
+      model-00050-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00050-of-000064.safetensors
+        checksum: blake3:d29540062ec977f6588bd70f89b7dd88afb33ee5ddb0919f437e9d1551e612df
+      model-00051-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00051-of-000064.safetensors
+        checksum: blake3:700afa7d7f48512ce7e2827be3b907f4452faee75a9cd706b634f9c61e858051
+      model-00052-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00052-of-000064.safetensors
+        checksum: blake3:9f09085742a77b9b0d6b617437e3e755795afff3182e2d4556fc975277e125e3
+      model-00053-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00053-of-000064.safetensors
+        checksum: blake3:ec151d4a668d337b6f997946c3e472d7940afbe6c54d0ba5535efb5ee5e62656
+      model-00054-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00054-of-000064.safetensors
+        checksum: blake3:114e724352d9bd5f7d3c2e6b575280cec0da7f12e5424ca39139066c9d82287f
+      model-00055-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00055-of-000064.safetensors
+        checksum: blake3:dc1bd295b1fe6b59dd3818b4dc8e52e57a1192dcd86680fbed896cb18d504557
+      model-00056-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00056-of-000064.safetensors
+        checksum: blake3:23ff80df7093b1d3a277ded52f5b1658abb3ea303d450011861cb03c8ced944f
+      model-00057-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00057-of-000064.safetensors
+        checksum: blake3:d1800cf1c4dd68ad233283b9977af40b50b5ac3e7034ad1d7af1b03ea28ec5cd
+      model-00058-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00058-of-000064.safetensors
+        checksum: blake3:16404609bf939718f58303caa74447abdc5cad01ee3bd6ed38201817685cdc9b
+      model-00059-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00059-of-000064.safetensors
+        checksum: blake3:ddc4f09db9741cbaedbfb9cefa244447a3ab4d323eb680f1d603c6f0f6c1248d
+      model-00060-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00060-of-000064.safetensors
+        checksum: blake3:5ba0a18d3d9f132dee2f83b3ed0d0dec23c26e8aabfea16dd67ead957cfb3e7d
+      model-00061-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00061-of-000064.safetensors
+        checksum: blake3:cfb2074cb71edfc4c1639d3ccd391cb1f693d22293e2fdfb6f12c9f9276520d7
+      model-00062-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00062-of-000064.safetensors
+        checksum: blake3:845647b1fb6188473c9bd067f6cd37f5e8a7081346282e8c5e5c1cb490f9087e
+      model-00063-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00063-of-000064.safetensors
+        checksum: blake3:1f008edd7fb6a6d913f85d2fdfd5507592abe2210f7f7b64728763f5c83d7b48
+      model-00064-of-000064.safetensors:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model-00064-of-000064.safetensors
+        checksum: blake3:98b35f08ed5767ce40535f261d597c0889aa18fa6c35f6df960a998384b59573
+      model.safetensors.index.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=model.safetensors.index.json
+        checksum: blake3:0d0d89c6dbbc0a1a86de85317dda8ca52939dca50714b3991cbaad7c7f4d28a4
+      modeling_deepseek.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=modeling_deepseek.py
+        checksum: blake3:d59d350e5f5ad3b374c5e4bb61df3f864e50baf30401349b78861c066af0cb12
+      modeling_kimi_k25.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=modeling_kimi_k25.py
+        checksum: blake3:bc86b33a89597e422aa21b08aa61728b1121615c3820d6113e580f26ae32ca6a
+      preprocessor_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=preprocessor_config.json
+        checksum: blake3:b8f9f39c23afc6e9850c07c06e8cab9e704c28d0280fda6672fb400536be8cce
+      tiktoken.model:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tiktoken.model
+        checksum: blake3:c893437b479f39927a9128d939a6ac52103adfac1d7f198e5765869057b521c8
+      tokenization_kimi.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tokenization_kimi.py
+        checksum: blake3:e2dd555d408dcdc0e1afedbdbc014ce1a8e27488b6c4f2636545ccae708215ee
+      tokenizer_config.json:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tokenizer_config.json
+        checksum: blake3:c02001f985f75797c229403ea85302ded8ae96ac655aab0f40d3dabb5f703156
+      tool_declaration_ts.py:
+        uri: ngc://nim/moonshotai/kimi-k2.5:int4_v2?file=tool_declaration_ts.py
+        checksum: blake3:3405b73432651471d1f8cd94c3db2f6d5067620d8fb3ba413fe41154095b6d5d

@@ -1,0 +1,324 @@
+## SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+## SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+## NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+## property and proprietary rights in and to this material, related
+## documentation and any modifications thereto. Any use, reproduction,
+## disclosure or distribution of this material and related documentation
+## without an express license agreement from NVIDIA CORPORATION or
+## its affiliates is strictly prohibited.
+
+---
+schema_version: '2.0'
+profile_selection_criteria: 'auto'
+model: 'studio-voice'
+release: '1.1'
+
+## Profiles for SM 7.0 (Volta, e.g., Tesla V100)
+
+## High Quality 48k Model for SM 7.0
+profiles:
+- id: 3439d26178388d0b446db063de000bc9f69281bdc39a29b634ffd9bb60b153a6
+  tags:
+    gpu: V100
+    gpu_cc: '7.0'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm70.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_70/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:1c18fc7be766c9e0a748ed3f214f6c253a2611f82b8a8551c068fe633e644b8d
+        secret: Default
+
+## High Quality 16k Model for SM 7.0
+- id: bcb8f1044ef0442c3a32803a8243689bf0655285ac104093cbed4b9678d569f5
+  tags:
+    gpu: V100
+    gpu_cc: '7.0'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm70.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_70/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:832f07b1c157f10de1faafdf25d94678a05a9b4fb494a58b0919f1666e2beefa
+        secret: Default
+
+## Low Latency 48k Model for SM 7.0
+- id: 594f83cafb93f42248b98fa21dbe7ad8903c25bb12f2bd75fd444dec567c7781
+  tags:
+    gpu: V100
+    gpu_cc: '7.0'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm70.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_70/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:4628413bf48246754e442feaab8ca47f88e2743d70b7cfc40dc1c562b06944d5
+        secret: Default
+
+## Profiles for SM 7.5 (Turing, e.g., T4)
+
+## High Quality 48k Model for SM 7.5
+- id: eb0bfe75ea1dac2a6ec455f8c84e7ebefe846ddea27047f799ed315bda5b8872
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_75/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:883116ad7ac7a44e0695927cafa5d5f69638f489f51730f466bb53b932181605
+        secret: Default
+
+## High Quality 16k Model for SM 7.5
+- id: 08a8fb42c18f688edd772089f82aede3dd85f15f22eeec49cc861f69076c347b
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_75/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:5092bd4d64b9302c989f69cf3e5c4df57f3752a27c2170c7164f0e8d8a0c962e
+        secret: Default
+
+## Low Latency 48K Model for SM7.5 (T4)
+- id: 385614918597e8bf85cef5989b8d356eb23d51ae1e5943597eccac266166b470
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm75.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_75/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:ba62b170c6b7fa826b909172e7b9cd3ffe1571b581768e2fc066e75acf42dffd
+        secret: Default
+
+## Profiles for SM 8.0 (Ampere, e.g., A30)
+
+## High Quality 48k Model for SM 8.0 (A30)
+- id: 1f272e3f334ba89406f408888789e7a9b9133328b2ddcee8d6da6890beb76779
+  tags:
+    gpu: A30
+    gpu_cc: '8.0'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_80/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:200f5339564ca087781bf6a6812b3ad6428bed45bb126ab6d8ff811b39f2ca55
+        secret: Default
+
+## High Quality 16k Model for SM 8.0 (A30)
+- id: 8e78a4f3b961c0d2fd7bf136cc640c21ac5f04a4584cabc6b8fc8bb4ad5c8028
+  tags:
+    gpu: A30
+    gpu_cc: '8.0'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_80/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:267d7e3e23f9845ab031ab7f02585fe12d77dc9bb86a63285f486996b58e4401
+        secret: Default
+
+## Low Latency 48k Model for SM 8.0 (A30)
+- id: 4c301f4b8458c7ee7ed7f832450080c623bbed9eb3fa7ee0d308fa388ebb36ae
+  tags:
+    gpu: A30
+    gpu_cc: '8.0'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm80.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_80/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:f35703c6187d346ae5644a951a1913b46d68dd8449cd87e9ef19dc2bd852ed51
+        secret: Default
+
+## Profiles for SM 8.6 (Ampere, e.g., A10)
+
+## High Quality 48k Model for SM 8.6 (A10)
+- id: 11b24f59b33a1ca3f54c78761862bf739fdbab4965b718a48e9dfefcec494517
+  tags:
+    gpu: A10
+    gpu_cc: '8.6'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_86/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:e5a29e1f2371280921680f15826696b8de8504e7cc5fe853a0596fa63dc2cb94
+        secret: Default
+
+## High Quality 16K Model for SM 8.6 (A10)
+- id: aa2a68f978cf894875763e3b95ca24d7928432b92dbbe6095270fc8fbd311f5a 
+  tags:
+    gpu: A10
+    gpu_cc: '8.6'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_86/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:0e325e0c1e49762dd36b511205871ffe50aa4d8dbb76baa7b3c2a1be8791bc98
+        secret: Default
+
+## Low Latency 48K Model for SM8.6 (A10)
+- id: c86e86a11386e44d6bb211080f5634a48b61b5616c8dfb2c200777108cc2c194
+  tags:
+    gpu: A10
+    gpu_cc: '8.6'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm86.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_86/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:e49652c3607655d3f1193d1545f9c09cc5f5d527cd4c9c415cf5b50f07408e2e
+        secret: Default
+
+## Profiles for L40 (SM 8.9)
+
+## High Quality 48k Model for SM 8.9 (L40)
+- id: cc5593fc2b52bd814110cf1f241e182ff08334690a9373daacbd89b8bb7f4318
+  tags:
+    gpu: L40
+    gpu_cc: '8.9'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_89/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:cc9381f3ea18fd425942302c0c7a3e439d529e03ad2025fc469f0bba876f8869
+        secret: Default
+
+## High Quality 16k Model for SM 8.9 (L40)
+- id: 69b6141a2e7db01206fe47bee4b58cf75df64363a84ca52cf126137f1514f6df
+  tags:
+    gpu: L40
+    gpu_cc: '8.9'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_89/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:1b250300c4a40eea77c83ee7ef65b238f582d7aa1a7fe6555968f8f27bda9cae
+        secret: Default
+
+## Low Latency 48k Model for SM 8.9 (L40)
+- id: f58c87109ca66e3f31617c3734402efb50277c5931de7527185dea0593bbb128
+  tags:
+    gpu: L40
+    gpu_cc: '8.9'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm89.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_89/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:16bde3a6b2835ef7d98bcf65e5cbf2ad2a36d35ffad6333da87b5efdbb5b0e29
+        secret: Default
+
+## Profiles for SM 9.0 (Hopper, e.g., H100)
+
+## High Quality 48k Model for SM 9.0 (H100)
+- id: f9085cdc3fb4fd0324fd393085ab77e248e05f361ae20fe79b13f39a926f26d8
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_90/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:9265a3efeea082f9fcfdfe119b2bd9f6c26e2edca94803443d661a9f5f7bdcef
+        secret: Default
+
+## High Quality 16k Model for SM 9.0 (H100)
+- id: 6009a6e116dee78ffcaed2cdd77b6079f8b75dc80123edfe8a17ad7a9d040c0e
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_90/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:eec50b036487033632d5f364e995d205a06e051f8f679ae128e36f2f971a4f47
+        secret: Default
+
+## Low Latency 48k Model for SM 9.0 (H100)
+- id: 800680db9ee1a4e4c9413ae962e3579e8c1f55fc3c53501169a909c3ce8c34d5
+  tags:
+    gpu: H100
+    gpu_cc: '9.0'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm90.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_90/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:f754acb0b23f8106cb48ca31e7cf029681cf314a031db81a1b23dfbb61806674
+        secret: Default
+
+## Profiles for SM 10.0/12.0 (Blackwell, e.g., RTX5090)
+
+## High Quality 48k Model for SM 10.0/12.0 (RTX5090)
+- id: 09578326cb86ae3bad8920046996f3b49747843123ac5580b38dde2db288c133
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    profile: quality
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_100/studio_voice_high_quality_48k_1.trtpkg
+        checksum: blake3:eb6cdaa2b862ef7cd93c9e97f9ad022f0afb64bbf25431a84212c136ee918328
+        secret: Default
+
+## High Quality 16k Model for SM 10.0/12.0 (RTX5090)
+- id: 1f2d6833e9919940374784f04bb791ce332de00952558a86e1e837c951fae0f0
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    profile: quality
+    sample-rate: 16k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_high_quality_16k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_100/studio_voice_high_quality_16k_1.trtpkg
+        checksum: blake3:a8a464ca84d730b4cbf035c332ac47c645df726855a3a0621a5efc73a19bda11
+        secret: Default
+
+## Low Latency 48k Model for SM SM 10.0/12.0 (RTX5090)
+- id: 9ace3619e8d6db08c6bbcceb9c29fafde944eca5c3acf82adf961450fcb80a99
+  tags:
+    gpu: RTX5090
+    gpu_cc: '12.0'
+    profile: latency
+    sample-rate: 48k
+  workspace:
+    files:
+      config/models/maxine-studio-voice/studio_voice_low_latency_48k_sm100.trtpkg:
+        uri: ngc://nim/nvidia/maxine-studio-voice:1.6.1?file=sm_100/studio_voice_low_latency_48k_1.trtpkg
+        checksum: blake3:092a2f09e2011f2a30e2a23c34d830baf434eb9f1383a25cecadcfcc57bf4d71
+        secret: Default

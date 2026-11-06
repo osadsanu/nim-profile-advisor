@@ -1,0 +1,685 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nvidia/audio2face
+release: 2.0.0-rc8
+profiles:
+- id: 7ab78afe1d3f160d49e22617ce5edb96dfb1eb2ca93b16ca1d0f5148a922801a
+  tags:
+    batch_size: '35'
+    character: claire
+    gpu: A10G
+    gpu_device: 2237:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 06add3142552f420465c2c8a537e0cbaa14fa3a0a25cd9249036b2bf4e0a5f7e
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a10g_fp32_bs38_v5?file=a2e.trt
+        checksum: blake3:221adc6a3c1a55575ac224a64d78ea73167e483bff669e04c40f1063d6f456ca
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_a10g_fp16_bs38_v5?file=claire_v2.3.1.trt
+        checksum: blake3:c4b94906b8bb920bce2db2e42073bca9ee84fd3053585f76e4cf6dfa051cd368
+- id: 919638a5b89d3c1b1292be21c62bb8bbabbb93ac63b03d2e809a001041375700
+  tags:
+    batch_size: '35'
+    character: james
+    gpu: A10G
+    gpu_device: 2237:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 31fc05800c7ba107540fe969edfa5e63996717e2d6ce7630eb9497f770e75bd3
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a10g_fp32_bs35_v5?file=a2e.trt
+        checksum: blake3:4e55def6513a0623ff58d837bc70401cd797d0522d9cfc7a55db788a177c43d6
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_a10g_fp16_bs35_v5?file=james_v2.3.1.trt
+        checksum: blake3:653386821fdc0be3b6ac67cb7429baf65575fb05ba6e40cd0dac600f957050dc
+- id: 535fbb2bf408160cce3645b2b85eddc8c71378ebcfbda66da38ffb252d64a426
+  tags:
+    batch_size: '35'
+    character: mark
+    gpu: A10G
+    gpu_device: 2237:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 0fbc369a9af036c5f11e2af0d44ceff6bd1ad147db07647eb9837605d9555e6d
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a10g_fp32_bs42_v5?file=a2e.trt
+        checksum: blake3:8e25ec8ebd5b1f346aa45a769954d1096f8f03cb8f0904acec4c4b5c472ebd47
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_a10g_fp16_bs42_v5?file=mark_v2.3.trt
+        checksum: blake3:bb11fe0174413172a4327bf859c251df5acdd73fac6bddfdaf337e67603d76c2
+- id: f4c212c297315b9ab8462dd5da103f676a9a735a788010439d8171a81e303559
+  tags:
+    batch_size: '32'
+    character: multi
+    gpu: A10G
+    gpu_device: 2237:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: fe25693055ca0e8f760ba8a122d788cb51999c48c76a44572698262457c1f80b
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a10g_fp32_bs38_v5?file=a2e.trt
+        checksum: blake3:221adc6a3c1a55575ac224a64d78ea73167e483bff669e04c40f1063d6f456ca
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_a10g_fp16_bs38_v5?file=multi_v3.2.trt
+        checksum: blake3:0d179ca7a18dcb7a5f7c330b1c214447af6daa3318bc547bcc8eef84e0bcb1b4
+- id: ea52901e7ab58809db52363a8683c5ca05808cb249dd5c89863c1d576887fe91
+  tags:
+    batch_size: '55'
+    character: claire
+    gpu: A30
+    gpu_device: 20b7:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 046a815dff0fe86d2ea4cd8c69263ccd14f113b599015038e8bcc5a4c968a717
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a30_fp32_bs55_v5?file=a2e.trt
+        checksum: blake3:bf06750dece2fcf8d2672228f207dc6512b6a21d0d0d38728f4e8f82e41db94a
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_a30_fp16_bs55_v5?file=claire_v2.3.1.trt
+        checksum: blake3:07f98c69bd69ec17a9333adf651a31a15f5b4dbb1008e5b7721707ae497edc60
+- id: cf58fe7973f49aa546cdea7488a6dc1767b3776f2787569af99cd2bc136b6756
+  tags:
+    batch_size: '56'
+    character: james
+    gpu: A30
+    gpu_device: 20b7:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 631d91f5e5295babc9797808ad258933222cfb597394d174cf6aea689e3df070
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a30_fp32_bs56_v5?file=a2e.trt
+        checksum: blake3:8568fd684acb586a902290c7cc4a3679559084ce2637e27732f4f78168e53ba1
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_a30_fp16_bs56_v5?file=james_v2.3.1.trt
+        checksum: blake3:c52a87d0ec26dfc039eb36fcf62496c0dd2ce0f479016f347c6f4769a48f503b
+- id: 9c83ef85849071b74f09bcd793659632cc6d4e2055ca33dc4d572f1b63d7e3dd
+  tags:
+    batch_size: '55'
+    character: mark
+    gpu: A30
+    gpu_device: 20b7:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 9dc8b948fbc5bf459b723ef3994fc6185534de56bf0ac71cd90b73bf47b45dfd
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a30_fp32_bs55_v5?file=a2e.trt
+        checksum: blake3:bf06750dece2fcf8d2672228f207dc6512b6a21d0d0d38728f4e8f82e41db94a
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_a30_fp16_bs55_v5?file=mark_v2.3.trt
+        checksum: blake3:b9fb8d43c28c0b59b8e124d9ddb4310ece4c0bf42fe48defc0f6ba0e77737c26
+- id: b328cd1c26b09c1ba69b0e65e1d44e6d742f5c381049a8bc6be448923efbc677
+  tags:
+    batch_size: '41'
+    character: multi
+    gpu: A30
+    gpu_device: 20b7:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 86b66649b0b688d09d67152afe037ed6501827a8f49ea7ff1ca866bde59ec40d
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_a30_fp32_bs41_v5?file=a2e.trt
+        checksum: blake3:8022214ddc906cb06761a0f83e0509ab20dc50b4ff4b77eab4a5ddc48f3d4307
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_a30_fp16_bs41_v5?file=multi_v3.2.trt
+        checksum: blake3:4127b87e22ef59fef68fa0a0f90d642a97ae40d6b06706b58ae97a1a2d71bfa4
+- id: c021f3ca049d620f84393cc2e8b1748439a849f4e4813e80343b46f819042f7d
+  tags:
+    batch_size: '80'
+    character: claire
+    gpu: RTX4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: dddac9119820ddd9d2c575ae27b4a5f89fe494186421896435db942128715c84
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx4090_fp32_bs90_v5?file=a2e.trt
+        checksum: blake3:a8b3eb72f9febef8e835418ff1ec60af81aefe9070f7affce41d604b25e6036e
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_rtx4090_fp16_bs90_v5?file=claire_v2.3.1.trt
+        checksum: blake3:e9fa2d10481d636a585f0f17827432ac59ed969d400b47e1a5771602f089fa6e
+- id: c39d6cc51c706dcf9cb07ceecc80bf8641c4b2c08fe8588e0d6d875b464c6295
+  tags:
+    batch_size: '80'
+    character: james
+    gpu: RTX4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 3df4113544b876663256fb20309ed28dd9ade74754894f332310bc9cfce45ab7
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx4090_fp32_bs94_v5?file=a2e.trt
+        checksum: blake3:0f58c59d625b57f5530486540650284bcfe46f167060ddf2fa6e878252e6a6c6
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_rtx4090_fp16_bs94_v5?file=james_v2.3.1.trt
+        checksum: blake3:29d076d34a685c5ac19ab6764a438a32e08479b54d719bcaec51e5c1dcef672d
+- id: 4a13a78c606a49ddf4c0aeac66488897a0c392286bc98dde8c5097ce378b6835
+  tags:
+    batch_size: '80'
+    character: mark
+    gpu: RTX4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 98a111928bb3126a608f234b6e473c1665fd3f9e67b55c3f7ea703fe38073d3c
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx4090_fp32_bs90_v5?file=a2e.trt
+        checksum: blake3:a8b3eb72f9febef8e835418ff1ec60af81aefe9070f7affce41d604b25e6036e
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_rtx4090_fp16_bs90_v5?file=mark_v2.3.trt
+        checksum: blake3:12cdf13230732ca01101b5bce19616a93022a013f0471752babeacb718f56526
+- id: dee1ac011ab648c0e10c9e92b5fec24f6ca665d9a76f69daa4476260a0e4d453
+  tags:
+    batch_size: '35'
+    character: multi
+    gpu: RTX4090
+    gpu_device: 2684:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: cf71992358298a12071e67750e9664af3c720a3df941cc5d82db90f0da071987
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx4090_fp32_bs40_v5?file=a2e.trt
+        checksum: blake3:a39f0a21863b3abe9adb22caac8027794463727f8e5f6ac54db5d575f6bb7f8b
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_rtx4090_fp16_bs40_v5?file=multi_v3.2.trt
+        checksum: blake3:fa80d476bc723a9d901ea533f09b276d7b15c96f3972fcdfb4249570f5ee235a
+- id: ed88e4a416109eb3ff36e01b34092149d989379ff3786b7df45e45806edba899
+  tags:
+    batch_size: '75'
+    character: claire
+    gpu: RTX5080
+    gpu_device: 2e01:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 71a36a649f36110584829ab593a2ca230a1661aa34185218c4d6d188f2034271
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5080_fp32_bs79_v5?file=a2e.trt
+        checksum: blake3:f7c0cd7f9880ab935dd9668bc26a511896bf8b22b1c051ac2a801b0a551d96b7
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_rtx5080_fp16_bs79_v5?file=claire_v2.3.1.trt
+        checksum: blake3:776cb6b6448022b76d280ee96d79474bfb783f195f9fa2f8395173bb7ddeb5c1
+- id: 6f2226bfcd979463e7081b7f4dfea0b97c4dba1c8fe9911e7911863a0156196a
+  tags:
+    batch_size: '75'
+    character: james
+    gpu: RTX5080
+    gpu_device: 2e01:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 95e6df08e3ddf59453a0b00323991b7e1bbd1ed525972601c48861b4d7b526a4
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5080_fp32_bs84_v5?file=a2e.trt
+        checksum: blake3:6eb3642b8da046e390eb7d6b40fc595c7e771becdec0f2b83ee2c67e8244add4
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_rtx5080_fp16_bs84_v5?file=james_v2.3.1.trt
+        checksum: blake3:57d2acf8cac912fdf7474a5d0675735df39f29cea38c490414c4fd7cf154f4f6
+- id: c31d23e3fe98c7c947c10fdab96e0540ca2b6a44de039c6ce822f08bed2b797d
+  tags:
+    batch_size: '75'
+    character: mark
+    gpu: RTX5080
+    gpu_device: 2e01:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 80c454c380f29598ab52a52c345943bddb140339a6eddebacb408a13c53a32c2
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5080_fp32_bs80_v5?file=a2e.trt
+        checksum: blake3:069c79f1f392f8221ebf56c0d601de30709e4071dfabb04ac811ff8ddb4bf370
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_rtx5080_fp16_bs80_v5?file=mark_v2.3.trt
+        checksum: blake3:2b866b62ff7d1aed974b018adcba8d962f4f0c308896c86771abf7ee395d0d95
+- id: 3e538490d00d413977d090a78c012148009171eabd8bcf0d964a0aea29040a9a
+  tags:
+    batch_size: '22'
+    character: multi
+    gpu: RTX5080
+    gpu_device: 2e01:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: e65aad8fa23aba5ce4babb67639fbc696e6f2d26619b9f529d5f5e652dc05308
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5080_fp32_bs27_v5?file=a2e.trt
+        checksum: blake3:c5188020ad8b49baabb6c91fd86940601f8a505605d0f0e989036899990f6939
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_rtx5080_fp16_bs27_v5?file=multi_v3.2.trt
+        checksum: blake3:545fa7b96cfabfbe44431bed6dba096e905ed36097d4db70e4f0b292af521cf3
+- id: 4e1be9a8b348517e3a914f53b33bb409b45315b01897014410903017b3fad9be
+  tags:
+    batch_size: '100'
+    character: claire
+    gpu: RTX5090
+    gpu_device: 2e02:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 196e62ecd35aea1c8b05609f7c28d5650ab37de4d896a4e165ac78d23d06d2a9
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5090_fp32_bs105_v5?file=a2e.trt
+        checksum: blake3:4fb67e6a4903d6a463f589e323da765f31576e0a7b1731fe61ea08cfa2eadd6b
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_rtx5090_fp16_bs105_v5?file=claire_v2.3.1.trt
+        checksum: blake3:1511f8ee134c5793c2a1f922132a7f897bf4d6ce5f08ce9dd63b1b786ead8125
+- id: 5c09e7a77d93637d0e69762ec6e9a574e478a47c0c7d72f6f6887aa5c952afeb
+  tags:
+    batch_size: '100'
+    character: james
+    gpu: RTX5090
+    gpu_device: 2e02:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 120fe6a28d9bbcc807cd954d21e17cdf3183320f8753cc6254452555e2b50bcf
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5090_fp32_bs133_v5?file=a2e.trt
+        checksum: blake3:38df5434da1c1d7b5852d6ef4476804f12153eb5bdc757fc9ce25073312be8c2
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_rtx5090_fp16_bs133_v5?file=james_v2.3.1.trt
+        checksum: blake3:1ab6d86989f7040595d02ff54e2aefb7fc5bd343fa456804bd9725b6e97dc5ad
+- id: 829f14e8dfe36e55d7e5bf1a245325f14b18efbc6791cb11e1beccbd6cfdf3b9
+  tags:
+    batch_size: '100'
+    character: mark
+    gpu: RTX5090
+    gpu_device: 2e02:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: dd1f1832960350784eb4f73d99233f99a951b58fbaa07633155c916074c8f852
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5090_fp32_bs106_v5?file=a2e.trt
+        checksum: blake3:d2f9f46a81fbd44cf51be01fa44ddc41b92df8ba0fd3b7bd1bcbe9b3ad48be7a
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_rtx5090_fp16_bs106_v5?file=mark_v2.3.trt
+        checksum: blake3:9910bccd148d0ee178af47212d15d6d8313c1c7c9ebc86450c211fa5a3c9ef01
+- id: b7f47d1ba26445410947583427d9f717609e24241264015c9640371339b60e03
+  tags:
+    batch_size: '52'
+    character: multi
+    gpu: RTX5090
+    gpu_device: 2e02:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 4cbc1ae9ec0948a134d9d3ecafe2de22f2135c00d826af7339de5daecf454846
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx5090_fp32_bs58_v5?file=a2e.trt
+        checksum: blake3:b4a7da0792b195edf65970421b806f9463817ef609b63383df0ef82270a18bb3
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_rtx5090_fp16_bs58_v5?file=multi_v3.2.trt
+        checksum: blake3:ab24d81180d81e5fd1854e196627a5ad596b0a69144aa413e77ac7284a2f62c1
+- id: abeb4547dc5ddb096074adb70d8120aa0dc4e87dd99fe951fffb4e53336aa369
+  tags:
+    batch_size: '30'
+    character: claire
+    gpu: L4
+    gpu_device: 27b8:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 3009f7bf46e841b1e5bb73130bb6add9b8da207601184f94c2fa0ea3980b83e6
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l4_fp32_bs36_v5?file=a2e.trt
+        checksum: blake3:a9ee3e12184d274e1a4aeacbca0aa430e4756a5887b8b864b85bd83fa271f291
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_l4_fp16_bs36_v5?file=claire_v2.3.1.trt
+        checksum: blake3:c9d47d568d081e09e28fbc999a5bead765fee642bf81ee604bcd6923f7bb193a
+- id: e46d5580bc1b0160bf55e5f790e008cc31acbcb78da3a2efba414cb41ea53044
+  tags:
+    batch_size: '30'
+    character: james
+    gpu: L4
+    gpu_device: 27b8:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: e444adda69dee0c14403bcfb441d88b1c947cb97dc1b53732618738d8dfcfc9e
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l4_fp32_bs40_v5?file=a2e.trt
+        checksum: blake3:53162ba51ec781c637b85f446c2af112e99b2b0dff845c4146ad3a62070c6759
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_l4_fp16_bs40_v5?file=james_v2.3.1.trt
+        checksum: blake3:bcc0db1b0c81381ee45ec8553b8b675244ad0f8e8cb456fb29a875f0521008e2
+- id: 6d139e6bf3b85347c5412996cccb86a60c55532c20793d95d9deac6f63402b7f
+  tags:
+    batch_size: '30'
+    character: mark
+    gpu: L4
+    gpu_device: 27b8:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 3416207aec2acabfcf1f77fe305e2fcb556268dabe7c0ccf26306b3e941c059d
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l4_fp32_bs39_v5?file=a2e.trt
+        checksum: blake3:d7f1989687f539577b8f145d6f6c14f36f4eb25e8f9513fd1ec26bbbccb087bd
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_l4_fp16_bs39_v5?file=mark_v2.3.trt
+        checksum: blake3:436ccc9f3bfd6a1d05db82c59ea551a906b4f6e8eb38aad7594f48f8d598cb5b
+- id: b99e75b7475c597ebf6cdd6ff3383e60bf16b54c6aefa4647c675fd7edf492e2
+  tags:
+    batch_size: '16'
+    character: multi
+    gpu: L4
+    gpu_device: 27b8:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: d63a9a8e7075dd23f6808e05468232baca738968677152c989bf6668427000cc
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l4_fp32_bs21_v5?file=a2e.trt
+        checksum: blake3:7dbc01cb54069f573c3ec8759994a18b168c39176ce0f123bcfd1ca837045af6
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_l4_fp16_bs21_v5?file=multi_v3.2.trt
+        checksum: blake3:75afdef20fef2f66f6b1d8b53416469d89b8977f221b81091342287158c17979
+- id: fdec053afe6da669a5a82e2c896f7af1e9bca0f562e0576e89d2baaa69ce11fd
+  tags:
+    batch_size: '80'
+    character: claire
+    gpu: L40S
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: e320255ef056dbd62e334def426bd4c03a6c28244fffc49e98d7c4fc7615b9c0
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l40s_fp32_bs87_v5?file=a2e.trt
+        checksum: blake3:211253915788b0fc2d4e74fbb9acd44693c3375fdc1af2f3ceb1e979868b1ce7
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_l40s_fp16_bs87_v5?file=claire_v2.3.1.trt
+        checksum: blake3:e9f88808d2721463fe8f0bf601931eb0bbe8032e2b2c672711d5151bad07bc9a
+- id: 9f69b475038f0ea376f63c2b6e460ab41431b2aca48e77b43a3c468b4b67302f
+  tags:
+    batch_size: '80'
+    character: james
+    gpu: L40S
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 95eff2a7e42ff8e8f250e0282ff65e0cee71d7069b14a80e945a919ffe9871e7
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l40s_fp32_bs92_v5?file=a2e.trt
+        checksum: blake3:651b0c2f00e5f6db3cdc1d05e3fbabeef2d9fff737bc5369de02434f14cd011d
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_l40s_fp16_bs92_v5?file=james_v2.3.1.trt
+        checksum: blake3:33a7e9a4f975f92b1d0bcd1a6a6af2ab538de1434de60a7d3883094e6f34489c
+- id: 059865f2fd53f8b0e1d5803532e96089d168f58b5de9cfe7b6a0d88604216b7e
+  tags:
+    batch_size: '80'
+    character: mark
+    gpu: L40S
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 5e2197110861c7ed1466d57b95fea4a4fe4abd4d419d9fd0c604ba27223e63e5
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l40s_fp32_bs84_v5?file=a2e.trt
+        checksum: blake3:f25a27d9fedc4e4b3d028cf8e252434d11518313bdc4bb0cb0012f197f9bab56
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_l40s_fp16_bs84_v5?file=mark_v2.3.trt
+        checksum: blake3:8fad637d36535288667c1c88419124347b63ca2009750604b44ff4e3f7ea76e2
+- id: add44b555e5328bdb108b2b28df78d346ede048d642796622a63e1d615e50b4f
+  tags:
+    batch_size: '60'
+    character: multi
+    gpu: L40S
+    gpu_device: 26b9:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: be628d3bffaef6d63966400c272a6ae9ed057a1fd35348a5fe2a0a469f6d2148
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_l40s_fp32_bs64_v5?file=a2e.trt
+        checksum: blake3:281ffae68128b0b7f58efbf1ecd98a7d1366e174aa68dd5ba551ae26e196b180
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_l40s_fp16_bs64_v5?file=multi_v3.2.trt
+        checksum: blake3:ff9194e9524cf9fc9d42d3552c2fa469c93a6ce5a3ed082d1e73c8ebe7a64f4b
+- id: 325ea37a77d7986fdd6d25ea43223a3172f0267036c4a8492a6e4d6e9efc4952
+  tags:
+    batch_size: '70'
+    character: claire
+    gpu: RTX6000
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: abf1d5be347f78cf45cdaf56554ffb94535f0a4e627122d53a46a4f32f668cd6
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx6000ada_fp32_bs77_v5?file=a2e.trt
+        checksum: blake3:30cf9e6d72ec769ab97dfc8e50dfb37a6cf533e76f2ab1934991a2a1331560fd
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_rtx6000ada_fp16_bs77_v5?file=claire_v2.3.1.trt
+        checksum: blake3:93b4e29cb516853c36995cbaf29061d8ea25e31a1e0fd513c24698f90713909f
+- id: df18171ab6821b765ec1bd06be0d7a8027e3ac49813e77fc6f6e3e717c839ebe
+  tags:
+    batch_size: '70'
+    character: james
+    gpu: RTX6000
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 49202f967d1423a4b4b6b39b7c57e9ecb554e5230a520e37ed55b8db2b792e6f
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx6000ada_fp32_bs80_v5?file=a2e.trt
+        checksum: blake3:669ede97bc49de14861d987e7b2254c8b0f8a0cad7557ee23809e3c1905c614b
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_rtx6000ada_fp16_bs80_v5?file=james_v2.3.1.trt
+        checksum: blake3:1b612e515804b658f1d35d3cd541410c151d397cc449215cec846701c27e6395
+- id: 2afb78efad674069bf4e88860def85685c41cfab0ea6eba3447798cd77df8a80
+  tags:
+    batch_size: '70'
+    character: mark
+    gpu: RTX6000
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: b5726f49134ad863e5c6231fb249cb51421bb09894be57f2af66f750a411aaa0
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx6000ada_fp32_bs77_v5?file=a2e.trt
+        checksum: blake3:30cf9e6d72ec769ab97dfc8e50dfb37a6cf533e76f2ab1934991a2a1331560fd
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_rtx6000ada_fp16_bs77_v5?file=mark_v2.3.trt
+        checksum: blake3:154c6e167fb5df2d7dfab9115d28b34bfeaa5274d36a9f0b22dd7dadc8e086d0
+- id: b027596e3621e34702c8244cc473809cf12cdf7d136775bbaeba023ad7e54a4f
+  tags:
+    batch_size: '50'
+    character: multi
+    gpu: RTX6000
+    gpu_device: 26b1:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: e936ea8d3330af6d2fee489c3d2a316ca26a1cacf6226da1c8e4b121ca97044b
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtx6000ada_fp32_bs60_v5?file=a2e.trt
+        checksum: blake3:5ef2bb1c944fdbe9cbcea91220ab5a1ce31f3ca4da17aba6cc9c9826b99b0541
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_rtx6000ada_fp16_bs60_v5?file=multi_v3.2.trt
+        checksum: blake3:f01a58d370db996845dbd56b010e3075a9dc4b9695d91288359a7b1cc121a3f8
+- id: 2817c04ed84ce76e4793a4498b88e0e63a7cb8e5efcf1f465940e4908e75113c
+  tags:
+    batch_size: '120'
+    character: claire
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2e14:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 1855d7ca8baca31bad48f7fbe498f6bfa541473cce5c2fae7479dce14374e56d
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtxpro6000blackwell_fp32_bs120_v5?file=a2e.trt
+        checksum: blake3:939f90a5eb6e8a6b33e42e974eb5a0fac76a0c226433e69451e3ce08e7555201
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_rtxpro6000blackwell_fp16_bs120_v5?file=claire_v2.3.1.trt
+        checksum: blake3:3d5180f7ecaa5bdf9e2b46f19c71d99855d7b0255ba13148caa80eb31274795f
+- id: a45d8afe9c7e624d103f691e0a30a138dd9bba4cbb47c168d2a649c695fa7357
+  tags:
+    batch_size: '124'
+    character: james
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2e14:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 91a4b9755cc61ae3ae5b8db051023f54efb89b172932f54b185598ce07f5a396
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtxpro6000blackwell_fp32_bs124_v5?file=a2e.trt
+        checksum: blake3:7045ab712d07179f7a25750f200f493f80a3be94c4089769acd402498f37f673
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_rtxpro6000blackwell_fp16_bs124_v5?file=james_v2.3.1.trt
+        checksum: blake3:7d64d45657e7cb10bfc2f573ebdf73fcd6d9952309955fd872b48a3ff45c166e
+- id: 539bba5c5e2e7410d1369bbccf7335d54b814276fd9d8c16c95ab65490ca4def
+  tags:
+    batch_size: '120'
+    character: mark
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2e14:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 2b29881795207302b90236aeba6e63c8b84bb9e9f21d7214933f402da3b5751e
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtxpro6000blackwell_fp32_bs120_v5?file=a2e.trt
+        checksum: blake3:3207b3b7cd71f2d26d289d30971e5bdc895ce492a610279331aaa27ae3b6c027
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_rtxpro6000blackwell_fp16_bs120_v5?file=mark_v2.3.trt
+        checksum: blake3:301254b69b460658803bdf2662858c07ff22950ebc415d7b353bddbef02a4ec3
+- id: 69fc655ff6a1a52b73969e980bd2b72f059e4b144cdf3f19aa99ea97524e0874
+  tags:
+    batch_size: '130'
+    character: multi
+    gpu: rtx6000-blackwell-sv
+    gpu_device: 2e14:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 4aa2f7eaabaa2ab5bcec8d2480be39e29c81c81830430c154e9821b9201f4d15
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_rtxpro6000blackwell_fp32_bs130_v5?file=a2e.trt
+        checksum: blake3:9340c4ef8b43dcc5a8e9932b751fad3b1ee6d2655d7b3d4f2f602054ed91854a
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_rtxpro6000blackwell_fp16_bs130_v5?file=multi_v3.2.trt
+        checksum: blake3:204924e1a6580fd375e9adbe79e4f9c19c61e9604edad4ac2aa9ad1d7c1765c5
+- id: 62f390868b91d5142c9ff67cabd55993f464aab58a6d267f3f62a639a6287fb3
+  tags:
+    batch_size: '255'
+    character: claire
+    gpu: B200
+    gpu_device: 2901:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 3c1d532e97d1192f5e9e338d94f282f707ffa0764565894a79673b64948a9a57
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_claire_b200_fp32_bs255_v6?file=a2e.trt
+        checksum: blake3:1db6366e43b5b959a97dc396d26570774b0ee6a8afc8a88e8e41b5a9813ea77b
+      claire_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:claire_v2.3.1_b200_fp16_bs255_v6?file=claire_v2.3.1.trt
+        checksum: blake3:65aa6c1fcc7a51598da3da586573fbb5d32a63319b5b8402e1c34100505b59e4
+- id: f3ed24948f366869149a15925d40e2a1da3cfa1ae26d570f361fb5d451aa90e3
+  tags:
+    batch_size: '255'
+    character: james
+    gpu: B200
+    gpu_device: 2901:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 295dff6f876550b37656548ccf8f1df5b7a5255643a56678ab4e3fc371e8ba39
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_james_b200_fp32_bs255_v6?file=a2e.trt
+        checksum: blake3:d0b1f7d2da59bed88c7aa2d06011c3896bbb46d7d2eabeccb7d08659f1f8bf99
+      james_v2.3.1.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:james_v2.3.1_b200_fp16_bs255_v6?file=james_v2.3.1.trt
+        checksum: blake3:4966a589abee0e8d907d1bfb9268d1330db9097e2e14ac724311fcb021d1a03c
+- id: c2f92c28e8211892bc799871b59e5d92672b2c93322c421451412309067179aa
+  tags:
+    batch_size: '256'
+    character: mark
+    gpu: B200
+    gpu_device: 2901:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 9bd6842b22701e7392e476d4da69fc491ae7a6e6621dc3a7d6ec7b7703274d6f
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_mark_b200_fp32_bs256_v6?file=a2e.trt
+        checksum: blake3:e2b77d5baa951acb3913459de3de91c519d88d104377d1952a0d84be5189b0ec
+      mark_v2.3.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:mark_v2.3_b200_fp16_bs256_v6?file=mark_v2.3.trt
+        checksum: blake3:c796c4df6f8f5c620ed3d22f9a6e3ff36a6a1aa178925ae303d770ccb96c628c
+- id: 2ef93055df06c23efe4780e7c225c383b07173e7a55ecfb8ddbf776bd6178f04
+  tags:
+    batch_size: '144'
+    character: multi
+    gpu: B200
+    gpu_device: 2901:10de
+    model_type: tensorrt
+    nim_workspace_hash_v1: 0d00f84d2c254e2d7622ee2f1bf0a991770a75b2833b9f812fa6f1b942d03753
+    precision: fp16
+  workspace:
+    files:
+      a2e.trt:
+        uri: ngc://nim/nvidia/audio2emotion_model:a2e_v2.1_multi_b200_fp32_bs144_v6?file=a2e.trt
+        checksum: blake3:b6750b9986838bf33ac284a3c6815b1f485ca2ae5da07bafc9b66e92293921e5
+      multi_v3.2.trt:
+        uri: ngc://nim/nvidia/audio2face_3d_model:multi_v3.2_b200_fp16_bs144_v6?file=multi_v3.2.trt
+        checksum: blake3:af971ea6577f227800b78eb89fda89637b220991f269a6b3cafedecc103252de

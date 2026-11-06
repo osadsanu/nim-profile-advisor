@@ -1,0 +1,121 @@
+- id: 11d1938a5182717401e7b0b6f787f0ce00ba5fb1099b1f0d48595de48462e742
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '7.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '8'
+
+- id: 3b4562b9c5d42cf1b20ecda41da0133444963163ca277351b22e5df5fc00bdf6
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '2'
+
+- id: 6ff1f1a8c9f97834d387a8a11f9ae19464acd84b9d82fe75d40d1391b8d851a8
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '8.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '4'
+
+- id: 7db6e396117dddf743fb5cf3171bee34b315aa18713513c3bf9be75d14136216
+  tags:
+    feat_lora: 'false'
+    llm_engine: vllm
+    min_vram_per_device_gb: '19.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '1'
+
+- id: 89a170a9f739172d9579514b50c9da14dc9a41d0c6690da0f4f7551f90bc5abf
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-H200
+    gpu_device: 2335:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '19.0'
+    nim_description: agentic, throughput, mean ITL<=20ms
+    nim_json_args: '{"gpu_memory_utilization":0.92,"kv_cache_dtype":"fp8","max_model_len":131072,"max_num_batched_tokens":2048}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: mxfp4
+    profile: throughput
+    tp: '1'
+
+- id: a25299d735870fc22c876022fcb55856975ed1032ea938b547d24aa7dd6b89dc
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '64'
+    llm_engine: vllm
+    min_vram_per_device_gb: '7.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '8'
+
+- id: a71c762c3cf0fdc64ffa85918028e0af6d6abf2fb879a4d363e582778af2c5a7
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '64'
+    llm_engine: vllm
+    min_vram_per_device_gb: '8.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '4'
+
+- id: acd099ef9871a67c435251720c67f6f3b7e39fd8a6df68eaf4094b614d09425f
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-A100-SXM4-80GB
+    gpu_device: 20b2:10de
+    inference_scenario: throughput
+    llm_engine: vllm
+    min_vram_per_device_gb: '19.0'
+    nim_description: throughput
+    nim_json_args: '{"block_size":64,"compilation_config":{"cudagraph_capture_sizes":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,24,32,40,48,56,64,72,80,88,96,104,112,120,128,136,144,152,160,168,176,184,192,200,208,216,224,232,240,248,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,528,544,560,576,592,608,624,640,656,672,688,704,720,736,752,768,784,800,816,832,848,864,880,896,912,928,944,960,976,992,1008,1024]}}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: mxfp4
+    profile: throughput
+    tp: '1'
+
+- id: e813ebaa3d51d4fce82fc4902a331ff4e14c07bee717afe7345b0c171ef65fd4
+  tags:
+    feat_lora: 'false'
+    gpu: NVIDIA-B200
+    gpu_device: 2901:10de
+    llm_engine: vllm
+    min_vram_per_device_gb: '19.0'
+    nim_description: agentic, throughput, mean ITL<=20ms
+    nim_json_args: '{"block_size":64,"gpu_memory_utilization":0.9,"kv_cache_dtype":"fp8","max_cudagraph_capture_size":2048,"max_model_len":131072,"max_num_batched_tokens":4096,"quantization_config":{"moe":{"activation":"mxfp8"}},"stream_interval":1}'
+    nim_optimized: 'true'
+    pp: '1'
+    precision: mxfp4
+    profile: throughput
+    tp: '1'
+
+- id: fae37bce3214316228c139b8d7e65a6262ea2f0d3603b2eb2c0bbc5a423e6d28
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '64'
+    llm_engine: vllm
+    min_vram_per_device_gb: '12.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '2'
+
+- id: ffb895dd3b44e9334593df21a84d6aa3cff4c753c4064a939817874beae5da19
+  tags:
+    feat_lora: 'true'
+    feat_lora_max_rank: '64'
+    llm_engine: vllm
+    min_vram_per_device_gb: '19.0'
+    pp: '1'
+    precision: mxfp4
+    tp: '1'

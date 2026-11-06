@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "description": "How NVIDIA NIM picks a profile and how the NIM Profile Advisor reproduces it. Rules marked 'advisor' are this tool's own conventions for cases the NVIDIA docs do not cover.",
+    "generated": "2026-11-05"
+  },
+  "selection_preference_order": [
+    {
+      "rule": "NIM evaluates a priority chain at start-up: NIM_MODEL_PROFILE=default (intelligent default: hardware compatibility, then backend priority, then LoRA configuration) > NIM_MODEL_PROFILE=<64-hex id or description> (exact profile) > memory-aware automatic selection > manifest selector (profile_selection_criteria, based on GPU device, VRAM and parallelism).",
+      "source": "https://docs.nvidia.com/nim/large-language-models/latest/deployment/model-profiles-and-selection.html (How Profile Selection Works)"
+    },
+    {
+      "rule": "Automatic selection prefers profiles estimated to fit the available GPU memory and prefers non-LoRA profiles unless LoRA is enabled.",
+      "source": "https://docs.nvidia.com/nim/large-language-models/latest/deployment/model-profiles-and-selection.html (Memory-aware profile selector)"
+    },
+    {
+      "rule": "Prefer a direct gpu_device match over a tested_gpu_devices match, and either over a GPU-agnostic profile. Keep the fallbacks until the VRAM and GPU-count checks are done so a usable generic profile is not discarded early.",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (steps 2 and 7)"
+    },
+    {
+      "rule": "Inside the preferred tier choose lower precision for throughput (fp8 over bf16 over fp16) or higher precision for accuracy.",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (step 7)"
+    },
+    {
+      "rule": "Advisor ranking ('NIM automatic selection' goal): exact gpu_device match > GPU-name / compute-capability engine > generic; then NVIDIA-optimized (nim_optimized or prebuilt TensorRT engine), efficient precision, non-LoRA, throughput profile, and the profile that uses the most of the GPUs you gave it.",
+      "source": "advisor (nim_advisor/app/recommender.py rank_key)"
+    }
+  ],
+  "compatibility_checks": [
+    {
+      "rule": "gpu_device is '<pciDeviceId>:<pciVendorId>' (example 2330:10de). Read it on the node with 'lspci -nn | grep -i nvidia' and reverse the bracketed [10de:2330]. A profile with a gpu_device only matches that exact device.",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (Collect Your Hardware Inputs, step 2)"
+    },
+    {
+      "rule": "A profile with neither gpu_device nor gpu is GPU-agnostic. A profile that targets a different device is not a match.",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (step 2)"
+    },
+    {
+      "rule": "Discard a profile when min_vram_per_device_gb is greater than the memory of one GPU (or MIG slice). An absent value means 'unknown', not 'fits'.",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (step 3)"
+    },
+    {
+      "rule": "required_gpus = tp x pp (absent = 1). Discard the profile when it needs more GPUs than you have (the advisor checks GPUs per node, and number_of_nodes / nnodes for multi-node profiles).",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (step 4)"
+    },
+    {
+      "rule": "If you need LoRA adapters keep only feat_lora=true profiles (and set NIM_PEFT_SOURCE).",
+      "source": "https://docs.nvidia.com/nim/metadata-api/guides/choose-a-profile (step 6)"
+    },
+    {
+      "rule": "NIM classifies profiles as compatible, low memory (fits only with a shorter context, e.g. --max-model-len 4096) or incompatible. Memory estimates are advisory: a predicted shortfall produces a warning, not a start-up rejection.",
+      "source": "https://docs.nvidia.com/nim/large-language-models/latest/deployment/model-profiles-and-selection.html (Memory-Based Profile Classification)"
+    },
+    {
+      "rule": "Speech, vision and Maxine NIMs often have no gpu_device: they tag TensorRT engines with a list of GPU names plus a compute capability (gpu_cc, compute_capability or gpu_sm_version such as sm_100). The advisor accepts the engine when the GPU is in the name list, or when the GPU has exactly the same compute capability (TensorRT engines are SM-specific; NVIDIA does not guarantee cross-model plans, so this is reported as a warning).",
+      "source": "advisor (observed in nims_catalog/*/model_manifest.yaml, e.g. maxine-bnr, ai4m-relighting, active-speaker-detection-h4m-nim)"
+    },
+    {
+      "rule": "Some manifests use device_id / gpu_key instead of gpu_device / gpu (llama-3.2-nemoretriever-500m-rerank-v2, paddleocr), write the id without the vendor ('20b2') or in upper case ('2C02'), or pin an SM with gpu_sm_version. The advisor normalizes all of them.",
+      "source": "advisor (nim_advisor/app/normalize.py)"
+    }
+  ],
+  "precision_by_architecture": [
+    {
+      "precision": "fp16 / fp32",
+      "min_compute_capability": "7.0",
+      "architectures": "Volta and newer",
+      "notes": "",
+      "source": "https://developer.nvidia.com/cuda-gpus"
+    },
+    {
+      "precision": "int8 / int4_awq / w4a16",
+      "min_compute_capability": "7.5",
+      "architectures": "Turing and newer",
+      "notes": "Kernel availability depends on the engine.",
+      "source": "advisor"
+    },
+    {
+      "precision": "bf16",
+      "min_compute_capability": "8.0",
+      "architectures": "Ampere, Ada Lovelace, Hopper, Blackwell",
+      "notes": "T4 (7.5) and V100 (7.0) have no bf16: use fp16 profiles.",
+      "source": "https://github.com/vllm-project/vllm (start-up error 'Bfloat16 is only supported on GPUs with compute capability of at least 8.0')"
+    },
+    {
+      "precision": "mxfp4",
+      "min_compute_capability": "8.0",
+      "architectures": "Blackwell native; Hopper/Ampere through engine kernels",
+      "notes": "Used by gpt-oss. Native MXFP4 Tensor Core support is Blackwell only.",
+      "source": "https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/ (Table 1)"
+    },
+    {
+      "precision": "fp8",
+      "min_compute_capability": "8.9",
+      "architectures": "Ada Lovelace (L40S, L4, RTX 6000 Ada), Hopper (H100/H200), Blackwell",
+      "notes": "FP8 W8A8 needs CC >= 8.9. Turing/Ampere can only run FP8 checkpoints as weight-only W8A16 (Marlin), which NIM does not use for profile selection.",
+      "source": "https://docs.vllm.ai/en/latest/features/quantization/llm_compressor/fp8/"
+    },
+    {
+      "precision": "nvfp4 / fp4",
+      "min_compute_capability": "10.0",
+      "architectures": "Blackwell: B200/GB200 (10.0), B300/GB300 (10.3), RTX PRO 6000 Blackwell (12.0), GB10 (12.1)",
+      "notes": "Fifth-generation Blackwell Tensor Cores. Hopper and older PCAI GPUs (H200 NVL, H100 NVL, L40S) cannot run NVFP4 profiles.",
+      "source": "https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/"
+    }
+  ],
+  "caveats": [
+    "PCAI 'H200' systems use the PCIe H200 NVL (gpu_device 233b:10de). Many NIMs only ship optimized profiles for the SXM H200 (2335:10de): NIM does not auto-select those on PCAI. Expect a generic vLLM/SGLang profile, or force the SXM profile with NIM_MODEL_PROFILE at your own risk (same GH100 chip and 141 GB).",
+    "26b5:10de is the NVIDIA L40. Older LLM NIMs tag profiles 'gpu: L40S' with gpu_device 26b5: NIM will not auto-select them on an L40S (26b9:10de). See the Validation tab.",
+    "audio2face-3d tags RTX5080 / RTX5090 / rtx6000-blackwell-sv with 2e01 / 2e02 / 2e14, ids that are not RTX 5080 / 5090 / RTX PRO 6000 in the NVIDIA driver README or pci.ids: those profiles cannot match by gpu_device.",
+    "MIG: multi-GPU (tp/pp > 1) profiles cannot span MIG slices, and not every NIM supports MIG instances. Pick the MIG size in the form to check memory fit per slice.",
+    "PCAI multi-node inference (AIE 2026.07.1) is an MLIS feature that requires the vLLM model format (Guides/PCAI_docs/PCAI_2026.07.1/12_Data-Science.md:3344-3440).",
+    "Profiles and ids change between NIM releases: always confirm with 'list-model-profiles' on the target image before pinning NIM_MODEL_PROFILE."
+  ]
+}

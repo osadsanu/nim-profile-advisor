@@ -1,0 +1,25 @@
+  - id: 6063f92bf1305e28c4c5f4def09b145f7d61daf2c4d2b13a0fa5c7a599f345dd
+    tags:
+      gpu: H20-3e
+      gpu_device: 232c:10de
+      llm_engine: sglang
+      nim_workspace_hash_v1: 8351ecb01f7b338727b36c3f1348f593185ab64502ceea2dad79b9ddd0062110
+      precision: fp8
+      tp: "16"
+      profile: latency
+      ep: "16"
+      dp: "4"
+      nim_config_file: "/opt/nim/h20-two-node-latency.yaml"
+
+  - id: 8ec6315a45ebae1571e6b1badee8cc4bec8b0f45f153b9fdc9ce7994b72f4529
+    tags:
+      gpu: H20-3e
+      gpu_device: 232c:10de
+      llm_engine: sglang
+      nim_workspace_hash_v1: 8351ecb01f7b338727b36c3f1348f593185ab64502ceea2dad79b9ddd0062110
+      precision: fp8
+      tp: "16"
+      profile: throughtput
+      ep: "16"
+      dp: "16"
+      nim_config_file: "/opt/nim/h20-two-node-throughput.yaml"

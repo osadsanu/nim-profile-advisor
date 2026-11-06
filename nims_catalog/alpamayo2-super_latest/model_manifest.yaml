@@ -1,0 +1,490 @@
+schema_version: '2.1'
+profile_selection_criteria: auto
+model: nvidia/alpamayo-2-super
+release: 1.0.0
+profiles:
+- id: 2f5a2046985cbcde688c1c2ded6e7acf03b10db1a7e2254d488b7bfa712985d0
+  tags:
+    checkpoint_format: modelopt
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_attention_backend: fa3
+    expert_precision: bf16
+    expert_runtime: vllm-omni-model
+    feat_lora: 'false'
+    inference_scenario: latency
+    k: runtime
+    llm_engine: vllm-omni
+    max_k: '32'
+    min_k: '1'
+    min_vram_per_device_gb: '80.0'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile_name: fp8-dflash2
+    quantization: fp8
+    speculative_compatible_base_config_sha256: dcdf9627aae616844636ecfa010e11957b68ecace800b25ef3b451e3cd6ef8f3
+    speculative_decoding: dflash2
+    speculative_metrics: summary
+    speculative_model_path: /opt/nim/workspace/dflash2
+    speculative_tokens: '7'
+    tp: '1'
+  workspace:
+    files:
+      alpamayo/.gitattributes:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=.gitattributes
+        checksum: blake3:22f6a03d30e790eb14b323e6a5a2a749071606e735db34f5a3103a2053c08932
+      alpamayo/LICENSE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=LICENSE
+        checksum: blake3:3cfc678f9656a159fd0b76dbcaa91511c2028e64c8b42b34295ce603e408e59e
+      alpamayo/README.md:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=README.md
+        checksum: blake3:b2c92c023d3522776ca0900c1f20c8f5f6006f18f9dcf0262af51d6892f1be90
+      alpamayo/added_tokens.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=added_tokens.json
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+      alpamayo/chat_template.jinja:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=chat_template.jinja
+        checksum: blake3:3191378e99ab34d62d52f4d75a33565db0995435dc6f68d8e543d0e9f6115d05
+      alpamayo/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=config.json
+        checksum: blake3:a3ba56b2c87847582d3ecba2e913658db62ed78267314fbe3ecbab275badb83c
+      alpamayo/generation_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=generation_config.json
+        checksum: blake3:cf5f00ea848dfd65f46424b723eaee87c3fa8ee9bb1517592797239dd64a80a2
+      alpamayo/hf_quant_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=hf_quant_config.json
+        checksum: blake3:696a052995d5bb13497c5749610ade7290eb4e132dfceaacb503705ecbaebe4e
+      alpamayo/merges.txt:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      alpamayo/model-00001-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00001-of-00009.safetensors
+        checksum: blake3:629f0c7f608ab2c59f067e56ea798d1e41d4d64a8535b989426d22c61460da3c
+      alpamayo/model-00002-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00002-of-00009.safetensors
+        checksum: blake3:1b1816cbc42ede5c4410f70cb33148abb6f4f8e5e0d166650b16fe70e851eee2
+      alpamayo/model-00003-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00003-of-00009.safetensors
+        checksum: blake3:68e4102391dcfb51291007beb05aa11484f3f4459f9d88751629276afdf74a30
+      alpamayo/model-00004-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00004-of-00009.safetensors
+        checksum: blake3:899d9de3d58d20fe473b7f809f5ba4b5c52d201ab0174e651022f1412afc27bb
+      alpamayo/model-00005-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00005-of-00009.safetensors
+        checksum: blake3:f01e580d34c69654381bfa19c2b0ae8eff09efe0044ae6c4808be24ecbb85031
+      alpamayo/model-00006-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00006-of-00009.safetensors
+        checksum: blake3:92704685753bc9651dd318a0f80746c81fea2a7b6a3d17d797cae947ef47c437
+      alpamayo/model-00007-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00007-of-00009.safetensors
+        checksum: blake3:9b321ae3f27bbaf7975a14bb736e36b2c450ca20c2d6f5b43d79d1d8e9046aa1
+      alpamayo/model-00008-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00008-of-00009.safetensors
+        checksum: blake3:32adb7f3d53d1dd53199619d849cecae832ece0acebb07fb6104dfee0bbcfa12
+      alpamayo/model-00009-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00009-of-00009.safetensors
+        checksum: blake3:b0f3bf734faf1e82af7c305662ef90d1ba0b6ad15dc0d21051c6ddfcaf28c8d2
+      alpamayo/model.safetensors.index.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model.safetensors.index.json
+        checksum: blake3:11d26b6a4ffdb8e5fc409bb4cec02d3fc2f197d47f61b79d8f173f64deef6258
+      alpamayo/preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=preprocessor_config.json
+        checksum: blake3:17e39869a63ea206ad5c6b0ca5e7b99f975717f07e8c3e213f9a522e831231cb
+      alpamayo/quantization_provenance.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=quantization_provenance.json
+        checksum: blake3:ac2ac40219ed3ccf3c4e04be9ecd63900a22076f2a8227b2c1d46cf89ddcf8a4
+      alpamayo/special_tokens_map.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      alpamayo/tokenizer.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=tokenizer.json
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+      alpamayo/tokenizer_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=tokenizer_config.json
+        checksum: blake3:3d5f293baa1d753dc08e55511fd7f34829eadb53465bd0ed5bb00599cb50efec
+      alpamayo/video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=video_preprocessor_config.json
+        checksum: blake3:ed2bf48e2d5bf03c53da98acacc2972522521b0b5270737c6dc6e697f947ef68
+      alpamayo/vocab.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      dflash2/alpamayo_dflash_metadata.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=alpamayo_dflash_metadata.json
+        checksum: blake3:3cfd76ab5f18ee3a66ce70c315a74606739b226287a9c4960a30921ee4965b45
+      dflash2/checksums.blake3:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=checksums.blake3
+        checksum: blake3:2602299031e07364ab9c24f447c50072cea14be0de7c07e56f43b7363d28e566
+      dflash2/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=config.json
+        checksum: blake3:c0e0b8198cfb86dc2b8f83c4ec3569cc3142e3906ea3e00f990f9e241d0fcc7a
+      dflash2/model.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=model.safetensors
+        checksum: blake3:97b330341930a729ece6c1e01cca36622d8c7a50247a73375d66a510ecf05171
+  workspace_hash: d8e9b8ccfabfedc2fe71759c7a424b31fc38d6b3c7c0d87f36f9a30dc6c3677b
+- id: 66ebea01402637abccfe4e26d8be3e555f6d47f5e9fcdcc0a503a6a0ef7f71cd
+  tags:
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_attention_backend: fa3
+    expert_precision: bf16
+    expert_runtime: vllm-omni-model
+    feat_lora: 'false'
+    inference_scenario: latency
+    k: runtime
+    llm_engine: vllm-omni
+    max_k: '32'
+    min_k: '1'
+    min_vram_per_device_gb: '80.0'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    profile_name: bf16
+    quantization: bf16
+    tp: '1'
+  workspace:
+    files:
+      HF_SOURCE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=HF_SOURCE
+        checksum: blake3:6b4a67a8d2b3726f72b53c0f62ab235e2ac372d2a6ad73775082768d8092b80a
+      alpamayo/.gitattributes:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2F.gitattributes
+        checksum: blake3:22f6a03d30e790eb14b323e6a5a2a749071606e735db34f5a3103a2053c08932
+      alpamayo/LICENSE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2FLICENSE
+        checksum: blake3:3cfc678f9656a159fd0b76dbcaa91511c2028e64c8b42b34295ce603e408e59e
+      alpamayo/README.md:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2FREADME.md
+        checksum: blake3:e7850953a9b1ab522f5306a9501d3b76d5da7c364e91cccc56c49160b2d15f10
+      alpamayo/added_tokens.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fadded_tokens.json
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+      alpamayo/chat_template.jinja:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fchat_template.jinja
+        checksum: blake3:3191378e99ab34d62d52f4d75a33565db0995435dc6f68d8e543d0e9f6115d05
+      alpamayo/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fconfig.json
+        checksum: blake3:f4bb9fdef18cebbcc867d8b12b2dfb0b772535e435c7eee354567707efad32de
+      alpamayo/generation_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fgeneration_config.json
+        checksum: blake3:cf5f00ea848dfd65f46424b723eaee87c3fa8ee9bb1517592797239dd64a80a2
+      alpamayo/images/Alpamayo-2-Super_Benchmark-Results_A.png:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fimages%2FAlpamayo-2-Super_Benchmark-Results_A.png
+        checksum: blake3:df40feeefd3cde209d504d7218ab11151c1abe9eee0f8486c6c8f6f4e9f29963
+      alpamayo/images/Alpamayo-2-Super_Benchmark-Results_B.png:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fimages%2FAlpamayo-2-Super_Benchmark-Results_B.png
+        checksum: blake3:d9b3337d92adf8ffa283b5072b56d6e8e23c536fd85dfb8f0e850b6a695a0bbe
+      alpamayo/merges.txt:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmerges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      alpamayo/model-00001-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00001-of-00015.safetensors
+        checksum: blake3:b07bae234bdc5ae558aeeb0a0a8f0217505eabcdbbc4939d8d5c6d534d719bcc
+      alpamayo/model-00002-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00002-of-00015.safetensors
+        checksum: blake3:bd4c816e1855784ade51b3537ee735216acfade14d66ba3a15e72cd2d7948da5
+      alpamayo/model-00003-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00003-of-00015.safetensors
+        checksum: blake3:9aeb691ab1910ed0eb79d69384f70740c07a9e421e46911f7af1328c31eae2a8
+      alpamayo/model-00004-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00004-of-00015.safetensors
+        checksum: blake3:7e5349dd73cb7905911a1beec9711e1df00ccd659797093c89c0c50f040cabd0
+      alpamayo/model-00005-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00005-of-00015.safetensors
+        checksum: blake3:b0ce1bdcc226c5ce4d99a3c6bc872ad75950ed55733ee18a01a4209bd8e4bbea
+      alpamayo/model-00006-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00006-of-00015.safetensors
+        checksum: blake3:0acb659e683177540e30e51a79de41c14f187e70056b00cae92bb3ff16fffede
+      alpamayo/model-00007-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00007-of-00015.safetensors
+        checksum: blake3:64b551204bb994532110f39030c8533ec0e08e38b953d446cedfd4f1f3e29d83
+      alpamayo/model-00008-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00008-of-00015.safetensors
+        checksum: blake3:7446646d8abe94cebaf25ce18e866f8b4fc620d8ca4741f8d4393274ad780a52
+      alpamayo/model-00009-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00009-of-00015.safetensors
+        checksum: blake3:ff41ae32c9c7c28ab26c4cac93063d0884b67dbb924f42f6b080008d31997ed9
+      alpamayo/model-00010-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00010-of-00015.safetensors
+        checksum: blake3:8da6c12d15667c1fedd3c476f1421e4632cb121645f85452aef305d4170a4dbc
+      alpamayo/model-00011-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00011-of-00015.safetensors
+        checksum: blake3:86f6a828dded307492805daa6cd9a97a7b7529060c951770a8db7e74f51a760a
+      alpamayo/model-00012-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00012-of-00015.safetensors
+        checksum: blake3:e3d740e02b923081eb4f9c0a039ea5d2a76d1dc81078b14e28161fe0bd462fd2
+      alpamayo/model-00013-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00013-of-00015.safetensors
+        checksum: blake3:aa95a1f1120ba8a814364efc7faf37b0050a68d7b358d475bffb89310e24c802
+      alpamayo/model-00014-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00014-of-00015.safetensors
+        checksum: blake3:5d15153b67ccc8f625e0267b3c249b3bde32b53570de926b16a4cb28b1b8e37b
+      alpamayo/model-00015-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00015-of-00015.safetensors
+        checksum: blake3:e9492a61d6b91d239749c840a3dca1c0f8669dbe30dfa4d9ff74cc0a617c8b24
+      alpamayo/model.safetensors.index.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel.safetensors.index.json
+        checksum: blake3:96085349e3b63530a8be4f0e0b39c2cf2e3cdc92c6cc390fa851a3d812c3b11f
+      alpamayo/preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fpreprocessor_config.json
+        checksum: blake3:17e39869a63ea206ad5c6b0ca5e7b99f975717f07e8c3e213f9a522e831231cb
+      alpamayo/special_tokens_map.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fspecial_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      alpamayo/tokenizer.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Ftokenizer.json
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+      alpamayo/tokenizer_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Ftokenizer_config.json
+        checksum: blake3:3d5f293baa1d753dc08e55511fd7f34829eadb53465bd0ed5bb00599cb50efec
+      alpamayo/video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fvideo_preprocessor_config.json
+        checksum: blake3:ed2bf48e2d5bf03c53da98acacc2972522521b0b5270737c6dc6e697f947ef68
+      alpamayo/vocab.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fvocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  workspace_hash: 90251424adcd6ec56efa5756001f304317891da3b82a3f2ffb34e7b8b7d93442
+- id: 6d2ddc6da9f7710e0d9a43b39576da6cdb4a0c72a93b336b36a80ce38adf584b
+  tags:
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_attention_backend: fa3
+    expert_precision: bf16
+    expert_runtime: vllm-omni-model
+    feat_lora: 'false'
+    inference_scenario: latency
+    k: runtime
+    llm_engine: vllm-omni
+    max_k: '32'
+    min_k: '1'
+    min_vram_per_device_gb: '120.0'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: bf16
+    profile_name: bf16-dflash2
+    quantization: bf16
+    speculative_decoding: dflash2
+    speculative_metrics: summary
+    speculative_model_path: /opt/nim/workspace/dflash2
+    speculative_tokens: '7'
+    tp: '1'
+  workspace:
+    files:
+      HF_SOURCE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=HF_SOURCE
+        checksum: blake3:6b4a67a8d2b3726f72b53c0f62ab235e2ac372d2a6ad73775082768d8092b80a
+      alpamayo/.gitattributes:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2F.gitattributes
+        checksum: blake3:22f6a03d30e790eb14b323e6a5a2a749071606e735db34f5a3103a2053c08932
+      alpamayo/LICENSE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2FLICENSE
+        checksum: blake3:3cfc678f9656a159fd0b76dbcaa91511c2028e64c8b42b34295ce603e408e59e
+      alpamayo/README.md:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2FREADME.md
+        checksum: blake3:e7850953a9b1ab522f5306a9501d3b76d5da7c364e91cccc56c49160b2d15f10
+      alpamayo/added_tokens.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fadded_tokens.json
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+      alpamayo/chat_template.jinja:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fchat_template.jinja
+        checksum: blake3:3191378e99ab34d62d52f4d75a33565db0995435dc6f68d8e543d0e9f6115d05
+      alpamayo/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fconfig.json
+        checksum: blake3:f4bb9fdef18cebbcc867d8b12b2dfb0b772535e435c7eee354567707efad32de
+      alpamayo/generation_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fgeneration_config.json
+        checksum: blake3:cf5f00ea848dfd65f46424b723eaee87c3fa8ee9bb1517592797239dd64a80a2
+      alpamayo/images/Alpamayo-2-Super_Benchmark-Results_A.png:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fimages%2FAlpamayo-2-Super_Benchmark-Results_A.png
+        checksum: blake3:df40feeefd3cde209d504d7218ab11151c1abe9eee0f8486c6c8f6f4e9f29963
+      alpamayo/images/Alpamayo-2-Super_Benchmark-Results_B.png:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fimages%2FAlpamayo-2-Super_Benchmark-Results_B.png
+        checksum: blake3:d9b3337d92adf8ffa283b5072b56d6e8e23c536fd85dfb8f0e850b6a695a0bbe
+      alpamayo/merges.txt:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmerges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      alpamayo/model-00001-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00001-of-00015.safetensors
+        checksum: blake3:b07bae234bdc5ae558aeeb0a0a8f0217505eabcdbbc4939d8d5c6d534d719bcc
+      alpamayo/model-00002-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00002-of-00015.safetensors
+        checksum: blake3:bd4c816e1855784ade51b3537ee735216acfade14d66ba3a15e72cd2d7948da5
+      alpamayo/model-00003-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00003-of-00015.safetensors
+        checksum: blake3:9aeb691ab1910ed0eb79d69384f70740c07a9e421e46911f7af1328c31eae2a8
+      alpamayo/model-00004-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00004-of-00015.safetensors
+        checksum: blake3:7e5349dd73cb7905911a1beec9711e1df00ccd659797093c89c0c50f040cabd0
+      alpamayo/model-00005-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00005-of-00015.safetensors
+        checksum: blake3:b0ce1bdcc226c5ce4d99a3c6bc872ad75950ed55733ee18a01a4209bd8e4bbea
+      alpamayo/model-00006-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00006-of-00015.safetensors
+        checksum: blake3:0acb659e683177540e30e51a79de41c14f187e70056b00cae92bb3ff16fffede
+      alpamayo/model-00007-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00007-of-00015.safetensors
+        checksum: blake3:64b551204bb994532110f39030c8533ec0e08e38b953d446cedfd4f1f3e29d83
+      alpamayo/model-00008-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00008-of-00015.safetensors
+        checksum: blake3:7446646d8abe94cebaf25ce18e866f8b4fc620d8ca4741f8d4393274ad780a52
+      alpamayo/model-00009-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00009-of-00015.safetensors
+        checksum: blake3:ff41ae32c9c7c28ab26c4cac93063d0884b67dbb924f42f6b080008d31997ed9
+      alpamayo/model-00010-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00010-of-00015.safetensors
+        checksum: blake3:8da6c12d15667c1fedd3c476f1421e4632cb121645f85452aef305d4170a4dbc
+      alpamayo/model-00011-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00011-of-00015.safetensors
+        checksum: blake3:86f6a828dded307492805daa6cd9a97a7b7529060c951770a8db7e74f51a760a
+      alpamayo/model-00012-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00012-of-00015.safetensors
+        checksum: blake3:e3d740e02b923081eb4f9c0a039ea5d2a76d1dc81078b14e28161fe0bd462fd2
+      alpamayo/model-00013-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00013-of-00015.safetensors
+        checksum: blake3:aa95a1f1120ba8a814364efc7faf37b0050a68d7b358d475bffb89310e24c802
+      alpamayo/model-00014-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00014-of-00015.safetensors
+        checksum: blake3:5d15153b67ccc8f625e0267b3c249b3bde32b53570de926b16a4cb28b1b8e37b
+      alpamayo/model-00015-of-00015.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel-00015-of-00015.safetensors
+        checksum: blake3:e9492a61d6b91d239749c840a3dca1c0f8669dbe30dfa4d9ff74cc0a617c8b24
+      alpamayo/model.safetensors.index.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fmodel.safetensors.index.json
+        checksum: blake3:96085349e3b63530a8be4f0e0b39c2cf2e3cdc92c6cc390fa851a3d812c3b11f
+      alpamayo/preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fpreprocessor_config.json
+        checksum: blake3:17e39869a63ea206ad5c6b0ca5e7b99f975717f07e8c3e213f9a522e831231cb
+      alpamayo/special_tokens_map.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fspecial_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      alpamayo/tokenizer.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Ftokenizer.json
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+      alpamayo/tokenizer_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Ftokenizer_config.json
+        checksum: blake3:3d5f293baa1d753dc08e55511fd7f34829eadb53465bd0ed5bb00599cb50efec
+      alpamayo/video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fvideo_preprocessor_config.json
+        checksum: blake3:ed2bf48e2d5bf03c53da98acacc2972522521b0b5270737c6dc6e697f947ef68
+      alpamayo/vocab.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1?file=alpamayo%2Fvocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+      dflash2/alpamayo_dflash_metadata.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=alpamayo_dflash_metadata.json
+        checksum: blake3:3cfd76ab5f18ee3a66ce70c315a74606739b226287a9c4960a30921ee4965b45
+      dflash2/checksums.blake3:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=checksums.blake3
+        checksum: blake3:2602299031e07364ab9c24f447c50072cea14be0de7c07e56f43b7363d28e566
+      dflash2/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=config.json
+        checksum: blake3:c0e0b8198cfb86dc2b8f83c4ec3569cc3142e3906ea3e00f990f9e241d0fcc7a
+      dflash2/model.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.1-dflash2-rc2?file=model.safetensors
+        checksum: blake3:97b330341930a729ece6c1e01cca36622d8c7a50247a73375d66a510ecf05171
+  workspace_hash: 969e7a87f8fc6dc5a2595bce85dcb62d10056ecb3a1baf1a09fe16209d4608b2
+- id: eba28474ca54156565ff3904d5b9baf7ab2228cfd4509a5984cd19964db8b795
+  tags:
+    checkpoint_format: modelopt
+    custom_startup_script: startup.sh
+    default_k: '1'
+    expert_attention_backend: fa3
+    expert_precision: bf16
+    expert_runtime: vllm-omni-model
+    feat_lora: 'false'
+    inference_scenario: latency
+    k: runtime
+    llm_engine: vllm-omni
+    max_k: '32'
+    min_k: '1'
+    min_vram_per_device_gb: '80.0'
+    number_of_gpus: '1'
+    number_of_nodes: '1'
+    pp: '1'
+    precision: fp8
+    profile_name: fp8
+    quantization: fp8
+    tp: '1'
+  workspace:
+    files:
+      alpamayo/.gitattributes:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=.gitattributes
+        checksum: blake3:22f6a03d30e790eb14b323e6a5a2a749071606e735db34f5a3103a2053c08932
+      alpamayo/LICENSE:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=LICENSE
+        checksum: blake3:3cfc678f9656a159fd0b76dbcaa91511c2028e64c8b42b34295ce603e408e59e
+      alpamayo/README.md:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=README.md
+        checksum: blake3:b2c92c023d3522776ca0900c1f20c8f5f6006f18f9dcf0262af51d6892f1be90
+      alpamayo/added_tokens.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=added_tokens.json
+        checksum: blake3:2cf6d418c6fbdf1002590b46ffb92c7a1b97d09a661b41c09d05408066d33cfb
+      alpamayo/chat_template.jinja:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=chat_template.jinja
+        checksum: blake3:3191378e99ab34d62d52f4d75a33565db0995435dc6f68d8e543d0e9f6115d05
+      alpamayo/config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=config.json
+        checksum: blake3:a3ba56b2c87847582d3ecba2e913658db62ed78267314fbe3ecbab275badb83c
+      alpamayo/generation_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=generation_config.json
+        checksum: blake3:cf5f00ea848dfd65f46424b723eaee87c3fa8ee9bb1517592797239dd64a80a2
+      alpamayo/hf_quant_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=hf_quant_config.json
+        checksum: blake3:696a052995d5bb13497c5749610ade7290eb4e132dfceaacb503705ecbaebe4e
+      alpamayo/merges.txt:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=merges.txt
+        checksum: blake3:d001c4a60d63753a91a47bc85f6469b3faf91d3c7ebf8531b0a88f465fbc6306
+      alpamayo/model-00001-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00001-of-00009.safetensors
+        checksum: blake3:629f0c7f608ab2c59f067e56ea798d1e41d4d64a8535b989426d22c61460da3c
+      alpamayo/model-00002-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00002-of-00009.safetensors
+        checksum: blake3:1b1816cbc42ede5c4410f70cb33148abb6f4f8e5e0d166650b16fe70e851eee2
+      alpamayo/model-00003-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00003-of-00009.safetensors
+        checksum: blake3:68e4102391dcfb51291007beb05aa11484f3f4459f9d88751629276afdf74a30
+      alpamayo/model-00004-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00004-of-00009.safetensors
+        checksum: blake3:899d9de3d58d20fe473b7f809f5ba4b5c52d201ab0174e651022f1412afc27bb
+      alpamayo/model-00005-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00005-of-00009.safetensors
+        checksum: blake3:f01e580d34c69654381bfa19c2b0ae8eff09efe0044ae6c4808be24ecbb85031
+      alpamayo/model-00006-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00006-of-00009.safetensors
+        checksum: blake3:92704685753bc9651dd318a0f80746c81fea2a7b6a3d17d797cae947ef47c437
+      alpamayo/model-00007-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00007-of-00009.safetensors
+        checksum: blake3:9b321ae3f27bbaf7975a14bb736e36b2c450ca20c2d6f5b43d79d1d8e9046aa1
+      alpamayo/model-00008-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00008-of-00009.safetensors
+        checksum: blake3:32adb7f3d53d1dd53199619d849cecae832ece0acebb07fb6104dfee0bbcfa12
+      alpamayo/model-00009-of-00009.safetensors:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model-00009-of-00009.safetensors
+        checksum: blake3:b0f3bf734faf1e82af7c305662ef90d1ba0b6ad15dc0d21051c6ddfcaf28c8d2
+      alpamayo/model.safetensors.index.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=model.safetensors.index.json
+        checksum: blake3:11d26b6a4ffdb8e5fc409bb4cec02d3fc2f197d47f61b79d8f173f64deef6258
+      alpamayo/preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=preprocessor_config.json
+        checksum: blake3:17e39869a63ea206ad5c6b0ca5e7b99f975717f07e8c3e213f9a522e831231cb
+      alpamayo/quantization_provenance.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=quantization_provenance.json
+        checksum: blake3:ac2ac40219ed3ccf3c4e04be9ecd63900a22076f2a8227b2c1d46cf89ddcf8a4
+      alpamayo/special_tokens_map.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=special_tokens_map.json
+        checksum: blake3:2eeb7e67715a2b89faa2410a71705e10232c62dbef646c3f1928230cecb4b245
+      alpamayo/tokenizer.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=tokenizer.json
+        checksum: blake3:b0cb923fc505fdf0a53f0287654fa26577d3f333d4134350da0a97664b228739
+      alpamayo/tokenizer_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=tokenizer_config.json
+        checksum: blake3:3d5f293baa1d753dc08e55511fd7f34829eadb53465bd0ed5bb00599cb50efec
+      alpamayo/video_preprocessor_config.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=video_preprocessor_config.json
+        checksum: blake3:ed2bf48e2d5bf03c53da98acacc2972522521b0b5270737c6dc6e697f947ef68
+      alpamayo/vocab.json:
+        uri: ngc://nim/nvidia/alpamayo-2-super:0.0.2-fp8-rc1?file=vocab.json
+        checksum: blake3:8837532945f70ff1bef751f8011ba713b2d119f4f58ff3765a6fb24001d6c5fe
+  workspace_hash: a49b318d1a31259932a87737cad22d3e8aad96e03ac20b26b296099aad1baaab

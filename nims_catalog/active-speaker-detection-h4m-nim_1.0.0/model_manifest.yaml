@@ -1,0 +1,73 @@
+schema_version: '2.0'
+profile_selection_criteria: auto
+model: nim/nvidia/active-speaker-detection
+release: 1.0.0
+profiles:
+- id: 52cab9095cb4dcefd3bca0484b1939046d4b44a3d2cf8201e84509fc712fba53
+  tags:
+    gpu: T4
+    gpu_cc: '7.5'
+    nim_workspace_hash_v1: bddb31bada3a15d271789ea9e8107e02ae26c7999109187bcb6bfb2c7d8b5045
+    precision: fp16
+  workspace:
+    files:
+      config/models/active-speaker-detection/face_and_landmark_detector_119_fp32_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm75?file=face_and_landmark_detector_119_fp32_75.engine.trtpkg
+        checksum: blake3:0b5c605aeb2f672b6f945ef390785ed99cebd251d2cd68d0f08dbe1d8648e897
+      config/models/active-speaker-detection/reid_fp32_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm75?file=reid_fp32_75.engine.trtpkg
+        checksum: blake3:e7ab88ebdc1ff2b71a9f883dda3a76aab3d9aa7640959ad16af9bf1111b58a19
+      config/models/active-speaker-detection/sync_discriminator_fp16_75.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm75?file=sync_discriminator_fp16_75.engine.trtpkg
+        checksum: blake3:5113e05fdde35b344a5b5e083015e3216ddd07f6202eaf5bca82069927cd4b02
+- id: 78a24c0c4c1858aef26c964f64ac6b6a4b8b75197e23e7ee243d71fc6939ff98
+  tags:
+    gpu: L4, L40, RTX4090
+    gpu_cc: '8.9'
+    nim_workspace_hash_v1: 73434ed4472c7463e4202c36e66b13477bc224b4c97313cd7d9c63adadc6e185
+    precision: fp16
+  workspace:
+    files:
+      config/models/active-speaker-detection/face_and_landmark_detector_119_fp32_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm89?file=face_and_landmark_detector_119_fp32_89.engine.trtpkg
+        checksum: blake3:6f22ef33d527bc2443661f233f134714ba690a8f2dde4fbb8167bf30dcf0b9b5
+      config/models/active-speaker-detection/reid_fp32_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm89?file=reid_fp32_89.engine.trtpkg
+        checksum: blake3:f5863a4409b0c1f07e3f6eadcf3f593adc49b701bfa4c2012c3fddd50e227c6d
+      config/models/active-speaker-detection/sync_discriminator_fp16_89.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm89?file=sync_discriminator_fp16_89.engine.trtpkg
+        checksum: blake3:7b863dfbbaa2188f036fcb0d0e16e51ae3b0f6bb6ccf11291e1c3809ab5693ea
+- id: dcc949a9d8d1c5e492e0954c79f716244574329d6e4b661abf81fc9d7f7158a5
+  tags:
+    gpu: B40,RTX5090, RTX5080, RTX PRO 6000 Blackwell Server Edition
+    gpu_cc: '12.0'
+    nim_workspace_hash_v1: 329e0d1f7b7f12b41392d94fd789c123314cf8c3961323f143cc90fe467488a4
+    precision: fp16
+  workspace:
+    files:
+      config/models/active-speaker-detection/face_and_landmark_detector_119_fp32_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm120?file=face_and_landmark_detector_119_fp32_120.engine.trtpkg
+        checksum: blake3:e01b260d34b0ca8e5a7c104f1d2673b68e7adab26af0e9b8c4174765fe5a9cf9
+      config/models/active-speaker-detection/reid_fp32_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm120?file=reid_fp32_120.engine.trtpkg
+        checksum: blake3:b382009ab63dc4231e83df0b8e0429bb9dca3622b36f8505da56c9ba241a385e
+      config/models/active-speaker-detection/sync_discriminator_fp16_120.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm120?file=sync_discriminator_fp16_120.engine.trtpkg
+        checksum: blake3:5a7a5956782752bc68db10316921f469a963419650589fc8dfaae6fb1d3645c9
+- id: e1bba1aa38a23d4b89f3fdfc5a6707cda027e946e4993d230799c41f8dded8c8
+  tags:
+    gpu: A2, A10, A16, A40
+    gpu_cc: '8.6'
+    nim_workspace_hash_v1: 5ef213138bef1ddb9b160dccdb85c7476078acb2cf79c799601ad9392ded9506
+    precision: fp16
+  workspace:
+    files:
+      config/models/active-speaker-detection/face_and_landmark_detector_119_fp32_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm86?file=face_and_landmark_detector_119_fp32_86.engine.trtpkg
+        checksum: blake3:5b4283bffd0e8c198cb63875cfc298133224c5a170730c95842d0560f680c55d
+      config/models/active-speaker-detection/reid_fp32_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm86?file=reid_fp32_86.engine.trtpkg
+        checksum: blake3:f7b2c3a9bf713b92b1a31d9e488ff8ec41903eea8f994773b4848d8ce14ff067
+      config/models/active-speaker-detection/sync_discriminator_fp16_86.engine.trtpkg:
+        uri: ngc://nim/nvidia/active-speaker-detection:1.1.0.0_models_linux_sm86?file=sync_discriminator_fp16_86.engine.trtpkg
+        checksum: blake3:fbee2804b1e1cd90d0361c17c0628efd6c3e6922933ab00e920e90eb208535f8
