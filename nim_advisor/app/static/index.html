@@ -21,6 +21,7 @@
 <nav class="tabs" role="tablist">
   <a href="#recommend" class="tab" data-tab="recommend" role="tab">Recommend</a>
   <a href="#models" class="tab" data-tab="models" role="tab">Models</a>
+  <a href="#load" class="tab" data-tab="load" role="tab">Load NIMs</a>
   <a href="#validation" class="tab" data-tab="validation" role="tab">GPU validation</a>
   <a href="#pcai" class="tab" data-tab="pcai" role="tab">PCAI systems</a>
   <a href="#about" class="tab" data-tab="about" role="tab">How it works</a>
@@ -103,6 +104,52 @@
       <span id="m-count" class="muted"></span>
     </div>
     <div class="table-wrap card"><table id="m-table" class="table"></table></div>
+  </section>
+
+  <!-- LOAD NIMS -->
+  <section id="tab-load" class="panel" data-panel="load" hidden>
+    <div id="load-status"></div>
+    <div class="load-grid">
+      <form id="single-form" class="card stack" autocomplete="off">
+        <h2>Get the profiles of one NIM image</h2>
+        <p class="muted">The server runs <code>nim_profile_finder_v2.sh</code>: skopeo reads only the manifest label or
+          layer, never the multi-GB image. The profiles are stored in the database and used by the recommender right away.</p>
+        <label for="s-image">NIM image or NGC catalog URL</label>
+        <input id="s-image" name="image" required maxlength="500" spellcheck="false"
+               placeholder="nvcr.io/nim/meta/llama-3.1-8b-instruct:1.8.4">
+        <div class="hint muted">Also accepted: <code>docker pull …</code> and
+          <code>https://catalog.ngc.nvidia.com/orgs/nim/teams/meta/containers/llama-3.1-8b-instruct?version=1.8.4</code>.
+          Without a tag, <code>latest</code> is used.</div>
+        <details class="plain"><summary>Optional: display name and description</summary>
+          <label for="s-name">Display name</label>
+          <input id="s-name" name="display_name" maxlength="200" placeholder="e.g. Llama 3.1 8B Instruct">
+          <label for="s-desc">Description</label>
+          <input id="s-desc" name="description" maxlength="4000">
+        </details>
+        <button class="primary" type="submit">Fetch profiles</button>
+        <div id="single-result" aria-live="polite"></div>
+      </form>
+
+      <form id="bulk-form" class="card stack" autocomplete="off">
+        <h2>Bulk import from a catalog JSON</h2>
+        <p class="muted">A JSON array in the <code>nim_catalog.json</code> format (each entry needs an <code>image</code>;
+          name, displayName, description and labels are kept) or a plain array of image strings.</p>
+        <label for="b-file">Catalog JSON file</label>
+        <input id="b-file" type="file" accept=".json,application/json">
+        <details class="plain"><summary>…or paste the JSON</summary>
+          <textarea id="b-text" rows="6" spellcheck="false"
+                    placeholder='["nvcr.io/nim/nvidia/llama-3.2-nv-embedqa-1b-v2:latest"]'></textarea>
+          <button type="button" id="b-check" class="small">Check pasted JSON</button>
+        </details>
+        <label class="check"><input id="b-force" type="checkbox"> Re-fetch NIMs that already have profiles</label>
+        <div id="bulk-preview" aria-live="polite"></div>
+        <button class="primary" type="submit" id="b-start" disabled>Start import</button>
+      </form>
+    </div>
+    <div class="card jobs-card">
+      <div class="jobs-head"><h2>Import jobs</h2><span id="jobs-note" class="muted"></span></div>
+      <div id="jobs"><div class="empty">No import jobs yet.</div></div>
+    </div>
   </section>
 
   <!-- VALIDATION -->

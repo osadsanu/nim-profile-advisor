@@ -1,0 +1,28 @@
+NIM Profile Advisor {{ .Chart.AppVersion }} ({{ .Release.Name }} in {{ .Release.Namespace }})
+
+{{- if .Values.pcai.enabled }}
+
+Open the application tile in Tools & Frameworks, or:
+  https://{{ .Values.ezua.virtualService.endpoint }}
+{{- else if .Values.ingress.enabled }}
+
+  http{{ if .Values.ingress.tls }}s{{ end }}://{{ .Values.ingress.host }}
+{{- else }}
+
+  kubectl -n {{ .Release.Namespace }} port-forward svc/{{ include "nim-profile-advisor.fullname" . }} 8080:{{ .Values.service.port }}
+  then open http://127.0.0.1:8080
+{{- end }}
+
+{{- if eq (toString .Values.env.SEED_IMPORT) "off" }}
+
+SEED_IMPORT is off: load NIMs from the "Load NIMs" tab or run the importer in the pod.
+{{- else }}
+
+On the first start the website imports the NIM catalog bundled in the image (about a minute, shown in the header).
+{{- end }}
+
+{{- if include "nim-profile-advisor.isPlaceholder" .Values.env.NGC_API_KEY }}
+
+env.NGC_API_KEY is not set: the "Load NIMs" tab cannot fetch nvcr.io images.
+Set it with Configure (PCAI) or helm upgrade --set env.NGC_API_KEY=<key>.
+{{- end }}

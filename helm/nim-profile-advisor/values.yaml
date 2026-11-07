@@ -1,0 +1,193 @@
+# Default values for nim-profile-advisor (HPE Private Cloud AI framework).
+# Import: Tools & Frameworks > Import Framework, upload the packaged chart (helm package helm/nim-profile-advisor)
+# and in the "Review Config" step replace the <placeholders> in "env".
+
+ezua:
+  # Use next options in order to configure the application endpoint.
+  virtualService:
+    endpoint: "nim-advisor.${DOMAIN_NAME}"
+    istioGateway: "istio-system/ezaf-gateway"
+  # Istio authorization policy (PCAI single sign-on through oauth2-proxy), rendered when pcai.sso is true
+  authorizationPolicy:
+    namespace: "istio-system"
+    providerName: "oauth2-proxy"
+    matchLabels:
+      istio: "ingressgateway"
+
+# PCAI integration switches (outside "ezua", whose sections the EzApp controller validates strictly)
+pcai:
+  # VirtualService + hpe-ezua labels policy. false = plain Kubernetes without Istio / Kyverno (use "ingress").
+  enabled: true
+  # Put the website behind PCAI single sign-on (renders ezua.authorizationPolicy). Recommended when the
+  # Load NIMs tab is enabled, so only PCAI users can start NGC downloads.
+  sso: false
+  # Kyverno ClusterPolicy (framework guide) adding the hpe-ezua labels at admission time. It only matches the pods
+  # of this release; the labels are also set in the pod templates.
+  kyverno: true
+
+# Environment of the website and MongoDB credentials, stored in a Kubernetes Secret.
+# Replace the <placeholders> before deploying (PCAI: Review Config, later: Configure).
+env:
+  MONGO_ROOT_USER: "nimadmin"
+  # Required. Root password of the bundled MongoDB, set when its volume is first created.
+  MONGO_ROOT_PASSWORD: "<MONGO_ROOT_PASSWORD>"
+  MONGO_DB: "nim_advisor"
+  # NGC API key for nvcr.io: enables the Load NIMs tab (leave the placeholder for a read-only advisor).
+  NGC_API_KEY: "<NGC_API_KEY>"
+  # Registry prefix of catalog entries that mirror nvcr.io (fetched from nvcr.io)
+  INTERNAL_REGISTRY_PREFIX: "registry.example.com/ezmeral-common/"
+  # Images fetched in parallel by the Load NIMs tab
+  FETCH_WORKERS: "4"
+  # "false" = read-only advisor: the Load NIMs tab cannot start jobs
+  IMPORT_ENABLED: "true"
+  # Import the NIM catalog bundled in the image when the website starts: if-changed | always | off
+  SEED_IMPORT: "if-changed"
+
+annotations: {}
+# Keep 1: fetch jobs run inside the website process (state is in MongoDB, so more replicas still work)
+replicaCount: 1
+
+image:
+  # Published by .github/workflows/image.yml. Air-gapped PCAI: "${AIRGAP_REGISTRY}/osadsanu/nim-profile-advisor"
+  repository: ghcr.io/osadsanu/nim-profile-advisor
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion. Pin "sha-<commit>" or a release version.
+  tag: "latest"
+
+# Secrets for pulling the image from a private registry (e.g. a private GHCR package)
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # The website does not call the Kubernetes API
+  automount: false
+  annotations: {}
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 10001
+  runAsGroup: 10001
+  fsGroup: 10001
+  seccompProfile:
+    type: RuntimeDefault
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+
+service:
+  type: ClusterIP
+  port: 80
+  # Port of the website in the container (uvicorn)
+  containerPort: 8000
+  nodePort: ""
+  labels: {}
+  loadBalancerClass: ""
+
+# Only for plain Kubernetes (pcai.enabled: false); PCAI exposes the website through the VirtualService
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  host: ""
+  additionalHosts: []
+  tls: false
+  existingSecret: ""
+
+resources:
+  limits:
+    cpu: 2
+    memory: 2Gi
+  requests:
+    cpu: 250m
+    memory: 512Mi
+
+# Scratch space of nim_profile_finder_v2.sh: the manifest layer of an image is downloaded here (one per worker)
+fetchTmp:
+  sizeLimit: 8Gi
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: http
+  initialDelaySeconds: 10
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+readinessProbe:
+  httpGet:
+    path: /api/health
+    port: http
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 6
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+
+# Additional volumes on the output Deployment definition.
+volumes: []
+# Additional volumeMounts on the output Deployment definition.
+volumeMounts: []
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+# Bundled MongoDB (StatefulSet with a persistent volume)
+mongodb:
+  # false = use an existing MongoDB through externalUri
+  enabled: true
+  # e.g. mongodb://user:password@host:27017/?authSource=admin (only when enabled is false)
+  externalUri: ""
+  image:
+    repository: mongo
+    # MongoDB 8 refuses to start on Linux kernels 6.19 to 7.0.13 ("known incompatibility with this version of
+    # MongoDB"); use "7.0" on such nodes. PCAI nodes (RHEL 8.10, Ubuntu 24.04) run older kernels.
+    tag: "8.0"
+    pullPolicy: IfNotPresent
+  persistence:
+    enabled: true
+    size: 5Gi
+    # empty = default storage class of the cluster
+    storageClass: ""
+    accessModes:
+      - ReadWriteOnce
+  resources:
+    limits:
+      cpu: 2
+      memory: 2Gi
+    requests:
+      cpu: 250m
+      memory: 512Mi
+  podAnnotations: {}
+  podSecurityContext:
+    runAsNonRoot: true
+    runAsUser: 999
+    runAsGroup: 999
+    fsGroup: 999
+    seccompProfile:
+      type: RuntimeDefault
+  securityContext:
+    allowPrivilegeEscalation: false
+    capabilities:
+      drop:
+        - ALL
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}

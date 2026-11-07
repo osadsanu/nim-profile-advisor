@@ -3,31 +3,79 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 import re
+import threading
+import time
+from collections import Counter
+from contextlib import asynccontextmanager
+from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
 from pymongo import MongoClient
 
+from . import fetcher
+from .importer import IMPORT_MODES, run_import, wait_for_mongo
 from .recommender import GOALS, Store, gpu_summary, model_detail, recommend, resolve_gpu
 
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
 MONGO_DB = os.environ.get("MONGO_DB", "nim_advisor")
 DATA_DIR = Path(os.environ.get("DATA_DIR", "/data"))
+# Import the data bundled in the image when the website starts (Kubernetes / PCAI); docker compose uses the
+# importer service instead. off | always | if-changed
+SEED_IMPORT = os.environ.get("SEED_IMPORT", "off").strip().lower()
 
+log = logging.getLogger("uvicorn.error")
 client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=10000, tz_aware=True)
 db = client[MONGO_DB]
 store = Store(db)
+jobs = fetcher.JobManager(db, on_change=store.invalidate)
+seed = {"mode": SEED_IMPORT, "status": "pending" if SEED_IMPORT in IMPORT_MODES else "off", "message": None}
 
-app = FastAPI(title="NIM Profile Advisor for HPE PCAI", version="1.0.0")
+
+def _seed_import() -> None:
+    for attempt in range(1, 11):
+        seed.update(status="running", message=None if attempt == 1 else f"attempt {attempt}")
+        try:
+            wait_for_mongo(client, 300, log=log.info)
+            run = run_import(db, DATA_DIR, SEED_IMPORT)
+            seed.update(status="done" if run else "unchanged",
+                        message=f"import run {run['_id']}" if run else "bundled data unchanged since the last import")
+            store.invalidate()
+            log.info("seed import (%s): %s", SEED_IMPORT, seed["message"])
+            return
+        except Exception as exc:  # noqa: BLE001 - retried, reported in /api/stats
+            log.exception("seed import failed (attempt %s)", attempt)
+            seed.update(status="failed", message=f"{exc.__class__.__name__}: {exc}"[:300])
+            time.sleep(min(60, 10 * attempt))
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    if seed["status"] == "pending":
+        threading.Thread(target=_seed_import, name="seed-import", daemon=True).start()
+    yield
+    jobs.shutdown()
+
+
+app = FastAPI(title="NIM Profile Advisor for HPE PCAI", version="1.1.0", lifespan=lifespan)
+
+
+def _json_default(value: Any) -> str:
+    if isinstance(value, datetime):
+        return value.isoformat(timespec="milliseconds")
+    return str(value)
 
 
 def _clean(doc):
     """Make Mongo documents JSON friendly."""
-    return json.loads(json.dumps(doc, default=str))
+    return json.loads(json.dumps(doc, default=_json_default))
 
 
 @app.get("/api/health")
@@ -51,6 +99,8 @@ def stats():
         "pcai_configurations": len(store.pcai),
         "categories": dict(sorted(categories.items())),
         "goals": GOALS,
+        "seed": seed,
+        "import_enabled": fetcher.IMPORT_ENABLED,
     })
 
 
@@ -92,10 +142,10 @@ def models(q: str | None = Query(None, max_length=120), category: str | None = N
                                                " ".join(m.get("gpu_device_ids", []))]).lower():
             continue
         items.append({k: m.get(k) for k in ("_id", "name", "display_name", "description", "category", "image",
-                                            "fetched_image", "latest_version", "size_bytes", "profile_count",
+                                            "fetched_image", "tag", "latest_version", "size_bytes", "profile_count",
                                             "gpu_device_ids", "gpu_ids", "compute_capabilities", "engines",
                                             "precisions", "fetch", "catalog_gpu_labels", "manifest", "logo",
-                                            "publisher", "source")})
+                                            "publisher", "source", "origin")})
     items.sort(key=lambda m: m["display_name"].lower())
     return _clean(items)
 
@@ -166,6 +216,112 @@ def rules():
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------
+# Load NIMs: fetch profiles of one image or of a catalog JSON (see fetcher.py)
+# ---------------------------------------------------------------------------
+
+class ImageRequest(BaseModel):
+    image: str = Field(..., min_length=1, max_length=500, description="image, docker pull command or NGC URL")
+    display_name: str | None = Field(None, max_length=200)
+    description: str | None = Field(None, max_length=4000)
+
+
+class CatalogRequest(BaseModel):
+    data: Any = Field(..., description="catalog JSON (nim_catalog.json format) or a list of images")
+    force: bool = Field(False, description="re-fetch images that already have profiles")
+    source_name: str | None = Field(None, max_length=200)
+
+
+def _check_import_allowed() -> None:
+    if not fetcher.IMPORT_ENABLED:
+        raise HTTPException(403, "Loading NIMs is disabled on this server (IMPORT_ENABLED=false)")
+    cfg = fetcher.config()
+    if not cfg["finder_available"]:
+        missing = [t for t, ok in cfg["tools"].items() if not ok]
+        raise HTTPException(503, "nim_profile_finder_v2.sh cannot run here: " +
+                            (f"missing {', '.join(missing)}" if missing else "script not found (FINDER_SCRIPT)"))
+
+
+def _catalog_rows(req: CatalogRequest) -> tuple[list[dict], list[dict]]:
+    try:
+        entries, problems = fetcher.normalize_entries(req.data)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+    return fetcher.classify(db, entries, req.force), problems
+
+
+@app.get("/api/import/config")
+def import_config():
+    return fetcher.config()
+
+
+@app.post("/api/import/image", status_code=202)
+def import_image(req: ImageRequest):
+    _check_import_allowed()
+    try:
+        image = fetcher.parse_image_input(req.image)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from None
+    return _clean(jobs.create_single(image, req.display_name, req.description))
+
+
+@app.post("/api/import/preview")
+def import_preview(req: CatalogRequest):
+    rows, problems = _catalog_rows(req)
+    counts = Counter(r["state"] for r in rows)
+    counts["invalid"] = len(problems)
+    return _clean({"total": len(rows) + len(problems), "to_fetch": counts["new"] + counts["retry"] + counts["refresh"],
+                   "counts": counts, "rows": [{k: v for k, v in r.items() if k != "entry"} for r in rows],
+                   "problems": problems})
+
+
+@app.post("/api/import/bulk", status_code=202)
+def import_bulk(req: CatalogRequest):
+    _check_import_allowed()
+    rows, problems = _catalog_rows(req)
+    if not any(r["state"] in ("new", "retry", "refresh") for r in rows):
+        raise HTTPException(422, "Nothing to fetch: every image already has profiles in the database "
+                                 "(tick 'Re-fetch NIMs that already have profiles' to refresh them)")
+    return _clean(jobs.create_job("bulk", rows, req.force, problems=problems, source_name=req.source_name))
+
+
+@app.get("/api/import/jobs")
+def import_jobs(limit: int = Query(20, ge=1, le=100)):
+    return _clean(jobs.list_jobs(limit))
+
+
+@app.get("/api/import/jobs/{job_id}")
+def import_job(job_id: str):
+    job = jobs.get_job(job_id)
+    if not job:
+        raise HTTPException(404, "job not found")
+    return _clean(job)
+
+
+@app.get("/api/import/jobs/{job_id}/items/{index}/log", response_class=PlainTextResponse)
+def import_job_log(job_id: str, index: int):
+    text = jobs.item_log(job_id, index)
+    if text is None:
+        raise HTTPException(404, "no log for this image")
+    return text
+
+
+@app.post("/api/import/jobs/{job_id}/cancel")
+def import_job_cancel(job_id: str):
+    if not jobs.cancel(job_id):
+        raise HTTPException(409, "the job is not running")
+    return {"cancel_requested": True}
+
+
+@app.post("/api/import/jobs/{job_id}/retry", status_code=202)
+def import_job_retry(job_id: str):
+    _check_import_allowed()
+    job = jobs.retry(job_id)
+    if not job:
+        raise HTTPException(409, "nothing to retry: the job is still running or every image succeeded")
+    return _clean(job)
 
 
 app.mount("/", StaticFiles(directory=Path(__file__).parent / "static", html=True), name="static")

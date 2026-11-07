@@ -9,18 +9,30 @@ const fmtBytes = (b) => (b ? `${(b / 1e9).toFixed(1)} GB` : "—");
 const short = (id) => (id && id.length > 16 ? `${id.slice(0, 12)}…` : id || "");
 const debounce = (fn, ms = 250) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 
-async function api(path) {
-  const r = await fetch(path, { headers: { Accept: "application/json" } });
+async function api(path, options = {}) {
+  const init = { headers: { Accept: "application/json" } };
+  if (options.body !== undefined) {
+    init.method = options.method || "POST";
+    init.headers["Content-Type"] = "application/json";
+    init.body = JSON.stringify(options.body);
+  } else if (options.method) {
+    init.method = options.method;
+  }
+  const r = await fetch(path, init);
   const text = await r.text();
   let data = {};
   try { data = text ? JSON.parse(text) : {}; } catch { data = { detail: text }; }
   if (!r.ok) {
-    const err = new Error(data.error || (typeof data.detail === "string" ? data.detail : r.statusText));
+    const detail = Array.isArray(data.detail) ? data.detail.map((d) => d.msg || JSON.stringify(d)).join("; ") : data.detail;
+    const err = new Error(data.error || (typeof detail === "string" && detail ? detail : r.statusText));
     err.data = data;
+    err.status = r.status;
     throw err;
   }
   return data;
 }
+const apiPost = (path, body) => api(path, { body: body ?? {} });
+const fmtTime = (s) => (s ? new Date(s).toLocaleString() : "—");
 
 const STATUS_BADGE = { validated: "ok", mapped: "info", conflict: "warn", unknown: "bad" };
 const FETCH_BADGE = { ok: "ok", skipped: "ok", failed: "bad", missing: "warn" };
@@ -49,13 +61,14 @@ function showTab(name) {
   $$(".panel").forEach((p) => (p.hidden = p.dataset.panel !== name));
   $$(".tab").forEach((t) => t.classList.toggle("active", t.dataset.tab === name));
   if (name === "models" && !state.models.length) loadModels();
+  if (name === "load") loadImportTab();
   if (name === "validation" && !state.validation.length) loadValidation();
   if (name === "pcai") renderPcai();
   if (name === "about") renderAbout();
 }
 function route() {
   const [name, query] = (location.hash.slice(1) || "recommend").split("?");
-  showTab(["recommend", "models", "validation", "pcai", "about"].includes(name) ? name : "recommend");
+  showTab(["recommend", "models", "load", "validation", "pcai", "about"].includes(name) ? name : "recommend");
   if (name === "recommend" && query) {
     const p = new URLSearchParams(query);
     const f = $("#rec-form");
@@ -89,6 +102,8 @@ async function init() {
   const cats = Object.keys(stats().categories || {});
   for (const sel of ["#f-category", "#m-category"]) $(sel).innerHTML += cats.map((c) => `<option>${esc(c)}</option>`).join("");
   route();
+  refreshJobs();
+  watchSeed();
 }
 const stats = () => state.stats || {};
 
@@ -96,10 +111,30 @@ function renderStats() {
   const s = stats();
   const run = s.import_run || {};
   const when = run.finished_at ? new Date(run.finished_at).toLocaleString() : "never";
+  const seeding = s.seed && ["pending", "running"].includes(s.seed.status);
   $("#stats").innerHTML = [
     ["models", s.models], ["profiles", s.profiles], ["GPUs", s.gpus], ["PCAI configs", s.pcai_configurations],
   ].map(([l, v]) => `<span class="stat"><b>${esc(v ?? 0)}</b> ${esc(l)}</span>`).join("") +
-    `<span class="stat" title="last import">imported ${esc(when)}</span>`;
+    `<span class="stat" title="last database update">updated ${esc(when)}</span>` +
+    (seeding ? `<span class="stat busy"><span class="spinner small"></span> importing the bundled catalog…</span>` : "") +
+    (s.seed && s.seed.status === "failed" ? `<span class="stat error" title="${esc(s.seed.message || "")}">bundled catalog import failed</span>` : "");
+}
+
+async function refreshStats() {
+  try { state.stats = await api("/api/stats"); renderStats(); } catch { /* keep the old numbers */ }
+}
+
+// First start on Kubernetes: the website imports the catalog bundled in the image in the background
+function watchSeed() {
+  const s = stats();
+  if (!s.seed || !["pending", "running"].includes(s.seed.status)) return;
+  const timer = setInterval(async () => {
+    await refreshStats();
+    const st = (stats().seed || {}).status;
+    if (["pending", "running"].includes(st)) return;
+    clearInterval(timer);
+    if (st === "done") location.reload();
+  }, 5000);
 }
 
 /* ---------- recommend form ---------- */
@@ -388,10 +423,290 @@ function renderModels() {
       <td>${esc(m.category)}</td><td>${esc(m.tag)}${m.manifest && m.manifest.release ? ` <span class="muted">(${esc(m.manifest.release)})</span>` : ""}</td>
       <td class="num">${esc(m.profile_count)}</td>
       <td>${esc((m.gpu_ids || []).map(gpuName).join(", ") || (m.compute_capabilities || []).map((c) => "CC " + c).join(", ") || "generic")}</td>
-      <td><span class="badge ${FETCH_BADGE[m.fetch.status] || ""}" title="${esc(m.fetch.message || "")}">${esc(m.fetch.status)}</span></td>
+      <td><span class="badge ${FETCH_BADGE[m.fetch.status] || ""}" title="${esc(m.fetch.message || "")}">${esc(m.fetch.status)}</span>${m.origin === "website" ? ' <span class="badge accent" title="loaded or refreshed from the Load NIMs tab">website</span>' : ""}</td>
     </tr>`).join("")}</tbody>`;
 }
 ["#m-q", "#m-category", "#m-status"].forEach((s) => $(s).addEventListener("input", debounce(renderModels, 150)));
+
+/* ---------- load NIMs tab ---------- */
+const load = { config: null, bulk: null, jobs: [], details: {}, open: new Set(), timer: null, watch: null, seen: {} };
+const JOB_BADGE = { queued: "info", running: "info", done: "ok", cancelled: "warn", interrupted: "warn" };
+const ITEM_BADGE = { queued: "", running: "info", ok: "ok", failed: "bad", skipped: "", cancelled: "warn", interrupted: "warn" };
+const ITEM_ORDER = { running: 0, failed: 1, interrupted: 2, cancelled: 3, ok: 4, queued: 5, skipped: 6 };
+const STATE_BADGE = {
+  new: ["ok", "new"], retry: ["info", "retry"], refresh: ["info", "re-fetch"], skip: ["", "skip"],
+  duplicate: ["warn", "duplicate"], invalid: ["bad", "invalid"],
+};
+const canImport = () => { const c = load.config || {}; return !!(c.enabled && c.finder_available); };
+
+async function loadImportTab() {
+  if (!load.config) {
+    try { load.config = await api("/api/import/config"); } catch (e) { load.config = { error: e.message }; }
+  }
+  renderImportStatus();
+  refreshJobs();
+}
+
+function renderImportStatus() {
+  const c = load.config || {};
+  const notes = [];
+  if (c.error) notes.push(`<span class="error">Cannot read the import configuration: ${esc(c.error)}</span>`);
+  if (c.enabled === false) notes.push("Loading NIMs is disabled on this server (<code>IMPORT_ENABLED=false</code>); existing jobs are still shown.");
+  if (c.enabled && !c.finder_available) {
+    const missing = Object.entries(c.tools || {}).filter(([, ok]) => !ok).map(([t]) => t);
+    notes.push(`<code>nim_profile_finder_v2.sh</code> cannot run in this container${missing.length ? ` (missing: ${esc(missing.join(", "))})` : " (script not found)"}.`);
+  }
+  if (c.enabled && !c.ngc_configured) {
+    notes.push(`<b>No NGC API key.</b> NIM images on nvcr.io need one: set <code>NGC_API_KEY</code> in <code>.env</code>
+      (docker compose) or <code>env.NGC_API_KEY</code> in the Helm values (PCAI: Configure).`);
+  }
+  $("#load-status").innerHTML = `<div class="card intro ${notes.length ? "warn-card" : ""}">${notes.length ? notes.join("<br>")
+    : `<b>Ready.</b> <span class="muted">NGC key configured · ${esc(c.workers)} images in parallel · up to
+       ${esc(Math.round(c.timeout_seconds / 60))} min per image · images under <code>${esc(c.internal_registry_prefix)}</code>
+       are fetched from nvcr.io.</span>`}</div>`;
+  $("#single-form button[type=submit]").disabled = !canImport();
+  updateBulkButton();
+}
+
+/* single image */
+$("#single-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const f = e.currentTarget;
+  const btn = f.querySelector("button[type=submit]");
+  btn.disabled = true;
+  $("#single-result").innerHTML = `<p><span class="spinner"></span> Starting…</p>`;
+  try {
+    const job = await apiPost("/api/import/image", {
+      image: f.elements.image.value.trim(),
+      display_name: f.elements.display_name.value.trim() || null,
+      description: f.elements.description.value.trim() || null,
+    });
+    load.watch = job._id;
+    load.open.add(job._id);
+    await refreshJobs();
+  } catch (err) {
+    $("#single-result").innerHTML = `<p class="error">${esc(err.message)}</p>`;
+  } finally {
+    btn.disabled = !canImport();
+  }
+});
+
+const logButton = (jobId, index) => `<button type="button" class="small" data-job-log="${esc(jobId)}" data-index="${esc(index)}">log</button>`;
+
+function renderSingleResult() {
+  const d = load.details[load.watch];
+  const it = d && d.items[0];
+  if (!it) return;
+  const box = $("#single-result");
+  if (it.status === "queued" || it.status === "running") {
+    box.innerHTML = `<p><span class="spinner"></span> ${it.status === "queued" ? "Waiting for a free worker for" : "Reading the manifest of"}
+      <code>${esc(it.fetched_image)}</code>…</p>`;
+  } else if (it.status === "ok") {
+    box.innerHTML = `<p class="ok-text">✓ <b>${esc(it.profiles)}</b> profiles ${it.action === "added" ? "added" : "updated"} for
+      <b>${esc(it.name || it.folder)}</b>${it.message ? ` <span class="muted">(${esc(it.message)})</span>` : ""}</p>
+      <div class="row-buttons"><button type="button" class="small" data-model="${esc(it.folder)}">View profiles</button>
+        <a href="#recommend?q=${encodeURIComponent(it.folder)}">Recommend for a GPU</a> ${it.has_log ? logButton(d._id, it.index) : ""}</div>`;
+  } else {
+    box.innerHTML = `<p class="error">${esc(it.message || it.status)}</p>${it.has_log ? `<div class="row-buttons">${logButton(d._id, it.index)}</div>` : ""}`;
+  }
+}
+
+/* bulk catalog JSON */
+$("#b-file").addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  if (file.size > 20e6) { setBulkError("The file is larger than 20 MB."); return; }
+  checkBulk(await file.text(), file.name);
+});
+$("#b-check").addEventListener("click", () => checkBulk($("#b-text").value, "pasted JSON"));
+$("#b-force").addEventListener("change", () => { if (load.bulk) previewBulk(); });
+
+function setBulkError(message) {
+  load.bulk = null;
+  $("#bulk-preview").innerHTML = `<p class="error">${esc(message)}</p>`;
+  updateBulkButton();
+}
+
+function checkBulk(text, name) {
+  if (!text.trim()) { setBulkError("The JSON is empty."); return; }
+  let data;
+  try { data = JSON.parse(text); } catch (err) { setBulkError(`Not valid JSON: ${err.message}`); return; }
+  load.bulk = { data, name, preview: null };
+  previewBulk();
+}
+
+async function previewBulk() {
+  const b = load.bulk;
+  if (!b) return;
+  b.preview = null;
+  updateBulkButton();
+  $("#bulk-preview").innerHTML = `<p><span class="spinner"></span> Checking the catalog…</p>`;
+  try {
+    b.preview = await apiPost("/api/import/preview", { data: b.data, force: $("#b-force").checked });
+    renderBulkPreview();
+  } catch (err) {
+    setBulkError(err.message);
+  }
+}
+
+function renderBulkPreview() {
+  const b = load.bulk;
+  const p = b.preview;
+  const c = p.counts || {};
+  const chips = Object.entries(STATE_BADGE).filter(([k]) => c[k])
+    .map(([k, [cls, label]]) => `<span class="badge ${cls}">${esc(c[k])} ${esc(label)}</span>`).join(" ");
+  const rows = [...p.problems.map((x) => ({ ...x, state: "invalid" })), ...p.rows]
+    .sort((a, z) => (a.state === "skip") - (z.state === "skip") || a.index - z.index);
+  $("#bulk-preview").innerHTML = `<div class="preview">
+    <p><b>${esc(b.name)}</b>: ${esc(p.total)} entries, <b>${esc(p.to_fetch)}</b> to fetch</p>
+    <div class="chips">${chips}</div>
+    <details class="plain"><summary>Show the entries</summary>
+      <div class="table-wrap preview-table"><table class="table mini"><thead><tr><th class="num">#</th><th>State</th><th>NIM</th><th>Note</th></tr></thead><tbody>
+      ${rows.slice(0, 500).map((r) => `<tr><td class="num">${esc(r.index + 1)}</td>
+        <td><span class="badge ${STATE_BADGE[r.state][0]}">${esc(STATE_BADGE[r.state][1])}</span></td>
+        <td><b>${esc(r.name || "")}</b><div class="muted mono">${esc(r.image || "")}</div></td><td>${esc(r.message || "")}</td></tr>`).join("")}
+      </tbody></table></div>${rows.length > 500 ? `<p class="muted">… and ${esc(rows.length - 500)} more</p>` : ""}
+    </details></div>`;
+  updateBulkButton();
+}
+
+function updateBulkButton() {
+  const btn = $("#b-start");
+  const p = load.bulk && load.bulk.preview;
+  const n = p ? p.to_fetch : 0;
+  btn.disabled = !canImport() || !n;
+  btn.textContent = p ? (n ? `Start import (${n} image${n > 1 ? "s" : ""})` : "Nothing to fetch") : "Start import";
+}
+
+$("#bulk-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const b = load.bulk;
+  if (!b) return;
+  $("#b-start").disabled = true;
+  try {
+    const job = await apiPost("/api/import/bulk", { data: b.data, force: $("#b-force").checked, source_name: b.name });
+    load.open.add(job._id);
+    load.bulk = null;
+    $("#b-file").value = "";
+    $("#bulk-preview").innerHTML = `<p class="ok-text">Import started (job <code>${esc(job._id)}</code>), progress below.</p>`;
+    await refreshJobs();
+  } catch (err) {
+    $("#bulk-preview").insertAdjacentHTML("beforeend", `<p class="error">${esc(err.message)}</p>`);
+  } finally {
+    updateBulkButton();
+  }
+});
+
+/* jobs */
+async function refreshJobs() {
+  clearTimeout(load.timer);
+  try {
+    load.jobs = await api("/api/import/jobs?limit=20");
+  } catch (err) {
+    $("#jobs").innerHTML = `<p class="error">${esc(err.message)}</p>`;
+    load.timer = setTimeout(refreshJobs, 15000);
+    return;
+  }
+  const ids = load.jobs.map((j) => j._id).filter((id) => load.open.has(id) || id === load.watch);
+  const details = await Promise.all(ids.map((id) => api(`/api/import/jobs/${encodeURIComponent(id)}`).catch(() => null)));
+  load.details = Object.fromEntries(details.filter(Boolean).map((d) => [d._id, d]));
+  // new profiles in the database: refresh the header numbers and the model list
+  let changed = false;
+  for (const j of load.jobs) {
+    const key = `${j.status}/${(j.counts || {}).ok || 0}`;
+    if (load.seen[j._id] !== undefined && load.seen[j._id] !== key) changed = true;
+    load.seen[j._id] = key;
+  }
+  if (changed) {
+    refreshStats();
+    state.models = [];
+    if (!$("#tab-models").hidden) loadModels();
+  }
+  renderJobs();
+  renderSingleResult();
+  const active = load.jobs.some((j) => j.status === "queued" || j.status === "running");
+  $("#jobs-note").textContent = active ? "updating every few seconds" : "";
+  if (active) load.timer = setTimeout(refreshJobs, document.hidden ? 10000 : 2500);
+}
+
+function countChips(c) {
+  return ["ok", "failed", "running", "queued", "skipped", "cancelled", "interrupted"].filter((k) => c[k])
+    .map((k) => `<span class="badge ${ITEM_BADGE[k]}">${esc(c[k])} ${esc(k)}</span>`).join(" ");
+}
+
+function renderJobs() {
+  if (!load.jobs.length) { $("#jobs").innerHTML = `<div class="empty">No import jobs yet.</div>`; return; }
+  $("#jobs").innerHTML = load.jobs.map((j) => {
+    const c = j.counts || {};
+    const finished = ["ok", "failed", "skipped", "cancelled", "interrupted"].reduce((n, k) => n + (c[k] || 0), 0);
+    const pct = j.total ? Math.round((100 * finished) / j.total) : 100;
+    const active = j.status === "queued" || j.status === "running";
+    const retry = !active && canImport() && ["failed", "cancelled", "interrupted"].some((k) => c[k]);
+    const open = load.open.has(j._id);
+    const d = load.details[j._id];
+    return `<div class="job">
+      <div class="job-head">
+        <span class="badge ${JOB_BADGE[j.status] || ""}">${active ? '<span class="spinner small"></span> ' : ""}${esc(j.status)}</span>
+        <b>${j.kind === "single" ? "Single image" : "Bulk import"}</b>
+        ${j.source_name ? `<span class="muted">${esc(j.source_name)}</span>` : ""}${j.retry_of ? ' <span class="muted">(retry)</span>' : ""}
+        <span class="muted">${esc(fmtTime(j.created_at))}</span>
+        <span class="job-counts">${countChips(c)}</span>
+        <span class="grow"></span>
+        ${active ? `<button type="button" class="small" data-job-cancel="${esc(j._id)}">Cancel</button>` : ""}
+        ${retry ? `<button type="button" class="small" data-job-retry="${esc(j._id)}">Retry failed</button>` : ""}
+        <button type="button" class="small" data-job-toggle="${esc(j._id)}">${open ? "Hide" : "Details"}</button>
+      </div>
+      <div class="progress" title="${esc(finished)} of ${esc(j.total)} images"><div style="width:${pct}%"></div></div>
+      ${open ? (d ? jobItems(d) : '<p><span class="spinner"></span></p>') : ""}
+    </div>`;
+  }).join("");
+}
+
+function jobItems(d) {
+  const items = [...d.items].sort((a, z) => (ITEM_ORDER[a.status] ?? 9) - (ITEM_ORDER[z.status] ?? 9) || a.index - z.index);
+  const problems = (d.problems || []).map((p) => `<li>entry ${esc(p.index + 1)}${p.name ? ` (${esc(p.name)})` : ""}: ${esc(p.message)}</li>`).join("");
+  return `<div class="table-wrap"><table class="table"><thead><tr><th>Status</th><th>NIM</th><th class="num">Profiles</th>
+    <th class="num">Time</th><th>Message</th><th></th></tr></thead><tbody>
+    ${items.slice(0, 1000).map((it) => `<tr>
+      <td><span class="badge ${ITEM_BADGE[it.status] || ""}">${esc(it.status)}</span>${it.action ? ` <span class="muted">${esc(it.action)}</span>` : ""}</td>
+      <td><b>${esc(it.name || it.folder)}</b><div class="muted mono">${esc(it.image)}</div></td>
+      <td class="num">${esc(it.profiles ?? "—")}</td>
+      <td class="num">${it.seconds != null ? `${esc(Math.round(it.seconds))} s` : ""}</td>
+      <td>${esc(it.message || "")}</td>
+      <td class="actions">${it.profiles ? `<button type="button" class="small" data-model="${esc(it.folder)}">profiles</button>` : ""}${it.has_log ? logButton(d._id, it.index) : ""}</td>
+    </tr>`).join("")}</tbody></table></div>
+    ${problems ? `<details class="plain"><summary>${esc(d.problems.length)} invalid entries were not imported</summary><ul>${problems}</ul></details>` : ""}`;
+}
+
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-job-toggle],[data-job-cancel],[data-job-retry],[data-job-log]");
+  if (!b) return;
+  try {
+    if (b.dataset.jobToggle) {
+      const id = b.dataset.jobToggle;
+      if (load.open.has(id)) load.open.delete(id); else load.open.add(id);
+      renderJobs();
+      if (load.open.has(id)) await refreshJobs();
+    } else if (b.dataset.jobCancel) {
+      b.disabled = true;
+      await apiPost(`/api/import/jobs/${encodeURIComponent(b.dataset.jobCancel)}/cancel`);
+      await refreshJobs();
+    } else if (b.dataset.jobRetry) {
+      b.disabled = true;
+      const job = await apiPost(`/api/import/jobs/${encodeURIComponent(b.dataset.jobRetry)}/retry`);
+      load.open.add(job._id);
+      await refreshJobs();
+    } else if (b.dataset.jobLog) {
+      $("#modal-title").textContent = "nim_profile_finder_v2.sh output";
+      $("#modal-body").innerHTML = `<span class="spinner"></span>`;
+      modal.showModal();
+      const r = await fetch(`/api/import/jobs/${encodeURIComponent(b.dataset.jobLog)}/items/${encodeURIComponent(b.dataset.index)}/log`);
+      $("#modal-body").innerHTML = r.ok ? `<pre class="log">${esc(await r.text())}</pre>` : `<p class="error">No log stored for this image.</p>`;
+    }
+  } catch (err) {
+    $("#jobs-note").innerHTML = `<span class="error">${esc(err.message)}</span>`;
+  }
+});
 
 /* ---------- validation tab ---------- */
 async function loadValidation() {
@@ -521,6 +836,7 @@ async function renderAbout() {
     <ul>
       <li>Catalog entries: ${esc(counts.catalog_entries ?? "?")} · models with profiles: ${esc(counts.models_with_profiles ?? "?")} · profiles: ${esc(counts.profiles ?? "?")}</li>
       <li>Fetch status: ${esc(JSON.stringify(counts.fetch_status || {}))}</li>
+      <li>NIMs loaded from the website (<a href="#load">Load NIMs</a>): ${esc(counts.website_additions ?? 0)}</li>
       <li>Validation: ${esc(JSON.stringify(counts.validation_status || {}))}</li>
       ${((s.import_run && s.import_run.warnings) || []).map((w) => `<li class="error">${esc(w)}</li>`).join("")}
     </ul>`;

@@ -18,9 +18,17 @@ failures: list[str] = []
 
 
 def get(path: str, **params) -> tuple[int, object]:
-    url = BASE + path + (f"?{urllib.parse.urlencode(params)}" if params else "")
+    return request(path + (f"?{urllib.parse.urlencode(params)}" if params else ""))
+
+
+def post(path: str, body: object) -> tuple[int, object]:
+    return request(path, json.dumps(body).encode("utf-8"))
+
+
+def request(path: str, data: bytes | None = None) -> tuple[int, object]:
+    req = urllib.request.Request(BASE + path, data=data, headers={"Content-Type": "application/json"} if data else {})
     try:
-        with urllib.request.urlopen(url, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=60) as r:
             body = r.read().decode("utf-8")
             status = r.status
     except urllib.error.HTTPError as e:
@@ -49,8 +57,21 @@ def wait_until_healthy(seconds: int = 120) -> None:
     sys.exit(f"{BASE} did not become healthy within {seconds}s")
 
 
+def wait_until_seeded(seconds: int = 600) -> None:
+    """Kubernetes / PCAI: the website imports the bundled catalog in the background (SEED_IMPORT)."""
+    deadline = time.monotonic() + seconds
+    while time.monotonic() < deadline:
+        status, stats = get("/api/stats")
+        seed = (stats.get("seed") or {}) if isinstance(stats, dict) else {}
+        if status == 200 and seed.get("status") not in ("pending", "running"):
+            return
+        time.sleep(3)
+    sys.exit(f"the start-up import did not finish within {seconds}s")
+
+
 def main() -> None:
     wait_until_healthy()
+    wait_until_seeded()
 
     status, page = get("/")
     check(status == 200 and "<title>" in str(page), "website index page")
@@ -78,6 +99,22 @@ def main() -> None:
 
     status, issues = get("/api/validation/issues")
     check(status == 200 and isinstance(issues, list), f"validation issues endpoint ({len(issues)} issues)")
+
+    # Load NIMs: configuration and input checks only (no NGC download)
+    status, cfg = get("/api/import/config")
+    check(status == 200 and "finder_available" in cfg,
+          f"import config: enabled={cfg.get('enabled')} finder={cfg.get('finder_available')} "
+          f"ngc_key={cfg.get('ngc_configured')}")
+    status, _ = post("/api/import/image", {"image": "not an image"})
+    check(status in (422, 403, 503), f"invalid image is rejected ({status})")
+    status, models = get("/api/models")
+    known = next((m["image"] for m in models if m.get("profile_count")), None) if status == 200 else None
+    status, preview = post("/api/import/preview", {"data": [known, "nvcr.io/nim/example/new-nim:1.0", {"name": "x"}]})
+    counts = preview.get("counts", {}) if isinstance(preview, dict) else {}
+    check(status == 200 and counts.get("skip") == 1 and counts.get("new") == 1 and counts.get("invalid") == 1,
+          f"catalog preview classifies entries ({dict(counts)})")
+    status, jobs = get("/api/import/jobs")
+    check(status == 200 and isinstance(jobs, list), f"import jobs endpoint ({len(jobs)} jobs)")
 
     if failures:
         sys.exit(f"{len(failures)} check(s) failed")

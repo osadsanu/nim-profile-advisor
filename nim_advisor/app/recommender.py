@@ -127,6 +127,10 @@ class Store:
     def run_id(self) -> str | None:
         return self._run_id
 
+    def invalidate(self) -> None:
+        """Look for new data on the next request (called after a website update)."""
+        self._checked = 0.0
+
 
 # ---------------------------------------------------------------------------
 # GPU resolution

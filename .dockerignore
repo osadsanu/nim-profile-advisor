@@ -1,0 +1,14 @@
+# Build context = repository root (see nim_advisor/Dockerfile). Allowlist: only what the image needs,
+# so .env, .git, db_export/ and local working files never reach the build.
+*
+!nim_advisor/requirements.txt
+!nim_advisor/app/
+!nim_advisor/certs/
+!nim_profile_finder_v2.sh
+!nim_catalog.json
+!nims_catalog/
+!reference/
+nims_catalog/_logs/
+reference/research/
+**/__pycache__/
+**/*.pyc

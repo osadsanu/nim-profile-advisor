@@ -1,0 +1,79 @@
+name: PCAI Helm chart
+
+# Lints and validates helm/nim-profile-advisor, installs it in a kind cluster with the image built from this commit,
+# runs the API smoke test and uploads the packaged chart (+ logo) as the "pcai-framework" artifact for the
+# HPE PCAI Import Framework wizard.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chart-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chart:
+    name: Lint, test-install and package the chart
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: azure/setup-helm@v4
+
+      - name: Lint and validate the manifests (Kubernetes, Istio and Kyverno schemas)
+        run: |
+          chart=helm/nim-profile-advisor
+          helm lint --strict "$chart" --set env.MONGO_ROOT_PASSWORD=ci
+          if helm template ci "$chart" > /dev/null 2>&1; then
+            echo "the placeholder MongoDB password must be rejected"; exit 1
+          fi
+          mkdir -p rendered
+          helm template ci "$chart" --set env.MONGO_ROOT_PASSWORD=ci --set pcai.sso=true > rendered/pcai.yaml
+          helm template ci "$chart" --set env.MONGO_ROOT_PASSWORD=ci --set pcai.enabled=false \
+            --set ingress.enabled=true --set ingress.host=nim.example.com --set ingress.tls=true > rendered/plain.yaml
+          docker run --rm -v "$PWD/rendered:/r:ro" ghcr.io/yannh/kubeconform:v0.8.0 -strict -summary \
+            -schema-location default \
+            -schema-location 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/{{.Group}}/{{.ResourceKind}}_{{.ResourceAPIVersion}}.json' \
+            /r
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build the image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: nim_advisor/Dockerfile
+          load: true
+          tags: nim-advisor:ci
+          cache-from: type=gha
+
+      - uses: helm/kind-action@v1
+
+      - name: Install the chart (plain Kubernetes) and run the API smoke test
+        run: |
+          kind load docker-image nim-advisor:ci --name chart-testing
+          # mongo:7.0 - MongoDB 8.x does not start on the runner kernel (see ci.yml); PCAI nodes use 8.0
+          helm install ci helm/nim-profile-advisor --wait --timeout 10m \
+            --set pcai.enabled=false --set image.repository=nim-advisor --set image.tag=ci \
+            --set image.pullPolicy=Never --set mongodb.image.tag=7.0 --set env.MONGO_ROOT_PASSWORD=ci-password
+          kubectl port-forward svc/ci-nim-profile-advisor 8000:80 > /dev/null 2>&1 &
+          sleep 3
+          python3 nim_advisor/tools/smoke_test.py http://127.0.0.1:8000 || {
+            kubectl get pods -o wide; kubectl logs deploy/ci-nim-profile-advisor --tail=100; exit 1; }
+
+      - name: Package the chart
+        run: helm package helm/nim-profile-advisor --destination dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pcai-framework
+          path: |
+            dist/*.tgz
+            helm/nim-profile-advisor.png

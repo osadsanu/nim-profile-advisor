@@ -6,16 +6,17 @@
 #   docker compose run --rm db-restore  # load ./db_export into MongoDB (instead of importing)
 #   docker compose --profile admin up -d mongo-express   # optional DB browser (http://localhost:8081)
 #
-# Credentials come from .env (see .env.example). Set NIM_ADVISOR_IMAGE in .env to run the published image
-# instead of building it. All ports are bound to localhost only. See README.md.
+# Credentials come from .env (see .env.example); NGC_API_KEY enables the "Load NIMs" tab. Set NIM_ADVISOR_IMAGE in
+# .env to run the published image instead of building it. All ports are bound to localhost only. See README.md.
 
 name: nim-advisor
 
 x-app: &app
   image: ${NIM_ADVISOR_IMAGE:-nim-advisor:local}
   build:
-    context: ./nim_advisor
-  environment:
+    context: .
+    dockerfile: nim_advisor/Dockerfile
+  environment: &app-env
     MONGO_URI: mongodb://${MONGO_ROOT_USER:-nimadmin}:${MONGO_ROOT_PASSWORD:?set MONGO_ROOT_PASSWORD in .env}@mongo:27017/?authSource=admin
     MONGO_DB: ${MONGO_DB:-nim_advisor}
     DATA_DIR: /data
@@ -66,6 +67,12 @@ services:
   web:
     <<: *app
     restart: unless-stopped
+    environment:
+      <<: *app-env
+      # Load NIMs tab: NGC key for nvcr.io, images fetched in parallel, IMPORT_ENABLED=false for a read-only site
+      NGC_API_KEY: ${NGC_API_KEY:-}
+      FETCH_WORKERS: ${FETCH_WORKERS:-4}
+      IMPORT_ENABLED: ${IMPORT_ENABLED:-true}
     ports:
       - "127.0.0.1:${WEB_PORT:-8080}:8000"
     volumes:

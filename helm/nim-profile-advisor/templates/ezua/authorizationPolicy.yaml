@@ -1,0 +1,24 @@
+{{- if and .Values.pcai.enabled .Values.pcai.sso }}
+# PCAI single sign-on: requests to the endpoint go through oauth2-proxy at the ingress gateway
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: {{ printf "%s-%s-auth-policy" .Release.Name .Chart.Name | trunc 63 | trimSuffix "-" }}
+  namespace: {{ .Values.ezua.authorizationPolicy.namespace | required ".Values.ezua.authorizationPolicy.namespace is required !\n" }}
+  labels:
+    {{- include "nim-profile-advisor.labels" . | nindent 4 }}
+spec:
+  action: CUSTOM
+  provider:
+    name: {{ .Values.ezua.authorizationPolicy.providerName | required ".Values.ezua.authorizationPolicy.providerName is required !\n" }}
+  rules:
+    - to:
+        - operation:
+            hosts:
+              - {{ .Values.ezua.virtualService.endpoint | required ".Values.ezua.virtualService.endpoint is required !\n" | quote }}
+  selector:
+    {{- with .Values.ezua.authorizationPolicy.matchLabels }}
+    matchLabels:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+{{- end }}

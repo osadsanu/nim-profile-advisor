@@ -8,12 +8,17 @@ gpus                   GPU reference catalog (PCI device ids, VRAM, compute capa
 pcai_configurations    HPE Private Cloud AI system configurations (GPU model, GPUs per node, MIG ...)
 gpu_device_validation  evidence that each NIM gpu_device / internal gpu name maps to the right GPU
 manifest_issues        manifest errors found by tools/validate_gpu_ids.py (gpu name vs gpu_device, invalid ids)
-import_runs            audit trail of every import
+import_runs            audit trail of every import (full imports and website updates)
+catalog_additions      NIM images loaded from the website ("Load NIMs" tab): catalog entry + fetched manifest.
+                       Merged into every full import, so they survive re-imports
+import_jobs            website fetch jobs (one image or a bulk catalog JSON) and the result of every image
+import_logs            finder output of every fetched image (tail, NGC key redacted)
+locks                  short-lived lease that serializes database writes of the importer and the website
 """
 
 from __future__ import annotations
 
-from pymongo import ASCENDING, TEXT, IndexModel
+from pymongo import ASCENDING, DESCENDING, TEXT, IndexModel
 from pymongo.database import Database
 from pymongo.errors import CollectionInvalid
 
@@ -60,6 +65,7 @@ VALIDATORS: dict[str, dict] = {
             "engines": ARR_STR,
             "precisions": ARR_STR,
             "is_llm": BOOL,
+            "origin": {"enum": ["catalog", "website"]},  # website = loaded or refreshed from the Load NIMs tab
             "fetch": {
                 "bsonType": "object",
                 "required": ["status"],
@@ -211,10 +217,104 @@ VALIDATORS: dict[str, dict] = {
         "required": ["_id", "started_at", "finished_at", "counts"],
         "properties": {
             "_id": STR,
+            "kind": {"enum": ["full", "website"]},
             "started_at": {"bsonType": "date"},
             "finished_at": {"bsonType": "date"},
             "counts": OBJ,
             "warnings": ARR_STR,
+            "fingerprint": STR,              # hash of the imported files (IMPORT_MODE=if-changed)
+            "job_id": STR_N,                 # website update: job and model it applied
+            "model_id": STR_N,
+        },
+    },
+    "catalog_additions": {
+        "bsonType": "object",
+        "required": ["_id", "image", "fetched_image", "entry", "fetch", "updated_at"],
+        "properties": {
+            "_id": STR,                      # model folder name, same as models._id
+            "image": STR,
+            "fetched_image": STR,
+            "entry": OBJ,                    # catalog entry (nim_catalog.json format, sanitized)
+            "manifest_yaml": STR_N,          # last successfully fetched model_manifest.yaml
+            "fetch": {
+                "bsonType": "object",
+                "required": ["status"],
+                "properties": {
+                    "status": {"enum": ["ok", "failed"]},
+                    "message": STR_N,
+                    "seconds": NUM_N,
+                    "profiles_reported": NUM_N,
+                },
+            },
+            "source": STR,
+            "job_id": STR_N,
+            "created_at": {"bsonType": "date"},
+            "updated_at": {"bsonType": "date"},
+            "fetched_at": {"bsonType": ["date", "null"]},
+        },
+    },
+    "import_jobs": {
+        "bsonType": "object",
+        "required": ["_id", "kind", "status", "created_at", "total", "items"],
+        "properties": {
+            "_id": STR,
+            "kind": {"enum": ["single", "bulk"]},
+            "status": {"enum": ["queued", "running", "done", "cancelled", "interrupted"]},
+            "created_at": {"bsonType": "date"},
+            "started_at": {"bsonType": ["date", "null"]},
+            "finished_at": {"bsonType": ["date", "null"]},
+            "heartbeat_at": {"bsonType": ["date", "null"]},
+            "owner": STR,
+            "force": BOOL,
+            "cancel_requested": BOOL,
+            "total": INT,
+            "counts": OBJ,
+            "source_name": STR_N,            # uploaded file name of a bulk import
+            "retry_of": STR_N,
+            "problems": {"bsonType": "array"},  # catalog entries rejected before the job started
+            "items": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "object",
+                    "required": ["index", "folder", "image", "fetched_image", "status"],
+                    "properties": {
+                        "index": INT,
+                        "folder": STR,
+                        "name": STR_N,
+                        "image": STR,
+                        "fetched_image": STR,
+                        "status": {"enum": ["queued", "running", "ok", "failed", "skipped", "cancelled",
+                                            "interrupted"]},
+                        "action": STR_N,     # added / updated / kept
+                        "profiles": NUM_N,
+                        "seconds": NUM_N,
+                        "message": STR_N,
+                        "entry": OBJ,
+                        "has_log": BOOL,
+                    },
+                },
+            },
+        },
+    },
+    "import_logs": {
+        "bsonType": "object",
+        "required": ["_id", "job_id", "index", "log"],
+        "properties": {
+            "_id": STR,                      # <job id>/<item index>
+            "job_id": STR,
+            "index": INT,
+            "log": STR,                      # tail of the finder output (NGC key redacted)
+            "created_at": {"bsonType": "date"},
+        },
+    },
+    "locks": {
+        "bsonType": "object",
+        "required": ["_id", "owner", "expires_at"],
+        "properties": {
+            "_id": STR,
+            "owner": STR,
+            "acquired_at": {"bsonType": "date"},
+            "expires_at": {"bsonType": "date"},
         },
     },
 }
@@ -249,6 +349,19 @@ INDEXES: dict[str, list[IndexModel]] = {
     "manifest_issues": [
         IndexModel([("kind", ASCENDING)], name="kind"),
         IndexModel([("models", ASCENDING)], name="models"),
+    ],
+    "import_runs": [
+        IndexModel([("started_at", DESCENDING)], name="started_at"),
+    ],
+    "catalog_additions": [
+        IndexModel([("updated_at", DESCENDING)], name="updated_at"),
+    ],
+    "import_jobs": [
+        IndexModel([("created_at", DESCENDING)], name="created_at"),
+        IndexModel([("status", ASCENDING)], name="status"),
+    ],
+    "import_logs": [
+        IndexModel([("job_id", ASCENDING)], name="job_id"),
     ],
 }
 

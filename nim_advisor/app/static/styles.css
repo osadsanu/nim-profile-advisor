@@ -167,5 +167,39 @@ dialog::backdrop { background: rgba(10, 15, 20, .55); }
 #modal-body { padding: 14px 16px 20px; }
 .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--line); border-top-color: var(--accent);
   border-radius: 50%; animation: spin .8s linear infinite; vertical-align: -3px; }
+.spinner.small { width: 11px; height: 11px; vertical-align: -1px; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .error { color: var(--bad); }
+
+/* Load NIMs tab */
+.load-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; margin-bottom: 16px;
+  align-items: start; }
+.stack { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.stack p { margin: 4px 0 6px; }
+.hint { font-size: 12px; margin-top: 4px; overflow-wrap: anywhere; }
+textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card);
+  color: var(--text); font: 12.5px/1.45 ui-monospace, SFMono-Regular, Consolas, monospace; resize: vertical; }
+textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+details.plain { border-top: none; margin-top: 6px; }
+details.plain > summary { padding: 4px 0; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+button.primary:disabled:hover { filter: none; }
+.warn-card { border-color: var(--warn); background: var(--warn-bg); }
+.ok-text { color: var(--ok); }
+.row-buttons { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.preview { margin-top: 6px; }
+.preview p { margin: 0 0 6px; }
+.preview-table { max-height: 320px; overflow: auto; }
+.jobs-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+.job { border-top: 1px solid var(--line); padding: 10px 0; }
+.job:first-child { border-top: none; }
+.job-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.job-counts { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.grow { flex: 1; }
+.progress { height: 6px; border-radius: 999px; background: var(--code); overflow: hidden; margin: 8px 0; }
+.progress > div { height: 100%; background: var(--accent); transition: width .4s; }
+td.actions { white-space: nowrap; }
+td.actions .small + .small { margin-left: 4px; }
+.stat.busy { border-color: var(--accent); color: var(--accent); }
+.stat.error { border-color: var(--bad); }
+pre.log { max-height: 70vh; white-space: pre-wrap; overflow-wrap: anywhere; }
