@@ -80,3 +80,14 @@ Any other key added to `env` is passed to the website as an environment variable
 - **Plain Kubernetes**: `helm install nim-advisor helm/nim-profile-advisor --set pcai.enabled=false
   --set env.MONGO_ROOT_PASSWORD=<password>`, then `kubectl port-forward svc/nim-advisor-nim-profile-advisor 8080:80`
   or enable `ingress`.
+
+## Troubleshooting
+
+`kubectl -n <namespace> get pods` should show the website and `...-mongodb-0` pods `Running` and `1/1` ready.
+
+| Symptom (`kubectl logs`) | Meaning / fix |
+| --- | --- |
+| Website: `waiting for MongoDB (n)` and `GET /api/health ... 503` right after a deployment | MongoDB is still starting (the first start also creates the root user, about a minute). The website stays not ready until MongoDB answers, then imports the bundled catalog (`seed import ...`). Nothing to do |
+| MongoDB: `Linux kernel versions 6.19 and newer has a known incompatibility` | Set `mongodb.image.tag: "7.0"` |
+| Website: `Authentication failed` | `env.MONGO_ROOT_PASSWORD` differs from the password the MongoDB volume was created with (see *MongoDB password* above) |
+| Pod `ImagePullBackOff` | The GHCR package is private or unreachable: see *Image access* |

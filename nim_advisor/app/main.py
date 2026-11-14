@@ -14,11 +14,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
+import pymongo
 from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure, PyMongoError
 
 from . import fetcher
 from .importer import IMPORT_MODES, run_import, wait_for_mongo
@@ -78,9 +80,26 @@ def _clean(doc):
     return json.loads(json.dumps(doc, default=_json_default))
 
 
+def _db_error(exc: PyMongoError) -> str:
+    # ServerSelectionTimeoutError messages end with a long topology description
+    return f"{exc.__class__.__name__}: {str(exc).split(', Timeout:')[0]}"[:300]
+
+
+@app.exception_handler(ConnectionFailure)
+async def database_unavailable(_request: Request, exc: ConnectionFailure) -> JSONResponse:
+    """MongoDB not reachable (e.g. still starting): 503 and a one-line warning instead of a traceback."""
+    log.warning("MongoDB unavailable: %s", _db_error(exc))
+    return JSONResponse(status_code=503, content={"detail": "database unavailable, retry in a moment"})
+
+
 @app.get("/api/health")
 def health():
-    client.admin.command("ping")
+    """Readiness: 503 until MongoDB answers (Kubernetes keeps the pod out of the service meanwhile)."""
+    try:
+        with pymongo.timeout(2):
+            client.admin.command("ping")
+    except PyMongoError as exc:
+        return JSONResponse(status_code=503, content={"status": "unavailable", "detail": _db_error(exc)})
     return {"status": "ok"}
 
 
