@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NIM Profile Advisor</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tutorial.css">
 </head>
 <body>
 <header class="topbar">
@@ -19,6 +20,7 @@
 </header>
 
 <nav class="tabs" role="tablist">
+  <a href="#tutorial" class="tab" data-tab="tutorial" role="tab">Tutorial</a>
   <a href="#recommend" class="tab" data-tab="recommend" role="tab">Recommend</a>
   <a href="#models" class="tab" data-tab="models" role="tab">Models</a>
   <a href="#load" class="tab" data-tab="load" role="tab">Load NIMs</a>
@@ -28,6 +30,353 @@
 </nav>
 
 <main>
+  <!-- TUTORIAL: animated version of tutorial.md, opened on the first visit (app.js: route).
+       Styles in tutorial.css, scroll logic in tutorial.js. The .tut-panel scenes only illustrate the text beside them.
+       No element may have the id "tutorial": the browser would scroll to it for the #tutorial tab link. -->
+  <section id="tab-tutorial" class="panel" data-panel="tutorial" hidden>
+    <div id="tut-root" class="tut">
+
+      <header class="tut-hero">
+        <div class="tut-hero-copy">
+          <p class="tut-eyebrow" data-tut-reveal>The 2-minute tour</p>
+          <h2 class="tut-title" data-tut-reveal style="--i:1">Your GPUs are fast.<br><span class="tut-mark">Is your NIM keeping up?</span></h2>
+          <p class="tut-lead" data-tut-reveal style="--i:2">Every NVIDIA NIM picks its own <b>profile</b> when it starts. On HPE Private Cloud AI
+            it often grabs a slower one, and nobody sends you a memo. Here's how to choose the right profile
+            <b>before you deploy, not after</b>, in 3 easy steps.</p>
+          <div class="tut-cta-row" data-tut-reveal style="--i:3">
+            <button type="button" class="tut-btn" data-tut-go="1">Show me the 3 steps <span aria-hidden="true">&darr;</span></button>
+            <a class="tut-btn tut-btn-ghost" href="#recommend">Skip the tour</a>
+          </div>
+          <p class="tut-fine" data-tut-reveal style="--i:4">No PhD required. Experts: look for the <span class="tut-nerd-tag">Nerd note</span> boxes.</p>
+        </div>
+        <div class="tut-hero-art" aria-hidden="true" data-tut-reveal="pop" style="--i:2">
+          <span class="tut-orbit"></span>
+          <span class="tut-chip" style="--x:2%;--y:16%;--t:0s">FP8</span>
+          <span class="tut-chip" style="--x:66%;--y:2%;--t:-1.4s">TensorRT-LLM</span>
+          <span class="tut-chip" style="--x:78%;--y:52%;--t:-2.6s">latency</span>
+          <span class="tut-chip" style="--x:60%;--y:86%;--t:-.7s">BF16</span>
+          <span class="tut-chip" style="--x:6%;--y:78%;--t:-3.3s">throughput</span>
+          <span class="tut-chip" style="--x:-2%;--y:47%;--t:-2s">vLLM</span>
+          <span class="tut-bubble">Which profile fits me?</span>
+          <span class="tut-gpu" data-mood="curious"><span class="tut-gpu-pins"></span><span class="tut-gpu-face"><i class="e"></i><i class="e"></i><i class="m"></i></span></span>
+        </div>
+      </header>
+
+      <nav class="tut-stepper" aria-label="Tutorial steps">
+        <div class="tut-stepper-pill">
+          <ol>
+            <li><button type="button" data-tut-go="1"><span class="n">1</span><span class="t">Spot the problem</span></button></li>
+            <li><button type="button" data-tut-go="2"><span class="n">2</span><span class="t">Find your profile</span></button></li>
+            <li><button type="button" data-tut-go="3"><span class="n">3</span><span class="t">Deploy it</span></button></li>
+          </ol>
+          <a class="tut-skip" href="#recommend">Skip</a>
+          <span class="tut-progress" aria-hidden="true"><i></i></span>
+        </div>
+      </nav>
+
+      <!-- STEP 1 -->
+      <section class="tut-step" id="tut-step-1" aria-labelledby="tut-h-1">
+        <header class="tut-step-head" data-tut-reveal>
+          <span class="tut-num" aria-hidden="true">1</span>
+          <div>
+            <p class="tut-kicker">Step 1 · The problem</p>
+            <h3 id="tut-h-1">Your NIM picks its own profile. It doesn't always pick well.</h3>
+          </div>
+        </header>
+        <div class="tut-scrolly">
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>First things first: what's a profile?</h4>
+              <p>A NIM is an AI model, boxed up and ready to run. Inside the box sits a whole rack of <b>profiles</b>:
+                the same model, pre-tuned for one exact GPU setup. Think shoe sizes. Same shoe, but only one pair really
+                fits you.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> A profile is a prebuilt engine for one
+                combination of GPU model, GPU count, precision (FP8, BF16, …), backend (TensorRT-LLM, vLLM, …) and goal
+                (latency or throughput). Some NIMs ship dozens.</aside>
+            </div>
+            <div class="tut-panel tut-p-box" aria-hidden="true">
+              <div class="tut-cap">Inside one NIM</div>
+              <div class="tut-box"><svg viewBox="0 0 48 34" focusable="false"><path d="M7 12h34v17a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3z"/><path class="flap" d="M7 12 2 4h15l7 8zm34 0 5-8H31l-7 8z"/></svg>one NIM, many profiles</div>
+              <div class="tut-cols"><span>GPU</span><span>precision</span><span>backend</span><span>goal</span></div>
+              <ul class="tut-profiles">
+                <li style="--i:0"><b>H200 SXM ×1</b><span>FP8</span><span>TensorRT-LLM</span><span>throughput</span></li>
+                <li style="--i:1"><b>H100 NVL ×2</b><span>FP8</span><span>TensorRT-LLM</span><span>latency</span></li>
+                <li style="--i:2"><b>L40S ×2</b><span>FP8</span><span>TensorRT-LLM</span><span>throughput</span></li>
+                <li style="--i:3"><b>A10G ×4</b><span>BF16</span><span>TensorRT-LLM</span><span>throughput</span></li>
+                <li style="--i:4" class="generic"><b>any GPU</b><span>BF16</span><span>vLLM</span><span>generic</span></li>
+              </ul>
+              <div class="tut-more">+ dozens more</div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>At startup, NIM picks one for you</h4>
+              <p>When the container starts, NIM checks the ID of your GPU and grabs a profile by itself. The catch: many
+                of the fast profiles are built for the H200 <b>SXM</b>, and PCAI G2 runs the H200 <b>NVL</b>. Same
+                family, different ID. So NIM shrugs and hands you the one-size-fits-all pair.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> <code>2335</code> (H200 SXM) is not
+                <code>233b</code> (H200 NVL), so NIM ignores the optimized engine and falls back to a generic one. Some
+                manifests are simply wrong, too: 45 profiles in 17 older LLM NIMs carry the L40 ID under the name L40S,
+                so a PCAI G1 L40S node never gets them.</aside>
+            </div>
+            <div class="tut-panel tut-p-check" aria-hidden="true">
+              <div class="tut-cap">NIM is starting · picking a profile</div>
+              <div class="tut-check">
+                <div class="tut-you">
+                  <span class="tut-gpu" data-mood="confused"><span class="tut-gpu-pins"></span><span class="tut-gpu-face"><i class="e"></i><i class="e"></i><i class="m"></i></span></span>
+                  <span>Your PCAI GPU <b>H200 NVL</b></span>
+                </div>
+                <div class="tut-ids">
+                  <div class="tut-id-row"><span>Your GPU says</span>
+                    <code class="tut-id"><i style="--k:0">2</i><i style="--k:1">3</i><i style="--k:2">3</i><i style="--k:3" class="x">b</i></code></div>
+                  <div class="tut-id-row"><span>The fast profile wants</span>
+                    <code class="tut-id"><i style="--k:0">2</i><i style="--k:1">3</i><i style="--k:2">3</i><i style="--k:3" class="x">5</i></code></div>
+                  <div class="tut-stamp">No match</div>
+                </div>
+              </div>
+              <div class="tut-fallback">
+                <div class="tut-prof lost"><b>H200 SXM</b><span>FP8 · TensorRT-LLM</span><em>skipped</em></div>
+                <div class="tut-arrow">&rarr;</div>
+                <div class="tut-prof won"><b>any GPU</b><span>BF16 · vLLM</span><em>picked instead</em></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Result: a monster GPU jogging in flip-flops</h4>
+              <p>Everything still runs. Just slower: lower throughput, higher latency, and idle GPU capacity that you're
+                still paying for. And the old way to find out? Pull the multi-GB image, start it, read the logs, change
+                the settings, try again.</p>
+            </div>
+            <div class="tut-panel tut-p-cost" aria-hidden="true">
+              <div class="tut-cap">What you end up with</div>
+              <div class="tut-gauge lo">
+                <svg viewBox="0 0 200 112" focusable="false">
+                  <path class="track" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <path class="zone lo" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <path class="zone hi" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <g class="needle"><path d="M100 100V38"/><circle cx="100" cy="100" r="7"/></g>
+                </svg>
+                <div class="tut-gauge-ends"><span class="lo">generic fallback</span><span class="hi">built for your GPU</span></div>
+              </div>
+              <div class="tut-verdict">
+                <span class="tut-gpu" data-mood="sleepy"><span class="tut-gpu-pins"></span><span class="tut-gpu-face"><i class="e"></i><i class="e"></i><i class="m"></i></span><span class="tut-zzz"><i>z</i><i>z</i><i>z</i></span></span>
+                <span><b>Idle capacity.</b> Still on the bill.</span>
+              </div>
+              <div class="tut-loop">
+                <span style="--i:0">pull the multi-GB image</span><span style="--i:1">start it</span>
+                <span style="--i:2">read the logs</span><span style="--i:3">change settings</span>
+                <em><i class="tut-again">&#8635;</i> and again</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="tut-step" id="tut-step-2" aria-labelledby="tut-h-2">
+        <header class="tut-step-head" data-tut-reveal>
+          <span class="tut-num" aria-hidden="true">2</span>
+          <div>
+            <p class="tut-kicker">Step 2 · The fix</p>
+            <h3 id="tut-h-2">Ask the advisor. It already did the homework.</h3>
+          </div>
+        </header>
+        <div class="tut-scrolly">
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Tell it what you're running</h4>
+              <p>Open the <b>Recommend</b> tab and describe your hardware. On a PCAI system? Pick it from the list and
+                the GPU model, GPUs per node and nodes fill themselves in.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> No preset for your box? Type any GPU
+                name or ID, like <code>H200 NVL</code>, <code>L40S</code> or <code>233b</code>.</aside>
+            </div>
+            <div class="tut-panel tut-p-form" aria-hidden="true">
+              <div class="tut-cap">Recommend tab</div>
+              <div class="tut-form">
+                <div class="tut-form-title">Your GPU setup</div>
+                <span class="tut-lab">Start from a PCAI system</span>
+                <div class="tut-input sel"><span class="tut-swap"><span class="a">— custom —</span><span class="b">PCAI Medium (G2) - H200 NVL</span></span><i class="tut-cursor"></i></div>
+                <span class="tut-lab">GPU model</span>
+                <div class="tut-input fill" style="--i:0"><span class="v">NVIDIA H200 NVL</span><code>233b:10de</code></div>
+                <div class="tut-row2">
+                  <div><span class="tut-lab">GPUs per node</span><div class="tut-input fill" style="--i:1"><span class="v">4</span></div></div>
+                  <div><span class="tut-lab">Nodes</span><div class="tut-input fill" style="--i:2"><span class="v">1</span></div></div>
+                </div>
+              </div>
+              <div class="tut-toast">One pick, three fields filled in</div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Say what matters to you</h4>
+              <p>Maximum throughput, lowest latency, highest precision or fewest GPUs: pick your goal. Add a model name
+                such as <code>llama</code>, <code>qwen</code> or <code>embed</code>, then hit
+                <b>Recommend profiles</b>.</p>
+            </div>
+            <div class="tut-panel tut-p-goal" aria-hidden="true">
+              <div class="tut-cap">Recommend tab</div>
+              <div class="tut-form">
+                <span class="tut-lab">Optimize for</span>
+                <div class="tut-goals">
+                  <span style="--i:0" class="on">Maximum throughput</span><span style="--i:1">Lowest latency</span>
+                  <span style="--i:2">Highest precision</span><span style="--i:3">Fewest GPUs</span>
+                </div>
+                <span class="tut-lab">Model search</span>
+                <div class="tut-input"><span class="tut-typed">llama</span><i class="tut-caret"></i></div>
+                <div class="tut-go">Recommend profiles<i class="tut-cursor"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Get your answer in seconds</h4>
+              <p>You get the profiles that are compatible with your system, ranked by your goal. Exact GPU matches stand
+                apart from generic fallbacks, and anything blocked tells you why (not enough VRAM, wrong GPU ID, GPU
+                count…). Spot your winner and copy its <b>profile ID</b>.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> Under the hood:
+                <b data-tut-stat="profiles">3,000+</b> profiles across <b data-tut-stat="nims">240+</b> NIMs, checked
+                against NVIDIA PCI IDs and the HPE PCAI hardware configurations. NIM missing? Add it in the
+                <b>Load NIMs</b> tab with an image reference or NGC URL.</aside>
+            </div>
+            <div class="tut-panel tut-p-results" aria-hidden="true">
+              <div class="tut-cap">Example · H200 NVL × 4</div>
+              <div class="tut-res">
+                <div class="tut-rcard win" style="--i:0">
+                  <div class="h"><b>Llama-3.2-1B-Instruct</b><span class="badge ok">Exact GPU match</span></div>
+                  <div class="b"><span>Best profile</span><code>280bfbbbf4ea…</code><span class="tut-copy"><i class="a">copy</i><i class="b">copied</i><i class="tut-cursor"></i></span></div>
+                </div>
+                <div class="tut-rcard" style="--i:1">
+                  <div class="h"><b>Llama-3.2-3B-Instruct</b><span class="badge info">Generic profile</span></div>
+                  <div class="tut-why">Optimized profiles exist for a sibling SKU: H200 SXM (2335)</div>
+                </div>
+                <div class="tut-rcard" style="--i:2">
+                  <div class="h"><b>Llama-3.1-405b-instruct</b><span class="badge bad">not compatible</span></div>
+                  <div class="tut-why">needs 16 GPUs per node</div>
+                </div>
+              </div>
+              <div class="tut-toast">Profile ID copied</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3 -->
+      <section class="tut-step" id="tut-step-3" aria-labelledby="tut-h-3">
+        <header class="tut-step-head" data-tut-reveal>
+          <span class="tut-num" aria-hidden="true">3</span>
+          <div>
+            <p class="tut-kicker">Step 3 · The payoff</p>
+            <h3 id="tut-h-3">Paste one line. Deploy. Done.</h3>
+          </div>
+        </header>
+        <div class="tut-scrolly">
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>One setting. That's the whole trick.</h4>
+              <p>Set a single environment variable, <code>NIM_MODEL_PROFILE</code>, to the profile ID you copied. The
+                advisor writes the Kubernetes / PCAI and Docker snippets for you, so it really is copy, paste, go.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> Docker person? Same idea:
+                <pre>docker run --rm --gpus 4 -e NGC_API_KEY \
+  -e NIM_MODEL_PROFILE=&lt;profile-id&gt; \
+  -p 8000:8000 nvcr.io/nim/&lt;org&gt;/&lt;model&gt;:&lt;tag&gt;</pre></aside>
+            </div>
+            <div class="tut-panel tut-p-code" aria-hidden="true">
+              <div class="tut-cap">Kubernetes / PCAI</div>
+              <div class="tut-code">
+                <span class="ln" style="--i:0"><span class="k">env</span>:</span>
+                <span class="ln" style="--i:1">  - <span class="k">name</span>: <b>NIM_MODEL_PROFILE</b></span>
+                <span class="ln hl" style="--i:2">    <span class="k">value</span>: <span class="s">"<span class="tut-paste">280bfbbbf4ea…</span>"</span></span>
+                <span class="ln" style="--i:3"><span class="k">resources</span>:</span>
+                <span class="ln" style="--i:4">  <span class="k">limits</span>:</span>
+                <span class="ln" style="--i:5">    <span class="k">nvidia.com/gpu</span>: <span class="v">2</span></span>
+              </div>
+              <div class="tut-keys"><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd><span class="tut-keys-note">and that's it</span></div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Your NIM starts with your pick</h4>
+              <p>No guessing. The NIM boots with the profile you selected, and your GPUs finally get shoes that fit.</p>
+            </div>
+            <div class="tut-panel tut-p-go" aria-hidden="true">
+              <div class="tut-cap">NIM is starting · with your profile</div>
+              <div class="tut-gauge hi">
+                <svg viewBox="0 0 200 112" focusable="false">
+                  <path class="track" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <path class="zone lo" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <path class="zone hi" pathLength="100" d="M20 100A80 80 0 0 1 180 100"/>
+                  <g class="needle"><path d="M100 100V38"/><circle cx="100" cy="100" r="7"/></g>
+                </svg>
+                <div class="tut-gauge-ends"><span class="lo">generic fallback</span><span class="hi">built for your GPU</span></div>
+              </div>
+              <div class="tut-verdict">
+                <span class="tut-gpu" data-mood="happy"><span class="tut-gpu-pins"></span><span class="tut-gpu-face"><i class="e"></i><i class="e"></i><i class="m"></i></span></span>
+                <span><b>Your profile, locked in.</b> <code>280bfbbbf4ea…</code></span>
+              </div>
+              <div class="tut-confetti"><i style="--a:-74deg;--d:118px;--c:var(--accent)"></i><i style="--a:-48deg;--d:150px;--c:var(--warn)"></i><i style="--a:-22deg;--d:128px;--c:var(--info)"></i><i style="--a:8deg;--d:156px;--c:var(--accent)"></i><i style="--a:30deg;--d:124px;--c:var(--bad)"></i><i style="--a:54deg;--d:148px;--c:var(--warn)"></i><i style="--a:78deg;--d:116px;--c:var(--info)"></i><i style="--a:-60deg;--d:92px;--c:var(--bad)"></i><i style="--a:-8deg;--d:98px;--c:var(--warn)"></i><i style="--a:42deg;--d:94px;--c:var(--accent)"></i></div>
+            </div>
+          </div>
+
+          <div class="tut-beat">
+            <div class="tut-beat-text">
+              <h4>Air-gapped? Even better.</h4>
+              <p>On an air-gapped PCAI system, the same profile ID lets you download only that engine in advance. No
+                hauling the whole shoe store across the gap.</p>
+            </div>
+            <div class="tut-panel tut-p-air" aria-hidden="true">
+              <div class="tut-cap">Air-gapped PCAI</div>
+              <div class="tut-air">
+                <div class="tut-air-side"><span class="lbl">Every engine in the NIM</span>
+                  <div class="tut-blocks"><i></i><i class="pick"></i><i></i><i></i><i></i><i></i></div></div>
+                <div class="tut-gap"><span>air gap</span></div>
+                <div class="tut-air-side"><span class="lbl">Your PCAI</span>
+                  <div class="tut-vault"><i></i></div></div>
+                <span class="tut-hop"><i></i></span>
+              </div>
+              <div class="tut-toast">Same profile ID · only that engine travels</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEFORE / AFTER -->
+      <section class="tut-versus" aria-labelledby="tut-h-vs">
+        <h3 id="tut-h-vs" data-tut-reveal>Before vs. after</h3>
+        <p class="tut-sub" data-tut-reveal style="--i:1">Same GPUs. Very different day.</p>
+        <div class="tut-vs-head" aria-hidden="true" data-tut-reveal style="--i:2"><span>Without the advisor</span><span>With NIM Profile Advisor</span></div>
+        <ul class="tut-vs">
+          <li data-tut-reveal><span class="no"><span class="tut-sr">Without the advisor: </span>NIM picks a profile, and it may not be the best one</span>
+            <span class="yes"><span class="tut-sr">With NIM Profile Advisor: </span>You choose the profile for your PCAI GPUs</span></li>
+          <li data-tut-reveal><span class="no"><span class="tut-sr">Without the advisor: </span>Pull, run, check the logs, repeat</span>
+            <span class="yes"><span class="tut-sr">With NIM Profile Advisor: </span>A ranked list before you pull the image</span></li>
+          <li data-tut-reveal><span class="no"><span class="tut-sr">Without the advisor: </span>Optimized engines missed because of GPU ID mismatches</span>
+            <span class="yes"><span class="tut-sr">With NIM Profile Advisor: </span>Mismatches detected and explained</span></li>
+          <li data-tut-reveal><span class="no"><span class="tut-sr">Without the advisor: </span>GPU capacity wasted</span>
+            <span class="yes"><span class="tut-sr">With NIM Profile Advisor: </span>More performance from the same hardware</span></li>
+        </ul>
+      </section>
+
+      <!-- CALL TO ACTION -->
+      <section class="tut-final" aria-labelledby="tut-h-go">
+        <span class="tut-gpu" data-mood="happy" aria-hidden="true" data-tut-reveal="pop"><span class="tut-gpu-pins"></span><span class="tut-gpu-face"><i class="e"></i><i class="e"></i><i class="m"></i></span></span>
+        <h3 id="tut-h-go" data-tut-reveal style="--i:1">That's the whole tour.</h3>
+        <p class="tut-sub" data-tut-reveal style="--i:2">Three steps, one environment variable, and no more pull-run-repeat.
+          Go find the profile your GPUs deserve.</p>
+        <div class="tut-cta-row" data-tut-reveal style="--i:3">
+          <a class="tut-btn" href="#recommend">Find my profile <span aria-hidden="true">&rarr;</span></a>
+          <a class="tut-btn tut-btn-ghost" href="#recommend?gpu=h200-nvl&amp;count=4&amp;nodes=1&amp;goal=throughput&amp;q=llama">Try the H200 NVL example</a>
+        </div>
+        <p class="tut-fine" data-tut-reveal style="--i:4">Missing a NIM? <a href="#load">Load it</a> · Want the fine print? <a href="#about">How it works</a></p>
+      </section>
+    </div>
+  </section>
+
   <!-- RECOMMEND -->
   <section id="tab-recommend" class="panel" data-panel="recommend">
     <div class="layout">
@@ -209,6 +558,7 @@
   <div id="modal-body"></div>
 </dialog>
 
+<script src="tutorial.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

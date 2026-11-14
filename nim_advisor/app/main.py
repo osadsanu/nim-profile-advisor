@@ -24,7 +24,7 @@ from pymongo.errors import ConnectionFailure, PyMongoError
 
 from . import fetcher
 from .importer import IMPORT_MODES, run_import, wait_for_mongo
-from .recommender import GOALS, Store, gpu_summary, model_detail, recommend, resolve_gpu
+from .recommender import GOALS, Store, gpu_summary, model_detail, nvaie_supported, recommend, resolve_gpu
 
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
 MONGO_DB = os.environ.get("MONGO_DB", "nim_advisor")
@@ -160,11 +160,13 @@ def models(q: str | None = Query(None, max_length=120), category: str | None = N
         if needle and needle not in " ".join([m["_id"], m["name"], m["display_name"], m.get("description") or "",
                                                " ".join(m.get("gpu_device_ids", []))]).lower():
             continue
-        items.append({k: m.get(k) for k in ("_id", "name", "display_name", "description", "category", "image",
-                                            "fetched_image", "tag", "latest_version", "size_bytes", "profile_count",
-                                            "gpu_device_ids", "gpu_ids", "compute_capabilities", "engines",
-                                            "precisions", "fetch", "catalog_gpu_labels", "manifest", "logo",
-                                            "publisher", "source", "origin")})
+        item = {k: m.get(k) for k in ("_id", "name", "display_name", "description", "category", "image",
+                                      "fetched_image", "tag", "latest_version", "size_bytes", "profile_count",
+                                      "gpu_device_ids", "gpu_ids", "compute_capabilities", "engines",
+                                      "precisions", "fetch", "catalog_gpu_labels", "manifest", "logo",
+                                      "publisher", "source", "origin")}
+        item["nvaie_supported"] = nvaie_supported(m)
+        items.append(item)
     items.sort(key=lambda m: m["display_name"].lower())
     return _clean(items)
 

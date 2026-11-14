@@ -38,5 +38,22 @@ class DatabaseDownTests(unittest.TestCase):
         self.assertNotIn("Topology Description", logs.output[0])
 
 
+class ModelListTests(unittest.TestCase):
+    def test_models_carry_the_nvaie_tag(self):
+        # GET /api/models: the Models tab draws the "NVIDIA AI Enterprise Supported" icon from this flag
+        def doc(model_id, labels):
+            return {"_id": model_id, "name": model_id, "display_name": model_id.upper(), "category": "LLM / VLM",
+                    "image": f"nvcr.io/nim/x/{model_id}", "fetch": {"status": "ok"}, "labels": labels}
+        store = mock.Mock(models={
+            "b": doc("b", {"general": ["NVIDIA NIM"], "productNames": ["nv-ai-enterprise"]}),
+            "a": doc("a", {"general": ["NVIDIA NIM", "NVIDIA AI Enterprise Supported"]}),
+            "c": doc("c", None),
+        })
+        with mock.patch.object(main, "store", store):
+            rows = main.models(q=None)
+        self.assertEqual([(r["_id"], r["nvaie_supported"]) for r in rows], [("a", True), ("b", False), ("c", False)])
+        self.assertNotIn("labels", rows[0])  # the list stays small: only the flag is added
+
+
 if __name__ == "__main__":
     unittest.main()

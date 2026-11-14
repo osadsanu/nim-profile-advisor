@@ -75,6 +75,9 @@ def main() -> None:
 
     status, page = get("/")
     check(status == 200 and "<title>" in str(page), "website index page")
+    served = {name: get(f"/{name}")[0] for name in ("styles.css", "app.js", "tutorial.css", "tutorial.js")}
+    check('data-panel="tutorial"' in str(page) and set(served.values()) == {200},
+          f"Tutorial tab and static assets ({served})")
 
     status, stats = get("/api/stats")
     run = stats.get("import_run") or {}
@@ -108,7 +111,11 @@ def main() -> None:
     status, _ = post("/api/import/image", {"image": "not an image"})
     check(status in (422, 403, 503), f"invalid image is rejected ({status})")
     status, models = get("/api/models")
-    known = next((m["image"] for m in models if m.get("profile_count")), None) if status == 200 else None
+    models = models if status == 200 and isinstance(models, list) else []
+    tagged = sum(1 for m in models if m.get("nvaie_supported") is True)
+    check(bool(models) and all(isinstance(m.get("nvaie_supported"), bool) for m in models),
+          f"models carry the NVIDIA AI Enterprise Supported flag ({tagged} of {len(models)} tagged)")
+    known = next((m["image"] for m in models if m.get("profile_count")), None)
     status, preview = post("/api/import/preview", {"data": [known, "nvcr.io/nim/example/new-nim:1.0", {"name": "x"}]})
     counts = preview.get("counts", {}) if isinstance(preview, dict) else {}
     check(status == 200 and counts.get("skip") == 1 and counts.get("new") == 1 and counts.get("invalid") == 1,

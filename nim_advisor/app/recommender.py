@@ -73,6 +73,21 @@ GOALS = {
 MIG_MEM = re.compile(r"(\d+)g\.(\d+)gb", re.I)
 PARAMS = re.compile(r"(?<![a-z0-9])(?:(\d+)x)?(\d+(?:\.\d+)?)b(?![a-z0-9])")
 PCAI_SIZES = {"Developer": 0, "Small": 1, "Medium": 2, "Large": 3, "Expansion rack": 4}
+# NGC catalog label of the NIMs covered by NVIDIA AI Enterprise support (models.labels, group "general")
+NVAIE_LABEL = "NVIDIA AI Enterprise Supported"
+
+
+def nvaie_supported(model: dict) -> bool:
+    """True when the catalog labels stored with the NIM (models.labels) carry 'NVIDIA AI Enterprise Supported'.
+
+    Derived on every request instead of stored, so it also covers databases imported before the tag existed and
+    NIMs loaded from the website. Only the label counts: labels.productNames 'nv-ai-enterprise' is another NGC
+    field and is set on many NIMs that do not carry the label.
+    """
+    wanted = NVAIE_LABEL.casefold()
+    groups = (model.get("labels") or {}).values()
+    return any(isinstance(v, str) and v.strip().casefold() == wanted
+               for values in groups for v in (values if isinstance(values, list) else [values]))
 
 
 def _pcai_order(c: dict) -> tuple:
@@ -450,6 +465,7 @@ def recommend(store: Store, gpu_query: str, count: int, nodes: int = 1, goal: st
                 "latest_version": model.get("latest_version"), "profile_count": model["profile_count"],
                 "fetch_status": model["fetch"]["status"], "fetch_message": model["fetch"].get("message"),
                 "logo": model.get("logo"), "is_llm": model.get("is_llm"),
+                "nvaie_supported": nvaie_supported(model),
             },
             "compatible_count": len(ok),
             "status": "compatible" if ok else ("no-profiles" if not profiles else "incompatible"),
@@ -507,5 +523,5 @@ def model_detail(store: Store, model_id: str, gpu_query: str | None = None, coun
     if ctx:
         rows.sort(key=lambda r: (not r["compatible"], [-x if isinstance(x, (int, float)) else 0
                                                         for x in r.get("rank", [])]))
-    return {"model": {k: v for k, v in model.items()}, "profiles": rows,
+    return {"model": {**model, "nvaie_supported": nvaie_supported(model)}, "profiles": rows,
             "gpu": gpu_summary(store, ctx.gpu) if ctx else None}

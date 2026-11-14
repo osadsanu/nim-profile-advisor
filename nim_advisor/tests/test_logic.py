@@ -10,7 +10,9 @@ from app.normalize import (
     folder_for_image, iter_profiles, load_manifest, norm_name, normalize_profile, parse_compute_capability,
     parse_device_ids,
 )
-from app.recommender import Context, Store, evaluate, rank_key, recommend, resolve_gpu
+from app.recommender import (
+    NVAIE_LABEL, Context, Store, evaluate, model_detail, nvaie_supported, rank_key, recommend, resolve_gpu,
+)
 
 
 def gpu(gid, name, ids, cc, vram, family, arch="Hopper", aliases=(), internal=()):
@@ -212,6 +214,32 @@ class RecommenderTests(unittest.TestCase):
         c = self.ctx("h200-nvl", 8, goal="latency")
         ok.sort(key=lambda p: rank_key(p, evaluate(self.store, self.models["llama-70b"], p, c), c), reverse=True)
         self.assertEqual(ok[0]["profile_id"], "nvl-fp8-tp2")  # exact hardware match still wins
+
+    def test_nvaie_tag_in_recommendation_and_detail(self):
+        # the website shows the tag and the icon from this flag
+        self.models["llama-70b"]["labels"] = {"general": ["NVIDIA NIM", NVAIE_LABEL, "H200"]}
+        self.models["emb"]["labels"] = {"general": ["NVIDIA NIM"], "productNames": ["nv-ai-enterprise"]}
+        r = recommend(self.store, "h200-nvl", 2)
+        self.assertEqual({x["model"]["id"]: x["model"]["nvaie_supported"] for x in r["results"]},
+                         {"llama-70b": True, "emb": False})
+        self.assertIs(model_detail(self.store, "llama-70b")["model"]["nvaie_supported"], True)
+        self.assertIs(model_detail(self.store, "emb")["model"]["nvaie_supported"], False)
+        self.assertNotIn("nvaie_supported", self.models["llama-70b"])  # derived, the stored document is untouched
+
+
+class NvaieLabelTests(unittest.TestCase):
+    def test_label_in_the_catalog_labels(self):
+        self.assertTrue(nvaie_supported({"labels": {"general": ["B200", "NVIDIA NIM", "NVIDIA AI Enterprise Supported"]}}))
+        # whole label, ignoring case and surrounding spaces, in any label group (list or single value)
+        self.assertTrue(nvaie_supported({"labels": {"general": ["L4"], "tags": [" nvidia ai enterprise supported "]}}))
+        self.assertTrue(nvaie_supported({"labels": {"general": NVAIE_LABEL}}))
+
+    def test_without_the_label(self):
+        for labels in (None, {}, {"general": []}, {"general": ["NVIDIA NIM", "NVIDIA AI Enterprise"]},
+                       {"general": ["Not NVIDIA AI Enterprise Supported yet", 3, None]},
+                       {"productNames": ["nim-dev", "nv-ai-enterprise"]}):
+            self.assertFalse(nvaie_supported({"labels": labels}), labels)
+        self.assertFalse(nvaie_supported({}))
 
 
 if __name__ == "__main__":

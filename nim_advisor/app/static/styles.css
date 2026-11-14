@@ -10,6 +10,7 @@
   --info: #0b5cad;    --info-bg: #e1edfb;
   --warn: #9a6200;    --warn-bg: #fff1d6;
   --bad: #b42318;     --bad-bg: #fde4e1;
+  --nvaie: #4a7500;   --nvaie-bg: #ecf6d5;   --nvaie-ink: #ffffff;
   --code: #eef2f6;
   --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 1px 3px rgba(16, 24, 40, .08);
   --radius: 10px;
@@ -21,6 +22,7 @@
     --accent: #2fc4a6; --accent-soft: #123a33;
     --ok: #56d37b; --ok-bg: #12361f; --info: #7ab7ff; --info-bg: #14283f;
     --warn: #f5c04e; --warn-bg: #3a2b0c; --bad: #ff8a80; --bad-bg: #3d1714;
+    --nvaie: #9ad52b; --nvaie-bg: #23340a; --nvaie-ink: #10161d;
     --code: #10161d; --shadow: none;
     color-scheme: dark;
   }
@@ -107,6 +109,13 @@ button.small { padding: 2px 8px; font-size: 12px; }
 .badge.warn { background: var(--warn-bg); color: var(--warn); }
 .badge.bad { background: var(--bad-bg); color: var(--bad); }
 .badge.accent { background: var(--accent-soft); color: var(--accent); }
+/* NVIDIA AI Enterprise Supported: icon next to a model name, tag on the model cards */
+.nvaie { display: inline-block; width: 1.1em; height: 1.1em; vertical-align: -.17em; color: var(--nvaie); cursor: help; }
+.nvaie svg, .nvaie-tag svg { display: block; width: 100%; height: 100%; }
+.nvaie-shield { fill: currentColor; }
+.nvaie-check { fill: none; stroke: var(--nvaie-ink); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.badge.nvaie-tag { display: inline-flex; align-items: center; gap: 5px; background: var(--nvaie-bg); color: var(--nvaie); }
+.nvaie-tag svg { width: 13px; height: 13px; flex: none; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; color: var(--muted); font-size: 12.5px; }
 
 .model { padding: 0; overflow: hidden; }

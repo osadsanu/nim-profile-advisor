@@ -43,7 +43,14 @@ const MATCH_BADGE = {
   generic: ["info", "Generic profile"],
 };
 
-const state = { gpus: [], pcai: [], stats: null, rec: null, filter: "all", models: [], validation: [] };
+const state = { gpus: [], pcai: [], stats: null, rec: null, filter: "all", models: [], validation: [], reloadOnLeave: false };
+
+/* ---------- NVIDIA AI Enterprise Supported (models carrying that NGC catalog label: nvaie_supported) ---------- */
+const NVAIE = "NVIDIA AI Enterprise Supported";
+const NVAIE_SVG = `<svg viewBox="0 0 16 16" aria-hidden="true"><path class="nvaie-shield" d="M8 1l6 2.2v4.4c0 3.6-2.5 6.3-6 7.4-3.5-1.1-6-3.8-6-7.4V3.2z"/><path class="nvaie-check" d="M5.1 8.1l2.1 2.1 3.7-4.2"/></svg>`;
+// small mark next to a model name; the mouse-over text is the label itself
+const nvaieIcon = (m) => (m && m.nvaie_supported ? ` <span class="nvaie" role="img" aria-label="${NVAIE}" title="${NVAIE}">${NVAIE_SVG}</span>` : "");
+const nvaieTag = (m) => (m && m.nvaie_supported ? `<span class="badge nvaie-tag">${NVAIE_SVG}${NVAIE}</span>` : "");
 
 /* ---------- copy buttons ---------- */
 document.addEventListener("click", async (e) => {
@@ -57,7 +64,16 @@ document.addEventListener("click", async (e) => {
 const copyBtn = (text, label = "copy") => `<button type="button" class="small copy" data-copy="${esc(text)}">${label}</button>`;
 
 /* ---------- tabs / routing ---------- */
+const TABS = ["tutorial", "recommend", "models", "load", "validation", "pcai", "about"];
+
+// The tutorial opens by itself once per browser: the first time the site is opened without a link to a tab.
+// Without working storage the visit cannot be remembered, so the tutorial is never forced.
+const TUTORIAL_SEEN = "nim-advisor.tutorial-seen";
+const tutorialSeen = () => { try { return localStorage.getItem(TUTORIAL_SEEN) !== null; } catch { return true; } };
+const markTutorialSeen = () => { try { localStorage.setItem(TUTORIAL_SEEN, "1"); return true; } catch { return false; } };
+
 function showTab(name) {
+  const from = ($(".tab.active") || { dataset: {} }).dataset.tab;
   $$(".panel").forEach((p) => (p.hidden = p.dataset.panel !== name));
   $$(".tab").forEach((t) => t.classList.toggle("active", t.dataset.tab === name));
   if (name === "models" && !state.models.length) loadModels();
@@ -65,10 +81,18 @@ function showTab(name) {
   if (name === "validation" && !state.validation.length) loadValidation();
   if (name === "pcai") renderPcai();
   if (name === "about") renderAbout();
+  if (name === "tutorial") markTutorialSeen();
+  if (window.NimTutorial) window.NimTutorial.toggle(name === "tutorial");
+  // the tutorial is many screens long: start it, and the tab opened from it, at the top
+  if (from && from !== name && (from === "tutorial" || name === "tutorial")) window.scrollTo(0, 0);
 }
 function route() {
+  if (!location.hash.slice(1) && !tutorialSeen() && markTutorialSeen()) history.replaceState(null, "", "#tutorial");
   const [name, query] = (location.hash.slice(1) || "recommend").split("?");
-  showTab(["recommend", "models", "load", "validation", "pcai", "about"].includes(name) ? name : "recommend");
+  // the bundled catalog finished importing while the tutorial was being read (see watchSeed);
+  // scroll up first, the browser restores the scroll position after a reload
+  if (state.reloadOnLeave && name !== "tutorial") { window.scrollTo(0, 0); location.reload(); return; }
+  showTab(TABS.includes(name) ? name : "recommend");
   if (name === "recommend" && query) {
     const p = new URLSearchParams(query);
     const f = $("#rec-form");
@@ -86,11 +110,16 @@ window.addEventListener("hashchange", route);
 
 /* ---------- init ---------- */
 async function init() {
+  // The tutorial needs no data: open it before the API answers, so a first visit does not flash the Recommend form
+  const hash = location.hash.slice(1);
+  if (hash.split("?")[0] === "tutorial" || (!hash && !tutorialSeen())) route();
   try {
     const [stats, gpus, pcai] = await Promise.all([api("/api/stats"), api("/api/gpus"), api("/api/pcai")]);
     state.stats = stats; state.gpus = gpus; state.pcai = pcai;
   } catch (e) {
     $("#rec-results").innerHTML = `<div class="card error">Cannot reach the API: ${esc(e.message)}</div>`;
+    // the header is also visible from the tutorial, which can be read without the API
+    $("#stats").innerHTML = `<span class="stat error" title="${esc(e.message)}">cannot reach the API</span>`;
     return;
   }
   renderStats();
@@ -118,6 +147,7 @@ function renderStats() {
     `<span class="stat" title="last database update">updated ${esc(when)}</span>` +
     (seeding ? `<span class="stat busy"><span class="spinner small"></span> importing the bundled catalog…</span>` : "") +
     (s.seed && s.seed.status === "failed" ? `<span class="stat error" title="${esc(s.seed.message || "")}">bundled catalog import failed</span>` : "");
+  if (window.NimTutorial) window.NimTutorial.setStats(s);
 }
 
 async function refreshStats() {
@@ -133,7 +163,9 @@ function watchSeed() {
     const st = (stats().seed || {}).status;
     if (["pending", "running"].includes(st)) return;
     clearInterval(timer);
-    if (st === "done") location.reload();
+    if (st !== "done") return;
+    // a first-time visitor is probably still reading the tutorial: reload when they leave it, not under them
+    if ($("#tab-tutorial").hidden) location.reload(); else state.reloadOnLeave = true;
   }, 5000);
 }
 
@@ -333,8 +365,9 @@ function renderResults() {
   $("#rec-results").innerHTML = rows.map((x) => {
     const m = x.model;
     const head = `<div class="model-head">
-        <h3>${esc(m.display_name)} <small>${esc(m.image)}</small></h3>
+        <h3>${esc(m.display_name)}${nvaieIcon(m)} <small>${esc(m.image)}</small></h3>
         <span class="badge">${esc(m.category)}</span>
+        ${nvaieTag(m)}
         ${x.best ? `<span class="badge ${MATCH_BADGE[x.best.match || x.best.match_mode][0]}">${esc(MATCH_BADGE[x.best.match || x.best.match_mode][1])}</span>`
                  : x.status === "no-profiles" ? `<span class="badge warn">no profiles (${esc(m.fetch_status)})</span>`
                  : '<span class="badge bad">not compatible</span>'}
@@ -381,10 +414,11 @@ async function openModel(id) {
   try {
     const d = await api(`/api/models/${encodeURIComponent(id)}${qs}`);
     const m = d.model;
-    $("#modal-title").textContent = m.display_name;
+    $("#modal-title").innerHTML = esc(m.display_name) + nvaieIcon(m);
     const mf = m.manifest || {};
     $("#modal-body").innerHTML = `
       <p>${esc(m.description || "")}</p>
+      ${m.nvaie_supported ? `<p>${nvaieTag(m)}</p>` : ""}
       <div class="kv">
         <div><span>Image (catalog)</span><b class="mono">${esc(m.image)}</b></div>
         <div><span>Fetched from</span><b class="mono">${esc(m.fetched_image)}</b></div>
@@ -415,11 +449,14 @@ function renderModels() {
   const gpuName = (id) => (state.gpus.find((g) => g.id === id) || {}).name || id;
   const rows = state.models.filter((m) => (!cat || m.category === cat) && (!st || m.fetch.status === st) &&
     (!q || [m._id, m.name, m.display_name, m.description, m.image, ...(m.gpu_device_ids || [])].join(" ").toLowerCase().includes(q)));
-  $("#m-count").textContent = `${rows.length} of ${state.models.length}`;
+  const supported = rows.filter((m) => m.nvaie_supported);
+  // the count doubles as the legend of the icon
+  $("#m-count").innerHTML = `${rows.length} of ${state.models.length}` +
+    (supported.length ? ` ·${nvaieIcon(supported[0])} ${supported.length} ${NVAIE}` : "");
   $("#m-table").innerHTML = `<thead><tr><th>NIM</th><th>Category</th><th>Version</th><th class="num">Profiles</th>
     <th>Optimized for</th><th>Fetch</th></tr></thead><tbody>${rows.map((m) => `
     <tr class="clickable" data-model="${esc(m._id)}">
-      <td><b>${esc(m.display_name)}</b><div class="muted mono">${esc(m.image)}</div></td>
+      <td><b>${esc(m.display_name)}</b>${nvaieIcon(m)}<div class="muted mono">${esc(m.image)}</div></td>
       <td>${esc(m.category)}</td><td>${esc(m.tag)}${m.manifest && m.manifest.release ? ` <span class="muted">(${esc(m.manifest.release)})</span>` : ""}</td>
       <td class="num">${esc(m.profile_count)}</td>
       <td>${esc((m.gpu_ids || []).map(gpuName).join(", ") || (m.compute_capabilities || []).map((c) => "CC " + c).join(", ") || "generic")}</td>

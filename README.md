@@ -49,6 +49,18 @@ port mapping in `docker-compose.yml` and put it behind a reverse proxy with TLS 
 browser: `docker compose --profile admin up -d mongo-express` (http://localhost:8081). Corporate root CAs needed
 for the image build (e.g. Zscaler) go in `nim_advisor/certs/`.
 
+## Tutorial tab and NVIDIA AI Enterprise tag
+
+- **Tutorial**: an animated, scroll-driven version of [tutorial.md](tutorial.md) (3 steps). It opens by itself the
+  first time the website is opened in a browser; later visits open **Recommend**, and a link to a tab (`#models`,
+  `#recommend?gpu=...`) is always respected. The visit is remembered in the browser (`localStorage` key
+  `nim-advisor.tutorial-seen`; remove it to get the first-visit behaviour again). The page uses no external assets
+  and shows a static version when the browser asks for reduced motion.
+- **NVIDIA AI Enterprise Supported**: NIMs whose NGC catalog labels carry that label show an icon next to their
+  name (Recommend, Models, model details; the mouse-over text is the label) and the tag itself on the Recommend
+  cards and in the model details. The API reports it as `nvaie_supported`, derived from `models.labels`, so no
+  re-import is needed.
+
 ## Load NIMs from the website
 
 The **Load NIMs** tab adds NIM images that are not in the database yet, or refreshes existing ones:
@@ -121,6 +133,7 @@ The workflows run MongoDB 7.0: MongoDB 8 refuses to start on the 7.0 kernel of t
 | `reference/gpu_validation_report.md` | Same validation as a readable report |
 | `reference/sources/nvidia_pci_ids.json` | NVIDIA subset of the driver README (Appendix A) and pci.ids, used as primary validation source |
 | `nim_advisor/` | FastAPI app + static website (`app/`; `fetcher.py` runs the Load NIMs jobs), tools (`tools/`), unit tests (`tests/`), `Dockerfile` (build context: repository root; bundles the finder script and the catalog data) |
+| `tutorial.md` | The 3-step tutorial. The Tutorial tab is its animated version: the `tab-tutorial` section of `nim_advisor/app/static/index.html` with `tutorial.css` and `tutorial.js` (edit the text there too) |
 | `helm/nim-profile-advisor/` | HPE PCAI framework Helm chart (`helm/nim-profile-advisor.png`: icon for the import wizard) |
 | `scripts/` | `db_export.sh` / `db_restore.sh` used by the `db-export` / `db-restore` compose services |
 | `db_export/` | Database snapshot (see above) |
