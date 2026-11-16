@@ -446,8 +446,10 @@ function renderModels() {
   const q = $("#m-q").value.trim().toLowerCase();
   const cat = $("#m-category").value;
   const st = $("#m-status").value;
+  const onlyNvaie = $("#m-nvaie").checked;
   const gpuName = (id) => (state.gpus.find((g) => g.id === id) || {}).name || id;
   const rows = state.models.filter((m) => (!cat || m.category === cat) && (!st || m.fetch.status === st) &&
+    (!onlyNvaie || m.nvaie_supported) &&
     (!q || [m._id, m.name, m.display_name, m.description, m.image, ...(m.gpu_device_ids || [])].join(" ").toLowerCase().includes(q)));
   const supported = rows.filter((m) => m.nvaie_supported);
   // the count doubles as the legend of the icon
@@ -463,7 +465,7 @@ function renderModels() {
       <td><span class="badge ${FETCH_BADGE[m.fetch.status] || ""}" title="${esc(m.fetch.message || "")}">${esc(m.fetch.status)}</span>${m.origin === "website" ? ' <span class="badge accent" title="loaded or refreshed from the Load NIMs tab">website</span>' : ""}</td>
     </tr>`).join("")}</tbody>`;
 }
-["#m-q", "#m-category", "#m-status"].forEach((s) => $(s).addEventListener("input", debounce(renderModels, 150)));
+["#m-q", "#m-category", "#m-status", "#m-nvaie"].forEach((s) => $(s).addEventListener("input", debounce(renderModels, 150)));
 
 /* ---------- load NIMs tab ---------- */
 const load = { config: null, bulk: null, jobs: [], details: {}, open: new Set(), timer: null, watch: null, seen: {} };

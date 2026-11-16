@@ -201,10 +201,10 @@ def profile(model_id: str, profile_id: str):
 def api_recommend(gpu: str = Query(..., min_length=1, max_length=120), count: int = Query(1, ge=1, le=512),
                   nodes: int = Query(1, ge=1, le=64), goal: str = "nim", category: str | None = None,
                   q: str | None = Query(None, max_length=120), mig: str | None = Query(None, max_length=40),
-                  vram_gb: float | None = Query(None, gt=0, le=2048), lora: bool = False):
+                  vram_gb: float | None = Query(None, gt=0, le=2048), lora: bool = False, nvaie: bool = False):
     if mig and not re.fullmatch(r"[0-9a-zA-Z.+_-]+", mig):
         raise HTTPException(422, "invalid MIG profile")
-    result = recommend(store, gpu, count, nodes, goal, category, q, mig, vram_gb, lora)
+    result = recommend(store, gpu, count, nodes, goal, category, q, mig, vram_gb, lora, nvaie)
     if "error" in result:
         return JSONResponse(status_code=422, content=_clean(result))
     return _clean(result)

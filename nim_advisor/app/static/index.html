@@ -278,24 +278,28 @@
           <div class="tut-beat">
             <div class="tut-beat-text">
               <h4>One setting. That's the whole trick.</h4>
-              <p>Set a single environment variable, <code>NIM_MODEL_PROFILE</code>, to the profile ID you copied. The
-                advisor writes the Kubernetes / PCAI and Docker snippets for you, so it really is copy, paste, go.</p>
-              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> Docker person? Same idea:
-                <pre>docker run --rm --gpus 4 -e NGC_API_KEY \
-  -e NIM_MODEL_PROFILE=&lt;profile-id&gt; \
-  -p 8000:8000 nvcr.io/nim/&lt;org&gt;/&lt;model&gt;:&lt;tag&gt;</pre></aside>
+              <p>In HPE MLIS, open your packaged model and go to the <b>Advanced</b> tab. Under <b>Environment
+                variables</b>, add <code>NIM_MODEL_PROFILE</code> and paste the profile ID you copied as its value.
+                Save and deploy. No YAML, no command line.</p>
+              <aside class="tut-nerd"><span class="tut-nerd-tag">Nerd note</span> Paste the full ID: the copy button
+                gives you all of it, even when the advisor shows a shortened one. Leave the <b>Arguments</b> field as it
+                is, the profile only needs the environment variable.</aside>
             </div>
-            <div class="tut-panel tut-p-code" aria-hidden="true">
-              <div class="tut-cap">Kubernetes / PCAI</div>
-              <div class="tut-code">
-                <span class="ln" style="--i:0"><span class="k">env</span>:</span>
-                <span class="ln" style="--i:1">  - <span class="k">name</span>: <b>NIM_MODEL_PROFILE</b></span>
-                <span class="ln hl" style="--i:2">    <span class="k">value</span>: <span class="s">"<span class="tut-paste">280bfbbbf4ea…</span>"</span></span>
-                <span class="ln" style="--i:3"><span class="k">resources</span>:</span>
-                <span class="ln" style="--i:4">  <span class="k">limits</span>:</span>
-                <span class="ln" style="--i:5">    <span class="k">nvidia.com/gpu</span>: <span class="v">2</span></span>
+            <div class="tut-panel tut-p-mlis" aria-hidden="true">
+              <div class="tut-cap">HPE MLIS · packaged model</div>
+              <div class="tut-mlis">
+                <div class="tut-mlis-title">Edit your packaged model</div>
+                <div class="tut-mlis-tabs"><span>Your model</span><span>Storage</span><span>Resources</span><span class="on">Advanced</span></div>
+                <span class="tut-lab">Environment variables</span>
+                <div class="tut-mlis-env">
+                  <div class="tut-input">NIM_MODEL_PROFILE</div>
+                  <div class="tut-input val"><span class="tut-paste">280bfbbbf4ea…</span><i class="tut-caret"></i></div>
+                </div>
+                <span class="tut-mlis-add">Add new</span>
+                <span class="tut-lab">Arguments</span>
+                <div class="tut-input args">--NIM_HTTP_API_PORT 9000 …</div>
+                <div class="tut-mlis-foot"><span>Cancel</span><span class="save">Save<i class="tut-cursor"></i></span></div>
               </div>
-              <div class="tut-keys"><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd><span class="tut-keys-note">and that's it</span></div>
             </div>
           </div>
 
@@ -320,26 +324,6 @@
                 <span><b>Your profile, locked in.</b> <code>280bfbbbf4ea…</code></span>
               </div>
               <div class="tut-confetti"><i style="--a:-74deg;--d:118px;--c:var(--accent)"></i><i style="--a:-48deg;--d:150px;--c:var(--warn)"></i><i style="--a:-22deg;--d:128px;--c:var(--info)"></i><i style="--a:8deg;--d:156px;--c:var(--accent)"></i><i style="--a:30deg;--d:124px;--c:var(--bad)"></i><i style="--a:54deg;--d:148px;--c:var(--warn)"></i><i style="--a:78deg;--d:116px;--c:var(--info)"></i><i style="--a:-60deg;--d:92px;--c:var(--bad)"></i><i style="--a:-8deg;--d:98px;--c:var(--warn)"></i><i style="--a:42deg;--d:94px;--c:var(--accent)"></i></div>
-            </div>
-          </div>
-
-          <div class="tut-beat">
-            <div class="tut-beat-text">
-              <h4>Air-gapped? Even better.</h4>
-              <p>On an air-gapped PCAI system, the same profile ID lets you download only that engine in advance. No
-                hauling the whole shoe store across the gap.</p>
-            </div>
-            <div class="tut-panel tut-p-air" aria-hidden="true">
-              <div class="tut-cap">Air-gapped PCAI</div>
-              <div class="tut-air">
-                <div class="tut-air-side"><span class="lbl">Every engine in the NIM</span>
-                  <div class="tut-blocks"><i></i><i class="pick"></i><i></i><i></i><i></i><i></i></div></div>
-                <div class="tut-gap"><span>air gap</span></div>
-                <div class="tut-air-side"><span class="lbl">Your PCAI</span>
-                  <div class="tut-vault"><i></i></div></div>
-                <span class="tut-hop"><i></i></span>
-              </div>
-              <div class="tut-toast">Same profile ID · only that engine travels</div>
             </div>
           </div>
         </div>
@@ -422,6 +406,7 @@
         <input id="f-q" name="q" placeholder="e.g. llama, embed, qwen">
 
         <label class="check"><input id="f-lora" name="lora" type="checkbox"> I need LoRA adapters</label>
+        <label class="check"><input id="f-nvaie" name="nvaie" type="checkbox"> NVIDIA AI Enterprise Supported only</label>
 
         <button class="primary" type="submit">Recommend profiles</button>
       </form>
@@ -450,6 +435,7 @@
         <option value="ok">ok</option><option value="skipped">skipped (cached)</option>
         <option value="failed">failed</option><option value="missing">missing</option>
       </select>
+      <label class="check"><input id="m-nvaie" type="checkbox"> NVIDIA AI Enterprise Supported only</label>
       <span id="m-count" class="muted"></span>
     </div>
     <div class="table-wrap card"><table id="m-table" class="table"></table></div>

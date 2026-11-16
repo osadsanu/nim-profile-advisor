@@ -225,6 +225,9 @@ class RecommenderTests(unittest.TestCase):
         self.assertIs(model_detail(self.store, "llama-70b")["model"]["nvaie_supported"], True)
         self.assertIs(model_detail(self.store, "emb")["model"]["nvaie_supported"], False)
         self.assertNotIn("nvaie_supported", self.models["llama-70b"])  # derived, the stored document is untouched
+        r = recommend(self.store, "h200-nvl", 2, nvaie=True)
+        self.assertEqual([x["model"]["id"] for x in r["results"]], ["llama-70b"])
+        self.assertEqual(r["summary"]["models"], 1)
 
 
 class NvaieLabelTests(unittest.TestCase):

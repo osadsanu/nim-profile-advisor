@@ -50,15 +50,15 @@ class TutorialTests(unittest.TestCase):
             self.assertGreater((STATIC / name).stat().st_size, 1000, name)
         self.assertIn("window.NimTutorial = { toggle, setStats }", read("tutorial.js"))
 
-    def test_three_steps_of_three_beats(self):
+    def test_three_steps_of_beats(self):
         steps = re.split(r'<section class="tut-step"', self.section)[1:]
         self.assertEqual([re.search(r'id="(tut-step-\d)"', s).group(1) for s in steps],
                          ["tut-step-1", "tut-step-2", "tut-step-3"])
-        for step in steps:
-            # tutorial.css pins exactly three scenes per step (grid-row: 1 / span 3)
-            self.assertEqual(step.count('class="tut-beat"'), 3)
-            self.assertEqual(step.count('class="tut-beat-text"'), 3)
-            self.assertEqual(len(re.findall(r'class="tut-panel tut-p-\w+" aria-hidden="true"', step)), 3)
+        # tutorial.css pins up to three scenes per step (grid-row: 1 / span 3)
+        for step, beats in zip(steps, (3, 3, 2)):
+            self.assertEqual(step.count('class="tut-beat"'), beats)
+            self.assertEqual(step.count('class="tut-beat-text"'), beats)
+            self.assertEqual(len(re.findall(r'class="tut-panel tut-p-\w+" aria-hidden="true"', step)), beats)
         # the buttons that jump to a step, and the labels of the sections
         self.assertEqual(sorted(set(re.findall(r'data-tut-go="(\d)"', self.section))), ["1", "2", "3"])
         for label in re.findall(r'aria-labelledby="([\w-]+)"', self.section):

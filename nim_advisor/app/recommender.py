@@ -420,7 +420,7 @@ def deploy_snippet(model: dict, p: dict) -> dict:
 
 def recommend(store: Store, gpu_query: str, count: int, nodes: int = 1, goal: str = "nim",
               category: str | None = None, q: str | None = None, mig: str | None = None,
-              vram_gb: float | None = None, lora: bool = False) -> dict:
+              vram_gb: float | None = None, lora: bool = False, nvaie: bool = False) -> dict:
     store.refresh()
     candidates = resolve_gpu(store, gpu_query)
     if not candidates:
@@ -445,6 +445,8 @@ def recommend(store: Store, gpu_query: str, count: int, nodes: int = 1, goal: st
     blocker_totals: Counter = Counter()
     for model in store.models.values():
         if category and model["category"] != category:
+            continue
+        if nvaie and not nvaie_supported(model):
             continue
         if needle and needle not in " ".join([model["_id"], model["name"], model["display_name"],
                                                model.get("description") or ""]).lower():
@@ -487,7 +489,8 @@ def recommend(store: Store, gpu_query: str, count: int, nodes: int = 1, goal: st
     return {
         "gpu": gpu_summary(store, gpu),
         "request": {"gpu": gpu["_id"], "count": count, "nodes": nodes, "goal": goal, "goal_label": GOALS[goal],
-                    "mig": mig, "vram_gb_per_device": vram, "category": category, "q": q, "lora": lora},
+                    "mig": mig, "vram_gb_per_device": vram, "category": category, "q": q, "lora": lora,
+                    "nvaie": nvaie},
         "summary": {"models": len(results), "compatible": summary.get("compatible", 0),
                     "incompatible": summary.get("incompatible", 0), "no_profiles": summary.get("no-profiles", 0),
                     "exact_gpu_matches": sum(1 for e in results if e["fit"] == 3),
